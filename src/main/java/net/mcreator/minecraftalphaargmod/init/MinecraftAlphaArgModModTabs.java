@@ -71,6 +71,7 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.FRACTURED_MIST.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.DIMINISH_FLOWER.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModItems.BRIXGOA_SPAWN_EGG.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.TEST_0001.get().asItem());
 			})
 
 					.build());

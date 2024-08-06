@@ -104,6 +104,7 @@ import net.mcreator.minecraftalphaargmod.block.Tile4Block;
 import net.mcreator.minecraftalphaargmod.block.Tile3Block;
 import net.mcreator.minecraftalphaargmod.block.Tile2Block;
 import net.mcreator.minecraftalphaargmod.block.Tile1Block;
+import net.mcreator.minecraftalphaargmod.block.Test0001Block;
 import net.mcreator.minecraftalphaargmod.block.TerrenBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.TerminalBlock;
 import net.mcreator.minecraftalphaargmod.block.TeetreeleavesBlock;
@@ -1056,6 +1057,7 @@ public class MinecraftAlphaArgModModBlocks {
 	public static final RegistryObject<Block> FRACTURED_MIST = REGISTRY.register("fractured_mist", () -> new FracturedMistBlockBlock());
 	public static final RegistryObject<Block> DIMINISH_FLOWER = REGISTRY.register("diminish_flower", () -> new DiminishFlowerBlock());
 	public static final RegistryObject<Block> QUANTUM_BLOCK = REGISTRY.register("quantum_block", () -> new QuantumBlockBlock());
+	public static final RegistryObject<Block> TEST_0001 = REGISTRY.register("test_0001", () -> new Test0001Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

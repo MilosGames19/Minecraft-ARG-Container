@@ -720,6 +720,7 @@ public class MinecraftAlphaArgModModItems {
 	public static final RegistryObject<Item> DIMINISH_FLOWER = block(MinecraftAlphaArgModModBlocks.DIMINISH_FLOWER);
 	public static final RegistryObject<Item> BRIXGOA_SPAWN_EGG = REGISTRY.register("brixgoa_spawn_egg", () -> new ForgeSpawnEggItem(MinecraftAlphaArgModModEntities.BRIXGOA, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> QUANTUM_BLOCK = block(MinecraftAlphaArgModModBlocks.QUANTUM_BLOCK);
+	public static final RegistryObject<Item> TEST_0001 = block(MinecraftAlphaArgModModBlocks.TEST_0001);
 
 	// Start of user code block custom items
 	// End of user code block custom items
