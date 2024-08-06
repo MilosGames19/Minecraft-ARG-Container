@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_alpha_arg_mod:hallowed_bricks_slab",
+    "minecraft_alpha_arg_mod:hub_smooth_stone_slab",
+    "minecraft_alpha_arg_mod:floor_carpet_slab",
+    "minecraft_alpha_arg_mod:brick_wall_slab",
+    "minecraft_alpha_arg_mod:tile_slab",
+    "minecraft_alpha_arg_mod:tbotv_bricks_slab",
+    "minecraft_alpha_arg_mod:noise_gem_tile_slab",
+    "minecraft_alpha_arg_mod:oslab"
+  ]
+}

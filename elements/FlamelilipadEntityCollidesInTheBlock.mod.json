@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"138\" y=\"35\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_repeat_ext\"><value name=\"TIMES\"><block type=\"math_number\"><field name=\"NUM\">20</field></block></value><statement name=\"DO\"><block type=\"wait\"><value name=\"ticks\"><block type=\"math_number\"><field name=\"NUM\">10</field></block></value><statement name=\"do\"><block type=\"entity_set_health\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"health\"><block type=\"math_dual_ops\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"entity_health\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value></block></statement></block></statement></block></next></block></xml>"
+  }
+}

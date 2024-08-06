@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_alpha_arg_mod:block/syllables_plate"
+    },
+    "facing=east": {
+      "model": "minecraft_alpha_arg_mod:block/syllables_plate",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_alpha_arg_mod:block/syllables_plate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_alpha_arg_mod:block/syllables_plate",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "minecraft_alpha_arg_mod:block/syllables_plate",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "minecraft_alpha_arg_mod:block/syllables_plate",
+      "x": 90
+    }
+  }
+}

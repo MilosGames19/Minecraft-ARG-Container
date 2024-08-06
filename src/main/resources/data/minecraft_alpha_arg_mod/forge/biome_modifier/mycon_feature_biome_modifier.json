@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "mushroom_fields",
+  "features": "minecraft_alpha_arg_mod:mycon_feature",
+  "step": "surface_structures"
+}

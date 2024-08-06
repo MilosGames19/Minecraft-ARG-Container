@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/fake_dirt",
+    "up": "minecraft_alpha_arg_mod:block/fake_top",
+    "north": "minecraft_alpha_arg_mod:block/fake_side",
+    "east": "minecraft_alpha_arg_mod:block/fake_side",
+    "south": "minecraft_alpha_arg_mod:block/fake_side",
+    "west": "minecraft_alpha_arg_mod:block/fake_side",
+    "particle": "minecraft_alpha_arg_mod:block/fake_dirt"
+  },
+  "render_type": "solid"
+}

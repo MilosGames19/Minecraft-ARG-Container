@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft_alpha_arg_mod:ash_grass"
+    },
+    "title": {
+      "translate": "advancements.consequences.title"
+    },
+    "description": {
+      "translate": "advancements.consequences.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "consequences_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft_alpha_arg_mod:ash"
+      }
+    }
+  },
+  "parent": "minecraft_alpha_arg_mod:entry_point"
+}

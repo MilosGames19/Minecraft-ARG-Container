@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "snow_growth.png",
+    "width": 64,
+    "height": 64,
+    "title": "Snow Growth",
+    "author": "Minecraft Alpha 1.0.16.05_20 Cypress "
+  }
+}

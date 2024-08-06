@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/lichen_bl",
+    "up": "minecraft_alpha_arg_mod:block/lichen_bl",
+    "north": "minecraft_alpha_arg_mod:block/lichen_bl",
+    "east": "minecraft_alpha_arg_mod:block/lichen_bl",
+    "south": "minecraft_alpha_arg_mod:block/lichen_bl",
+    "west": "minecraft_alpha_arg_mod:block/lichen_bl",
+    "particle": "minecraft_alpha_arg_mod:block/lichen_bl"
+  },
+  "render_type": "solid"
+}

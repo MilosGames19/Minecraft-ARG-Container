@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Entry Point",
+    "achievementDescription": "Play with a mod installed",
+    "achievementIcon": {
+      "value": "CUSTOM:Flamelilipad"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"43\" y=\"53\"><next><block type=\"dimension_entered\"><field name=\"dimension\">Surface</field></block></next></block><block type=\"custom_trigger\" x=\"497\" y=\"81\"></block></xml>"
+  }
+}

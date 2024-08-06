@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:wooden_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:oslab",
+    "count": 6
+  }
+}

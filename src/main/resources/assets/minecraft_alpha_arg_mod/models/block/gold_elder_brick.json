@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/gold",
+    "up": "minecraft_alpha_arg_mod:block/gold",
+    "north": "minecraft_alpha_arg_mod:block/gold",
+    "east": "minecraft_alpha_arg_mod:block/gold",
+    "south": "minecraft_alpha_arg_mod:block/gold",
+    "west": "minecraft_alpha_arg_mod:block/gold",
+    "particle": "minecraft_alpha_arg_mod:block/gold"
+  },
+  "render_type": "solid"
+}

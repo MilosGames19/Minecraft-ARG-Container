@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/49",
+    "up": "minecraft_alpha_arg_mod:block/unknown_machine_3_bottom",
+    "north": "minecraft_alpha_arg_mod:block/unknown_machine_3_front",
+    "east": "minecraft_alpha_arg_mod:block/unknown_machine_3_side",
+    "south": "minecraft_alpha_arg_mod:block/unknown_machine_3_side",
+    "west": "minecraft_alpha_arg_mod:block/unknown_machine_3_side",
+    "particle": "minecraft_alpha_arg_mod:block/49"
+  },
+  "render_type": "solid"
+}

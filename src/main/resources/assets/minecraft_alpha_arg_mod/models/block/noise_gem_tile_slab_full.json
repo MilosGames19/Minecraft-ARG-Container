@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft_alpha_arg_mod:block/gr",
+    "top": "minecraft_alpha_arg_mod:block/gr",
+    "side": "minecraft_alpha_arg_mod:block/gr"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/lotuslookingthing",
+    "up": "minecraft_alpha_arg_mod:block/lotuslookingthing",
+    "north": "minecraft_alpha_arg_mod:block/purplebarthingy",
+    "east": "minecraft_alpha_arg_mod:block/purplebarthingy",
+    "south": "minecraft_alpha_arg_mod:block/purplebarthingy",
+    "west": "minecraft_alpha_arg_mod:block/purplebarthingy",
+    "particle": "minecraft_alpha_arg_mod:block/lotuslookingthing"
+  },
+  "render_type": "solid"
+}

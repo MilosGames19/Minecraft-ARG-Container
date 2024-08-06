@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "minecraft_alpha_arg_mod:observer_mob",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

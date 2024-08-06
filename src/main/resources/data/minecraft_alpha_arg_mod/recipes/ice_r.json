@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ice"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:essence"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:ice",
+    "count": 8
+  }
+}

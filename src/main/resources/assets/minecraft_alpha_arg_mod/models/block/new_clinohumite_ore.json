@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/clinohumite",
+    "up": "minecraft_alpha_arg_mod:block/clinohumite",
+    "north": "minecraft_alpha_arg_mod:block/clinohumite",
+    "east": "minecraft_alpha_arg_mod:block/clinohumite",
+    "south": "minecraft_alpha_arg_mod:block/clinohumite",
+    "west": "minecraft_alpha_arg_mod:block/clinohumite",
+    "particle": "minecraft_alpha_arg_mod:block/clinohumite"
+  },
+  "render_type": "solid"
+}

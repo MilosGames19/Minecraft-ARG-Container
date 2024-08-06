@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/white",
+    "up": "minecraft_alpha_arg_mod:block/white",
+    "north": "minecraft_alpha_arg_mod:block/white",
+    "east": "minecraft_alpha_arg_mod:block/white",
+    "south": "minecraft_alpha_arg_mod:block/white",
+    "west": "minecraft_alpha_arg_mod:block/white",
+    "particle": "minecraft_alpha_arg_mod:block/white"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "tbotv_playable_icon_texture"
+      },
+      "name": "default"
+    }
+  }
+}

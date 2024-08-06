@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/otherballsies",
+    "up": "minecraft_alpha_arg_mod:block/otherballsies",
+    "north": "minecraft_alpha_arg_mod:block/otherballsies",
+    "east": "minecraft_alpha_arg_mod:block/otherballsies",
+    "south": "minecraft_alpha_arg_mod:block/otherballsies",
+    "west": "minecraft_alpha_arg_mod:block/otherballsies",
+    "particle": "minecraft_alpha_arg_mod:block/otherballsies"
+  },
+  "render_type": "solid"
+}

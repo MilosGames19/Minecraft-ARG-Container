@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "tab",
+  "definition": {
+    "name": "Fanmade blocks",
+    "icon": {
+      "value": "CUSTOM:Firewood"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_alpha_arg_mod:block/wall_3"
+    },
+    "facing=east": {
+      "model": "minecraft_alpha_arg_mod:block/wall_3",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_alpha_arg_mod:block/wall_3",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_alpha_arg_mod:block/wall_3",
+      "y": 270
+    }
+  }
+}

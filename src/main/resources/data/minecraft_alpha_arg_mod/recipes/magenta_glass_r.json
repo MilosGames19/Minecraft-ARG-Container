@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:white_glass"
+    },
+    "b": {
+      "item": "minecraft:magenta_dye"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:magenta_glass",
+    "count": 8
+  }
+}

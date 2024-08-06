@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/stone_chest_top_bottom_",
+    "up": "minecraft_alpha_arg_mod:block/stone_chest_top_bottom_",
+    "north": "minecraft_alpha_arg_mod:block/stone_chest_front",
+    "east": "minecraft_alpha_arg_mod:block/stone_chest_side",
+    "south": "minecraft_alpha_arg_mod:block/stone_chest_side",
+    "west": "minecraft_alpha_arg_mod:block/stone_chest_side",
+    "particle": "minecraft_alpha_arg_mod:block/stone_chest_top_bottom_"
+  },
+  "render_type": "solid"
+}

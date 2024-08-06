@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:mycon_plank"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:mycon_strand"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:mycon_pillar",
+    "count": 4
+  }
+}

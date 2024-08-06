@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_wool"
+    },
+    "b": {
+      "item": "minecraft:white_wool"
+    },
+    "c": {
+      "item": "minecraft_alpha_arg_mod:essence"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:dev_1_plushy",
+    "count": 1
+  }
+}

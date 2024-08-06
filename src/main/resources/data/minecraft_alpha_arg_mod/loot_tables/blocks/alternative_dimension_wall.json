@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "minecraft_alpha_arg_mod:blocks/alternative_dimension_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft_alpha_arg_mod:alternative_dimension_wall"
+        }
+      ]
+    }
+  ]
+}

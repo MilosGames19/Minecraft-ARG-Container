@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/tea_tree_up",
+    "up": "minecraft_alpha_arg_mod:block/tea_tree_up",
+    "north": "minecraft_alpha_arg_mod:block/tea_tree_front",
+    "east": "minecraft_alpha_arg_mod:block/tea_tree_front",
+    "south": "minecraft_alpha_arg_mod:block/tea_tree_front",
+    "west": "minecraft_alpha_arg_mod:block/tea_tree_front",
+    "particle": "minecraft_alpha_arg_mod:block/tea_tree_up"
+  },
+  "render_type": "solid"
+}

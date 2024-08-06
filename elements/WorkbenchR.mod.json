@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WoodenPlanks"
+      },
+      {
+        "value": "CUSTOM:WoodenPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WoodenPlanks"
+      },
+      {
+        "value": "CUSTOM:WoodenPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Workbench"
+    },
+    "name": "workbench_r",
+    "namespace": "mod"
+  }
+}

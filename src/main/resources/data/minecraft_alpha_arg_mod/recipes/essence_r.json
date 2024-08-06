@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:essence"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:essence_cache",
+    "count": 1
+  }
+}

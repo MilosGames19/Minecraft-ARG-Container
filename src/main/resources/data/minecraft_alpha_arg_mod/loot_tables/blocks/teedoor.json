@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "minecraft_alpha_arg_mod:blocks/teedoor",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft_alpha_arg_mod:teedoor",
+          "conditions": [
+            {
+              "block": "minecraft_alpha_arg_mod:teedoor",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

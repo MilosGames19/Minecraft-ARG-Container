@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/ash_bottom",
+    "up": "minecraft_alpha_arg_mod:block/tile320",
+    "north": "minecraft_alpha_arg_mod:block/tile321",
+    "east": "minecraft_alpha_arg_mod:block/tile321",
+    "south": "minecraft_alpha_arg_mod:block/tile321",
+    "west": "minecraft_alpha_arg_mod:block/tile321",
+    "particle": "minecraft_alpha_arg_mod:block/ash_bottom"
+  },
+  "render_type": "solid"
+}

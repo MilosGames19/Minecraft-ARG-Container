@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/down",
+    "up": "minecraft_alpha_arg_mod:block/grass1",
+    "north": "minecraft_alpha_arg_mod:block/grass2",
+    "east": "minecraft_alpha_arg_mod:block/grass2",
+    "south": "minecraft_alpha_arg_mod:block/grass2",
+    "west": "minecraft_alpha_arg_mod:block/grass2",
+    "particle": "minecraft_alpha_arg_mod:block/down"
+  },
+  "render_type": "solid"
+}

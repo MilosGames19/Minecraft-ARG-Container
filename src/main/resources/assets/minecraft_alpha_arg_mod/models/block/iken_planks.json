@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/iken_planks",
+    "up": "minecraft_alpha_arg_mod:block/iken_planks",
+    "north": "minecraft_alpha_arg_mod:block/iken_planks",
+    "east": "minecraft_alpha_arg_mod:block/iken_planks",
+    "south": "minecraft_alpha_arg_mod:block/iken_planks",
+    "west": "minecraft_alpha_arg_mod:block/iken_planks",
+    "particle": "minecraft_alpha_arg_mod:block/iken_planks"
+  },
+  "render_type": "solid"
+}

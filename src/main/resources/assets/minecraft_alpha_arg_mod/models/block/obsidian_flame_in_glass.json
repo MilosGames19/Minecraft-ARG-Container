@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/inglass2",
+    "up": "minecraft_alpha_arg_mod:block/inglass2",
+    "north": "minecraft_alpha_arg_mod:block/inglass2",
+    "east": "minecraft_alpha_arg_mod:block/inglass2",
+    "south": "minecraft_alpha_arg_mod:block/inglass2",
+    "west": "minecraft_alpha_arg_mod:block/inglass2",
+    "particle": "minecraft_alpha_arg_mod:block/inglass2"
+  },
+  "render_type": "solid"
+}

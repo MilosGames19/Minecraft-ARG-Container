@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/floor_noncarpet_hard",
+    "up": "minecraft_alpha_arg_mod:block/floor_noncarpet_hard",
+    "north": "minecraft_alpha_arg_mod:block/floor_noncarpet_hard",
+    "east": "minecraft_alpha_arg_mod:block/floor_noncarpet_hard",
+    "south": "minecraft_alpha_arg_mod:block/floor_noncarpet_hard",
+    "west": "minecraft_alpha_arg_mod:block/floor_noncarpet_hard",
+    "particle": "minecraft_alpha_arg_mod:block/floor_noncarpet_hard"
+  },
+  "render_type": "solid"
+}

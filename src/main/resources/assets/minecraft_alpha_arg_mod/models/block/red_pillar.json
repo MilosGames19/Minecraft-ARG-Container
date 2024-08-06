@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/predv",
+    "up": "minecraft_alpha_arg_mod:block/predv",
+    "north": "minecraft_alpha_arg_mod:block/evilredbarthingy",
+    "east": "minecraft_alpha_arg_mod:block/evilredbarthingy",
+    "south": "minecraft_alpha_arg_mod:block/evilredbarthingy",
+    "west": "minecraft_alpha_arg_mod:block/evilredbarthingy",
+    "particle": "minecraft_alpha_arg_mod:block/predv"
+  },
+  "render_type": "solid"
+}

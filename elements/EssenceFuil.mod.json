@@ -1,0 +1,15 @@
+{
+  "_fv": 60,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:Essence"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 50.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

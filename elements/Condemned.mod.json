@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disc10",
+    "description": "[5] - Condemned",
+    "creativeTab": {
+      "value": "CUSTOM:Alpha"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:condemned"
+    },
+    "lengthInTicks": 1340,
+    "analogOutput": 0
+  }
+}

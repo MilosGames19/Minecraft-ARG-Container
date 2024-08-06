@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:modwood"
+    }
+  },
+  "result": {
+    "item": "minecraft:bowl",
+    "count": 4
+  }
+}

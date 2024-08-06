@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/plushie",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/bug",
+    "particle": "minecraft_alpha_arg_mod:block/bug",
+    "0": "minecraft_alpha_arg_mod:block/bug"
+  },
+  "render_type": "cutout_mipped"
+}

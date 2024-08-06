@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft_alpha_arg_mod:ashdim",
+  "features": "minecraft_alpha_arg_mod:ash_wood_gen",
+  "step": "surface_structures"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/shelve",
+    "up": "minecraft_alpha_arg_mod:block/shelve",
+    "north": "minecraft_alpha_arg_mod:block/shelve",
+    "east": "minecraft_alpha_arg_mod:block/shelve",
+    "south": "minecraft_alpha_arg_mod:block/shelve",
+    "west": "minecraft_alpha_arg_mod:block/shelve",
+    "particle": "minecraft_alpha_arg_mod:block/shelve"
+  },
+  "render_type": "solid"
+}

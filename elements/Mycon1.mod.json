@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MyconPlank"
+      },
+      {
+        "value": "CUSTOM:MyconStrand"
+      },
+      {
+        "value": "CUSTOM:MyconPlank"
+      },
+      {
+        "value": "CUSTOM:MyconStrand"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MyconStrand"
+      },
+      {
+        "value": "CUSTOM:MyconPlank"
+      },
+      {
+        "value": "CUSTOM:MyconStrand"
+      },
+      {
+        "value": "CUSTOM:MyconPlank"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MyconPillar"
+    },
+    "name": "mycon_1",
+    "namespace": "mod"
+  }
+}

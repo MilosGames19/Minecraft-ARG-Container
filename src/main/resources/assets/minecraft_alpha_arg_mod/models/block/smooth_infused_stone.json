@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/smooth_infused_stone",
+    "particle": "minecraft_alpha_arg_mod:block/smooth_infused_stone"
+  },
+  "render_type": "solid"
+}

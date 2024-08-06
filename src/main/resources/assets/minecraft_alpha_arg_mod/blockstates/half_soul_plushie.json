@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_alpha_arg_mod:block/half_soul_plushie"
+    },
+    "facing=east": {
+      "model": "minecraft_alpha_arg_mod:block/half_soul_plushie",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_alpha_arg_mod:block/half_soul_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_alpha_arg_mod:block/half_soul_plushie",
+      "y": 270
+    }
+  }
+}

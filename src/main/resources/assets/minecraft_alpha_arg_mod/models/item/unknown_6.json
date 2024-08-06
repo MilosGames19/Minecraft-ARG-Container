@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft_alpha_arg_mod:item/tile046"
+  },
+  "render_type": "translucent"
+}

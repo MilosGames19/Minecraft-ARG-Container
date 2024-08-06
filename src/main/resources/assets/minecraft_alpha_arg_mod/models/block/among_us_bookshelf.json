@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/p_1",
+    "up": "minecraft_alpha_arg_mod:block/p_1",
+    "north": "minecraft_alpha_arg_mod:block/amongusbookshelf",
+    "east": "minecraft_alpha_arg_mod:block/amongusbookshelf",
+    "south": "minecraft_alpha_arg_mod:block/amongusbookshelf",
+    "west": "minecraft_alpha_arg_mod:block/amongusbookshelf",
+    "particle": "minecraft_alpha_arg_mod:block/p_1"
+  },
+  "render_type": "solid"
+}

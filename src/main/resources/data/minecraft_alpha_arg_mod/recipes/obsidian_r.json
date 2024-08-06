@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:obsidian"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:essence"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:obsidian",
+    "count": 8
+  }
+}

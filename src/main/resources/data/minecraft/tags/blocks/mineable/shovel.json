@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_alpha_arg_mod:hub_ash_block_2",
+    "minecraft_alpha_arg_mod:hub_fake_dirt",
+    "minecraft_alpha_arg_mod:hub_fake_grass",
+    "minecraft_alpha_arg_mod:ash_grass_1",
+    "minecraft_alpha_arg_mod:hub_fake_sand",
+    "minecraft_alpha_arg_mod:soul_gravel",
+    "minecraft_alpha_arg_mod:soul_sand",
+    "minecraft_alpha_arg_mod:soul_grass",
+    "minecraft_alpha_arg_mod:soul_dirt",
+    "minecraft_alpha_arg_mod:ash_dirt",
+    "minecraft_alpha_arg_mod:ash_grass",
+    "minecraft_alpha_arg_mod:fake_sand",
+    "minecraft_alpha_arg_mod:lichen_mass",
+    "minecraft_alpha_arg_mod:fake_grass",
+    "minecraft_alpha_arg_mod:fakedirt"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "record_arrival",
+    "description": "672 - arrival",
+    "creativeTab": {
+      "value": "CUSTOM:Lavacrusader"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:arrival"
+    },
+    "lengthInTicks": 2900,
+    "analogOutput": 0
+  }
+}

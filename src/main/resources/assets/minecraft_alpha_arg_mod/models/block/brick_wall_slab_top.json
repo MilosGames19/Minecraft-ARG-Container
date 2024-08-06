@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "minecraft_alpha_arg_mod:block/wallbricks",
+    "top": "minecraft_alpha_arg_mod:block/wallbricks",
+    "side": "minecraft_alpha_arg_mod:block/wallbricks"
+  },
+  "render_type": "solid"
+}

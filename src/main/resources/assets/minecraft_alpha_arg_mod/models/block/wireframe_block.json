@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/38",
+    "up": "minecraft_alpha_arg_mod:block/38",
+    "north": "minecraft_alpha_arg_mod:block/38",
+    "east": "minecraft_alpha_arg_mod:block/38",
+    "south": "minecraft_alpha_arg_mod:block/38",
+    "west": "minecraft_alpha_arg_mod:block/38",
+    "particle": "minecraft_alpha_arg_mod:block/38"
+  },
+  "render_type": "cutout"
+}

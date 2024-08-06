@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/tbotv_trophy",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/tbotv_playable_icon_texture",
+    "particle": "minecraft_alpha_arg_mod:block/tbotv_playable_icon_texture",
+    "2": "minecraft_alpha_arg_mod:block/tbotv_playable_icon_texture"
+  },
+  "render_type": "solid"
+}

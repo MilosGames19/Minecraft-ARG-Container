@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/idk",
+    "up": "minecraft_alpha_arg_mod:block/idk",
+    "north": "minecraft_alpha_arg_mod:block/cobblestone",
+    "east": "minecraft_alpha_arg_mod:block/idk",
+    "south": "minecraft_alpha_arg_mod:block/idk",
+    "west": "minecraft_alpha_arg_mod:block/idk",
+    "particle": "minecraft_alpha_arg_mod:block/idk"
+  },
+  "render_type": "solid"
+}

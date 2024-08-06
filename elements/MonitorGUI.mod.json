@@ -1,0 +1,121 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "✔",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "V"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "✖",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "XP"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 249,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "✺",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "StarP"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 150,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ps",
+          "text": "Ψ",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Psi"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 249,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_off",
+          "text": "Off",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OffM"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 195,
+          "y": 170
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bogulied.png",
+          "use1Xscale": true,
+          "x": 126,
+          "y": 27
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_monitor",
+          "text": {
+            "fixedValue": "Monitor"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 30
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

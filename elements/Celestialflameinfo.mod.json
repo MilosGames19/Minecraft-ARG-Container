@@ -1,0 +1,17 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Skyflame"
+      }
+    ],
+    "information": [
+      "The celestial flame can be found in the sky. It can be used to: ",
+      "Make infused Lilypads,",
+      "It can serve as a light source,",
+      "and it's also used in some crafting recipes."
+    ]
+  }
+}

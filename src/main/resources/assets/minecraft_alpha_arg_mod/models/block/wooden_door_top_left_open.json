@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_top_left_open",
+  "textures": {
+    "bottom": "minecraft_alpha_arg_mod:block/door_down",
+    "top": "minecraft_alpha_arg_mod:block/door_up"
+  },
+  "render_type": "cutout"
+}

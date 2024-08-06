@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/soul_bricks",
+    "up": "minecraft_alpha_arg_mod:block/soul_bricks",
+    "north": "minecraft_alpha_arg_mod:block/soul_bricks",
+    "east": "minecraft_alpha_arg_mod:block/soul_bricks",
+    "south": "minecraft_alpha_arg_mod:block/soul_bricks",
+    "west": "minecraft_alpha_arg_mod:block/soul_bricks",
+    "particle": "minecraft_alpha_arg_mod:block/soul_bricks"
+  },
+  "render_type": "solid"
+}

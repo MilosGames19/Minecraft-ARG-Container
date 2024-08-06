@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:lace_agate_block"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:lace_agate",
+    "count": 9
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:flame_infused_lily"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:sky_flame_in_glass",
+    "count": 8
+  }
+}

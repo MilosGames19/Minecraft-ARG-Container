@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "minecraft_alpha_arg_mod:block/infused_cobblestone",
+    "particle": "minecraft_alpha_arg_mod:block/infused_cobblestone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:modwood"
+    }
+  },
+  "result": {
+    "item": "minecraft:oak_boat",
+    "count": 1
+  }
+}

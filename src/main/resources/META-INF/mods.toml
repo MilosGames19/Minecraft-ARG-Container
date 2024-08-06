@@ -1,0 +1,44 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="minecraft_alpha_arg_mod"
+version="0.2.99"
+displayName="Minecraft ARG Container"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+credits="Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Alphashit."
+authors="Glitchy, Miki110, atom20003113"
+description="This mod brings blocks, items and features form popular minecraft ARGs"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.minecraft_alpha_arg_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.minecraft_alpha_arg_mod]]
+    modId="world_edit"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.minecraft_alpha_arg_mod]]
+    modId="structure_gel_api"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.minecraft_alpha_arg_mod]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

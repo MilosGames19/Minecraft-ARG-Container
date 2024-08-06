@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/dialectplate",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/000006",
+    "particle": "minecraft_alpha_arg_mod:block/000006",
+    "0": "minecraft_alpha_arg_mod:block/000006"
+  },
+  "render_type": "cutout"
+}

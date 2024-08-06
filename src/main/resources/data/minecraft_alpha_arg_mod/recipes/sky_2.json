@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:gold_infused_lily"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:gold_flame_in_glass",
+    "count": 8
+  }
+}

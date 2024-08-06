@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_alpha_arg_mod:block/firewood_workbench"
+    },
+    "facing=east": {
+      "model": "minecraft_alpha_arg_mod:block/firewood_workbench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_alpha_arg_mod:block/firewood_workbench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_alpha_arg_mod:block/firewood_workbench",
+      "y": 270
+    }
+  }
+}

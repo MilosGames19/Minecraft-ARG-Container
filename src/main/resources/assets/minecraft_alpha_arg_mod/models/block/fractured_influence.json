@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/fracturedinfluence",
+    "up": "minecraft_alpha_arg_mod:block/fracturedinfluence",
+    "north": "minecraft_alpha_arg_mod:block/fracturedinfluence",
+    "east": "minecraft_alpha_arg_mod:block/fracturedinfluence",
+    "south": "minecraft_alpha_arg_mod:block/fracturedinfluence",
+    "west": "minecraft_alpha_arg_mod:block/fracturedinfluence",
+    "particle": "minecraft_alpha_arg_mod:block/fracturedinfluence"
+  },
+  "render_type": "solid"
+}

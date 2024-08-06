@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/glowstone",
+    "up": "minecraft_alpha_arg_mod:block/glowstone",
+    "north": "minecraft_alpha_arg_mod:block/glowstone",
+    "east": "minecraft_alpha_arg_mod:block/glowstone",
+    "south": "minecraft_alpha_arg_mod:block/glowstone",
+    "west": "minecraft_alpha_arg_mod:block/glowstone",
+    "particle": "minecraft_alpha_arg_mod:block/glowstone"
+  },
+  "render_type": "solid"
+}

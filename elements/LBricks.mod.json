@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Lichen"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Lichen"
+      },
+      {
+        "value": "CUSTOM:Bricks"
+      },
+      {
+        "value": "CUSTOM:Lichen"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Lichen"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LichenBricks"
+    },
+    "name": "l_bricks",
+    "namespace": "mod"
+  }
+}

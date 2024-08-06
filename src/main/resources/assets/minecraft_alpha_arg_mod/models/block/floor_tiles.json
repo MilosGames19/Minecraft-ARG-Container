@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/floortiles",
+    "up": "minecraft_alpha_arg_mod:block/floortiles",
+    "north": "minecraft_alpha_arg_mod:block/floortiles",
+    "east": "minecraft_alpha_arg_mod:block/floortiles",
+    "south": "minecraft_alpha_arg_mod:block/floortiles",
+    "west": "minecraft_alpha_arg_mod:block/floortiles",
+    "particle": "minecraft_alpha_arg_mod:block/floortiles"
+  },
+  "render_type": "solid"
+}

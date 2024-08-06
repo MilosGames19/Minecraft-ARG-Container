@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Essence"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "ModelEssenceProjectile",
+    "customModelTexture": "essenceprojectile.png",
+    "onHitsBlock": {
+      "name": "ExplosiveEssenceProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "ExplosiveEssenceProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "ExplosiveEssenceProjectileHitsBlock"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/wood_up",
+    "up": "minecraft_alpha_arg_mod:block/wood_up",
+    "north": "minecraft_alpha_arg_mod:block/wood_side",
+    "east": "minecraft_alpha_arg_mod:block/wood_side",
+    "south": "minecraft_alpha_arg_mod:block/wood_side",
+    "west": "minecraft_alpha_arg_mod:block/wood_side",
+    "particle": "minecraft_alpha_arg_mod:block/wood_up"
+  },
+  "render_type": "solid"
+}

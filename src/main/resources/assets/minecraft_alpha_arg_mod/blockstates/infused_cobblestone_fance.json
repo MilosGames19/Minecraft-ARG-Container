@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "minecraft_alpha_arg_mod:block/infused_cobblestone_fance_post"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "minecraft_alpha_arg_mod:block/infused_cobblestone_fance",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "minecraft_alpha_arg_mod:block/infused_cobblestone_fance",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "minecraft_alpha_arg_mod:block/infused_cobblestone_fance",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "minecraft_alpha_arg_mod:block/infused_cobblestone_fance",
+        "y": 90,
+        "uvlock": true
+      }
+    }
+  ]
+}

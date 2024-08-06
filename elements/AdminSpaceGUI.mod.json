@@ -1,0 +1,87 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bogulied.png",
+          "use1Xscale": true,
+          "x": 126,
+          "y": 27
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "asc",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_execute",
+          "text": "Execute",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TextP"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 181,
+          "y": 169
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_adminspace_console",
+          "text": {
+            "fixedValue": "Adminspace Console"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_v2084",
+          "text": {
+            "fixedValue": "v2.0.84"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 259,
+          "y": 30
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

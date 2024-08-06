@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:limestone"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:smooth_limestone",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "minecraft_alpha_arg_mod:block/diminishflower",
+    "particle": "minecraft_alpha_arg_mod:block/diminishflower"
+  },
+  "render_type": "cutout"
+}

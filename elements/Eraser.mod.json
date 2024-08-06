@@ -1,0 +1,33 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "MultiTool",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "eraser",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Eraser",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "harvestLevel": 10000,
+    "efficiency": 100000.0,
+    "attackSpeed": 1.0,
+    "enchantability": 0,
+    "damageVsEntity": 10000.0,
+    "usageCount": 3000,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

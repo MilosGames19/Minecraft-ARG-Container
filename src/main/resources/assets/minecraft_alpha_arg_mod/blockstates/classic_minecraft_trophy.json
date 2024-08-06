@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_alpha_arg_mod:block/classic_minecraft_trophy"
+    },
+    "facing=east": {
+      "model": "minecraft_alpha_arg_mod:block/classic_minecraft_trophy",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_alpha_arg_mod:block/classic_minecraft_trophy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_alpha_arg_mod:block/classic_minecraft_trophy",
+      "y": 270
+    }
+  }
+}

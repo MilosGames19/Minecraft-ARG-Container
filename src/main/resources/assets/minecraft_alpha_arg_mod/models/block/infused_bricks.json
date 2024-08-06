@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/infused_bricks",
+    "up": "minecraft_alpha_arg_mod:block/infused_bricks",
+    "north": "minecraft_alpha_arg_mod:block/infused_bricks",
+    "east": "minecraft_alpha_arg_mod:block/infused_bricks",
+    "south": "minecraft_alpha_arg_mod:block/infused_bricks",
+    "west": "minecraft_alpha_arg_mod:block/infused_bricks",
+    "particle": "minecraft_alpha_arg_mod:block/infused_bricks"
+  },
+  "render_type": "solid"
+}

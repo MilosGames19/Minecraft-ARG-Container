@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "light_blue_music_disc",
+    "description": "Cat theme",
+    "creativeTab": {
+      "value": "CUSTOM:Lavacrusader"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:cat_theme"
+    },
+    "lengthInTicks": 960,
+    "analogOutput": 0
+  }
+}

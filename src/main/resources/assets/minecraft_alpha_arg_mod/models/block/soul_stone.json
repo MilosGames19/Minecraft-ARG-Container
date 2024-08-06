@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/soul_stone",
+    "up": "minecraft_alpha_arg_mod:block/soul_stone",
+    "north": "minecraft_alpha_arg_mod:block/soul_stone",
+    "east": "minecraft_alpha_arg_mod:block/soul_stone",
+    "south": "minecraft_alpha_arg_mod:block/soul_stone",
+    "west": "minecraft_alpha_arg_mod:block/soul_stone",
+    "particle": "minecraft_alpha_arg_mod:block/soul_stone"
+  },
+  "render_type": "solid"
+}

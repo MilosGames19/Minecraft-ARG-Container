@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/sweeputtonuestion",
+    "up": "minecraft_alpha_arg_mod:block/sweeputtonuestion",
+    "north": "minecraft_alpha_arg_mod:block/sweeputtonuestion",
+    "east": "minecraft_alpha_arg_mod:block/sweeputtonuestion",
+    "south": "minecraft_alpha_arg_mod:block/sweeputtonuestion",
+    "west": "minecraft_alpha_arg_mod:block/sweeputtonuestion",
+    "particle": "minecraft_alpha_arg_mod:block/sweeputtonuestion"
+  },
+  "render_type": "solid"
+}

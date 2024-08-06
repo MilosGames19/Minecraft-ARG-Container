@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/ceiling_tile",
+    "up": "minecraft_alpha_arg_mod:block/ceiling_tile",
+    "north": "minecraft_alpha_arg_mod:block/ceiling_tile",
+    "east": "minecraft_alpha_arg_mod:block/ceiling_tile",
+    "south": "minecraft_alpha_arg_mod:block/ceiling_tile",
+    "west": "minecraft_alpha_arg_mod:block/ceiling_tile",
+    "particle": "minecraft_alpha_arg_mod:block/ceiling_tile"
+  },
+  "render_type": "solid"
+}

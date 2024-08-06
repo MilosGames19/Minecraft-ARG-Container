@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/weponupgrade",
+    "up": "minecraft_alpha_arg_mod:block/weponupgrade",
+    "north": "minecraft_alpha_arg_mod:block/weponupgrade1",
+    "east": "minecraft_alpha_arg_mod:block/weponupgrade1",
+    "south": "minecraft_alpha_arg_mod:block/weponupgrade1",
+    "west": "minecraft_alpha_arg_mod:block/weponupgrade1",
+    "particle": "minecraft_alpha_arg_mod:block/weponupgrade"
+  },
+  "render_type": "solid"
+}

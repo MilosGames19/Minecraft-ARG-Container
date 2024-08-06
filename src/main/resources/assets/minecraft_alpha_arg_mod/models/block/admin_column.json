@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/botomn",
+    "up": "minecraft_alpha_arg_mod:block/botomn",
+    "north": "minecraft_alpha_arg_mod:block/chefref2",
+    "east": "minecraft_alpha_arg_mod:block/chefref2",
+    "south": "minecraft_alpha_arg_mod:block/chefref2",
+    "west": "minecraft_alpha_arg_mod:block/chefref2",
+    "particle": "minecraft_alpha_arg_mod:block/botomn"
+  },
+  "render_type": "solid"
+}

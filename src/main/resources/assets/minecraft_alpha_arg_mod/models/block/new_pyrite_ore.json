@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/pyrite",
+    "up": "minecraft_alpha_arg_mod:block/pyrite",
+    "north": "minecraft_alpha_arg_mod:block/pyrite",
+    "east": "minecraft_alpha_arg_mod:block/pyrite",
+    "south": "minecraft_alpha_arg_mod:block/pyrite",
+    "west": "minecraft_alpha_arg_mod:block/pyrite",
+    "particle": "minecraft_alpha_arg_mod:block/pyrite"
+  },
+  "render_type": "solid"
+}

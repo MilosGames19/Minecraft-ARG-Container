@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "minecraft_alpha_arg_mod:altar",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1001,
+    "separation": 1000,
+    "salt": 376491351
+  }
+}

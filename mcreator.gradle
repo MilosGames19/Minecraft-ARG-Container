@@ -1,0 +1,60 @@
+repositories {
+    maven {
+        url "https://cursemaven.com"
+    }
+}
+
+dependencies {
+    implementation fg.deobf("curse.maven:worldedit-225608:4586218")
+}
+
+
+repositories {
+    maven {
+        name "Modding Legacy Maven"
+        url "https://maven.moddinglegacy.com/maven"
+    }
+}
+
+dependencies {
+    implementation fg.deobf("com.legacy:structure-gel:1.20.1-2.16.0.7")
+}
+
+minecraft {
+    runs {
+ 
+        all {
+            def srgToMcpFile = project.tasks.createSrgToMcp.outputs.files[0].path
+
+            property 'net.minecraftforge.gradle.GradleStart.srg.srg-mcp', srgToMcpFile
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', srgToMcpFile
+        }
+        
+        // ...
+    }
+}
+
+
+repositories {
+  maven {
+    name = "Progwml6's maven"
+    url = "https://dvs1.progwml6.com/files/maven/"
+  }
+  maven {
+    name = "Jared's maven"
+    url = "https://maven.blamejared.com/"
+  }
+  maven {
+    name = "ModMaven"
+    url = "https://modmaven.dev"
+  }
+}
+
+dependencies {
+    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-common-api:15.2.0.27"))
+    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.27"))
+    runtimeOnly(fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.27"))
+}
+
+

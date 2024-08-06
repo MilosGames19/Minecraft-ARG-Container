@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/text13",
+    "up": "minecraft_alpha_arg_mod:block/text13",
+    "north": "minecraft_alpha_arg_mod:block/text12",
+    "east": "minecraft_alpha_arg_mod:block/text12",
+    "south": "minecraft_alpha_arg_mod:block/text12",
+    "west": "minecraft_alpha_arg_mod:block/text12",
+    "particle": "minecraft_alpha_arg_mod:block/text13"
+  },
+  "render_type": "solid"
+}

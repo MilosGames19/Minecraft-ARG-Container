@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "minecraft_alpha_arg_mod:item/ballblogger"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/livingvoidblock",
+    "up": "minecraft_alpha_arg_mod:block/livingvoidblock",
+    "north": "minecraft_alpha_arg_mod:block/livingvoidblock",
+    "east": "minecraft_alpha_arg_mod:block/livingvoidblock",
+    "south": "minecraft_alpha_arg_mod:block/livingvoidblock",
+    "west": "minecraft_alpha_arg_mod:block/livingvoidblock",
+    "particle": "minecraft_alpha_arg_mod:block/livingvoidblock"
+  },
+  "render_type": "solid"
+}

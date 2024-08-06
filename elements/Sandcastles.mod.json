@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disc5",
+    "description": "[5] - sandcastles",
+    "creativeTab": {
+      "value": "CUSTOM:Alpha"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:sandcastles"
+    },
+    "lengthInTicks": 1300,
+    "analogOutput": 0
+  }
+}

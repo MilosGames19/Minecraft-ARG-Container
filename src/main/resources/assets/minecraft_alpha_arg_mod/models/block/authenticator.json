@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/mojanglogoblock",
+    "up": "minecraft_alpha_arg_mod:block/at",
+    "north": "minecraft_alpha_arg_mod:block/ab",
+    "east": "minecraft_alpha_arg_mod:block/15623",
+    "south": "minecraft_alpha_arg_mod:block/15623",
+    "west": "minecraft_alpha_arg_mod:block/15623",
+    "particle": "minecraft_alpha_arg_mod:block/mojanglogoblock"
+  },
+  "render_type": "solid"
+}

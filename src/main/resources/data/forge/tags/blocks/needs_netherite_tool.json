@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_alpha_arg_mod:fractured_influence",
+    "minecraft_alpha_arg_mod:defected_wood",
+    "minecraft_alpha_arg_mod:compressed_static",
+    "minecraft_alpha_arg_mod:compressed_rift",
+    "minecraft_alpha_arg_mod:authenticator"
+  ]
+}

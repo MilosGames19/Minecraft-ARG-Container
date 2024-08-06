@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_alpha_arg_mod:obsidian_forge",
+    "minecraft_alpha_arg_mod:soul_obsidian",
+    "minecraft_alpha_arg_mod:fortified_black_glass",
+    "minecraft_alpha_arg_mod:fortified_magenta_glass",
+    "minecraft_alpha_arg_mod:fortified_green_glass",
+    "minecraft_alpha_arg_mod:fortified_blue_glass",
+    "minecraft_alpha_arg_mod:fortified_glass",
+    "minecraft_alpha_arg_mod:highwood_roots",
+    "minecraft_alpha_arg_mod:obsidian_brick"
+  ]
+}

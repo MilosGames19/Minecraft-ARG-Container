@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/oak",
+    "up": "minecraft_alpha_arg_mod:block/oak",
+    "north": "minecraft_alpha_arg_mod:block/cloth_panel_magenta",
+    "east": "minecraft_alpha_arg_mod:block/cloth_panel_magenta",
+    "south": "minecraft_alpha_arg_mod:block/cloth_panel_magenta",
+    "west": "minecraft_alpha_arg_mod:block/cloth_panel_magenta",
+    "particle": "minecraft_alpha_arg_mod:block/oak"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/azereskop",
+    "up": "minecraft_alpha_arg_mod:block/azereskop",
+    "north": "minecraft_alpha_arg_mod:block/azereskob",
+    "east": "minecraft_alpha_arg_mod:block/azereskob",
+    "south": "minecraft_alpha_arg_mod:block/azereskob",
+    "west": "minecraft_alpha_arg_mod:block/azereskob",
+    "particle": "minecraft_alpha_arg_mod:block/azereskop"
+  },
+  "render_type": "solid"
+}

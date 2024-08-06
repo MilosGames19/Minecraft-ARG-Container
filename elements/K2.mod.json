@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disc6",
+    "description": "[5] - K2",
+    "creativeTab": {
+      "value": "CUSTOM:Alpha"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:k2"
+    },
+    "lengthInTicks": 1340,
+    "analogOutput": 0
+  }
+}

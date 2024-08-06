@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/soulcage",
+    "up": "minecraft_alpha_arg_mod:block/soulcage",
+    "north": "minecraft_alpha_arg_mod:block/soulcage",
+    "east": "minecraft_alpha_arg_mod:block/soulcage",
+    "south": "minecraft_alpha_arg_mod:block/soulcage",
+    "west": "minecraft_alpha_arg_mod:block/soulcage",
+    "particle": "minecraft_alpha_arg_mod:block/soulcage"
+  },
+  "render_type": "solid"
+}

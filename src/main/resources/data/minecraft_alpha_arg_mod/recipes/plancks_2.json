@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:flamewood"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:flamewood_planks",
+    "count": 4
+  }
+}

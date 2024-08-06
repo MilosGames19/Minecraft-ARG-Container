@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/soul_planks_",
+    "up": "minecraft_alpha_arg_mod:block/soul_planks_",
+    "north": "minecraft_alpha_arg_mod:block/soul_bookshelf_",
+    "east": "minecraft_alpha_arg_mod:block/soul_bookshelf_",
+    "south": "minecraft_alpha_arg_mod:block/soul_bookshelf_",
+    "west": "minecraft_alpha_arg_mod:block/soul_bookshelf_",
+    "particle": "minecraft_alpha_arg_mod:block/soul_planks_"
+  },
+  "render_type": "solid"
+}

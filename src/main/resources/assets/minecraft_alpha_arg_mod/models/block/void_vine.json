@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/voidvine",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/vine",
+    "particle": "minecraft_alpha_arg_mod:block/vine",
+    "0": "minecraft_alpha_arg_mod:block/vine"
+  },
+  "render_type": "cutout_mipped"
+}

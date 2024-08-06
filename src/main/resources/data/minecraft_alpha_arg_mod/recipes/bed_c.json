@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cyan_wool"
+    },
+    "b": {
+      "tag": "minecraft:modwood"
+    }
+  },
+  "result": {
+    "item": "minecraft:cyan_bed",
+    "count": 1
+  }
+}

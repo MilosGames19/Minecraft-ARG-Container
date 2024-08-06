@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "leader.png",
+    "width": 48,
+    "height": 64,
+    "title": "Leader",
+    "author": "Minecraft Alpha 1.0.16.05_20 Cypress "
+  }
+}

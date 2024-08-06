@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Anomaly Trader ",
+    "pointOfInterest": {
+      "value": "CUSTOM:QuantumBlock"
+    },
+    "actionSound": {
+      "value": "entity.villager.yes"
+    },
+    "hat": "Full",
+    "professionTextureFile": "scarriger.png",
+    "zombifiedProfessionTextureFile": "e.png"
+  }
+}

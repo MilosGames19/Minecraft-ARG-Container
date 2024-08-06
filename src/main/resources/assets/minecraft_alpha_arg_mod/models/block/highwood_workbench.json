@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/highwood_planks",
+    "up": "minecraft_alpha_arg_mod:block/highwood_cr",
+    "north": "minecraft_alpha_arg_mod:block/highwood_side",
+    "east": "minecraft_alpha_arg_mod:block/highwood_side",
+    "south": "minecraft_alpha_arg_mod:block/highwood_side",
+    "west": "minecraft_alpha_arg_mod:block/highwood_side",
+    "particle": "minecraft_alpha_arg_mod:block/highwood_planks"
+  },
+  "render_type": "solid"
+}

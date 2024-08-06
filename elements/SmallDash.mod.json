@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Long Jump",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SpaceDash"
+    }
+  }
+}

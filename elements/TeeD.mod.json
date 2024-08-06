@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Teeplancks"
+      },
+      {
+        "value": "CUSTOM:Teeplancks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Teeplancks"
+      },
+      {
+        "value": "CUSTOM:Teeplancks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Teeplancks"
+      },
+      {
+        "value": "CUSTOM:Teeplancks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Teedoor"
+    },
+    "name": "tee_d",
+    "namespace": "mod"
+  }
+}

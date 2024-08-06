@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "minecraft_alpha_arg_mod:block/lichen",
+    "particle": "minecraft_alpha_arg_mod:block/lichen"
+  },
+  "render_type": "cutout"
+}

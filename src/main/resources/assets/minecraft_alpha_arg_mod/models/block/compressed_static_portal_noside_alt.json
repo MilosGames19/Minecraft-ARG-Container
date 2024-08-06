@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_noside_alt",
+  "textures": {
+    "pane": "minecraft_alpha_arg_mod:block/compressedstatic"
+  },
+  "render_type": "solid"
+}

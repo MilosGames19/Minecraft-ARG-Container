@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/tile147",
+    "up": "minecraft_alpha_arg_mod:block/tile147",
+    "north": "minecraft_alpha_arg_mod:block/tile147",
+    "east": "minecraft_alpha_arg_mod:block/tile147",
+    "south": "minecraft_alpha_arg_mod:block/tile147",
+    "west": "minecraft_alpha_arg_mod:block/tile147",
+    "particle": "minecraft_alpha_arg_mod:block/tile147"
+  },
+  "render_type": "cutout_mipped"
+}

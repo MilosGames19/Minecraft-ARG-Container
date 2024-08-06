@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "minecraft_alpha_arg_mod:block/text17",
+    "top": "minecraft_alpha_arg_mod:block/text17",
+    "side": "minecraft_alpha_arg_mod:block/text17"
+  },
+  "render_type": "solid"
+}

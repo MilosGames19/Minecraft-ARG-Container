@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Or1"
+      },
+      {
+        "value": "CUSTOM:BismuthIngot"
+      },
+      {
+        "value": "CUSTOM:Or1"
+      },
+      {
+        "value": "CUSTOM:BismuthIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BismuthIngot"
+      },
+      {
+        "value": "CUSTOM:Or1"
+      },
+      {
+        "value": "CUSTOM:BismuthIngot"
+      },
+      {
+        "value": "CUSTOM:Or1"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Or2"
+    },
+    "name": "bismuth_pillar",
+    "namespace": "mod"
+  }
+}

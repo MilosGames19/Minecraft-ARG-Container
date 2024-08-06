@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/ntricatetructure",
+    "up": "minecraft_alpha_arg_mod:block/ntricatetructure",
+    "north": "minecraft_alpha_arg_mod:block/ntricatetructure",
+    "east": "minecraft_alpha_arg_mod:block/ntricatetructure",
+    "south": "minecraft_alpha_arg_mod:block/ntricatetructure",
+    "west": "minecraft_alpha_arg_mod:block/ntricatetructure",
+    "particle": "minecraft_alpha_arg_mod:block/ntricatetructure"
+  },
+  "render_type": "solid"
+}

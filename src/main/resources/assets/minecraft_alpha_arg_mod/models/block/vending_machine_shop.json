@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/shopb1",
+    "up": "minecraft_alpha_arg_mod:block/shopb2up",
+    "north": "minecraft_alpha_arg_mod:block/shopb1",
+    "east": "minecraft_alpha_arg_mod:block/shopb1",
+    "south": "minecraft_alpha_arg_mod:block/shopb1",
+    "west": "minecraft_alpha_arg_mod:block/shopb1",
+    "particle": "minecraft_alpha_arg_mod:block/shopb1"
+  },
+  "render_type": "solid"
+}

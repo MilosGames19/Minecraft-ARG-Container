@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Rock Beetle",
+    "rarity": "RARE",
+    "texture": "disc9",
+    "description": "[5] - RokkubitoruTune",
+    "creativeTab": {
+      "value": "CUSTOM:Alpha"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:rokkubitorurune"
+    },
+    "lengthInTicks": 580,
+    "analogOutput": 0
+  }
+}

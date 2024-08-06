@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disc3",
+    "description": "[5] - Hidden den",
+    "creativeTab": {
+      "value": "CUSTOM:Alpha"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:hidden_den"
+    },
+    "lengthInTicks": 1740,
+    "analogOutput": 0
+  }
+}

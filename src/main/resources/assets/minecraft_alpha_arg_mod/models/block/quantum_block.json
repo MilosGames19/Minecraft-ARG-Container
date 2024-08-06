@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/quantumblock",
+    "up": "minecraft_alpha_arg_mod:block/quantumblock",
+    "north": "minecraft_alpha_arg_mod:block/quantumblock",
+    "east": "minecraft_alpha_arg_mod:block/quantumblock",
+    "south": "minecraft_alpha_arg_mod:block/quantumblock",
+    "west": "minecraft_alpha_arg_mod:block/quantumblock",
+    "particle": "minecraft_alpha_arg_mod:block/quantumblock"
+  },
+  "render_type": "solid"
+}

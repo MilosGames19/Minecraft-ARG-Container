@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SoulPlank"
+      },
+      {
+        "value": "CUSTOM:SoulPlank"
+      },
+      {
+        "value": "CUSTOM:SoulPlank"
+      },
+      {
+        "value": "Items.BOOK"
+      },
+      {
+        "value": "Items.BOOK"
+      },
+      {
+        "value": "Items.BOOK"
+      },
+      {
+        "value": "CUSTOM:SoulPlank"
+      },
+      {
+        "value": "CUSTOM:SoulPlank"
+      },
+      {
+        "value": "CUSTOM:SoulPlank"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SoulBookshelf"
+    },
+    "name": "soul_bookshelf_r",
+    "namespace": "mod"
+  }
+}

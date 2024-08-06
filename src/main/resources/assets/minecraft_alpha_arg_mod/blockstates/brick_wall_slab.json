@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft_alpha_arg_mod:block/brick_wall_slab"
+    },
+    "type=top": {
+      "model": "minecraft_alpha_arg_mod:block/brick_wall_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft_alpha_arg_mod:block/brick_wall_slab_full"
+    }
+  }
+}

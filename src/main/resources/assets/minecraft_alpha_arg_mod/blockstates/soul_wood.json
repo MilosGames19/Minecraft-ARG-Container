@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minecraft_alpha_arg_mod:block/soul_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "minecraft_alpha_arg_mod:block/soul_wood"
+    },
+    "axis=z": {
+      "model": "minecraft_alpha_arg_mod:block/soul_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/mark101_debug2",
+    "up": "minecraft_alpha_arg_mod:block/mark101_debug2",
+    "north": "minecraft_alpha_arg_mod:block/mark101_debug2",
+    "east": "minecraft_alpha_arg_mod:block/mark101_debug2",
+    "south": "minecraft_alpha_arg_mod:block/mark101_debug2",
+    "west": "minecraft_alpha_arg_mod:block/mark101_debug2",
+    "particle": "minecraft_alpha_arg_mod:block/mark101_debug2"
+  },
+  "render_type": "solid"
+}

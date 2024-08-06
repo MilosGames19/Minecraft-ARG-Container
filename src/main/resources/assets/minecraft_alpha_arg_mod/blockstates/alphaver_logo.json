@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_alpha_arg_mod:block/alphaver_logo"
+    },
+    "facing=east": {
+      "model": "minecraft_alpha_arg_mod:block/alphaver_logo",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_alpha_arg_mod:block/alphaver_logo",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_alpha_arg_mod:block/alphaver_logo",
+      "y": 270
+    }
+  }
+}

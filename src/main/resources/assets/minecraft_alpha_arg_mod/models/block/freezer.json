@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/stone",
+    "up": "minecraft_alpha_arg_mod:block/stone",
+    "north": "minecraft_alpha_arg_mod:block/freezer",
+    "east": "minecraft_alpha_arg_mod:block/freezerside",
+    "south": "minecraft_alpha_arg_mod:block/freezerside",
+    "west": "minecraft_alpha_arg_mod:block/freezerside",
+    "particle": "minecraft_alpha_arg_mod:block/stone"
+  },
+  "render_type": "solid"
+}

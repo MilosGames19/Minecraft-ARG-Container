@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:mycon_plank"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:mycon_strand"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:mycon_tool_set_shovel",
+    "count": 1
+  }
+}

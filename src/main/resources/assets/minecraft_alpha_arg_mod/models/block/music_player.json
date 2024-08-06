@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/jukebox_side",
+    "up": "minecraft_alpha_arg_mod:block/jukebox_top",
+    "north": "minecraft_alpha_arg_mod:block/jukebox_side",
+    "east": "minecraft_alpha_arg_mod:block/jukebox_side",
+    "south": "minecraft_alpha_arg_mod:block/jukebox_side",
+    "west": "minecraft_alpha_arg_mod:block/jukebox_side",
+    "particle": "minecraft_alpha_arg_mod:block/jukebox_side"
+  },
+  "render_type": "solid"
+}

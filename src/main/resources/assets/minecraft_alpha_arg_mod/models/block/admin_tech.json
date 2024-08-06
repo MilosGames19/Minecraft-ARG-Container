@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/prismarinate",
+    "particle": "minecraft_alpha_arg_mod:block/prismarinate"
+  },
+  "render_type": "solid"
+}

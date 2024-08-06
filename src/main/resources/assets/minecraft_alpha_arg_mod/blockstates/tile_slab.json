@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft_alpha_arg_mod:block/tile_slab"
+    },
+    "type=top": {
+      "model": "minecraft_alpha_arg_mod:block/tile_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft_alpha_arg_mod:block/tile_slab_full"
+    }
+  }
+}

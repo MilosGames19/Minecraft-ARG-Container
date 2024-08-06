@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/sweepive",
+    "up": "minecraft_alpha_arg_mod:block/sweepive",
+    "north": "minecraft_alpha_arg_mod:block/sweepive",
+    "east": "minecraft_alpha_arg_mod:block/sweepive",
+    "south": "minecraft_alpha_arg_mod:block/sweepive",
+    "west": "minecraft_alpha_arg_mod:block/sweepive",
+    "particle": "minecraft_alpha_arg_mod:block/sweepive"
+  },
+  "render_type": "solid"
+}

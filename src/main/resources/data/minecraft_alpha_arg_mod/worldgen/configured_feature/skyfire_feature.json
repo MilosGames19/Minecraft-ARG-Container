@@ -1,0 +1,14 @@
+{
+  "type": "minecraft_alpha_arg_mod:structure_feature",
+  "config": {
+    "structure": "minecraft_alpha_arg_mod:celestial_flame",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      0,
+      47,
+      0
+    ]
+  }
+}

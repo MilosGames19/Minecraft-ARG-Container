@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/endvidence",
+    "up": "minecraft_alpha_arg_mod:block/endvidence",
+    "north": "minecraft_alpha_arg_mod:block/endvidence",
+    "east": "minecraft_alpha_arg_mod:block/endvidence",
+    "south": "minecraft_alpha_arg_mod:block/endvidence",
+    "west": "minecraft_alpha_arg_mod:block/endvidence",
+    "particle": "minecraft_alpha_arg_mod:block/endvidence"
+  },
+  "render_type": "solid"
+}

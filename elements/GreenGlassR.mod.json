@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:WhiteGlass"
+      },
+      {
+        "value": "CUSTOM:WhiteGlass"
+      },
+      {
+        "value": "CUSTOM:WhiteGlass"
+      },
+      {
+        "value": "CUSTOM:WhiteGlass"
+      },
+      {
+        "value": "Items.DYE#2"
+      },
+      {
+        "value": "CUSTOM:WhiteGlass"
+      },
+      {
+        "value": "CUSTOM:WhiteGlass"
+      },
+      {
+        "value": "CUSTOM:WhiteGlass"
+      },
+      {
+        "value": "CUSTOM:WhiteGlass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GreenGlass"
+    },
+    "name": "green_glass_r",
+    "namespace": "mod"
+  }
+}
