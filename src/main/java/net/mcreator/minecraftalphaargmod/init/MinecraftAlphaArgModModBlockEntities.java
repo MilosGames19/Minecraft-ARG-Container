@@ -15,6 +15,7 @@ import net.mcreator.minecraftalphaargmod.block.entity.UnusedBlock2BlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.Unknown2BlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.ServerContainersBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.SafeBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.PerlinKeyblockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.KeySlotterBlockEntity;
 import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
 
@@ -25,6 +26,7 @@ public class MinecraftAlphaArgModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> KEY_SLOTTER = register("key_slotter", MinecraftAlphaArgModModBlocks.KEY_SLOTTER, KeySlotterBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SERVER_CONTAINERS = register("server_containers", MinecraftAlphaArgModModBlocks.SERVER_CONTAINERS, ServerContainersBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> UNKNOWN_2 = register("unknown_2", MinecraftAlphaArgModModBlocks.UNKNOWN_2, Unknown2BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> PERLIN_KEYBLOCK = register("perlin_keyblock", MinecraftAlphaArgModModBlocks.PERLIN_KEYBLOCK, PerlinKeyblockBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

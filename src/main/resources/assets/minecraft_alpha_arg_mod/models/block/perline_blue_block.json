@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/dbglineblue",
+    "up": "minecraft_alpha_arg_mod:block/dbglineblue",
+    "north": "minecraft_alpha_arg_mod:block/dbglineblue1",
+    "east": "minecraft_alpha_arg_mod:block/dbglineblue1",
+    "south": "minecraft_alpha_arg_mod:block/dbglineblue1",
+    "west": "minecraft_alpha_arg_mod:block/dbglineblue1",
+    "particle": "minecraft_alpha_arg_mod:block/dbglineblue"
+  },
+  "render_type": "solid"
+}

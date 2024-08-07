@@ -16,6 +16,7 @@ import net.mcreator.minecraftalphaargmod.world.inventory.ServerGuIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.SafeGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.MonitorGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.KeyMenu;
+import net.mcreator.minecraftalphaargmod.world.inventory.Key1Menu;
 import net.mcreator.minecraftalphaargmod.world.inventory.GuiMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.FreezerGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.EtGUIMenu;
@@ -39,4 +40,5 @@ public class MinecraftAlphaArgModModMenus {
 	public static final RegistryObject<MenuType<AdminSpaceGUIMenu>> ADMIN_SPACE_GUI = REGISTRY.register("admin_space_gui", () -> IForgeMenuType.create(AdminSpaceGUIMenu::new));
 	public static final RegistryObject<MenuType<MonitorGUIMenu>> MONITOR_GUI = REGISTRY.register("monitor_gui", () -> IForgeMenuType.create(MonitorGUIMenu::new));
 	public static final RegistryObject<MenuType<BlueChestGUIMenu>> BLUE_CHEST_GUI = REGISTRY.register("blue_chest_gui", () -> IForgeMenuType.create(BlueChestGUIMenu::new));
+	public static final RegistryObject<MenuType<Key1Menu>> KEY_1 = REGISTRY.register("key_1", () -> IForgeMenuType.create(Key1Menu::new));
 }

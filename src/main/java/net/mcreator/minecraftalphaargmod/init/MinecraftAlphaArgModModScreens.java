@@ -16,6 +16,7 @@ import net.mcreator.minecraftalphaargmod.client.gui.ServerGuIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.SafeGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.MonitorGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.KeyScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.Key1Screen;
 import net.mcreator.minecraftalphaargmod.client.gui.GuiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.FreezerGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.EtGUIScreen;
@@ -41,6 +42,7 @@ public class MinecraftAlphaArgModModScreens {
 			MenuScreens.register(MinecraftAlphaArgModModMenus.ADMIN_SPACE_GUI.get(), AdminSpaceGUIScreen::new);
 			MenuScreens.register(MinecraftAlphaArgModModMenus.MONITOR_GUI.get(), MonitorGUIScreen::new);
 			MenuScreens.register(MinecraftAlphaArgModModMenus.BLUE_CHEST_GUI.get(), BlueChestGUIScreen::new);
+			MenuScreens.register(MinecraftAlphaArgModModMenus.KEY_1.get(), Key1Screen::new);
 		});
 	}
 }

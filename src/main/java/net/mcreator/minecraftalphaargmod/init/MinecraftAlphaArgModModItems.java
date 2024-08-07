@@ -67,6 +67,7 @@ import net.mcreator.minecraftalphaargmod.item.MalachiteItem;
 import net.mcreator.minecraftalphaargmod.item.LemuriaItem;
 import net.mcreator.minecraftalphaargmod.item.LaceAgateItem;
 import net.mcreator.minecraftalphaargmod.item.KeycardItem;
+import net.mcreator.minecraftalphaargmod.item.KeyDJItem;
 import net.mcreator.minecraftalphaargmod.item.K2Item;
 import net.mcreator.minecraftalphaargmod.item.JuhryItem;
 import net.mcreator.minecraftalphaargmod.item.HoursLongPastIVItem;
@@ -720,7 +721,23 @@ public class MinecraftAlphaArgModModItems {
 	public static final RegistryObject<Item> DIMINISH_FLOWER = block(MinecraftAlphaArgModModBlocks.DIMINISH_FLOWER);
 	public static final RegistryObject<Item> BRIXGOA_SPAWN_EGG = REGISTRY.register("brixgoa_spawn_egg", () -> new ForgeSpawnEggItem(MinecraftAlphaArgModModEntities.BRIXGOA, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> QUANTUM_BLOCK = block(MinecraftAlphaArgModModBlocks.QUANTUM_BLOCK);
-	public static final RegistryObject<Item> TEST_0001 = block(MinecraftAlphaArgModModBlocks.TEST_0001);
+	public static final RegistryObject<Item> PERLIN_GEM = block(MinecraftAlphaArgModModBlocks.PERLIN_GEM);
+	public static final RegistryObject<Item> PERLIN_LIGHT = block(MinecraftAlphaArgModModBlocks.PERLIN_LIGHT);
+	public static final RegistryObject<Item> PERLIN_DBG = block(MinecraftAlphaArgModModBlocks.PERLIN_DBG);
+	public static final RegistryObject<Item> PERLIN_STAIRS = block(MinecraftAlphaArgModModBlocks.PERLIN_STAIRS);
+	public static final RegistryObject<Item> MONITOR_BLOCK = block(MinecraftAlphaArgModModBlocks.MONITOR_BLOCK);
+	public static final RegistryObject<Item> PERLIN_DARK = block(MinecraftAlphaArgModModBlocks.PERLIN_DARK);
+	public static final RegistryObject<Item> PERLIN_DARK_STAR = block(MinecraftAlphaArgModModBlocks.PERLIN_DARK_STAR);
+	public static final RegistryObject<Item> PERLIN_ADMINSPACE = block(MinecraftAlphaArgModModBlocks.PERLIN_ADMINSPACE);
+	public static final RegistryObject<Item> PERLINE_RED_BLOCK = block(MinecraftAlphaArgModModBlocks.PERLINE_RED_BLOCK);
+	public static final RegistryObject<Item> PERLIN_KEYBLOCK = block(MinecraftAlphaArgModModBlocks.PERLIN_KEYBLOCK);
+	public static final RegistryObject<Item> PERLIN_BLUE_STAR = block(MinecraftAlphaArgModModBlocks.PERLIN_BLUE_STAR);
+	public static final RegistryObject<Item> PERLINE_BLUE_BLOCK = block(MinecraftAlphaArgModModBlocks.PERLINE_BLUE_BLOCK);
+	public static final RegistryObject<Item> PERLIN_DBG_BLUE_STAR = block(MinecraftAlphaArgModModBlocks.PERLIN_DBG_BLUE_STAR);
+	public static final RegistryObject<Item> PERLIN_DBG_BLUE_LINE = block(MinecraftAlphaArgModModBlocks.PERLIN_DBG_BLUE_LINE);
+	public static final RegistryObject<Item> PERLIN_DBG_RED_STAR = block(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_STAR);
+	public static final RegistryObject<Item> PERLIN_DBG_RED_LINE = block(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_LINE);
+	public static final RegistryObject<Item> KEY_DJ = REGISTRY.register("key_dj", () -> new KeyDJItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

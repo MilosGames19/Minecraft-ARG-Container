@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "minecraft_alpha_arg_mod:block/dbg",
+    "top": "minecraft_alpha_arg_mod:block/dbg",
+    "side": "minecraft_alpha_arg_mod:block/dbg"
+  },
+  "render_type": "solid"
+}

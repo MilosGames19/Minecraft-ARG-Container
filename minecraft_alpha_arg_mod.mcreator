@@ -16786,21 +16786,305 @@
       }
     },
     {
-      "name": "Test0001",
+      "name": "PerlinGem",
       "type": "block",
       "sortid": 1074,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test_0001",
+      "registry_name": "perlin_gem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/test_0001_top.json",
-          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/test_0001.json",
-          "src/main/java/net/mcreator/minecraftalphaargmod/block/Test0001Block.java",
-          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/test_0001.json",
-          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/test_0001_open.json",
-          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/test_0001.json",
-          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/test_0001.json"
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_gem.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_gem.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_gem.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinGemBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_gem.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinLight",
+      "type": "block",
+      "sortid": 1075,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_light",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_light.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_light.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinLightBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_light.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_light.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinDBG",
+      "type": "block",
+      "sortid": 1076,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_dbg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_dbg.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_dbg.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinDBGBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_dbg.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_dbg.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinStairs",
+      "type": "block",
+      "sortid": 1077,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinStairsBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_stairs.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_stairs.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_stairs.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_stairs_inner.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_stairs.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_stairs_outer.json"
+        ]
+      }
+    },
+    {
+      "name": "MonitorBlock",
+      "type": "block",
+      "sortid": 1078,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/monitor_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/MonitorBlockBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/monitor_block.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/monitor_block.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/monitor_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinDark",
+      "type": "block",
+      "sortid": 1079,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_dark",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_dark.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_dark.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinDarkBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_dark.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_dark.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinDarkStar",
+      "type": "block",
+      "sortid": 1080,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_dark_star",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_dark_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_dark_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_dark_star.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_dark_star.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinDarkStarBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PerlinAdminspace",
+      "type": "block",
+      "sortid": 1081,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_adminspace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_adminspace.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_adminspace.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_adminspace.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_adminspace.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinAdminspaceBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Pearlian",
+      "type": "block",
+      "sortid": 1082,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perline_red_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PearlianBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perline_red_block.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perline_red_block.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perline_red_block.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perline_red_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinKeyblock",
+      "type": "block",
+      "sortid": 1083,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_keyblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_keyblock.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/entity/PerlinKeyblockBlockEntity.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_keyblock.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinKeyblockBlock.java",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_keyblock.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_keyblock.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinBlueStar",
+      "type": "block",
+      "sortid": 1084,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_blue_star",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinBlueStarBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_blue_star.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_blue_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_blue_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_blue_star.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlineBlueBlock",
+      "type": "block",
+      "sortid": 1085,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perline_blue_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perline_blue_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlineBlueBlockBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perline_blue_block.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perline_blue_block.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perline_blue_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinDbgBlueStar",
+      "type": "block",
+      "sortid": 1086,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_dbg_blue_star",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_dbg_blue_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_dbg_blue_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_dbg_blue_star.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinDbgBlueStarBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_dbg_blue_star.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinDbgBlueLine",
+      "type": "block",
+      "sortid": 1087,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_dbg_blue_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_dbg_blue_line.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_dbg_blue_line.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinDbgBlueLineBlock.java",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_dbg_blue_line.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_dbg_blue_line.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinDbgRedStar",
+      "type": "block",
+      "sortid": 1088,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_dbg_red_star",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_dbg_red_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_dbg_red_star.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_dbg_red_star.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinDbgRedStarBlock.java",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_dbg_red_star.json"
+        ]
+      }
+    },
+    {
+      "name": "PerlinDbgRedLine",
+      "type": "block",
+      "sortid": 1089,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perlin_dbg_red_line",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/perlin_dbg_red_line.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/perlin_dbg_red_line.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PerlinDbgRedLineBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/perlin_dbg_red_line.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/perlin_dbg_red_line.json"
+        ]
+      }
+    },
+    {
+      "name": "KeyDJ",
+      "type": "item",
+      "sortid": 1090,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_dj",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/key_dj.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/item/KeyDJItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Key1",
+      "type": "gui",
+      "sortid": 1091,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/client/gui/Key1Screen.java",
+          "src/main/java/net/mcreator/minecraftalphaargmod/world/inventory/Key1Menu.java"
         ]
       }
     }
@@ -17075,7 +17359,6 @@
       "CUSTOM:W2"
     ],
     "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Test0001",
       "~CUSTOM:HubHighwoodRoots",
       "~CUSTOM:HubHighwoodLog",
       "~CUSTOM:HubPillar",
@@ -17120,6 +17403,22 @@
       "CUSTOM:HighwoodWorkbench"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:PerlinDbgRedLine",
+      "~CUSTOM:PerlinDbgRedStar",
+      "~CUSTOM:PerlinDbgBlueLine",
+      "~CUSTOM:PerlinDbgBlueStar",
+      "~CUSTOM:PerlineBlueBlock",
+      "~CUSTOM:PerlinBlueStar",
+      "~CUSTOM:PerlinKeyblock",
+      "~CUSTOM:Pearlian",
+      "~CUSTOM:PerlinAdminspace",
+      "~CUSTOM:PerlinDarkStar",
+      "~CUSTOM:PerlinDark",
+      "~CUSTOM:MonitorBlock",
+      "~CUSTOM:PerlinStairs",
+      "~CUSTOM:PerlinDBG",
+      "~CUSTOM:PerlinLight",
+      "~CUSTOM:PerlinGem",
       "~CUSTOM:QuantumBlock",
       "~CUSTOM:FracturedMistBlock",
       "~CUSTOM:FracturedInfluenceBlock",
@@ -17372,6 +17671,7 @@
       "~CUSTOM:NoiseGemWall"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:PerlinStairs",
       "~CUSTOM:HallowedBricksStairs",
       "~CUSTOM:FloorCarpetStairs",
       "~CUSTOM:BrickWallStairs",
@@ -17381,6 +17681,8 @@
       "~CUSTOM:WoodenStairs"
     ],
     "BLOCKS:forge:needs_netherite_tool": [
+      "~CUSTOM:PerlinKeyblock",
+      "~CUSTOM:PerlinAdminspace",
       "~CUSTOM:FracturedInfluenceBlock",
       "~CUSTOM:DefectedWoodBlock",
       "~CUSTOM:CompressedStaticBlock",
@@ -17446,8 +17748,8 @@
       "painting.minecraft_alpha_arg_mod.emerald.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.minecraft_alpha_arg_mod.slain.title": "Slain",
       "item.minecraft_alpha_arg_mod.fryshroom": "Fryshroom",
-      "block.minecraft_alpha_arg_mod.green_cloth_panel": "Green Cloth Panel",
       "painting.minecraft_alpha_arg_mod.company.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.green_cloth_panel": "Green Cloth Panel",
       "block.minecraft_alpha_arg_mod.cobblestone_stairs": "Cobblestone Stairs",
       "block.minecraft_alpha_arg_mod.pyrite_block": "Pyrite Block",
       "block.minecraft_alpha_arg_mod.cobblestone_fance": "Cobblestone Fance",
@@ -17498,6 +17800,7 @@
       "painting.minecraft_alpha_arg_mod.plant_1.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.celestial_flame": "Celestial flame",
       "block.minecraft_alpha_arg_mod.abcd_communication_block": "ABCD Communication Block",
+      "block.minecraft_alpha_arg_mod.perline_blue_block": "Perline Blue Block",
       "block.minecraft_alpha_arg_mod.minesweeper_questionmark": "Minesweeper Questionmark",
       "item.minecraft_alpha_arg_mod.lemuria.desc": "[5] - Lemuria",
       "block.minecraft_alpha_arg_mod.lace_agate_ore_1": "Lace Agate Ore",
@@ -17516,6 +17819,7 @@
       "painting.minecraft_alpha_arg_mod.snow.title": "Snow",
       "subtitles.maror": "",
       "block.minecraft_alpha_arg_mod.elderstone": "Elderstone",
+      "block.minecraft_alpha_arg_mod.perlin_gem": "Perlin Gem",
       "painting.minecraft_alpha_arg_mod.masque.title": "Masque",
       "block.minecraft_alpha_arg_mod.essence_cache": "Essence Cache",
       "block.minecraft_alpha_arg_mod.firewood_planks": "Firewood Planks",
@@ -17524,6 +17828,7 @@
       "block.minecraft_alpha_arg_mod.lichen_bricks": "Lichen Bricks",
       "block.minecraft_alpha_arg_mod.yellow_grass_block": "Yellow Grass Block",
       "painting.minecraft_alpha_arg_mod.mall.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.perlin_dbg_blue_star": "Perlin Dbg Blue Star",
       "painting.minecraft_alpha_arg_mod.rock.title": "Rock",
       "block.minecraft_alpha_arg_mod.mesh_block_down": "§kUnused",
       "block.minecraft_alpha_arg_mod.hub_highwood_log": "Highwood Log",
@@ -17566,6 +17871,7 @@
       "block.minecraft_alpha_arg_mod.compressed_static_portal": "Compressed Static Portal Block",
       "item.minecraft_alpha_arg_mod.arrival.desc": "672 - arrival",
       "painting.minecraft_alpha_arg_mod.worrysome.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.perlin_keyblock": "Perlin Keyblock",
       "block.minecraft_alpha_arg_mod.salt_block": "Salt Block",
       "painting.minecraft_alpha_arg_mod.parallex.title": "Parallex",
       "painting.minecraft_alpha_arg_mod.gladed_sky.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -17600,6 +17906,7 @@
       "block.minecraft_alpha_arg_mod.qrst_communication_block": "QRST Communication Block",
       "block.minecraft_alpha_arg_mod.grass_block": "Grass Block",
       "painting.minecraft_alpha_arg_mod.tunnel.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.perlin_stairs": "Perlin Stairs",
       "block.minecraft_alpha_arg_mod.portal_enabled": "Portal Enabled",
       "painting.minecraft_alpha_arg_mod.seas.title": "Seas",
       "item.minecraft_alpha_arg_mod.essence_rifle": "Essence Rifle",
@@ -17701,10 +18008,12 @@
       "block.minecraft_alpha_arg_mod.soul_bricks": "Soul Bricks",
       "painting.minecraft_alpha_arg_mod.sky.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.magenta_glass": "Magenta Glass",
+      "block.minecraft_alpha_arg_mod.perlin_blue_star": "Perlin Blue Star",
       "block.minecraft_alpha_arg_mod.association_plate": "Association Plate",
       "painting.minecraft_alpha_arg_mod.unseen_land.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.red_pillar": "Red Pillar",
       "block.minecraft_alpha_arg_mod.blue_cloth_panel": "Blue Cloth Panel",
+      "block.minecraft_alpha_arg_mod.perlin_dark_star": "Perlin Dark Star",
       "block.minecraft_alpha_arg_mod.pillarg": "Pillar",
       "painting.minecraft_alpha_arg_mod.untoten.title": "Untoten",
       "block.minecraft_alpha_arg_mod.realityspace_cross_block": "Realityspace Cross Block",
@@ -17796,6 +18105,7 @@
       "painting.minecraft_alpha_arg_mod.shattered.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.minecraft_alpha_arg_mod.oarfish.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "item.minecraft_alpha_arg_mod.ragged_armor_leggings": "Ragged Leggings",
+      "block.minecraft_alpha_arg_mod.perlin_dbg_blue_line": "Perlin Dbg Blue Line",
       "painting.minecraft_alpha_arg_mod.andrei.title": "Andrei",
       "gui.minecraft_alpha_arg_mod.terminal_gui.button_execute": "Execute",
       "painting.minecraft_alpha_arg_mod.nebula.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -17931,7 +18241,6 @@
       "painting.minecraft_alpha_arg_mod.jam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.psi_monitor": "Ψ Monitor",
       "painting.minecraft_alpha_arg_mod.parrot.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
-      "block.minecraft_alpha_arg_mod.test_0001": "Test 0 0 0 1",
       "subtitles.desambrier": "",
       "painting.minecraft_alpha_arg_mod.blue.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "gui.minecraft_alpha_arg_mod.adminspace.button_no": "no",
@@ -18010,6 +18319,7 @@
       "item.minecraft_alpha_arg_mod.flameberge": "Flameberge",
       "block.minecraft_alpha_arg_mod.infused_bricks": "Infused Bricks",
       "painting.minecraft_alpha_arg_mod.golden_skull.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.perlin_dbg_red_line": "Perlin Dbg Red Line",
       "painting.minecraft_alpha_arg_mod.blue.title": "Blue",
       "painting.minecraft_alpha_arg_mod.lost_paradise.title": "Lost Paradise",
       "subtitles.glass": "",
@@ -18093,6 +18403,7 @@
       "painting.minecraft_alpha_arg_mod.club.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.corridor_supports": "Corridor Supports",
       "block.minecraft_alpha_arg_mod.delta_end_sky": "Delta End Sky",
+      "block.minecraft_alpha_arg_mod.perline_red_block": "Perline Red Block",
       "painting.minecraft_alpha_arg_mod.landscape.title": "Landscape",
       "item.minecraft_alpha_arg_mod.juhry.desc": "[5] - Juhry",
       "subtitles.cat_theme": "",
@@ -18106,6 +18417,7 @@
       "block.minecraft_alpha_arg_mod.solal_plate": "Soral Plate",
       "item.minecraft_alpha_arg_mod.void_gem": "Void Gem",
       "block.minecraft_alpha_arg_mod.blue_gray_communication_block": "Blue Gray Communication Block",
+      "block.minecraft_alpha_arg_mod.perlin_dbg": "Perlin DBG",
       "painting.minecraft_alpha_arg_mod.magenta_1.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.dlamewood_leaves": "Flamewood Leaves",
       "block.minecraft_alpha_arg_mod.hub_smooth_stone_slab": "Smooth Stone Slab",
@@ -18119,6 +18431,7 @@
       "painting.minecraft_alpha_arg_mod.figure.title": "Figure",
       "block.minecraft_alpha_arg_mod.corridor_tracks": "Corridor Tracks",
       "painting.minecraft_alpha_arg_mod.encounter.title": "Encounter",
+      "item.minecraft_alpha_arg_mod.key_dj": "Key",
       "painting.minecraft_alpha_arg_mod.shack.title": "Shack",
       "item.minecraft_alpha_arg_mod.cat_theme.desc": "Cat theme",
       "block.minecraft_alpha_arg_mod.other_jukebox": "Jukebox",
@@ -18155,6 +18468,7 @@
       "key.minecraft_alpha_arg_mod.small_dash": "Long Jump",
       "block.minecraft_alpha_arg_mod.soul_plushie": "Soul Plushie",
       "item.minecraft_alpha_arg_mod.keycard": "Keycard",
+      "block.minecraft_alpha_arg_mod.monitor_block": "Monitor Block",
       "block.minecraft_alpha_arg_mod.yz_01_communication_block": "YZ01 Communication Block",
       "painting.minecraft_alpha_arg_mod.windy_day.title": "Windy Day",
       "painting.minecraft_alpha_arg_mod.snow.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -18291,6 +18605,7 @@
       "block.minecraft_alpha_arg_mod.gold_flame_in_glass": "Gold Flame In Glass",
       "painting.minecraft_alpha_arg_mod.cave.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.wooden_door": "Wooden Door",
+      "block.minecraft_alpha_arg_mod.perlin_dark": "Perlin Dark",
       "block.minecraft_alpha_arg_mod.idk_somethingcool": "§kIDKSomethingcool",
       "block.minecraft_alpha_arg_mod.vinny": "Vinny (Original Image)",
       "item.minecraft_alpha_arg_mod.blue_giant_spawn_egg": "Blue Giant Spawn Egg",
@@ -18315,6 +18630,7 @@
       "block.minecraft_alpha_arg_mod.noise_gem_tile_stairs": "Noise Gem Tile Stairs",
       "block.minecraft_alpha_arg_mod.soul_wood": "Soul Wood",
       "block.minecraft_alpha_arg_mod.fakedirt": "Fake Dirt",
+      "block.minecraft_alpha_arg_mod.perlin_dbg_red_star": "Perlin Dbg Red Star",
       "block.minecraft_alpha_arg_mod.yellow_grass": "Yellow Grass",
       "painting.minecraft_alpha_arg_mod.doors_to_nexi.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.minecraft_alpha_arg_mod.fungus.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -18357,6 +18673,7 @@
       "gui.minecraft_alpha_arg_mod.blue_chest_gui.label_empty": "Inventory",
       "block.minecraft_alpha_arg_mod.hub_mojang_block_1": "Mojang Block",
       "block.minecraft_alpha_arg_mod.hub_mojang_block_2": "Mojang Block",
+      "block.minecraft_alpha_arg_mod.perlin_adminspace": "Perlin Adminspace",
       "block.minecraft_alpha_arg_mod.hub_wall_block": "§kHub Wall Block",
       "block.minecraft_alpha_arg_mod.minesweeper_crossed_mine": "Minesweeper Crossed Mine",
       "block.minecraft_alpha_arg_mod.hub_bricks": "Bricks",
@@ -18385,6 +18702,7 @@
       "block.minecraft_alpha_arg_mod.tbotv_bricks_slab": "Brick Slab",
       "block.minecraft_alpha_arg_mod.ash_wood": "Ash Wood",
       "item.minecraft_alpha_arg_mod.ragged_armor_chestplate": "Ragged Suit",
+      "block.minecraft_alpha_arg_mod.perlin_light": "Perlin Light",
       "block.minecraft_alpha_arg_mod.jar": "Jar",
       "block.minecraft_alpha_arg_mod.communication_block_2345": "2345 Communication Block",
       "block.minecraft_alpha_arg_mod.low_lili": "Low Lily",
@@ -18452,7 +18770,7 @@
       "jei"
     ],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Alphashit.",
+    "credits": "Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Minecraft Alpha 1.1.2.07 Archive, John202",
     "modElementsPackage": "net.mcreator.minecraftalphaargmod"
   },
   "mcreatorVersion": 202400118518

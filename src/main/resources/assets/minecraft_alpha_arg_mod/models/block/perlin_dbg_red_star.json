@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/perlindbgstar",
+    "up": "minecraft_alpha_arg_mod:block/perlindbgstar",
+    "north": "minecraft_alpha_arg_mod:block/perlindbgstar",
+    "east": "minecraft_alpha_arg_mod:block/perlindbgstar",
+    "south": "minecraft_alpha_arg_mod:block/perlindbgstar",
+    "west": "minecraft_alpha_arg_mod:block/perlindbgstar",
+    "particle": "minecraft_alpha_arg_mod:block/perlindbgstar"
+  },
+  "render_type": "solid"
+}

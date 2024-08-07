@@ -71,7 +71,23 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.FRACTURED_MIST.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.DIMINISH_FLOWER.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModItems.BRIXGOA_SPAWN_EGG.get());
-				tabData.accept(MinecraftAlphaArgModModBlocks.TEST_0001.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_GEM.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_LIGHT.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_STAIRS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.MONITOR_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DARK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DARK_STAR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_ADMINSPACE.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLINE_RED_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_KEYBLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_BLUE_STAR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLINE_BLUE_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_BLUE_STAR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_BLUE_LINE.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_STAR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_LINE.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.KEY_DJ.get());
 			})
 
 					.build());

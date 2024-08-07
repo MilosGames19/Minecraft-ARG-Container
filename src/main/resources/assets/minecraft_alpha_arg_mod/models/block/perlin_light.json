@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/light",
+    "up": "minecraft_alpha_arg_mod:block/light",
+    "north": "minecraft_alpha_arg_mod:block/light",
+    "east": "minecraft_alpha_arg_mod:block/light",
+    "south": "minecraft_alpha_arg_mod:block/light",
+    "west": "minecraft_alpha_arg_mod:block/light",
+    "particle": "minecraft_alpha_arg_mod:block/light"
+  },
+  "render_type": "solid"
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_orientable_trapdoor_open",
-  "textures": {
-    "texture": "minecraft_alpha_arg_mod:block/test0001",
-    "particle": "minecraft_alpha_arg_mod:block/test0001"
-  },
-  "render_type": "solid"
-}
