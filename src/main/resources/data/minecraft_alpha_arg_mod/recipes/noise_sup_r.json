@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cbc",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft_alpha_arg_mod:void_gem"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:noise_gem_tile"
+    },
+    "c": {
+      "tag": "minecraft:modwood"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:noise_sup",
+    "count": 32
+  }
+}

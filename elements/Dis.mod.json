@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:VoidGem"
+      },
+      {
+        "value": "CUSTOM:VoidGem"
+      },
+      {
+        "value": "CUSTOM:CreepersHeart"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DataDaisy"
+      },
+      {
+        "value": "CUSTOM:VoidGem"
+      },
+      {
+        "value": "CUSTOM:DataDaisy"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VoidGem"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Dismantler"
+    },
+    "name": "dis",
+    "namespace": "mod"
+  }
+}

@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class NoiseGemTileSlabBlock extends SlabBlock {
 	public NoiseGemTileSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.ANVIL).strength(1f, 10f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

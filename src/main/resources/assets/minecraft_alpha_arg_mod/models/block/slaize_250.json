@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/slaize_25_0",
+    "up": "minecraft_alpha_arg_mod:block/slaize_25_0",
+    "north": "minecraft_alpha_arg_mod:block/slaize_25_0",
+    "east": "minecraft_alpha_arg_mod:block/slaize_25_0",
+    "south": "minecraft_alpha_arg_mod:block/slaize_25_0",
+    "west": "minecraft_alpha_arg_mod:block/slaize_25_0",
+    "particle": "minecraft_alpha_arg_mod:block/slaize_25_0"
+  },
+  "render_type": "solid"
+}

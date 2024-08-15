@@ -4,10 +4,10 @@
     "minecraft_alpha_arg_mod:flamewood_planks",
     "minecraft_alpha_arg_mod:tea_planks",
     "minecraft_alpha_arg_mod:highwood_planks",
-    "minecraft_alpha_arg_mod:mycon_pillar",
     "minecraft_alpha_arg_mod:wooden_planks",
     "minecraft_alpha_arg_mod:firewood_planks",
     "minecraft_alpha_arg_mod:soul_plank",
-    "minecraft_alpha_arg_mod:iken_planks"
+    "minecraft_alpha_arg_mod:iken_planks",
+    "minecraft_alpha_arg_mod:mycon_plank"
   ]
 }

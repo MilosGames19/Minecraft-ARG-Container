@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "minecraft_alpha_arg_mod:block/quantumblock",
-    "up": "minecraft_alpha_arg_mod:block/quantumblock",
-    "north": "minecraft_alpha_arg_mod:block/quantumblock",
-    "east": "minecraft_alpha_arg_mod:block/quantumblock",
-    "south": "minecraft_alpha_arg_mod:block/quantumblock",
-    "west": "minecraft_alpha_arg_mod:block/quantumblock",
-    "particle": "minecraft_alpha_arg_mod:block/quantumblock"
+    "down": "minecraft_alpha_arg_mod:block/quantum_block_down",
+    "up": "minecraft_alpha_arg_mod:block/quantum_block_up",
+    "north": "minecraft_alpha_arg_mod:block/quantum_block_side",
+    "east": "minecraft_alpha_arg_mod:block/quantum_block_side",
+    "south": "minecraft_alpha_arg_mod:block/quantum_block_side",
+    "west": "minecraft_alpha_arg_mod:block/quantum_block_side",
+    "particle": "minecraft_alpha_arg_mod:block/quantum_block_down"
   },
   "render_type": "solid"
 }

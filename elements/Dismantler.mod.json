@@ -10,20 +10,22 @@
     "blockingModelName": "Normal blocking",
     "name": "Dismantler",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Activation Code: A7d5"
+      ]
     },
     "creativeTab": {
       "value": "TOOLS"
     },
     "harvestLevel": 5,
-    "efficiency": 5.0,
-    "attackSpeed": 1.0,
+    "efficiency": 10.0,
+    "attackSpeed": 1.6,
     "enchantability": 22,
-    "damageVsEntity": 4.0,
-    "usageCount": 5400,
+    "damageVsEntity": 13.0,
+    "usageCount": 15400,
     "blocksAffected": [],
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "repairItems": [],
     "immuneToFire": false,

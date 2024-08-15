@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/quest_giver",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/2022_09_27_wanderer-20892001",
+    "particle": "minecraft_alpha_arg_mod:block/2022_09_27_wanderer-20892001",
+    "0": "minecraft_alpha_arg_mod:block/2022_09_27_wanderer-20892001"
+  },
+  "render_type": "cutout_mipped"
+}

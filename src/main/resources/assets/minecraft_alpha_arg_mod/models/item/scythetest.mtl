@@ -1,0 +1,18 @@
+newmtl m_93bbb26a-78ff-0786-23f6-1ba1dfb18578
+illum 1
+Ns 0.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+map_Kd minecraft_alpha_arg_mod:block/ttttt
+Ke 0.0 0.0 0.0
+newmtl none
+illum 1
+Ns 0.0
+Ni 1.45
+d 1.0
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ke 0.0 0.0 0.0

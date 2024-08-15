@@ -88,6 +88,7 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_STAR.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_LINE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModItems.KEY_DJ.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PURPLE_LOG.get().asItem());
 			})
 
 					.build());
@@ -380,6 +381,44 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.VOID_VINE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.TBOTV_BRICKS_SLAB.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.TBOTV_TROPHY.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.JUMPGRADE.get());
+				tabData.accept(MinecraftAlphaArgModModItems.EXCHANGER.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.DATA_DAISY.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.NOISE_SUP.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.QUEST_GIVER.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.QUEST_MANAGER.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.FF_33D_5.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.DEV_PROMO.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_00.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_10.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_20.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_30.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_40.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_50.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_60.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_70.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_80.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_90.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_100.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_110.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_120.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_130.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_140.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_150.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_160.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_170.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_180.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_190.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_200.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_210.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_220.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_230.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_240.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_250.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_260.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_270.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_280.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_290.get().asItem());
 			})
 
 					.build());
@@ -707,6 +746,7 @@ public class MinecraftAlphaArgModModTabs {
 			tabData.accept(MinecraftAlphaArgModModItems.MYCON_TOOL_SET_HOE.get());
 			tabData.accept(MinecraftAlphaArgModModItems.ERASER.get());
 			tabData.accept(MinecraftAlphaArgModModItems.DISMANTLER.get());
+			tabData.accept(MinecraftAlphaArgModModItems.T.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(MinecraftAlphaArgModModItems.FRYSHROOM.get());
 		}

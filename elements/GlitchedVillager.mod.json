@@ -10,7 +10,7 @@
       "value": "entity.villager.yes"
     },
     "hat": "Full",
-    "professionTextureFile": "scarriger.png",
+    "professionTextureFile": "anomoly_trader.png",
     "zombifiedProfessionTextureFile": "e.png"
   }
 }

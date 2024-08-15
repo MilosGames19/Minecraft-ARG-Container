@@ -28,6 +28,7 @@ import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModSounds;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModPaintings;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModFeatures;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlockEntities;
@@ -65,7 +66,7 @@ public class MinecraftAlphaArgModMod {
 		MinecraftAlphaArgModModEntities.REGISTRY.register(bus);
 
 		MinecraftAlphaArgModModTabs.REGISTRY.register(bus);
-
+		MinecraftAlphaArgModModFeatures.REGISTRY.register(bus);
 		StructureFeature.REGISTRY.register(bus);
 
 		MinecraftAlphaArgModModPaintings.REGISTRY.register(bus);
