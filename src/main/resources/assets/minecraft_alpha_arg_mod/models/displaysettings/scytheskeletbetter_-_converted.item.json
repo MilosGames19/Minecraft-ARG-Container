@@ -57,10 +57,51 @@
         0.98
       ]
     },
-    "gui": {
+    "firstperson_lefthand": {
+      "rotation": [
+        -15,
+        82,
+        16
+      ],
+      "translation": [
+        4.25,
+        -9,
+        -2.5
+      ],
+      "scale": [
+        0.98,
+        0.98,
+        0.98
+      ]
+    },
+    "ground": {
       "translation": [
         0,
-        -13,
+        -5.25,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        -0.68,
+        2.94,
+        -48.49
+      ],
+      "translation": [
+        -7,
+        -7.5,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        -9.75,
         0
       ]
     }

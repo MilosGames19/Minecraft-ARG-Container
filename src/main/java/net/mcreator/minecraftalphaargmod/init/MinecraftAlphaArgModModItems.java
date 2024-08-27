@@ -42,11 +42,11 @@ import net.mcreator.minecraftalphaargmod.item.UnusedItem10Item;
 import net.mcreator.minecraftalphaargmod.item.TheOneTrueBookItem;
 import net.mcreator.minecraftalphaargmod.item.TeaLeafItem;
 import net.mcreator.minecraftalphaargmod.item.TeaBucketItem;
-import net.mcreator.minecraftalphaargmod.item.TItem;
 import net.mcreator.minecraftalphaargmod.item.SunglassesItem;
 import net.mcreator.minecraftalphaargmod.item.StylisharmorItem;
 import net.mcreator.minecraftalphaargmod.item.SpearItem;
 import net.mcreator.minecraftalphaargmod.item.ServerDriveItem;
+import net.mcreator.minecraftalphaargmod.item.ScytheItem;
 import net.mcreator.minecraftalphaargmod.item.SandcastlesItem;
 import net.mcreator.minecraftalphaargmod.item.RubyItem;
 import net.mcreator.minecraftalphaargmod.item.RockBeetleItem;
@@ -256,7 +256,7 @@ public class MinecraftAlphaArgModModItems {
 	public static final RegistryObject<Item> RAGGED_ARMOR_LEGGINGS = REGISTRY.register("ragged_armor_leggings", () -> new RaggedArmorItem.Leggings());
 	public static final RegistryObject<Item> RAGGED_ARMOR_BOOTS = REGISTRY.register("ragged_armor_boots", () -> new RaggedArmorItem.Boots());
 	public static final RegistryObject<Item> TARGET = block(MinecraftAlphaArgModModBlocks.TARGET);
-	public static final RegistryObject<Item> EDIBLE_FIRE = REGISTRY.register("edible_fire", () -> new EdibleFireItem());
+	public static final RegistryObject<Item> LIQUIDFIED_FLAME = REGISTRY.register("liquidfied_flame", () -> new EdibleFireItem());
 	public static final RegistryObject<Item> ESSENCE = REGISTRY.register("essence", () -> new EssenceItem());
 	public static final RegistryObject<Item> FLAMEBERGE = REGISTRY.register("flameberge", () -> new FlamebergeItem());
 	public static final RegistryObject<Item> ASH_GRASS = block(MinecraftAlphaArgModModBlocks.ASH_GRASS);
@@ -536,7 +536,7 @@ public class MinecraftAlphaArgModModItems {
 	public static final RegistryObject<Item> SOUL_BOOKSHELF = block(MinecraftAlphaArgModModBlocks.SOUL_BOOKSHELF);
 	public static final RegistryObject<Item> SOUL_BRICKS = block(MinecraftAlphaArgModModBlocks.SOUL_BRICKS);
 	public static final RegistryObject<Item> SOUL_COAL_ORE = block(MinecraftAlphaArgModModBlocks.SOUL_COAL_ORE);
-	public static final RegistryObject<Item> SOUL_COBBLESOTNE = block(MinecraftAlphaArgModModBlocks.SOUL_COBBLESOTNE);
+	public static final RegistryObject<Item> SOUL_COBBLESTONE = block(MinecraftAlphaArgModModBlocks.SOUL_COBBLESTONE);
 	public static final RegistryObject<Item> SOUL_STONE = block(MinecraftAlphaArgModModBlocks.SOUL_STONE);
 	public static final RegistryObject<Item> SOUL_DIRT = block(MinecraftAlphaArgModModBlocks.SOUL_DIRT);
 	public static final RegistryObject<Item> SOUL_GRASS = block(MinecraftAlphaArgModModBlocks.SOUL_GRASS);
@@ -782,8 +782,16 @@ public class MinecraftAlphaArgModModItems {
 	public static final RegistryObject<Item> SLAIZE_270 = block(MinecraftAlphaArgModModBlocks.SLAIZE_270);
 	public static final RegistryObject<Item> SLAIZE_280 = block(MinecraftAlphaArgModModBlocks.SLAIZE_280);
 	public static final RegistryObject<Item> SLAIZE_290 = block(MinecraftAlphaArgModModBlocks.SLAIZE_290);
-	public static final RegistryObject<Item> PURPLE_LOG = block(MinecraftAlphaArgModModBlocks.PURPLE_LOG);
-	public static final RegistryObject<Item> T = REGISTRY.register("t", () -> new TItem());
+	public static final RegistryObject<Item> JAMES_22_PLUSHIE = block(MinecraftAlphaArgModModBlocks.JAMES_22_PLUSHIE);
+	public static final RegistryObject<Item> SCYTHE = REGISTRY.register("scythe", () -> new ScytheItem());
+	public static final RegistryObject<Item> DEVELOPER_PORTAL = block(MinecraftAlphaArgModModBlocks.DEVELOPER_PORTAL);
+	public static final RegistryObject<Item> CHECKERBOARD = block(MinecraftAlphaArgModModBlocks.CHECKERBOARD);
+	public static final RegistryObject<Item> CHECKERBOARD_STAIRS = block(MinecraftAlphaArgModModBlocks.CHECKERBOARD_STAIRS);
+	public static final RegistryObject<Item> LILYPAD_112 = block(MinecraftAlphaArgModModBlocks.LILYPAD_112);
+	public static final RegistryObject<Item> LILYPAD_1121 = block(MinecraftAlphaArgModModBlocks.LILYPAD_1121);
+	public static final RegistryObject<Item> LILYPAD_1122 = block(MinecraftAlphaArgModModBlocks.LILYPAD_1122);
+	public static final RegistryObject<Item> LILYPAD_1123 = block(MinecraftAlphaArgModModBlocks.LILYPAD_1123);
+	public static final RegistryObject<Item> STEVEN_SPAWN_EGG = REGISTRY.register("steven_spawn_egg", () -> new ForgeSpawnEggItem(MinecraftAlphaArgModModEntities.STEVEN, -16737895, -2711704, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

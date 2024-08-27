@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:purple_log",
     "minecraft_alpha_arg_mod:perlin_keyblock",
     "minecraft_alpha_arg_mod:perlin_adminspace",
     "minecraft_alpha_arg_mod:fractured_influence",

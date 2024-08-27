@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/lilypadas",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/tile174",
+    "particle": "minecraft_alpha_arg_mod:block/tile174",
+    "0": "minecraft_alpha_arg_mod:block/tile173",
+    "1": "minecraft_alpha_arg_mod:block/tile174"
+  },
+  "render_type": "cutout_mipped"
+}

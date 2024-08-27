@@ -48,7 +48,7 @@
     "customDrop": {
       "value": "Items.COAL#0"
     },
-    "dropAmount": 1,
+    "dropAmount": 4,
     "useLootTableForDrops": false,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,

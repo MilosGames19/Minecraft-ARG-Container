@@ -68,6 +68,7 @@ public class MinecraftAlphaArgModModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			if (!event.isWasDeath()) {
 				clone.Cooldown = original.Cooldown;
+				clone.StevenCooldown = original.StevenCooldown;
 			}
 		}
 	}
@@ -104,6 +105,7 @@ public class MinecraftAlphaArgModModVariables {
 
 	public static class PlayerVariables {
 		public double Cooldown = 0.0;
+		public double StevenCooldown = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +115,14 @@ public class MinecraftAlphaArgModModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("Cooldown", Cooldown);
+			nbt.putDouble("StevenCooldown", StevenCooldown);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
 			Cooldown = nbt.getDouble("Cooldown");
+			StevenCooldown = nbt.getDouble("StevenCooldown");
 		}
 	}
 
@@ -144,6 +148,7 @@ public class MinecraftAlphaArgModModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Cooldown = message.data.Cooldown;
+					variables.StevenCooldown = message.data.StevenCooldown;
 				}
 			});
 			context.setPacketHandled(true);

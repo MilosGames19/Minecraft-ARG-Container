@@ -17,10 +17,12 @@ import net.mcreator.minecraftalphaargmod.block.entity.ServerContainersBlockEntit
 import net.mcreator.minecraftalphaargmod.block.entity.SafeBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PerlinKeyblockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.KeySlotterBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.FreezerBlockEntity;
 import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
 
 public class MinecraftAlphaArgModModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MinecraftAlphaArgModMod.MODID);
+	public static final RegistryObject<BlockEntityType<?>> FREEZER = register("freezer", MinecraftAlphaArgModModBlocks.FREEZER, FreezerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SAFE = register("safe", MinecraftAlphaArgModModBlocks.SAFE, SafeBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> UNUSED_BLOCK_2 = register("unused_block_2", MinecraftAlphaArgModModBlocks.UNUSED_BLOCK_2, UnusedBlock2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> KEY_SLOTTER = register("key_slotter", MinecraftAlphaArgModModBlocks.KEY_SLOTTER, KeySlotterBlockEntity::new);

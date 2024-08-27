@@ -4,11 +4,11 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="minecraft_alpha_arg_mod"
-version="0.2.99"
+version="0.3.3"
 displayName="Minecraft ARG Container"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
-credits="Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Minecraft Alpha 1.1.2.07 Archive, John202"
+credits="Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Minecraft Alpha 1.1.2.07 Archive, John202, m00nlander, Beta-IMPROVE"
 authors="Glitchy, Miki110, atom20003113"
 description="This mod brings blocks, items and features form popular minecraft ARGs"
 
@@ -22,9 +22,21 @@ description="This mod brings blocks, items and features form popular minecraft A
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.minecraft_alpha_arg_mod]]
+    modId="geckolib"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.minecraft_alpha_arg_mod]]
     modId="world_edit"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.minecraft_alpha_arg_mod]]
+    modId="geckolib"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

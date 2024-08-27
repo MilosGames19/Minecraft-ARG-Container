@@ -1,0 +1,55 @@
+{
+  "_fv": 60,
+  "_type": "animateditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "stiched_texture",
+    "name": "Scythe",
+    "idle": "animation.model.idk",
+    "rarity": "EPIC",
+    "displaySettings": "scytheskeletbetter_-_converted.item.json",
+    "leftArm": "",
+    "rightArm": "",
+    "perspective": "All Perspectives",
+    "creativeTab": {
+      "value": "CUSTOM:Miscellaneous"
+    },
+    "firstPersonArms": false,
+    "stackSize": 1,
+    "enchantability": 15,
+    "useDuration": 0,
+    "toolType": 3.0,
+    "damageCount": 12000,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "enableArmPose": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 16.0,
+    "specialInformation": {
+      "fixedValue": [
+        "Forge a victorious new path."
+      ]
+    },
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "normal": "scytheskeletbetter_-_converted.geo.json",
+    "armPoseList": [],
+    "disableSwing": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "tile012.png",
+    "width": 64,
+    "height": 32,
+    "title": "Message",
+    "author": "Alpha 1.1.2.07"
+  }
+}

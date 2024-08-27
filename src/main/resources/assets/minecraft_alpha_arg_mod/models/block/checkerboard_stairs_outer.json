@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "minecraft_alpha_arg_mod:block/checkertiles",
+    "top": "minecraft_alpha_arg_mod:block/checkertiles",
+    "side": "minecraft_alpha_arg_mod:block/checkertiles"
+  },
+  "render_type": "solid"
+}

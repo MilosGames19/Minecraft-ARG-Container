@@ -9,6 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.FreezerGUIMenu;
+import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
 
 import java.util.HashMap;
 
@@ -50,6 +51,10 @@ public class FreezerGUIScreen extends AbstractContainerScreen<FreezerGUIMenu> {
 		RenderSystem.disableBlend();
 	}
 
+	public static HashMap<String, String> getTextboxValues() {
+		return textstate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -62,6 +67,8 @@ public class FreezerGUIScreen extends AbstractContainerScreen<FreezerGUIMenu> {
 	@Override
 	public void containerTick() {
 		super.containerTick();
+		MinecraftAlphaArgModMod.PACKET_HANDLER.sendToServer(new FreezerGUIMenu.FreezerGUIOtherMessage(0, x, y, z, textstate));
+		FreezerGUIMenu.FreezerGUIOtherMessage.handleOtherAction(entity, 0, x, y, z, textstate);
 	}
 
 	@Override

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft_alpha_arg_mod:bricks"
+    }
+  },
+  "result": {
+    "item": "minecraft_alpha_arg_mod:gold_brick",
+    "count": 4
+  }
+}

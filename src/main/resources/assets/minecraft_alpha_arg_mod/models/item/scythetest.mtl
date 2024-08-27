@@ -5,7 +5,7 @@ Ni 1.45
 d 1.0
 Ka 1.0 1.0 1.0
 Ks 0.0 0.0 0.0
-map_Kd minecraft_alpha_arg_mod:block/ttttt
+map_Kd minecraft_alpha_arg_mod:block/untitledet
 Ke 0.0 0.0 0.0
 newmtl none
 illum 1

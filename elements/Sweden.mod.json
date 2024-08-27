@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "tile016.png",
+    "width": 32,
+    "height": 16,
+    "title": "Sweden",
+    "author": "Alpha 1.1.2.07"
+  }
+}

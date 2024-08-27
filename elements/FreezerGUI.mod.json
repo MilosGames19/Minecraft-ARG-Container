@@ -18,17 +18,11 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "FreezerR"
+          },
           "x": 241,
           "y": 71
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "freezer.png",
-          "use1Xscale": false,
-          "x": 126,
-          "y": 37
         }
       },
       {
@@ -45,6 +39,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "FreezerR"
+          },
           "x": 141,
           "y": 71
         }
@@ -63,6 +60,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "FreezerR"
+          },
           "x": 185,
           "y": 71
         }
@@ -81,8 +81,20 @@
           "x": 192,
           "y": 43
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "freezer.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37
+        }
       }
     ],
+    "onTick": {
+      "name": "FreezerGUIWhileThisGUIIsOpenTick"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

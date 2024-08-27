@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:checkerboard_stairs",
     "minecraft_alpha_arg_mod:perlin_stairs",
     "minecraft_alpha_arg_mod:hallowed_bricks_stairs",
     "minecraft_alpha_arg_mod:floor_carpet_stairs",

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tile173",
+        "1": "tile174"
+      },
+      "name": "default"
+    }
+  }
+}

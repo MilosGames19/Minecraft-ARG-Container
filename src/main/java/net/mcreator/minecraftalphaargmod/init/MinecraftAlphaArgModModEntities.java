@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.minecraftalphaargmod.entity.StevenEntity;
 import net.mcreator.minecraftalphaargmod.entity.SpearProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.SoulEntityEntity;
 import net.mcreator.minecraftalphaargmod.entity.RecruiterEntity;
@@ -68,6 +69,10 @@ public class MinecraftAlphaArgModModEntities {
 			EntityType.Builder.<BrixgoaEntity>of(BrixgoaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BrixgoaEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<StevenEntity>> STEVEN = register("steven",
+			EntityType.Builder.<StevenEntity>of(StevenEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StevenEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -84,6 +89,7 @@ public class MinecraftAlphaArgModModEntities {
 			DBGEntity.init();
 			BlueGiantEntity.init();
 			BrixgoaEntity.init();
+			StevenEntity.init();
 		});
 	}
 
@@ -97,5 +103,6 @@ public class MinecraftAlphaArgModModEntities {
 		event.put(DBG.get(), DBGEntity.createAttributes().build());
 		event.put(BLUE_GIANT.get(), BlueGiantEntity.createAttributes().build());
 		event.put(BRIXGOA.get(), BrixgoaEntity.createAttributes().build());
+		event.put(STEVEN.get(), StevenEntity.createAttributes().build());
 	}
 }

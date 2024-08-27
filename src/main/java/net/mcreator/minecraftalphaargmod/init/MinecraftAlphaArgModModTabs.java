@@ -88,7 +88,15 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_STAR.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.PERLIN_DBG_RED_LINE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModItems.KEY_DJ.get());
-				tabData.accept(MinecraftAlphaArgModModBlocks.PURPLE_LOG.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.JAMES_22_PLUSHIE.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.SCYTHE.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.DEVELOPER_PORTAL.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.CHECKERBOARD.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.CHECKERBOARD_STAIRS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.LILYPAD_112.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.LILYPAD_1121.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.LILYPAD_1122.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.LILYPAD_1123.get().asItem());
 			})
 
 					.build());
@@ -226,7 +234,7 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_BOOKSHELF.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_BRICKS.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_COAL_ORE.get().asItem());
-				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_COBBLESOTNE.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_COBBLESTONE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_STONE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_DIRT.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.SOUL_GRASS.get().asItem());
@@ -585,7 +593,7 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.TARGET.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.ESSENCE_CACHE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModItems.ESSENCE.get());
-				tabData.accept(MinecraftAlphaArgModModItems.EDIBLE_FIRE.get());
+				tabData.accept(MinecraftAlphaArgModModItems.LIQUIDFIED_FLAME.get());
 				tabData.accept(MinecraftAlphaArgModModBlocks.ROSE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.DANDELION.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.ASH_GRASS.get().asItem());
@@ -739,6 +747,7 @@ public class MinecraftAlphaArgModModTabs {
 			tabData.accept(MinecraftAlphaArgModModItems.GIANT_SPAWN_EGG.get());
 			tabData.accept(MinecraftAlphaArgModModItems.SOUL_ENTITY_SPAWN_EGG.get());
 			tabData.accept(MinecraftAlphaArgModModItems.ENTITY_SPAWN_EGG.get());
+			tabData.accept(MinecraftAlphaArgModModItems.STEVEN_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MinecraftAlphaArgModModItems.MYCON_TOOL_SET_AXE.get());
 			tabData.accept(MinecraftAlphaArgModModItems.MYCON_TOOL_SET_PICKAXE.get());
@@ -746,7 +755,6 @@ public class MinecraftAlphaArgModModTabs {
 			tabData.accept(MinecraftAlphaArgModModItems.MYCON_TOOL_SET_HOE.get());
 			tabData.accept(MinecraftAlphaArgModModItems.ERASER.get());
 			tabData.accept(MinecraftAlphaArgModModItems.DISMANTLER.get());
-			tabData.accept(MinecraftAlphaArgModModItems.T.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(MinecraftAlphaArgModModItems.FRYSHROOM.get());
 		}

@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "tile999.png",
+    "width": 64,
+    "height": 48,
+    "title": "Cat ",
+    "author": "Alpha 1.1.2.07"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/james22_plushie",
+  "textures": {
+    "all": "minecraft_alpha_arg_mod:block/james22m00nlander",
+    "particle": "minecraft_alpha_arg_mod:block/james22m00nlander",
+    "2": "minecraft_alpha_arg_mod:block/james22m00nlander"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/checkertiles",
+    "up": "minecraft_alpha_arg_mod:block/checkertiles",
+    "north": "minecraft_alpha_arg_mod:block/checkertiles",
+    "east": "minecraft_alpha_arg_mod:block/checkertiles",
+    "south": "minecraft_alpha_arg_mod:block/checkertiles",
+    "west": "minecraft_alpha_arg_mod:block/checkertiles",
+    "particle": "minecraft_alpha_arg_mod:block/checkertiles"
+  },
+  "render_type": "solid"
+}

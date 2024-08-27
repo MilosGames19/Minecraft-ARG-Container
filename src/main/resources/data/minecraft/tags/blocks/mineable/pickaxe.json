@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:checkerboard_stairs",
+    "minecraft_alpha_arg_mod:checkerboard",
     "minecraft_alpha_arg_mod:slaize_290",
     "minecraft_alpha_arg_mod:slaize_280",
     "minecraft_alpha_arg_mod:slaize_270",
@@ -117,7 +119,7 @@
     "minecraft_alpha_arg_mod:soul_gold_ore",
     "minecraft_alpha_arg_mod:soul_gold_block",
     "minecraft_alpha_arg_mod:soul_stone",
-    "minecraft_alpha_arg_mod:soul_cobblesotne",
+    "minecraft_alpha_arg_mod:soul_cobblestone",
     "minecraft_alpha_arg_mod:soul_coal_ore",
     "minecraft_alpha_arg_mod:soul_bricks",
     "minecraft_alpha_arg_mod:red_green_communication_block",

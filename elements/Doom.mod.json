@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "tile9991.png",
+    "width": 64,
+    "height": 48,
+    "title": "Doom",
+    "author": "Alpha 1.1.2.07"
+  }
+}

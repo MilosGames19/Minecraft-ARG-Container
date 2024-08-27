@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft_alpha_arg_mod:displaysettings/scytheskeletbetter_-_converted.item",
+  "textures": {
+    "layer0": "minecraft_alpha_arg_mod:item/stiched_texture"
+  }
+}
