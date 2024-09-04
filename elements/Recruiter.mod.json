@@ -5,7 +5,7 @@
     "mobName": "Recruiter",
     "mobLabel": " ",
     "mobModelName": "Biped",
-    "mobModelTexture": "21970565.png",
+    "mobModelTexture": "recruiter1.png",
     "transparentModelCondition": {
       "fixedValue": false
     },

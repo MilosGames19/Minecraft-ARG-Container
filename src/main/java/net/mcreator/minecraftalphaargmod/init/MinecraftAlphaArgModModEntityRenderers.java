@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.minecraftalphaargmod.client.renderer.User0CloneRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.StevenRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SpearProjectileRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SoulEntityRenderer;
@@ -16,6 +17,7 @@ import net.mcreator.minecraftalphaargmod.client.renderer.RecruiterRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.ObserverMobRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.GiantRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.ExplosiveEssenceRenderer;
+import net.mcreator.minecraftalphaargmod.client.renderer.EvilUser0Renderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.EssenceProjectileRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.EntityRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.DBGRenderer;
@@ -38,5 +40,7 @@ public class MinecraftAlphaArgModModEntityRenderers {
 		event.registerEntityRenderer(MinecraftAlphaArgModModEntities.BLUE_GIANT.get(), BlueGiantRenderer::new);
 		event.registerEntityRenderer(MinecraftAlphaArgModModEntities.BRIXGOA.get(), BrixgoaRenderer::new);
 		event.registerEntityRenderer(MinecraftAlphaArgModModEntities.STEVEN.get(), StevenRenderer::new);
+		event.registerEntityRenderer(MinecraftAlphaArgModModEntities.USER_0_CLONE.get(), User0CloneRenderer::new);
+		event.registerEntityRenderer(MinecraftAlphaArgModModEntities.EVIL_USER_0.get(), EvilUser0Renderer::new);
 	}
 }

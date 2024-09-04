@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:tv",
     "minecraft_alpha_arg_mod:fractured_mist",
     "minecraft_alpha_arg_mod:hub_tile_blue",
     "minecraft_alpha_arg_mod:hub_wall",

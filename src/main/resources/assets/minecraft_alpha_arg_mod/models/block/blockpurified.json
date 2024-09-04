@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/block_purified",
+    "up": "minecraft_alpha_arg_mod:block/block_purified",
+    "north": "minecraft_alpha_arg_mod:block/block_purified",
+    "east": "minecraft_alpha_arg_mod:block/block_purified",
+    "south": "minecraft_alpha_arg_mod:block/block_purified",
+    "west": "minecraft_alpha_arg_mod:block/block_purified",
+    "particle": "minecraft_alpha_arg_mod:block/block_purified"
+  },
+  "render_type": "solid"
+}

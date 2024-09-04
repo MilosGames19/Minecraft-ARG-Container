@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/sandag",
+    "up": "minecraft_alpha_arg_mod:block/sandag",
+    "north": "minecraft_alpha_arg_mod:block/sandag",
+    "east": "minecraft_alpha_arg_mod:block/sandag",
+    "south": "minecraft_alpha_arg_mod:block/sandag",
+    "west": "minecraft_alpha_arg_mod:block/sandag",
+    "particle": "minecraft_alpha_arg_mod:block/sandag"
+  },
+  "render_type": "solid"
+}

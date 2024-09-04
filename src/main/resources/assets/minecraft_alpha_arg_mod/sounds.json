@@ -186,5 +186,21 @@
         "stream": true
       }
     ]
+  },
+  "user0": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:user0",
+        "stream": true
+      }
+    ]
+  },
+  "find": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:find",
+        "stream": true
+      }
+    ]
   }
 }

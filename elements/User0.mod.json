@@ -1,0 +1,27 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "EPIC",
+    "texture": "user0_disc",
+    "description": "m00nlander - user0",
+    "creativeTab": {
+      "value": "CUSTOM:Miscellaneous"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:user0"
+    },
+    "lengthInTicks": 3100,
+    "analogOutput": 0,
+    "onRightClickedOnBlock": {
+      "name": "User0RightclickedOnBlock"
+    }
+  }
+}

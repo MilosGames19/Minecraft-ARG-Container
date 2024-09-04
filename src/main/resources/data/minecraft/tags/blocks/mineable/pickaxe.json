@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:tv",
+    "minecraft_alpha_arg_mod:eyeblock",
+    "minecraft_alpha_arg_mod:redlight",
+    "minecraft_alpha_arg_mod:blockpurified",
+    "minecraft_alpha_arg_mod:blockred",
     "minecraft_alpha_arg_mod:checkerboard_stairs",
     "minecraft_alpha_arg_mod:checkerboard",
     "minecraft_alpha_arg_mod:slaize_290",

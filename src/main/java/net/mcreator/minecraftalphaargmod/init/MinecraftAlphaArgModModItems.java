@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.minecraftalphaargmod.item.VoidKeyItem;
 import net.mcreator.minecraftalphaargmod.item.VoidGemItem;
+import net.mcreator.minecraftalphaargmod.item.User0Item;
 import net.mcreator.minecraftalphaargmod.item.UnusedToolItem;
 import net.mcreator.minecraftalphaargmod.item.UnusedTool9Item;
 import net.mcreator.minecraftalphaargmod.item.UnusedTool8Item;
@@ -39,12 +40,14 @@ import net.mcreator.minecraftalphaargmod.item.UnusedItem3Item;
 import net.mcreator.minecraftalphaargmod.item.UnusedItem2Item;
 import net.mcreator.minecraftalphaargmod.item.UnusedItem1Item;
 import net.mcreator.minecraftalphaargmod.item.UnusedItem10Item;
+import net.mcreator.minecraftalphaargmod.item.TheWingedCapItem;
 import net.mcreator.minecraftalphaargmod.item.TheOneTrueBookItem;
 import net.mcreator.minecraftalphaargmod.item.TeaLeafItem;
 import net.mcreator.minecraftalphaargmod.item.TeaBucketItem;
 import net.mcreator.minecraftalphaargmod.item.SunglassesItem;
 import net.mcreator.minecraftalphaargmod.item.StylisharmorItem;
 import net.mcreator.minecraftalphaargmod.item.SpearItem;
+import net.mcreator.minecraftalphaargmod.item.SpaceTimeDilatorItem;
 import net.mcreator.minecraftalphaargmod.item.ServerDriveItem;
 import net.mcreator.minecraftalphaargmod.item.ScytheItem;
 import net.mcreator.minecraftalphaargmod.item.SandcastlesItem;
@@ -83,9 +86,11 @@ import net.mcreator.minecraftalphaargmod.item.HearthenMirrorItem;
 import net.mcreator.minecraftalphaargmod.item.GyldanSverdItem;
 import net.mcreator.minecraftalphaargmod.item.GrayGunItem;
 import net.mcreator.minecraftalphaargmod.item.GranularSaltItem;
+import net.mcreator.minecraftalphaargmod.item.FunnySandItem;
 import net.mcreator.minecraftalphaargmod.item.FryshroomItem;
 import net.mcreator.minecraftalphaargmod.item.FrigidBitsItem;
 import net.mcreator.minecraftalphaargmod.item.FlamebergeItem;
+import net.mcreator.minecraftalphaargmod.item.FindItem;
 import net.mcreator.minecraftalphaargmod.item.ExchangerItem;
 import net.mcreator.minecraftalphaargmod.item.EssenceRifleItem;
 import net.mcreator.minecraftalphaargmod.item.EssenceItem;
@@ -103,6 +108,7 @@ import net.mcreator.minecraftalphaargmod.item.BismuthIngotItem;
 import net.mcreator.minecraftalphaargmod.item.AssetstilesdenyItem;
 import net.mcreator.minecraftalphaargmod.item.AssetstilesacceptItem;
 import net.mcreator.minecraftalphaargmod.item.ArrivalItem;
+import net.mcreator.minecraftalphaargmod.item.Andrewgames722ItemItem;
 import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
 
 public class MinecraftAlphaArgModModItems {
@@ -792,6 +798,25 @@ public class MinecraftAlphaArgModModItems {
 	public static final RegistryObject<Item> LILYPAD_1122 = block(MinecraftAlphaArgModModBlocks.LILYPAD_1122);
 	public static final RegistryObject<Item> LILYPAD_1123 = block(MinecraftAlphaArgModModBlocks.LILYPAD_1123);
 	public static final RegistryObject<Item> STEVEN_SPAWN_EGG = REGISTRY.register("steven_spawn_egg", () -> new ForgeSpawnEggItem(MinecraftAlphaArgModModEntities.STEVEN, -16737895, -2711704, new Item.Properties()));
+	public static final RegistryObject<Item> NEXUS_TEST = block(MinecraftAlphaArgModModBlocks.NEXUS_TEST);
+	public static final RegistryObject<Item> USER_0 = REGISTRY.register("user_0", () -> new User0Item());
+	public static final RegistryObject<Item> USER_0_CLONE_SPAWN_EGG = REGISTRY.register("user_0_clone_spawn_egg", () -> new ForgeSpawnEggItem(MinecraftAlphaArgModModEntities.USER_0_CLONE, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> EVIL_USER_0_SPAWN_EGG = REGISTRY.register("evil_user_0_spawn_egg", () -> new ForgeSpawnEggItem(MinecraftAlphaArgModModEntities.EVIL_USER_0, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> FIND = REGISTRY.register("find", () -> new FindItem());
+	public static final RegistryObject<Item> ANDREWGAMES_722_ITEM = REGISTRY.register("andrewgames_722_item", () -> new Andrewgames722ItemItem());
+	public static final RegistryObject<Item> BLOCKRED = block(MinecraftAlphaArgModModBlocks.BLOCKRED);
+	public static final RegistryObject<Item> BLOCKPURIFIED = block(MinecraftAlphaArgModModBlocks.BLOCKPURIFIED);
+	public static final RegistryObject<Item> ITEMCHEST = block(MinecraftAlphaArgModModBlocks.ITEMCHEST);
+	public static final RegistryObject<Item> REDLIGHT = block(MinecraftAlphaArgModModBlocks.REDLIGHT);
+	public static final RegistryObject<Item> EYEBLOCK = block(MinecraftAlphaArgModModBlocks.EYEBLOCK);
+	public static final RegistryObject<Item> TV = block(MinecraftAlphaArgModModBlocks.TV);
+	public static final RegistryObject<Item> CARPET = block(MinecraftAlphaArgModModBlocks.CARPET);
+	public static final RegistryObject<Item> THE_WINGED_CAP_HELMET = REGISTRY.register("the_winged_cap_helmet", () -> new TheWingedCapItem.Helmet());
+	public static final RegistryObject<Item> SPACE_TIME_DILATOR = REGISTRY.register("space_time_dilator", () -> new SpaceTimeDilatorItem());
+	public static final RegistryObject<Item> GLASS = block(MinecraftAlphaArgModModBlocks.GLASS);
+	public static final RegistryObject<Item> SONYA = block(MinecraftAlphaArgModModBlocks.SONYA);
+	public static final RegistryObject<Item> TOTALY_NOT_MINDECONTROLLING_SAND = block(MinecraftAlphaArgModModBlocks.TOTALY_NOT_MINDECONTROLLING_SAND);
+	public static final RegistryObject<Item> FUNNY_SAND = REGISTRY.register("funny_sand", () -> new FunnySandItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

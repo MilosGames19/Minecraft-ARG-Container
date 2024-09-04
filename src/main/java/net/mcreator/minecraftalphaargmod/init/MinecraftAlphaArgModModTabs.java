@@ -97,6 +97,22 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.LILYPAD_1121.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.LILYPAD_1122.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.LILYPAD_1123.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.USER_0.get());
+				tabData.accept(MinecraftAlphaArgModModItems.FIND.get());
+				tabData.accept(MinecraftAlphaArgModModItems.ANDREWGAMES_722_ITEM.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.BLOCKRED.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.BLOCKPURIFIED.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.ITEMCHEST.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.REDLIGHT.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.EYEBLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.TV.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.CARPET.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.THE_WINGED_CAP_HELMET.get());
+				tabData.accept(MinecraftAlphaArgModModItems.SPACE_TIME_DILATOR.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.GLASS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.SONYA.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.TOTALY_NOT_MINDECONTROLLING_SAND.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModItems.FUNNY_SAND.get());
 			})
 
 					.build());
@@ -430,6 +446,12 @@ public class MinecraftAlphaArgModModTabs {
 			})
 
 					.build());
+	public static final RegistryObject<CreativeModeTab> NEXUS = REGISTRY.register("nexus",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.minecraft_alpha_arg_mod.nexus")).icon(() -> new ItemStack(MinecraftAlphaArgModModBlocks.NEXUS_TEST.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_TEST.get().asItem());
+			})
+
+					.build());
 	public static final RegistryObject<CreativeModeTab> RUBY_ALPHA_VOID_DUNG = REGISTRY.register("ruby_alpha_void_dung",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.minecraft_alpha_arg_mod.ruby_alpha_void_dung")).icon(() -> new ItemStack(MinecraftAlphaArgModModBlocks.PURPUR_BRICKS.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(MinecraftAlphaArgModModBlocks.PURPUR_BRICKS.get().asItem());
@@ -748,6 +770,8 @@ public class MinecraftAlphaArgModModTabs {
 			tabData.accept(MinecraftAlphaArgModModItems.SOUL_ENTITY_SPAWN_EGG.get());
 			tabData.accept(MinecraftAlphaArgModModItems.ENTITY_SPAWN_EGG.get());
 			tabData.accept(MinecraftAlphaArgModModItems.STEVEN_SPAWN_EGG.get());
+			tabData.accept(MinecraftAlphaArgModModItems.USER_0_CLONE_SPAWN_EGG.get());
+			tabData.accept(MinecraftAlphaArgModModItems.EVIL_USER_0_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MinecraftAlphaArgModModItems.MYCON_TOOL_SET_AXE.get());
 			tabData.accept(MinecraftAlphaArgModModItems.MYCON_TOOL_SET_PICKAXE.get());

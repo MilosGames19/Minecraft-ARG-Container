@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/nexustest",
+    "up": "minecraft_alpha_arg_mod:block/nexustest",
+    "north": "minecraft_alpha_arg_mod:block/nexustest",
+    "east": "minecraft_alpha_arg_mod:block/nexustest",
+    "south": "minecraft_alpha_arg_mod:block/nexustest",
+    "west": "minecraft_alpha_arg_mod:block/nexustest",
+    "particle": "minecraft_alpha_arg_mod:block/nexustest"
+  },
+  "render_type": "solid"
+}

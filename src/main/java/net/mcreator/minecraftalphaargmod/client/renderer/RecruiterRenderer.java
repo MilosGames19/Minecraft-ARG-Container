@@ -18,6 +18,6 @@ public class RecruiterRenderer extends HumanoidMobRenderer<RecruiterEntity, Huma
 
 	@Override
 	public ResourceLocation getTextureLocation(RecruiterEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/21970565.png");
+		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/recruiter1.png");
 	}
 }

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:find",
+    "minecraft_alpha_arg_mod:user_0",
     "minecraft_alpha_arg_mod:arrival",
     "minecraft_alpha_arg_mod:cat_theme",
     "minecraft_alpha_arg_mod:sandcastles",

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft_alpha_arg_mod:custom/sand",
+  "textures": {
+    "missing": "minecraft_alpha_arg_mod:block/sandag",
+    "particle": "minecraft_alpha_arg_mod:item/sandag"
+  }
+}

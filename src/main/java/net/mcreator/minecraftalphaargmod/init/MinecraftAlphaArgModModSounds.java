@@ -36,4 +36,6 @@ public class MinecraftAlphaArgModModSounds {
 	public static final RegistryObject<SoundEvent> INFUSE = REGISTRY.register("infuse", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "infuse")));
 	public static final RegistryObject<SoundEvent> CAT_THEME = REGISTRY.register("cat_theme", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "cat_theme")));
 	public static final RegistryObject<SoundEvent> ARRIVAL = REGISTRY.register("arrival", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "arrival")));
+	public static final RegistryObject<SoundEvent> USER0 = REGISTRY.register("user0", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "user0")));
+	public static final RegistryObject<SoundEvent> FIND = REGISTRY.register("find", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "find")));
 }

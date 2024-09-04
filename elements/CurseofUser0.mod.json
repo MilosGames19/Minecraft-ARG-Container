@@ -1,0 +1,23 @@
+{
+  "_fv": 60,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Curse of user0",
+    "icon": "user0_effect.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "CurseofUser0ActiveTickCondition"
+    },
+    "onExpired": {
+      "name": "CurseofUser0EffectExpires"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/redlight",
+    "up": "minecraft_alpha_arg_mod:block/redlight",
+    "north": "minecraft_alpha_arg_mod:block/redlight",
+    "east": "minecraft_alpha_arg_mod:block/redlight",
+    "south": "minecraft_alpha_arg_mod:block/redlight",
+    "west": "minecraft_alpha_arg_mod:block/redlight",
+    "particle": "minecraft_alpha_arg_mod:block/redlight"
+  },
+  "render_type": "solid"
+}

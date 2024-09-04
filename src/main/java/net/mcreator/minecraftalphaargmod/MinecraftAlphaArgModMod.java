@@ -26,6 +26,7 @@ import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModVillagerPro
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModTabs;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModSounds;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModPaintings;
+import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMobEffects;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
 import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModFeatures;
@@ -68,6 +69,7 @@ public class MinecraftAlphaArgModMod {
 		MinecraftAlphaArgModModTabs.REGISTRY.register(bus);
 		MinecraftAlphaArgModModFeatures.REGISTRY.register(bus);
 		StructureFeature.REGISTRY.register(bus);
+		MinecraftAlphaArgModModMobEffects.REGISTRY.register(bus);
 
 		MinecraftAlphaArgModModPaintings.REGISTRY.register(bus);
 

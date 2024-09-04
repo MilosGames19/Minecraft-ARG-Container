@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/carpet",
+    "up": "minecraft_alpha_arg_mod:block/carpet",
+    "north": "minecraft_alpha_arg_mod:block/carpet",
+    "east": "minecraft_alpha_arg_mod:block/carpet",
+    "south": "minecraft_alpha_arg_mod:block/carpet",
+    "west": "minecraft_alpha_arg_mod:block/carpet",
+    "particle": "minecraft_alpha_arg_mod:block/carpet"
+  },
+  "render_type": "solid"
+}
