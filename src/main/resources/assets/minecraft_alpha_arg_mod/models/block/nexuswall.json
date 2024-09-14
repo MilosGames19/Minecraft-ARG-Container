@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/nexus_wall",
+    "up": "minecraft_alpha_arg_mod:block/nexus_wall",
+    "north": "minecraft_alpha_arg_mod:block/nexus_wall",
+    "east": "minecraft_alpha_arg_mod:block/nexus_wall",
+    "south": "minecraft_alpha_arg_mod:block/nexus_wall",
+    "west": "minecraft_alpha_arg_mod:block/nexus_wall",
+    "particle": "minecraft_alpha_arg_mod:block/nexus_wall"
+  },
+  "render_type": "solid"
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:nexus_bricks",
     "minecraft_alpha_arg_mod:obsidian_forge",
     "minecraft_alpha_arg_mod:soul_obsidian",
     "minecraft_alpha_arg_mod:fortified_black_glass",

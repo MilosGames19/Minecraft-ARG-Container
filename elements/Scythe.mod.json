@@ -29,11 +29,9 @@
     "enableArmPose": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
-    "damageVsEntity": 16.0,
+    "damageVsEntity": 20.0,
     "specialInformation": {
-      "fixedValue": [
-        "Forge a victorious new path."
-      ]
+      "fixedValue": []
     },
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

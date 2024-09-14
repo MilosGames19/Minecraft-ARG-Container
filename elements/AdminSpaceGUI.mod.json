@@ -15,7 +15,7 @@
         "data": {
           "image": "bogulied.png",
           "use1Xscale": true,
-          "x": 126,
+          "x": 124,
           "y": 27
         }
       },
@@ -26,7 +26,7 @@
           "name": "asc",
           "width": 120,
           "height": 20,
-          "x": 154,
+          "x": 150,
           "y": 53
         }
       },
@@ -42,7 +42,7 @@
           "width": 61,
           "height": 20,
           "x": 181,
-          "y": 169
+          "y": 170
         }
       },
       {
@@ -73,6 +73,15 @@
           },
           "x": 259,
           "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moechang.png",
+          "use1Xscale": true,
+          "x": 184,
+          "y": 83
         }
       }
     ],

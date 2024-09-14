@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/kleebopumboulardungleusouparjoulargiaryian",
+    "up": "minecraft_alpha_arg_mod:block/kleebopumboulardungleusouparjoulargiaryian",
+    "north": "minecraft_alpha_arg_mod:block/kleebopumboulardungleusouparjoulargiaryian",
+    "east": "minecraft_alpha_arg_mod:block/kleebopumboulardungleusouparjoulargiaryian",
+    "south": "minecraft_alpha_arg_mod:block/kleebopumboulardungleusouparjoulargiaryian",
+    "west": "minecraft_alpha_arg_mod:block/kleebopumboulardungleusouparjoulargiaryian",
+    "particle": "minecraft_alpha_arg_mod:block/kleebopumboulardungleusouparjoulargiaryian"
+  },
+  "render_type": "solid"
+}

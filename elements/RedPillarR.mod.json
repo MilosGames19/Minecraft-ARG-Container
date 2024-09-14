@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RedPillar"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RedPillar"
+      },
+      {
+        "value": "Items.GLOW_INK_SAC"
+      },
+      {
+        "value": "CUSTOM:RedPillar"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RedPillar"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RedPillarUpdatedVersion"
+    },
+    "name": "red_pillar_up_r",
+    "namespace": "mod"
+  }
+}

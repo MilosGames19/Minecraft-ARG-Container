@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/blorbing",
+    "up": "minecraft_alpha_arg_mod:block/blorbing",
+    "north": "minecraft_alpha_arg_mod:block/blorbing",
+    "east": "minecraft_alpha_arg_mod:block/blorbing",
+    "south": "minecraft_alpha_arg_mod:block/blorbing",
+    "west": "minecraft_alpha_arg_mod:block/blorbing",
+    "particle": "minecraft_alpha_arg_mod:block/blorbing"
+  },
+  "render_type": "solid"
+}

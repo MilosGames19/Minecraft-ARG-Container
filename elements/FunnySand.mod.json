@@ -38,6 +38,9 @@
     "onRightClickedOnBlock": {
       "name": "FunnySandRightclickedOnBlock"
     },
+    "onFinishUsingItem": {
+      "name": "FunnySandPlayerFinishesUsingItem"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

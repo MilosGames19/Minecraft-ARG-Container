@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:grid_planks",
+    "minecraft_alpha_arg_mod:ethereal_sap_log",
+    "minecraft_alpha_arg_mod:amber_log",
+    "minecraft_alpha_arg_mod:nexus_old_data_wood",
+    "minecraft_alpha_arg_mod:nexus_old_data",
     "minecraft_alpha_arg_mod:itemchest",
     "minecraft_alpha_arg_mod:developer_portal",
     "minecraft_alpha_arg_mod:hub_highwood_roots",

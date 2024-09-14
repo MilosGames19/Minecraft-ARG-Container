@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/gooboo1",
+    "up": "minecraft_alpha_arg_mod:block/gooboo1",
+    "north": "minecraft_alpha_arg_mod:block/gooboo1",
+    "east": "minecraft_alpha_arg_mod:block/gooboo1",
+    "south": "minecraft_alpha_arg_mod:block/gooboo1",
+    "west": "minecraft_alpha_arg_mod:block/gooboo1",
+    "particle": "minecraft_alpha_arg_mod:block/gooboo1"
+  },
+  "render_type": "solid"
+}

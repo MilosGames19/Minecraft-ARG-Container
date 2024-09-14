@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "user0_disc",
+    "description": "m00nlander - Last Stand Of The Legendary Trio",
+    "creativeTab": {
+      "value": "CUSTOM:Miscellaneous"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:last_stand_of_the_legendary_trio"
+    },
+    "lengthInTicks": 5820,
+    "analogOutput": 0
+  }
+}

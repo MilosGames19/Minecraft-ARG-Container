@@ -202,5 +202,53 @@
         "stream": true
       }
     ]
+  },
+  "wake_up_james": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:wake_up_james",
+        "stream": true
+      }
+    ]
+  },
+  "two_winged_angel": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:two_winged_angel",
+        "stream": true
+      }
+    ]
+  },
+  "last_stand_of_the_legendary_trio": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:last_stand_of_the_legendary_trio",
+        "stream": true
+      }
+    ]
+  },
+  "denied": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:denied",
+        "stream": true
+      }
+    ]
+  },
+  "believe_in_yourself": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:believe_in_yourself",
+        "stream": true
+      }
+    ]
+  },
+  "ballerinaoftheland": {
+    "sounds": [
+      {
+        "name": "minecraft_alpha_arg_mod:ballerina_of_the_land",
+        "stream": true
+      }
+    ]
   }
 }

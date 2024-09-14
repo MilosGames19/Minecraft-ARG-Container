@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/plumbo",
+    "up": "minecraft_alpha_arg_mod:block/plumbo",
+    "north": "minecraft_alpha_arg_mod:block/plumbo",
+    "east": "minecraft_alpha_arg_mod:block/plumbo",
+    "south": "minecraft_alpha_arg_mod:block/plumbo",
+    "west": "minecraft_alpha_arg_mod:block/plumbo",
+    "particle": "minecraft_alpha_arg_mod:block/plumbo"
+  },
+  "render_type": "solid"
+}

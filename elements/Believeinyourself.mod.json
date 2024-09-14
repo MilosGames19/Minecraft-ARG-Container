@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "user0_disc",
+    "description": "m00nlander - Believe in yourself",
+    "creativeTab": {
+      "value": "CUSTOM:Miscellaneous"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:believe_in_yourself"
+    },
+    "lengthInTicks": 1740,
+    "analogOutput": 0
+  }
+}

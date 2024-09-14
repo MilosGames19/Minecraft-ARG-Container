@@ -113,6 +113,13 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.SONYA.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.TOTALY_NOT_MINDECONTROLLING_SAND.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModItems.FUNNY_SAND.get());
+				tabData.accept(MinecraftAlphaArgModModItems.WAKE_UP_JAMES.get());
+				tabData.accept(MinecraftAlphaArgModModItems.TWO_WINGED_ANGEL.get());
+				tabData.accept(MinecraftAlphaArgModModItems.LAST_STAND_OF_THE_LEGENDARY_TRIO.get());
+				tabData.accept(MinecraftAlphaArgModModItems.DENIED.get());
+				tabData.accept(MinecraftAlphaArgModModItems.BELIEVEINYOURSELF.get());
+				tabData.accept(MinecraftAlphaArgModModItems.BALLERINAOFTHE_LAND.get());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WHERE_IS_SKY_BLOCK.get().asItem());
 			})
 
 					.build());
@@ -131,6 +138,7 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.TILE_STAIRS.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.BRICK_WALL_STAIRS.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.BRICK_WALL_SLAB.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.RED_PILLAR_UPDATED_VERSION.get().asItem());
 			})
 
 					.build());
@@ -443,12 +451,66 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_270.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_280.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.SLAIZE_290.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.TBOTV_DOOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WHITE_PSI_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.BLUE_PSI_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.ANKH_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.UMBRELLA_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.MONITOR_24.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.FISH_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WHITE_STAR_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WHITE_MOJANG_BLOCK_TBOTV.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NOTE_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.CIRCLE_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.ARROW_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.DOUBLE_ARROW_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.QUESTION_MARK_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.GI_4_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.UNKNOWN_SYMBOL_MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.UNKNOWNSYMBOL_0MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.UNKNOWNSYMBOL_1MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.UNKNOWNSYMBOL_2MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.UNKNOWNSYMBOL_3MONITOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WHITE_COLUMN.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.LIGHT_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WALL_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WALL_BLOCK_1.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.BLACK_FLOOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.BLACK_FLOOR_1.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WALL_BLOCK_2.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WALL_BLOCK_3.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WALL_BLOCK_4.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.GOOGOGO_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.GOOGOGO_STAIRS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.STAR_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.GROUNDSPONGEFLAP_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.BOTOM_2_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.VOID_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.GRATE_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.FLOWDEV_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.PERIL_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.ASHES.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.AMBER_LOG.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.CORRIDOR_DEBUG_SPHERE.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.ETHEREAL_SAP_LOG.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.GRID_PLANKS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.MACHINATION_CONVERTER.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.MARBLE.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.LIVING_VOID_GRASS.get().asItem());
 			})
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> NEXUS = REGISTRY.register("nexus",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.minecraft_alpha_arg_mod.nexus")).icon(() -> new ItemStack(MinecraftAlphaArgModModBlocks.NEXUS_TEST.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_TEST.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_BRICKS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_OLD_DATA.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_TILES.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUSWALL.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_DISPOSAL_SECTOR.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_CAUTION_BLOCK.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_OLD_DATA_WOOD.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.NEXUS_OLD_DATA_WALL.get().asItem());
 			})
 
 					.build());
@@ -763,6 +825,7 @@ public class MinecraftAlphaArgModModTabs {
 			tabData.accept(MinecraftAlphaArgModModItems.STYLISHARMOR_LEGGINGS.get());
 			tabData.accept(MinecraftAlphaArgModModItems.STYLISHARMOR_BOOTS.get());
 			tabData.accept(MinecraftAlphaArgModModItems.SPEAR.get());
+			tabData.accept(MinecraftAlphaArgModModItems.REPELLER.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MinecraftAlphaArgModModItems.OBSERVER_MOB_SPAWN_EGG.get());
 			tabData.accept(MinecraftAlphaArgModModItems.RECRUITER_SPAWN_EGG.get());

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/perilblock",
+    "up": "minecraft_alpha_arg_mod:block/perilblock",
+    "north": "minecraft_alpha_arg_mod:block/perilblock",
+    "east": "minecraft_alpha_arg_mod:block/perilblock",
+    "south": "minecraft_alpha_arg_mod:block/perilblock",
+    "west": "minecraft_alpha_arg_mod:block/perilblock",
+    "particle": "minecraft_alpha_arg_mod:block/perilblock"
+  },
+  "render_type": "solid"
+}

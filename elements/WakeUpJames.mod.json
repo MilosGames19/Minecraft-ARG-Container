@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "user0_disc",
+    "description": "m00nlander - Wake up James",
+    "creativeTab": {
+      "value": "CUSTOM:Miscellaneous"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:wake_up_james"
+    },
+    "lengthInTicks": 4100,
+    "analogOutput": 0
+  }
+}

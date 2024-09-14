@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/thatsillydarkness2.0",
+    "up": "minecraft_alpha_arg_mod:block/thatsillydarkness2.0",
+    "north": "minecraft_alpha_arg_mod:block/thatsillydarkness2.0",
+    "east": "minecraft_alpha_arg_mod:block/thatsillydarkness2.0",
+    "south": "minecraft_alpha_arg_mod:block/thatsillydarkness2.0",
+    "west": "minecraft_alpha_arg_mod:block/thatsillydarkness2.0",
+    "particle": "minecraft_alpha_arg_mod:block/thatsillydarkness2.0"
+  },
+  "render_type": "solid"
+}

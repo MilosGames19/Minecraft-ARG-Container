@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/starblock",
+    "up": "minecraft_alpha_arg_mod:block/starblock",
+    "north": "minecraft_alpha_arg_mod:block/starblock",
+    "east": "minecraft_alpha_arg_mod:block/starblock",
+    "south": "minecraft_alpha_arg_mod:block/starblock",
+    "west": "minecraft_alpha_arg_mod:block/starblock",
+    "particle": "minecraft_alpha_arg_mod:block/starblock"
+  },
+  "render_type": "solid"
+}

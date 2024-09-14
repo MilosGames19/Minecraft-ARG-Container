@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/vertical_planks",
+    "up": "minecraft_alpha_arg_mod:block/vertical_planks",
+    "north": "minecraft_alpha_arg_mod:block/vertical_planks",
+    "east": "minecraft_alpha_arg_mod:block/vertical_planks",
+    "south": "minecraft_alpha_arg_mod:block/vertical_planks",
+    "west": "minecraft_alpha_arg_mod:block/vertical_planks",
+    "particle": "minecraft_alpha_arg_mod:block/vertical_planks"
+  },
+  "render_type": "solid"
+}

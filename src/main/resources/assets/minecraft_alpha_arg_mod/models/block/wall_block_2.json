@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_alpha_arg_mod:block/schleemo",
+    "up": "minecraft_alpha_arg_mod:block/schleemo",
+    "north": "minecraft_alpha_arg_mod:block/schleemo",
+    "east": "minecraft_alpha_arg_mod:block/schleemo",
+    "south": "minecraft_alpha_arg_mod:block/schleemo",
+    "west": "minecraft_alpha_arg_mod:block/schleemo",
+    "particle": "minecraft_alpha_arg_mod:block/schleemo"
+  },
+  "render_type": "solid"
+}

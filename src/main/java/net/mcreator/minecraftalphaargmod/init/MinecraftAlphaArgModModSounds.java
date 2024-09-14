@@ -38,4 +38,11 @@ public class MinecraftAlphaArgModModSounds {
 	public static final RegistryObject<SoundEvent> ARRIVAL = REGISTRY.register("arrival", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "arrival")));
 	public static final RegistryObject<SoundEvent> USER0 = REGISTRY.register("user0", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "user0")));
 	public static final RegistryObject<SoundEvent> FIND = REGISTRY.register("find", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "find")));
+	public static final RegistryObject<SoundEvent> WAKE_UP_JAMES = REGISTRY.register("wake_up_james", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "wake_up_james")));
+	public static final RegistryObject<SoundEvent> TWO_WINGED_ANGEL = REGISTRY.register("two_winged_angel", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "two_winged_angel")));
+	public static final RegistryObject<SoundEvent> LAST_STAND_OF_THE_LEGENDARY_TRIO = REGISTRY.register("last_stand_of_the_legendary_trio",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "last_stand_of_the_legendary_trio")));
+	public static final RegistryObject<SoundEvent> DENIED = REGISTRY.register("denied", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "denied")));
+	public static final RegistryObject<SoundEvent> BELIEVE_IN_YOURSELF = REGISTRY.register("believe_in_yourself", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "believe_in_yourself")));
+	public static final RegistryObject<SoundEvent> BALLERINAOFTHELAND = REGISTRY.register("ballerinaoftheland", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("minecraft_alpha_arg_mod", "ballerinaoftheland")));
 }
