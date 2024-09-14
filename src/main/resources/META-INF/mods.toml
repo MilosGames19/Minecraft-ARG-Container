@@ -4,7 +4,7 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="minecraft_alpha_arg_mod"
-version="0.3.5"
+version="0.3.6"
 displayName="Minecraft ARG Container"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
