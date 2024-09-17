@@ -27,6 +27,7 @@ import net.mcreator.minecraftalphaargmod.block.WhitePSIMonitorBlock;
 import net.mcreator.minecraftalphaargmod.block.WhiteMojangBlockTBOTVBlock;
 import net.mcreator.minecraftalphaargmod.block.WhiteMojangBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.WhiteGlassBlock;
+import net.mcreator.minecraftalphaargmod.block.WhiteColumnCrossBlock;
 import net.mcreator.minecraftalphaargmod.block.WhiteColumnBlock;
 import net.mcreator.minecraftalphaargmod.block.WhereIsSkyBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.WeaponUpgraderBlock;
@@ -648,6 +649,7 @@ import net.mcreator.minecraftalphaargmod.block.AmberLogBlock;
 import net.mcreator.minecraftalphaargmod.block.AlternativeDimensionWallBlock;
 import net.mcreator.minecraftalphaargmod.block.AlphaverLogoBlock;
 import net.mcreator.minecraftalphaargmod.block.AfliteOreBlock;
+import net.mcreator.minecraftalphaargmod.block.AdmincolumncrossBlock;
 import net.mcreator.minecraftalphaargmod.block.AdminTerminalBlock;
 import net.mcreator.minecraftalphaargmod.block.AdminTechBlock;
 import net.mcreator.minecraftalphaargmod.block.AdminSpaceGlassBlock;
@@ -1304,6 +1306,8 @@ public class MinecraftAlphaArgModModBlocks {
 	public static final RegistryObject<Block> MACHINATION_CONVERTER = REGISTRY.register("machination_converter", () -> new MachinationConverterBlock());
 	public static final RegistryObject<Block> MARBLE = REGISTRY.register("marble", () -> new MarbleBlock());
 	public static final RegistryObject<Block> LIVING_VOID_GRASS = REGISTRY.register("living_void_grass", () -> new LivingVoidGrassBlock());
+	public static final RegistryObject<Block> WHITE_COLUMN_CROSS = REGISTRY.register("white_column_cross", () -> new WhiteColumnCrossBlock());
+	public static final RegistryObject<Block> ADMINCOLUMNCROSS = REGISTRY.register("admincolumncross", () -> new AdmincolumncrossBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

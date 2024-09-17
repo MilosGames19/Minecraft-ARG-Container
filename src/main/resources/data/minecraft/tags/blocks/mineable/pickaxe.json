@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft_alpha_arg_mod:admincolumncross",
+    "minecraft_alpha_arg_mod:white_column_cross",
     "minecraft_alpha_arg_mod:marble",
     "minecraft_alpha_arg_mod:machination_converter",
     "minecraft_alpha_arg_mod:corridor_debug_sphere",

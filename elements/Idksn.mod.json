@@ -2,22 +2,22 @@
   "_fv": 60,
   "_type": "structure",
   "definition": {
-    "structure": "authenticator",
+    "structure": "altar",
     "projection": "rigid",
     "ignoredBlocks": [
       {
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 1001,
-    "separation": 1000,
+    "spacing": 2421,
+    "separation": 2050,
     "restrictionBiomes": [
       {
         "value": "#minecraft:is_overworld"
       }
     ],
-    "surfaceDetectionType": "WORLD_SURFACE_WG",
-    "terrainAdaptation": "none",
+    "surfaceDetectionType": "WORLD_SURFACE",
+    "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",
     "size": 1,
     "maxDistanceFromCenter": 64,

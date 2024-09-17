@@ -16601,19 +16601,6 @@
       }
     },
     {
-      "name": "Bar",
-      "type": "overlay",
-      "sortid": 1072,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bar",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecraftalphaargmod/client/screens/BarOverlay.java"
-        ]
-      }
-    },
-    {
       "name": "FallOverwrite",
       "type": "procedure",
       "sortid": 1073,
@@ -20085,6 +20072,40 @@
           "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/living_void_grass.json"
         ]
       }
+    },
+    {
+      "name": "WhiteColumnCross",
+      "type": "block",
+      "sortid": 1286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_column_cross",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/white_column_cross.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/WhiteColumnCrossBlock.java",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/white_column_cross.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/white_column_cross.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/white_column_cross.json"
+        ]
+      }
+    },
+    {
+      "name": "Admincolumncross",
+      "type": "block",
+      "sortid": 1287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "admincolumncross",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/item/admincolumncross.json",
+          "src/main/resources/data/minecraft_alpha_arg_mod/loot_tables/blocks/admincolumncross.json",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/blockstates/admincolumncross.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/AdmincolumncrossBlock.java",
+          "src/main/resources/assets/minecraft_alpha_arg_mod/models/block/admincolumncross.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -20493,6 +20514,8 @@
       "CUSTOM:HighwoodWorkbench"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Admincolumncross",
+      "~CUSTOM:WhiteColumnCross",
       "~CUSTOM:Marble",
       "~CUSTOM:MachinationConverter",
       "~CUSTOM:CorridorDebugSphere",
@@ -20776,6 +20799,7 @@
       "~CUSTOM:Oslab"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:WhiteColumnCross",
       "~CUSTOM:Marble",
       "~CUSTOM:MachinationConverter",
       "~CUSTOM:CorridorDebugSphere",
@@ -21548,6 +21572,7 @@
       "block.minecraft_alpha_arg_mod.mixed_grass_block": "Mixed Grass Block",
       "item.minecraft_alpha_arg_mod.unused_tool_2": "§kUnused Tool",
       "painting.minecraft_alpha_arg_mod.doom.title": "Doom",
+      "block.minecraft_alpha_arg_mod.admincolumncross": "Admin Column",
       "item.minecraft_alpha_arg_mod.unused_tool_9": "§kUnused Tool",
       "block.minecraft_alpha_arg_mod.fractured_influence": "Fractured Influence Block",
       "block.minecraft_alpha_arg_mod.hallowed_stone": "Hallowed Stone",
@@ -21572,6 +21597,7 @@
       "block.minecraft_alpha_arg_mod.sad_communication_block": "Sad Communication Block",
       "painting.minecraft_alpha_arg_mod.landscaping.title": "Landscaping",
       "painting.minecraft_alpha_arg_mod.celestial_center.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.white_column_cross": "White Column Cross",
       "painting.minecraft_alpha_arg_mod.someone.author": "Alpha 1.1.2.07",
       "subtitles.find": "",
       "painting.minecraft_alpha_arg_mod.jam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -22772,6 +22798,7 @@
       "block.minecraft_alpha_arg_mod.mixed_grass_block": "Mixed Grass Block",
       "item.minecraft_alpha_arg_mod.unused_tool_2": "§kUnused Tool",
       "painting.minecraft_alpha_arg_mod.doom.title": "Doom",
+      "block.minecraft_alpha_arg_mod.admincolumncross": "Admin Column",
       "item.minecraft_alpha_arg_mod.unused_tool_9": "§kUnused Tool",
       "block.minecraft_alpha_arg_mod.fractured_influence": "Fractured Influence Block",
       "block.minecraft_alpha_arg_mod.hallowed_stone": "Hallowed Stone",
@@ -22796,6 +22823,7 @@
       "block.minecraft_alpha_arg_mod.sad_communication_block": "Sad Communication Block",
       "painting.minecraft_alpha_arg_mod.landscaping.title": "Landscaping",
       "painting.minecraft_alpha_arg_mod.celestial_center.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.white_column_cross": "White Column Cross",
       "painting.minecraft_alpha_arg_mod.someone.author": "Alpha 1.1.2.07",
       "subtitles.find": "",
       "painting.minecraft_alpha_arg_mod.jam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -23996,6 +24024,7 @@
       "block.minecraft_alpha_arg_mod.mixed_grass_block": "Mixed Grass Block",
       "item.minecraft_alpha_arg_mod.unused_tool_2": "§kUnused Tool",
       "painting.minecraft_alpha_arg_mod.doom.title": "Doom",
+      "block.minecraft_alpha_arg_mod.admincolumncross": "Admin Column Cross",
       "item.minecraft_alpha_arg_mod.unused_tool_9": "§kUnused Tool",
       "block.minecraft_alpha_arg_mod.fractured_influence": "Fractured Influence Block",
       "block.minecraft_alpha_arg_mod.hallowed_stone": "Hallowed Stone",
@@ -24020,6 +24049,7 @@
       "block.minecraft_alpha_arg_mod.sad_communication_block": "Sad Communication Block",
       "painting.minecraft_alpha_arg_mod.landscaping.title": "Landscaping",
       "painting.minecraft_alpha_arg_mod.celestial_center.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.white_column_cross": "White Column Cross",
       "painting.minecraft_alpha_arg_mod.someone.author": "Alpha 1.1.2.07",
       "subtitles.find": "",
       "painting.minecraft_alpha_arg_mod.jam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -25220,6 +25250,7 @@
       "block.minecraft_alpha_arg_mod.mixed_grass_block": "Mixed Grass Block",
       "item.minecraft_alpha_arg_mod.unused_tool_2": "§kUnused Tool",
       "painting.minecraft_alpha_arg_mod.doom.title": "Doom",
+      "block.minecraft_alpha_arg_mod.admincolumncross": "Admin Column",
       "item.minecraft_alpha_arg_mod.unused_tool_9": "§kUnused Tool",
       "block.minecraft_alpha_arg_mod.fractured_influence": "Fractured Influence Block",
       "block.minecraft_alpha_arg_mod.hallowed_stone": "Hallowed Stone",
@@ -25244,6 +25275,7 @@
       "block.minecraft_alpha_arg_mod.sad_communication_block": "Sad Communication Block",
       "painting.minecraft_alpha_arg_mod.landscaping.title": "Landscaping",
       "painting.minecraft_alpha_arg_mod.celestial_center.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.minecraft_alpha_arg_mod.white_column_cross": "White Column Cross",
       "painting.minecraft_alpha_arg_mod.someone.author": "Alpha 1.1.2.07",
       "subtitles.find": "",
       "painting.minecraft_alpha_arg_mod.jam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -25827,9 +25859,9 @@
     "modName": "Minecraft ARG Container",
     "version": "0.3.6 Beta",
     "description": "This mod brings blocks, items and features form popular minecraft ARGs",
-    "author": "Glitchy, Miki110, atom20003113",
+    "author": "Glitchy, Miki110, atom20003113, marioood,",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "Unported GNU Affero General Public License version 3 (AGPLv3)",
     "serverSideOnly": false,
     "modPicture": "minecraft_title",
     "requiredMods": [

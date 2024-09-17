@@ -497,6 +497,8 @@ public class MinecraftAlphaArgModModTabs {
 				tabData.accept(MinecraftAlphaArgModModBlocks.MACHINATION_CONVERTER.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.MARBLE.get().asItem());
 				tabData.accept(MinecraftAlphaArgModModBlocks.LIVING_VOID_GRASS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.WHITE_COLUMN_CROSS.get().asItem());
+				tabData.accept(MinecraftAlphaArgModModBlocks.ADMINCOLUMNCROSS.get().asItem());
 			})
 
 					.build());

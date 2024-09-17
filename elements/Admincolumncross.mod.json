@@ -2,17 +2,17 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "side2h",
-    "textureTop": "50",
-    "textureLeft": "side1h",
-    "textureFront": "side1h",
-    "textureRight": "side1h",
-    "textureBack": "side1h",
+    "texture": "botomn",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Heater",
+    "name": "Admin Column Cross",
     "specialInformation": {
       "fixedValue": []
     },
@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Alpha"
+      "value": "CUSTOM:DeltaQuest"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -98,9 +98,9 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 2,
+    "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -119,26 +119,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityCollides": {
-      "name": "FlamelilipadEntityCollidesInTheBlock"
-    },
-    "onEntityWalksOn": {
-      "name": "HeaterEntityCollidesInTheBlock"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE#0"
-      },
-      {
-        "value": "Blocks.STONE#1"
-      },
-      {
-        "value": "Blocks.STONE#3"
-      },
-      {
-        "value": "Blocks.STONE#5"
+        "value": "TAG:stone_ore_replaceables"
       }
     ],
     "generationShape": "UNIFORM",

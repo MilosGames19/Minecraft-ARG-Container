@@ -887,6 +887,8 @@ public class MinecraftAlphaArgModModItems {
 	public static final RegistryObject<Item> MACHINATION_CONVERTER = block(MinecraftAlphaArgModModBlocks.MACHINATION_CONVERTER);
 	public static final RegistryObject<Item> MARBLE = block(MinecraftAlphaArgModModBlocks.MARBLE);
 	public static final RegistryObject<Item> LIVING_VOID_GRASS = block(MinecraftAlphaArgModModBlocks.LIVING_VOID_GRASS);
+	public static final RegistryObject<Item> WHITE_COLUMN_CROSS = block(MinecraftAlphaArgModModBlocks.WHITE_COLUMN_CROSS);
+	public static final RegistryObject<Item> ADMINCOLUMNCROSS = block(MinecraftAlphaArgModModBlocks.ADMINCOLUMNCROSS);
 
 	// Start of user code block custom items
 	// End of user code block custom items
