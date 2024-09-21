@@ -32,7 +32,7 @@ public class ServerGuIScreen extends AbstractContainerScreen<ServerGuIMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/server_gu_i.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/screens/server_gu_i.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -48,7 +48,7 @@ public class ServerGuIScreen extends AbstractContainerScreen<ServerGuIMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/servergui.png"), this.leftPos + 0, this.topPos + -12, 0, 0, 256, 256, 256, 256);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/servergui.png"), this.leftPos + 0, this.topPos + -12, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();
 	}
@@ -69,7 +69,7 @@ public class ServerGuIScreen extends AbstractContainerScreen<ServerGuIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.server_gu_i.label_admins_only_server_container"), 15, -2, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.server_gu_i.label_admins_only_server_container"), 15, -2, -12829636, false);
 	}
 
 	@Override

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/ortlockull",
+    "up": "the_arg_container:block/ortlockull",
+    "north": "the_arg_container:block/ortlockull",
+    "east": "the_arg_container:block/ortlockull",
+    "south": "the_arg_container:block/ortlockull",
+    "west": "the_arg_container:block/ortlockull",
+    "particle": "the_arg_container:block/ortlockull"
+  },
+  "render_type": "cutout"
+}

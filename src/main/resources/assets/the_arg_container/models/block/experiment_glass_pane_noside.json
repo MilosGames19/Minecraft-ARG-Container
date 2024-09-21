@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "pane": "the_arg_container:block/experimentglass"
+  },
+  "render_type": "cutout_mipped"
+}

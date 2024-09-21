@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "the_arg_container:block/brick",
+    "top": "the_arg_container:block/brick",
+    "side": "the_arg_container:block/brick"
+  },
+  "render_type": "solid"
+}

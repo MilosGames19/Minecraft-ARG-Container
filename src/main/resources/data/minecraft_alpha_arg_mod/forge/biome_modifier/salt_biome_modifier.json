@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "desert",
-  "features": "minecraft_alpha_arg_mod:salt",
-  "step": "surface_structures"
-}

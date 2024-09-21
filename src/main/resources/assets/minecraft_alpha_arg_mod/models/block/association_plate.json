@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/associationplate",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/000005",
-    "particle": "minecraft_alpha_arg_mod:block/000005",
-    "0": "minecraft_alpha_arg_mod:block/000005"
-  },
-  "render_type": "cutout"
-}

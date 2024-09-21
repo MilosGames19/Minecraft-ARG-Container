@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.FreezerGUIMenu;
 import net.mcreator.minecraftalphaargmod.procedures.FreezerRProcedure;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -97,7 +97,7 @@ public class FreezerGUISlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MinecraftAlphaArgModMod.addNetworkMessage(FreezerGUISlotMessage.class, FreezerGUISlotMessage::buffer, FreezerGUISlotMessage::new, FreezerGUISlotMessage::handler);
+		TheArgContainerMod.addNetworkMessage(FreezerGUISlotMessage.class, FreezerGUISlotMessage::buffer, FreezerGUISlotMessage::new, FreezerGUISlotMessage::handler);
 	}
 
 	public static void writeTextState(HashMap<String, String> map, FriendlyByteBuf buffer) {

@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.BlueChestGUIMenu;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlockEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class UnusedBlock2BlockEntity extends RandomizableContainerBlockEntity im
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public UnusedBlock2BlockEntity(BlockPos position, BlockState state) {
-		super(MinecraftAlphaArgModModBlockEntities.UNUSED_BLOCK_2.get(), position, state);
+		super(TheArgContainerModBlockEntities.UNUSED_BLOCK_2.get(), position, state);
 	}
 
 	@Override

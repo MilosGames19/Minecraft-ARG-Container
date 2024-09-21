@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_right_open",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/name_3",
-    "top": "minecraft_alpha_arg_mod:block/name_2"
-  },
-  "render_type": "solid"
-}

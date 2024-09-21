@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:bricks"
+    },
+    "b": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:stone_tile",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/yellowcrystal",
+    "particle": "the_arg_container:block/yellowcrystal"
+  },
+  "render_type": "cutout"
+}

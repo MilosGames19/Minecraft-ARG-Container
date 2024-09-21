@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/loopplate",
+  "textures": {
+    "all": "the_arg_container:block/000010",
+    "particle": "the_arg_container:block/000010",
+    "0": "the_arg_container:block/000010"
+  },
+  "render_type": "cutout"
+}

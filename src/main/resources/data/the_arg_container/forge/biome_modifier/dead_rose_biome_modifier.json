@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_arg_container:soul",
+  "features": "the_arg_container:dead_rose",
+  "step": "vegetal_decoration"
+}

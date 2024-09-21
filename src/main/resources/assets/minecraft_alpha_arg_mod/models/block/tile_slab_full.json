@@ -1,9 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/floortiles",
-    "top": "minecraft_alpha_arg_mod:block/floortiles",
-    "side": "minecraft_alpha_arg_mod:block/floortiles"
-  },
-  "render_type": "solid"
-}

@@ -7,7 +7,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 import java.util.Map;
 
@@ -17,7 +17,7 @@ public class OffMProcedure {
 			return;
 		{
 			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockState _bs = MinecraftAlphaArgModModBlocks.MONITOR.get().defaultBlockState();
+			BlockState _bs = TheArgContainerModBlocks.MONITOR.get().defaultBlockState();
 			BlockState _bso = world.getBlockState(_bp);
 			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 				Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

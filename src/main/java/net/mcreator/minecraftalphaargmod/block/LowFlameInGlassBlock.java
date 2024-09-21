@@ -17,9 +17,9 @@ import net.minecraft.core.BlockPos;
 public class LowFlameInGlassBlock extends Block {
 	public LowFlameInGlassBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT)
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass"))))
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass"))))
 				.strength(1f, 10f).lightLevel(s -> 15));
 	}
 

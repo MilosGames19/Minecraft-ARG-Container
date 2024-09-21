@@ -19,7 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -39,7 +39,7 @@ public class EssenceclonerGUIMenu extends AbstractContainerMenu implements Suppl
 	private BlockEntity boundBlockEntity = null;
 
 	public EssenceclonerGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MinecraftAlphaArgModModMenus.ESSENCECLONER_GUI.get(), id);
+		super(TheArgContainerModMenus.ESSENCECLONER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(6);

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/catwalk",
+    "up": "the_arg_container:block/catwalk",
+    "north": "the_arg_container:block/catwalk",
+    "east": "the_arg_container:block/catwalk",
+    "south": "the_arg_container:block/catwalk",
+    "west": "the_arg_container:block/catwalk",
+    "particle": "the_arg_container:block/catwalk"
+  },
+  "render_type": "solid"
+}

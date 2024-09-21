@@ -21,11 +21,11 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class User0CloneEntity extends Monster {
 	public User0CloneEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.USER_0_CLONE.get(), world);
+		this(TheArgContainerModEntities.USER_0_CLONE.get(), world);
 	}
 
 	public User0CloneEntity(EntityType<User0CloneEntity> type, Level world) {

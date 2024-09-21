@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/jljljljljl_plushie",
+  "textures": {
+    "all": "the_arg_container:block/jljljljljl",
+    "particle": "the_arg_container:block/jljljljljl",
+    "0": "the_arg_container:block/jljljljljl"
+  },
+  "render_type": "cutout_mipped"
+}

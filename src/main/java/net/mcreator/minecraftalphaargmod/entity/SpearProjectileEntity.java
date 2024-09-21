@@ -19,15 +19,15 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class SpearProjectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(MinecraftAlphaArgModModItems.SPEAR.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(TheArgContainerModItems.SPEAR.get());
 
 	public SpearProjectileEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(MinecraftAlphaArgModModEntities.SPEAR_PROJECTILE.get(), world);
+		super(TheArgContainerModEntities.SPEAR_PROJECTILE.get(), world);
 	}
 
 	public SpearProjectileEntity(EntityType<? extends SpearProjectileEntity> type, Level world) {
@@ -72,11 +72,11 @@ public class SpearProjectileEntity extends AbstractArrow implements ItemSupplier
 	}
 
 	public static SpearProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1f, 5, 5);
+		return shoot(world, entity, source, 2f, 4, 4);
 	}
 
 	public static SpearProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		SpearProjectileEntity entityarrow = new SpearProjectileEntity(MinecraftAlphaArgModModEntities.SPEAR_PROJECTILE.get(), entity, world);
+		SpearProjectileEntity entityarrow = new SpearProjectileEntity(TheArgContainerModEntities.SPEAR_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
@@ -88,14 +88,14 @@ public class SpearProjectileEntity extends AbstractArrow implements ItemSupplier
 	}
 
 	public static SpearProjectileEntity shoot(LivingEntity entity, LivingEntity target) {
-		SpearProjectileEntity entityarrow = new SpearProjectileEntity(MinecraftAlphaArgModModEntities.SPEAR_PROJECTILE.get(), entity, entity.level());
+		SpearProjectileEntity entityarrow = new SpearProjectileEntity(TheArgContainerModEntities.SPEAR_PROJECTILE.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(5);
-		entityarrow.setKnockback(5);
+		entityarrow.setBaseDamage(4);
+		entityarrow.setKnockback(4);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
 		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));

@@ -32,7 +32,7 @@ public class KeyScreen extends AbstractContainerScreen<KeyMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/key.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/screens/key.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -48,7 +48,7 @@ public class KeyScreen extends AbstractContainerScreen<KeyMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/keyhole.png"), this.leftPos + 62, this.topPos + 24, 0, 0, 50, 50, 50, 50);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/keyhole.png"), this.leftPos + 62, this.topPos + 24, 0, 0, 50, 50, 50, 50);
 
 		RenderSystem.disableBlend();
 	}

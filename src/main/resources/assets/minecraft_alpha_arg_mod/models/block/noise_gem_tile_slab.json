@@ -1,9 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/gr",
-    "top": "minecraft_alpha_arg_mod:block/gr",
-    "side": "minecraft_alpha_arg_mod:block/gr"
-  },
-  "render_type": "solid"
-}

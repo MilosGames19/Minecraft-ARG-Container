@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/plumbo",
+    "up": "the_arg_container:block/plumbo",
+    "north": "the_arg_container:block/plumbo",
+    "east": "the_arg_container:block/plumbo",
+    "south": "the_arg_container:block/plumbo",
+    "west": "the_arg_container:block/plumbo",
+    "particle": "the_arg_container:block/plumbo"
+  },
+  "render_type": "solid"
+}

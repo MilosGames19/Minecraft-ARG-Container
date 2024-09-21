@@ -1,9 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/000029",
-    "top": "minecraft_alpha_arg_mod:block/000029",
-    "side": "minecraft_alpha_arg_mod:block/000029"
-  },
-  "render_type": "solid"
-}

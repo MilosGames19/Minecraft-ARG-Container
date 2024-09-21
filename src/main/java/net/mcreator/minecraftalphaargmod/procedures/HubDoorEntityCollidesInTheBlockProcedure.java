@@ -15,18 +15,18 @@ import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModGameRules;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModGameRules;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 public class HubDoorEntityCollidesInTheBlockProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double multiplier = 0;
-		if (world.getLevelData().getGameRules().getBoolean(MinecraftAlphaArgModModGameRules.HUB_ENABLE) == true) {
+		if (world.getLevelData().getGameRules().getBoolean(TheArgContainerModGameRules.HUB_ENABLE) == true) {
 			if ((entity.level().dimension()) == Level.OVERWORLD) {
 				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-					ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("minecraft_alpha_arg_mod:hub"));
+					ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:hub"));
 					if (_player.level().dimension() == destinationType)
 						return;
 					ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -56,14 +56,14 @@ public class HubDoorEntityCollidesInTheBlockProcedure {
 				}
 			}
 		} else {
-			MinecraftAlphaArgModMod.LOGGER.info("Connection timed out");
-			MinecraftAlphaArgModMod.LOGGER.info("Reconnection attempt 1");
-			MinecraftAlphaArgModMod.LOGGER.info("Reconnection attempt 2");
-			MinecraftAlphaArgModMod.LOGGER.info("Reconnection attempt 3");
-			MinecraftAlphaArgModMod.LOGGER.info("Reconnection attempt 4");
-			MinecraftAlphaArgModMod.LOGGER.info("Reconnection attempt 5");
-			MinecraftAlphaArgModMod.LOGGER.info("Connection failed. Launching in offline mode.");
-			MinecraftAlphaArgModMod.LOGGER.info("Unable to authenticate. You will only be able to play on local servers.");
+			TheArgContainerMod.LOGGER.info("Connection timed out");
+			TheArgContainerMod.LOGGER.info("Reconnection attempt 1");
+			TheArgContainerMod.LOGGER.info("Reconnection attempt 2");
+			TheArgContainerMod.LOGGER.info("Reconnection attempt 3");
+			TheArgContainerMod.LOGGER.info("Reconnection attempt 4");
+			TheArgContainerMod.LOGGER.info("Reconnection attempt 5");
+			TheArgContainerMod.LOGGER.info("Connection failed. Launching in offline mode.");
+			TheArgContainerMod.LOGGER.info("Unable to authenticate. You will only be able to play on local servers.");
 		}
 	}
 }

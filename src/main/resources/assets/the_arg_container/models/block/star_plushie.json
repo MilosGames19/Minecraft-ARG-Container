@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/star_plushie",
+  "textures": {
+    "all": "the_arg_container:block/21438322",
+    "particle": "the_arg_container:block/21438322",
+    "0": "the_arg_container:block/21438322"
+  },
+  "render_type": "cutout_mipped"
+}

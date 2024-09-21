@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "bcd",
+    " ae"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:redstone"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    },
+    "d": {
+      "item": "the_arg_container:essence"
+    },
+    "e": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:essence_rifle",
+    "count": 1
+  }
+}

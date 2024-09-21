@@ -34,8 +34,8 @@ public class BanTextOverlay {
 			z = entity.getZ();
 		}
 		if (BanTextDisplayOverlayIngameProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.minecraft_alpha_arg_mod.ban_text.label_you_have_been_temporarily_banned"), w / 2 + -194, 0, -26317, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.minecraft_alpha_arg_mod.ban_text.label_remaining_suspension_time_infin"), w / 2 + -94, 10, -26317, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.the_arg_container.ban_text.label_you_have_been_temporarily_banned"), w / 2 + -194, 0, -26317, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.the_arg_container.ban_text.label_remaining_suspension_time_infin"), w / 2 + -94, 10, -26317, false);
 		}
 	}
 }

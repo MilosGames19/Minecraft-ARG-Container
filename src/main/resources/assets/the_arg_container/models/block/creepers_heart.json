@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/creeper",
+    "particle": "the_arg_container:block/creeper"
+  },
+  "render_type": "translucent"
+}

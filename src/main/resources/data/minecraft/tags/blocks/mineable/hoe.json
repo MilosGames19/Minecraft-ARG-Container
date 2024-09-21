@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:glowing_mycon_cap",
-    "minecraft_alpha_arg_mod:mycon_cap"
+    "the_arg_container:glowing_mycon_cap",
+    "the_arg_container:mycon_cap"
   ]
 }

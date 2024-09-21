@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "minecraft_alpha_arg_mod:soul",
-  "features": "minecraft_alpha_arg_mod:dead_rose",
-  "step": "vegetal_decoration"
-}

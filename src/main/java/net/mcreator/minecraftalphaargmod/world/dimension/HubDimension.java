@@ -29,7 +29,7 @@ public class HubDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("minecraft_alpha_arg_mod:hub"), customEffect);
+			event.register(new ResourceLocation("the_arg_container:hub"), customEffect);
 		}
 	}
 }

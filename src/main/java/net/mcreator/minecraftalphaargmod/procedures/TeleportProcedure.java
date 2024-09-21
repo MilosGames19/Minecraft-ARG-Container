@@ -19,7 +19,7 @@ public class TeleportProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("minecraft_alpha_arg_mod:ash"));
+			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:ash"));
 			if (_player.level().dimension() == destinationType)
 				return;
 			ServerLevel nextLevel = _player.server.getLevel(destinationType);

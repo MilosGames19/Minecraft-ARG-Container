@@ -18,9 +18,9 @@ import net.minecraft.core.BlockPos;
 public class GhostBlockBlock extends Block {
 	public GhostBlockBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM)
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:safe")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:safe")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:safe")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:safe")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:safe"))))
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe"))))
 				.strength(-1, 3600000).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 

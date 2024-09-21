@@ -7,7 +7,7 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.minecraftalphaargmod.network.MinecraftAlphaArgModModVariables;
+import net.mcreator.minecraftalphaargmod.network.TheArgContainerModVariables;
 
 import javax.annotation.Nullable;
 
@@ -28,8 +28,8 @@ public class CountdownProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(MinecraftAlphaArgModModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MinecraftAlphaArgModModVariables.PlayerVariables())).Cooldown - 1;
-			entity.getCapability(MinecraftAlphaArgModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			double _setval = (entity.getCapability(TheArgContainerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheArgContainerModVariables.PlayerVariables())).Cooldown - 1;
+			entity.getCapability(TheArgContainerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.Cooldown = _setval;
 				capability.syncPlayerVariables(entity);
 			});

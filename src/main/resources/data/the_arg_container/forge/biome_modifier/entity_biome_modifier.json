@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "the_arg_container:entity",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

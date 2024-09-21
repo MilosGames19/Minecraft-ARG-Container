@@ -24,11 +24,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class EntityEntity extends Monster {
 	public EntityEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.ENTITY.get(), world);
+		this(TheArgContainerModEntities.ENTITY.get(), world);
 	}
 
 	public EntityEntity(EntityType<EntityEntity> type, Level world) {
@@ -72,7 +72,7 @@ public class EntityEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MinecraftAlphaArgModModEntities.ENTITY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(TheArgContainerModEntities.ENTITY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 

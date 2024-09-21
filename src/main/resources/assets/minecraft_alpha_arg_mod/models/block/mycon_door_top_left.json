@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_left",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/ddown",
-    "top": "minecraft_alpha_arg_mod:block/dup"
-  },
-  "render_type": "cutout"
-}

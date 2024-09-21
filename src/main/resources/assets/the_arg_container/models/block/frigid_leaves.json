@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/iceleave",
+    "up": "the_arg_container:block/iceleave",
+    "north": "the_arg_container:block/iceleave",
+    "east": "the_arg_container:block/iceleave",
+    "south": "the_arg_container:block/iceleave",
+    "west": "the_arg_container:block/iceleave",
+    "particle": "the_arg_container:block/iceleave"
+  },
+  "render_type": "cutout"
+}

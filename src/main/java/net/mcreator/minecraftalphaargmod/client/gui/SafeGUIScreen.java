@@ -75,11 +75,11 @@ public class SafeGUIScreen extends AbstractContainerScreen<SafeGUIMenu> {
 	@Override
 	public void init() {
 		super.init();
-		test = new EditBox(this.font, this.leftPos + -59, this.topPos + -3, 118, 18, Component.translatable("gui.minecraft_alpha_arg_mod.safe_gui.test"));
+		test = new EditBox(this.font, this.leftPos + -59, this.topPos + -3, 118, 18, Component.translatable("gui.the_arg_container.safe_gui.test"));
 		test.setMaxLength(32767);
 		guistate.put("text:test", test);
 		this.addWidget(this.test);
-		button_input = Button.builder(Component.translatable("gui.minecraft_alpha_arg_mod.safe_gui.button_input"), e -> {
+		button_input = Button.builder(Component.translatable("gui.the_arg_container.safe_gui.button_input"), e -> {
 		}).bounds(this.leftPos + -28, this.topPos + 50, 51, 20).build();
 		guistate.put("button:button_input", button_input);
 		this.addRenderableWidget(button_input);

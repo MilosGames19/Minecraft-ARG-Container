@@ -12,14 +12,14 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class FunnySandRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		world.setBlock(BlockPos.containing(x, y + 1, z), MinecraftAlphaArgModModBlocks.TOTALY_NOT_MINDECONTROLLING_SAND.get().defaultBlockState(), 3);
+		world.setBlock(BlockPos.containing(x, y + 1, z), TheArgContainerModBlocks.TOTALY_NOT_MINDECONTROLLING_SAND.get().defaultBlockState(), 3);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sand.place")), SoundSource.NEUTRAL, 1, 1);
@@ -29,7 +29,7 @@ public class FunnySandRightclickedOnBlockProcedure {
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR) {
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(MinecraftAlphaArgModModItems.FUNNY_SAND.get());
+				ItemStack _stktoremove = new ItemStack(TheArgContainerModItems.FUNNY_SAND.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 		}

@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/denialplate",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/000013",
-    "particle": "minecraft_alpha_arg_mod:block/000013",
-    "0": "minecraft_alpha_arg_mod:block/000013"
-  },
-  "render_type": "cutout"
-}

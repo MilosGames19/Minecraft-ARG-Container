@@ -3,51 +3,51 @@ loaderVersion="[47,)"
 license="Unported GNU Affero General Public License version 3 (AGPLv3)"
 
 [[mods]]
-modId="minecraft_alpha_arg_mod"
-version="0.3.6"
-displayName="Minecraft ARG Container"
+modId="the_arg_container"
+version="0.3.7"
+displayName="The ARG Container"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
-credits="Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Minecraft Alpha 1.1.2.07 Archive, John202, m00nlander, Beta-IMPROVE, Andrewgames722, where_is_the_sky?"
+credits="Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Minecraft Alpha 1.1.2.07 Archive, John202, m00nlander, Beta-IMPROVE, Andrewgames722, where_is_the_sky?, Slots Available, Project: R.S.T.C, Altair()Vega"
 authors="Glitchy, Miki110, atom20003113, marioood,"
 description="This mod brings blocks, items and features form popular minecraft ARGs"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.minecraft_alpha_arg_mod]]
+[[dependencies.the_arg_container]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.minecraft_alpha_arg_mod]]
+[[dependencies.the_arg_container]]
     modId="geckolib"
     mandatory=true
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.minecraft_alpha_arg_mod]]
+[[dependencies.the_arg_container]]
     modId="world_edit"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.minecraft_alpha_arg_mod]]
+[[dependencies.the_arg_container]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.minecraft_alpha_arg_mod]]
+[[dependencies.the_arg_container]]
     modId="structure_gel_api"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.minecraft_alpha_arg_mod]]
+[[dependencies.the_arg_container]]
     modId="jei"
     mandatory=false
     versionRange="[0,)"

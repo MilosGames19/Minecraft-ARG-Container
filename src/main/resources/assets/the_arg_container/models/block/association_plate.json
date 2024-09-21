@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/associationplate",
+  "textures": {
+    "all": "the_arg_container:block/000005",
+    "particle": "the_arg_container:block/000005",
+    "0": "the_arg_container:block/000005"
+  },
+  "render_type": "cutout"
+}

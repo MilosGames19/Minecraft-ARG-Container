@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "cd"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:hours_long_past_iii"
+    },
+    "b": {
+      "item": "the_arg_container:hours_long_past_iv"
+    },
+    "c": {
+      "item": "the_arg_container:hours_long_past_i"
+    },
+    "d": {
+      "item": "the_arg_container:hours_long_past_ii"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:the_one_true_book",
+    "count": 1
+  }
+}

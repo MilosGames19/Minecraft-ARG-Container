@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/ntricatetructureaged",
+    "up": "the_arg_container:block/ntricatetructureaged",
+    "north": "the_arg_container:block/ntricatetructureaged",
+    "east": "the_arg_container:block/ntricatetructureaged",
+    "south": "the_arg_container:block/ntricatetructureaged",
+    "west": "the_arg_container:block/ntricatetructureaged",
+    "particle": "the_arg_container:block/ntricatetructureaged"
+  },
+  "render_type": "solid"
+}

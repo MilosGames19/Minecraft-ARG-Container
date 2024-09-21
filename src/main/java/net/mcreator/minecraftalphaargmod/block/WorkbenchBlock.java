@@ -2,6 +2,7 @@
 package net.mcreator.minecraftalphaargmod.block;
 
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.SimpleMenuProvider;
@@ -27,6 +29,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.MarvCraftingTable;
+
+import java.util.List;
+import java.util.Collections;
 
 public class WorkbenchBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -59,20 +64,28 @@ public class WorkbenchBlock extends Block {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
 	private static final Component CONTAINER_TITLE = Component.translatable("container.crafting");
 
 	@Override
-    public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
-        if (level.isClientSide) {
-            return InteractionResult.SUCCESS;
-        }
-        player.openMenu(blockState.getMenuProvider(level, blockPos));
-        player.awardStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
-        return InteractionResult.CONSUME;
-    }
+	public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
+		if (level.isClientSide) {
+			return InteractionResult.SUCCESS;
+		}
+		player.openMenu(blockState.getMenuProvider(level, blockPos));
+		player.awardStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
+		return InteractionResult.CONSUME;
+	}
 
 	@Override
-    public MenuProvider getMenuProvider(BlockState blockState, Level level, BlockPos blockPos) {
-        return new SimpleMenuProvider((i, inventory, player) -> new MarvCraftingTable(i, inventory, ContainerLevelAccess.create(level, blockPos)), CONTAINER_TITLE);
-    }
+	public MenuProvider getMenuProvider(BlockState blockState, Level level, BlockPos blockPos) {
+		return new SimpleMenuProvider((i, inventory, player) -> new MarvCraftingTable(i, inventory, ContainerLevelAccess.create(level, blockPos)), CONTAINER_TITLE);
+	}
 }

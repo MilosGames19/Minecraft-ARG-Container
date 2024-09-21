@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/stairladder",
+  "textures": {
+    "all": "the_arg_container:block/000003",
+    "particle": "the_arg_container:block/000003",
+    "0": "the_arg_container:block/000003"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/greentorch",
+  "textures": {
+    "all": "the_arg_container:block/tile099",
+    "particle": "the_arg_container:block/tile099",
+    "0": "the_arg_container:block/tile099"
+  },
+  "render_type": "cutout"
+}

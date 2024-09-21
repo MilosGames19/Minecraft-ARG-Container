@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:tea_wood",
-    "minecraft_alpha_arg_mod:mycon_stem",
-    "minecraft_alpha_arg_mod:flamewood",
-    "minecraft_alpha_arg_mod:highwood_log",
-    "minecraft_alpha_arg_mod:wood",
-    "minecraft_alpha_arg_mod:ash_wood",
-    "minecraft_alpha_arg_mod:firewood",
-    "minecraft_alpha_arg_mod:soul_wood",
-    "minecraft_alpha_arg_mod:iken_log",
-    "minecraft_alpha_arg_mod:dark_wood",
-    "minecraft_alpha_arg_mod:hub_highwood_log"
+    "the_arg_container:tea_wood",
+    "the_arg_container:mycon_stem",
+    "the_arg_container:flamewood",
+    "the_arg_container:highwood_log",
+    "the_arg_container:wood",
+    "the_arg_container:ash_wood",
+    "the_arg_container:firewood",
+    "the_arg_container:soul_wood",
+    "the_arg_container:iken_log",
+    "the_arg_container:dark_wood",
+    "the_arg_container:hub_highwood_log"
   ]
 }

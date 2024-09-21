@@ -22,7 +22,7 @@ public class TowerTransporterEntityCollidesInTheBlockProcedure {
 			return;
 		double multiplier = 0;
 		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == ResourceKey.create(Registries.DIMENSION,
-				new ResourceLocation("minecraft_alpha_arg_mod:towers_dimension"))) {
+				new ResourceLocation("the_arg_container:towers_dimension"))) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 				ResourceKey<Level> destinationType = Level.OVERWORLD;
 				if (_player.level().dimension() == destinationType)
@@ -45,7 +45,7 @@ public class TowerTransporterEntityCollidesInTheBlockProcedure {
 			}
 		} else {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("minecraft_alpha_arg_mod:towers_dimension"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:towers_dimension"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);

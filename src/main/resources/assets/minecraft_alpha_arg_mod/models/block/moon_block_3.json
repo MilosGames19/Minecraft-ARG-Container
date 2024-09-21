@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/moon3",
-    "particle": "minecraft_alpha_arg_mod:block/moon3"
-  },
-  "render_type": "solid"
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_right",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/door_iron_lower",
-    "top": "minecraft_alpha_arg_mod:block/door_iron_upper1"
-  },
-  "render_type": "cutout"
-}

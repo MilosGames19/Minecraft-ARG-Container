@@ -47,7 +47,7 @@ public class EtGUIScreen extends AbstractContainerScreen<EtGUIMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/essencetransformer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/essencetransformer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();
 	}
@@ -68,13 +68,13 @@ public class EtGUIScreen extends AbstractContainerScreen<EtGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.et_gui.label_essence_transformer"), 30, 2, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.et_gui.label_essence_transformer"), 30, 2, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_confirm = Button.builder(Component.translatable("gui.minecraft_alpha_arg_mod.et_gui.button_confirm"), e -> {
+		button_confirm = Button.builder(Component.translatable("gui.the_arg_container.et_gui.button_confirm"), e -> {
 		}).bounds(this.leftPos + 98, this.topPos + 58, 61, 20).build();
 		guistate.put("button:button_confirm", button_confirm);
 		this.addRenderableWidget(button_confirm);

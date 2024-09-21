@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:infused_cobblestone_fance",
-    "minecraft_alpha_arg_mod:cobblestone_fance"
+    "the_arg_container:infused_cobblestone_fance",
+    "the_arg_container:cobblestone_fance"
   ]
 }

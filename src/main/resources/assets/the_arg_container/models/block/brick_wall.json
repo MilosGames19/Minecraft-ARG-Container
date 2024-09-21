@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/wallbricks",
+    "up": "the_arg_container:block/wallbricks",
+    "north": "the_arg_container:block/wallbricks",
+    "east": "the_arg_container:block/wallbricks",
+    "south": "the_arg_container:block/wallbricks",
+    "west": "the_arg_container:block/wallbricks",
+    "particle": "the_arg_container:block/wallbricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " b ",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:modwood"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:empty_bookshelf_alpha",
+    "count": 1
+  }
+}

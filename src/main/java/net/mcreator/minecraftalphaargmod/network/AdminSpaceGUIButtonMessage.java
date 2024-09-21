@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminSpaceGUIMenu;
 import net.mcreator.minecraftalphaargmod.procedures.TextPProcedure;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -82,7 +82,7 @@ public class AdminSpaceGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MinecraftAlphaArgModMod.addNetworkMessage(AdminSpaceGUIButtonMessage.class, AdminSpaceGUIButtonMessage::buffer, AdminSpaceGUIButtonMessage::new, AdminSpaceGUIButtonMessage::handler);
+		TheArgContainerMod.addNetworkMessage(AdminSpaceGUIButtonMessage.class, AdminSpaceGUIButtonMessage::buffer, AdminSpaceGUIButtonMessage::new, AdminSpaceGUIButtonMessage::handler);
 	}
 
 	public static void writeTextState(HashMap<String, String> map, FriendlyByteBuf buffer) {

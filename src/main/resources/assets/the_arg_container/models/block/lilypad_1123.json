@@ -1,0 +1,10 @@
+{
+  "parent": "the_arg_container:custom/lilypadas3",
+  "textures": {
+    "all": "the_arg_container:block/tile174",
+    "particle": "the_arg_container:block/tile174",
+    "0": "the_arg_container:block/tile177",
+    "1": "the_arg_container:block/tile174"
+  },
+  "render_type": "cutout_mipped"
+}

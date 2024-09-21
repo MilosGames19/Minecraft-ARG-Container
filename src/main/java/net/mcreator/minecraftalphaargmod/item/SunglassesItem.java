@@ -63,7 +63,7 @@ public abstract class SunglassesItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "minecraft_alpha_arg_mod:textures/models/armor/layer_1_fashion_1_layer_1.png";
+			return "the_arg_container:textures/models/armor/layer_1_fashion_1_layer_1.png";
 		}
 	}
 }

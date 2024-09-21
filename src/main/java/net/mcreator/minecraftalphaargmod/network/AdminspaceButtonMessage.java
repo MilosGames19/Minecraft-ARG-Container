@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminspaceMenu;
 import net.mcreator.minecraftalphaargmod.procedures.OpenCOMANDProcedure;
 import net.mcreator.minecraftalphaargmod.procedures.CloseGUIProcedure;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -87,7 +87,7 @@ public class AdminspaceButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MinecraftAlphaArgModMod.addNetworkMessage(AdminspaceButtonMessage.class, AdminspaceButtonMessage::buffer, AdminspaceButtonMessage::new, AdminspaceButtonMessage::handler);
+		TheArgContainerMod.addNetworkMessage(AdminspaceButtonMessage.class, AdminspaceButtonMessage::buffer, AdminspaceButtonMessage::new, AdminspaceButtonMessage::handler);
 	}
 
 	public static void writeTextState(HashMap<String, String> map, FriendlyByteBuf buffer) {

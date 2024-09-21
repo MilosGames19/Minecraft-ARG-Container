@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/blue_glass",
-    "particle": "minecraft_alpha_arg_mod:block/blue_glass"
-  },
-  "render_type": "cutout"
-}

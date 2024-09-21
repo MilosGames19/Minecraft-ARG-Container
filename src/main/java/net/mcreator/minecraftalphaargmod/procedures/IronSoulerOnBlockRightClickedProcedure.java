@@ -20,7 +20,7 @@ public class IronSoulerOnBlockRightClickedProcedure {
 			return;
 		if ((entity.level().dimension()) == Level.OVERWORLD) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("minecraft_alpha_arg_mod:soul_d"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:soul_d"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_arg_container:ashdim",
+  "features": "the_arg_container:ash_wood_gen",
+  "step": "surface_structures"
+}

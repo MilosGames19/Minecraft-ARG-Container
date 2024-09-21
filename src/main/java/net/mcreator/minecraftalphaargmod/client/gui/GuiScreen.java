@@ -34,7 +34,7 @@ public class GuiScreen extends AbstractContainerScreen<GuiMenu> {
 		this.imageHeight = 167;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/screens/gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -73,7 +73,7 @@ public class GuiScreen extends AbstractContainerScreen<GuiMenu> {
 	@Override
 	public void init() {
 		super.init();
-		button_etjwetjwerjwer = Button.builder(Component.translatable("gui.minecraft_alpha_arg_mod.gui.button_etjwetjwerjwer"), e -> {
+		button_etjwetjwerjwer = Button.builder(Component.translatable("gui.the_arg_container.gui.button_etjwetjwerjwer"), e -> {
 		}).bounds(this.leftPos + -125, this.topPos + -36, 98, 20).build();
 		guistate.put("button:button_etjwetjwerjwer", button_etjwetjwerjwer);
 		this.addRenderableWidget(button_etjwetjwerjwer);

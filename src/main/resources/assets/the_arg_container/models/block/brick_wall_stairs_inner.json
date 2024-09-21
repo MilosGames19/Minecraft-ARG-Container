@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/wallbricks",
+    "top": "the_arg_container:block/wallbricks",
+    "side": "the_arg_container:block/wallbricks"
+  },
+  "render_type": "solid"
+}

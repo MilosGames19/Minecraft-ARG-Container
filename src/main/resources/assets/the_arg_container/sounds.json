@@ -1,0 +1,262 @@
+{
+  "downbeat_uplink": {
+    "sounds": [
+      {
+        "name": "the_arg_container:downbeat_uplink",
+        "stream": true
+      }
+    ]
+  },
+  "rokkubitorurune": {
+    "sounds": [
+      {
+        "name": "the_arg_container:rokkubitorutune",
+        "stream": true
+      }
+    ]
+  },
+  "sandcastles": {
+    "sounds": [
+      {
+        "name": "the_arg_container:sandcastles",
+        "stream": true
+      }
+    ]
+  },
+  "k2": {
+    "sounds": [
+      {
+        "name": "the_arg_container:k2",
+        "stream": true
+      }
+    ]
+  },
+  "desambrier": {
+    "sounds": [
+      {
+        "name": "the_arg_container:desambrier",
+        "stream": true
+      }
+    ]
+  },
+  "gyldansverd": {
+    "sounds": [
+      {
+        "name": "the_arg_container:gyldansverd",
+        "stream": true
+      }
+    ]
+  },
+  "juhry": {
+    "sounds": [
+      {
+        "name": "the_arg_container:juhry",
+        "stream": true
+      }
+    ]
+  },
+  "lemuria": {
+    "sounds": [
+      {
+        "name": "the_arg_container:lemuria",
+        "stream": true
+      }
+    ]
+  },
+  "hidden_den": {
+    "sounds": [
+      {
+        "name": "the_arg_container:hidden_den",
+        "stream": true
+      }
+    ]
+  },
+  "condemned": {
+    "sounds": [
+      {
+        "name": "the_arg_container:condemned",
+        "stream": true
+      }
+    ]
+  },
+  "safe": {
+    "sounds": [
+      {
+        "name": "the_arg_container:special1",
+        "stream": false
+      },
+      {
+        "name": "the_arg_container:special2",
+        "stream": false
+      },
+      {
+        "name": "the_arg_container:special3",
+        "stream": false
+      },
+      {
+        "name": "the_arg_container:special4",
+        "stream": false
+      }
+    ]
+  },
+  "glass": {
+    "sounds": [
+      {
+        "name": "the_arg_container:glass1",
+        "stream": false
+      },
+      {
+        "name": "the_arg_container:glass2",
+        "stream": false
+      },
+      {
+        "name": "the_arg_container:glass3",
+        "stream": false
+      },
+      {
+        "name": "the_arg_container:glass4",
+        "stream": false
+      }
+    ]
+  },
+  "dash": {
+    "sounds": [
+      {
+        "name": "the_arg_container:dash",
+        "stream": false
+      }
+    ]
+  },
+  "maror": {
+    "sounds": [
+      {
+        "name": "the_arg_container:marior",
+        "stream": false
+      }
+    ]
+  },
+  "hitmarker": {
+    "sounds": [
+      {
+        "name": "the_arg_container:hitmarker",
+        "stream": false
+      }
+    ]
+  },
+  "hubsound": {
+    "sounds": [
+      {
+        "name": "the_arg_container:neural_convergence",
+        "stream": true
+      },
+      {
+        "name": "the_arg_container:prophecy_of_the_holy_epiphora",
+        "stream": true
+      },
+      {
+        "name": "the_arg_container:starless_bethlehem",
+        "stream": true
+      },
+      {
+        "name": "the_arg_container:nexus_ogg",
+        "stream": true
+      }
+    ]
+  },
+  "infuse": {
+    "sounds": [
+      {
+        "name": "the_arg_container:infuse",
+        "stream": false
+      }
+    ]
+  },
+  "cat_theme": {
+    "sounds": [
+      {
+        "name": "the_arg_container:cat_theme",
+        "stream": true
+      }
+    ]
+  },
+  "arrival": {
+    "sounds": [
+      {
+        "name": "the_arg_container:arrival",
+        "stream": true
+      }
+    ]
+  },
+  "user0": {
+    "sounds": [
+      {
+        "name": "the_arg_container:user0",
+        "stream": true
+      }
+    ]
+  },
+  "find": {
+    "sounds": [
+      {
+        "name": "the_arg_container:find",
+        "stream": true
+      }
+    ]
+  },
+  "wake_up_james": {
+    "sounds": [
+      {
+        "name": "the_arg_container:wake_up_james",
+        "stream": true
+      }
+    ]
+  },
+  "two_winged_angel": {
+    "sounds": [
+      {
+        "name": "the_arg_container:two_winged_angel",
+        "stream": true
+      }
+    ]
+  },
+  "last_stand_of_the_legendary_trio": {
+    "sounds": [
+      {
+        "name": "the_arg_container:last_stand_of_the_legendary_trio",
+        "stream": true
+      }
+    ]
+  },
+  "denied": {
+    "sounds": [
+      {
+        "name": "the_arg_container:denied",
+        "stream": true
+      }
+    ]
+  },
+  "believe_in_yourself": {
+    "sounds": [
+      {
+        "name": "the_arg_container:believe_in_yourself",
+        "stream": true
+      }
+    ]
+  },
+  "ballerinaoftheland": {
+    "sounds": [
+      {
+        "name": "the_arg_container:ballerina_of_the_land",
+        "stream": true
+      }
+    ]
+  },
+  "negaseven": {
+    "sounds": [
+      {
+        "name": "the_arg_container:negaseven",
+        "stream": true
+      }
+    ]
+  }
+}

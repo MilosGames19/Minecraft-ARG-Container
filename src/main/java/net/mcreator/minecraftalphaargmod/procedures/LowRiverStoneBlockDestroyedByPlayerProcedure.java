@@ -11,7 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class LowRiverStoneBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -26,7 +26,7 @@ public class LowRiverStoneBlockDestroyedByPlayerProcedure {
 		} else {
 			if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MinecraftAlphaArgModModBlocks.LOW_RIVER_STONE.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TheArgContainerModBlocks.LOW_RIVER_STONE.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

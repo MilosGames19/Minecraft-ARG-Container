@@ -30,14 +30,14 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.minecraftalphaargmod.procedures.GiantDropProcedure;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class GiantEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.YELLOW, ServerBossEvent.BossBarOverlay.NOTCHED_6);
 
 	public GiantEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.GIANT.get(), world);
+		this(TheArgContainerModEntities.GIANT.get(), world);
 	}
 
 	public GiantEntity(EntityType<GiantEntity> type, Level world) {
@@ -86,7 +86,7 @@ public class GiantEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(MinecraftAlphaArgModModItems.FLAMEBERGE.get()));
+		this.spawnAtLocation(new ItemStack(TheArgContainerModItems.FLAMEBERGE.get()));
 	}
 
 	@Override

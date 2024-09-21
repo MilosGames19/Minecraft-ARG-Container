@@ -12,7 +12,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.minecraftalphaargmod.procedures.RingOfFireProcedure;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 public class FlamebergeItem extends SwordItem {
 	public FlamebergeItem() {
@@ -38,7 +38,7 @@ public class FlamebergeItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftAlphaArgModModItems.ESSENCE.get()));
+				return Ingredient.of(new ItemStack(TheArgContainerModItems.ESSENCE.get()));
 			}
 		}, 3, -3f, new Item.Properties());
 	}

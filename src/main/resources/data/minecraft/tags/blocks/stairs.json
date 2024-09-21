@@ -1,15 +1,15 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:googogo_stairs",
-    "minecraft_alpha_arg_mod:checkerboard_stairs",
-    "minecraft_alpha_arg_mod:perlin_stairs",
-    "minecraft_alpha_arg_mod:hallowed_bricks_stairs",
-    "minecraft_alpha_arg_mod:floor_carpet_stairs",
-    "minecraft_alpha_arg_mod:brick_wall_stairs",
-    "minecraft_alpha_arg_mod:tile_stairs",
-    "minecraft_alpha_arg_mod:noise_gem_tile_stairs",
-    "minecraft_alpha_arg_mod:cobblestone_stairs",
-    "minecraft_alpha_arg_mod:wooden_stairs"
+    "the_arg_container:googogo_stairs",
+    "the_arg_container:checkerboard_stairs",
+    "the_arg_container:perlin_stairs",
+    "the_arg_container:hallowed_bricks_stairs",
+    "the_arg_container:floor_carpet_stairs",
+    "the_arg_container:brick_wall_stairs",
+    "the_arg_container:tile_stairs",
+    "the_arg_container:noise_gem_tile_stairs",
+    "the_arg_container:cobblestone_stairs",
+    "the_arg_container:wooden_stairs"
   ]
 }

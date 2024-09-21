@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:perlin_keyblock",
-    "minecraft_alpha_arg_mod:perlin_adminspace",
-    "minecraft_alpha_arg_mod:fractured_influence",
-    "minecraft_alpha_arg_mod:defected_wood",
-    "minecraft_alpha_arg_mod:compressed_static",
-    "minecraft_alpha_arg_mod:compressed_rift",
-    "minecraft_alpha_arg_mod:authenticator"
+    "the_arg_container:perlin_keyblock",
+    "the_arg_container:perlin_adminspace",
+    "the_arg_container:fractured_influence",
+    "the_arg_container:defected_wood",
+    "the_arg_container:compressed_static",
+    "the_arg_container:compressed_rift",
+    "the_arg_container:authenticator"
   ]
 }

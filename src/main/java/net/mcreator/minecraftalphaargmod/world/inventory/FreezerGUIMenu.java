@@ -25,9 +25,9 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.procedures.FreezerGUIWhileThisGUIIsOpenTickProcedure;
 import net.mcreator.minecraftalphaargmod.network.FreezerGUISlotMessage;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus;
 import net.mcreator.minecraftalphaargmod.client.gui.FreezerGUIScreen;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -47,7 +47,7 @@ public class FreezerGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 	private BlockEntity boundBlockEntity = null;
 
 	public FreezerGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MinecraftAlphaArgModModMenus.FREEZER_GUI.get(), id);
+		super(TheArgContainerModMenus.FREEZER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(3);
@@ -263,7 +263,7 @@ public class FreezerGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			MinecraftAlphaArgModMod.PACKET_HANDLER.sendToServer(new FreezerGUISlotMessage(slotid, x, y, z, ctype, meta, FreezerGUIScreen.getTextboxValues()));
+			TheArgContainerMod.PACKET_HANDLER.sendToServer(new FreezerGUISlotMessage(slotid, x, y, z, ctype, meta, FreezerGUIScreen.getTextboxValues()));
 			FreezerGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z, FreezerGUIScreen.getTextboxValues());
 		}
 	}
@@ -333,7 +333,7 @@ public class FreezerGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 
 		@SubscribeEvent
 		public static void registerMessage(FMLCommonSetupEvent event) {
-			MinecraftAlphaArgModMod.addNetworkMessage(FreezerGUIOtherMessage.class, FreezerGUIOtherMessage::buffer, FreezerGUIOtherMessage::new, FreezerGUIOtherMessage::handler);
+			TheArgContainerMod.addNetworkMessage(FreezerGUIOtherMessage.class, FreezerGUIOtherMessage::buffer, FreezerGUIOtherMessage::new, FreezerGUIOtherMessage::handler);
 		}
 
 		public static void writeTextState(HashMap<String, String> map, FriendlyByteBuf buffer) {

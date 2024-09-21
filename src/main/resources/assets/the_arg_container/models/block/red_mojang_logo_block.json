@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/redver",
+    "up": "the_arg_container:block/redver",
+    "north": "the_arg_container:block/redver",
+    "east": "the_arg_container:block/redver",
+    "south": "the_arg_container:block/redver",
+    "west": "the_arg_container:block/redver",
+    "particle": "the_arg_container:block/redver"
+  },
+  "render_type": "solid"
+}

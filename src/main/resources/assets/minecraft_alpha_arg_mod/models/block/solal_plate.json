@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/solalplate",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/000012",
-    "particle": "minecraft_alpha_arg_mod:block/000012",
-    "0": "minecraft_alpha_arg_mod:block/000012"
-  },
-  "render_type": "cutout"
-}

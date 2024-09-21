@@ -22,6 +22,6 @@ public class BrixgoaRenderer extends MobRenderer<BrixgoaEntity, ModelBrixgoa<Bri
 
 	@Override
 	public ResourceLocation getTextureLocation(BrixgoaEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/brixgoa.png");
+		return new ResourceLocation("the_arg_container:textures/entities/brixgoa.png");
 	}
 }

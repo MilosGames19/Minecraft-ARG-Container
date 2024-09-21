@@ -16,8 +16,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class FlamelilipadOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -33,13 +33,13 @@ public class FlamelilipadOnBlockRightClickedProcedure {
 				return false;
 			}
 		}.checkGamemode(entity))) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAlphaArgModModBlocks.CELESTIAL_FLAME.get().asItem()) {
-				world.setBlock(BlockPos.containing(x, y, z), MinecraftAlphaArgModModBlocks.FLAME_INFUSED_LILY.get().defaultBlockState(), 3);
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.CELESTIAL_FLAME.get().asItem()) {
+				world.setBlock(BlockPos.containing(x, y, z), TheArgContainerModBlocks.FLAME_INFUSED_LILY.get().defaultBlockState(), 3);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:infuse")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:infuse")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:infuse")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:infuse")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (!(new Object() {
@@ -57,12 +57,12 @@ public class FlamelilipadOnBlockRightClickedProcedure {
 				}
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLD_INGOT) {
-				world.setBlock(BlockPos.containing(x, y, z), MinecraftAlphaArgModModBlocks.GOLD_INFUSED_LILY.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), TheArgContainerModBlocks.GOLD_INFUSED_LILY.get().defaultBlockState(), 3);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:infuse")), SoundSource.NEUTRAL, 1, (float) 0.7);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:infuse")), SoundSource.NEUTRAL, 1, (float) 0.7);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:infuse")), SoundSource.NEUTRAL, 1, (float) 0.7, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:infuse")), SoundSource.NEUTRAL, 1, (float) 0.7, false);
 					}
 				}
 				if (!(new Object() {
@@ -79,13 +79,13 @@ public class FlamelilipadOnBlockRightClickedProcedure {
 					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 				}
 			}
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAlphaArgModModItems.OBSIDIAN_INGOT.get()) {
-				world.setBlock(BlockPos.containing(x, y, z), MinecraftAlphaArgModModBlocks.OBSIDIAN_INFUSED_LILY.get().defaultBlockState(), 3);
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModItems.OBSIDIAN_INGOT.get()) {
+				world.setBlock(BlockPos.containing(x, y, z), TheArgContainerModBlocks.OBSIDIAN_INFUSED_LILY.get().defaultBlockState(), 3);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:infuse")), SoundSource.NEUTRAL, 1, 0);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:infuse")), SoundSource.NEUTRAL, 1, 0);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:infuse")), SoundSource.NEUTRAL, 1, 0, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:infuse")), SoundSource.NEUTRAL, 1, 0, false);
 					}
 				}
 				if (!(new Object() {

@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/half_soul_plushie",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/char_half",
-    "particle": "minecraft_alpha_arg_mod:block/char_half",
-    "1": "minecraft_alpha_arg_mod:block/char_half"
-  },
-  "render_type": "solid"
-}

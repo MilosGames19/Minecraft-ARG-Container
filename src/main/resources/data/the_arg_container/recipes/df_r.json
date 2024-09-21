@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:yellow_dimension_tile"
+    },
+    "b": {
+      "item": "the_arg_container:blue_dimension_tile"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:dimension_floor",
+    "count": 4
+  }
+}

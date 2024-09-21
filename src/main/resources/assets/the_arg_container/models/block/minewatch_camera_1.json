@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/idk",
+    "up": "the_arg_container:block/idk",
+    "north": "the_arg_container:block/cobblestone",
+    "east": "the_arg_container:block/idk",
+    "south": "the_arg_container:block/idk",
+    "west": "the_arg_container:block/idk",
+    "particle": "the_arg_container:block/idk"
+  },
+  "render_type": "solid"
+}

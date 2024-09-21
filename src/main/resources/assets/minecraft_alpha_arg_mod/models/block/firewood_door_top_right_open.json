@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_right_open",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/firewood_door_down",
-    "top": "minecraft_alpha_arg_mod:block/firewood_door_up"
-  },
-  "render_type": "cutout"
-}

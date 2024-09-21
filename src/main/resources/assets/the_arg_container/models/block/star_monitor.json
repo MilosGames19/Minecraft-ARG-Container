@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/otherballsies",
+    "up": "the_arg_container:block/otherballsies",
+    "north": "the_arg_container:block/otherballsies",
+    "east": "the_arg_container:block/otherballsies",
+    "south": "the_arg_container:block/otherballsies",
+    "west": "the_arg_container:block/otherballsies",
+    "particle": "the_arg_container:block/otherballsies"
+  },
+  "render_type": "solid"
+}

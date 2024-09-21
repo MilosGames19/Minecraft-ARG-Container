@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/bismuth_ore",
+    "up": "the_arg_container:block/bismuth_ore",
+    "north": "the_arg_container:block/bismuth_ore",
+    "east": "the_arg_container:block/bismuth_ore",
+    "south": "the_arg_container:block/bismuth_ore",
+    "west": "the_arg_container:block/bismuth_ore",
+    "particle": "the_arg_container:block/bismuth_ore"
+  },
+  "render_type": "solid"
+}

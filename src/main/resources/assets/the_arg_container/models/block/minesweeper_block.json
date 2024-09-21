@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/sweeputton",
+    "up": "the_arg_container:block/sweeputton",
+    "north": "the_arg_container:block/sweeputton",
+    "east": "the_arg_container:block/sweeputton",
+    "south": "the_arg_container:block/sweeputton",
+    "west": "the_arg_container:block/sweeputton",
+    "particle": "the_arg_container:block/sweeputton"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/switchplate",
+  "textures": {
+    "all": "the_arg_container:block/000009",
+    "particle": "the_arg_container:block/000009",
+    "0": "the_arg_container:block/000009"
+  },
+  "render_type": "cutout"
+}

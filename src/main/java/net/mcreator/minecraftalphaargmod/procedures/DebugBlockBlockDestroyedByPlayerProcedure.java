@@ -5,7 +5,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class DebugBlockBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -14,7 +14,7 @@ public class DebugBlockBlockDestroyedByPlayerProcedure {
 		if (entity.isShiftKeyDown()) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		} else {
-			world.setBlock(BlockPos.containing(x, y, z), MinecraftAlphaArgModModBlocks.DEBUG_BLOCK.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y, z), TheArgContainerModBlocks.DEBUG_BLOCK.get().defaultBlockState(), 3);
 		}
 	}
 }

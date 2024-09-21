@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/groundspongeflap",
+    "up": "the_arg_container:block/groundspongeflap",
+    "north": "the_arg_container:block/groundspongeflap",
+    "east": "the_arg_container:block/groundspongeflap",
+    "south": "the_arg_container:block/groundspongeflap",
+    "west": "the_arg_container:block/groundspongeflap",
+    "particle": "the_arg_container:block/groundspongeflap"
+  },
+  "render_type": "solid"
+}

@@ -7,7 +7,7 @@ import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class MyconToolSetShovelItem extends ShovelItem {
 	public MyconToolSetShovelItem() {
@@ -33,7 +33,7 @@ public class MyconToolSetShovelItem extends ShovelItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftAlphaArgModModBlocks.MYCON_PLANK.get()));
+				return Ingredient.of(new ItemStack(TheArgContainerModBlocks.MYCON_PLANK.get()));
 			}
 		}, 1, -3f, new Item.Properties());
 	}

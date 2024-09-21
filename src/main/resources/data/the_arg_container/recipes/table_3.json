@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "crafting_table",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:mycon_plank"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:mycon_workbench",
+    "count": 1
+  }
+}

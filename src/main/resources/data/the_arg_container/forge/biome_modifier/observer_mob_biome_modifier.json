@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "the_arg_container:observer_mob",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

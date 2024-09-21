@@ -1,0 +1,7 @@
+{
+  "parent": "the_arg_container:custom/sand",
+  "textures": {
+    "missing": "the_arg_container:block/sandag",
+    "particle": "the_arg_container:item/sandag"
+  }
+}

@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class LemuriaItem extends RecordItem {
 	public LemuriaItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:lemuria")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1100);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:lemuria")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1100);
 	}
 }

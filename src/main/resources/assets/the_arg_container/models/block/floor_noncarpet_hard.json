@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/floor_noncarpet_hard",
+    "up": "the_arg_container:block/floor_noncarpet_hard",
+    "north": "the_arg_container:block/floor_noncarpet_hard",
+    "east": "the_arg_container:block/floor_noncarpet_hard",
+    "south": "the_arg_container:block/floor_noncarpet_hard",
+    "west": "the_arg_container:block/floor_noncarpet_hard",
+    "particle": "the_arg_container:block/floor_noncarpet_hard"
+  },
+  "render_type": "solid"
+}

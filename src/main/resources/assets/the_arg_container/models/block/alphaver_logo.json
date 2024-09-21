@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/alphaver_icon_new",
+  "textures": {
+    "all": "the_arg_container:block/alphaver_logo",
+    "particle": "the_arg_container:block/alphaver_logo",
+    "0": "the_arg_container:block/alphaver_logo"
+  },
+  "render_type": "cutout"
+}

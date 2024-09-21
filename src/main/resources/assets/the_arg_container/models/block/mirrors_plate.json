@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/mirrorsplate",
+  "textures": {
+    "all": "the_arg_container:block/000008",
+    "particle": "the_arg_container:block/000008",
+    "0": "the_arg_container:block/000008"
+  },
+  "render_type": "cutout"
+}

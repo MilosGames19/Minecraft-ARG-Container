@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/predv",
+    "up": "the_arg_container:block/predv",
+    "north": "the_arg_container:block/evilredbarthingy",
+    "east": "the_arg_container:block/evilredbarthingy",
+    "south": "the_arg_container:block/evilredbarthingy",
+    "west": "the_arg_container:block/evilredbarthingy",
+    "particle": "the_arg_container:block/predv"
+  },
+  "render_type": "solid"
+}

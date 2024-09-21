@@ -25,11 +25,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class DBGEntity extends Monster {
 	public DBGEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.DBG.get(), world);
+		this(TheArgContainerModEntities.DBG.get(), world);
 	}
 
 	public DBGEntity(EntityType<DBGEntity> type, Level world) {

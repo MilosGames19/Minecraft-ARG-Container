@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -36,7 +36,7 @@ public class MonitorGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 	private BlockEntity boundBlockEntity = null;
 
 	public MonitorGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MinecraftAlphaArgModModMenus.MONITOR_GUI.get(), id);
+		super(TheArgContainerModMenus.MONITOR_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);

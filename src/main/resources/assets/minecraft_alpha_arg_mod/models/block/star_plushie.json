@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/star_plushie",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/21438322",
-    "particle": "minecraft_alpha_arg_mod:block/21438322",
-    "0": "minecraft_alpha_arg_mod:block/21438322"
-  },
-  "render_type": "cutout_mipped"
-}

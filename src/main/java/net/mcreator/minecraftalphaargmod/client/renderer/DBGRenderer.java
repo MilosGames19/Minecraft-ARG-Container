@@ -15,6 +15,6 @@ public class DBGRenderer extends MobRenderer<DBGEntity, ModelDBG<DBGEntity>> {
 
 	@Override
 	public ResourceLocation getTextureLocation(DBGEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/dbg.png");
+		return new ResourceLocation("the_arg_container:textures/entities/dbg.png");
 	}
 }

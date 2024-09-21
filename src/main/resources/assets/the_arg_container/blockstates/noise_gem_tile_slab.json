@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_arg_container:block/noise_gem_tile_slab"
+    },
+    "type=top": {
+      "model": "the_arg_container:block/noise_gem_tile_slab_top"
+    },
+    "type=double": {
+      "model": "the_arg_container:block/noise_gem_tile_slab_full"
+    }
+  }
+}

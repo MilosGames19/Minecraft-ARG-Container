@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "subject_113"
+      },
+      "name": "default"
+    }
+  }
+}

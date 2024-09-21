@@ -1,15 +1,17 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:nexus_bricks",
-    "minecraft_alpha_arg_mod:obsidian_forge",
-    "minecraft_alpha_arg_mod:soul_obsidian",
-    "minecraft_alpha_arg_mod:fortified_black_glass",
-    "minecraft_alpha_arg_mod:fortified_magenta_glass",
-    "minecraft_alpha_arg_mod:fortified_green_glass",
-    "minecraft_alpha_arg_mod:fortified_blue_glass",
-    "minecraft_alpha_arg_mod:fortified_glass",
-    "minecraft_alpha_arg_mod:highwood_roots",
-    "minecraft_alpha_arg_mod:obsidian_brick"
+    "the_arg_container:cheatydevportal",
+    "the_arg_container:nexus_bricks",
+    "the_arg_container:developer_portal",
+    "the_arg_container:obsidian_forge",
+    "the_arg_container:soul_obsidian",
+    "the_arg_container:fortified_black_glass",
+    "the_arg_container:fortified_magenta_glass",
+    "the_arg_container:fortified_green_glass",
+    "the_arg_container:fortified_blue_glass",
+    "the_arg_container:fortified_glass",
+    "the_arg_container:highwood_roots",
+    "the_arg_container:obsidian_brick"
   ]
 }

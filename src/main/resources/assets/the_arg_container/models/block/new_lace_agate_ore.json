@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/lace_agate",
+    "up": "the_arg_container:block/lace_agate",
+    "north": "the_arg_container:block/lace_agate",
+    "east": "the_arg_container:block/lace_agate",
+    "south": "the_arg_container:block/lace_agate",
+    "west": "the_arg_container:block/lace_agate",
+    "particle": "the_arg_container:block/lace_agate"
+  },
+  "render_type": "solid"
+}

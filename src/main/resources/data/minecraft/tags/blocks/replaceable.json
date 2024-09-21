@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:idksk",
-    "minecraft_alpha_arg_mod:unused_6"
+    "the_arg_container:idksk",
+    "the_arg_container:unused_6"
   ]
 }

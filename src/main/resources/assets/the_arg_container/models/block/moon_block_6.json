@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/moon6",
+    "particle": "the_arg_container:block/moon6"
+  },
+  "render_type": "solid"
+}

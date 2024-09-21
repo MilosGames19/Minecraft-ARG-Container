@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class BugnationPlushieBlockIsPlacedByProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -25,7 +25,7 @@ public class BugnationPlushieBlockIsPlacedByProcedure {
 				}
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(MinecraftAlphaArgModModBlocks.BUGNATION_PLUSHIE.get());
+				ItemStack _stktoremove = new ItemStack(TheArgContainerModBlocks.BUGNATION_PLUSHIE.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);

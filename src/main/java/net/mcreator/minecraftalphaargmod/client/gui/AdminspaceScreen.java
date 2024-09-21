@@ -11,7 +11,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminspaceMenu;
 import net.mcreator.minecraftalphaargmod.network.AdminspaceButtonMessage;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
@@ -37,7 +37,7 @@ public class AdminspaceScreen extends AbstractContainerScreen<AdminspaceMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/adminspace.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/screens/adminspace.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -71,24 +71,24 @@ public class AdminspaceScreen extends AbstractContainerScreen<AdminspaceMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.adminspace.label_adminspace"), 6, 7, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.adminspace.label_proceed"), 63, 51, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.adminspace.label_adminspace"), 6, 7, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.adminspace.label_proceed"), 63, 51, -16777216, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_yes = Button.builder(Component.translatable("gui.minecraft_alpha_arg_mod.adminspace.button_yes"), e -> {
+		button_yes = Button.builder(Component.translatable("gui.the_arg_container.adminspace.button_yes"), e -> {
 			if (true) {
-				MinecraftAlphaArgModMod.PACKET_HANDLER.sendToServer(new AdminspaceButtonMessage(0, x, y, z, textstate));
+				TheArgContainerMod.PACKET_HANDLER.sendToServer(new AdminspaceButtonMessage(0, x, y, z, textstate));
 				AdminspaceButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		}).bounds(this.leftPos + 63, this.topPos + 71, 40, 20).build();
 		guistate.put("button:button_yes", button_yes);
 		this.addRenderableWidget(button_yes);
-		button_no = Button.builder(Component.translatable("gui.minecraft_alpha_arg_mod.adminspace.button_no"), e -> {
+		button_no = Button.builder(Component.translatable("gui.the_arg_container.adminspace.button_no"), e -> {
 			if (true) {
-				MinecraftAlphaArgModMod.PACKET_HANDLER.sendToServer(new AdminspaceButtonMessage(1, x, y, z, textstate));
+				TheArgContainerMod.PACKET_HANDLER.sendToServer(new AdminspaceButtonMessage(1, x, y, z, textstate));
 				AdminspaceButtonMessage.handleButtonAction(entity, 1, x, y, z, textstate);
 			}
 		}).bounds(this.leftPos + 66, this.topPos + 97, 35, 20).build();

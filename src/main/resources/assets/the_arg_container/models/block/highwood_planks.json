@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/highwood_planks",
+    "particle": "the_arg_container:block/highwood_planks"
+  },
+  "render_type": "solid"
+}

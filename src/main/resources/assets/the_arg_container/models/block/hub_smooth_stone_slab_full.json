@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "the_arg_container:block/tile000000",
+    "top": "the_arg_container:block/tile000000",
+    "side": "the_arg_container:block/tile005"
+  },
+  "render_type": "solid"
+}

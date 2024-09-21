@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/gooboobig",
+    "up": "the_arg_container:block/gooboobig",
+    "north": "the_arg_container:block/gooboobig",
+    "east": "the_arg_container:block/gooboobig",
+    "south": "the_arg_container:block/gooboobig",
+    "west": "the_arg_container:block/gooboobig",
+    "particle": "the_arg_container:block/gooboobig"
+  },
+  "render_type": "solid"
+}

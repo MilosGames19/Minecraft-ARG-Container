@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.minecraftalphaargmod.procedures.SpaceDashProcedure;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.function.Supplier;
 
@@ -58,6 +58,6 @@ public class SmallDashMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MinecraftAlphaArgModMod.addNetworkMessage(SmallDashMessage.class, SmallDashMessage::buffer, SmallDashMessage::new, SmallDashMessage::handler);
+		TheArgContainerMod.addNetworkMessage(SmallDashMessage.class, SmallDashMessage::buffer, SmallDashMessage::new, SmallDashMessage::handler);
 	}
 }

@@ -29,7 +29,7 @@ public class SoulDDimension {
 					return true;
 				}
 			};
-			event.register(new ResourceLocation("minecraft_alpha_arg_mod:soul_d"), customEffect);
+			event.register(new ResourceLocation("the_arg_container:soul_d"), customEffect);
 		}
 	}
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/mwwd",
+  "textures": {
+    "all": "the_arg_container:block/mwwd",
+    "particle": "the_arg_container:block/mwwd",
+    "5": "the_arg_container:block/mwwd"
+  },
+  "render_type": "solid"
+}

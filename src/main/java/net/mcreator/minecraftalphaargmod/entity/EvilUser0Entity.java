@@ -43,8 +43,8 @@ import net.minecraft.nbt.CompoundTag;
 import net.mcreator.minecraftalphaargmod.procedures.EvilUser0OnInitialEntitySpawnProcedure;
 import net.mcreator.minecraftalphaargmod.procedures.EvilUser0EntityIsHurtProcedure;
 import net.mcreator.minecraftalphaargmod.procedures.EvilUser0EntityDiesProcedure;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 import javax.annotation.Nullable;
 
@@ -52,7 +52,7 @@ public class EvilUser0Entity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.YELLOW, ServerBossEvent.BossBarOverlay.PROGRESS);
 
 	public EvilUser0Entity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.EVIL_USER_0.get(), world);
+		this(TheArgContainerModEntities.EVIL_USER_0.get(), world);
 	}
 
 	public EvilUser0Entity(EntityType<EvilUser0Entity> type, Level world) {
@@ -63,7 +63,7 @@ public class EvilUser0Entity extends Monster {
 		setCustomName(Component.literal("user0"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(MinecraftAlphaArgModModItems.SCYTHE.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TheArgContainerModItems.SCYTHE.get()));
 	}
 
 	@Override

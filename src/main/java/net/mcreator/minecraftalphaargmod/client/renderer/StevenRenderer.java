@@ -18,6 +18,6 @@ public class StevenRenderer extends HumanoidMobRenderer<StevenEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(StevenEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/steven.png");
+		return new ResourceLocation("the_arg_container:textures/entities/steven.png");
 	}
 }

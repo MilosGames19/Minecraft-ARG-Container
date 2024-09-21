@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/azereskop",
+    "up": "the_arg_container:block/azereskop",
+    "north": "the_arg_container:block/azereskob",
+    "east": "the_arg_container:block/azereskob",
+    "south": "the_arg_container:block/azereskob",
+    "west": "the_arg_container:block/azereskob",
+    "particle": "the_arg_container:block/azereskop"
+  },
+  "render_type": "solid"
+}

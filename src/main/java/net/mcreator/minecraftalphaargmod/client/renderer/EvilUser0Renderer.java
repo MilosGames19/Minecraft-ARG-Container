@@ -18,6 +18,6 @@ public class EvilUser0Renderer extends HumanoidMobRenderer<EvilUser0Entity, Huma
 
 	@Override
 	public ResourceLocation getTextureLocation(EvilUser0Entity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/user0.png");
+		return new ResourceLocation("the_arg_container:textures/entities/user0.png");
 	}
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "minecraft_alpha_arg_mod:block/000029",
-    "particle": "minecraft_alpha_arg_mod:block/000029"
-  },
-  "render_type": "solid"
-}

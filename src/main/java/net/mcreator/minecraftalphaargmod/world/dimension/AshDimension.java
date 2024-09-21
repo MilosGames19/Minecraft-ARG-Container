@@ -29,7 +29,7 @@ public class AshDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("minecraft_alpha_arg_mod:ash"), customEffect);
+			event.register(new ResourceLocation("the_arg_container:ash"), customEffect);
 		}
 	}
 }

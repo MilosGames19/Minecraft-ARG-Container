@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_arg_container:block/oslab"
+    },
+    "type=top": {
+      "model": "the_arg_container:block/oslab_top"
+    },
+    "type=double": {
+      "model": "the_arg_container:block/oslab_full"
+    }
+  }
+}

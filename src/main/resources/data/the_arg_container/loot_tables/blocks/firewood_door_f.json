@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "the_arg_container:blocks/firewood_door_f",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "the_arg_container:firewood_door_f",
+          "conditions": [
+            {
+              "block": "the_arg_container:firewood_door_f",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

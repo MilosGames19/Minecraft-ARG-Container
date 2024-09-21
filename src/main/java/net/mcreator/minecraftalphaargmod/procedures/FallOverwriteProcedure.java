@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 import javax.annotation.Nullable;
 
@@ -29,7 +29,7 @@ public class FallOverwriteProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MinecraftAlphaArgModModItems.DISMANTLER.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModItems.DISMANTLER.get()) {
 			entity.fallDistance = 0;
 		}
 	}

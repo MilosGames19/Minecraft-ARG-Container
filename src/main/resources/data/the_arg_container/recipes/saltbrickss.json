@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "the_arg_container:salt_block"
+    }
+  ],
+  "result": {
+    "item": "the_arg_container:granular_salt",
+    "count": 4
+  }
+}

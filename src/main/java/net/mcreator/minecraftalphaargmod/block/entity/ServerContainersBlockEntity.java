@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.ServerGuIMenu;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlockEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class ServerContainersBlockEntity extends RandomizableContainerBlockEntit
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public ServerContainersBlockEntity(BlockPos position, BlockState state) {
-		super(MinecraftAlphaArgModModBlockEntities.SERVER_CONTAINERS.get(), position, state);
+		super(TheArgContainerModBlockEntities.SERVER_CONTAINERS.get(), position, state);
 	}
 
 	@Override

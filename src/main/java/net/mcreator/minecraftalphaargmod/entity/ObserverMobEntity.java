@@ -32,11 +32,11 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.minecraftalphaargmod.procedures.ObserverMobEntityIsHurtProcedure;
 import net.mcreator.minecraftalphaargmod.procedures.EssencedropProcedure;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class ObserverMobEntity extends Monster {
 	public ObserverMobEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.OBSERVER_MOB.get(), world);
+		this(TheArgContainerModEntities.OBSERVER_MOB.get(), world);
 	}
 
 	public ObserverMobEntity(EntityType<ObserverMobEntity> type, Level world) {
@@ -103,7 +103,7 @@ public class ObserverMobEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MinecraftAlphaArgModModEntities.OBSERVER_MOB.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(TheArgContainerModEntities.OBSERVER_MOB.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 

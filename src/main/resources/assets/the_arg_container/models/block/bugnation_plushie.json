@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/plushie",
+  "textures": {
+    "all": "the_arg_container:block/bug",
+    "particle": "the_arg_container:block/bug",
+    "0": "the_arg_container:block/bug"
+  },
+  "render_type": "cutout_mipped"
+}

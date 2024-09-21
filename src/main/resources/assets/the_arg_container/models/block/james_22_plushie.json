@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/james22_plushie",
+  "textures": {
+    "all": "the_arg_container:block/james22m00nlander",
+    "particle": "the_arg_container:block/james22m00nlander",
+    "2": "the_arg_container:block/james22m00nlander"
+  },
+  "render_type": "cutout"
+}

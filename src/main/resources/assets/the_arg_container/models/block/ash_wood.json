@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/ashlog",
+    "up": "the_arg_container:block/ashlog",
+    "north": "the_arg_container:block/ashlogside",
+    "east": "the_arg_container:block/ashlogside",
+    "south": "the_arg_container:block/ashlogside",
+    "west": "the_arg_container:block/ashlogside",
+    "particle": "the_arg_container:block/ashlog"
+  },
+  "render_type": "solid"
+}

@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class K2Item extends RecordItem {
 	public K2Item() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:k2")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1340);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:k2")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1340);
 	}
 }

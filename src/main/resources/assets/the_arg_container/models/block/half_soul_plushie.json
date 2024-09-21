@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/half_soul_plushie",
+  "textures": {
+    "all": "the_arg_container:block/char_half",
+    "particle": "the_arg_container:block/char_half",
+    "1": "the_arg_container:block/char_half"
+  },
+  "render_type": "solid"
+}

@@ -19,13 +19,13 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.features.configurations.StructureFeatureConfiguration;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import com.mojang.serialization.Codec;
 
 @Mod.EventBusSubscriber
 public class StructureFeature extends Feature<StructureFeatureConfiguration> {
-	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, MinecraftAlphaArgModMod.MODID);
+	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, TheArgContainerMod.MODID);
 	public static final RegistryObject<Feature<?>> STRUCTURE_FEATURE = REGISTRY.register("structure_feature", () -> new StructureFeature(StructureFeatureConfiguration.CODEC));
 
 	public StructureFeature(Codec<StructureFeatureConfiguration> codec) {

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aab",
+    " ca",
+    "c a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:void_gem"
+    },
+    "b": {
+      "item": "the_arg_container:creepers_heart"
+    },
+    "c": {
+      "item": "the_arg_container:data_daisy"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:dismantler",
+    "count": 1
+  }
+}

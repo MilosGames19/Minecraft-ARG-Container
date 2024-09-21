@@ -32,7 +32,7 @@ public class BlueChestGUIScreen extends AbstractContainerScreen<BlueChestGUIMenu
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/blue_chest_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/screens/blue_chest_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -66,8 +66,8 @@ public class BlueChestGUIScreen extends AbstractContainerScreen<BlueChestGUIMenu
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.blue_chest_gui.label_empty"), 7, 72, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.blue_chest_gui.label_blue_chest"), 7, 6, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.blue_chest_gui.label_empty"), 7, 72, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.blue_chest_gui.label_blue_chest"), 7, 6, -12829636, false);
 	}
 
 	@Override

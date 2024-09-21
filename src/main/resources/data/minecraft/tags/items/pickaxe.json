@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:mycon_tool_set_pickaxe",
+    "the_arg_container:mycon_tool_set_pickaxe",
     "minecraft:wooden_pickaxe",
     "minecraft:stone_pickaxe",
     "minecraft:iron_pickaxe",

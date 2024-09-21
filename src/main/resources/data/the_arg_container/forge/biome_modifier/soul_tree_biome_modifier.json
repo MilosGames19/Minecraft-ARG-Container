@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_arg_container:soul",
+  "features": "the_arg_container:soul_tree",
+  "step": "surface_structures"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "the_arg_container:block/text17",
+    "top": "the_arg_container:block/text17",
+    "side": "the_arg_container:block/text17"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/partplate",
+  "textures": {
+    "all": "the_arg_container:block/000011",
+    "particle": "the_arg_container:block/000011",
+    "0": "the_arg_container:block/000011"
+  },
+  "render_type": "cutout"
+}

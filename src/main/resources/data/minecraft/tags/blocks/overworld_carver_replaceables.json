@@ -2,12 +2,12 @@
   "replace": false,
   "values": [
     "minecraft:air",
-    "minecraft_alpha_arg_mod:soul_grass",
-    "minecraft_alpha_arg_mod:soul_stone",
-    "minecraft_alpha_arg_mod:soul_dirt",
-    "minecraft_alpha_arg_mod:grass_block",
-    "minecraft_alpha_arg_mod:dirt",
-    "minecraft_alpha_arg_mod:ash_grass",
-    "minecraft_alpha_arg_mod:ash_dirt"
+    "the_arg_container:soul_grass",
+    "the_arg_container:soul_stone",
+    "the_arg_container:soul_dirt",
+    "the_arg_container:grass_block",
+    "the_arg_container:dirt",
+    "the_arg_container:ash_grass",
+    "the_arg_container:ash_dirt"
   ]
 }

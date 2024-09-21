@@ -25,6 +25,6 @@ public class BlueGiantRenderer extends HumanoidMobRenderer<BlueGiantEntity, Huma
 
 	@Override
 	public ResourceLocation getTextureLocation(BlueGiantEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/download.png");
+		return new ResourceLocation("the_arg_container:textures/entities/download.png");
 	}
 }

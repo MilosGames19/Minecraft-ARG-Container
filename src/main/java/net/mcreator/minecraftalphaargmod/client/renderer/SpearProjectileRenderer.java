@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class SpearProjectileRenderer extends EntityRenderer<SpearProjectileEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/spearprojectile.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/entities/spearprojectile.png");
 	private final Modelspearprojectile model;
 
 	public SpearProjectileRenderer(EntityRendererProvider.Context context) {

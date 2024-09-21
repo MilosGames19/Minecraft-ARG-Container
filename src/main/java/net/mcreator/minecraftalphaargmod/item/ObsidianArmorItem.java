@@ -11,7 +11,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 public abstract class ObsidianArmorItem extends ArmorItem {
 	public ObsidianArmorItem(ArmorItem.Type type, Item.Properties properties) {
@@ -38,7 +38,7 @@ public abstract class ObsidianArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftAlphaArgModModItems.OBSIDIAN_INGOT.get()));
+				return Ingredient.of(new ItemStack(TheArgContainerModItems.OBSIDIAN_INGOT.get()));
 			}
 
 			@Override
@@ -65,7 +65,7 @@ public abstract class ObsidianArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "minecraft_alpha_arg_mod:textures/models/armor/obsidian__layer_1.png";
+			return "the_arg_container:textures/models/armor/obsidian__layer_1.png";
 		}
 	}
 
@@ -76,7 +76,7 @@ public abstract class ObsidianArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "minecraft_alpha_arg_mod:textures/models/armor/obsidian__layer_1.png";
+			return "the_arg_container:textures/models/armor/obsidian__layer_1.png";
 		}
 	}
 
@@ -87,7 +87,7 @@ public abstract class ObsidianArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "minecraft_alpha_arg_mod:textures/models/armor/obsidian__layer_2.png";
+			return "the_arg_container:textures/models/armor/obsidian__layer_2.png";
 		}
 	}
 
@@ -98,7 +98,7 @@ public abstract class ObsidianArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "minecraft_alpha_arg_mod:textures/models/armor/obsidian__layer_1.png";
+			return "the_arg_container:textures/models/armor/obsidian__layer_1.png";
 		}
 	}
 }

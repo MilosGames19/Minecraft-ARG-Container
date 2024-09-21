@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "the_arg_container:soul",
+  "spawners": {
+    "type": "the_arg_container:soul_entity",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

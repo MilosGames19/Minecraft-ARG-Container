@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/sweepne",
+    "up": "the_arg_container:block/sweepne",
+    "north": "the_arg_container:block/sweepne",
+    "east": "the_arg_container:block/sweepne",
+    "south": "the_arg_container:block/sweepne",
+    "west": "the_arg_container:block/sweepne",
+    "particle": "the_arg_container:block/sweepne"
+  },
+  "render_type": "solid"
+}

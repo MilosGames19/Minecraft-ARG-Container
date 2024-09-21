@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/classicminecraftt",
+  "textures": {
+    "all": "the_arg_container:block/classicminecraft",
+    "particle": "the_arg_container:block/classicminecraft",
+    "4": "the_arg_container:block/classicminecraft"
+  },
+  "render_type": "solid"
+}

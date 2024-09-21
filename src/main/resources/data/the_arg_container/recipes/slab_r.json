@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:wooden_planks"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:oslab",
+    "count": 6
+  }
+}

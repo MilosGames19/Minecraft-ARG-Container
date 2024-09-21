@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/hubsky",
+    "up": "the_arg_container:block/hubsky",
+    "north": "the_arg_container:block/hubsky",
+    "east": "the_arg_container:block/hubsky",
+    "south": "the_arg_container:block/hubsky",
+    "west": "the_arg_container:block/hubsky",
+    "particle": "the_arg_container:block/hubsky"
+  },
+  "render_type": "cutout"
+}

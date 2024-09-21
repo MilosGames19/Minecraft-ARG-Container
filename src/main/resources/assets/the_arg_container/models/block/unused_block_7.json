@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/smooth_low_river_stone",
+    "up": "the_arg_container:block/smooth_low_river_stone",
+    "north": "the_arg_container:block/smooth_low_river_stone",
+    "east": "the_arg_container:block/smooth_low_river_stone",
+    "south": "the_arg_container:block/smooth_low_river_stone",
+    "west": "the_arg_container:block/smooth_low_river_stone",
+    "particle": "the_arg_container:block/smooth_low_river_stone"
+  },
+  "render_type": "solid"
+}

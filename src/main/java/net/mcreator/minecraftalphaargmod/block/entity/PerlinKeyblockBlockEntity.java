@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.Key1Menu;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlockEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class PerlinKeyblockBlockEntity extends RandomizableContainerBlockEntity 
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public PerlinKeyblockBlockEntity(BlockPos position, BlockState state) {
-		super(MinecraftAlphaArgModModBlockEntities.PERLIN_KEYBLOCK.get(), position, state);
+		super(TheArgContainerModBlockEntities.PERLIN_KEYBLOCK.get(), position, state);
 	}
 
 	@Override

@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_bottom_right",
+  "textures": {
+    "bottom": "the_arg_container:block/door_iron_lower",
+    "top": "the_arg_container:block/door_iron_upper1"
+  },
+  "render_type": "cutout"
+}

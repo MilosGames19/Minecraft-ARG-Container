@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/fracturedmist",
+    "up": "the_arg_container:block/fracturedmist",
+    "north": "the_arg_container:block/fracturedmist",
+    "east": "the_arg_container:block/fracturedmist",
+    "south": "the_arg_container:block/fracturedmist",
+    "west": "the_arg_container:block/fracturedmist",
+    "particle": "the_arg_container:block/fracturedmist"
+  },
+  "render_type": "solid"
+}

@@ -27,11 +27,11 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.minecraftalphaargmod.procedures.StevenOnEntityTickUpdateProcedure;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class StevenEntity extends Monster {
 	public StevenEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.STEVEN.get(), world);
+		this(TheArgContainerModEntities.STEVEN.get(), world);
 	}
 
 	public StevenEntity(EntityType<StevenEntity> type, Level world) {

@@ -9,7 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.FreezerGUIMenu;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
@@ -46,7 +46,7 @@ public class FreezerGUIScreen extends AbstractContainerScreen<FreezerGUIMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/freezer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/freezer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();
 	}
@@ -67,13 +67,13 @@ public class FreezerGUIScreen extends AbstractContainerScreen<FreezerGUIMenu> {
 	@Override
 	public void containerTick() {
 		super.containerTick();
-		MinecraftAlphaArgModMod.PACKET_HANDLER.sendToServer(new FreezerGUIMenu.FreezerGUIOtherMessage(0, x, y, z, textstate));
+		TheArgContainerMod.PACKET_HANDLER.sendToServer(new FreezerGUIMenu.FreezerGUIOtherMessage(0, x, y, z, textstate));
 		FreezerGUIMenu.FreezerGUIOtherMessage.handleOtherAction(entity, 0, x, y, z, textstate);
 	}
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.freezer_gui.label_freezer"), 66, 6, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.freezer_gui.label_freezer"), 66, 6, -1, false);
 	}
 
 	@Override

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:purpur_block"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:purpur_bricks",
+    "count": 2
+  }
+}

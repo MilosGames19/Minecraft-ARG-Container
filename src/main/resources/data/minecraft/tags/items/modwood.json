@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:flamewood_planks",
-    "minecraft_alpha_arg_mod:tea_planks",
-    "minecraft_alpha_arg_mod:highwood_planks",
-    "minecraft_alpha_arg_mod:wooden_planks",
-    "minecraft_alpha_arg_mod:firewood_planks",
-    "minecraft_alpha_arg_mod:soul_plank",
-    "minecraft_alpha_arg_mod:iken_planks",
-    "minecraft_alpha_arg_mod:mycon_plank"
+    "the_arg_container:flamewood_planks",
+    "the_arg_container:tea_planks",
+    "the_arg_container:highwood_planks",
+    "the_arg_container:wooden_planks",
+    "the_arg_container:firewood_planks",
+    "the_arg_container:soul_plank",
+    "the_arg_container:iken_planks",
+    "the_arg_container:mycon_plank"
   ]
 }

@@ -1,9 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/googogo",
-    "top": "minecraft_alpha_arg_mod:block/googogo",
-    "side": "minecraft_alpha_arg_mod:block/googogo"
-  },
-  "render_type": "solid"
-}

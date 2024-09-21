@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "the_arg_container:block/floor_carpet",
+    "top": "the_arg_container:block/floor_carpet",
+    "side": "the_arg_container:block/floor_carpet"
+  },
+  "render_type": "solid"
+}

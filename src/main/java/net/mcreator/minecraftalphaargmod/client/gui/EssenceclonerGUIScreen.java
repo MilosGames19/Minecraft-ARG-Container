@@ -45,7 +45,7 @@ public class EssenceclonerGUIScreen extends AbstractContainerScreen<Essenceclone
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/essencecloner.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/essencecloner.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();
 	}

@@ -25,6 +25,6 @@ public class GiantRenderer extends HumanoidMobRenderer<GiantEntity, HumanoidMode
 
 	@Override
 	public ResourceLocation getTextureLocation(GiantEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/giant.png");
+		return new ResourceLocation("the_arg_container:textures/entities/giant.png");
 	}
 }

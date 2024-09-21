@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/kleebopumboulardungleusouparjoulargiaryian",
+    "up": "the_arg_container:block/kleebopumboulardungleusouparjoulargiaryian",
+    "north": "the_arg_container:block/kleebopumboulardungleusouparjoulargiaryian",
+    "east": "the_arg_container:block/kleebopumboulardungleusouparjoulargiaryian",
+    "south": "the_arg_container:block/kleebopumboulardungleusouparjoulargiaryian",
+    "west": "the_arg_container:block/kleebopumboulardungleusouparjoulargiaryian",
+    "particle": "the_arg_container:block/kleebopumboulardungleusouparjoulargiaryian"
+  },
+  "render_type": "solid"
+}

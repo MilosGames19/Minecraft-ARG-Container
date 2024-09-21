@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/firewood",
+    "up": "the_arg_container:block/firewood",
+    "north": "the_arg_container:block/firewood_fanmade_side",
+    "east": "the_arg_container:block/firewood_fanmade_side",
+    "south": "the_arg_container:block/firewood_fanmade_side",
+    "west": "the_arg_container:block/firewood_fanmade_side",
+    "particle": "the_arg_container:block/firewood"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/perlindbgline1",
+    "up": "the_arg_container:block/perlindbgline1",
+    "north": "the_arg_container:block/perlindbgline",
+    "east": "the_arg_container:block/perlindbgline",
+    "south": "the_arg_container:block/perlindbgline",
+    "west": "the_arg_container:block/perlindbgline",
+    "particle": "the_arg_container:block/perlindbgline1"
+  },
+  "render_type": "solid"
+}

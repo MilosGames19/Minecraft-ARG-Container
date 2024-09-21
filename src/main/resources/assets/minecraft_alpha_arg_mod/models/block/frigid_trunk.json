@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "minecraft_alpha_arg_mod:block/iceleave3",
-    "particle": "minecraft_alpha_arg_mod:block/iceleave3"
-  },
-  "render_type": "cutout"
-}

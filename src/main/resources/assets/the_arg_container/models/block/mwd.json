@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/mwd",
+  "textures": {
+    "all": "the_arg_container:block/mwd_logo",
+    "particle": "the_arg_container:block/mwd_logo",
+    "11": "the_arg_container:block/mwd_logo"
+  },
+  "render_type": "cutout"
+}

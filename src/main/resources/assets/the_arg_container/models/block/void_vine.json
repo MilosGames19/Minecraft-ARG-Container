@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/voidvine",
+  "textures": {
+    "all": "the_arg_container:block/vine",
+    "particle": "the_arg_container:block/vine",
+    "0": "the_arg_container:block/vine"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -7,7 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class MyconToolSetHoeItem extends HoeItem {
 	public MyconToolSetHoeItem() {
@@ -33,7 +33,7 @@ public class MyconToolSetHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftAlphaArgModModBlocks.MYCON_PLANK.get()));
+				return Ingredient.of(new ItemStack(TheArgContainerModBlocks.MYCON_PLANK.get()));
 			}
 		}, 0, -3f, new Item.Properties());
 	}

@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/author_plushie",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/2022_09_04_missing-texture-20813405",
-    "particle": "minecraft_alpha_arg_mod:block/2022_09_04_missing-texture-20813405",
-    "0": "minecraft_alpha_arg_mod:block/2022_09_04_missing-texture-20813405"
-  },
-  "render_type": "cutout_mipped"
-}

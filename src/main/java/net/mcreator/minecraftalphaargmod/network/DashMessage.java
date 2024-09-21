@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.minecraftalphaargmod.procedures.DashProcedureProcedure;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.function.Supplier;
 
@@ -58,6 +58,6 @@ public class DashMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MinecraftAlphaArgModMod.addNetworkMessage(DashMessage.class, DashMessage::buffer, DashMessage::new, DashMessage::handler);
+		TheArgContainerMod.addNetworkMessage(DashMessage.class, DashMessage::buffer, DashMessage::new, DashMessage::handler);
 	}
 }

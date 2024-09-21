@@ -9,7 +9,7 @@ public class BanTextDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("minecraft_alpha_arg_mod:ash")) == (entity.level().dimension())) {
+		if (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:ash")) == (entity.level().dimension())) {
 			return true;
 		}
 		return false;

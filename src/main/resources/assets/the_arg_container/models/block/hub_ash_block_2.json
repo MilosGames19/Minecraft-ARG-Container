@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/tile213",
+    "up": "the_arg_container:block/tile215",
+    "north": "the_arg_container:block/tile214",
+    "east": "the_arg_container:block/tile214",
+    "south": "the_arg_container:block/tile214",
+    "west": "the_arg_container:block/tile214",
+    "particle": "the_arg_container:block/tile213"
+  },
+  "render_type": "solid"
+}

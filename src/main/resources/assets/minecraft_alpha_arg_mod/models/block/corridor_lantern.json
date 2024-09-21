@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/azereskop",
-    "particle": "minecraft_alpha_arg_mod:block/azereskop"
-  },
-  "render_type": "solid"
-}

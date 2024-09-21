@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/mwwd",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/mwwd",
-    "particle": "minecraft_alpha_arg_mod:block/mwwd",
-    "5": "minecraft_alpha_arg_mod:block/mwwd"
-  },
-  "render_type": "solid"
-}

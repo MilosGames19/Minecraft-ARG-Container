@@ -27,11 +27,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class BlueGiantEntity extends Monster {
 	public BlueGiantEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.BLUE_GIANT.get(), world);
+		this(TheArgContainerModEntities.BLUE_GIANT.get(), world);
 	}
 
 	public BlueGiantEntity(EntityType<BlueGiantEntity> type, Level world) {

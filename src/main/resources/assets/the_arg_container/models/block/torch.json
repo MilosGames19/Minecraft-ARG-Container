@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/torch",
+  "textures": {
+    "all": "the_arg_container:block/134124",
+    "particle": "the_arg_container:block/134124",
+    "0": "the_arg_container:block/134124"
+  },
+  "render_type": "cutout"
+}

@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.SafeGUIMenu;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlockEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class SafeBlockEntity extends RandomizableContainerBlockEntity implements
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public SafeBlockEntity(BlockPos position, BlockState state) {
-		super(MinecraftAlphaArgModModBlockEntities.SAFE.get(), position, state);
+		super(TheArgContainerModBlockEntities.SAFE.get(), position, state);
 	}
 
 	@Override

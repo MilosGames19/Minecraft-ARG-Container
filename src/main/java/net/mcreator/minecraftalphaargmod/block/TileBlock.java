@@ -18,9 +18,9 @@ import net.minecraft.core.BlockPos;
 public class TileBlock extends Block {
 	public TileBlock() {
 		super(BlockBehaviour.Properties.of()
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:glass"))))
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass"))))
 				.strength(0.3f, 0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 

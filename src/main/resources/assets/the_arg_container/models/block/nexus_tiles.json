@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/nexus_tiles",
+    "up": "the_arg_container:block/nexus_tiles",
+    "north": "the_arg_container:block/nexus_tiles",
+    "east": "the_arg_container:block/nexus_tiles",
+    "south": "the_arg_container:block/nexus_tiles",
+    "west": "the_arg_container:block/nexus_tiles",
+    "particle": "the_arg_container:block/nexus_tiles"
+  },
+  "render_type": "solid"
+}

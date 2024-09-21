@@ -12,7 +12,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminSpaceGUIMenu;
 import net.mcreator.minecraftalphaargmod.network.AdminSpaceGUIButtonMessage;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
@@ -38,7 +38,7 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/admin_space_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/screens/admin_space_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -55,9 +55,9 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/bogulied.png"), this.leftPos + -2, this.topPos + -10, 0, 0, 176, 176, 176, 176);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/bogulied.png"), this.leftPos + -2, this.topPos + -10, 0, 0, 176, 176, 176, 176);
 
-		guiGraphics.blit(new ResourceLocation("minecraft_alpha_arg_mod:textures/screens/moechang.png"), this.leftPos + 58, this.topPos + 46, 0, 0, 55, 59, 55, 59);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/moechang.png"), this.leftPos + 58, this.topPos + 46, 0, 0, 55, 59, 55, 59);
 
 		RenderSystem.disableBlend();
 	}
@@ -81,21 +81,21 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.admin_space_gui.label_adminspace_console"), 4, -7, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.admin_space_gui.label_v2084"), 133, -7, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.admin_space_gui.label_adminspace_console"), 4, -7, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.admin_space_gui.label_v2084"), 133, -7, -16777216, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		asc = new EditBox(this.font, this.leftPos + 25, this.topPos + 17, 118, 18, Component.translatable("gui.minecraft_alpha_arg_mod.admin_space_gui.asc"));
+		asc = new EditBox(this.font, this.leftPos + 25, this.topPos + 17, 118, 18, Component.translatable("gui.the_arg_container.admin_space_gui.asc"));
 		asc.setMaxLength(32767);
 		guistate.put("text:asc", asc);
 		this.addWidget(this.asc);
-		button_execute = Button.builder(Component.translatable("gui.minecraft_alpha_arg_mod.admin_space_gui.button_execute"), e -> {
+		button_execute = Button.builder(Component.translatable("gui.the_arg_container.admin_space_gui.button_execute"), e -> {
 			if (true) {
 				textstate.put("textin:asc", asc.getValue());
-				MinecraftAlphaArgModMod.PACKET_HANDLER.sendToServer(new AdminSpaceGUIButtonMessage(0, x, y, z, textstate));
+				TheArgContainerMod.PACKET_HANDLER.sendToServer(new AdminSpaceGUIButtonMessage(0, x, y, z, textstate));
 				AdminSpaceGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		}).bounds(this.leftPos + 55, this.topPos + 133, 61, 20).build();

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "minecraft_alpha_arg_mod:block/short_grass_green",
-    "particle": "minecraft_alpha_arg_mod:block/short_grass_green"
-  },
-  "render_type": "cutout"
-}

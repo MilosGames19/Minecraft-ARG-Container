@@ -17,7 +17,7 @@ import net.mcreator.minecraftalphaargmod.procedures.VProcedure;
 import net.mcreator.minecraftalphaargmod.procedures.StarPProcedure;
 import net.mcreator.minecraftalphaargmod.procedures.PsiProcedure;
 import net.mcreator.minecraftalphaargmod.procedures.OffMProcedure;
-import net.mcreator.minecraftalphaargmod.MinecraftAlphaArgModMod;
+import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -102,7 +102,7 @@ public class MonitorGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MinecraftAlphaArgModMod.addNetworkMessage(MonitorGUIButtonMessage.class, MonitorGUIButtonMessage::buffer, MonitorGUIButtonMessage::new, MonitorGUIButtonMessage::handler);
+		TheArgContainerMod.addNetworkMessage(MonitorGUIButtonMessage.class, MonitorGUIButtonMessage::buffer, MonitorGUIButtonMessage::new, MonitorGUIButtonMessage::handler);
 	}
 
 	public static void writeTextState(HashMap<String, String> map, FriendlyByteBuf buffer) {

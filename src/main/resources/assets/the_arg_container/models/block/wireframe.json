@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/wireframe",
+    "particle": "the_arg_container:block/wireframe"
+  },
+  "render_type": "cutout"
+}

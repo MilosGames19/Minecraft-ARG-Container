@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/bookshelf_top",
+    "up": "the_arg_container:block/bookshelf_top",
+    "north": "the_arg_container:block/empty_bookshelf_",
+    "east": "the_arg_container:block/empty_bookshelf_",
+    "south": "the_arg_container:block/empty_bookshelf_",
+    "west": "the_arg_container:block/empty_bookshelf_",
+    "particle": "the_arg_container:block/bookshelf_top"
+  },
+  "render_type": "solid"
+}

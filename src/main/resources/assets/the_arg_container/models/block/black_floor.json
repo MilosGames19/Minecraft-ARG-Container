@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/thatsillydarkness",
+    "up": "the_arg_container:block/thatsillydarkness",
+    "north": "the_arg_container:block/thatsillydarkness",
+    "east": "the_arg_container:block/thatsillydarkness",
+    "south": "the_arg_container:block/thatsillydarkness",
+    "west": "the_arg_container:block/thatsillydarkness",
+    "particle": "the_arg_container:block/thatsillydarkness"
+  },
+  "render_type": "solid"
+}

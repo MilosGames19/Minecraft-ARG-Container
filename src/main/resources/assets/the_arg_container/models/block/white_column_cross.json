@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/bleebo",
+    "up": "the_arg_container:block/bleebo",
+    "north": "the_arg_container:block/bleebo",
+    "east": "the_arg_container:block/bleebo",
+    "south": "the_arg_container:block/bleebo",
+    "west": "the_arg_container:block/bleebo",
+    "particle": "the_arg_container:block/bleebo"
+  },
+  "render_type": "solid"
+}

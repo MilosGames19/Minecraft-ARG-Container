@@ -7,7 +7,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 public class RepellerItem extends SwordItem {
 	public RepellerItem() {
@@ -33,7 +33,7 @@ public class RepellerItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftAlphaArgModModItems.VOID_GEM.get()));
+				return Ingredient.of(new ItemStack(TheArgContainerModItems.VOID_GEM.get()));
 			}
 		}, 3, 0f, new Item.Properties());
 	}

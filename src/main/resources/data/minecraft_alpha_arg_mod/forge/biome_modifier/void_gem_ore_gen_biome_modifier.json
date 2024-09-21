@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
-  "features": "minecraft_alpha_arg_mod:void_gem_ore_gen",
-  "step": "surface_structures"
-}

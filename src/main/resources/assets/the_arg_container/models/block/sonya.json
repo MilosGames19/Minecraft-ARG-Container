@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/sonya_plushie",
+  "textures": {
+    "all": "the_arg_container:block/sonya_plushie",
+    "particle": "the_arg_container:block/sonya_plushie",
+    "2": "the_arg_container:block/sonya_plushie"
+  },
+  "render_type": "cutout"
+}

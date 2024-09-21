@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_arg_container:block/brick_wall_slab"
+    },
+    "type=top": {
+      "model": "the_arg_container:block/brick_wall_slab_top"
+    },
+    "type=double": {
+      "model": "the_arg_container:block/brick_wall_slab_full"
+    }
+  }
+}

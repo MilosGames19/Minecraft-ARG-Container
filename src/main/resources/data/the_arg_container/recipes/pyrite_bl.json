@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:pyrite"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:pyrite_block",
+    "count": 1
+  }
+}

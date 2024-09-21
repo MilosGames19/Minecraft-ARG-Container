@@ -71,17 +71,17 @@ public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> 
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.minecraft_alpha_arg_mod.terminal_gui.label_type_raw_command"), 46, 12, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.terminal_gui.label_type_raw_command"), 46, 12, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		Input = new EditBox(this.font, this.leftPos + 28, this.topPos + 70, 118, 18, Component.translatable("gui.minecraft_alpha_arg_mod.terminal_gui.Input"));
+		Input = new EditBox(this.font, this.leftPos + 28, this.topPos + 70, 118, 18, Component.translatable("gui.the_arg_container.terminal_gui.Input"));
 		Input.setMaxLength(32767);
 		guistate.put("text:Input", Input);
 		this.addWidget(this.Input);
-		button_execute = Button.builder(Component.translatable("gui.minecraft_alpha_arg_mod.terminal_gui.button_execute"), e -> {
+		button_execute = Button.builder(Component.translatable("gui.the_arg_container.terminal_gui.button_execute"), e -> {
 		}).bounds(this.leftPos + 55, this.topPos + 131, 61, 20).build();
 		guistate.put("button:button_execute", button_execute);
 		this.addRenderableWidget(button_execute);

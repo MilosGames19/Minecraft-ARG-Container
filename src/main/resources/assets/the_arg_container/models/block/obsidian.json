@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/obsidian",
+    "particle": "the_arg_container:block/obsidian"
+  },
+  "render_type": "solid"
+}

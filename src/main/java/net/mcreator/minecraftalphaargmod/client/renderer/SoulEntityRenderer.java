@@ -18,6 +18,6 @@ public class SoulEntityRenderer extends HumanoidMobRenderer<SoulEntityEntity, Hu
 
 	@Override
 	public ResourceLocation getTextureLocation(SoulEntityEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/char_soul.png");
+		return new ResourceLocation("the_arg_container:textures/entities/char_soul.png");
 	}
 }

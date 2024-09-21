@@ -10,9 +10,9 @@
       "value": "entity.arrow.shoot"
     },
     "igniteFire": false,
-    "power": 1.0,
-    "damage": 5.0,
-    "knockback": 5,
+    "power": 2.0,
+    "damage": 4.0,
+    "knockback": 4,
     "entityModel": "ModelEssenceProjectile",
     "customModelTexture": "essenceprojectile.png",
     "onHitsEntity": {

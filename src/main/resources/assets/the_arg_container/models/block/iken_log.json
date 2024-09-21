@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/iken_log_up",
+    "up": "the_arg_container:block/iken_log_up",
+    "north": "the_arg_container:block/ikenlog",
+    "east": "the_arg_container:block/ikenlog",
+    "south": "the_arg_container:block/ikenlog",
+    "west": "the_arg_container:block/ikenlog",
+    "particle": "the_arg_container:block/iken_log_up"
+  },
+  "render_type": "solid"
+}

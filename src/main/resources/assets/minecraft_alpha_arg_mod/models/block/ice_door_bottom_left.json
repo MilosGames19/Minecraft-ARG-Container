@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_bottom_left",
-  "textures": {
-    "bottom": "minecraft_alpha_arg_mod:block/icedoor1",
-    "top": "minecraft_alpha_arg_mod:block/icedoor"
-  },
-  "render_type": "cutout"
-}

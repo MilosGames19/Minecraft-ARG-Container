@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft_alpha_arg_mod:dandelion",
-    "minecraft_alpha_arg_mod:rose",
-    "minecraft_alpha_arg_mod:hydrangea"
+    "the_arg_container:dandelion",
+    "the_arg_container:rose",
+    "the_arg_container:hydrangea"
   ]
 }

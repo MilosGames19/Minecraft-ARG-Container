@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/gate_bottom",
+    "particle": "the_arg_container:block/gate_bottom"
+  },
+  "render_type": "cutout"
+}

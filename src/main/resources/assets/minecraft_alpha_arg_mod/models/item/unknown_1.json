@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "minecraft_alpha_arg_mod:item/15"
-  },
-  "render_type": "translucent"
-}

@@ -23,11 +23,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class BrixgoaEntity extends Monster {
 	public BrixgoaEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.BRIXGOA.get(), world);
+		this(TheArgContainerModEntities.BRIXGOA.get(), world);
 	}
 
 	public BrixgoaEntity(EntityType<BrixgoaEntity> type, Level world) {

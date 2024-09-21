@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "edge": "the_arg_container:block/compressedstatic",
+    "pane": "the_arg_container:block/compressedstatic"
+  },
+  "render_type": "solid"
+}

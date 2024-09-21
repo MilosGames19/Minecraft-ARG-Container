@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/mwd",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/mwd_logo",
-    "particle": "minecraft_alpha_arg_mod:block/mwd_logo",
-    "11": "minecraft_alpha_arg_mod:block/mwd_logo"
-  },
-  "render_type": "cutout"
-}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/diminishflower",
+    "particle": "the_arg_container:block/diminishflower"
+  },
+  "render_type": "cutout"
+}

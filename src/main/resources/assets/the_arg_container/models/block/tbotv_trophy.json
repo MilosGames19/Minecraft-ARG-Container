@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/tbotv_trophy",
+  "textures": {
+    "all": "the_arg_container:block/tbotv_playable_icon_texture",
+    "particle": "the_arg_container:block/tbotv_playable_icon_texture",
+    "2": "the_arg_container:block/tbotv_playable_icon_texture"
+  },
+  "render_type": "solid"
+}

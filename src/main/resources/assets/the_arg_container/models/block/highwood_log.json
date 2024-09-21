@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/highwood_log1",
+    "up": "the_arg_container:block/highwood_log1",
+    "north": "the_arg_container:block/highwood_log",
+    "east": "the_arg_container:block/highwood_log",
+    "south": "the_arg_container:block/highwood_log",
+    "west": "the_arg_container:block/highwood_log",
+    "particle": "the_arg_container:block/highwood_log1"
+  },
+  "render_type": "solid"
+}

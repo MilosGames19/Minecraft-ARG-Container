@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/nexus_bricks_hub_up_down",
+    "up": "the_arg_container:block/nexus_bricks_hub_up_down",
+    "north": "the_arg_container:block/nexus_bricks_hub",
+    "east": "the_arg_container:block/nexus_bricks_hub",
+    "south": "the_arg_container:block/nexus_bricks_hub",
+    "west": "the_arg_container:block/nexus_bricks_hub",
+    "particle": "the_arg_container:block/nexus_bricks_hub_up_down"
+  },
+  "render_type": "solid"
+}

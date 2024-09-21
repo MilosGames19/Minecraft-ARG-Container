@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class FindItem extends RecordItem {
 	public FindItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:find")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3260);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:find")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3260);
 	}
 }

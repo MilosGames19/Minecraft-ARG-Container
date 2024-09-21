@@ -15,6 +15,6 @@ public class ObserverMobRenderer extends MobRenderer<ObserverMobEntity, ModelObs
 
 	@Override
 	public ResourceLocation getTextureLocation(ObserverMobEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/observer.png");
+		return new ResourceLocation("the_arg_container:textures/entities/observer.png");
 	}
 }

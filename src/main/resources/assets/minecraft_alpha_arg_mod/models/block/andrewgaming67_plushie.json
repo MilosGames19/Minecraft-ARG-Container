@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/andrewgaming67_plushie",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/download",
-    "particle": "minecraft_alpha_arg_mod:block/download",
-    "0": "minecraft_alpha_arg_mod:block/download"
-  },
-  "render_type": "cutout_mipped"
-}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/livingvoidgrasstexture",
+    "up": "the_arg_container:block/prismarinate",
+    "north": "the_arg_container:block/livingvoidgrasstexture",
+    "east": "the_arg_container:block/livingvoidgrasstexture",
+    "south": "the_arg_container:block/livingvoidgrasstexture",
+    "west": "the_arg_container:block/livingvoidgrasstexture",
+    "particle": "the_arg_container:block/livingvoidgrasstexture"
+  },
+  "render_type": "solid"
+}

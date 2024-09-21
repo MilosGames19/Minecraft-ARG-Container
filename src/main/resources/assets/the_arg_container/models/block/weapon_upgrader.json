@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/weponupgrade",
+    "up": "the_arg_container:block/weponupgrade",
+    "north": "the_arg_container:block/weponupgrade1",
+    "east": "the_arg_container:block/weponupgrade1",
+    "south": "the_arg_container:block/weponupgrade1",
+    "west": "the_arg_container:block/weponupgrade1",
+    "particle": "the_arg_container:block/weponupgrade"
+  },
+  "render_type": "solid"
+}

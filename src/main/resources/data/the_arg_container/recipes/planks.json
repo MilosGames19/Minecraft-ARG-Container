@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:wood"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:wooden_planks",
+    "count": 4
+  }
+}

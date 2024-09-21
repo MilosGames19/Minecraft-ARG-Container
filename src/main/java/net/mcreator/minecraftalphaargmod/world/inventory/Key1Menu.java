@@ -19,8 +19,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -40,7 +40,7 @@ public class Key1Menu extends AbstractContainerMenu implements Supplier<Map<Inte
 	private BlockEntity boundBlockEntity = null;
 
 	public Key1Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MinecraftAlphaArgModModMenus.KEY_1.get(), id);
+		super(TheArgContainerModMenus.KEY_1.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(2);
@@ -83,7 +83,7 @@ public class Key1Menu extends AbstractContainerMenu implements Supplier<Map<Inte
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.VOID_KEY.get() == stack.getItem();
+				return TheArgContainerModItems.VOID_KEY.get() == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

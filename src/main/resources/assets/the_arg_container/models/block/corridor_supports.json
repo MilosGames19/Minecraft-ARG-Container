@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/upportlock",
+    "up": "the_arg_container:block/upportlock",
+    "north": "the_arg_container:block/upportlock",
+    "east": "the_arg_container:block/upportlock",
+    "south": "the_arg_container:block/upportlock",
+    "west": "the_arg_container:block/upportlock",
+    "particle": "the_arg_container:block/upportlock"
+  },
+  "render_type": "cutout"
+}

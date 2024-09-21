@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.FreezerGUIMenu;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlockEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class FreezerBlockEntity extends RandomizableContainerBlockEntity impleme
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public FreezerBlockEntity(BlockPos position, BlockState state) {
-		super(MinecraftAlphaArgModModBlockEntities.FREEZER.get(), position, state);
+		super(TheArgContainerModBlockEntities.FREEZER.get(), position, state);
 	}
 
 	@Override

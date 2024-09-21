@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:book"
+    },
+    "b": {
+      "item": "the_arg_container:empty_bookshelf_alpha"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:bookshelf_alpha",
+    "count": 1
+  }
+}

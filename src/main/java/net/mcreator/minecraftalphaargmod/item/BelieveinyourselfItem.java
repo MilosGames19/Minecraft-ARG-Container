@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class BelieveinyourselfItem extends RecordItem {
 	public BelieveinyourselfItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:believe_in_yourself")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1740);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:believe_in_yourself")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1740);
 	}
 }

@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disc_thing",
+    "description": "negative seven",
+    "creativeTab": {
+      "value": "CUSTOM:Miscellaneous"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:negaseven"
+    },
+    "lengthInTicks": 3360,
+    "analogOutput": 0
+  }
+}

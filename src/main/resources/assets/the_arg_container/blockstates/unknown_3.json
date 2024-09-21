@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "the_arg_container:block/unknown_3",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "the_arg_container:block/unknown_3"
+    },
+    "axis=z": {
+      "model": "the_arg_container:block/unknown_3",
+      "x": 90
+    }
+  }
+}

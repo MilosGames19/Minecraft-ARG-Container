@@ -14,7 +14,7 @@ import net.mcreator.minecraftalphaargmod.procedures.User0RightclickedOnBlockProc
 
 public class User0Item extends RecordItem {
 	public User0Item() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:user0")), new Item.Properties().stacksTo(1).rarity(Rarity.EPIC), 3100);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:user0")), new Item.Properties().stacksTo(1).rarity(Rarity.EPIC), 3100);
 	}
 
 	@Override

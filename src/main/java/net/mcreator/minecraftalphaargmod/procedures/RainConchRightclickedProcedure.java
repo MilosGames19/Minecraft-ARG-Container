@@ -11,7 +11,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 public class RainConchRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -28,7 +28,7 @@ public class RainConchRightclickedProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"weather clear");
 				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(MinecraftAlphaArgModModItems.ESSENCE.get());
+					ItemStack _stktoremove = new ItemStack(TheArgContainerModItems.ESSENCE.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			}
@@ -42,7 +42,7 @@ public class RainConchRightclickedProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"weather rain");
 				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(MinecraftAlphaArgModModItems.ESSENCE.get());
+					ItemStack _stktoremove = new ItemStack(TheArgContainerModItems.ESSENCE.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			}

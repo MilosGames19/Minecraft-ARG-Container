@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/soul_bricks",
+    "up": "the_arg_container:block/soul_bricks",
+    "north": "the_arg_container:block/soul_bricks",
+    "east": "the_arg_container:block/soul_bricks",
+    "south": "the_arg_container:block/soul_bricks",
+    "west": "the_arg_container:block/soul_bricks",
+    "particle": "the_arg_container:block/soul_bricks"
+  },
+  "render_type": "solid"
+}

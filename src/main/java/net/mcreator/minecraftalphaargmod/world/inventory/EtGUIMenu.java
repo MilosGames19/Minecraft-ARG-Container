@@ -19,7 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -39,7 +39,7 @@ public class EtGUIMenu extends AbstractContainerMenu implements Supplier<Map<Int
 	private BlockEntity boundBlockEntity = null;
 
 	public EtGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MinecraftAlphaArgModModMenus.ET_GUI.get(), id);
+		super(TheArgContainerModMenus.ET_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(11);

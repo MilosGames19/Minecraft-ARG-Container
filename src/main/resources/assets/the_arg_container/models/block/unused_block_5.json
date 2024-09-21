@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/black_brick_",
+    "particle": "the_arg_container:block/black_brick_"
+  },
+  "render_type": "solid"
+}

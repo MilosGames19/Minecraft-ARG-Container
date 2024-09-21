@@ -28,11 +28,11 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.minecraftalphaargmod.procedures.RecruiterNaturalEntitySpawningConditionProcedure;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModEntities;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class RecruiterEntity extends PathfinderMob {
 	public RecruiterEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MinecraftAlphaArgModModEntities.RECRUITER.get(), world);
+		this(TheArgContainerModEntities.RECRUITER.get(), world);
 	}
 
 	public RecruiterEntity(EntityType<RecruiterEntity> type, Level world) {
@@ -122,7 +122,7 @@ public class RecruiterEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MinecraftAlphaArgModModEntities.RECRUITER.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+		SpawnPlacements.register(TheArgContainerModEntities.RECRUITER.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();

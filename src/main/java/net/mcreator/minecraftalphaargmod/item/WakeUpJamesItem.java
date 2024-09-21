@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class WakeUpJamesItem extends RecordItem {
 	public WakeUpJamesItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:wake_up_james")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 4100);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:wake_up_james")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 4100);
 	}
 }

@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/dylandominecraft_plushie",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/dylan",
-    "particle": "minecraft_alpha_arg_mod:block/dylan",
-    "0": "minecraft_alpha_arg_mod:block/dylan"
-  },
-  "render_type": "cutout_mipped"
-}

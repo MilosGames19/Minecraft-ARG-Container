@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class EssenceProjectileRenderer extends EntityRenderer<EssenceProjectileEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/essenceprojectile.png");
+	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/entities/essenceprojectile.png");
 	private final ModelEssenceProjectile model;
 
 	public EssenceProjectileRenderer(EntityRendererProvider.Context context) {

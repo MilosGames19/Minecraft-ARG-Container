@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/head_in_a_jar",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/texture",
-    "particle": "minecraft_alpha_arg_mod:block/texture",
-    "4": "minecraft_alpha_arg_mod:block/texture"
-  },
-  "render_type": "cutout"
-}

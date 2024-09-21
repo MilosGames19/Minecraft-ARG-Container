@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/low_river_gold",
+    "particle": "the_arg_container:block/low_river_gold"
+  },
+  "render_type": "solid"
+}

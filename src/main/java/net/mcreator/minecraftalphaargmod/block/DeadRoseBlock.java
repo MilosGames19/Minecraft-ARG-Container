@@ -14,7 +14,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class DeadRoseBlock extends FlowerBlock {
 	public DeadRoseBlock() {
@@ -38,8 +38,8 @@ public class DeadRoseBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(MinecraftAlphaArgModModBlocks.SOUL_GRASS.get()) || groundState.is(MinecraftAlphaArgModModBlocks.MIXED_GRASS_BLOCK.get()) || groundState.is(MinecraftAlphaArgModModBlocks.YELLOW_GRASS_BLOCK.get())
-				|| groundState.is(MinecraftAlphaArgModModBlocks.GRASS_BLOCK.get()) || groundState.is(Blocks.GRASS_BLOCK);
+		return groundState.is(TheArgContainerModBlocks.SOUL_GRASS.get()) || groundState.is(TheArgContainerModBlocks.MIXED_GRASS_BLOCK.get()) || groundState.is(TheArgContainerModBlocks.YELLOW_GRASS_BLOCK.get())
+				|| groundState.is(TheArgContainerModBlocks.GRASS_BLOCK.get()) || groundState.is(Blocks.GRASS_BLOCK);
 	}
 
 	@Override

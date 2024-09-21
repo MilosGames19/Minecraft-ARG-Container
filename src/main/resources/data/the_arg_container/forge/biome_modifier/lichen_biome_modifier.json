@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "lush_caves",
+  "features": "the_arg_container:lichen",
+  "step": "vegetal_decoration"
+}

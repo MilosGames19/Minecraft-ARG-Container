@@ -7,7 +7,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class MyconToolSetSwordItem extends SwordItem {
 	public MyconToolSetSwordItem() {
@@ -33,7 +33,7 @@ public class MyconToolSetSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftAlphaArgModModBlocks.MYCON_PLANK.get()));
+				return Ingredient.of(new ItemStack(TheArgContainerModBlocks.MYCON_PLANK.get()));
 			}
 		}, 3, -3f, new Item.Properties());
 	}

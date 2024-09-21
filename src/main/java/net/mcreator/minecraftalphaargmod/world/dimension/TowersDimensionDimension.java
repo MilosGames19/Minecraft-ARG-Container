@@ -29,7 +29,7 @@ public class TowersDimensionDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("minecraft_alpha_arg_mod:towers_dimension"), customEffect);
+			event.register(new ResourceLocation("the_arg_container:towers_dimension"), customEffect);
 		}
 	}
 }

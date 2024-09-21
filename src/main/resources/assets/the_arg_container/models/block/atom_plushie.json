@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/atom20003113_plushie",
+  "textures": {
+    "all": "the_arg_container:block/atom20003113",
+    "particle": "the_arg_container:block/atom20003113",
+    "0": "the_arg_container:block/atom20003113"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:tea_planks"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:teedoor",
+    "count": 3
+  }
+}

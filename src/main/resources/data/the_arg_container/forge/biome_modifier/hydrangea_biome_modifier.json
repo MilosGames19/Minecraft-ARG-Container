@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "the_arg_container:hydrangea",
+  "step": "vegetal_decoration"
+}

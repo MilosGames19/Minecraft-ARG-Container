@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "the_arg_container:blocks/unknown_6",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "the_arg_container:unknown_6",
+          "conditions": [
+            {
+              "block": "the_arg_container:unknown_6",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

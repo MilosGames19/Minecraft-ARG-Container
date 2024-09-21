@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/terrendeltaquest",
+    "up": "the_arg_container:block/terrendeltaquest",
+    "north": "the_arg_container:block/terrendeltaquest",
+    "east": "the_arg_container:block/terrendeltaquest",
+    "south": "the_arg_container:block/terrendeltaquest",
+    "west": "the_arg_container:block/terrendeltaquest",
+    "particle": "the_arg_container:block/terrendeltaquest"
+  },
+  "render_type": "solid"
+}

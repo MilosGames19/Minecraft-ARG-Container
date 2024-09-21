@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft_alpha_arg_mod:custom/sonya_plushie",
-  "textures": {
-    "all": "minecraft_alpha_arg_mod:block/sonya_plushie",
-    "particle": "minecraft_alpha_arg_mod:block/sonya_plushie",
-    "2": "minecraft_alpha_arg_mod:block/sonya_plushie"
-  },
-  "render_type": "cutout"
-}

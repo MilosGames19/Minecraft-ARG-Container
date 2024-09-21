@@ -1,0 +1,6 @@
+{
+  "parent": "the_arg_container:displaysettings/scytheskeletbetter_-_converted.item",
+  "textures": {
+    "layer0": "the_arg_container:item/stiched_texture"
+  }
+}

@@ -19,8 +19,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModMenus;
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -40,7 +40,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 	private BlockEntity boundBlockEntity = null;
 
 	public ServerGuIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MinecraftAlphaArgModModMenus.SERVER_GU_I.get(), id);
+		super(TheArgContainerModMenus.SERVER_GU_I.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(10);
@@ -83,7 +83,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 7, 17) {
@@ -91,7 +91,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 17) {
@@ -99,7 +99,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 43, 53) {
@@ -107,7 +107,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 53) {
@@ -115,7 +115,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 79, 17) {
@@ -123,7 +123,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 53) {
@@ -131,7 +131,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 115, 17) {
@@ -139,7 +139,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 53) {
@@ -147,7 +147,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 151, 17) {
@@ -155,7 +155,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return MinecraftAlphaArgModModItems.SERVER_DRIVE.get() == stack.getItem();
+				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/nexus_disposal_sector",
+    "up": "the_arg_container:block/nexus_disposal_sector",
+    "north": "the_arg_container:block/nexus_disposal_sector",
+    "east": "the_arg_container:block/nexus_disposal_sector",
+    "south": "the_arg_container:block/nexus_disposal_sector",
+    "west": "the_arg_container:block/nexus_disposal_sector",
+    "particle": "the_arg_container:block/nexus_disposal_sector"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/marioood_plushie",
+  "textures": {
+    "all": "the_arg_container:block/marioood",
+    "particle": "the_arg_container:block/marioood",
+    "1": "the_arg_container:block/marioood"
+  },
+  "render_type": "cutout_mipped"
+}

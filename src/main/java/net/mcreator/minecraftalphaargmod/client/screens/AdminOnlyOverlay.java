@@ -34,7 +34,7 @@ public class AdminOnlyOverlay {
 			z = entity.getZ();
 		}
 		if (AdminOnlyDisplayOverlayIngameProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.minecraft_alpha_arg_mod.admin_only.label_keys_have_been_found_in_your_i"), w / 2 + -184, h - 56, -65536, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.the_arg_container.admin_only.label_keys_have_been_found_in_your_i"), w / 2 + -184, h - 56, -65536, false);
 		}
 	}
 }

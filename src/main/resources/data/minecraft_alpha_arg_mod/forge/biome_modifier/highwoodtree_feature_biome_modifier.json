@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#is_overworld",
-  "features": "minecraft_alpha_arg_mod:highwoodtree_feature",
-  "step": "surface_structures"
-}

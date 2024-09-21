@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_bottom_right_open",
+  "textures": {
+    "bottom": "the_arg_container:block/icedoor1",
+    "top": "the_arg_container:block/icedoor"
+  },
+  "render_type": "cutout"
+}

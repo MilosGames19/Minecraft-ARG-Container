@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "the_arg_container:item/short_grass_green"
+  },
+  "render_type": "translucent"
+}

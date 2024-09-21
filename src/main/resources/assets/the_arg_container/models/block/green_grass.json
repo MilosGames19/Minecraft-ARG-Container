@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/short_grass_green",
+    "particle": "the_arg_container:block/short_grass_green"
+  },
+  "render_type": "cutout"
+}

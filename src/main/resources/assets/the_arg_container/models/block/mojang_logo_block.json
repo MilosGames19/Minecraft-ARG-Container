@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/mojanglogoblock",
+    "up": "the_arg_container:block/mojanglogoblock",
+    "north": "the_arg_container:block/mojanglogoblock",
+    "east": "the_arg_container:block/mojanglogoblock",
+    "south": "the_arg_container:block/mojanglogoblock",
+    "west": "the_arg_container:block/mojanglogoblock",
+    "particle": "the_arg_container:block/mojanglogoblock"
+  },
+  "render_type": "solid"
+}

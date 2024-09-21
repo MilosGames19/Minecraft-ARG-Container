@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:golden_apple_block",
+    "count": 1
+  }
+}

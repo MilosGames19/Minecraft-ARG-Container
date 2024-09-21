@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/head_in_a_jar",
+  "textures": {
+    "all": "the_arg_container:block/texture",
+    "particle": "the_arg_container:block/texture",
+    "4": "the_arg_container:block/texture"
+  },
+  "render_type": "cutout"
+}

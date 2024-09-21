@@ -10,7 +10,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModItems;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -41,7 +41,7 @@ public class FreezerRProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == MinecraftAlphaArgModModItems.FRIGID_BITS.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == TheArgContainerModItems.FRIGID_BITS.get() && (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -57,7 +57,7 @@ public class FreezerRProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == MinecraftAlphaArgModModItems.CANDY_ICE.get() || (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == TheArgContainerModItems.CANDY_ICE.get() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -98,7 +98,7 @@ public class FreezerRProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 2;
-					final ItemStack _setstack = new ItemStack(MinecraftAlphaArgModModItems.CANDY_ICE.get()).copy();
+					final ItemStack _setstack = new ItemStack(TheArgContainerModItems.CANDY_ICE.get()).copy();
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);

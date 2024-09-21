@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class SandcastlesItem extends RecordItem {
 	public SandcastlesItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft_alpha_arg_mod:sandcastles")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1300);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:sandcastles")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1300);
 	}
 }

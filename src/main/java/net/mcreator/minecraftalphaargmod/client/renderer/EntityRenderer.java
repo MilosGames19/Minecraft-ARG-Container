@@ -18,7 +18,7 @@ public class EntityRenderer extends HumanoidMobRenderer<EntityEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(EntityEntity entity) {
-		return new ResourceLocation("minecraft_alpha_arg_mod:textures/entities/amialone.png");
+		return new ResourceLocation("the_arg_container:textures/entities/amialone.png");
 	}
 
 	@Override

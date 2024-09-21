@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/soul_plushie",
+  "textures": {
+    "all": "the_arg_container:block/soul",
+    "particle": "the_arg_container:block/soul",
+    "1": "the_arg_container:block/soul"
+  },
+  "render_type": "cutout_mipped"
+}

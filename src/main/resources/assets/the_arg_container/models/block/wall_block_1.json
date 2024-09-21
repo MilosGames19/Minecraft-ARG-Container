@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/plumbus",
+    "up": "the_arg_container:block/plumbus",
+    "north": "the_arg_container:block/plumbus",
+    "east": "the_arg_container:block/plumbus",
+    "south": "the_arg_container:block/plumbus",
+    "west": "the_arg_container:block/plumbus",
+    "particle": "the_arg_container:block/plumbus"
+  },
+  "render_type": "cutout_mipped"
+}

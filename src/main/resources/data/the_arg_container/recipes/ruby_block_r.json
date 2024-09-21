@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:ruby"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:ruby_block",
+    "count": 1
+  }
+}

@@ -7,7 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 
-import net.mcreator.minecraftalphaargmod.init.MinecraftAlphaArgModModBlocks;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
 
 public class MyconToolSetAxeItem extends AxeItem {
 	public MyconToolSetAxeItem() {
@@ -33,7 +33,7 @@ public class MyconToolSetAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MinecraftAlphaArgModModBlocks.MYCON_PLANK.get()));
+				return Ingredient.of(new ItemStack(TheArgContainerModBlocks.MYCON_PLANK.get()));
 			}
 		}, 1, -3f, new Item.Properties());
 	}
