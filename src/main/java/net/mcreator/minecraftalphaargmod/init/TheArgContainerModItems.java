@@ -823,7 +823,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> SPACE_TIME_DILATOR = REGISTRY.register("space_time_dilator", () -> new SpaceTimeDilatorItem());
 	public static final RegistryObject<Item> GLASS = block(TheArgContainerModBlocks.GLASS);
 	public static final RegistryObject<Item> SONYA = block(TheArgContainerModBlocks.SONYA);
-	public static final RegistryObject<Item> TOTALY_NOT_MINDECONTROLLING_SAND = block(TheArgContainerModBlocks.TOTALY_NOT_MINDECONTROLLING_SAND);
 	public static final RegistryObject<Item> FUNNY_SAND = REGISTRY.register("funny_sand", () -> new FunnySandItem());
 	public static final RegistryObject<Item> NEXUS_BRICKS = block(TheArgContainerModBlocks.NEXUS_BRICKS);
 	public static final RegistryObject<Item> NEXUS_OLD_DATA = block(TheArgContainerModBlocks.NEXUS_OLD_DATA);

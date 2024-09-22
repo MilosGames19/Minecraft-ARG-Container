@@ -113,7 +113,6 @@ import net.mcreator.minecraftalphaargmod.block.TvBlock;
 import net.mcreator.minecraftalphaargmod.block.TrinityPlateBlock;
 import net.mcreator.minecraftalphaargmod.block.TreeteaBlock;
 import net.mcreator.minecraftalphaargmod.block.TowerTransporterBlock;
-import net.mcreator.minecraftalphaargmod.block.TotalyNotMindecontrollingSandBlock;
 import net.mcreator.minecraftalphaargmod.block.TorchBlock;
 import net.mcreator.minecraftalphaargmod.block.TileStairsBlock;
 import net.mcreator.minecraftalphaargmod.block.TileSlabBlock;
@@ -1262,7 +1261,6 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> CARPET = REGISTRY.register("carpet", () -> new CarpetBlock());
 	public static final RegistryObject<Block> GLASS = REGISTRY.register("glass", () -> new GlassBlock());
 	public static final RegistryObject<Block> SONYA = REGISTRY.register("sonya", () -> new SonyaBlock());
-	public static final RegistryObject<Block> TOTALY_NOT_MINDECONTROLLING_SAND = REGISTRY.register("totaly_not_mindecontrolling_sand", () -> new TotalyNotMindecontrollingSandBlock());
 	public static final RegistryObject<Block> NEXUS_BRICKS = REGISTRY.register("nexus_bricks", () -> new NexusBricksBlock());
 	public static final RegistryObject<Block> NEXUS_OLD_DATA = REGISTRY.register("nexus_old_data", () -> new NexusOldDataBlock());
 	public static final RegistryObject<Block> NEXUS_TILES = REGISTRY.register("nexus_tiles", () -> new NexusTilesBlock());

@@ -112,7 +112,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.SPACE_TIME_DILATOR.get());
 				tabData.accept(TheArgContainerModBlocks.GLASS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SONYA.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.TOTALY_NOT_MINDECONTROLLING_SAND.get().asItem());
 				tabData.accept(TheArgContainerModItems.FUNNY_SAND.get());
 				tabData.accept(TheArgContainerModItems.WAKE_UP_JAMES.get());
 				tabData.accept(TheArgContainerModItems.TWO_WINGED_ANGEL.get());

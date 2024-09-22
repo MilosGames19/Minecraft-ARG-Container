@@ -18857,23 +18857,6 @@
       }
     },
     {
-      "name": "TotalyNotMindecontrollingSand",
-      "type": "block",
-      "sortid": 1215,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "totaly_not_mindecontrolling_sand",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_arg_container/loot_tables/blocks/totaly_not_mindecontrolling_sand.json",
-          "src/main/resources/assets/the_arg_container/blockstates/totaly_not_mindecontrolling_sand.json",
-          "src/main/resources/assets/the_arg_container/models/item/totaly_not_mindecontrolling_sand.json",
-          "src/main/java/net/mcreator/minecraftalphaargmod/block/TotalyNotMindecontrollingSandBlock.java",
-          "src/main/resources/assets/the_arg_container/models/block/totaly_not_mindecontrolling_sand.json"
-        ]
-      }
-    },
-    {
       "name": "FunnySand",
       "type": "item",
       "sortid": 1216,
@@ -18884,41 +18867,6 @@
         "files": [
           "src/main/resources/assets/the_arg_container/models/item/funny_sand.json",
           "src/main/java/net/mcreator/minecraftalphaargmod/item/FunnySandItem.java"
-        ]
-      }
-    },
-    {
-      "name": "FunnySandRightclickedOnBlock",
-      "type": "procedure",
-      "sortid": 1217,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "funny_sand_rightclicked_on_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/FunnySandRightclickedOnBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -21259,7 +21207,6 @@
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:LivingVoidGrass",
-      "~CUSTOM:TotalyNotMindecontrollingSand",
       "~CUSTOM:HubAshBlock2",
       "~CUSTOM:HubFakeDirt",
       "~CUSTOM:HubFakeGrass",
@@ -21338,7 +21285,6 @@
       "block.minecraft_alpha_arg_mod.lichen_cobblestone": "Lichen Cobblestone",
       "block.minecraft_alpha_arg_mod.lilypad_1121": "Lilypad",
       "block.minecraft_alpha_arg_mod.lilypad_1122": "Lilypad",
-      "block.the_arg_container.totaly_not_mindecontrolling_sand": "Sand Block",
       "block.the_arg_container.obsidian_forge": "Obsidian Forge",
       "painting.the_arg_container.night_sky.title": "Night Sky",
       "block.the_arg_container.umbrella_monitor": "☂ Monitor",

@@ -35,9 +35,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "FunnySandRightclickedOnBlock"
-    },
     "onFinishUsingItem": {
       "name": "FunnySandPlayerFinishesUsingItem"
     },
