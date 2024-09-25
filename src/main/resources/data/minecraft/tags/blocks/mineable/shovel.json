@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:dutytime_sand",
+    "the_arg_container:dutytime_grass",
+    "the_arg_container:summer_sand",
+    "the_arg_container:summer_grass",
+    "the_arg_container:spring_grass",
+    "the_arg_container:summer_grass_block",
+    "the_arg_container:summer_dirt_block",
+    "the_arg_container:spring_gravel",
+    "the_arg_container:spring_grass_block",
+    "the_arg_container:dirt_block",
     "the_arg_container:living_void_grass",
     "the_arg_container:hub_ash_block_2",
     "the_arg_container:hub_fake_dirt",

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:spring_leaves",
     "the_arg_container:hub_highwood_leaves",
     "the_arg_container:unused_4",
     "the_arg_container:dark_leaves",
@@ -12,6 +13,7 @@
     "the_arg_container:leaves",
     "the_arg_container:highwood_leaves",
     "the_arg_container:tea_bush",
-    "the_arg_container:dlamewood_leaves"
+    "the_arg_container:dlamewood_leaves",
+    "the_arg_container:summer_leaves"
   ]
 }

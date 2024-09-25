@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:chamber_sustainers",
     "the_arg_container:perlin_keyblock",
     "the_arg_container:perlin_adminspace",
     "the_arg_container:fractured_influence",

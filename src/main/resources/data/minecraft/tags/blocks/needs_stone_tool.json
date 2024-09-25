@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:summer_bedrock",
+    "the_arg_container:green_bricks_summer_slab",
+    "the_arg_container:green_bricks_summer",
+    "the_arg_container:spring_bedrock",
+    "the_arg_container:green_bricks_slab",
+    "the_arg_container:green_bricks_1",
     "the_arg_container:white_column_cross",
     "the_arg_container:marble",
     "the_arg_container:machination_converter",

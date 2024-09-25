@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/summer_51",
+    "up": "the_arg_container:block/summer_65",
+    "north": "the_arg_container:block/summer_51",
+    "east": "the_arg_container:block/summer_51",
+    "south": "the_arg_container:block/summer_51",
+    "west": "the_arg_container:block/summer_51",
+    "particle": "the_arg_container:block/summer_51"
+  },
+  "render_type": "translucent"
+}

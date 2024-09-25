@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/dutytime_28",
+    "particle": "the_arg_container:block/dutytime_28"
+  },
+  "render_type": "cutout"
+}

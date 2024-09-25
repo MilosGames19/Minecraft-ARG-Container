@@ -126,6 +126,19 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.CHEATYDEVPORTAL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.JLJLJLJLJL_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CHTSHT_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHAMBER_SUSTAINERS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WORKPLACE_HALL_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PIPE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HALLWAYBLOCK_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WORKPLACE_LAMP.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.B_ZONE_PANEL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HALLWAYBLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OXIDISED_STORAGE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FORSEERS_LAYER_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_3.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_4.get().asItem());
 			})
 
 					.build());
@@ -530,6 +543,54 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.NEXUS_CAUTION_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.NEXUS_OLD_DATA_WOOD.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.NEXUS_OLD_DATA_WALL.get().asItem());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> SLOTS_AVAILABLE = REGISTRY.register("slots_available",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.slots_available")).icon(() -> new ItemStack(TheArgContainerModBlocks.GREEN_BRICKS_1.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TheArgContainerModBlocks.GREEN_BRICKS_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOTE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GREEN_LOG.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GREEN_LOG_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FLOWER_LAYER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GREEN_BRICKS_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DIRT_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_GRASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_COBBLESTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_BEDROCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_GRAVEL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_LEAVES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_ICE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_ROSE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TALL_DANDELION.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_DIRT_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_GRASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GREEN_BRICKS_SUMMER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GREEN_BRICKS_SUMMER_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PETRICHOR_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_COBBLESTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_BEDROCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_LOG_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_LOG.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPRING_GRASS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_GRASS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_SAND.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SUMMER_LEAVES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_PLANT.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GRASS_LAYER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STONE_GRASS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STONE_WOOD_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STONE_WOOD_LOG.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GLASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DUTYTIME_GRASS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STONE_WOOD_LOG_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_PLANT_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DUTYTIME_NOTE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DUTYTIME_SAND.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TALL_RED_ROSE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DUTYTIME_BLOCK.get().asItem());
 			})
 
 					.build());

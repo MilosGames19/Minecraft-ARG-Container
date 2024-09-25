@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/flowerlayer",
+  "textures": {
+    "all": "the_arg_container:block/terrain_65",
+    "particle": "the_arg_container:block/terrain_65",
+    "1": "the_arg_container:block/terrain_65"
+  },
+  "render_type": "cutout_mipped"
+}

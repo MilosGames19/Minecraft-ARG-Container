@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "the_arg_container:block/summer_6",
+    "top": "the_arg_container:block/summer_6",
+    "side": "the_arg_container:block/summer_5"
+  },
+  "render_type": "solid"
+}

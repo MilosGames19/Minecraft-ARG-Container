@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:green_bricks_summer_slab",
+    "the_arg_container:green_bricks_slab",
     "the_arg_container:hallowed_bricks_slab",
     "the_arg_container:hub_smooth_stone_slab",
     "the_arg_container:floor_carpet_slab",

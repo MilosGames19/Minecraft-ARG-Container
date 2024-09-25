@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/chiseled_stone_bricks",
+    "up": "the_arg_container:block/chiseled_stone_bricks",
+    "north": "the_arg_container:block/chiseled_stone_bricks",
+    "east": "the_arg_container:block/chiseled_stone_bricks",
+    "south": "the_arg_container:block/chiseled_stone_bricks",
+    "west": "the_arg_container:block/chiseled_stone_bricks",
+    "particle": "the_arg_container:block/chiseled_stone_bricks"
+  },
+  "render_type": "solid"
+}
