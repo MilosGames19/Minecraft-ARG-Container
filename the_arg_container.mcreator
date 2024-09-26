@@ -21365,6 +21365,58 @@
           "src/main/resources/assets/the_arg_container/blockstates/wall_painting_block_4.json"
         ]
       }
+    },
+    {
+      "name": "BlackDoorRecipe",
+      "type": "recipe",
+      "sortid": 1369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/black_door_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RubySoulR",
+      "type": "recipe",
+      "sortid": 1370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_soul_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/ruby_soul_r.json"
+        ]
+      }
+    },
+    {
+      "name": "IronSoulR",
+      "type": "recipe",
+      "sortid": 1371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_soul_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/iron_soul_r.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldSoulR",
+      "type": "recipe",
+      "sortid": 1372,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_soul_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/gold_soul_r.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -23553,18 +23605,18 @@
       "block.the_arg_container.redlight": "Redlight",
       "gui.the_arg_container.monitor_gui.button_off": "Off",
       "painting.minecraft_alpha_arg_mod.summit.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
-      "block.the_arg_container.unknown_20": "§kUnknown",
-      "block.the_arg_container.unknown_21": "§kUnknown",
+      "block.the_arg_container.unknown_20": "Aurora",
+      "block.the_arg_container.unknown_21": "Light Stone Block",
       "painting.minecraft_alpha_arg_mod.tiled_surface.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
-      "block.the_arg_container.unknown_22": "§kUnknown",
-      "block.the_arg_container.unknown_23": "§kUnknown",
+      "block.the_arg_container.unknown_22": "Void Block",
+      "block.the_arg_container.unknown_23": "Light Block",
       "block.the_arg_container.summer_grass_block": "Grass Block (Spring)",
       "block.minecraft_alpha_arg_mod.dialect_plate": "Dialect Plate",
       "painting.minecraft_alpha_arg_mod.eye_2.title": "Eye",
-      "block.the_arg_container.unknown_17": "§kUnknown",
+      "block.the_arg_container.unknown_17": "Black Planks",
       "block.minecraft_alpha_arg_mod.white_psi_monitor": "White Ψ Monitor",
-      "block.the_arg_container.unknown_18": "§kUnknown",
-      "block.the_arg_container.unknown_19": "§kUnknown",
+      "block.the_arg_container.unknown_18": "Light Block",
+      "block.the_arg_container.unknown_19": "Floor Block",
       "block.the_arg_container.target": "Target",
       "item.minecraft_alpha_arg_mod.rain_conch": "Rain Conch",
       "painting.minecraft_alpha_arg_mod.hub_p.title": "Hub",
@@ -23574,14 +23626,14 @@
       "item.the_arg_container.key_dj": "Key",
       "block.minecraft_alpha_arg_mod.tea_planks": "Tea Planks",
       "painting.the_arg_container.feline.title": "Feline",
-      "block.the_arg_container.unknown_13": "§kUnknown ",
+      "block.the_arg_container.unknown_13": "Angie Block (Slightly Red)",
       "painting.the_arg_container.reptile.title": "Reptile",
-      "block.the_arg_container.unknown_14": "§kUnknown",
+      "block.the_arg_container.unknown_14": "Angie Block (Fully Red)",
       "block.the_arg_container.unknown_15": "Obsidian",
-      "block.the_arg_container.unknown_16": "§kUnknown",
-      "block.the_arg_container.unknown_10": "§kUnknown",
-      "block.the_arg_container.unknown_11": "§kUnknown",
-      "block.the_arg_container.unknown_12": "§kUnknown",
+      "block.the_arg_container.unknown_16": "Floor Block",
+      "block.the_arg_container.unknown_10": "Magic Block",
+      "block.the_arg_container.unknown_11": "Magic Block",
+      "block.the_arg_container.unknown_12": "Angie Block (Normal)",
       "block.the_arg_container.soul_tnt": "Soul TNT",
       "block.minecraft_alpha_arg_mod.hub_tile_blue": "Blue Hub Tile",
       "block.minecraft_alpha_arg_mod.soul_sponge": "Soul Sponge",
@@ -24082,16 +24134,16 @@
       "painting.minecraft_alpha_arg_mod.nebula.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.bismuth_block": "Bismuth Block",
       "block.the_arg_container.unknown_1": "§kUnused",
-      "block.the_arg_container.unknown_3": "§kUnknown",
+      "block.the_arg_container.unknown_3": "Gray Pillar",
       "block.the_arg_container.soul_wood": "Soul Wood",
-      "block.the_arg_container.unknown_2": "§kUnknown",
-      "block.the_arg_container.unknown_5": "§kUnknown",
-      "block.the_arg_container.unknown_4": "§kUnknown",
-      "block.the_arg_container.unknown_7": "§kUnknown",
-      "block.the_arg_container.unknown_6": "§kUnknown Door",
-      "block.the_arg_container.unknown_9": "§kUnknown",
+      "block.the_arg_container.unknown_2": "Transfer Chest",
+      "block.the_arg_container.unknown_5": "Light Stone Block",
+      "block.the_arg_container.unknown_4": "Glass",
+      "block.the_arg_container.unknown_7": "Black Pillar",
+      "block.the_arg_container.unknown_6": "Black Door",
+      "block.the_arg_container.unknown_9": "Magic Block",
       "block.minecraft_alpha_arg_mod.peril_block": "§kPeril §rBlock",
-      "block.the_arg_container.unknown_8": "§kUnknown",
+      "block.the_arg_container.unknown_8": "Magic Block",
       "block.the_arg_container.flamewood_pillar": "Flamewood Pillar",
       "item.minecraft_alpha_arg_mod.essence": "Essence",
       "painting.the_arg_container.snow_2.title": "Snow",

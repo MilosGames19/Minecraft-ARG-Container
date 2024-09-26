@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "item": "the_arg_container:ruby_block"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:ruby_souler",
+    "count": 1
+  }
+}

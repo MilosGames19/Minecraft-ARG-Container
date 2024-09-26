@@ -34,7 +34,7 @@ public class Miki110PlushieBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Mod developer"));
+		list.add(Component.literal("Mod developer (Dev 2)"));
 	}
 
 	@Override

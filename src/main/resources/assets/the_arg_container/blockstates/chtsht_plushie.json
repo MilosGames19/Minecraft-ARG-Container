@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "the_arg_container:block/chtsht_plushie"
+    },
+    "facing=east": {
+      "model": "the_arg_container:block/chtsht_plushie",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_arg_container:block/chtsht_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_arg_container:block/chtsht_plushie",
+      "y": 270
     }
   }
 }

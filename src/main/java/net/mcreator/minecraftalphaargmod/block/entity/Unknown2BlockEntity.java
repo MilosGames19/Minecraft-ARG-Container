@@ -94,7 +94,7 @@ public class Unknown2BlockEntity extends RandomizableContainerBlockEntity implem
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("§kUnknown");
+		return Component.literal("Transfer Chest");
 	}
 
 	@Override
