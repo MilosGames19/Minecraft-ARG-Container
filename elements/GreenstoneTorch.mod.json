@@ -12,7 +12,7 @@
     "customModelName": "greentorch:default",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "tile099",
     "particleTexture": "",
@@ -24,12 +24,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 7.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 7.0,
+        "Mx": 9.0,
+        "My": 10.0,
+        "Mz": 9.0,
         "subtract": false
       }
     ],

@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/elders_plushie",
+  "textures": {
+    "all": "the_arg_container:block/elders_skin",
+    "particle": "the_arg_container:block/elders_skin",
+    "0": "the_arg_container:block/elders_skin"
+  },
+  "render_type": "cutout"
+}

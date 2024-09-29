@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/andrewidot_plushie",
+  "textures": {
+    "all": "the_arg_container:block/soul_white",
+    "particle": "the_arg_container:block/soul_white",
+    "0": "the_arg_container:block/drewee"
+  },
+  "render_type": "cutout_mipped"
+}

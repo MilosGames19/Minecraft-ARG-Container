@@ -959,6 +959,10 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> WALL_PAINTING_BLOCK_2 = block(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_2);
 	public static final RegistryObject<Item> WALL_PAINTING_BLOCK_3 = block(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_3);
 	public static final RegistryObject<Item> WALL_PAINTING_BLOCK_4 = block(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_4);
+	public static final RegistryObject<Item> PURPURBRICKSSTAIRS = block(TheArgContainerModBlocks.PURPURBRICKSSTAIRS);
+	public static final RegistryObject<Item> ELDERS_PLUSHIE = block(TheArgContainerModBlocks.ELDERS_PLUSHIE);
+	public static final RegistryObject<Item> GNAWMON_PLUSHIE = block(TheArgContainerModBlocks.GNAWMON_PLUSHIE);
+	public static final RegistryObject<Item> ANDREWIDOT_PLUSHIE = block(TheArgContainerModBlocks.ANDREWIDOT_PLUSHIE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

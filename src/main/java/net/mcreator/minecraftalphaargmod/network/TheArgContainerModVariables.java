@@ -68,8 +68,6 @@ public class TheArgContainerModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			if (!event.isWasDeath()) {
 				clone.Cooldown = original.Cooldown;
-				clone.StevenCooldown = original.StevenCooldown;
-				clone.user0 = original.user0;
 			}
 		}
 	}
@@ -106,8 +104,6 @@ public class TheArgContainerModVariables {
 
 	public static class PlayerVariables {
 		public double Cooldown = 0.0;
-		public double StevenCooldown = 0.0;
-		public double user0 = 1.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -117,16 +113,12 @@ public class TheArgContainerModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("Cooldown", Cooldown);
-			nbt.putDouble("StevenCooldown", StevenCooldown);
-			nbt.putDouble("user0", user0);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
 			Cooldown = nbt.getDouble("Cooldown");
-			StevenCooldown = nbt.getDouble("StevenCooldown");
-			user0 = nbt.getDouble("user0");
 		}
 	}
 
@@ -152,8 +144,6 @@ public class TheArgContainerModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Cooldown = message.data.Cooldown;
-					variables.StevenCooldown = message.data.StevenCooldown;
-					variables.user0 = message.data.user0;
 				}
 			});
 			context.setPacketHandled(true);

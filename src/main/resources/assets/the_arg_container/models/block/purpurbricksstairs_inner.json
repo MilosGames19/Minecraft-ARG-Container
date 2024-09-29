@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/text21",
+    "top": "the_arg_container:block/text21",
+    "side": "the_arg_container:block/text21"
+  },
+  "render_type": "solid"
+}

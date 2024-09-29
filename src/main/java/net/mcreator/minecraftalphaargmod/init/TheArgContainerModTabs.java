@@ -139,6 +139,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_3.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ELDERS_PLUSHIE.get().asItem());
 			})
 
 					.build());
@@ -250,6 +251,8 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.DOTTYCH_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MARIOOOD_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MIKI_110_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GNAWMON_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ANDREWIDOT_PLUSHIE.get().asItem());
 			})
 
 					.build());
@@ -608,6 +611,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.HALLOWED_STONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HALLOWED_PILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CHISELED_HALLOWED_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PURPURBRICKSSTAIRS.get().asItem());
 			})
 
 					.build());

@@ -12,7 +12,7 @@
     "customModelName": "torch:default",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "tile080",
     "particleTexture": "",

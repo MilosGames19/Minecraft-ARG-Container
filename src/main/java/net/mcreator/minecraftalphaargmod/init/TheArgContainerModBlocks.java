@@ -278,6 +278,7 @@ import net.mcreator.minecraftalphaargmod.block.QRSTCommunicationBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.PyriteOreBlock;
 import net.mcreator.minecraftalphaargmod.block.PyriteOre1Block;
 import net.mcreator.minecraftalphaargmod.block.PyriteBlockBlock;
+import net.mcreator.minecraftalphaargmod.block.PurpurbricksstairsBlock;
 import net.mcreator.minecraftalphaargmod.block.PurpurBricksBlock;
 import net.mcreator.minecraftalphaargmod.block.PurplePillarBlock;
 import net.mcreator.minecraftalphaargmod.block.PortalRestrictedBlock;
@@ -527,6 +528,7 @@ import net.mcreator.minecraftalphaargmod.block.GoldInfusedLilyBlock;
 import net.mcreator.minecraftalphaargmod.block.GoldFlameInGlassBlock;
 import net.mcreator.minecraftalphaargmod.block.GoldElderBrickBlock;
 import net.mcreator.minecraftalphaargmod.block.GoldBrickBlock;
+import net.mcreator.minecraftalphaargmod.block.GnawmonPlushieBlock;
 import net.mcreator.minecraftalphaargmod.block.GlowingMyconCapBlock;
 import net.mcreator.minecraftalphaargmod.block.GlowingCaseBlock;
 import net.mcreator.minecraftalphaargmod.block.GlitchyBlock;
@@ -581,6 +583,7 @@ import net.mcreator.minecraftalphaargmod.block.ErrorBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.EmptyLogoBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.EmptyBookshelfAlphaBlock;
 import net.mcreator.minecraftalphaargmod.block.ElderstoneBlock;
+import net.mcreator.minecraftalphaargmod.block.EldersPlushieBlock;
 import net.mcreator.minecraftalphaargmod.block.ElderSmoothStoneBlock;
 import net.mcreator.minecraftalphaargmod.block.ElderPillarBlock;
 import net.mcreator.minecraftalphaargmod.block.ElderDecoratedStoneBlock;
@@ -709,6 +712,7 @@ import net.mcreator.minecraftalphaargmod.block.AshBricksBlock;
 import net.mcreator.minecraftalphaargmod.block.ArrowMonitorBlock;
 import net.mcreator.minecraftalphaargmod.block.ArgFansBlock;
 import net.mcreator.minecraftalphaargmod.block.AnkhMonitorBlock;
+import net.mcreator.minecraftalphaargmod.block.AndrewidotPlushieBlock;
 import net.mcreator.minecraftalphaargmod.block.Andrewgaming67PlushieBlock;
 import net.mcreator.minecraftalphaargmod.block.AmongUsTNTBlock;
 import net.mcreator.minecraftalphaargmod.block.AmongUsLeavesBlock;
@@ -1444,6 +1448,10 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> WALL_PAINTING_BLOCK_2 = REGISTRY.register("wall_painting_block_2", () -> new WallPaintingBlock2Block());
 	public static final RegistryObject<Block> WALL_PAINTING_BLOCK_3 = REGISTRY.register("wall_painting_block_3", () -> new WallPaintingBlock3Block());
 	public static final RegistryObject<Block> WALL_PAINTING_BLOCK_4 = REGISTRY.register("wall_painting_block_4", () -> new WallPaintingBlock4Block());
+	public static final RegistryObject<Block> PURPURBRICKSSTAIRS = REGISTRY.register("purpurbricksstairs", () -> new PurpurbricksstairsBlock());
+	public static final RegistryObject<Block> ELDERS_PLUSHIE = REGISTRY.register("elders_plushie", () -> new EldersPlushieBlock());
+	public static final RegistryObject<Block> GNAWMON_PLUSHIE = REGISTRY.register("gnawmon_plushie", () -> new GnawmonPlushieBlock());
+	public static final RegistryObject<Block> ANDREWIDOT_PLUSHIE = REGISTRY.register("andrewidot_plushie", () -> new AndrewidotPlushieBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
