@@ -100,6 +100,7 @@ import net.mcreator.minecraftalphaargmod.item.ExchangerItem;
 import net.mcreator.minecraftalphaargmod.item.EssenceRifleItem;
 import net.mcreator.minecraftalphaargmod.item.EssenceItem;
 import net.mcreator.minecraftalphaargmod.item.EraserItem;
+import net.mcreator.minecraftalphaargmod.item.EngineerItem;
 import net.mcreator.minecraftalphaargmod.item.EdibleFireItem;
 import net.mcreator.minecraftalphaargmod.item.DownbeatUplinkItem;
 import net.mcreator.minecraftalphaargmod.item.DismantlerItem;
@@ -117,6 +118,7 @@ import net.mcreator.minecraftalphaargmod.item.AssetstilesdenyItem;
 import net.mcreator.minecraftalphaargmod.item.AssetstilesacceptItem;
 import net.mcreator.minecraftalphaargmod.item.ArrivalItem;
 import net.mcreator.minecraftalphaargmod.item.Andrewgames722ItemItem;
+import net.mcreator.minecraftalphaargmod.item.AfliteItem;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 public class TheArgContainerModItems {
@@ -963,6 +965,16 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> ELDERS_PLUSHIE = block(TheArgContainerModBlocks.ELDERS_PLUSHIE);
 	public static final RegistryObject<Item> GNAWMON_PLUSHIE = block(TheArgContainerModBlocks.GNAWMON_PLUSHIE);
 	public static final RegistryObject<Item> ANDREWIDOT_PLUSHIE = block(TheArgContainerModBlocks.ANDREWIDOT_PLUSHIE);
+	public static final RegistryObject<Item> IKEN_DOOR = doubleBlock(TheArgContainerModBlocks.IKEN_DOOR);
+	public static final RegistryObject<Item> AFLITE = REGISTRY.register("aflite", () -> new AfliteItem());
+	public static final RegistryObject<Item> GLOWING_OBSIDIAN = block(TheArgContainerModBlocks.GLOWING_OBSIDIAN);
+	public static final RegistryObject<Item> AFLITE_BLOCK = block(TheArgContainerModBlocks.AFLITE_BLOCK);
+	public static final RegistryObject<Item> FIREWOOD_SAPLING = block(TheArgContainerModBlocks.FIREWOOD_SAPLING);
+	public static final RegistryObject<Item> FLOWER_GRASS_BLOCK = block(TheArgContainerModBlocks.FLOWER_GRASS_BLOCK);
+	public static final RegistryObject<Item> ENGINEER_HELMET = REGISTRY.register("engineer_helmet", () -> new EngineerItem.Helmet());
+	public static final RegistryObject<Item> ENGINEER_CHESTPLATE = REGISTRY.register("engineer_chestplate", () -> new EngineerItem.Chestplate());
+	public static final RegistryObject<Item> ENGINEER_LEGGINGS = REGISTRY.register("engineer_leggings", () -> new EngineerItem.Leggings());
+	public static final RegistryObject<Item> ENGINEER_BOOTS = REGISTRY.register("engineer_boots", () -> new EngineerItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -8,8 +8,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
-public class GrassBlockBlock extends Block {
-	public GrassBlockBlock() {
+public class FlowerGrassBlockBlock extends Block {
+	public FlowerGrassBlockBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.WET_GRASS).strength(1f, 10f));
 	}
 

@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "000026",
-    "textureTop": "000028",
+    "textureTop": "terrain__317",
     "textureLeft": "000027",
     "textureFront": "000027",
     "textureRight": "000027",
@@ -42,9 +42,9 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Alpha"
+      "value": "CUSTOM:Fanmade"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -100,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

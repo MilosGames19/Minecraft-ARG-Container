@@ -2,17 +2,17 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "000026",
-    "textureTop": "000028",
-    "textureLeft": "000027",
-    "textureFront": "000027",
-    "textureRight": "000027",
-    "textureBack": "000027",
+    "texture": "terrain__369",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Grass Block",
+    "name": "Glowing Obsidian",
     "specialInformation": {
       "fixedValue": []
     },
@@ -42,21 +42,21 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Alpha"
+      "value": "CUSTOM:Fanmade"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 4,
     "material": {
-      "value": "GRASS"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WET_GRASS"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -100,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 3,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

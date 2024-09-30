@@ -2,25 +2,26 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "000026",
-    "textureTop": "000028",
-    "textureLeft": "000027",
-    "textureFront": "000027",
-    "textureRight": "000027",
-    "textureBack": "000027",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "terrain__316",
+    "textureTop": "terrain__300",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "items_46",
     "particleTexture": "",
+    "blockBase": "Door",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Grass Block",
+    "name": "Iken Door",
     "specialInformation": {
       "fixedValue": []
     },
@@ -42,9 +43,9 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Alpha"
+      "value": "CUSTOM:Fanmade"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
@@ -54,9 +55,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "GRASS"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -81,7 +82,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WET_GRASS"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:aflite_block",
+    "the_arg_container:glowing_obsidian",
     "the_arg_container:purpurbricksstairs",
     "the_arg_container:chamber_sustainers",
     "the_arg_container:stone_wood_log",

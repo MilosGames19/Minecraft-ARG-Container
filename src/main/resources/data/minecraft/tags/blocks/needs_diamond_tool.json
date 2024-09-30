@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:glowing_obsidian",
     "the_arg_container:cheatydevportal",
     "the_arg_container:nexus_bricks",
     "the_arg_container:developer_portal",

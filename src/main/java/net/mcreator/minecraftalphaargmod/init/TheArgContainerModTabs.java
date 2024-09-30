@@ -340,6 +340,16 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.INFUSED_AFLITE_ORE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SOUL_CAGE_EMPTY.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SOUL_CAGE_FULL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.IKEN_DOOR.get().asItem());
+				tabData.accept(TheArgContainerModItems.AFLITE.get());
+				tabData.accept(TheArgContainerModBlocks.GLOWING_OBSIDIAN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.AFLITE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FIREWOOD_SAPLING.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FLOWER_GRASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModItems.ENGINEER_HELMET.get());
+				tabData.accept(TheArgContainerModItems.ENGINEER_CHESTPLATE.get());
+				tabData.accept(TheArgContainerModItems.ENGINEER_LEGGINGS.get());
+				tabData.accept(TheArgContainerModItems.ENGINEER_BOOTS.get());
 			})
 
 					.build());
