@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/lacuna-tile",
+    "up": "the_arg_container:block/lacuna-tile",
+    "north": "the_arg_container:block/lacuna-tile",
+    "east": "the_arg_container:block/lacuna-tile",
+    "south": "the_arg_container:block/lacuna-tile",
+    "west": "the_arg_container:block/lacuna-tile",
+    "particle": "the_arg_container:block/lacuna-tile"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "the_arg_container:blocks/tiled_smooth_slabs",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "the_arg_container:tiled_smooth_slabs"
+        }
+      ]
+    }
+  ]
+}

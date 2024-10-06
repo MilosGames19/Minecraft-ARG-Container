@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/padded-lacuna-tile",
+    "up": "the_arg_container:block/padded-lacuna-tile",
+    "north": "the_arg_container:block/padded-lacuna-tile",
+    "east": "the_arg_container:block/padded-lacuna-tile",
+    "south": "the_arg_container:block/padded-lacuna-tile",
+    "west": "the_arg_container:block/padded-lacuna-tile",
+    "particle": "the_arg_container:block/padded-lacuna-tile"
+  },
+  "render_type": "solid"
+}

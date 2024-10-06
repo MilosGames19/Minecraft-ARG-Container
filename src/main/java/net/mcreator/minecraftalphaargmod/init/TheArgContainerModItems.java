@@ -975,6 +975,21 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> ENGINEER_CHESTPLATE = REGISTRY.register("engineer_chestplate", () -> new EngineerItem.Chestplate());
 	public static final RegistryObject<Item> ENGINEER_LEGGINGS = REGISTRY.register("engineer_leggings", () -> new EngineerItem.Leggings());
 	public static final RegistryObject<Item> ENGINEER_BOOTS = REGISTRY.register("engineer_boots", () -> new EngineerItem.Boots());
+	public static final RegistryObject<Item> BRICK_TILES = block(TheArgContainerModBlocks.BRICK_TILES);
+	public static final RegistryObject<Item> BRICK_TILES_1 = block(TheArgContainerModBlocks.BRICK_TILES_1);
+	public static final RegistryObject<Item> CARPETED_SMOOTH_STONE = block(TheArgContainerModBlocks.CARPETED_SMOOTH_STONE);
+	public static final RegistryObject<Item> MARBLE_1 = block(TheArgContainerModBlocks.MARBLE_1);
+	public static final RegistryObject<Item> MARBLE_PILLAR = block(TheArgContainerModBlocks.MARBLE_PILLAR);
+	public static final RegistryObject<Item> CUT_MARBLE = block(TheArgContainerModBlocks.CUT_MARBLE);
+	public static final RegistryObject<Item> WALL_6 = block(TheArgContainerModBlocks.WALL_6);
+	public static final RegistryObject<Item> TILED_SMOOTH_SLABS = block(TheArgContainerModBlocks.TILED_SMOOTH_SLABS);
+	public static final RegistryObject<Item> LACUNA_KEYPAD = block(TheArgContainerModBlocks.LACUNA_KEYPAD);
+	public static final RegistryObject<Item> CHAIN = block(TheArgContainerModBlocks.CHAIN);
+	public static final RegistryObject<Item> LACUNA_TILE = block(TheArgContainerModBlocks.LACUNA_TILE);
+	public static final RegistryObject<Item> CUT_LACUNA_TILE = block(TheArgContainerModBlocks.CUT_LACUNA_TILE);
+	public static final RegistryObject<Item> PADDED_LACUNA_TILE = block(TheArgContainerModBlocks.PADDED_LACUNA_TILE);
+	public static final RegistryObject<Item> ROSE_FLOWER = block(TheArgContainerModBlocks.ROSE_FLOWER);
+	public static final RegistryObject<Item> SOLID_LEAVES = block(TheArgContainerModBlocks.SOLID_LEAVES);
 
 	// Start of user code block custom items
 	// End of user code block custom items

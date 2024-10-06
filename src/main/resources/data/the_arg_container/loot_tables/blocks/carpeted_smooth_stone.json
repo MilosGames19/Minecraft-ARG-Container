@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "the_arg_container:blocks/carpeted_smooth_stone",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "the_arg_container:carpeted_smooth_stone"
+        }
+      ]
+    }
+  ]
+}

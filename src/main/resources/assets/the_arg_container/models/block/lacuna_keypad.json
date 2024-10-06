@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/lacuna-keypad",
+    "up": "the_arg_container:block/lacuna-keypad",
+    "north": "the_arg_container:block/lacuna-keypad",
+    "east": "the_arg_container:block/lacuna-keypad",
+    "south": "the_arg_container:block/lacuna-keypad",
+    "west": "the_arg_container:block/lacuna-keypad",
+    "particle": "the_arg_container:block/lacuna-keypad"
+  },
+  "render_type": "solid"
+}

@@ -162,6 +162,26 @@ public class TheArgContainerModTabs {
 			})
 
 					.build());
+	public static final RegistryObject<CreativeModeTab> CONTROL = REGISTRY.register("control",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.control")).icon(() -> new ItemStack(TheArgContainerModBlocks.BRICK_TILES.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TheArgContainerModBlocks.BRICK_TILES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BRICK_TILES_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CARPETED_SMOOTH_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MARBLE_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MARBLE_PILLAR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CUT_MARBLE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_6.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TILED_SMOOTH_SLABS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LACUNA_KEYPAD.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHAIN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LACUNA_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CUT_LACUNA_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PADDED_LACUNA_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ROSE_FLOWER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SOLID_LEAVES.get().asItem());
+			})
+
+					.build());
 	public static final RegistryObject<CreativeModeTab> LAVACRUSADER = REGISTRY.register("lavacrusader",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.lavacrusader")).icon(() -> new ItemStack(TheArgContainerModBlocks.UNKNOWN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN.get().asItem());

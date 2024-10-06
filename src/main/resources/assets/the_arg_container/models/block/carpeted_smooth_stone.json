@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/carpeted-smooth-stone",
+    "up": "the_arg_container:block/carpeted-smooth-stone",
+    "north": "the_arg_container:block/carpeted-smooth-stone",
+    "east": "the_arg_container:block/carpeted-smooth-stone",
+    "south": "the_arg_container:block/carpeted-smooth-stone",
+    "west": "the_arg_container:block/carpeted-smooth-stone",
+    "particle": "the_arg_container:block/carpeted-smooth-stone"
+  },
+  "render_type": "solid"
+}
