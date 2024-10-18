@@ -3,7 +3,9 @@ package net.mcreator.minecraftalphaargmod.procedures;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -39,10 +41,12 @@ public class TowerTransporterEntityCollidesInTheBlockProcedure {
 			}
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(x, y, z);
+				_ent.teleportTo(x, (y + 210), z);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, y, z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(x, (y + 210), z, _ent.getYRot(), _ent.getXRot());
 			}
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 700, 1));
 		} else {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:towers_dimension"));
@@ -60,10 +64,12 @@ public class TowerTransporterEntityCollidesInTheBlockProcedure {
 			}
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(x, y, z);
+				_ent.teleportTo(x, (y + 200), z);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, y, z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(x, (y + 200), z, _ent.getYRot(), _ent.getXRot());
 			}
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 700, 1));
 		}
 	}
 }

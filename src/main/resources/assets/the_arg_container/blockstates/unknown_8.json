@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "the_arg_container:block/unknown_8"
+    },
+    "blockstate=1": {
+      "model": "the_arg_container:block/test_a_blockstate_0"
     }
   }
 }

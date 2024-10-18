@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:wood_pillar_block",
     "the_arg_container:iken_door",
     "the_arg_container:dutytime_block",
     "the_arg_container:dutytime_note_block",

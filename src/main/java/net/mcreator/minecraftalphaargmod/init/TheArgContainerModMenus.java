@@ -11,6 +11,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.minecraftalphaargmod.world.inventory.WarningMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.TerminalGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.ServerGuIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.SafeGUIMenu;
@@ -41,4 +42,5 @@ public class TheArgContainerModMenus {
 	public static final RegistryObject<MenuType<MonitorGUIMenu>> MONITOR_GUI = REGISTRY.register("monitor_gui", () -> IForgeMenuType.create(MonitorGUIMenu::new));
 	public static final RegistryObject<MenuType<BlueChestGUIMenu>> BLUE_CHEST_GUI = REGISTRY.register("blue_chest_gui", () -> IForgeMenuType.create(BlueChestGUIMenu::new));
 	public static final RegistryObject<MenuType<Key1Menu>> KEY_1 = REGISTRY.register("key_1", () -> IForgeMenuType.create(Key1Menu::new));
+	public static final RegistryObject<MenuType<WarningMenu>> WARNING = REGISTRY.register("warning", () -> IForgeMenuType.create(WarningMenu::new));
 }

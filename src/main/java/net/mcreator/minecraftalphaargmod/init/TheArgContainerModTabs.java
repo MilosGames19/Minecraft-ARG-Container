@@ -140,6 +140,23 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_3.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_PAINTING_BLOCK_4.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ELDERS_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GLASS_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GLASS_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GRASS_BLOCK_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DISCO_BALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MISSING_DBG_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHECKERBOARD_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_MOJANG_LOGO_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ORENGE_MOJANG_LOGO_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UPDATE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PATTERN_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TILE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WOOD_PILLAR_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_24.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_25.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_26.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MESSAGE_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MESSAGE_2.get().asItem());
 			})
 
 					.build());
@@ -273,6 +290,14 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.MIKI_110_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GNAWMON_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ANDREWIDOT_PLUSHIE.get().asItem());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> THEDECAYED = REGISTRY.register("thedecayed",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.thedecayed")).icon(() -> new ItemStack(Blocks.NETHER_PORTAL)).displayItems((parameters, tabData) -> {
+				tabData.accept(TheArgContainerModBlocks.EXEC_05_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.KARGOSH_1P_Z_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SAND_YCARPS_8_PLUSHIE.get().asItem());
 			})
 
 					.build());
@@ -942,6 +967,7 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.STYLISHARMOR_BOOTS.get());
 			tabData.accept(TheArgContainerModItems.SPEAR.get());
 			tabData.accept(TheArgContainerModItems.REPELLER.get());
+			tabData.accept(TheArgContainerModItems.OBSIDIAN_SWORD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(TheArgContainerModItems.OBSERVER_MOB_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.RECRUITER_SPAWN_EGG.get());
@@ -958,6 +984,10 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.MYCON_TOOL_SET_HOE.get());
 			tabData.accept(TheArgContainerModItems.ERASER.get());
 			tabData.accept(TheArgContainerModItems.DISMANTLER.get());
+			tabData.accept(TheArgContainerModItems.OBSIDIAN_PICKAXE.get());
+			tabData.accept(TheArgContainerModItems.OBSIDIAN_AXE.get());
+			tabData.accept(TheArgContainerModItems.OBSIDIAN_SHOVEL.get());
+			tabData.accept(TheArgContainerModItems.OBSIDIAN_HOE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(TheArgContainerModItems.FRYSHROOM.get());
 		}

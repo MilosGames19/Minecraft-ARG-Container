@@ -18,7 +18,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Lilypad",
+    "name": "Iron Infused Rosepad",
     "specialInformation": {
       "fixedValue": []
     },

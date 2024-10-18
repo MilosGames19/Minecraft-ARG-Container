@@ -1,0 +1,97 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_warning",
+          "text": {
+            "fixedValue": "Warning:"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 137,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_mod_is_still_in_beta_and_u",
+          "text": {
+            "fixedValue": "This mod is still in beta"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 137,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_and_updates_could_potentially_co",
+          "text": {
+            "fixedValue": "and updates could potentially"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 137,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_corrupt_the_world",
+          "text": {
+            "fixedValue": "corrupt your world"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 137,
+          "y": 83
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_i_understand",
+          "text": "I understand",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CloseGUI"
+          },
+          "width": 87,
+          "height": 20,
+          "x": 167,
+          "y": 169
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 16,
+      "sy": 18,
+      "ox": 16,
+      "oy": 21,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "the_arg_container:tower_big",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 22,
+    "separation": 21,
+    "salt": 373903758
+  }
+}

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.minecraftalphaargmod.client.gui.WarningScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TerminalGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.ServerGuIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.SafeGUIScreen;
@@ -43,6 +44,7 @@ public class TheArgContainerModScreens {
 			MenuScreens.register(TheArgContainerModMenus.MONITOR_GUI.get(), MonitorGUIScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.BLUE_CHEST_GUI.get(), BlueChestGUIScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.KEY_1.get(), Key1Screen::new);
+			MenuScreens.register(TheArgContainerModMenus.WARNING.get(), WarningScreen::new);
 		});
 	}
 }

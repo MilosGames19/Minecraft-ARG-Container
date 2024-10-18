@@ -61,8 +61,13 @@ import net.mcreator.minecraftalphaargmod.item.RaggedArmorItem;
 import net.mcreator.minecraftalphaargmod.item.QuestMenagerItem;
 import net.mcreator.minecraftalphaargmod.item.PyriteItem;
 import net.mcreator.minecraftalphaargmod.item.PearItem;
+import net.mcreator.minecraftalphaargmod.item.ObsidianSwordItem;
+import net.mcreator.minecraftalphaargmod.item.ObsidianShovelItem;
+import net.mcreator.minecraftalphaargmod.item.ObsidianPickaxeItem;
 import net.mcreator.minecraftalphaargmod.item.ObsidianPearItem;
 import net.mcreator.minecraftalphaargmod.item.ObsidianIngotItem;
+import net.mcreator.minecraftalphaargmod.item.ObsidianHoeItem;
+import net.mcreator.minecraftalphaargmod.item.ObsidianAxeItem;
 import net.mcreator.minecraftalphaargmod.item.ObsidianArmorItem;
 import net.mcreator.minecraftalphaargmod.item.ObserverFurItem;
 import net.mcreator.minecraftalphaargmod.item.NoiseSupItem;
@@ -990,6 +995,31 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> PADDED_LACUNA_TILE = block(TheArgContainerModBlocks.PADDED_LACUNA_TILE);
 	public static final RegistryObject<Item> ROSE_FLOWER = block(TheArgContainerModBlocks.ROSE_FLOWER);
 	public static final RegistryObject<Item> SOLID_LEAVES = block(TheArgContainerModBlocks.SOLID_LEAVES);
+	public static final RegistryObject<Item> OBSIDIAN_SWORD = REGISTRY.register("obsidian_sword", () -> new ObsidianSwordItem());
+	public static final RegistryObject<Item> OBSIDIAN_PICKAXE = REGISTRY.register("obsidian_pickaxe", () -> new ObsidianPickaxeItem());
+	public static final RegistryObject<Item> OBSIDIAN_AXE = REGISTRY.register("obsidian_axe", () -> new ObsidianAxeItem());
+	public static final RegistryObject<Item> OBSIDIAN_SHOVEL = REGISTRY.register("obsidian_shovel", () -> new ObsidianShovelItem());
+	public static final RegistryObject<Item> OBSIDIAN_HOE = REGISTRY.register("obsidian_hoe", () -> new ObsidianHoeItem());
+	public static final RegistryObject<Item> EXEC_05_PLUSHIE = block(TheArgContainerModBlocks.EXEC_05_PLUSHIE);
+	public static final RegistryObject<Item> KARGOSH_1P_Z_PLUSHIE = block(TheArgContainerModBlocks.KARGOSH_1P_Z_PLUSHIE);
+	public static final RegistryObject<Item> SAND_YCARPS_8_PLUSHIE = block(TheArgContainerModBlocks.SAND_YCARPS_8_PLUSHIE);
+	public static final RegistryObject<Item> GLASS_1 = block(TheArgContainerModBlocks.GLASS_1);
+	public static final RegistryObject<Item> GLASS_2 = block(TheArgContainerModBlocks.GLASS_2);
+	public static final RegistryObject<Item> GRASS_BLOCK_1 = block(TheArgContainerModBlocks.GRASS_BLOCK_1);
+	public static final RegistryObject<Item> DISCO_BALL = block(TheArgContainerModBlocks.DISCO_BALL);
+	public static final RegistryObject<Item> MISSING_DBG_BLOCK = block(TheArgContainerModBlocks.MISSING_DBG_BLOCK);
+	public static final RegistryObject<Item> CHECKERBOARD_BLOCK = block(TheArgContainerModBlocks.CHECKERBOARD_BLOCK);
+	public static final RegistryObject<Item> BLUE_MOJANG_LOGO_BLOCK = block(TheArgContainerModBlocks.BLUE_MOJANG_LOGO_BLOCK);
+	public static final RegistryObject<Item> ORENGE_MOJANG_LOGO_BLOCK = block(TheArgContainerModBlocks.ORENGE_MOJANG_LOGO_BLOCK);
+	public static final RegistryObject<Item> UPDATE_BLOCK = block(TheArgContainerModBlocks.UPDATE_BLOCK);
+	public static final RegistryObject<Item> PATTERN_BLOCK = block(TheArgContainerModBlocks.PATTERN_BLOCK);
+	public static final RegistryObject<Item> TILE_BLOCK = block(TheArgContainerModBlocks.TILE_BLOCK);
+	public static final RegistryObject<Item> WOOD_PILLAR_BLOCK = block(TheArgContainerModBlocks.WOOD_PILLAR_BLOCK);
+	public static final RegistryObject<Item> UNKNOWN_24 = block(TheArgContainerModBlocks.UNKNOWN_24);
+	public static final RegistryObject<Item> UNKNOWN_25 = block(TheArgContainerModBlocks.UNKNOWN_25);
+	public static final RegistryObject<Item> UNKNOWN_26 = block(TheArgContainerModBlocks.UNKNOWN_26);
+	public static final RegistryObject<Item> MESSAGE_1 = block(TheArgContainerModBlocks.MESSAGE_1);
+	public static final RegistryObject<Item> MESSAGE_2 = block(TheArgContainerModBlocks.MESSAGE_2);
 
 	// Start of user code block custom items
 	// End of user code block custom items

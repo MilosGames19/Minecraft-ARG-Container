@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:unknown_26",
+    "the_arg_container:unknown_25",
+    "the_arg_container:unknown_24",
+    "the_arg_container:tile_block",
+    "the_arg_container:pattern_block",
+    "the_arg_container:orenge_mojang_logo_block",
+    "the_arg_container:blue_mojang_logo_block",
+    "the_arg_container:checkerboard_block",
+    "the_arg_container:missing_dbg_block",
+    "the_arg_container:disco_ball",
     "the_arg_container:padded_lacuna_tile",
     "the_arg_container:cut_lacuna_tile",
     "the_arg_container:lacuna_tile",

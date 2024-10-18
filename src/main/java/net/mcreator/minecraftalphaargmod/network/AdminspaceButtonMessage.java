@@ -81,7 +81,7 @@ public class AdminspaceButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			CloseGUIProcedure.execute(entity);
+			CloseGUIProcedure.execute(world, entity);
 		}
 	}
 

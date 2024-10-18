@@ -10102,37 +10102,6 @@
       }
     },
     {
-      "name": "AssetstilesacceptRightclickedOnBlock",
-      "type": "procedure",
-      "sortid": 788,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "assetstilesaccept_rightclicked_on_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/AssetstilesacceptRightclickedOnBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "VoidGem",
       "type": "item",
       "sortid": 376,
@@ -10514,6 +10483,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -21912,6 +21885,1280 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/block/SolidLeavesBlock.java"
         ]
       }
+    },
+    {
+      "name": "ObsidianSword",
+      "type": "tool",
+      "sortid": 1402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/obsidian_sword.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/item/ObsidianSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianPickaxe",
+      "type": "tool",
+      "sortid": 1403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/obsidian_pickaxe.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/item/ObsidianPickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianAxe",
+      "type": "tool",
+      "sortid": 1404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/item/ObsidianAxeItem.java",
+          "src/main/resources/assets/the_arg_container/models/item/obsidian_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianShovel",
+      "type": "tool",
+      "sortid": 1405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/item/ObsidianShovelItem.java",
+          "src/main/resources/assets/the_arg_container/models/item/obsidian_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianHoe",
+      "type": "tool",
+      "sortid": 1406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/item/ObsidianHoeItem.java",
+          "src/main/resources/assets/the_arg_container/models/item/obsidian_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianTools1",
+      "type": "recipe",
+      "sortid": 1407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_tools_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/obsidian_tools_1.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianTools2",
+      "type": "recipe",
+      "sortid": 1408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_tools_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/obsidian_tools_2.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianTools3",
+      "type": "recipe",
+      "sortid": 1409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_tools_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/obsidian_tools_3.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianTools4",
+      "type": "recipe",
+      "sortid": 1410,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_tools_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/obsidian_tools_4.json"
+        ]
+      }
+    },
+    {
+      "name": "ObsidianTools5",
+      "type": "recipe",
+      "sortid": 1411,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_tools_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/recipes/obsidian_tools_5.json"
+        ]
+      }
+    },
+    {
+      "name": "THEDECAYED",
+      "type": "tab",
+      "sortid": 1412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thedecayed",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Exec05Plushie",
+      "type": "block",
+      "sortid": 1413,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exec_05_plushie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/exec_05_plushie.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Exec05PlushieBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/exec_05_plushie.json",
+          "src/main/resources/assets/the_arg_container/models/item/exec_05_plushie.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/exec_05_plushie.json"
+        ]
+      }
+    },
+    {
+      "name": "Kargosh1pZPlushie",
+      "type": "block",
+      "sortid": 1414,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kargosh_1p_z_plushie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Kargosh1pZPlushieBlock.java",
+          "src/main/resources/assets/the_arg_container/models/block/kargosh_1p_z_plushie.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/kargosh_1p_z_plushie.json",
+          "src/main/resources/assets/the_arg_container/blockstates/kargosh_1p_z_plushie.json",
+          "src/main/resources/assets/the_arg_container/models/item/kargosh_1p_z_plushie.json"
+        ]
+      }
+    },
+    {
+      "name": "SandYcarps8Plushie",
+      "type": "block",
+      "sortid": 1415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ycarps_8_plushie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/sand_ycarps_8_plushie.json",
+          "src/main/resources/assets/the_arg_container/blockstates/sand_ycarps_8_plushie.json",
+          "src/main/resources/assets/the_arg_container/models/block/sand_ycarps_8_plushie.json",
+          "src/main/resources/assets/the_arg_container/models/item/sand_ycarps_8_plushie.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/SandYcarps8PlushieBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Glass1",
+      "type": "block",
+      "sortid": 1416,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Glass1Block.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/glass_1.json",
+          "src/main/resources/assets/the_arg_container/blockstates/glass_1.json",
+          "src/main/resources/assets/the_arg_container/models/block/glass_1.json",
+          "src/main/resources/assets/the_arg_container/models/item/glass_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Glass2",
+      "type": "block",
+      "sortid": 1417,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/blockstates/glass_2.json",
+          "src/main/resources/assets/the_arg_container/models/block/glass_2.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/glass_2.json",
+          "src/main/resources/assets/the_arg_container/models/item/glass_2.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Glass2Block.java"
+        ]
+      }
+    },
+    {
+      "name": "GrassBlock1",
+      "type": "block",
+      "sortid": 1418,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_block_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/GrassBlock1Block.java",
+          "src/main/resources/assets/the_arg_container/models/item/grass_block_1.json",
+          "src/main/resources/assets/the_arg_container/models/block/grass_block_1.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/grass_block_1.json",
+          "src/main/resources/assets/the_arg_container/blockstates/grass_block_1.json"
+        ]
+      }
+    },
+    {
+      "name": "DiscoBall",
+      "type": "block",
+      "sortid": 1419,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disco_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/DiscoBallBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/disco_ball.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/disco_ball.json",
+          "src/main/resources/assets/the_arg_container/models/block/disco_ball.json",
+          "src/main/resources/assets/the_arg_container/models/item/disco_ball.json"
+        ]
+      }
+    },
+    {
+      "name": "MissingDBGBlock",
+      "type": "block",
+      "sortid": 1420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missing_dbg_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/missing_dbg_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/missing_dbg_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/MissingDBGBlockBlock.java",
+          "src/main/resources/assets/the_arg_container/models/item/missing_dbg_block.json",
+          "src/main/resources/assets/the_arg_container/models/block/missing_dbg_block.json"
+        ]
+      }
+    },
+    {
+      "name": "CheckerboardBlock",
+      "type": "block",
+      "sortid": 1421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkerboard_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/CheckerboardBlockBlock.java",
+          "src/main/resources/assets/the_arg_container/models/item/checkerboard_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/checkerboard_block.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/checkerboard_block.json",
+          "src/main/resources/assets/the_arg_container/models/block/checkerboard_block.json"
+        ]
+      }
+    },
+    {
+      "name": "BlueMojangLogoBlock",
+      "type": "block",
+      "sortid": 1422,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_mojang_logo_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/blue_mojang_logo_block.json",
+          "src/main/resources/assets/the_arg_container/models/item/blue_mojang_logo_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/blue_mojang_logo_block.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/blue_mojang_logo_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/BlueMojangLogoBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "OrengeMojangLogoBlock",
+      "type": "block",
+      "sortid": 1423,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orenge_mojang_logo_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/blockstates/orenge_mojang_logo_block.json",
+          "src/main/resources/assets/the_arg_container/models/item/orenge_mojang_logo_block.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/orenge_mojang_logo_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/OrengeMojangLogoBlockBlock.java",
+          "src/main/resources/assets/the_arg_container/models/block/orenge_mojang_logo_block.json"
+        ]
+      }
+    },
+    {
+      "name": "UpdateBlock",
+      "type": "block",
+      "sortid": 1424,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/update_block.json",
+          "src/main/resources/assets/the_arg_container/models/item/update_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/update_block.json",
+          "src/main/resources/assets/the_arg_container/models/block/update_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/UpdateBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PatternBlock",
+      "type": "block",
+      "sortid": 1425,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pattern_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/pattern_block.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/pattern_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PatternBlockBlock.java",
+          "src/main/resources/assets/the_arg_container/models/block/pattern_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/pattern_block.json"
+        ]
+      }
+    },
+    {
+      "name": "TileBlock",
+      "type": "block",
+      "sortid": 1426,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tile_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/tile_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/tile_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/TileBlockBlock.java",
+          "src/main/resources/assets/the_arg_container/models/block/tile_block.json",
+          "src/main/resources/assets/the_arg_container/models/item/tile_block.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodPillarBlock",
+      "type": "block",
+      "sortid": 1427,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_pillar_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/WoodPillarBlockBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/wood_pillar_block.json",
+          "src/main/resources/assets/the_arg_container/models/block/wood_pillar_block.json",
+          "src/main/resources/assets/the_arg_container/models/item/wood_pillar_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/wood_pillar_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Unknown24",
+      "type": "block",
+      "sortid": 1428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknown_24",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/unknown_24.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/unknown_24.json",
+          "src/main/resources/assets/the_arg_container/models/block/unknown_24.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Unknown24Block.java",
+          "src/main/resources/assets/the_arg_container/blockstates/unknown_24.json"
+        ]
+      }
+    },
+    {
+      "name": "Unknown25",
+      "type": "block",
+      "sortid": 1429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknown_25",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/unknown_25.json",
+          "src/main/resources/assets/the_arg_container/blockstates/unknown_25.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/unknown_25.json",
+          "src/main/resources/assets/the_arg_container/models/item/unknown_25.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Unknown25Block.java"
+        ]
+      }
+    },
+    {
+      "name": "Unknown26",
+      "type": "block",
+      "sortid": 1430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknown_26",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Unknown26Block.java",
+          "src/main/resources/assets/the_arg_container/blockstates/unknown_26.json",
+          "src/main/resources/assets/the_arg_container/models/item/unknown_26.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/unknown_26.json",
+          "src/main/resources/assets/the_arg_container/models/block/unknown_26.json"
+        ]
+      }
+    },
+    {
+      "name": "Message1",
+      "type": "block",
+      "sortid": 1431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "message_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/message_1.json",
+          "src/main/resources/assets/the_arg_container/models/item/message_1.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Message1Block.java",
+          "src/main/resources/assets/the_arg_container/blockstates/message_1.json",
+          "src/main/resources/assets/the_arg_container/models/block/message_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Message2",
+      "type": "block",
+      "sortid": 1432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "message_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/message_2.json",
+          "src/main/resources/assets/the_arg_container/blockstates/message_2.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/message_2.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Message2Block.java",
+          "src/main/resources/assets/the_arg_container/models/block/message_2.json"
+        ]
+      }
+    },
+    {
+      "name": "TowerSmall",
+      "type": "structure",
+      "sortid": 1433,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_small",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/worldgen/structure_set/tower_small.json",
+          "src/main/resources/data/the_arg_container/worldgen/template_pool/tower_small.json",
+          "src/main/resources/data/the_arg_container/worldgen/structure/tower_small.json"
+        ]
+      }
+    },
+    {
+      "name": "TowerBig",
+      "type": "structure",
+      "sortid": 1434,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_big",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/worldgen/template_pool/tower_big.json",
+          "src/main/resources/data/the_arg_container/worldgen/structure_set/tower_big.json",
+          "src/main/resources/data/the_arg_container/worldgen/structure/tower_big.json"
+        ]
+      }
+    },
+    {
+      "name": "Warning",
+      "type": "gui",
+      "sortid": 1435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/network/WarningButtonMessage.java",
+          "src/main/java/net/mcreator/minecraftalphaargmod/client/gui/WarningScreen.java",
+          "src/main/java/net/mcreator/minecraftalphaargmod/world/inventory/WarningMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "ShowWarning",
+      "type": "procedure",
+      "sortid": 1436,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_warning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/ShowWarningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Well",
+      "type": "structure",
+      "sortid": 1437,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "well",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/worldgen/structure_set/well.json",
+          "src/main/resources/data/the_arg_container/worldgen/structure/well.json",
+          "src/main/resources/data/the_arg_container/worldgen/template_pool/well.json"
+        ]
+      }
+    },
+    {
+      "name": "DashOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 1438,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/DashOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DashOverlay",
+      "type": "overlay",
+      "sortid": 1439,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/client/screens/DashOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "Dash1",
+      "type": "procedure",
+      "sortid": 1440,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash2",
+      "type": "procedure",
+      "sortid": 1441,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash3",
+      "type": "procedure",
+      "sortid": 1442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash4",
+      "type": "procedure",
+      "sortid": 1443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash5",
+      "type": "procedure",
+      "sortid": 1444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash6",
+      "type": "procedure",
+      "sortid": 1445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash7",
+      "type": "procedure",
+      "sortid": 1446,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash8",
+      "type": "procedure",
+      "sortid": 1447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash9",
+      "type": "procedure",
+      "sortid": 1448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash10",
+      "type": "procedure",
+      "sortid": 1449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash11",
+      "type": "procedure",
+      "sortid": 1450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_11",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash12",
+      "type": "procedure",
+      "sortid": 1451,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_12",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash12Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash13",
+      "type": "procedure",
+      "sortid": 1452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_13",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash13Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash14",
+      "type": "procedure",
+      "sortid": 1453,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_14",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash14Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash15",
+      "type": "procedure",
+      "sortid": 1454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_15",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash15Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash16",
+      "type": "procedure",
+      "sortid": 1455,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_16",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash16Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash17",
+      "type": "procedure",
+      "sortid": 1456,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_17",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash17Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash18",
+      "type": "procedure",
+      "sortid": 1457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_18",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash18Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash19",
+      "type": "procedure",
+      "sortid": 1458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_19",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash19Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash20",
+      "type": "procedure",
+      "sortid": 1459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_20",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash20Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash21",
+      "type": "procedure",
+      "sortid": 1460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_21",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash21Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash22",
+      "type": "procedure",
+      "sortid": 1461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_22",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash22Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash23",
+      "type": "procedure",
+      "sortid": 1462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_23",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash23Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash24",
+      "type": "procedure",
+      "sortid": 1463,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_24",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash24Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash25",
+      "type": "procedure",
+      "sortid": 1464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_25",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash25Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash26",
+      "type": "procedure",
+      "sortid": 1465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_26",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash26Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash27",
+      "type": "procedure",
+      "sortid": 1466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_27",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash27Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash28",
+      "type": "procedure",
+      "sortid": 1467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_28",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash28Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash29",
+      "type": "procedure",
+      "sortid": 1468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_29",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash29Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "Dash30",
+      "type": "procedure",
+      "sortid": 1469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_30",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/Dash30Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/dash"
+    },
+    {
+      "name": "TowerMedium",
+      "type": "structure",
+      "sortid": 1470,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_medium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/worldgen/template_pool/tower_medium.json",
+          "src/main/resources/data/the_arg_container/worldgen/structure_set/tower_medium.json",
+          "src/main/resources/data/the_arg_container/worldgen/structure/tower_medium.json"
+        ]
+      }
+    },
+    {
+      "name": "TowerSmallShort",
+      "type": "structure",
+      "sortid": 1471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_small_short",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/worldgen/structure_set/tower_small_short.json",
+          "src/main/resources/data/the_arg_container/worldgen/template_pool/tower_small_short.json",
+          "src/main/resources/data/the_arg_container/worldgen/structure/tower_small_short.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -21920,6 +23167,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0.0"
+    },
+    {
+      "name": "Warning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "guiCooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -22190,6 +23449,8 @@
       "CUSTOM:Hydrangea"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
       "~Blocks.AIR",
       "~CUSTOM:SoulGrass",
       "~CUSTOM:SoulStone",
@@ -22274,6 +23535,7 @@
       "CUSTOM:SummerLeaves"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:WoodPillarBlock",
       "~CUSTOM:IkenDoor",
       "~CUSTOM:DutytimeBlock",
       "~CUSTOM:DutytimeNoteBlock",
@@ -22335,6 +23597,16 @@
       "CUSTOM:HighwoodWorkbench"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Unknown26",
+      "~CUSTOM:Unknown25",
+      "~CUSTOM:Unknown24",
+      "~CUSTOM:TileBlock",
+      "~CUSTOM:PatternBlock",
+      "~CUSTOM:OrengeMojangLogoBlock",
+      "~CUSTOM:BlueMojangLogoBlock",
+      "~CUSTOM:CheckerboardBlock",
+      "~CUSTOM:MissingDBGBlock",
+      "~CUSTOM:DiscoBall",
       "~CUSTOM:PaddedLacunaTile",
       "~CUSTOM:CutLacunaTile",
       "~CUSTOM:LacunaTile",
@@ -22763,6 +24035,7 @@
       "~CUSTOM:CobblestoneFance"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassBlock1",
       "~CUSTOM:GrassBlock",
       "~CUSTOM:DutytimeSand",
       "~CUSTOM:DutytimeGrass",
@@ -22863,11 +24136,12 @@
       "painting.minecraft_alpha_arg_mod.demo_0.author": "Alpha 1.1.2.07",
       "block.the_arg_container.minesweeper_crossed_mine": "Minesweeper Crossed Mine",
       "block.the_arg_container.water_lily": "Water Lily",
+      "block.the_arg_container.pattern_block": "Pattern Block",
       "block.minecraft_alpha_arg_mod.corridor_lantern": "Corridor Lantern",
       "block.minecraft_alpha_arg_mod.wood": "Wood",
       "painting.minecraft_alpha_arg_mod.cat_3.title": "Cat",
-      "item.minecraft_alpha_arg_mod.space_time_dilator": "Space_time_dilator",
       "painting.the_arg_container.light_beam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "item.minecraft_alpha_arg_mod.space_time_dilator": "Space_time_dilator",
       "item.the_arg_container.sandcastles": "Music Disc",
       "block.minecraft_alpha_arg_mod.debug_block_1": "Debug Block",
       "item.minecraft_alpha_arg_mod.tea_leaf": "Tea Leaf",
@@ -22901,6 +24175,7 @@
       "painting.minecraft_alpha_arg_mod.snow_2.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "item.minecraft_alpha_arg_mod.denied.desc": "m00nlander - Denied",
       "block.minecraft_alpha_arg_mod.vending_machine_armor_bottom": "Vending Machine (Armor)",
+      "gui.the_arg_container.warning.button_i_understand": "I understand",
       "block.the_arg_container.hub_mojang_block_1": "Mojang Block",
       "painting.the_arg_container.sunrise.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.hub_mojang_block_2": "Mojang Block",
@@ -22930,6 +24205,7 @@
       "block.minecraft_alpha_arg_mod.realityspace_ms_pacman_block": "Realityspace Ms. Pacman Block",
       "block.minecraft_alpha_arg_mod.snow_brick": "Snow Brick",
       "block.minecraft_alpha_arg_mod.green_glass": "Green Glass",
+      "block.the_arg_container.tile_block": "Tile Block",
       "block.the_arg_container.marble_1": "Marble",
       "block.minecraft_alpha_arg_mod.soul_obsidian": "Soul Obsidian",
       "painting.minecraft_alpha_arg_mod.fog.title": "Fog",
@@ -22945,8 +24221,8 @@
       "block.the_arg_container.tower_transporter": "Tower Transporter",
       "painting.minecraft_alpha_arg_mod.dreamed_world.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.summer_cobblestone": "Cobblestone (Summer)",
-      "item.minecraft_alpha_arg_mod.tea_bucket": "Tea Bucket",
       "block.the_arg_container.mirrors_plate": "Mirrors Plate",
+      "item.minecraft_alpha_arg_mod.tea_bucket": "Tea Bucket",
       "block.the_arg_container.ash_torch": "Ash Torch",
       "block.the_arg_container.hell_bulb": "Hell Bulb",
       "block.the_arg_container.wooden_door": "Wooden Door",
@@ -22959,7 +24235,7 @@
       "block.the_arg_container.hub_hub_tile": "Hub Tile",
       "block.minecraft_alpha_arg_mod.minesweeper_questionmark": "Minesweeper Questionmark",
       "painting.minecraft_alpha_arg_mod.amber.author": "Minecraft Alpha 1.0.16.05_20 Cypress",
-      "block.the_arg_container.hub_wall_block": "§kHub Wall Block",
+      "block.the_arg_container.hub_wall_block": "Hub Walls",
       "painting.the_arg_container.place_1.author": "Beta-IMPROVE",
       "block.the_arg_container.perlin_dark_star": "Perlin Dark Star",
       "painting.the_arg_container.apple.author": "Minecraft Alpha 1.0.16.05_20 Cypress",
@@ -23018,7 +24294,7 @@
       "block.minecraft_alpha_arg_mod.window": "Window",
       "painting.the_arg_container.pheonix.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.licht.title": "Licht",
-      "block.the_arg_container.idk_somethingcool": "§kIDKSomethingcool",
+      "block.the_arg_container.idk_somethingcool": "Mud Block",
       "block.minecraft_alpha_arg_mod.highwood_planks": "Highwood Planks",
       "block.minecraft_alpha_arg_mod.creepers_heart": "Creepers Heart",
       "block.the_arg_container.frigid_trunk": "Frigid Trunk",
@@ -23060,8 +24336,8 @@
       "block.the_arg_container.corridor_railing": "Corridor Railing",
       "block.minecraft_alpha_arg_mod.compressed_static_portal": "Compressed Static Portal Block",
       "painting.the_arg_container.mario.author": "Alpha 1.1.2.07",
-      "block.the_arg_container.slaize_170": "Slaize 17",
       "item.minecraft_alpha_arg_mod.arrival.desc": "672 - arrival",
+      "block.the_arg_container.slaize_170": "Slaize 17",
       "painting.the_arg_container.company.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.minecraft_alpha_arg_mod.worrysome.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.grid_planks": "Grid Planks",
@@ -23079,18 +24355,18 @@
       "block.the_arg_container.essence_cloner": "Essence Cloner",
       "block.minecraft_alpha_arg_mod.fern": "Fern",
       "block.minecraft_alpha_arg_mod.clinohumite_ore": "Clinohumite Ore",
-      "block.the_arg_container.lilypad_1122": "Lilypad",
-      "block.the_arg_container.lilypad_1121": "Lilypad",
+      "block.the_arg_container.lilypad_1122": "Iron Infused Rosepad",
+      "block.the_arg_container.lilypad_1121": "Diamond Infused Rosepad",
       "block.the_arg_container.slaize_180": "Slaize 18",
       "block.the_arg_container.mnop_communication_block": "MNOP Communication Block",
       "painting.minecraft_alpha_arg_mod.bird.title": "Bird",
-      "block.the_arg_container.lilypad_1123": "Lilypad",
+      "block.the_arg_container.lilypad_1123": "Coal Infused Rosepad",
       "block.minecraft_alpha_arg_mod.black_floor": "Black Floor",
       "block.the_arg_container.highwood_pillar": "Highwood Pillar",
       "painting.the_arg_container.yggdrasil.title": "Yggdrasil",
       "painting.the_arg_container.demo_0.title": "Demo",
       "painting.the_arg_container.landscape.title": "Landscape",
-      "block.the_arg_container.dark_planks": "§kDark Planks",
+      "block.the_arg_container.dark_planks": "Bluewood Plank",
       "block.minecraft_alpha_arg_mod.among_us_tnt": "AmongUs TNT",
       "painting.the_arg_container.emerald.title": "Emerald",
       "block.minecraft_alpha_arg_mod.floor_noncarpet_hard": "Hard Floor",
@@ -23206,6 +24482,7 @@
       "block.the_arg_container.unknownsymbol_2monitor": "⑉ Monitor",
       "painting.the_arg_container.square.title": "Square",
       "painting.the_arg_container.symbol.title": "Symbol",
+      "block.the_arg_container.sand_ycarps_8_plushie": "sandYcarps8 Plushie",
       "block.minecraft_alpha_arg_mod.coal_brick": "Coal Brick",
       "block.the_arg_container.machination_converter": "Machination Converter",
       "painting.the_arg_container.dreamed_world.title": "Dreamed World",
@@ -23539,6 +24816,7 @@
       "entity.minecraft_alpha_arg_mod.giant": "Collosal",
       "painting.minecraft_alpha_arg_mod.rock.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.cosmos.title": "Cosmos",
+      "item.the_arg_container.obsidian_sword": "Obsidian Sword",
       "block.minecraft_alpha_arg_mod.flamewood": "Flamewood",
       "block.minecraft_alpha_arg_mod.efgh_communication_block": "EFGH Communication Block",
       "block.minecraft_alpha_arg_mod.gold_elder_brick": "Gold Elder Brick",
@@ -23577,7 +24855,8 @@
       "painting.the_arg_container.eclipse.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.andrewgaming67_plushie": "AndrewGaming67 Plushie",
       "block.minecraft_alpha_arg_mod.hub_door": "Hub Door",
-      "block.the_arg_container.dark_leaves": "§kDark Leaves",
+      "block.the_arg_container.dark_leaves": "Bluewood Leaves",
+      "gui.the_arg_container.warning.label_and_updates_could_potentially_co": "and updates could potentially",
       "painting.minecraft_alpha_arg_mod.sideview.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.ash_grass_1": "Ash Grass",
       "block.the_arg_container.terminal": "Terminal",
@@ -23622,7 +24901,7 @@
       "block.the_arg_container.slaize_250": "Slaize 25",
       "block.minecraft_alpha_arg_mod.malachite_ore_1": "Malachite Ore",
       "painting.minecraft_alpha_arg_mod.amber.title": "Amber",
-      "block.the_arg_container.dark_door": "§kDark Door",
+      "block.the_arg_container.dark_door": "Bluewood Door",
       "item.the_arg_container.k_2": "Music Disc",
       "block.minecraft_alpha_arg_mod.red_pillar_updated_version": "Red Pillar",
       "jei.minecraft_alpha_arg_mod.celestialflameinfo": "The celestial flame can be found in the sky. It can be used to: \nMake infused Lilypads,\nIt can serve as a light source,\nand it\u0027s also used in some crafting recipes.",
@@ -23662,6 +24941,7 @@
       "block.the_arg_container.diminish_flower": "Diminish Flower",
       "block.the_arg_container.slaize_50": "Slaize 5",
       "block.the_arg_container.slaize_220": "Slaize 22",
+      "block.the_arg_container.update_block": "Update Block",
       "painting.the_arg_container.hangingcat.title": "Hanging Cat",
       "item_group.minecraft_alpha_arg_mod.classic_minecraft": "Classic Minecraft",
       "item.minecraft_alpha_arg_mod.unused_tool_11": "§kUnused Tool",
@@ -23761,6 +25041,7 @@
       "block.the_arg_container.tile_slab": "Tile Slab",
       "item.the_arg_container.sandcastles.desc": "[5] - sandcastles",
       "item.the_arg_container.wake_up_james.desc": "m00nlander - Wake up James",
+      "block.the_arg_container.wood_pillar_block": "Barrel",
       "block.the_arg_container.highwood_roots": "Highwood Roots",
       "painting.the_arg_container.sunglass.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.hidden.title": "Hidden",
@@ -23770,6 +25051,7 @@
       "block.minecraft_alpha_arg_mod.pillar": "Pillar",
       "block.the_arg_container.slaize_280": "Slaize 28",
       "subtitles.two_winged_angel": "",
+      "gui.the_arg_container.warning.label_warning": "Warning:",
       "painting.minecraft_alpha_arg_mod.divine_drowned.title": "Divine Drowned",
       "block.the_arg_container.solal_plate": "Soral Plate",
       "gui.minecraft_alpha_arg_mod.admin_space_gui.button_execute": "Execute",
@@ -23888,6 +25170,7 @@
       "item.minecraft_alpha_arg_mod.hours_long_past_ii": "Hours Long Past II",
       "block.minecraft_alpha_arg_mod.machination_converter": "Machination Converter",
       "painting.the_arg_container.digital_man.title": "DigitalMan",
+      "item.the_arg_container.obsidian_axe": "Obsidian Axe",
       "block.the_arg_container.spring_leaves": "Leaves (Spring)",
       "painting.minecraft_alpha_arg_mod.okinawa.title": "Okinawa",
       "painting.minecraft_alpha_arg_mod.sun_river.title": "SunRiver",
@@ -23895,17 +25178,19 @@
       "painting.minecraft_alpha_arg_mod.smother.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.minecraft_alpha_arg_mod.empty.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.soul_cage_empty": "Soul Cage Empty",
-      "block.the_arg_container.lilypad_112": "Lilypad",
+      "block.the_arg_container.lilypad_112": "Rosepad",
       "block.the_arg_container.gold_elder_brick": "Gold Elder Brick",
       "subtitles.condemned": "",
       "block.minecraft_alpha_arg_mod.slaize_30": "Slaize 3",
       "block.minecraft_alpha_arg_mod.communication_block_6789": "6789 Communication Block",
+      "block.the_arg_container.disco_ball": "Disco Ball",
       "painting.minecraft_alpha_arg_mod.past.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.fungus.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.pillarg": "Pillar",
       "block.minecraft_alpha_arg_mod.hub_wall": "Hub Wall",
       "painting.minecraft_alpha_arg_mod.orb_1.title": "Orb1",
       "painting.minecraft_alpha_arg_mod.ascension.title": "Ascension",
+      "block.the_arg_container.kargosh_1p_z_plushie": "kargosh1pZ Plushie",
       "painting.minecraft_alpha_arg_mod.global.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.elder_brick": "Elder Brick",
       "item.the_arg_container.tea_bucket": "Tea Bucket",
@@ -24028,6 +25313,7 @@
       "block.the_arg_container.iken_log": "Iken Log",
       "block.minecraft_alpha_arg_mod.tile_1": "Tile 1",
       "block.minecraft_alpha_arg_mod.unknown_7": "§kUnknown",
+      "gui.the_arg_container.warning.label_this_mod_is_still_in_beta_and_u": "This mod is still in beta",
       "painting.minecraft_alpha_arg_mod.landscape.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "item.minecraft_alpha_arg_mod.unused_item_8": "§kUnused Item",
       "item.the_arg_container.user_0.desc": "m00nlander - user0",
@@ -24126,7 +25412,10 @@
       "painting.the_arg_container.vermin.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.dimension_floor": "Dimension Floor",
       "gui.minecraft_alpha_arg_mod.adminspace.label_proceed": "Proceed?",
+      "block.the_arg_container.unknown_24": "§kUnknown §rBlock",
       "block.the_arg_container.redlight": "Redlight",
+      "block.the_arg_container.unknown_25": "Ash block",
+      "block.the_arg_container.unknown_26": "Purple Bedrock Ore",
       "gui.the_arg_container.monitor_gui.button_off": "Off",
       "painting.minecraft_alpha_arg_mod.summit.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.unknown_20": "Aurora",
@@ -24251,6 +25540,7 @@
       "block.minecraft_alpha_arg_mod.ruby_block": "Ruby Block",
       "block.the_arg_container.uvwx_communication_block": "UVWX Communication Block",
       "block.the_arg_container.unknownsymbol_3monitor": "Ⅱ Monitor",
+      "block.the_arg_container.orenge_mojang_logo_block": "Orange Mojang Block",
       "painting.minecraft_alpha_arg_mod.symbol.title": "Symbol",
       "painting.minecraft_alpha_arg_mod.someting.author": "Alpha 1.1.2.07",
       "painting.minecraft_alpha_arg_mod.superstructure.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -24336,6 +25626,7 @@
       "item_group.the_arg_container.fanmade": "Tilda Branch",
       "painting.minecraft_alpha_arg_mod.emil.title": "Emil",
       "gamerule.svallowrnet.description": "idk",
+      "item.the_arg_container.obsidian_pickaxe": "Obsidian Pickaxe",
       "block.minecraft_alpha_arg_mod.safe": "Safe",
       "block.minecraft_alpha_arg_mod.wallgp": "Wall",
       "painting.minecraft_alpha_arg_mod.sky.title": "Sky",
@@ -24351,7 +25642,9 @@
       "block.the_arg_container.slate_beacon": "Slate Beacon",
       "block.the_arg_container.perlin_stairs": "Perlin Stairs",
       "block.the_arg_container.jar": "Jar",
+      "block.the_arg_container.message_2": "Message 2",
       "block.minecraft_alpha_arg_mod.data_daisy": "Data Daisy",
+      "block.the_arg_container.message_1": "Message 1",
       "block.the_arg_container.void_vine": "Void Vine",
       "block.minecraft_alpha_arg_mod.perlin_keyblock": "Perlin Keyblock",
       "item.the_arg_container.lemuria": "Music Disc",
@@ -24422,7 +25715,7 @@
       "gui.minecraft_alpha_arg_mod.terminal_gui.Input": "",
       "painting.minecraft_alpha_arg_mod.handdrawn_life.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "subtitles.rokkubitorurune": "",
-      "block.the_arg_container.dark_wood": "§kDark Wood",
+      "block.the_arg_container.dark_wood": "Bluewood",
       "block.minecraft_alpha_arg_mod.delta_end_stone": "Delta End Stone",
       "block.minecraft_alpha_arg_mod.golden_apple_block": "§kGolden Apple Block",
       "painting.the_arg_container.azores.title": "Azores",
@@ -24450,6 +25743,7 @@
       "block.minecraft_alpha_arg_mod.nexus_old_data": "Nexus Old Data",
       "block.the_arg_container.tea_pillar": "Tea Pillar",
       "block.the_arg_container.realityspace_ms_pacman_block": "Realityspace Ms. Pacman Block",
+      "block.the_arg_container.checkerboard_block": "Checkerboard Block",
       "painting.the_arg_container.autumn_sun.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.place_2.author": "Beta-IMPROVE",
       "block.the_arg_container.mine_watch_trophy": "MineWatch Trophy",
@@ -24749,8 +26043,10 @@
       "item.minecraft_alpha_arg_mod.mycon_tool_set_sword": "Mycon Sword",
       "block.the_arg_container.lichen_cobblestone": "Lichen Cobblestone",
       "painting.minecraft_alpha_arg_mod.emil.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.the_arg_container.glass_1": "Glass",
       "painting.the_arg_container.magenta.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.cut_marble": "Cut Marble",
+      "block.the_arg_container.glass_2": "Glass",
       "block.the_arg_container.double_arrow_monitor": "《 Monitor",
       "block.the_arg_container.low_wart": "Low Wart",
       "painting.the_arg_container.smoke.title": "Smoke",
@@ -24815,7 +26111,9 @@
       "item.the_arg_container.fryshroom": "Fryshroom",
       "item.minecraft_alpha_arg_mod.jumpgrade": "Jumpgrade",
       "block.minecraft_alpha_arg_mod.living_void_block": "Living Void Block",
+      "block.the_arg_container.missing_dbg_block": "DBG Block",
       "block.the_arg_container.void_block": "Void Block",
+      "item_group.the_arg_container.thedecayed": "THE DECAYED",
       "block.minecraft_alpha_arg_mod.fractured_mist": "Fractured Mist Block",
       "painting.minecraft_alpha_arg_mod.vermin.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "entity.minecraft_alpha_arg_mod.blue_giant": "Blue Giant",
@@ -24903,14 +26201,14 @@
       "painting.the_arg_container.seas.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.sunglass.title": "Sunglasses",
       "item.the_arg_container.server_drive": "Server Drive",
-      "block.the_arg_container.dark_sapling": "Dark Sapling",
+      "block.the_arg_container.dark_sapling": "Bluewood Sapling",
       "block.the_arg_container.hallowed_bricks": "Hallowed Bricks",
       "block.the_arg_container.spring_ice": "Ice (Spring)",
       "block.minecraft_alpha_arg_mod.stone_tile": "Stone Tile",
       "block.the_arg_container.soul_bricks": "Soul Bricks",
       "painting.the_arg_container.someting.author": "Alpha 1.1.2.07",
       "block.the_arg_container.mycon_cap": "Mycon Cap",
-      "block.the_arg_container.hub_tile_block": "§kHub Tile Block",
+      "block.the_arg_container.hub_tile_block": "Hub Tile",
       "block.minecraft_alpha_arg_mod.corridor_tiled_pipes": "Corridor Tiled Pipes",
       "block.the_arg_container.error_containment_block": "Error Containment Block",
       "block.minecraft_alpha_arg_mod.green_dimension_floor": "Green Dimension Floor",
@@ -24987,7 +26285,7 @@
       "painting.the_arg_container.jupiter.title": "Jupiter",
       "item.the_arg_container.rock_beetle.desc": "[5] - RokkubitoruTune",
       "item.minecraft_alpha_arg_mod.steven_spawn_egg": "Steven Spawn Egg",
-      "block.the_arg_container.hub_glass_block": "§kHub Glass Block",
+      "block.the_arg_container.hub_glass_block": "Hub Glass",
       "block.the_arg_container.cloth_panel": "Cloth Panel",
       "item.the_arg_container.find": "Music Disc",
       "subtitles.cat_theme": "",
@@ -25057,6 +26355,7 @@
       "painting.the_arg_container.fragments.title": "Fragments",
       "block.minecraft_alpha_arg_mod.slaize_110": "Slaize 11",
       "block.minecraft_alpha_arg_mod.alphaver_logo": "Alphaver Trophy",
+      "block.the_arg_container.blue_mojang_logo_block": "Blue Mojang Block",
       "painting.the_arg_container.azores.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "gui.minecraft_alpha_arg_mod.monitor_gui.button_ps": "Ψ",
       "painting.minecraft_alpha_arg_mod.fragments.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -25073,7 +26372,7 @@
       "block.the_arg_container.perlin_dbg_blue_star": "Perlin Dbg Blue Star",
       "block.the_arg_container.forseers_layer_block": "Forseer’s Layer Block",
       "block.the_arg_container.soul_plushie": "Soul Plushie",
-      "block.the_arg_container.golden_apple_block": "§kGolden Apple Block",
+      "block.the_arg_container.golden_apple_block": "Golden Apple Block",
       "block.minecraft_alpha_arg_mod.slaize_120": "Slaize 12",
       "item.the_arg_container.ballerinaofthe_land": "Music Disc",
       "painting.the_arg_container.parrot.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -25136,6 +26435,7 @@
       "block.the_arg_container.firewood_planks": "Firewood Planks",
       "block.minecraft_alpha_arg_mod.corridor_light": "Corridor Light",
       "block.minecraft_alpha_arg_mod.quantum_block": "Quantum Block",
+      "block.the_arg_container.exec_05_plushie": "exec_05 Plushie",
       "block.minecraft_alpha_arg_mod.mycon_workbench": "Mycon Workbench",
       "block.the_arg_container.nexus_old_data": "Nexus Old Data",
       "painting.minecraft_alpha_arg_mod.licht.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -25158,6 +26458,7 @@
       "painting.the_arg_container.tunnel.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.cat_2.author": "Alpha 1.1.2.07",
       "block.the_arg_container.happy_communication_block": "Happy Communication Block",
+      "gui.the_arg_container.warning.label_corrupt_the_world": "corrupt your world",
       "block.minecraft_alpha_arg_mod.malachite_block": "Malachite Block",
       "painting.minecraft_alpha_arg_mod.reptile.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.tile": "Tile",
@@ -25185,6 +26486,7 @@
       "item.minecraft_alpha_arg_mod.obsidian_armor_chestplate": "Obsidian Chestplate",
       "painting.the_arg_container.worrysome.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.spring_stone": "Stone (Spring)",
+      "item.the_arg_container.obsidian_shovel": "Obsidian Shovel",
       "painting.minecraft_alpha_arg_mod.cubes.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.vending_machine_shop": "§kUnused Vending Machine (Shop)",
       "block.minecraft_alpha_arg_mod.dandelion": "Dandelion",
@@ -25277,6 +26579,7 @@
       "block.minecraft_alpha_arg_mod.pyrite_ore": "Pyrite Ore",
       "item.minecraft_alpha_arg_mod.entity_spawn_egg": "Entity Spawn Egg",
       "painting.minecraft_alpha_arg_mod.seak.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "item.the_arg_container.obsidian_hoe": "Obsidian Hoe",
       "painting.the_arg_container.cave.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.celestial_center.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.place_1.title": "Place 1",
@@ -25320,7 +26623,8 @@
       "block.minecraft_alpha_arg_mod.jar": "Jar",
       "block.minecraft_alpha_arg_mod.low_lili": "Low Lily",
       "painting.minecraft_alpha_arg_mod.cyan.title": "Cyan",
-      "block.the_arg_container.dark_bricks": "§kDark Bricks",
+      "block.the_arg_container.grass_block_1": "Blue Grass Block",
+      "block.the_arg_container.dark_bricks": "Mud Bricks",
       "block.minecraft_alpha_arg_mod.unknown": "@@@",
       "block.the_arg_container.fractured_influence": "Fractured Influence Block",
       "block.minecraft_alpha_arg_mod.minesweeper_empty": "Minesweeper Empty",
@@ -25348,12 +26652,17 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "dash",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "the_arg_container",
     "modName": "The ARG Container",
-    "version": "0.3.7 Beta",
+    "version": "0.3.8 Beta",
     "description": "This mod brings blocks, items and features form popular minecraft ARGs",
     "author": "Glitchy, Miki110, atom20003113, marioood, dottych, Gnawmon, AndrewIdot.",
     "websiteURL": "https://mcreator.net",
@@ -25374,7 +26683,7 @@
       "jei"
     ],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Minecraft Alpha 1.1.2.07 Archive, John202, m00nlander, Beta-IMPROVE, Andrewgames722, where_is_the_sky?, Slots Available, Project: R.S.T.C, Altair()Vega, Minecraft RT_CD, CONTROL",
+    "credits": "Alphaver, TBOTV, Classic Minecraft, John, TheNick56, MineWatch, Minecraft Tilda branch, Lavacrusader, RubyAlphaVoidDung, Am I Alone, Dylan Does Minecraft, AndrewGaming67, Snapshot Null, Minecraft Alpha 1.1.2.07 Archive, John202, m00nlander, Beta-IMPROVE, Andrewgames722, where_is_the_sky?, Slots Available, Project: R.S.T.C, Minecraft RT_CD, CONTROL, THE DECAYED",
     "modElementsPackage": "net.mcreator.minecraftalphaargmod"
   },
   "mcreatorVersion": 202400118518
