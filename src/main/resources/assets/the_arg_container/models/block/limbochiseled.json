@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/limbo_chiseled",
+    "up": "the_arg_container:block/limbo_chiseled",
+    "north": "the_arg_container:block/limbo_chiseled",
+    "east": "the_arg_container:block/limbo_chiseled",
+    "south": "the_arg_container:block/limbo_chiseled",
+    "west": "the_arg_container:block/limbo_chiseled",
+    "particle": "the_arg_container:block/limbo_chiseled"
+  },
+  "render_type": "solid"
+}

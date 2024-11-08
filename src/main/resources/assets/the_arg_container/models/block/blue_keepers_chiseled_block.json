@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/blue_chiseled",
+    "up": "the_arg_container:block/blue_chiseled",
+    "north": "the_arg_container:block/blue_chiseled",
+    "east": "the_arg_container:block/blue_chiseled",
+    "south": "the_arg_container:block/blue_chiseled",
+    "west": "the_arg_container:block/blue_chiseled",
+    "particle": "the_arg_container:block/blue_chiseled"
+  },
+  "render_type": "solid"
+}

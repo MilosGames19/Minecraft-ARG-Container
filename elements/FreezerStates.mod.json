@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Freezer",
+    "blockstateList": [
+      {
+        "texture": "stone",
+        "textureTop": "stone",
+        "textureLeft": "freezerside",
+        "textureFront": "freezer_on",
+        "textureRight": "freezerside",
+        "textureBack": "freezerside",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

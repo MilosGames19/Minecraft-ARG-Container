@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/red_glass",
+    "up": "the_arg_container:block/red_glass",
+    "north": "the_arg_container:block/red_glass",
+    "east": "the_arg_container:block/red_glass",
+    "south": "the_arg_container:block/red_glass",
+    "west": "the_arg_container:block/red_glass",
+    "particle": "the_arg_container:block/red_glass"
+  },
+  "render_type": "cutout"
+}

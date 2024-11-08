@@ -298,6 +298,38 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.EXEC_05_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.KARGOSH_1P_Z_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SAND_YCARPS_8_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOCHISELED.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOFLOOR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOPILLAR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBODOORLOWER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOLANTERN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ABGRUNDBRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ABGRUNDDARKPRISMARINE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ABGRUNDGROUND.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_CHISELED_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_GENERIC_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_GLASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_PILLAR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_POLISHED_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CREATOR_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FOUNDER_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.INSTIGATOR_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SHAPER_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ARCHITECT_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.AUTHOR_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.INVENTOR_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ORIGINATOR_ICON_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_CHISELED_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_GENERIC_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_GLASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_PILLAR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_POLISHED_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_SMOOTH_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_TERMINAL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_SYMBOL.get().asItem());
 			})
 
 					.build());

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/limbo_lantern",
+    "up": "the_arg_container:block/limbo_lantern",
+    "north": "the_arg_container:block/limbo_lantern",
+    "east": "the_arg_container:block/limbo_lantern",
+    "south": "the_arg_container:block/limbo_lantern",
+    "west": "the_arg_container:block/limbo_lantern",
+    "particle": "the_arg_container:block/limbo_lantern"
+  },
+  "render_type": "solid"
+}

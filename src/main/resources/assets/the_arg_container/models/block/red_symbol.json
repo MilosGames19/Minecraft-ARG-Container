@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/redsymbol",
+    "up": "the_arg_container:block/redsymbol",
+    "north": "the_arg_container:block/redsymbol",
+    "east": "the_arg_container:block/redsymbol",
+    "south": "the_arg_container:block/redsymbol",
+    "west": "the_arg_container:block/redsymbol",
+    "particle": "the_arg_container:block/redsymbol"
+  },
+  "render_type": "solid"
+}

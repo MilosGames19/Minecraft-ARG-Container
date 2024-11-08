@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,blockstate=0": {
       "model": "the_arg_container:block/freezer"
     },
-    "facing=east": {
+    "facing=east,blockstate=0": {
       "model": "the_arg_container:block/freezer",
       "y": 90
     },
-    "facing=south": {
+    "facing=south,blockstate=0": {
       "model": "the_arg_container:block/freezer",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,blockstate=0": {
       "model": "the_arg_container:block/freezer",
+      "y": 270
+    },
+    "facing=north,blockstate=1": {
+      "model": "the_arg_container:block/freezer_states_blockstate_0"
+    },
+    "facing=east,blockstate=1": {
+      "model": "the_arg_container:block/freezer_states_blockstate_0",
+      "y": 90
+    },
+    "facing=south,blockstate=1": {
+      "model": "the_arg_container:block/freezer_states_blockstate_0",
+      "y": 180
+    },
+    "facing=west,blockstate=1": {
+      "model": "the_arg_container:block/freezer_states_blockstate_0",
       "y": 270
     }
   }

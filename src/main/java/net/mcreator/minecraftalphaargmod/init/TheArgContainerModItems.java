@@ -1020,6 +1020,38 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> UNKNOWN_26 = block(TheArgContainerModBlocks.UNKNOWN_26);
 	public static final RegistryObject<Item> MESSAGE_1 = block(TheArgContainerModBlocks.MESSAGE_1);
 	public static final RegistryObject<Item> MESSAGE_2 = block(TheArgContainerModBlocks.MESSAGE_2);
+	public static final RegistryObject<Item> LIMBOCHISELED = block(TheArgContainerModBlocks.LIMBOCHISELED);
+	public static final RegistryObject<Item> LIMBOFLOOR = block(TheArgContainerModBlocks.LIMBOFLOOR);
+	public static final RegistryObject<Item> LIMBOPILLAR = block(TheArgContainerModBlocks.LIMBOPILLAR);
+	public static final RegistryObject<Item> LIMBOPOLISHED = block(TheArgContainerModBlocks.LIMBOPOLISHED);
+	public static final RegistryObject<Item> LIMBODOORLOWER = doubleBlock(TheArgContainerModBlocks.LIMBODOORLOWER);
+	public static final RegistryObject<Item> LIMBOLANTERN = block(TheArgContainerModBlocks.LIMBOLANTERN);
+	public static final RegistryObject<Item> ABGRUNDBRICKS = block(TheArgContainerModBlocks.ABGRUNDBRICKS);
+	public static final RegistryObject<Item> ABGRUNDDARKPRISMARINE = block(TheArgContainerModBlocks.ABGRUNDDARKPRISMARINE);
+	public static final RegistryObject<Item> ABGRUNDGROUND = block(TheArgContainerModBlocks.ABGRUNDGROUND);
+	public static final RegistryObject<Item> BLUE_KEEPERS_CHISELED_BLOCK = block(TheArgContainerModBlocks.BLUE_KEEPERS_CHISELED_BLOCK);
+	public static final RegistryObject<Item> BLUE_KEEPERS_GENERIC_BLOCK = block(TheArgContainerModBlocks.BLUE_KEEPERS_GENERIC_BLOCK);
+	public static final RegistryObject<Item> BLUE_KEEPERS_GLASS_BLOCK = block(TheArgContainerModBlocks.BLUE_KEEPERS_GLASS_BLOCK);
+	public static final RegistryObject<Item> BLUE_KEEPERS_STONE = block(TheArgContainerModBlocks.BLUE_KEEPERS_STONE);
+	public static final RegistryObject<Item> BLUE_KEEPERS_PILLAR = block(TheArgContainerModBlocks.BLUE_KEEPERS_PILLAR);
+	public static final RegistryObject<Item> BLUE_KEEPERS_POLISHED_STONE = block(TheArgContainerModBlocks.BLUE_KEEPERS_POLISHED_STONE);
+	public static final RegistryObject<Item> CREATOR_ICON_BLOCK = block(TheArgContainerModBlocks.CREATOR_ICON_BLOCK);
+	public static final RegistryObject<Item> FOUNDER_ICON_BLOCK = block(TheArgContainerModBlocks.FOUNDER_ICON_BLOCK);
+	public static final RegistryObject<Item> INSTIGATOR_ICON_BLOCK = block(TheArgContainerModBlocks.INSTIGATOR_ICON_BLOCK);
+	public static final RegistryObject<Item> SHAPER_ICON_BLOCK = block(TheArgContainerModBlocks.SHAPER_ICON_BLOCK);
+	public static final RegistryObject<Item> ARCHITECT_ICON_BLOCK = block(TheArgContainerModBlocks.ARCHITECT_ICON_BLOCK);
+	public static final RegistryObject<Item> AUTHOR_ICON_BLOCK = block(TheArgContainerModBlocks.AUTHOR_ICON_BLOCK);
+	public static final RegistryObject<Item> INVENTOR_ICON_BLOCK = block(TheArgContainerModBlocks.INVENTOR_ICON_BLOCK);
+	public static final RegistryObject<Item> ORIGINATOR_ICON_BLOCK = block(TheArgContainerModBlocks.ORIGINATOR_ICON_BLOCK);
+	public static final RegistryObject<Item> RED_KEEPERS_CHISELED_BLOCK = block(TheArgContainerModBlocks.RED_KEEPERS_CHISELED_BLOCK);
+	public static final RegistryObject<Item> RED_KEEPERS_GENERIC_BLOCK = block(TheArgContainerModBlocks.RED_KEEPERS_GENERIC_BLOCK);
+	public static final RegistryObject<Item> RED_KEEPERS_GLASS_BLOCK = block(TheArgContainerModBlocks.RED_KEEPERS_GLASS_BLOCK);
+	public static final RegistryObject<Item> RED_KEEPERS_STONE = block(TheArgContainerModBlocks.RED_KEEPERS_STONE);
+	public static final RegistryObject<Item> RED_KEEPERS_PILLAR = block(TheArgContainerModBlocks.RED_KEEPERS_PILLAR);
+	public static final RegistryObject<Item> RED_KEEPERS_POLISHED_STONE = block(TheArgContainerModBlocks.RED_KEEPERS_POLISHED_STONE);
+	public static final RegistryObject<Item> RED_KEEPERS_SMOOTH_STONE = block(TheArgContainerModBlocks.RED_KEEPERS_SMOOTH_STONE);
+	public static final RegistryObject<Item> RED_TERMINAL = block(TheArgContainerModBlocks.RED_TERMINAL);
+	public static final RegistryObject<Item> RED_SYMBOL = block(TheArgContainerModBlocks.RED_SYMBOL);
 
 	// Start of user code block custom items
 	// End of user code block custom items
