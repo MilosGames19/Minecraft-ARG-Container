@@ -164,9 +164,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockPlayedBy": {
-      "name": "AuthorPlushieBlockIsPlacedBy"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

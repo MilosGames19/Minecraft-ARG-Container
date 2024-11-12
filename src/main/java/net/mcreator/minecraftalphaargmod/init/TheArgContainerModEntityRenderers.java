@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.minecraftalphaargmod.client.renderer.VoidentityRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.User0CloneRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.StevenRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SpearProjectileRenderer;
@@ -42,5 +43,6 @@ public class TheArgContainerModEntityRenderers {
 		event.registerEntityRenderer(TheArgContainerModEntities.STEVEN.get(), StevenRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.USER_0_CLONE.get(), User0CloneRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.EVIL_USER_0.get(), EvilUser0Renderer::new);
+		event.registerEntityRenderer(TheArgContainerModEntities.VOIDENTITY.get(), VoidentityRenderer::new);
 	}
 }

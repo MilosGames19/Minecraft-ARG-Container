@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_arg_container:block/limbopolished_slab"
+    },
+    "type=top": {
+      "model": "the_arg_container:block/limbopolished_slab_top"
+    },
+    "type=double": {
+      "model": "the_arg_container:block/limbopolished_slab_full"
+    }
+  }
+}

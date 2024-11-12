@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Limbofloor"
+      },
+      {
+        "value": "CUSTOM:Limbofloor"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Limbofloor"
+      },
+      {
+        "value": "CUSTOM:Limbofloor"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Limbofloor"
+      },
+      {
+        "value": "CUSTOM:Limbofloor"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Limbodoorlower"
+    },
+    "name": "limbo_door_r",
+    "namespace": "mod"
+  }
+}

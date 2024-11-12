@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bbb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:limbo_shard"
+    },
+    "b": {
+      "item": "the_arg_container:limbo_crystals"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:limbolantern",
+    "count": 1
+  }
+}

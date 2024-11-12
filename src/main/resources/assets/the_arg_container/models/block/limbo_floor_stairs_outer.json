@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/limbo_floor",
+    "top": "the_arg_container:block/limbo_floor",
+    "side": "the_arg_container:block/limbo_floor"
+  },
+  "render_type": "solid"
+}

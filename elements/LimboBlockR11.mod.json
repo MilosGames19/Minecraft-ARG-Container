@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Limbopolished"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Limbopolished"
+      },
+      {
+        "value": "CUSTOM:Limbopolished"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Limbopolished"
+      },
+      {
+        "value": "CUSTOM:Limbopolished"
+      },
+      {
+        "value": "CUSTOM:Limbopolished"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LimbopolishedStairs"
+    },
+    "name": "limbo_block_r_11",
+    "namespace": "mod"
+  }
+}

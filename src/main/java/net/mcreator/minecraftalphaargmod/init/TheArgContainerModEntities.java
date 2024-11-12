@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.minecraftalphaargmod.entity.VoidentityEntity;
 import net.mcreator.minecraftalphaargmod.entity.User0CloneEntity;
 import net.mcreator.minecraftalphaargmod.entity.StevenEntity;
 import net.mcreator.minecraftalphaargmod.entity.SpearProjectileEntity;
@@ -81,6 +82,10 @@ public class TheArgContainerModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<EvilUser0Entity>> EVIL_USER_0 = register("evil_user_0", EntityType.Builder.<EvilUser0Entity>of(EvilUser0Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(EvilUser0Entity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<VoidentityEntity>> VOIDENTITY = register("voidentity",
+			EntityType.Builder.<VoidentityEntity>of(VoidentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VoidentityEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -100,6 +105,7 @@ public class TheArgContainerModEntities {
 			StevenEntity.init();
 			User0CloneEntity.init();
 			EvilUser0Entity.init();
+			VoidentityEntity.init();
 		});
 	}
 
@@ -116,5 +122,6 @@ public class TheArgContainerModEntities {
 		event.put(STEVEN.get(), StevenEntity.createAttributes().build());
 		event.put(USER_0_CLONE.get(), User0CloneEntity.createAttributes().build());
 		event.put(EVIL_USER_0.get(), EvilUser0Entity.createAttributes().build());
+		event.put(VOIDENTITY.get(), VoidentityEntity.createAttributes().build());
 	}
 }

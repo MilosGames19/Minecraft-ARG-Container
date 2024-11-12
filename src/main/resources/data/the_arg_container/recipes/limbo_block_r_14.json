@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:limbofloor"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:limbo_floor_stairs",
+    "count": 4
+  }
+}

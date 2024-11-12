@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:highwood_roots",
     "the_arg_container:limbodoorlower",
     "the_arg_container:aflite_block",
     "the_arg_container:summer_bedrock",

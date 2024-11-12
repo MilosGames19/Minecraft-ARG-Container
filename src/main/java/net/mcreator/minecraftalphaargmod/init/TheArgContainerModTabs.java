@@ -294,7 +294,7 @@ public class TheArgContainerModTabs {
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> THEDECAYED = REGISTRY.register("thedecayed",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.thedecayed")).icon(() -> new ItemStack(Blocks.NETHER_PORTAL)).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.thedecayed")).icon(() -> new ItemStack(TheArgContainerModBlocks.ARCHITECT_ICON_BLOCK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TheArgContainerModBlocks.EXEC_05_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.KARGOSH_1P_Z_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SAND_YCARPS_8_PLUSHIE.get().asItem());
@@ -330,6 +330,10 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_SMOOTH_STONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RED_TERMINAL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RED_SYMBOL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOFLOOR_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBO_FLOOR_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_STAIRS.get().asItem());
 			})
 
 					.build());
@@ -1009,6 +1013,7 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.STEVEN_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.USER_0_CLONE_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.EVIL_USER_0_SPAWN_EGG.get());
+			tabData.accept(TheArgContainerModItems.VOIDENTITY_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(TheArgContainerModItems.MYCON_TOOL_SET_AXE.get());
 			tabData.accept(TheArgContainerModItems.MYCON_TOOL_SET_PICKAXE.get());

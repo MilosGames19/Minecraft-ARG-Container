@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "2022_09_27_wanderer-20892001",
+    "texture": "ash_dirt",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -24,111 +24,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 4.0,
-        "my": 23.5,
-        "mz": 4.0,
-        "Mx": 12.0,
-        "My": 31.5,
-        "Mz": 12.0,
-        "subtract": false
-      },
-      {
-        "mx": 4.0,
-        "my": 11.5,
-        "mz": 6.0,
-        "Mx": 12.0,
-        "My": 23.5,
-        "Mz": 10.0,
-        "subtract": false
-      },
-      {
-        "mx": 12.0,
-        "my": 11.5,
-        "mz": 6.0,
-        "Mx": 16.0,
-        "My": 23.5,
-        "Mz": 10.0,
-        "subtract": false
-      },
-      {
         "mx": 0.0,
-        "my": 11.5,
-        "mz": 6.0,
-        "Mx": 4.0,
-        "My": 23.5,
-        "Mz": 10.0,
-        "subtract": false
-      },
-      {
-        "mx": 8.0,
-        "my": -0.5,
-        "mz": 6.0,
-        "Mx": 12.0,
-        "My": 11.5,
-        "Mz": 10.0,
-        "subtract": false
-      },
-      {
-        "mx": 4.0,
-        "my": -0.5,
-        "mz": 6.0,
-        "Mx": 8.0,
-        "My": 11.5,
-        "Mz": 10.0,
-        "subtract": false
-      },
-      {
-        "mx": 3.5,
-        "my": 23.0,
-        "mz": 3.5,
-        "Mx": 12.5,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
         "My": 32.0,
-        "Mz": 12.5,
-        "subtract": false
-      },
-      {
-        "mx": 4.0,
-        "my": 11.02,
-        "mz": 5.5,
-        "Mx": 12.0,
-        "My": 24.03,
-        "Mz": 10.5,
-        "subtract": false
-      },
-      {
-        "mx": 11.5,
-        "my": 11.0,
-        "mz": 5.5,
-        "Mx": 16.49,
-        "My": 24.0,
-        "Mz": 10.5,
-        "subtract": false
-      },
-      {
-        "mx": -0.5,
-        "my": 11.0,
-        "mz": 5.5,
-        "Mx": 4.5,
-        "My": 24.0,
-        "Mz": 10.5,
-        "subtract": false
-      },
-      {
-        "mx": 7.5,
-        "my": -1.0,
-        "mz": 5.5,
-        "Mx": 12.5,
-        "My": 12.0,
-        "Mz": 10.5,
-        "subtract": false
-      },
-      {
-        "mx": 3.5,
-        "my": -1.0,
-        "mz": 5.5,
-        "Mx": 8.5,
-        "My": 12.0,
-        "Mz": 10.5,
+        "Mz": 16.0,
         "subtract": false
       }
     ],

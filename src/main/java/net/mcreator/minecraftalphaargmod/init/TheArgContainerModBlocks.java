@@ -435,12 +435,16 @@ import net.mcreator.minecraftalphaargmod.block.LoopPlateBlock;
 import net.mcreator.minecraftalphaargmod.block.LivingVoidGrassBlock;
 import net.mcreator.minecraftalphaargmod.block.LivingVoidBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.LimestoneBlock;
+import net.mcreator.minecraftalphaargmod.block.LimbopolishedStairsBlock;
+import net.mcreator.minecraftalphaargmod.block.LimbopolishedSlabBlock;
 import net.mcreator.minecraftalphaargmod.block.LimbopolishedBlock;
 import net.mcreator.minecraftalphaargmod.block.LimbopillarBlock;
 import net.mcreator.minecraftalphaargmod.block.LimbolanternBlock;
+import net.mcreator.minecraftalphaargmod.block.LimbofloorSlabBlock;
 import net.mcreator.minecraftalphaargmod.block.LimbofloorBlock;
 import net.mcreator.minecraftalphaargmod.block.LimbodoorlowerBlock;
 import net.mcreator.minecraftalphaargmod.block.LimbochiseledBlock;
+import net.mcreator.minecraftalphaargmod.block.LimboFloorStairsBlock;
 import net.mcreator.minecraftalphaargmod.block.Lilypad112Block;
 import net.mcreator.minecraftalphaargmod.block.Lilypad1123Block;
 import net.mcreator.minecraftalphaargmod.block.Lilypad1122Block;
@@ -1596,6 +1600,10 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> RED_KEEPERS_SMOOTH_STONE = REGISTRY.register("red_keepers_smooth_stone", () -> new RedKeepersSmoothStoneBlock());
 	public static final RegistryObject<Block> RED_TERMINAL = REGISTRY.register("red_terminal", () -> new RedTerminalBlock());
 	public static final RegistryObject<Block> RED_SYMBOL = REGISTRY.register("red_symbol", () -> new RedSymbolBlock());
+	public static final RegistryObject<Block> LIMBOFLOOR_SLAB = REGISTRY.register("limbofloor_slab", () -> new LimbofloorSlabBlock());
+	public static final RegistryObject<Block> LIMBO_FLOOR_STAIRS = REGISTRY.register("limbo_floor_stairs", () -> new LimboFloorStairsBlock());
+	public static final RegistryObject<Block> LIMBOPOLISHED_SLAB = REGISTRY.register("limbopolished_slab", () -> new LimbopolishedSlabBlock());
+	public static final RegistryObject<Block> LIMBOPOLISHED_STAIRS = REGISTRY.register("limbopolished_stairs", () -> new LimbopolishedStairsBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

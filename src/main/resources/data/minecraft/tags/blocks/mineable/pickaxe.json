@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:limbopolished_stairs",
+    "the_arg_container:limbopolished_slab",
+    "the_arg_container:limbo_floor_stairs",
+    "the_arg_container:limbofloor_slab",
     "the_arg_container:red_symbol",
     "the_arg_container:red_terminal",
     "the_arg_container:red_keepers_smooth_stone",

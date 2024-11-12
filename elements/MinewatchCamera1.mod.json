@@ -119,9 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockPlayedBy": {
-      "name": "MinewatchCamera1BlockIsPlacedBy"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

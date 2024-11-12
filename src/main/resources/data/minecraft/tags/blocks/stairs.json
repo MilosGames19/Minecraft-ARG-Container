@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:limbopolished_stairs",
+    "the_arg_container:limbo_floor_stairs",
     "the_arg_container:purpurbricksstairs",
     "the_arg_container:googogo_stairs",
     "the_arg_container:checkerboard_stairs",

@@ -4,7 +4,7 @@
   "definition": {
     "name": "THE DECAYED",
     "icon": {
-      "value": "Blocks.PORTAL"
+      "value": "CUSTOM:ArchitectIconBlock"
     },
     "showSearch": false
   }

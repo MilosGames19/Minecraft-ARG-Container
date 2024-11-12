@@ -164,9 +164,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockPlayedBy": {
-      "name": "StarPlushieBlockIsPlacedBy"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
