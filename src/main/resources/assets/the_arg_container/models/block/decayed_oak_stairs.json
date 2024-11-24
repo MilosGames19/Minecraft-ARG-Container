@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/planks_oak",
+    "top": "the_arg_container:block/planks_oak",
+    "side": "the_arg_container:block/planks_oak"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/red_sandstone_top",
+    "up": "the_arg_container:block/red_sandstone_top",
+    "north": "the_arg_container:block/red_sandstone_top",
+    "east": "the_arg_container:block/red_sandstone_top",
+    "south": "the_arg_container:block/red_sandstone_top",
+    "west": "the_arg_container:block/red_sandstone_top",
+    "particle": "the_arg_container:block/red_sandstone_top"
+  },
+  "render_type": "solid"
+}

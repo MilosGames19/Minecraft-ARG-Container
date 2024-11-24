@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/red_sandstone_top",
+    "top": "the_arg_container:block/red_sandstone_top",
+    "side": "the_arg_container:block/red_sandstone_top"
+  },
+  "render_type": "solid"
+}

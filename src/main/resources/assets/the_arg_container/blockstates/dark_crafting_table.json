@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "the_arg_container:block/dark_crafting_table"
+    },
+    "facing=east": {
+      "model": "the_arg_container:block/dark_crafting_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_arg_container:block/dark_crafting_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_arg_container:block/dark_crafting_table",
+      "y": 270
+    }
+  }
+}

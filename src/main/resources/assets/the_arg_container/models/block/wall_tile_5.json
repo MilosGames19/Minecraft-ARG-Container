@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/planks_spruce",
+    "up": "the_arg_container:block/concrete_light_blue",
+    "north": "the_arg_container:block/emerald_ore",
+    "east": "the_arg_container:block/emerald_ore",
+    "south": "the_arg_container:block/emerald_ore",
+    "west": "the_arg_container:block/emerald_ore",
+    "particle": "the_arg_container:block/planks_spruce"
+  },
+  "render_type": "solid"
+}

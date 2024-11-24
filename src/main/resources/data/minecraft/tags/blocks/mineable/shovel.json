@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "the_arg_container:grass_block_1",
-    "the_arg_container:grass_block",
     "the_arg_container:dutytime_sand",
     "the_arg_container:dutytime_grass",
     "the_arg_container:summer_sand",
@@ -23,6 +22,7 @@
     "the_arg_container:soul_sand",
     "the_arg_container:soul_grass",
     "the_arg_container:soul_dirt",
+    "the_arg_container:grass_block",
     "the_arg_container:ash_dirt",
     "the_arg_container:ash_grass",
     "the_arg_container:fake_sand",

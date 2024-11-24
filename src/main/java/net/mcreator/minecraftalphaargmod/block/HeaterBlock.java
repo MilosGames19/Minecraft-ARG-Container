@@ -29,7 +29,7 @@ public class HeaterBlock extends Block {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		FlamelilipadEntityCollidesInTheBlockProcedure.execute(world, entity);
+		FlamelilipadEntityCollidesInTheBlockProcedure.execute(entity);
 	}
 
 	@Override

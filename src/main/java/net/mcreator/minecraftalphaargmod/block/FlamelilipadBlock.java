@@ -46,13 +46,13 @@ public class FlamelilipadBlock extends Block {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		FlamelilipadEntityCollidesInTheBlockProcedure.execute(world, entity);
+		FlamelilipadEntityCollidesInTheBlockProcedure.execute(entity);
 	}
 
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		FlamelilipadEntityCollidesInTheBlockProcedure.execute(world, entity);
+		FlamelilipadEntityCollidesInTheBlockProcedure.execute(entity);
 	}
 
 	@Override

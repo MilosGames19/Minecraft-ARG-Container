@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/simonx13_block_3_top",
+    "up": "the_arg_container:block/simonx13_block_3_top",
+    "north": "the_arg_container:block/simonx13_block_3_side",
+    "east": "the_arg_container:block/simonx13_block_3_side",
+    "south": "the_arg_container:block/simonx13_block_3_side",
+    "west": "the_arg_container:block/simonx13_block_3_side",
+    "particle": "the_arg_container:block/simonx13_block_3_top"
+  },
+  "render_type": "solid"
+}

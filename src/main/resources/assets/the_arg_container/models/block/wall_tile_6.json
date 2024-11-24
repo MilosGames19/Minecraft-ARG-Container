@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/purpur_pillar",
+    "up": "the_arg_container:block/purpur_pillar",
+    "north": "the_arg_container:block/purpur_pillar",
+    "east": "the_arg_container:block/purpur_pillar",
+    "south": "the_arg_container:block/purpur_pillar",
+    "west": "the_arg_container:block/purpur_pillar",
+    "particle": "the_arg_container:block/purpur_pillar"
+  },
+  "render_type": "solid"
+}

@@ -47,13 +47,6 @@ public class DashProcedureProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					{
-						double _setval = 0;
-						entity.getCapability(TheArgContainerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.guiCooldown = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
 				}
 			}
 		}

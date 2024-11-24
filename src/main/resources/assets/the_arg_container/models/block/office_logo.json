@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/wool_colored_white",
+    "up": "the_arg_container:block/wool_colored_white",
+    "north": "the_arg_container:block/wool_colored_white",
+    "east": "the_arg_container:block/wool_colored_white",
+    "south": "the_arg_container:block/wool_colored_white",
+    "west": "the_arg_container:block/wool_colored_white",
+    "particle": "the_arg_container:block/wool_colored_white"
+  },
+  "render_type": "solid"
+}

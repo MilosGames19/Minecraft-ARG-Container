@@ -18,6 +18,7 @@ import net.mcreator.minecraftalphaargmod.block.entity.SafeBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PerlinKeyblockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.KeySlotterBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.FreezerBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.AdminChestBlockEntity;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 public class TheArgContainerModBlockEntities {
@@ -29,6 +30,7 @@ public class TheArgContainerModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> SERVER_CONTAINERS = register("server_containers", TheArgContainerModBlocks.SERVER_CONTAINERS, ServerContainersBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> UNKNOWN_2 = register("unknown_2", TheArgContainerModBlocks.UNKNOWN_2, Unknown2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PERLIN_KEYBLOCK = register("perlin_keyblock", TheArgContainerModBlocks.PERLIN_KEYBLOCK, PerlinKeyblockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ADMIN_CHEST = register("admin_chest", TheArgContainerModBlocks.ADMIN_CHEST, AdminChestBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

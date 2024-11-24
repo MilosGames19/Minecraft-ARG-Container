@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "the_arg_container:highwood_roots",
+    "the_arg_container:static_block",
     "the_arg_container:limbodoorlower",
     "the_arg_container:aflite_block",
     "the_arg_container:summer_bedrock",
@@ -103,6 +103,7 @@
     "the_arg_container:clinohumite_ore",
     "the_arg_container:pyrite_ore",
     "the_arg_container:malachite_ore",
+    "the_arg_container:highwood_roots",
     "the_arg_container:bismuth_ore",
     "the_arg_container:dimension_floor",
     "the_arg_container:dimension_wall"

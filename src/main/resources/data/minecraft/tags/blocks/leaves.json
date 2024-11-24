@@ -1,11 +1,12 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:dark_leaves_block",
     "the_arg_container:solid_leaves",
     "the_arg_container:spring_leaves",
     "the_arg_container:hub_highwood_leaves",
     "the_arg_container:unused_4",
-    "the_arg_container:dark_leaves",
+    "the_arg_container:bluewood_leaves",
     "the_arg_container:iken_leaves",
     "the_arg_container:soul_leaves",
     "the_arg_container:among_us_leaves",

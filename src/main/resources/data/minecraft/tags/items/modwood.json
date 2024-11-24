@@ -8,6 +8,9 @@
     "the_arg_container:firewood_planks",
     "the_arg_container:soul_plank",
     "the_arg_container:iken_planks",
-    "the_arg_container:mycon_plank"
+    "the_arg_container:mycon_plank",
+    "the_arg_container:decayed_oak_planks",
+    "the_arg_container:hub_planks",
+    "the_arg_container:dark_planks"
   ]
 }

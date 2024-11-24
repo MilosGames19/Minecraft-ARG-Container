@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_arg_container:dark_forest",
+  "features": "the_arg_container:decayed_lilac",
+  "step": "vegetal_decoration"
+}

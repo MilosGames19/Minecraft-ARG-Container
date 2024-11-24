@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "the_arg_container:block/limbo_door_lower"
+    "layer0": "the_arg_container:item/door_wood"
   },
-  "render_type": "solid"
+  "render_type": "translucent"
 }

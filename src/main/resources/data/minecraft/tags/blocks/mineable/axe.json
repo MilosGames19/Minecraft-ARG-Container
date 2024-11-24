@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:decayed_bookshelf",
+    "the_arg_container:decayed_oak_door",
+    "the_arg_container:decayed_oak_stairs",
+    "the_arg_container:decayed_oak_planks",
+    "the_arg_container:dark_crafting_table",
+    "the_arg_container:dark_oak_log",
     "the_arg_container:wood_pillar_block",
     "the_arg_container:iken_door",
     "the_arg_container:dutytime_block",

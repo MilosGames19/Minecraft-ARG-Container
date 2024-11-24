@@ -75,6 +75,7 @@ public class TheArgContainerModVariables {
 			if (!event.isWasDeath()) {
 				clone.Cooldown = original.Cooldown;
 				clone.guiCooldown = original.guiCooldown;
+				clone.lilipad_cooldown = original.lilipad_cooldown;
 			}
 		}
 
@@ -244,7 +245,8 @@ public class TheArgContainerModVariables {
 
 	public static class PlayerVariables {
 		public double Cooldown = 0.0;
-		public double guiCooldown = 0;
+		public double guiCooldown = -1.0;
+		public double lilipad_cooldown = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -255,6 +257,7 @@ public class TheArgContainerModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("Cooldown", Cooldown);
 			nbt.putDouble("guiCooldown", guiCooldown);
+			nbt.putDouble("lilipad_cooldown", lilipad_cooldown);
 			return nbt;
 		}
 
@@ -262,6 +265,7 @@ public class TheArgContainerModVariables {
 			CompoundTag nbt = (CompoundTag) tag;
 			Cooldown = nbt.getDouble("Cooldown");
 			guiCooldown = nbt.getDouble("guiCooldown");
+			lilipad_cooldown = nbt.getDouble("lilipad_cooldown");
 		}
 	}
 
@@ -288,6 +292,7 @@ public class TheArgContainerModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Cooldown = message.data.Cooldown;
 					variables.guiCooldown = message.data.guiCooldown;
+					variables.lilipad_cooldown = message.data.lilipad_cooldown;
 				}
 			});
 			context.setPacketHandled(true);

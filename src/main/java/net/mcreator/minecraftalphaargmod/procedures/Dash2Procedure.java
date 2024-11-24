@@ -17,6 +17,7 @@ public class Dash2Procedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			Dash3Procedure.execute(entity);
 			return true;
 		}
 		return false;

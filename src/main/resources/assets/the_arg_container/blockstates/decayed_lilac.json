@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "the_arg_container:block/decayed_lilac"
+    },
+    "half=lower": {
+      "model": "the_arg_container:block/decayed_lilac_bottom"
+    }
+  }
+}

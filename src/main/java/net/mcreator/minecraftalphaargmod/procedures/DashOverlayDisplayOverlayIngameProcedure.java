@@ -9,8 +9,8 @@ public class DashOverlayDisplayOverlayIngameProcedure {
 		if (entity == null)
 			return false;
 		if ((entity.getCapability(TheArgContainerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TheArgContainerModVariables.PlayerVariables())).guiCooldown == 0) {
-			return false;
+			return true;
 		}
-		return true;
+		return false;
 	}
 }

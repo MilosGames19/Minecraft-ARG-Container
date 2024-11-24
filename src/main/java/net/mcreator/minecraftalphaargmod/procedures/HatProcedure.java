@@ -19,7 +19,29 @@ public class HatProcedure {
 		if (entity.isShiftKeyDown()) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.INTEL_LEADER_PLUSHIE.get().asItem()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.JAMES_22_PLUSHIE.get().asItem()
-					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SUBJECT_113_PLUSHIE.get().asItem()) {
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SUBJECT_113_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.DEV_1_PLUSHY.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.BUGNATION_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.STAR_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.AUTHOR_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ANDREWGAMING67_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.DYLANDOMINECRAFT_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SOUL_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.HALF_SOUL_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ATOM_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.DOTTYCH_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.MARIOOOD_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.MIKI_110_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.JLJLJLJLJL_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.CHTSHT_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ELDERS_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.GNAWMON_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ANDREWIDOT_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.EXEC_05_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.KARGOSH_1P_Z_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SAND_YCARPS_8_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.GLITCHY.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SONYA.get().asItem()) {
 				{
 					Entity _entity = entity;
 					if (_entity instanceof Player _player) {
@@ -37,9 +59,31 @@ public class HatProcedure {
 						_player.getInventory().setChanged();
 				}
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.INTEL_LEADER_PLUSHIE.get().asItem()
-					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.JAMES_22_PLUSHIE.get().asItem()
-					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SUBJECT_113_PLUSHIE.get().asItem()) {
+			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.INTEL_LEADER_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.JAMES_22_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SUBJECT_113_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.DEV_1_PLUSHY.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.BUGNATION_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.STAR_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.AUTHOR_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ANDREWGAMING67_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.DYLANDOMINECRAFT_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SOUL_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.HALF_SOUL_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ATOM_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.DOTTYCH_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.MARIOOOD_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.MIKI_110_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.JLJLJLJLJL_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.CHTSHT_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ELDERS_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.GNAWMON_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.ANDREWIDOT_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.EXEC_05_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.KARGOSH_1P_Z_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SAND_YCARPS_8_PLUSHIE.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.GLITCHY.get().asItem()
+					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TheArgContainerModBlocks.SONYA.get().asItem()) {
 				{
 					Entity _entity = entity;
 					if (_entity instanceof Player _player) {

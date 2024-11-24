@@ -44,10 +44,10 @@ public class StarPlushieBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(5, 1, 2, 11, 9, 6), box(2, 3, 2, 5, 6, 9), box(5, 9, 1, 11, 15, 7), box(11, 3, 2, 14, 6, 9), box(2, 0, 3, 5, 3, 11), box(11, 0, 3, 14, 3, 11));
-			case NORTH -> Shapes.or(box(5, 1, 10, 11, 9, 14), box(11, 3, 7, 14, 6, 14), box(5, 9, 9, 11, 15, 15), box(2, 3, 7, 5, 6, 14), box(11, 0, 5, 14, 3, 13), box(2, 0, 5, 5, 3, 13));
-			case EAST -> Shapes.or(box(2, 1, 5, 6, 9, 11), box(2, 3, 11, 9, 6, 14), box(1, 9, 5, 7, 15, 11), box(2, 3, 2, 9, 6, 5), box(3, 0, 11, 11, 3, 14), box(3, 0, 2, 11, 3, 5));
-			case WEST -> Shapes.or(box(10, 1, 5, 14, 9, 11), box(7, 3, 2, 14, 6, 5), box(9, 9, 5, 15, 15, 11), box(7, 3, 11, 14, 6, 14), box(5, 0, 2, 13, 3, 5), box(5, 0, 11, 13, 3, 14));
+			default -> box(0, 0.1, 0, 16, 16, 16);
+			case NORTH -> box(0, 0.1, 0, 16, 16, 16);
+			case EAST -> box(0, 0.1, 0, 16, 16, 16);
+			case WEST -> box(0, 0.1, 0, 16, 16, 16);
 		};
 	}
 

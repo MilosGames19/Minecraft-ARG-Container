@@ -45,7 +45,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.DARK_PLANKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DARK_BRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DARK_DOOR.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.DARK_LEAVES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUEWOOD_LEAVES.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DARK_SAPLING.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_TILE_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_WALL_BLOCK.get().asItem());
@@ -157,6 +157,10 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_26.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MESSAGE_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MESSAGE_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ADMIN_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ADMIN_CONSOLE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STATIC_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ADMIN_CHEST.get().asItem());
 			})
 
 					.build());
@@ -334,6 +338,52 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.LIMBO_FLOOR_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_OAK_LOG.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_LEAVES_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_CRAFTING_TABLE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_OAK_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_OAK_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_3.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIGHT_BLUE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_5.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_6.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_7.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_T_ILE_8.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_BLUE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_GLOWSTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_LILAC.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUE_WALL_1.get().asItem());
+				tabData.accept(TheArgContainerModItems.RED_PAPER.get());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_OFFICE_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_TERMINAL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_LOGO.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_3.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_5.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_6.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_7.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_8.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_9.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_LANTERN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_WALL_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_SMOOTH_STONE_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STONE_TILE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_GLOWSTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_STONE_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_BOOKSHELF.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WALL_TILE_9.get().asItem());
 			})
 
 					.build());
@@ -978,6 +1028,8 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.IDKSK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TORCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREENSTONE_TORCH.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_OAK_DOOR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_IRON_DOOR.get().asItem());
 			})
 
 					.build());

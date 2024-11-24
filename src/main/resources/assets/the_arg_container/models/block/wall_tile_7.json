@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/glazed_terracotta_purple",
+    "up": "the_arg_container:block/glazed_terracotta_purple",
+    "north": "the_arg_container:block/glazed_terracotta_purple",
+    "east": "the_arg_container:block/glazed_terracotta_purple",
+    "south": "the_arg_container:block/glazed_terracotta_purple",
+    "west": "the_arg_container:block/glazed_terracotta_purple",
+    "particle": "the_arg_container:block/glazed_terracotta_purple"
+  },
+  "render_type": "solid"
+}

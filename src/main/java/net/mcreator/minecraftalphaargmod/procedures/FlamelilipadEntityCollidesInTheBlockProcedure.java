@@ -1,20 +1,20 @@
 package net.mcreator.minecraftalphaargmod.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
-
 public class FlamelilipadEntityCollidesInTheBlockProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		for (int index0 = 0; index0 < 20; index0++) {
-			TheArgContainerMod.queueServerWork(10, () -> {
-				if (entity instanceof LivingEntity _entity)
-					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
-			});
+		if (entity.getPersistentData().getDouble("The_ARG_Container_HealTimer") == 0) {
+			entity.getPersistentData().putDouble("The_ARG_Container_HealTimer", 20);
+		} else {
+			entity.getPersistentData().putDouble("The_ARG_Container_HealTimer", (entity.getPersistentData().getDouble("The_ARG_Container_HealTimer") - 1));
+		}
+		if (entity.getPersistentData().getDouble("The_ARG_Container_HealTimer") == 0) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
 		}
 	}
 }
