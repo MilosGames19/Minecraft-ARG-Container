@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class DecayedIronDoorBlock extends DoorBlock {
 	public DecayedIronDoorBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape(), BlockSetType.IRON);
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape(), BlockSetType.IRON);
 	}
 
 	@Override

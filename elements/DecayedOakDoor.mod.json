@@ -43,7 +43,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Alpha"
+      "value": "CUSTOM:THEDECAYED"
     },
     "destroyTool": "axe",
     "customDrop": {

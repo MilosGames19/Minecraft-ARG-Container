@@ -349,6 +349,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_3.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_OAK_DOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIGHT_BLUE_WALL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_5.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_6.get().asItem());
@@ -383,6 +384,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.DARK_GLOWSTONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DECAYED_STONE_BRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DECAYED_BOOKSHELF.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DECAYED_IRON_DOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_9.get().asItem());
 			})
 
@@ -1028,8 +1030,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.IDKSK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TORCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREENSTONE_TORCH.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.DECAYED_OAK_DOOR.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.DECAYED_IRON_DOOR.get().asItem());
 			})
 
 					.build());

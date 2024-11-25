@@ -38,12 +38,12 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 3.0,
-    "resistance": 3.0,
+    "hardness": 5.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Alpha"
+      "value": "CUSTOM:THEDECAYED"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -101,7 +101,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
