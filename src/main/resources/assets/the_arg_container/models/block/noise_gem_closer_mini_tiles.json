@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/oise_em_loser_ini_iles",
+    "up": "the_arg_container:block/oise_em_loser_ini_iles",
+    "north": "the_arg_container:block/oise_em_loser_ini_iles",
+    "east": "the_arg_container:block/oise_em_loser_ini_iles",
+    "south": "the_arg_container:block/oise_em_loser_ini_iles",
+    "west": "the_arg_container:block/oise_em_loser_ini_iles",
+    "particle": "the_arg_container:block/oise_em_loser_ini_iles"
+  },
+  "render_type": "solid"
+}

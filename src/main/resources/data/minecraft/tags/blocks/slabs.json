@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:admin_space_floor_tile_slab",
+    "the_arg_container:catwalk_slab",
+    "the_arg_container:grayscaled_oak_slab",
+    "the_arg_container:highwoodplanks_slab",
+    "the_arg_container:myconplanks_slab",
+    "the_arg_container:flamewood_planks_slab",
+    "the_arg_container:tea_planks_slab",
+    "the_arg_container:smile_planks_slab",
+    "the_arg_container:chared_planks_slab",
+    "the_arg_container:yellow_planks_slab",
+    "the_arg_container:green_planks_slab",
+    "the_arg_container:red_planks_slab",
     "the_arg_container:decayed_smooth_stone_slab",
     "the_arg_container:limbopolished_slab",
     "the_arg_container:limbofloor_slab",

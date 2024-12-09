@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class PillarBlock extends Block {
 	public PillarBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 5f));
 	}
 
 	@Override

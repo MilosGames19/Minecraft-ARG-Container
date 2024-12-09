@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "the_arg_container:block/brightness_block_off"
+    },
+    "blockstate=1": {
+      "model": "the_arg_container:block/brightness_block_off_1_blockstate_0"
     }
   }
 }

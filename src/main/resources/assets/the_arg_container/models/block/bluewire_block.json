@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/bluewireupsidedown",
+    "up": "the_arg_container:block/bluewireside",
+    "north": "the_arg_container:block/bluewiretop",
+    "east": "the_arg_container:block/bluewiresideways2",
+    "south": "the_arg_container:block/bluewirebottom",
+    "west": "the_arg_container:block/bluewiresideways",
+    "particle": "the_arg_container:block/bluewireupsidedown"
+  },
+  "render_type": "solid"
+}

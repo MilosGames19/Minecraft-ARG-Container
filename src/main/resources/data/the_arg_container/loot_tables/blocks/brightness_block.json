@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "the_arg_container:brightness_block_off"
+          "name": "the_arg_container:brightness_block"
         }
       ]
     }

@@ -11,15 +11,6 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "image",
-        "data": {
-          "image": "servergui.png",
-          "use1Xscale": false,
-          "x": 126,
-          "y": 25
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
@@ -33,7 +24,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 132,
+          "x": 133,
           "y": 89
         }
       },
@@ -51,7 +42,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 132,
+          "x": 133,
           "y": 53
         }
       },
@@ -69,7 +60,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 168,
+          "x": 169,
           "y": 53
         }
       },
@@ -87,7 +78,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 168,
+          "x": 169,
           "y": 89
         }
       },
@@ -105,7 +96,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 204,
+          "x": 205,
           "y": 89
         }
       },
@@ -123,7 +114,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 204,
+          "x": 205,
           "y": 53
         }
       },
@@ -141,7 +132,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 240,
+          "x": 241,
           "y": 89
         }
       },
@@ -159,7 +150,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 240,
+          "x": 241,
           "y": 53
         }
       },
@@ -177,7 +168,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 276,
+          "x": 277,
           "y": 89
         }
       },
@@ -195,8 +186,17 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 276,
+          "x": 277,
           "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "servergui.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 25
         }
       },
       {
@@ -220,7 +220,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

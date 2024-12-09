@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:minewatch_camera_1"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:minewatch_camera_2",
+    "count": 1
+  }
+}

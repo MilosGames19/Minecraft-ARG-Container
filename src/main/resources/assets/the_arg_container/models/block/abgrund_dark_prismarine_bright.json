@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/abgrunddarkprismarinebright",
+    "up": "the_arg_container:block/abgrunddarkprismarinebright",
+    "north": "the_arg_container:block/abgrunddarkprismarinebright",
+    "east": "the_arg_container:block/abgrunddarkprismarinebright",
+    "south": "the_arg_container:block/abgrunddarkprismarinebright",
+    "west": "the_arg_container:block/abgrunddarkprismarinebright",
+    "particle": "the_arg_container:block/abgrunddarkprismarinebright"
+  },
+  "render_type": "solid"
+}

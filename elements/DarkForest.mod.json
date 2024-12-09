@@ -45,9 +45,9 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "ASH"
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
@@ -56,11 +56,11 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.5,
+      "min": -0.05,
       "max": 0.5
     },
     "genHumidity": {
-      "min": -0.5,
+      "min": -0.05,
       "max": 0.5
     },
     "genContinentalness": {

@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Blocks.GLASS"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:GlassBrick"
+    },
+    "name": "glass_brick_recipe_item",
+    "namespace": "mod"
+  }
+}

@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class HubFakeSandBlock extends Block {
 	public HubFakeSandBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.SNARE).sound(SoundType.SAND).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.SNARE).sound(SoundType.SAND).strength(0.5f, 0f).requiresCorrectToolForDrops());
 	}
 
 	@Override

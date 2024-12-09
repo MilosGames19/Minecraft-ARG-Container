@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/wood9",
+    "top": "the_arg_container:block/wood9",
+    "side": "the_arg_container:block/wood9"
+  },
+  "render_type": "solid"
+}

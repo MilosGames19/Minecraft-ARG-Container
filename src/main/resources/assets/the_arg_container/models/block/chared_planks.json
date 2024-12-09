@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/chared_planks",
+    "up": "the_arg_container:block/chared_planks",
+    "north": "the_arg_container:block/chared_planks",
+    "east": "the_arg_container:block/chared_planks",
+    "south": "the_arg_container:block/chared_planks",
+    "west": "the_arg_container:block/chared_planks",
+    "particle": "the_arg_container:block/chared_planks"
+  },
+  "render_type": "solid"
+}

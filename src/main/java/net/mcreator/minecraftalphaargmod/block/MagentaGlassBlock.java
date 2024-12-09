@@ -22,7 +22,7 @@ public class MagentaGlassBlock extends Block {
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:glass"))))
-				.strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.strength(0.3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

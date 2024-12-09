@@ -175,6 +175,14 @@
     "the_arg_container:place_1",
     "the_arg_container:place_2",
     "the_arg_container:place_3",
-    "the_arg_container:place_4"
+    "the_arg_container:place_4",
+    "the_arg_container:missing",
+    "the_arg_container:decated",
+    "the_arg_container:dark_lilac",
+    "the_arg_container:lilac",
+    "the_arg_container:house",
+    "the_arg_container:white",
+    "the_arg_container:limbo",
+    "the_arg_container:limbo_1"
   ]
 }

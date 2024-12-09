@@ -24,34 +24,41 @@ public class HubDoorEntityCollidesInTheBlockProcedure {
 			return;
 		double multiplier = 0;
 		if (world.getLevelData().getGameRules().getBoolean(TheArgContainerModGameRules.HUB_ENABLE) == true) {
-			if ((entity.level().dimension()) == Level.OVERWORLD) {
-				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-					ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:hub"));
-					if (_player.level().dimension() == destinationType)
-						return;
-					ServerLevel nextLevel = _player.server.getLevel(destinationType);
-					if (nextLevel != null) {
-						_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-						_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
-						_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
-						for (MobEffectInstance _effectinstance : _player.getActiveEffects())
-							_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
-						_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
-					}
-				}
+			if (entity.getPersistentData().getDouble("The_ARG_Container_HUB") == 0) {
+				entity.getPersistentData().putDouble("The_ARG_Container_HUB", 100);
 			} else {
-				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-					ResourceKey<Level> destinationType = Level.OVERWORLD;
-					if (_player.level().dimension() == destinationType)
-						return;
-					ServerLevel nextLevel = _player.server.getLevel(destinationType);
-					if (nextLevel != null) {
-						_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-						_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
-						_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
-						for (MobEffectInstance _effectinstance : _player.getActiveEffects())
-							_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
-						_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+				entity.getPersistentData().putDouble("The_ARG_Container_HUB", (entity.getPersistentData().getDouble("The_ARG_Container_HUB") - 1));
+			}
+			if (entity.getPersistentData().getDouble("The_ARG_Container_HUB") == 0) {
+				if ((entity.level().dimension()) == Level.OVERWORLD) {
+					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
+						ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:hub"));
+						if (_player.level().dimension() == destinationType)
+							return;
+						ServerLevel nextLevel = _player.server.getLevel(destinationType);
+						if (nextLevel != null) {
+							_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
+							_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
+							_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
+							for (MobEffectInstance _effectinstance : _player.getActiveEffects())
+								_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
+							_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+						}
+					}
+				} else {
+					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
+						ResourceKey<Level> destinationType = Level.OVERWORLD;
+						if (_player.level().dimension() == destinationType)
+							return;
+						ServerLevel nextLevel = _player.server.getLevel(destinationType);
+						if (nextLevel != null) {
+							_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
+							_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
+							_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
+							for (MobEffectInstance _effectinstance : _player.getActiveEffects())
+								_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
+							_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+						}
 					}
 				}
 			}

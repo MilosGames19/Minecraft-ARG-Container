@@ -1,5 +1,5 @@
 {
-  "type": "the_arg_container:structure_feature",
+  "type": "the_arg_container:skyfire_feature",
   "config": {
     "structure": "the_arg_container:celestial_flame",
     "random_rotation": true,

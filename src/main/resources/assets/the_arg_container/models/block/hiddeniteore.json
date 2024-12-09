@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/hiddenite_ore",
+    "up": "the_arg_container:block/hiddenite_ore",
+    "north": "the_arg_container:block/hiddenite_ore",
+    "east": "the_arg_container:block/hiddenite_ore",
+    "south": "the_arg_container:block/hiddenite_ore",
+    "west": "the_arg_container:block/hiddenite_ore",
+    "particle": "the_arg_container:block/hiddenite_ore"
+  },
+  "render_type": "solid"
+}

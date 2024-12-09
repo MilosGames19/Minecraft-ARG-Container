@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:glass_brick"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:glass_bricks",
+    "count": 4
+  }
+}

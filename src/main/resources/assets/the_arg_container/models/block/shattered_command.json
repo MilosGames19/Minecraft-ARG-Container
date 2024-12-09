@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/shatteredcommand",
+    "up": "the_arg_container:block/shatteredcommand",
+    "north": "the_arg_container:block/shatteredcommand",
+    "east": "the_arg_container:block/shatteredcommand",
+    "south": "the_arg_container:block/shatteredcommand",
+    "west": "the_arg_container:block/shatteredcommand",
+    "particle": "the_arg_container:block/shatteredcommand"
+  },
+  "render_type": "solid"
+}

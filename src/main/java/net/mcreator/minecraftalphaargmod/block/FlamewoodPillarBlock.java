@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class FlamewoodPillarBlock extends Block {
 	public FlamewoodPillarBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 5f));
 	}
 
 	@Override

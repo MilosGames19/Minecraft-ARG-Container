@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/tee_plancks",
+    "top": "the_arg_container:block/tee_plancks",
+    "side": "the_arg_container:block/tee_plancks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/tructurelitch",
+    "up": "the_arg_container:block/tructurelitch",
+    "north": "the_arg_container:block/tructurelitch",
+    "east": "the_arg_container:block/tructurelitch",
+    "south": "the_arg_container:block/tructurelitch",
+    "west": "the_arg_container:block/tructurelitch",
+    "particle": "the_arg_container:block/tructurelitch"
+  },
+  "render_type": "solid"
+}

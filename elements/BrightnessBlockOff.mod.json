@@ -12,7 +12,7 @@
     "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -121,6 +121,9 @@
     "fluidRestrictions": [],
     "onRedstoneOn": {
       "name": "BrightnessBlockOffRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "BrightnessBlockOffRedstoneOff"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

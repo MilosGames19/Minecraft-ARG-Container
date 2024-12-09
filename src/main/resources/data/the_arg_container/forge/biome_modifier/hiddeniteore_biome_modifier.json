@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "the_arg_container:hiddeniteore",
+  "step": "underground_ores"
+}

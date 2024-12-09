@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 4,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "the_arg_container:hiddeniteore"
+  },
+  "result": "the_arg_container:hiddenite"
+}

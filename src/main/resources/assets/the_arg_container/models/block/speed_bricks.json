@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/speedbrick",
+    "up": "the_arg_container:block/speedbrick",
+    "north": "the_arg_container:block/speedbrick",
+    "east": "the_arg_container:block/speedbrick",
+    "south": "the_arg_container:block/speedbrick",
+    "west": "the_arg_container:block/speedbrick",
+    "particle": "the_arg_container:block/speedbrick"
+  },
+  "render_type": "solid"
+}

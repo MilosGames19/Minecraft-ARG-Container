@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_arg_container:block/highwoodplanks_slab"
+    },
+    "type=top": {
+      "model": "the_arg_container:block/highwoodplanks_slab_top"
+    },
+    "type=double": {
+      "model": "the_arg_container:block/highwoodplanks_slab_full"
+    }
+  }
+}

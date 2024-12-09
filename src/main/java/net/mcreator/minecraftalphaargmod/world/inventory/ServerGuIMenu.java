@@ -78,7 +78,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 53) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 53) {
 			private final int slot = 0;
 
 			@Override
@@ -86,7 +86,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 7, 17) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 8, 17) {
 			private final int slot = 1;
 
 			@Override
@@ -94,7 +94,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 17) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 17) {
 			private final int slot = 2;
 
 			@Override
@@ -102,7 +102,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 43, 53) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 44, 53) {
 			private final int slot = 3;
 
 			@Override
@@ -110,7 +110,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 53) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 53) {
 			private final int slot = 4;
 
 			@Override
@@ -118,7 +118,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 79, 17) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 80, 17) {
 			private final int slot = 5;
 
 			@Override
@@ -126,7 +126,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 53) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 116, 53) {
 			private final int slot = 6;
 
 			@Override
@@ -134,7 +134,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 115, 17) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 116, 17) {
 			private final int slot = 7;
 
 			@Override
@@ -142,7 +142,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 53) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 152, 53) {
 			private final int slot = 8;
 
 			@Override
@@ -150,7 +150,7 @@ public class ServerGuIMenu extends AbstractContainerMenu implements Supplier<Map
 				return TheArgContainerModItems.SERVER_DRIVE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 151, 17) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 152, 17) {
 			private final int slot = 9;
 
 			@Override

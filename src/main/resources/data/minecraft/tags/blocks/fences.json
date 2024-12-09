@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:corridor_fence",
     "the_arg_container:infused_cobblestone_fance",
     "the_arg_container:cobblestone_fance"
   ]

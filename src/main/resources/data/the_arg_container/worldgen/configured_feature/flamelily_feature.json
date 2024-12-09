@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:random_patch",
+  "type": "the_arg_container:flamelily_feature",
   "config": {
     "tries": 1,
     "xz_spread": 1,

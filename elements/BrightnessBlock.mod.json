@@ -42,11 +42,11 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:DeltaQuest"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:BrightnessBlockOff"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -100,7 +100,7 @@
     },
     "luminance": 15,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -119,9 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRedstoneOff": {
-      "name": "BrightnessBlockRedstoneOff"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

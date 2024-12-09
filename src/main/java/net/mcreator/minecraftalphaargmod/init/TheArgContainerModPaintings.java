@@ -126,7 +126,7 @@ public class TheArgContainerModPaintings {
 	public static final RegistryObject<PaintingVariant> SHACK = REGISTRY.register("shack", () -> new PaintingVariant(64, 32));
 	public static final RegistryObject<PaintingVariant> SHATTERED = REGISTRY.register("shattered", () -> new PaintingVariant(64, 64));
 	public static final RegistryObject<PaintingVariant> SHRINE = REGISTRY.register("shrine", () -> new PaintingVariant(48, 48));
-	public static final RegistryObject<PaintingVariant> SIDEVIEW = REGISTRY.register("sideview", () -> new PaintingVariant(48, 16));
+	public static final RegistryObject<PaintingVariant> SIDEVIEW = REGISTRY.register("sideview", () -> new PaintingVariant(48, 48));
 	public static final RegistryObject<PaintingVariant> SILENTIO = REGISTRY.register("silentio", () -> new PaintingVariant(16, 16));
 	public static final RegistryObject<PaintingVariant> SKY = REGISTRY.register("sky", () -> new PaintingVariant(32, 16));
 	public static final RegistryObject<PaintingVariant> SLAIN = REGISTRY.register("slain", () -> new PaintingVariant(32, 32));
@@ -189,4 +189,12 @@ public class TheArgContainerModPaintings {
 	public static final RegistryObject<PaintingVariant> PLACE_2 = REGISTRY.register("place_2", () -> new PaintingVariant(32, 16));
 	public static final RegistryObject<PaintingVariant> PLACE_3 = REGISTRY.register("place_3", () -> new PaintingVariant(32, 16));
 	public static final RegistryObject<PaintingVariant> PLACE_4 = REGISTRY.register("place_4", () -> new PaintingVariant(32, 16));
+	public static final RegistryObject<PaintingVariant> MISSING = REGISTRY.register("missing", () -> new PaintingVariant(32, 32));
+	public static final RegistryObject<PaintingVariant> DECATED = REGISTRY.register("decated", () -> new PaintingVariant(128, 96));
+	public static final RegistryObject<PaintingVariant> DARK_LILAC = REGISTRY.register("dark_lilac", () -> new PaintingVariant(32, 32));
+	public static final RegistryObject<PaintingVariant> LILAC = REGISTRY.register("lilac", () -> new PaintingVariant(16, 16));
+	public static final RegistryObject<PaintingVariant> HOUSE = REGISTRY.register("house", () -> new PaintingVariant(32, 32));
+	public static final RegistryObject<PaintingVariant> WHITE = REGISTRY.register("white", () -> new PaintingVariant(16, 32));
+	public static final RegistryObject<PaintingVariant> LIMBO = REGISTRY.register("limbo", () -> new PaintingVariant(32, 16));
+	public static final RegistryObject<PaintingVariant> LIMBO_1 = REGISTRY.register("limbo_1", () -> new PaintingVariant(32, 16));
 }

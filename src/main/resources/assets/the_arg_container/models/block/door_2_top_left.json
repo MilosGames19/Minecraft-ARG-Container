@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_top_left",
+  "textures": {
+    "bottom": "the_arg_container:block/terrain1_100",
+    "top": "the_arg_container:block/terrain1_84"
+  },
+  "render_type": "cutout"
+}

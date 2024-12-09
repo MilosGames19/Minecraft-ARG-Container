@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:hiddenite"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:hiddenite_arrmor_armor_boots",
+    "count": 1
+  }
+}

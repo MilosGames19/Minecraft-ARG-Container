@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "limbo.png",
+    "width": 32,
+    "height": 16,
+    "title": "Limbo",
+    "author": "THE DECAYED"
+  }
+}

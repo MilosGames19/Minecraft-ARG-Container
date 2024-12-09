@@ -3,6 +3,12 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
+    "particle": {
+      "options": {
+        "type": "ash"
+      },
+      "probability": 0.005
+    },
     "foliage_color": -15724528,
     "grass_color": -15461356,
     "sky_color": -16777216,

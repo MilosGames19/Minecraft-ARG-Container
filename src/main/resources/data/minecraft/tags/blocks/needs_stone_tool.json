@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:hiddeniteore",
     "the_arg_container:static_block",
     "the_arg_container:limbodoorlower",
     "the_arg_container:aflite_block",
@@ -60,8 +61,6 @@
     "the_arg_container:fractured_mist",
     "the_arg_container:hub_tile_blue",
     "the_arg_container:hub_wall",
-    "the_arg_container:hub_stone_tile",
-    "the_arg_container:hub_tile",
     "the_arg_container:unknown_15",
     "the_arg_container:unknown_7",
     "the_arg_container:unknown_3",
@@ -104,8 +103,6 @@
     "the_arg_container:pyrite_ore",
     "the_arg_container:malachite_ore",
     "the_arg_container:highwood_roots",
-    "the_arg_container:bismuth_ore",
-    "the_arg_container:dimension_floor",
-    "the_arg_container:dimension_wall"
+    "the_arg_container:bismuth_ore"
   ]
 }

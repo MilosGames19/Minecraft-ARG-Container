@@ -11,6 +11,7 @@
     "the_arg_container:mycon_plank",
     "the_arg_container:decayed_oak_planks",
     "the_arg_container:hub_planks",
-    "the_arg_container:dark_planks"
+    "the_arg_container:dark_planks",
+    "the_arg_container:grayscaled_oak_planks"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/oise_em_arge_ricks",
+    "up": "the_arg_container:block/oise_em_arge_ricks",
+    "north": "the_arg_container:block/oise_em_arge_ricks",
+    "east": "the_arg_container:block/oise_em_arge_ricks",
+    "south": "the_arg_container:block/oise_em_arge_ricks",
+    "west": "the_arg_container:block/oise_em_arge_ricks",
+    "particle": "the_arg_container:block/oise_em_arge_ricks"
+  },
+  "render_type": "solid"
+}

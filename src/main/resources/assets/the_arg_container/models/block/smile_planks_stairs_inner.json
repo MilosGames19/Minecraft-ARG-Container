@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/smile_planks",
+    "top": "the_arg_container:block/smile_planks",
+    "side": "the_arg_container:block/smile_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:brightness_block_off"
+    },
+    "b": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:brightness_block",
+    "count": 1
+  }
+}

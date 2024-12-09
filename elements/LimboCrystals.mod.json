@@ -10,7 +10,7 @@
     "name": "Limbo Crystals",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:THEDECAYED"
     },
     "stackSize": 64,
     "enchantability": 0,

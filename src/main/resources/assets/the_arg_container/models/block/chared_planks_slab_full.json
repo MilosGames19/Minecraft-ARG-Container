@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "the_arg_container:block/chared_planks",
+    "top": "the_arg_container:block/chared_planks",
+    "side": "the_arg_container:block/chared_planks"
+  },
+  "render_type": "solid"
+}

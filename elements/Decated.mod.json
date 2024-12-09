@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "decayed.png",
+    "width": 128,
+    "height": 96,
+    "title": "Decayed",
+    "author": "THE DECAYED"
+  }
+}

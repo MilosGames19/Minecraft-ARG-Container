@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class YellowGrassBlock extends Block {
 	public YellowGrassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

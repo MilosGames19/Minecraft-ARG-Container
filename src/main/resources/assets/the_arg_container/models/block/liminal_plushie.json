@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/liminal_plushie",
+  "textures": {
+    "all": "the_arg_container:block/fab78e418d9c481e",
+    "particle": "the_arg_container:block/fab78e418d9c481e",
+    "1": "the_arg_container:block/fab78e418d9c481e"
+  },
+  "render_type": "cutout"
+}

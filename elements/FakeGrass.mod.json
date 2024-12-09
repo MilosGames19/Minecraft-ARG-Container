@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WET_GRASS"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""

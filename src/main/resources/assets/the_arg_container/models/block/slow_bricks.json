@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/slowbricks",
+    "up": "the_arg_container:block/slowbricks",
+    "north": "the_arg_container:block/slowbricks",
+    "east": "the_arg_container:block/slowbricks",
+    "south": "the_arg_container:block/slowbricks",
+    "west": "the_arg_container:block/slowbricks",
+    "particle": "the_arg_container:block/slowbricks"
+  },
+  "render_type": "solid"
+}

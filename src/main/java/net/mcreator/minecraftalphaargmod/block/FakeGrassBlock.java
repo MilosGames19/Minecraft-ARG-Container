@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class FakeGrassBlock extends Block {
 	public FakeGrassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WET_GRASS).strength(0.6f, 0f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(0.6f, 0f));
 	}
 
 	@Override

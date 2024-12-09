@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:hiddenite"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:hiddenite_arrmor_armor_chestplate",
+    "count": 1
+  }
+}

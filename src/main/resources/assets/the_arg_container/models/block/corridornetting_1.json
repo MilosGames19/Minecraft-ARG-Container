@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/ortlockull",
+    "particle": "the_arg_container:block/ortlockull"
+  },
+  "render_type": "cutout"
+}

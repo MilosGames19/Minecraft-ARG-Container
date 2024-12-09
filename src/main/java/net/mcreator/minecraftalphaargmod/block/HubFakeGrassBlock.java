@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class HubFakeGrassBlock extends Block {
 	public HubFakeGrassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(0.6f, 0f));
 	}
 
 	@Override

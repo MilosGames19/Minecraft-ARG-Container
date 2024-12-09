@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "lilac.png",
+    "width": 16,
+    "height": 16,
+    "title": "Lilac",
+    "author": "THE DECAYED"
+  }
+}

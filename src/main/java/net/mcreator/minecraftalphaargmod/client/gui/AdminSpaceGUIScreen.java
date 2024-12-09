@@ -55,9 +55,9 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/bogulied.png"), this.leftPos + -2, this.topPos + -10, 0, 0, 176, 176, 176, 176);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/bogulied.png"), this.leftPos + 0, this.topPos + -10, 0, 0, 176, 176, 176, 176);
 
-		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/moechang.png"), this.leftPos + 58, this.topPos + 46, 0, 0, 55, 59, 55, 59);
+		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/moechang.png"), this.leftPos + 63, this.topPos + 52, 0, 0, 55, 59, 55, 59);
 
 		RenderSystem.disableBlend();
 	}
@@ -81,14 +81,14 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.admin_space_gui.label_adminspace_console"), 4, -7, -16777216, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.admin_space_gui.label_v2084"), 133, -7, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.admin_space_gui.label_adminspace_console"), 3, -6, -16777216, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.the_arg_container.admin_space_gui.label_v2084"), 136, -5, -16777216, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		asc = new EditBox(this.font, this.leftPos + 25, this.topPos + 17, 118, 18, Component.translatable("gui.the_arg_container.admin_space_gui.asc"));
+		asc = new EditBox(this.font, this.leftPos + 31, this.topPos + 17, 118, 18, Component.translatable("gui.the_arg_container.admin_space_gui.asc"));
 		asc.setMaxLength(32767);
 		guistate.put("text:asc", asc);
 		this.addWidget(this.asc);
@@ -98,7 +98,7 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 				TheArgContainerMod.PACKET_HANDLER.sendToServer(new AdminSpaceGUIButtonMessage(0, x, y, z, textstate));
 				AdminSpaceGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
-		}).bounds(this.leftPos + 55, this.topPos + 133, 61, 20).build();
+		}).bounds(this.leftPos + 60, this.topPos + 133, 61, 20).build();
 		guistate.put("button:button_execute", button_execute);
 		this.addRenderableWidget(button_execute);
 	}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/cynderblock_carved",
+    "up": "the_arg_container:block/cynderblock_carved",
+    "north": "the_arg_container:block/cynderblock_carved",
+    "east": "the_arg_container:block/cynderblock_carved",
+    "south": "the_arg_container:block/cynderblock_carved",
+    "west": "the_arg_container:block/cynderblock_carved",
+    "particle": "the_arg_container:block/cynderblock_carved"
+  },
+  "render_type": "solid"
+}

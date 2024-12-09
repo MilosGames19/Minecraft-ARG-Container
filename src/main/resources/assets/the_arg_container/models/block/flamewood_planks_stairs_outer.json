@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/w3",
+    "top": "the_arg_container:block/w3",
+    "side": "the_arg_container:block/w3"
+  },
+  "render_type": "solid"
+}

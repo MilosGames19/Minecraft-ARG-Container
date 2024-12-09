@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:green_log_2"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:green_planks",
+    "count": 4
+  }
+}
