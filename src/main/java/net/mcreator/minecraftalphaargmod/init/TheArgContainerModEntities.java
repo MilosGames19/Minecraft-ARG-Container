@@ -22,6 +22,9 @@ import net.mcreator.minecraftalphaargmod.entity.StevenEntity;
 import net.mcreator.minecraftalphaargmod.entity.SpearProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.SoulEntityEntity;
 import net.mcreator.minecraftalphaargmod.entity.RecruiterEntity;
+import net.mcreator.minecraftalphaargmod.entity.RangerBulletProjectileEntity;
+import net.mcreator.minecraftalphaargmod.entity.PigEntity;
+import net.mcreator.minecraftalphaargmod.entity.PartiBulletEntity;
 import net.mcreator.minecraftalphaargmod.entity.ObserverMobEntity;
 import net.mcreator.minecraftalphaargmod.entity.GiantEntity;
 import net.mcreator.minecraftalphaargmod.entity.ExplosiveEssenceEntity;
@@ -86,6 +89,14 @@ public class TheArgContainerModEntities {
 			EntityType.Builder.<VoidentityEntity>of(VoidentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VoidentityEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RangerBulletProjectileEntity>> RANGER_BULLET_PROJECTILE = register("ranger_bullet_projectile", EntityType.Builder.<RangerBulletProjectileEntity>of(RangerBulletProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(RangerBulletProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PigEntity>> PIG = register("pig",
+			EntityType.Builder.<PigEntity>of(PigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PigEntity::new)
+
+					.sized(0.9f, 0.9f));
+	public static final RegistryObject<EntityType<PartiBulletEntity>> PARTI_BULLET = register("parti_bullet",
+			EntityType.Builder.<PartiBulletEntity>of(PartiBulletEntity::new, MobCategory.MISC).setCustomClientFactory(PartiBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -106,6 +117,7 @@ public class TheArgContainerModEntities {
 			User0CloneEntity.init();
 			EvilUser0Entity.init();
 			VoidentityEntity.init();
+			PigEntity.init();
 		});
 	}
 
@@ -123,5 +135,6 @@ public class TheArgContainerModEntities {
 		event.put(USER_0_CLONE.get(), User0CloneEntity.createAttributes().build());
 		event.put(EVIL_USER_0.get(), EvilUser0Entity.createAttributes().build());
 		event.put(VOIDENTITY.get(), VoidentityEntity.createAttributes().build());
+		event.put(PIG.get(), PigEntity.createAttributes().build());
 	}
 }

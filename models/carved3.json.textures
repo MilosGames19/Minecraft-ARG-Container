@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "carvedsymbol1",
+        "1": "bat"
+      },
+      "name": "default"
+    }
+  }
+}

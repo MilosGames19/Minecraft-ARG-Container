@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/abyssps",
+    "up": "the_arg_container:block/abyssps",
+    "north": "the_arg_container:block/abysspurgon",
+    "east": "the_arg_container:block/abyssps",
+    "south": "the_arg_container:block/abyssps",
+    "west": "the_arg_container:block/abyssps",
+    "particle": "the_arg_container:block/abyssps"
+  },
+  "render_type": "solid"
+}

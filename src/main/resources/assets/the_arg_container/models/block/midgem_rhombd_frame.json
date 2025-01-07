@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/gemtiltframe",
+    "up": "the_arg_container:block/gemtiltframe",
+    "north": "the_arg_container:block/gemtiltframe",
+    "east": "the_arg_container:block/gemtiltframe",
+    "south": "the_arg_container:block/gemtiltframe",
+    "west": "the_arg_container:block/gemtiltframe",
+    "particle": "the_arg_container:block/gemtiltframe"
+  },
+  "render_type": "cutout"
+}

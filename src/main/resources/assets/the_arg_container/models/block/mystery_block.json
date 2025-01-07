@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/mystery_tp_block_lol",
+    "up": "the_arg_container:block/mystery_tp_block_lol",
+    "north": "the_arg_container:block/mystery_tp_block_lol",
+    "east": "the_arg_container:block/mystery_tp_block_lol",
+    "south": "the_arg_container:block/mystery_tp_block_lol",
+    "west": "the_arg_container:block/mystery_tp_block_lol",
+    "particle": "the_arg_container:block/mystery_tp_block_lol"
+  },
+  "render_type": "solid"
+}

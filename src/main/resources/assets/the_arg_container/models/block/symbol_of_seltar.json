@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/selta",
+    "up": "the_arg_container:block/selta",
+    "north": "the_arg_container:block/selta",
+    "east": "the_arg_container:block/selta",
+    "south": "the_arg_container:block/selta",
+    "west": "the_arg_container:block/selta",
+    "particle": "the_arg_container:block/selta"
+  },
+  "render_type": "solid"
+}

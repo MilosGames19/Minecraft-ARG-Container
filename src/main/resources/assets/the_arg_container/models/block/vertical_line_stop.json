@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/vlinestop",
+    "particle": "the_arg_container:block/vlinestop"
+  },
+  "render_type": "solid"
+}

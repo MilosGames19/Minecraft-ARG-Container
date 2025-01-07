@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/cresiah",
+    "up": "the_arg_container:block/cresiah",
+    "north": "the_arg_container:block/cresiah",
+    "east": "the_arg_container:block/cresiah",
+    "south": "the_arg_container:block/cresiah",
+    "west": "the_arg_container:block/cresiah",
+    "particle": "the_arg_container:block/cresiah"
+  },
+  "render_type": "solid"
+}

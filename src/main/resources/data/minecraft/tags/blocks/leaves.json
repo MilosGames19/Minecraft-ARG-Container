@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:gradient_leaves_purple",
+    "the_arg_container:gradient_leaves_blue",
+    "the_arg_container:gradient_leaves_central",
+    "the_arg_container:gradient_leaves_pink",
+    "the_arg_container:gradient_leaves",
     "the_arg_container:smile_leaves",
     "the_arg_container:chared_leaves",
     "the_arg_container:dark_leaves_block",

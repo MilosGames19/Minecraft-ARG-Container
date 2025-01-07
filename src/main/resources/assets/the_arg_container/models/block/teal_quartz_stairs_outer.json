@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/tealquartz",
+    "top": "the_arg_container:block/tealquartz",
+    "side": "the_arg_container:block/tealquartz"
+  },
+  "render_type": "solid"
+}

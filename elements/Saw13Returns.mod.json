@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "COMMON",
+    "texture": "void_disc",
+    "description": "Saw_13 Returns",
+    "creativeTab": {
+      "value": "CUSTOM:DeltaQuest"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:saw13returns"
+    },
+    "lengthInTicks": 4720,
+    "analogOutput": 0
+  }
+}

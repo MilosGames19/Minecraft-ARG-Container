@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/gradientedtile",
+    "up": "the_arg_container:block/gradientedtile",
+    "north": "the_arg_container:block/gradientedtile",
+    "east": "the_arg_container:block/gradientedtile",
+    "south": "the_arg_container:block/gradientedtile",
+    "west": "the_arg_container:block/gradientedtile",
+    "particle": "the_arg_container:block/gradientedtile"
+  },
+  "render_type": "solid"
+}

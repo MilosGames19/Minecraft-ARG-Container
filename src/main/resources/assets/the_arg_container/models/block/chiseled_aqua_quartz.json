@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/chiseledaquaquartz",
+    "up": "the_arg_container:block/chiseledaquaquartz",
+    "north": "the_arg_container:block/chiseledaquaquartz",
+    "east": "the_arg_container:block/chiseledaquaquartz",
+    "south": "the_arg_container:block/chiseledaquaquartz",
+    "west": "the_arg_container:block/chiseledaquaquartz",
+    "particle": "the_arg_container:block/chiseledaquaquartz"
+  },
+  "render_type": "solid"
+}

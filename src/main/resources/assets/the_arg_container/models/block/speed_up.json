@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/speedup",
+    "up": "the_arg_container:block/speedup",
+    "north": "the_arg_container:block/speedup",
+    "east": "the_arg_container:block/speedup",
+    "south": "the_arg_container:block/speedup",
+    "west": "the_arg_container:block/speedup",
+    "particle": "the_arg_container:block/speedup"
+  },
+  "render_type": "cutout"
+}

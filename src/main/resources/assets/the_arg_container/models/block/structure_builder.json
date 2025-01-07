@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/house_builder",
+    "up": "the_arg_container:block/house_builder_up",
+    "north": "the_arg_container:block/house_builder_front",
+    "east": "the_arg_container:block/house_builder_side",
+    "south": "the_arg_container:block/house_builder_side",
+    "west": "the_arg_container:block/house_builder_side",
+    "particle": "the_arg_container:block/house_builder"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "b b",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:midgem"
+    },
+    "b": {
+      "item": "the_arg_container:blattea_shard"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:midgem_squared_frame",
+    "count": 4
+  }
+}

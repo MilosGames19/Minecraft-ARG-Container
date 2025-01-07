@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_arg_container:limbo_square_block"
+    },
+    "title": {
+      "translate": "advancements.administrative_curing_tools.title"
+    },
+    "description": {
+      "translate": "advancements.administrative_curing_tools.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "administrative_curing_tools_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:purifier_test_tool"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_arg_container:entry_point"
+}

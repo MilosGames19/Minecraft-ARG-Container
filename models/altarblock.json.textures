@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "4": "bh",
+        "7": "polishedbricks",
+        "8": "abyssinfestreimagined"
+      },
+      "name": "default"
+    }
+  }
+}

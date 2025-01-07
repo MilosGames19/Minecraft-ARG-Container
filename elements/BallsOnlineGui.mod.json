@@ -1,0 +1,75 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unfinished",
+          "text": {
+            "fixedValue": "! UNFINISHED !"
+          },
+          "color": {
+            "value": -3801088,
+            "falpha": 0.0
+          },
+          "x": 176,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_enter_website",
+          "text": {
+            "fixedValue": "Enter Website:"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 78
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "balls_online",
+          "width": 120,
+          "height": 20,
+          "x": 153,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "Ok",
+          "isUndecorated": false,
+          "width": 140,
+          "height": 20,
+          "x": 143,
+          "y": 171
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "the_arg_container:block/dark_oak_desk"
+    },
+    "facing=east": {
+      "model": "the_arg_container:block/dark_oak_desk",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_arg_container:block/dark_oak_desk",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_arg_container:block/dark_oak_desk",
+      "y": 270
+    }
+  }
+}

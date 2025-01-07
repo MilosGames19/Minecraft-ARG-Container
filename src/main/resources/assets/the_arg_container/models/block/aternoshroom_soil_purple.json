@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/abyssaternoshroomsoil",
+    "up": "the_arg_container:block/abyssaternoshroomsoil",
+    "north": "the_arg_container:block/abyssaternoshroomsoil",
+    "east": "the_arg_container:block/abyssaternoshroomsoil",
+    "south": "the_arg_container:block/abyssaternoshroomsoil",
+    "west": "the_arg_container:block/abyssaternoshroomsoil",
+    "particle": "the_arg_container:block/abyssaternoshroomsoil"
+  },
+  "render_type": "solid"
+}

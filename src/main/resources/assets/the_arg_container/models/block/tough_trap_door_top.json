@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "the_arg_container:block/toughtrapdoor",
+    "particle": "the_arg_container:block/toughtrapdoor"
+  },
+  "render_type": "cutout"
+}

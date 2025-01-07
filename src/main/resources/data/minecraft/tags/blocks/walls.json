@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:aqua_quartz_wall",
+    "the_arg_container:tealquartzwall",
+    "the_arg_container:voidwallvarient_4",
+    "the_arg_container:voidwallvarient_3",
+    "the_arg_container:void_wall_varient_2",
+    "the_arg_container:void_wall_varient_1",
     "the_arg_container:noise_gem_wall"
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "parent": "the_arg_container:custom/aaaaaaaaaa1",
+  "textures": {
+    "all": "the_arg_container:block/ostruteneloginner",
+    "particle": "the_arg_container:block/ostruteneloginner",
+    "0": "the_arg_container:block/hahafkdupactivatedwood",
+    "1": "the_arg_container:block/ostruteneloginner",
+    "2": "the_arg_container:block/infull"
+  },
+  "render_type": "solid"
+}

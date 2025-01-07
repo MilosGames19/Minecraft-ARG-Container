@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "20_nickname_20"
+      },
+      "name": "default"
+    }
+  }
+}

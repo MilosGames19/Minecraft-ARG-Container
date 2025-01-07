@@ -1,0 +1,10 @@
+{
+  "parent": "the_arg_container:custom/asunhang",
+  "textures": {
+    "all": "the_arg_container:block/sun",
+    "particle": "the_arg_container:block/sun",
+    "0": "the_arg_container:block/bat",
+    "1": "the_arg_container:block/sun"
+  },
+  "render_type": "cutout"
+}

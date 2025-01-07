@@ -1,0 +1,11 @@
+{
+  "parent": "the_arg_container:custom/aaaaaaaaaa2",
+  "textures": {
+    "all": "the_arg_container:block/ostruteneloginner",
+    "particle": "the_arg_container:block/ostruteneloginner",
+    "1": "the_arg_container:block/ostruteneloginner",
+    "2": "the_arg_container:block/aternoshroompink1",
+    "3": "the_arg_container:block/ostrutene"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/tealquartzcolumntop",
+    "up": "the_arg_container:block/aquaquartzcolumntop",
+    "north": "the_arg_container:block/teal-marinecolumn",
+    "east": "the_arg_container:block/teal-marinecolumn",
+    "south": "the_arg_container:block/teal-marinecolumn",
+    "west": "the_arg_container:block/teal-marinecolumn",
+    "particle": "the_arg_container:block/tealquartzcolumntop"
+  },
+  "render_type": "solid"
+}

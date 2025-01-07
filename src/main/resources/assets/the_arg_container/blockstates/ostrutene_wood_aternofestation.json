@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "the_arg_container:block/ostrutene_wood_aternofestation",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "the_arg_container:block/ostrutene_wood_aternofestation"
+    },
+    "axis=z": {
+      "model": "the_arg_container:block/ostrutene_wood_aternofestation",
+      "x": 90
+    }
+  }
+}

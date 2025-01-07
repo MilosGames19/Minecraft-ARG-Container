@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/rossoid",
+    "up": "the_arg_container:block/rossoid",
+    "north": "the_arg_container:block/rossoid",
+    "east": "the_arg_container:block/rossoid",
+    "south": "the_arg_container:block/rossoid",
+    "west": "the_arg_container:block/rossoid",
+    "particle": "the_arg_container:block/rossoid"
+  },
+  "render_type": "solid"
+}

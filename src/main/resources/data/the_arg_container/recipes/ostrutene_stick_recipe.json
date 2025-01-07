@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:ostrutene_planks"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:ostrutene_stick",
+    "count": 4
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/auckedpileoid",
+    "up": "the_arg_container:block/auckedpileoid",
+    "north": "the_arg_container:block/auckedpileoid",
+    "east": "the_arg_container:block/auckedpileoid",
+    "south": "the_arg_container:block/auckedpileoid",
+    "west": "the_arg_container:block/auckedpileoid",
+    "particle": "the_arg_container:block/auckedpileoid"
+  },
+  "render_type": "solid"
+}

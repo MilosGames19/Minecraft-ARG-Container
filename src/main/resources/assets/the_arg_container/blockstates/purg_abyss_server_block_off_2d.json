@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "the_arg_container:block/purg_abyss_server_block_off_2d",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "the_arg_container:block/purg_abyss_server_block_off_2d"
+    },
+    "axis=z": {
+      "model": "the_arg_container:block/purg_abyss_server_block_off_2d",
+      "x": 90
+    }
+  }
+}

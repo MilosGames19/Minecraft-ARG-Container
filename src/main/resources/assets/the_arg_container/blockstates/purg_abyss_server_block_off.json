@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "the_arg_container:block/purg_abyss_server_block_off"
+    },
+    "facing=east": {
+      "model": "the_arg_container:block/purg_abyss_server_block_off",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_arg_container:block/purg_abyss_server_block_off",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_arg_container:block/purg_abyss_server_block_off",
+      "y": 270
+    }
+  }
+}

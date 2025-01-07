@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "the_arg_container:block/abyssbrick",
+    "particle": "the_arg_container:block/abyssbrick"
+  },
+  "render_type": "solid"
+}

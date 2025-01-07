@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "the_arg_container:blocks/gol_fruit_seed",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "the_arg_container:gol_fruit",
+          "conditions": [
+            {
+              "block": "the_arg_container:gol_fruit_seed",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_arg_container:noise_gem_tile"
+    },
+    "title": {
+      "translate": "advancements.whowantstoholdthetungstencube.title"
+    },
+    "description": {
+      "translate": "advancements.whowantstoholdthetungstencube.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "whowantstoholdthetungstencube_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:noise_gem_tile"
+            ],
+            "count": {
+              "min": 64,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 24
+  },
+  "parent": "the_arg_container:entry_point"
+}

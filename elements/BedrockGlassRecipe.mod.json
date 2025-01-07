@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 60.0,
+    "cookingTime": 1200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.BEDROCK"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:BedrockGlass"
+    },
+    "name": "bedrock_glass_recipe",
+    "namespace": "mod"
+  }
+}

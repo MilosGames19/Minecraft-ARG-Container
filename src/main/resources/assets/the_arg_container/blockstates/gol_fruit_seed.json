@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "the_arg_container:block/gol_fruit_seed"
+    },
+    "half=lower": {
+      "model": "the_arg_container:block/gol_fruit_seed_bottom"
+    }
+  }
+}

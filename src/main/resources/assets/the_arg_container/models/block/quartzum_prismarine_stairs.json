@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/quartzumprismarine",
+    "top": "the_arg_container:block/quartzumprismarine",
+    "side": "the_arg_container:block/quartzumprismarine"
+  },
+  "render_type": "solid"
+}

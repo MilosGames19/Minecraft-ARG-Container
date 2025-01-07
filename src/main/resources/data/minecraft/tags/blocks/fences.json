@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:teal_quartz_fence",
+    "the_arg_container:quartzum_prismarine_fence",
+    "the_arg_container:ostrutene_planks_fence",
+    "the_arg_container:pure_paperwood_fence",
+    "the_arg_container:polished_tough_fence_1",
+    "the_arg_container:polished_tough_fence",
+    "the_arg_container:voidfencevarient_4",
+    "the_arg_container:voidfencevarient_3",
+    "the_arg_container:void_fence_varient_2",
+    "the_arg_container:void_fence_varient_1",
     "the_arg_container:corridor_fence",
     "the_arg_container:infused_cobblestone_fance",
     "the_arg_container:cobblestone_fance"

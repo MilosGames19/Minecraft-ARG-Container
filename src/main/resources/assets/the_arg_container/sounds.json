@@ -258,5 +258,29 @@
         "stream": true
       }
     ]
+  },
+  "voidexp": {
+    "sounds": [
+      {
+        "name": "the_arg_container:4-void-exp",
+        "stream": true
+      }
+    ]
+  },
+  "saw13returns": {
+    "sounds": [
+      {
+        "name": "the_arg_container:20-saw_13-returns",
+        "stream": true
+      }
+    ]
+  },
+  "moonfall": {
+    "sounds": [
+      {
+        "name": "the_arg_container:21-moonfall",
+        "stream": true
+      }
+    ]
   }
 }

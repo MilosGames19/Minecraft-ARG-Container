@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:pure_paperwood"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:pure_paperwood_button",
+    "count": 2
+  }
+}

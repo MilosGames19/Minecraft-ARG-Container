@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:blattea_shard"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:tough_blattea_bricks",
+    "count": 4
+  }
+}

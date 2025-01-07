@@ -1,0 +1,49 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "MultiTool",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "unsegregativeelectrifiedmultitool",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "ContrInfesta's Multitool",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:VoidAlity"
+    },
+    "harvestLevel": 4,
+    "efficiency": 11.5,
+    "attackSpeed": 1.1,
+    "enchantability": 2,
+    "damageVsEntity": 10.0,
+    "usageCount": 6190,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Blocks.SOUL_LANTERN"
+      },
+      {
+        "value": "Blocks.SOUL_CAMPFIRE"
+      },
+      {
+        "value": "CUSTOM:BlatteaShard"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "CUSTOM:AbyssCrystal"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

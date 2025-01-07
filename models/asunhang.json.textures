@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bat",
+        "1": "sun"
+      },
+      "name": "default"
+    }
+  }
+}

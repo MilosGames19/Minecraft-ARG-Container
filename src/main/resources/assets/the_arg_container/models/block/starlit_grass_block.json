@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "the_arg_container:block/starlitgrass2",
+    "top": "the_arg_container:block/starlitgrass1",
+    "side": "the_arg_container:block/starlitgrass3",
+    "overlay": "the_arg_container:block/starlitgrass3",
+    "particle": "the_arg_container:block/starlitgrass2"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,6 +1,17 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:aqua_quartz_stairs",
+    "the_arg_container:teal_prismarine_stairs",
+    "the_arg_container:quartzum_prismarine_stairs",
+    "the_arg_container:teal_quartz_stairs",
+    "the_arg_container:pure_paperwood_stairs",
+    "the_arg_container:ostrutene_planks_stairs",
+    "the_arg_container:abyss_floor_stairs_lined",
+    "the_arg_container:abyss_floor_stairs_active_lined",
+    "the_arg_container:abyss_active_brick_stairs",
+    "the_arg_container:polished_tough_stairs",
+    "the_arg_container:tough_brick_stairs",
     "the_arg_container:admin_space_floor_tile_stairs",
     "the_arg_container:catwalk_stairs",
     "the_arg_container:grayscaled_oak_stairs",

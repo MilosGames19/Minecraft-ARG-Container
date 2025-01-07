@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:ostrutene_wood"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:active_ostrutene_wood",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/operatorsymbol",
+    "up": "the_arg_container:block/operatorsymbol",
+    "north": "the_arg_container:block/operatorsymbol",
+    "east": "the_arg_container:block/operatorsymbol",
+    "south": "the_arg_container:block/operatorsymbol",
+    "west": "the_arg_container:block/operatorsymbol",
+    "particle": "the_arg_container:block/operatorsymbol"
+  },
+  "render_type": "solid"
+}

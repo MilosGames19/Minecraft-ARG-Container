@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/actline",
+    "top": "the_arg_container:block/actline",
+    "side": "the_arg_container:block/actvline"
+  },
+  "render_type": "solid"
+}

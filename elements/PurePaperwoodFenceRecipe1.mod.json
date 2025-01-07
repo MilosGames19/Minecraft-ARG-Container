@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 9,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PurePaperwood"
+      },
+      {
+        "value": "CUSTOM:OstruteneStick"
+      },
+      {
+        "value": "CUSTOM:PurePaperwood"
+      },
+      {
+        "value": "CUSTOM:PurePaperwood"
+      },
+      {
+        "value": "CUSTOM:OstruteneStick"
+      },
+      {
+        "value": "CUSTOM:PurePaperwood"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PurePaperwoodFence"
+    },
+    "name": "pure_paperwood_fence_recipe_1",
+    "namespace": "mod"
+  }
+}

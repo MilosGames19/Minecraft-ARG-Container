@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/abysssoilbroken",
+    "up": "the_arg_container:block/abysssoilbroken",
+    "north": "the_arg_container:block/abysssoilbroken",
+    "east": "the_arg_container:block/abysssoilbroken",
+    "south": "the_arg_container:block/abysssoilbroken",
+    "west": "the_arg_container:block/abysssoilbroken",
+    "particle": "the_arg_container:block/abysssoilbroken"
+  },
+  "render_type": "solid"
+}

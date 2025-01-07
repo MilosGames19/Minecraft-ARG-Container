@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/supporterrhombus",
+    "up": "the_arg_container:block/supporterrhombus",
+    "north": "the_arg_container:block/supporterrhombus",
+    "east": "the_arg_container:block/supporterrhombus",
+    "south": "the_arg_container:block/supporterrhombus",
+    "west": "the_arg_container:block/supporterrhombus",
+    "particle": "the_arg_container:block/supporterrhombus"
+  },
+  "render_type": "solid"
+}

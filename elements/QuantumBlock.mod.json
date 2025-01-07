@@ -33,12 +33,12 @@
         "subtract": false
       }
     ],
-    "name": "Quantum Block",
+    "name": "Quantum Block (Wip)",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 6.0,
+    "resistance": 23.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -100,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

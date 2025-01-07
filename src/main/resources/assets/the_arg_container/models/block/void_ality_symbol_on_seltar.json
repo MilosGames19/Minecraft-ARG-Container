@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/sssvoidality",
+    "up": "the_arg_container:block/sssvoidality",
+    "north": "the_arg_container:block/sssvoidality",
+    "east": "the_arg_container:block/sssvoidality",
+    "south": "the_arg_container:block/sssvoidality",
+    "west": "the_arg_container:block/sssvoidality",
+    "particle": "the_arg_container:block/sssvoidality"
+  },
+  "render_type": "solid"
+}

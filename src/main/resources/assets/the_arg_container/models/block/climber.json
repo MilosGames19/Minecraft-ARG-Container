@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/ladder",
+    "up": "the_arg_container:block/ladder",
+    "north": "the_arg_container:block/ladder",
+    "east": "the_arg_container:block/ladder",
+    "south": "the_arg_container:block/ladder",
+    "west": "the_arg_container:block/ladder",
+    "particle": "the_arg_container:block/ladder"
+  },
+  "render_type": "cutout"
+}

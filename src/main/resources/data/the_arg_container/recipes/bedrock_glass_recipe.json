@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 60,
+  "cookingtime": 1200,
+  "ingredient": {
+    "item": "minecraft:bedrock"
+  },
+  "result": "the_arg_container:bedrock_glass"
+}

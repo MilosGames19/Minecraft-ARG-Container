@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "tab",
+  "definition": {
+    "name": "Minecraft Survival (Glitchy)",
+    "icon": {
+      "value": "CUSTOM:CyberspaceEye"
+    },
+    "showSearch": false
+  }
+}

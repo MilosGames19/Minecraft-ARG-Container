@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/abyssbase3n6polished",
+    "up": "the_arg_container:block/abyssbase3n6polished",
+    "north": "the_arg_container:block/abyssbase3n6polished",
+    "east": "the_arg_container:block/abyssbase3n6polished",
+    "south": "the_arg_container:block/abyssbase3n6polished",
+    "west": "the_arg_container:block/abyssbase3n6polished",
+    "particle": "the_arg_container:block/abyssbase3n6polished"
+  },
+  "render_type": "solid"
+}

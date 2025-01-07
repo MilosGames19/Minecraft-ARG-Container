@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/carved1",
+  "textures": {
+    "all": "the_arg_container:block/carved1",
+    "particle": "the_arg_container:block/carved1",
+    "0": "the_arg_container:block/carved1"
+  },
+  "render_type": "solid"
+}

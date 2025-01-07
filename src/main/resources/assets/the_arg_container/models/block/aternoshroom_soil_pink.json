@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/aternoshroompinksoil",
+    "up": "the_arg_container:block/aternoshroompinksoil",
+    "north": "the_arg_container:block/aternoshroompinksoil",
+    "east": "the_arg_container:block/aternoshroompinksoil",
+    "south": "the_arg_container:block/aternoshroompinksoil",
+    "west": "the_arg_container:block/aternoshroompinksoil",
+    "particle": "the_arg_container:block/aternoshroompinksoil"
+  },
+  "render_type": "solid"
+}

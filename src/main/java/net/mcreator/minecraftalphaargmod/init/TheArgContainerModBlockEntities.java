@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.minecraftalphaargmod.block.entity.UnusedBlock2BlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.Unknown2BlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.StructureBuilderBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.ServerContainersBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.SafeBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PerlinKeyblockBlockEntity;
@@ -31,6 +32,7 @@ public class TheArgContainerModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> UNKNOWN_2 = register("unknown_2", TheArgContainerModBlocks.UNKNOWN_2, Unknown2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PERLIN_KEYBLOCK = register("perlin_keyblock", TheArgContainerModBlocks.PERLIN_KEYBLOCK, PerlinKeyblockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ADMIN_CHEST = register("admin_chest", TheArgContainerModBlocks.ADMIN_CHEST, AdminChestBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> STRUCTURE_BUILDER = register("structure_builder", TheArgContainerModBlocks.STRUCTURE_BUILDER, StructureBuilderBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

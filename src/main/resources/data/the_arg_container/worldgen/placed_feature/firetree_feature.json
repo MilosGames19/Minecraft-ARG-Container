@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 20
+      "chance": 15
     },
     {
       "type": "minecraft:in_square"
@@ -16,7 +16,12 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:grass_block",
+        "blocks": [
+          "the_arg_container:yellow_grass_block",
+          "the_arg_container:mixed_grass_block",
+          "the_arg_container:grass_block",
+          "minecraft:grass_block"
+        ],
         "offset": [
           0,
           -1,

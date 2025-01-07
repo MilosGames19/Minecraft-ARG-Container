@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/aternoshroombluemedium",
+    "particle": "the_arg_container:block/aternoshroombluemedium"
+  },
+  "render_type": "cutout"
+}

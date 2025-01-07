@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "soul_white",
+    "texture": "drewee",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "salt_top",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,

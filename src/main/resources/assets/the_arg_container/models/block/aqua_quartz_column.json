@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/aquaquartzcolumntop",
+    "up": "the_arg_container:block/aquaquartzcolumntop",
+    "north": "the_arg_container:block/aquaquartzcolumnside",
+    "east": "the_arg_container:block/aquaquartzcolumnside",
+    "south": "the_arg_container:block/aquaquartzcolumnside",
+    "west": "the_arg_container:block/aquaquartzcolumnside",
+    "particle": "the_arg_container:block/aquaquartzcolumntop"
+  },
+  "render_type": "solid"
+}

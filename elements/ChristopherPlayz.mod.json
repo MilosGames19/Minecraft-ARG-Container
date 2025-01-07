@@ -4,7 +4,7 @@
   "definition": {
     "name": "ChristopherPlayz",
     "icon": {
-      "value": "Blocks.TARGET"
+      "value": "CUSTOM:VoidCross"
     },
     "showSearch": false
   }

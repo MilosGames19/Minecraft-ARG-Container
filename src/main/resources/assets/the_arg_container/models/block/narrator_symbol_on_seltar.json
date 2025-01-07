@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/narratorsymbol",
+    "up": "the_arg_container:block/narratorsymbol",
+    "north": "the_arg_container:block/narratorsymbol",
+    "east": "the_arg_container:block/narratorsymbol",
+    "south": "the_arg_container:block/narratorsymbol",
+    "west": "the_arg_container:block/narratorsymbol",
+    "particle": "the_arg_container:block/narratorsymbol"
+  },
+  "render_type": "solid"
+}

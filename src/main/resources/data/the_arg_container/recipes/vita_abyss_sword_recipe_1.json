@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:abyss_crystal"
+    },
+    "b": {
+      "item": "the_arg_container:ostrutene_stick"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:vita_abyss_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/creativesymbol",
+    "up": "the_arg_container:block/creativesymbol",
+    "north": "the_arg_container:block/creativesymbol",
+    "east": "the_arg_container:block/creativesymbol",
+    "south": "the_arg_container:block/creativesymbol",
+    "west": "the_arg_container:block/creativesymbol",
+    "particle": "the_arg_container:block/creativesymbol"
+  },
+  "render_type": "solid"
+}

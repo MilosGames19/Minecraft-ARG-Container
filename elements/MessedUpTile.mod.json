@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 2,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,

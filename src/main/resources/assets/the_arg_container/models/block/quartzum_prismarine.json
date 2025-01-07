@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/quartzumprismarine",
+    "up": "the_arg_container:block/quartzumprismarine",
+    "north": "the_arg_container:block/quartzumprismarine",
+    "east": "the_arg_container:block/quartzumprismarine",
+    "south": "the_arg_container:block/quartzumprismarine",
+    "west": "the_arg_container:block/quartzumprismarine",
+    "particle": "the_arg_container:block/quartzumprismarine"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "the_arg_container:block/ostruteneplanks",
+    "particle": "the_arg_container:block/ostruteneplanks"
+  },
+  "render_type": "solid"
+}

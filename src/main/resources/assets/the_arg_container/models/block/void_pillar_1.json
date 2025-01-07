@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/oidillaropottom",
+    "up": "the_arg_container:block/oidillaropottom",
+    "north": "the_arg_container:block/oidillaride",
+    "east": "the_arg_container:block/oidillaride",
+    "south": "the_arg_container:block/oidillaride",
+    "west": "the_arg_container:block/oidillaride",
+    "particle": "the_arg_container:block/oidillaropottom"
+  },
+  "render_type": "solid"
+}

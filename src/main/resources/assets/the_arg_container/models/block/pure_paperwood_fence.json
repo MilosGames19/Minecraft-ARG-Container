@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "the_arg_container:block/paperwoodplanks",
+    "particle": "the_arg_container:block/paperwoodplanks"
+  },
+  "render_type": "solid"
+}

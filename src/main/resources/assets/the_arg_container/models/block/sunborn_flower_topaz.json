@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_arg_container:block/sunborntopazflower",
+    "particle": "the_arg_container:block/sunborntopazflower"
+  },
+  "render_type": "cutout"
+}

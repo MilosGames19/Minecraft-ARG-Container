@@ -1,0 +1,11 @@
+{
+  "parent": "the_arg_container:custom/altarblock",
+  "textures": {
+    "all": "the_arg_container:block/abyssbrick",
+    "particle": "the_arg_container:block/abyssbrick",
+    "4": "the_arg_container:block/bh",
+    "7": "the_arg_container:block/polishedbricks",
+    "8": "the_arg_container:block/abyssinfestreimagined"
+  },
+  "render_type": "cutout"
+}

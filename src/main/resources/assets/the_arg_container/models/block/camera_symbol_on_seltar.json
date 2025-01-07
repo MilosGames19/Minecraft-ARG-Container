@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/camerasymbol",
+    "up": "the_arg_container:block/camerasymbol",
+    "north": "the_arg_container:block/camerasymbol",
+    "east": "the_arg_container:block/camerasymbol",
+    "south": "the_arg_container:block/camerasymbol",
+    "west": "the_arg_container:block/camerasymbol",
+    "particle": "the_arg_container:block/camerasymbol"
+  },
+  "render_type": "solid"
+}

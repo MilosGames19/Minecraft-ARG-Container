@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "the_arg_container:block/aquaquartz",
+    "particle": "the_arg_container:block/aquaquartz"
+  },
+  "render_type": "solid"
+}

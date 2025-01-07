@@ -1,0 +1,49 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "energizedswordexo",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Vita Abyss Sword",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:VoidAlity"
+    },
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 0.9,
+    "enchantability": 18,
+    "damageVsEntity": 17.0,
+    "usageCount": 5920,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:BlatteaShard"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Blocks.SOUL_LANTERN"
+      },
+      {
+        "value": "Blocks.SOUL_CAMPFIRE"
+      },
+      {
+        "value": "CUSTOM:AbyssCrystal"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

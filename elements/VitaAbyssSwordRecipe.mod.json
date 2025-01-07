@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlatteaShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlatteaShard"
+      },
+      {
+        "value": "CUSTOM:BlatteaShard"
+      },
+      {
+        "value": "CUSTOM:BlatteaShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:OstruteneStick"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:VitaAbyssSword"
+    },
+    "name": "vita_abyss_sword_recipe",
+    "namespace": "mod"
+  }
+}

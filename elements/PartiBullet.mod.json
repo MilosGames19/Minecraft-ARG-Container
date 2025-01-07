@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:TesterBullet"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.amethyst_block.break"
+    },
+    "igniteFire": false,
+    "power": 1.5,
+    "damage": 7.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}

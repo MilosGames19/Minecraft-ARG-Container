@@ -7,6 +7,10 @@
     "minecraft:iron_pickaxe",
     "minecraft:golden_pickaxe",
     "minecraft:diamond_pickaxe",
-    "minecraft:netherite_pickaxe"
+    "minecraft:netherite_pickaxe",
+    "the_arg_container:obsidian_pickaxe",
+    "the_arg_container:hiddenite_tool_pickaxe",
+    "the_arg_container:contr_infestas_multitool",
+    "the_arg_container:dismantler"
   ]
 }

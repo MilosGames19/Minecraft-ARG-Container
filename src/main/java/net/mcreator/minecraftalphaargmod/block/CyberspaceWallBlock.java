@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class CyberspaceWallBlock extends Block {
 	public CyberspaceWallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f));
 	}
 
 	@Override

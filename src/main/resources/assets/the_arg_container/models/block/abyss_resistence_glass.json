@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/abysshardenedglass",
+    "up": "the_arg_container:block/abysshardenedglass",
+    "north": "the_arg_container:block/abysshardenedglass",
+    "east": "the_arg_container:block/abysshardenedglass",
+    "south": "the_arg_container:block/abysshardenedglass",
+    "west": "the_arg_container:block/abysshardenedglass",
+    "particle": "the_arg_container:block/abysshardenedglass"
+  },
+  "render_type": "cutout"
+}

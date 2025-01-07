@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "ostruteneloginner",
+        "2": "aternoshroompink1",
+        "3": "ostrutene"
+      },
+      "name": "default"
+    }
+  }
+}

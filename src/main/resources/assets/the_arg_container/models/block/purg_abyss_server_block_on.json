@@ -1,0 +1,12 @@
+{
+  "parent": "the_arg_container:custom/purgserveron",
+  "textures": {
+    "all": "the_arg_container:block/abyssps",
+    "particle": "the_arg_container:block/abyssps",
+    "0": "the_arg_container:block/abyssmt",
+    "1": "the_arg_container:block/abysspurgon",
+    "2": "the_arg_container:block/apurgcodeblock",
+    "missing": "the_arg_container:block/"
+  },
+  "render_type": "solid"
+}

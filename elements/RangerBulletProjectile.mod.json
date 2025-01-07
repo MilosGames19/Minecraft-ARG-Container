@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:RangerBullet"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.5,
+    "damage": 10.0,
+    "knockback": 10,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}

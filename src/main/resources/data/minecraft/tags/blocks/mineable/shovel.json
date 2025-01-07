@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:starlit_grass_block",
+    "the_arg_container:aternoshroom_soil_blue",
+    "the_arg_container:aternoshroom_soil_pink",
+    "the_arg_container:aternoshroom_soil_purple",
+    "the_arg_container:abyss_fertile_soil_2",
+    "the_arg_container:abyss_fertile_soil_1",
+    "the_arg_container:abyss_fertile_soil",
     "the_arg_container:grass_block_1",
     "the_arg_container:dutytime_sand",
     "the_arg_container:dutytime_grass",

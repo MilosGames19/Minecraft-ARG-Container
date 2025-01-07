@@ -1,0 +1,10 @@
+{
+  "parent": "the_arg_container:custom/carved3",
+  "textures": {
+    "all": "the_arg_container:block/carvedsymbol1",
+    "particle": "the_arg_container:block/carvedsymbol1",
+    "0": "the_arg_container:block/carvedsymbol1",
+    "1": "the_arg_container:block/bat"
+  },
+  "render_type": "solid"
+}

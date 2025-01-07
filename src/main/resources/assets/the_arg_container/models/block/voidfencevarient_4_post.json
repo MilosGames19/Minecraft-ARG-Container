@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "the_arg_container:block/ileoid",
+    "particle": "the_arg_container:block/ileoid"
+  },
+  "render_type": "solid"
+}

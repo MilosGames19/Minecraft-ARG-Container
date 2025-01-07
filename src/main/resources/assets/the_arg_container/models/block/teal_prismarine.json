@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/tealprismarine",
+    "up": "the_arg_container:block/tealprismarine",
+    "north": "the_arg_container:block/tealprismarine",
+    "east": "the_arg_container:block/tealprismarine",
+    "south": "the_arg_container:block/tealprismarine",
+    "west": "the_arg_container:block/tealprismarine",
+    "particle": "the_arg_container:block/tealprismarine"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/actcresiah",
+    "up": "the_arg_container:block/actcresiah",
+    "north": "the_arg_container:block/actcresiah",
+    "east": "the_arg_container:block/actcresiah",
+    "south": "the_arg_container:block/actcresiah",
+    "west": "the_arg_container:block/actcresiah",
+    "particle": "the_arg_container:block/actcresiah"
+  },
+  "render_type": "solid"
+}

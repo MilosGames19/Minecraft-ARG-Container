@@ -1,0 +1,7 @@
+{
+  "parent": "the_arg_container:custom/handyswordlol",
+  "textures": {
+    "7": "the_arg_container:block/5360",
+    "particle": "the_arg_container:item/abyssvine"
+  }
+}

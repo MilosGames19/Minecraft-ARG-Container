@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "the_arg_container:block/tealprismarine",
+    "top": "the_arg_container:block/tealprismarine",
+    "side": "the_arg_container:block/tealprismarine"
+  },
+  "render_type": "solid"
+}

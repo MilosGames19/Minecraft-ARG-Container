@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/cloudintoplatiplatespolished",
+    "up": "the_arg_container:block/cloudintoplatiplatespolished",
+    "north": "the_arg_container:block/cloudintoplatiplatespolished",
+    "east": "the_arg_container:block/cloudintoplatiplatespolished",
+    "south": "the_arg_container:block/cloudintoplatiplatespolished",
+    "west": "the_arg_container:block/cloudintoplatiplatespolished",
+    "particle": "the_arg_container:block/cloudintoplatiplatespolished"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/supporterblock",
+    "up": "the_arg_container:block/supporterblock",
+    "north": "the_arg_container:block/supporterblock",
+    "east": "the_arg_container:block/supporterblock",
+    "south": "the_arg_container:block/supporterblock",
+    "west": "the_arg_container:block/supporterblock",
+    "particle": "the_arg_container:block/supporterblock"
+  },
+  "render_type": "cutout"
+}

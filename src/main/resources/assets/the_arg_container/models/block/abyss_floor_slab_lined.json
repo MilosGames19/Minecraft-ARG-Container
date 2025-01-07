@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "the_arg_container:block/line",
+    "top": "the_arg_container:block/line",
+    "side": "the_arg_container:block/vline"
+  },
+  "render_type": "solid"
+}

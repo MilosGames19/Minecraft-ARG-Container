@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_overworld",
+  "biomes": "#minecraft:is_forest",
   "features": "the_arg_container:tree_feature",
   "step": "surface_structures"
 }

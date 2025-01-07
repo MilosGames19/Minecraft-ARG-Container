@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:slightly_tinted_glass_magenta"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:slightly_tinted_glass_pane_magenta",
+    "count": 6
+  }
+}

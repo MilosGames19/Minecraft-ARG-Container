@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/birchtiledarkened",
+    "up": "the_arg_container:block/birchtiledarkened",
+    "north": "the_arg_container:block/birchtiledarkened",
+    "east": "the_arg_container:block/birchtiledarkened",
+    "south": "the_arg_container:block/birchtiledarkened",
+    "west": "the_arg_container:block/birchtiledarkened",
+    "particle": "the_arg_container:block/birchtiledarkened"
+  },
+  "render_type": "solid"
+}

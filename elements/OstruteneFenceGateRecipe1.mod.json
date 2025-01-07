@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:OstruteneStick"
+      },
+      {
+        "value": "CUSTOM:OstrutenePlanks"
+      },
+      {
+        "value": "CUSTOM:OstruteneStick"
+      },
+      {
+        "value": "CUSTOM:OstruteneStick"
+      },
+      {
+        "value": "CUSTOM:OstrutenePlanks"
+      },
+      {
+        "value": "CUSTOM:OstruteneStick"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:OstrutenePlanksFenceGate"
+    },
+    "name": "ostrutene_fence_gate_recipe_1",
+    "namespace": "mod"
+  }
+}

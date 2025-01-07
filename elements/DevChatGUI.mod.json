@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_who_do_you_want_to_contact",
+          "text": {
+            "fixedValue": "Who do you want to contact?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 144,
+          "y": 51
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "dev_chat",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 110
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

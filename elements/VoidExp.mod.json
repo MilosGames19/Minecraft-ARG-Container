@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "COMMON",
+    "texture": "void_disc",
+    "description": "Void Exp",
+    "creativeTab": {
+      "value": "CUSTOM:DeltaQuest"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:voidexp"
+    },
+    "lengthInTicks": 1320,
+    "analogOutput": 0
+  }
+}

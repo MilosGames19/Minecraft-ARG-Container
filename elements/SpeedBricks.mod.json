@@ -75,8 +75,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 1.0,
-    "jumpFactor": 1.0,
+    "speedFactor": 2.5,
+    "jumpFactor": 3.1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -119,9 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityWalksOn": {
-      "name": "SpeedBricksEntityWalksOnTheBlock"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

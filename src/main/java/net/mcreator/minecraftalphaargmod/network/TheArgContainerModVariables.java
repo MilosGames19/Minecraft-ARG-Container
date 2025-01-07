@@ -72,9 +72,9 @@ public class TheArgContainerModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			clone.guiCooldown = original.guiCooldown;
 			if (!event.isWasDeath()) {
 				clone.Cooldown = original.Cooldown;
-				clone.guiCooldown = original.guiCooldown;
 				clone.lilipad_cooldown = original.lilipad_cooldown;
 			}
 		}
@@ -245,7 +245,7 @@ public class TheArgContainerModVariables {
 
 	public static class PlayerVariables {
 		public double Cooldown = 0.0;
-		public double guiCooldown = -1.0;
+		public double guiCooldown = 0.0;
 		public double lilipad_cooldown = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/aternoshroombluesoil",
+    "up": "the_arg_container:block/aternoshroombluesoil",
+    "north": "the_arg_container:block/aternoshroombluesoil",
+    "east": "the_arg_container:block/aternoshroombluesoil",
+    "south": "the_arg_container:block/aternoshroombluesoil",
+    "west": "the_arg_container:block/aternoshroombluesoil",
+    "particle": "the_arg_container:block/aternoshroombluesoil"
+  },
+  "render_type": "solid"
+}

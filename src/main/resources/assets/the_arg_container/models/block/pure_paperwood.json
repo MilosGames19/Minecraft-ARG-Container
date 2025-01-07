@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/paperwoodplanks",
+    "up": "the_arg_container:block/paperwoodplanks",
+    "north": "the_arg_container:block/paperwoodplanks",
+    "east": "the_arg_container:block/paperwoodplanks",
+    "south": "the_arg_container:block/paperwoodplanks",
+    "west": "the_arg_container:block/paperwoodplanks",
+    "particle": "the_arg_container:block/paperwoodplanks"
+  },
+  "render_type": "solid"
+}

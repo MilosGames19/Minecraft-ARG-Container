@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "abyssmt",
+        "1": "abysspurgon",
+        "2": "apurgcodeblock",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

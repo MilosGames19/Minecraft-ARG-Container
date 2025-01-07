@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_arg_container:block/abyss_floor_slab_lined"
+    },
+    "type=top": {
+      "model": "the_arg_container:block/abyss_floor_slab_lined_top"
+    },
+    "type=double": {
+      "model": "the_arg_container:block/abyss_floor_slab_lined_full"
+    }
+  }
+}

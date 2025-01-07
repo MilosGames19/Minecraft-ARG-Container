@@ -22,7 +22,9 @@ import net.mcreator.minecraftalphaargmod.client.gui.GuiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.FreezerGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.EtGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.EssenceclonerGUIScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.DevChatGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.BlueChestGUIScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.BallsOnlineGuiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.AdminspaceScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.AdminSpaceGUIScreen;
 
@@ -45,6 +47,8 @@ public class TheArgContainerModScreens {
 			MenuScreens.register(TheArgContainerModMenus.BLUE_CHEST_GUI.get(), BlueChestGUIScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.KEY_1.get(), Key1Screen::new);
 			MenuScreens.register(TheArgContainerModMenus.WARNING.get(), WarningScreen::new);
+			MenuScreens.register(TheArgContainerModMenus.DEV_CHAT_GUI.get(), DevChatGUIScreen::new);
+			MenuScreens.register(TheArgContainerModMenus.BALLS_ONLINE_GUI.get(), BallsOnlineGuiScreen::new);
 		});
 	}
 }

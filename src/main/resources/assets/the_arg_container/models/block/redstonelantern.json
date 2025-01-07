@@ -1,0 +1,8 @@
+{
+  "parent": "the_arg_container:custom/redstone_lantern",
+  "textures": {
+    "all": "the_arg_container:block/white",
+    "particle": "the_arg_container:block/white"
+  },
+  "render_type": "solid"
+}

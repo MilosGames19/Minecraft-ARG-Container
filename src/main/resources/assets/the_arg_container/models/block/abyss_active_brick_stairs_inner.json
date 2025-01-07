@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/abyssactbrick",
+    "top": "the_arg_container:block/abyssactbrick",
+    "side": "the_arg_container:block/abyssactbrick"
+  },
+  "render_type": "solid"
+}

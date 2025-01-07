@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/abyssgrid",
+    "up": "the_arg_container:block/abyssgrid",
+    "north": "the_arg_container:block/abyssgrid",
+    "east": "the_arg_container:block/abyssgrid",
+    "south": "the_arg_container:block/abyssgrid",
+    "west": "the_arg_container:block/abyssgrid",
+    "particle": "the_arg_container:block/abyssgrid"
+  },
+  "render_type": "cutout"
+}
