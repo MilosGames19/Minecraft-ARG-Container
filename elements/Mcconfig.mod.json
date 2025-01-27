@@ -41,6 +41,50 @@
             "stringlist": []
           }
         ]
+      },
+      {
+        "category": "DEBUG",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "dash_overlay",
+            "varname": "dash_overlay",
+            "enablecomment": false,
+            "stringlist": []
+          }
+        ]
+      },
+      {
+        "category": "⚠Dangerous⚠",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "This option is disabled by default to prevent accidental crashes.",
+            "vardisplay": "game_crash",
+            "varname": "game_crash",
+            "enablecomment": true,
+            "stringlist": []
+          }
+        ]
       }
     ],
     "file": "the_arg_container",

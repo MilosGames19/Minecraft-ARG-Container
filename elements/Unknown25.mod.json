@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Miscellaneous"
+      "value": "CUSTOM:MinecraftRTCD"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

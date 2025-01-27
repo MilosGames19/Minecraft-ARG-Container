@@ -1601,6 +1601,32 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> DEAD_VOID_BLOCK = block(TheArgContainerModBlocks.DEAD_VOID_BLOCK);
 	public static final RegistryObject<Item> REDSTONELANTERN = block(TheArgContainerModBlocks.REDSTONELANTERN);
 	public static final RegistryObject<Item> VOID_TORCH = block(TheArgContainerModBlocks.VOID_TORCH);
+	public static final RegistryObject<Item> RTC_DBLOCK = block(TheArgContainerModBlocks.RTC_DBLOCK);
+	public static final RegistryObject<Item> GLASS_3 = block(TheArgContainerModBlocks.GLASS_3);
+	public static final RegistryObject<Item> DEBUG_AREA_WALL = block(TheArgContainerModBlocks.DEBUG_AREA_WALL);
+	public static final RegistryObject<Item> DEBUG_AREA_FLOOR = block(TheArgContainerModBlocks.DEBUG_AREA_FLOOR);
+	public static final RegistryObject<Item> PROJ_132_FLOOR = block(TheArgContainerModBlocks.PROJ_132_FLOOR);
+	public static final RegistryObject<Item> LONG_LEGS_SPAWN_EGG = REGISTRY.register("long_legs_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.LONG_LEGS, -16777216, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> RTCD_DECORATIVE_BLOCK = block(TheArgContainerModBlocks.RTCD_DECORATIVE_BLOCK);
+	public static final RegistryObject<Item> RTCD_DECORATIVE_BLOCK_1 = block(TheArgContainerModBlocks.RTCD_DECORATIVE_BLOCK_1);
+	public static final RegistryObject<Item> RTCD_DECORATIVE_BLOCK_2 = block(TheArgContainerModBlocks.RTCD_DECORATIVE_BLOCK_2);
+	public static final RegistryObject<Item> RTCD_WALL = block(TheArgContainerModBlocks.RTCD_WALL);
+	public static final RegistryObject<Item> SWITCHSTEP_BRICKS = block(TheArgContainerModBlocks.SWITCHSTEP_BRICKS);
+	public static final RegistryObject<Item> WHITE_LAMP = block(TheArgContainerModBlocks.WHITE_LAMP);
+	public static final RegistryObject<Item> GRAY_LAMP = block(TheArgContainerModBlocks.GRAY_LAMP);
+	public static final RegistryObject<Item> BROWN_LAMP = block(TheArgContainerModBlocks.BROWN_LAMP);
+	public static final RegistryObject<Item> RED_LAMP = block(TheArgContainerModBlocks.RED_LAMP);
+	public static final RegistryObject<Item> ORANGE_LAMP = block(TheArgContainerModBlocks.ORANGE_LAMP);
+	public static final RegistryObject<Item> YELLOW_LAMP = block(TheArgContainerModBlocks.YELLOW_LAMP);
+	public static final RegistryObject<Item> LIME_LAMP = block(TheArgContainerModBlocks.LIME_LAMP);
+	public static final RegistryObject<Item> GREEN_LAMP = block(TheArgContainerModBlocks.GREEN_LAMP);
+	public static final RegistryObject<Item> CYAN_LAMP = block(TheArgContainerModBlocks.CYAN_LAMP);
+	public static final RegistryObject<Item> LIGHT_BLUE_LAMP = block(TheArgContainerModBlocks.LIGHT_BLUE_LAMP);
+	public static final RegistryObject<Item> BLUE_LAMP = block(TheArgContainerModBlocks.BLUE_LAMP);
+	public static final RegistryObject<Item> PURPLE_LAMP = block(TheArgContainerModBlocks.PURPLE_LAMP);
+	public static final RegistryObject<Item> MAGENTA_LAMP = block(TheArgContainerModBlocks.MAGENTA_LAMP);
+	public static final RegistryObject<Item> PINK_LAMP = block(TheArgContainerModBlocks.PINK_LAMP);
+	public static final RegistryObject<Item> RTCD_CONSOLE = block(TheArgContainerModBlocks.RTCD_CONSOLE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

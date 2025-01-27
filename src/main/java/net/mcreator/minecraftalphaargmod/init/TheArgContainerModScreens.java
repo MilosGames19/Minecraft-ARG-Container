@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.minecraftalphaargmod.client.gui.WarningScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.TtcdconsoleScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TerminalGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.ServerGuIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.SafeGUIScreen;
@@ -49,6 +50,7 @@ public class TheArgContainerModScreens {
 			MenuScreens.register(TheArgContainerModMenus.WARNING.get(), WarningScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.DEV_CHAT_GUI.get(), DevChatGUIScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.BALLS_ONLINE_GUI.get(), BallsOnlineGuiScreen::new);
+			MenuScreens.register(TheArgContainerModMenus.TTCDCONSOLE.get(), TtcdconsoleScreen::new);
 		});
 	}
 }

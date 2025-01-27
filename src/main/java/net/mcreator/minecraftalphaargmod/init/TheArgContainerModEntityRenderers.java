@@ -19,6 +19,7 @@ import net.mcreator.minecraftalphaargmod.client.renderer.SoulEntityRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.RecruiterRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.PigRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.ObserverMobRenderer;
+import net.mcreator.minecraftalphaargmod.client.renderer.LongLegsRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.GiantRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.ExplosiveEssenceRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.EvilUser0Renderer;
@@ -50,5 +51,6 @@ public class TheArgContainerModEntityRenderers {
 		event.registerEntityRenderer(TheArgContainerModEntities.RANGER_BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.PIG.get(), PigRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.PARTI_BULLET.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TheArgContainerModEntities.LONG_LEGS.get(), LongLegsRenderer::new);
 	}
 }

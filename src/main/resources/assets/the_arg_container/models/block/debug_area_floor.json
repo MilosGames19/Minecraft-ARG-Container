@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/rtcd_debug_floor",
+    "up": "the_arg_container:block/rtcd_debug_floor",
+    "north": "the_arg_container:block/rtcd_debug_floor",
+    "east": "the_arg_container:block/rtcd_debug_floor",
+    "south": "the_arg_container:block/rtcd_debug_floor",
+    "west": "the_arg_container:block/rtcd_debug_floor",
+    "particle": "the_arg_container:block/rtcd_debug_floor"
+  },
+  "render_type": "solid"
+}

@@ -31,6 +31,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.minecraftalphaargmod.procedures.VoidentityOnEntityTickUpdateProcedure;
 import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class VoidentityEntity extends Monster {
@@ -79,6 +80,12 @@ public class VoidentityEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		VoidentityOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

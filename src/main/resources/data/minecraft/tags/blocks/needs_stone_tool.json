@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:rtcd_console",
+    "the_arg_container:switchstep_bricks",
+    "the_arg_container:rtcd_wall",
+    "the_arg_container:rtcd_decorative_block_2",
+    "the_arg_container:rtcd_decorative_block_1",
+    "the_arg_container:rtcd_decorative_block",
+    "the_arg_container:proj_132_floor",
+    "the_arg_container:debug_area_floor",
+    "the_arg_container:debug_area_wall",
     "the_arg_container:teal_quartz_fence",
     "the_arg_container:aqua_quartz_wall",
     "the_arg_container:aqua_quartz_stairs",

@@ -33,16 +33,16 @@
         "subtract": false
       }
     ],
-    "name": "Purple Bedrock Ore",
+    "name": "Purple Bedrock Ore (Decorative)",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
+    "hardness": 10.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Miscellaneous"
+      "value": "CUSTOM:MinecraftRTCD"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -100,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 4,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

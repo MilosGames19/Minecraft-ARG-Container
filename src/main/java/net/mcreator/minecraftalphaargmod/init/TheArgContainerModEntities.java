@@ -26,6 +26,7 @@ import net.mcreator.minecraftalphaargmod.entity.RangerBulletProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.PigEntity;
 import net.mcreator.minecraftalphaargmod.entity.PartiBulletEntity;
 import net.mcreator.minecraftalphaargmod.entity.ObserverMobEntity;
+import net.mcreator.minecraftalphaargmod.entity.LongLegsEntity;
 import net.mcreator.minecraftalphaargmod.entity.GiantEntity;
 import net.mcreator.minecraftalphaargmod.entity.ExplosiveEssenceEntity;
 import net.mcreator.minecraftalphaargmod.entity.EvilUser0Entity;
@@ -97,6 +98,10 @@ public class TheArgContainerModEntities {
 					.sized(0.9f, 0.9f));
 	public static final RegistryObject<EntityType<PartiBulletEntity>> PARTI_BULLET = register("parti_bullet",
 			EntityType.Builder.<PartiBulletEntity>of(PartiBulletEntity::new, MobCategory.MISC).setCustomClientFactory(PartiBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LongLegsEntity>> LONG_LEGS = register("long_legs",
+			EntityType.Builder.<LongLegsEntity>of(LongLegsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LongLegsEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -118,6 +123,7 @@ public class TheArgContainerModEntities {
 			EvilUser0Entity.init();
 			VoidentityEntity.init();
 			PigEntity.init();
+			LongLegsEntity.init();
 		});
 	}
 
@@ -136,5 +142,6 @@ public class TheArgContainerModEntities {
 		event.put(EVIL_USER_0.get(), EvilUser0Entity.createAttributes().build());
 		event.put(VOIDENTITY.get(), VoidentityEntity.createAttributes().build());
 		event.put(PIG.get(), PigEntity.createAttributes().build());
+		event.put(LONG_LEGS.get(), LongLegsEntity.createAttributes().build());
 	}
 }

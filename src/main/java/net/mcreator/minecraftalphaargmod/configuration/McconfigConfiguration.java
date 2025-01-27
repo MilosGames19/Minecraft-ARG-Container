@@ -7,10 +7,18 @@ public class McconfigConfiguration {
 	public static final ForgeConfigSpec SPEC;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SKY_FLAME_GENERATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> LILYPAD_GENERATION;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> DASH_OVERLAY;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> GAME_CRASH;
 	static {
 		BUILDER.push("generation");
 		SKY_FLAME_GENERATION = BUILDER.define("sky_flame_generation", true);
 		LILYPAD_GENERATION = BUILDER.define("lilypad_generation", true);
+		BUILDER.pop();
+		BUILDER.push("DEBUG");
+		DASH_OVERLAY = BUILDER.define("dash_overlay", false);
+		BUILDER.pop();
+		BUILDER.push("⚠Dangerous⚠");
+		GAME_CRASH = BUILDER.comment("This option is disabled by default to prevent accidental crashes.").define("game_crash", false);
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();

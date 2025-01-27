@@ -11754,19 +11754,6 @@
       "path": "~/TheNick56/Code"
     },
     {
-      "name": "ErrorCrash",
-      "type": "gamerule",
-      "sortid": 1698,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "error_crash",
-      "metadata": {
-        "files": [],
-        "type": "logic"
-      },
-      "path": "~/TheNick56/Code"
-    },
-    {
       "name": "DebugBlock",
       "type": "block",
       "sortid": 499,
@@ -22142,7 +22129,7 @@
           "src/main/resources/assets/the_arg_container/models/item/chamber_sustainers.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "WorkplaceHallBlock",
@@ -22160,7 +22147,7 @@
           "src/main/resources/assets/the_arg_container/blockstates/workplace_hall_block.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "Pipe",
@@ -22178,7 +22165,7 @@
           "src/main/resources/assets/the_arg_container/models/block/pipe.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "Hallwayblock2",
@@ -22196,7 +22183,7 @@
           "src/main/resources/assets/the_arg_container/models/block/hallwayblock_2.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "WorkplaceLamp",
@@ -22214,7 +22201,7 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/block/WorkplaceLampBlock.java"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "BZonePanel",
@@ -22232,7 +22219,7 @@
           "src/main/resources/assets/the_arg_container/blockstates/b_zone_panel.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "Hallwayblock",
@@ -22250,7 +22237,7 @@
           "src/main/resources/assets/the_arg_container/models/block/hallwayblock.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "OxidisedStorageBlock",
@@ -22268,7 +22255,7 @@
           "src/main/resources/assets/the_arg_container/blockstates/oxidised_storage_block.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "ForseersLayerBlock",
@@ -22286,7 +22273,7 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/block/ForseersLayerBlockBlock.java"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "WallPaintingBlock1",
@@ -22304,7 +22291,7 @@
           "src/main/resources/assets/the_arg_container/models/block/wall_painting_block_1.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "WallPaintingBlock2",
@@ -22322,7 +22309,7 @@
           "src/main/resources/assets/the_arg_container/blockstates/wall_painting_block_2.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "WallPaintingBlock3",
@@ -22340,7 +22327,7 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/block/WallPaintingBlock3Block.java"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "WallPaintingBlock4",
@@ -22358,7 +22345,7 @@
           "src/main/resources/assets/the_arg_container/blockstates/wall_painting_block_4.json"
         ]
       },
-      "path": "~/Project R.S.T.C."
+      "path": "~/Project R.S.T.C./Blocks"
     },
     {
       "name": "BlackDoorRecipe",
@@ -35042,6 +35029,561 @@
         ]
       },
       "path": "~/SilverProxy and FractalProxy"
+    },
+    {
+      "name": "DashOverlay",
+      "type": "overlay",
+      "sortid": 2080,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/client/screens/DashOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "DashOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 2081,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/DashOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "RTCDblock",
+      "type": "block",
+      "sortid": 2082,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtc_dblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/rtc_dblock.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/RTCDblockBlock.java",
+          "src/main/resources/assets/the_arg_container/models/item/rtc_dblock.json",
+          "src/main/resources/assets/the_arg_container/blockstates/rtc_dblock.json",
+          "src/main/resources/assets/the_arg_container/models/block/rtc_dblock.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "Glass3",
+      "type": "block",
+      "sortid": 2083,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Glass3Block.java",
+          "src/main/resources/assets/the_arg_container/models/item/glass_3.json",
+          "src/main/resources/assets/the_arg_container/models/block/glass_3.json",
+          "src/main/resources/assets/the_arg_container/blockstates/glass_3.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/glass_3.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "DebugAreaWall",
+      "type": "block",
+      "sortid": 2084,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_area_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/debug_area_wall.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/debug_area_wall.json",
+          "src/main/resources/assets/the_arg_container/blockstates/debug_area_wall.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/DebugAreaWallBlock.java",
+          "src/main/resources/assets/the_arg_container/models/item/debug_area_wall.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "DebugAreaFloor",
+      "type": "block",
+      "sortid": 2085,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_area_floor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/DebugAreaFloorBlock.java",
+          "src/main/resources/assets/the_arg_container/models/block/debug_area_floor.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/debug_area_floor.json",
+          "src/main/resources/assets/the_arg_container/models/item/debug_area_floor.json",
+          "src/main/resources/assets/the_arg_container/blockstates/debug_area_floor.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "Proj132Floor",
+      "type": "block",
+      "sortid": 2086,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proj_132_floor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/proj_132_floor.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/proj_132_floor.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/Proj132FloorBlock.java",
+          "src/main/resources/assets/the_arg_container/models/item/proj_132_floor.json",
+          "src/main/resources/assets/the_arg_container/blockstates/proj_132_floor.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "LongLegs",
+      "type": "livingentity",
+      "sortid": 2087,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_legs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/entity/LongLegsEntity.java",
+          "src/main/resources/assets/the_arg_container/models/item/long_legs_spawn_egg.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/client/renderer/LongLegsRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "RtcdDecorativeBlock",
+      "type": "block",
+      "sortid": 2088,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtcd_decorative_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/rtcd_decorative_block.json",
+          "src/main/resources/assets/the_arg_container/models/block/rtcd_decorative_block.json",
+          "src/main/resources/assets/the_arg_container/blockstates/rtcd_decorative_block.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/rtcd_decorative_block.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/RtcdDecorativeBlockBlock.java"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "RtcdDecorativeBlock1",
+      "type": "block",
+      "sortid": 2089,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtcd_decorative_block_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/rtcd_decorative_block_1.json",
+          "src/main/resources/assets/the_arg_container/blockstates/rtcd_decorative_block_1.json",
+          "src/main/resources/assets/the_arg_container/models/block/rtcd_decorative_block_1.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/RtcdDecorativeBlock1Block.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/rtcd_decorative_block_1.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "RtcdDecorativeBlock2",
+      "type": "block",
+      "sortid": 2090,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtcd_decorative_block_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/rtcd_decorative_block_2.json",
+          "src/main/resources/assets/the_arg_container/blockstates/rtcd_decorative_block_2.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/rtcd_decorative_block_2.json",
+          "src/main/resources/assets/the_arg_container/models/block/rtcd_decorative_block_2.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/RtcdDecorativeBlock2Block.java"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "RtcdWall",
+      "type": "block",
+      "sortid": 2091,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtcd_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/rtcd_wall.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/RtcdWallBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/rtcd_wall.json",
+          "src/main/resources/assets/the_arg_container/models/item/rtcd_wall.json",
+          "src/main/resources/assets/the_arg_container/blockstates/rtcd_wall.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "Ttcdconsole",
+      "type": "gui",
+      "sortid": 2093,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ttcdconsole",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/world/inventory/TtcdconsoleMenu.java",
+          "src/main/java/net/mcreator/minecraftalphaargmod/client/gui/TtcdconsoleScreen.java"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Code"
+    },
+    {
+      "name": "SwitchstepBricks",
+      "type": "block",
+      "sortid": 2094,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switchstep_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/blockstates/switchstep_bricks.json",
+          "src/main/resources/assets/the_arg_container/models/block/switchstep_bricks.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/switchstep_bricks.json",
+          "src/main/resources/assets/the_arg_container/models/item/switchstep_bricks.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/SwitchstepBricksBlock.java"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "WhiteLamp",
+      "type": "block",
+      "sortid": 2095,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_lamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/WhiteLampBlock.java",
+          "src/main/resources/assets/the_arg_container/models/item/white_lamp.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/white_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/white_lamp.json",
+          "src/main/resources/assets/the_arg_container/blockstates/white_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "GrayLamp",
+      "type": "block",
+      "sortid": 2097,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/blockstates/gray_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/gray_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/GrayLampBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/gray_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/gray_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "BrownLamp",
+      "type": "block",
+      "sortid": 2098,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/brown_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/BrownLampBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/brown_lamp.json",
+          "src/main/resources/assets/the_arg_container/blockstates/brown_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/brown_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "RedLamp",
+      "type": "block",
+      "sortid": 2099,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/red_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/red_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/RedLampBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/red_lamp.json",
+          "src/main/resources/assets/the_arg_container/blockstates/red_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "OrangeLamp",
+      "type": "block",
+      "sortid": 2100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/orange_lamp.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/orange_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/orange_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/OrangeLampBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/orange_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "YellowLamp",
+      "type": "block",
+      "sortid": 2101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_lamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/YellowLampBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/yellow_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/yellow_lamp.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/yellow_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/yellow_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "LimeLamp",
+      "type": "block",
+      "sortid": 2102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lime_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/blockstates/lime_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/lime_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/LimeLampBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/lime_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/lime_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "GreenLamp",
+      "type": "block",
+      "sortid": 2103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/green_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/green_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/green_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/GreenLampBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/green_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "CyanLamp",
+      "type": "block",
+      "sortid": 2104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyan_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/cyan_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/cyan_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/CyanLampBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/cyan_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/cyan_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "LightBlueLamp",
+      "type": "block",
+      "sortid": 2105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_blue_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/block/light_blue_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/light_blue_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/LightBlueLampBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/light_blue_lamp.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/light_blue_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "BlueLamp",
+      "type": "block",
+      "sortid": 2106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_lamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/BlueLampBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/blue_lamp.json",
+          "src/main/resources/assets/the_arg_container/blockstates/blue_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/blue_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/blue_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "PurpleLamp",
+      "type": "block",
+      "sortid": 2107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/models/item/purple_lamp.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/purple_lamp.json",
+          "src/main/resources/assets/the_arg_container/blockstates/purple_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PurpleLampBlock.java",
+          "src/main/resources/assets/the_arg_container/models/block/purple_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "MagentaLamp",
+      "type": "block",
+      "sortid": 2108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magenta_lamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/MagentaLampBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/magenta_lamp.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/magenta_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/magenta_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/magenta_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "PinkLamp",
+      "type": "block",
+      "sortid": 2109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_arg_container/blockstates/pink_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/block/pink_lamp.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/PinkLampBlock.java",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/pink_lamp.json",
+          "src/main/resources/assets/the_arg_container/models/item/pink_lamp.json"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
+    },
+    {
+      "name": "MinecraftRTCD",
+      "type": "tab",
+      "sortid": 2110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minecraft_rtcd",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Minecraft RT_CD"
+    },
+    {
+      "name": "VoidentityOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 2111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidentity_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/VoidentityOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RtcdConsole",
+      "type": "block",
+      "sortid": 2112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtcd_console",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/rtcd_console.json",
+          "src/main/resources/assets/the_arg_container/blockstates/rtcd_console.json",
+          "src/main/resources/assets/the_arg_container/models/item/rtcd_console.json",
+          "src/main/resources/assets/the_arg_container/models/block/rtcd_console.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/RtcdConsoleBlock.java"
+        ]
+      },
+      "path": "~/Minecraft RT_CD/Blocks"
     }
   ],
   "variable_elements": [
@@ -35425,6 +35967,15 @@
       "~CUSTOM:Oslab"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:RtcdConsole",
+      "~CUSTOM:SwitchstepBricks",
+      "~CUSTOM:RtcdWall",
+      "~CUSTOM:RtcdDecorativeBlock2",
+      "~CUSTOM:RtcdDecorativeBlock1",
+      "~CUSTOM:RtcdDecorativeBlock",
+      "~CUSTOM:Proj132Floor",
+      "~CUSTOM:DebugAreaFloor",
+      "~CUSTOM:DebugAreaWall",
       "~CUSTOM:TealQuartzFence",
       "~CUSTOM:AquaQuartzWall",
       "~CUSTOM:AquaQuartzStairs",
@@ -35648,6 +36199,20 @@
       "~CUSTOM:ObsidianBrick"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:PinkLamp",
+      "~CUSTOM:MagentaLamp",
+      "~CUSTOM:PurpleLamp",
+      "~CUSTOM:BlueLamp",
+      "~CUSTOM:LightBlueLamp",
+      "~CUSTOM:CyanLamp",
+      "~CUSTOM:GreenLamp",
+      "~CUSTOM:LimeLamp",
+      "~CUSTOM:YellowLamp",
+      "~CUSTOM:OrangeLamp",
+      "~CUSTOM:RedLamp",
+      "~CUSTOM:BrownLamp",
+      "~CUSTOM:GrayLamp",
+      "~CUSTOM:WhiteLamp",
       "~CUSTOM:CrackedWallBrock27",
       "~CUSTOM:SoftLimboCrown",
       "~CUSTOM:ClassicLimboCrown",
@@ -35924,6 +36489,30 @@
       "CUSTOM:HighwoodWorkbench"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:RtcdConsole",
+      "~CUSTOM:PinkLamp",
+      "~CUSTOM:MagentaLamp",
+      "~CUSTOM:PurpleLamp",
+      "~CUSTOM:BlueLamp",
+      "~CUSTOM:LightBlueLamp",
+      "~CUSTOM:CyanLamp",
+      "~CUSTOM:GreenLamp",
+      "~CUSTOM:LimeLamp",
+      "~CUSTOM:YellowLamp",
+      "~CUSTOM:OrangeLamp",
+      "~CUSTOM:RedLamp",
+      "~CUSTOM:BrownLamp",
+      "~CUSTOM:GrayLamp",
+      "~CUSTOM:WhiteLamp",
+      "~CUSTOM:SwitchstepBricks",
+      "~CUSTOM:RtcdWall",
+      "~CUSTOM:RtcdDecorativeBlock2",
+      "~CUSTOM:RtcdDecorativeBlock1",
+      "~CUSTOM:RtcdDecorativeBlock",
+      "~CUSTOM:Proj132Floor",
+      "~CUSTOM:DebugAreaFloor",
+      "~CUSTOM:DebugAreaWall",
+      "~CUSTOM:RTCDblock",
       "~CUSTOM:TealQuartzFence",
       "~CUSTOM:AquaQuartzWall",
       "~CUSTOM:AquaQuartzStairs",
@@ -36549,6 +37138,7 @@
       "~CUSTOM:PurpurForest"
     ],
     "BLOCKS:forge:needs_netherite_tool": [
+      "~CUSTOM:Unknown26",
       "~CUSTOM:ChatBlock",
       "~CUSTOM:DevBlock",
       "~CUSTOM:ChamberSustainers",
@@ -36591,6 +37181,7 @@
       "painting.minecraft_alpha_arg_mod.cat_3.title": "Cat",
       "painting.the_arg_container.light_beam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.debug_block_1": "Debug Block",
+      "block.the_arg_container.rtcd_decorative_block_2": "RT_CD Decorative Block",
       "painting.the_arg_container.quartet.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.nexus_test": "Nexus Beacon",
       "block.the_arg_container.slaize_190": "Slaize 19",
@@ -36598,6 +37189,7 @@
       "painting.minecraft_alpha_arg_mod.texture.title": "Texture",
       "block.the_arg_container.developer_portal": "Developer Portal",
       "block.minecraft_alpha_arg_mod.ijkl_communication_block": "IJKL Communication Block",
+      "block.the_arg_container.rtcd_decorative_block_1": "RT_CD Decorative Block",
       "painting.the_arg_container.rock.title": "Rock",
       "block.the_arg_container.limbopolished_slab": "Limbo Floor Slab",
       "item.the_arg_container.scythe": "Scythe",
@@ -36607,6 +37199,7 @@
       "block.the_arg_container.green_planks_stairs": "Green Planks",
       "block.the_arg_container.sun_decoration": "Sun Decoration",
       "item.the_arg_container.dbg_spawn_egg": "DBG Spawn Egg",
+      "block.the_arg_container.pink_lamp": "Magenta Lamp",
       "gui.minecraft_alpha_arg_mod.et_gui.button_confirm": "Confirm",
       "block.the_arg_container.void_tile": "Void Tile",
       "block.the_arg_container.gradient_leaves": "Gradient Leaves",
@@ -36632,6 +37225,7 @@
       "block.minecraft_alpha_arg_mod.snow_brick": "Snow Brick",
       "block.the_arg_container.marble_1": "Marble",
       "item.the_arg_container.clayton_m_634_base": "ClaytonM634 Base",
+      "gui.the_arg_container.ttcdconsole.Execute_protocol": "",
       "block.minecraft_alpha_arg_mod.soul_obsidian": "Soul Obsidian",
       "painting.minecraft_alpha_arg_mod.fog.title": "Fog",
       "item.the_arg_container.limbo_crystals": "Limbo Crystals",
@@ -36672,6 +37266,7 @@
       "block.the_arg_container.instigator_icon_block": "Instigator Icon Block",
       "block.the_arg_container.slaize_140": "Slaize 14",
       "block.the_arg_container.cresiah_spotted": "Cresiah [Spotted]",
+      "block.the_arg_container.magenta_lamp": "Purple Lamp",
       "item.the_arg_container.hiddenite_arrmor_armor_helmet": "HiddeniteArrmor Helmet",
       "block.the_arg_container.spring_grass_block": "Grass Block (Spring)",
       "block.the_arg_container.soul_sand": "Soul Sand",
@@ -36680,6 +37275,7 @@
       "block.the_arg_container.hub_slate_beacon": "Slate Beacon",
       "item.the_arg_container.lace_agate": "Lace Agate",
       "block.the_arg_container.slaize_100": "Slaize 10",
+      "block.the_arg_container.orange_lamp": "Red Lamp",
       "block.the_arg_container.frigid_trunk": "Frigid Trunk",
       "block.minecraft_alpha_arg_mod.creepers_heart": "Creepers Heart",
       "painting.the_arg_container.apple.title": "Apple",
@@ -36776,10 +37372,11 @@
       "block.minecraft_alpha_arg_mod.salt_bricks": "Salt Bricks",
       "item.minecraft_alpha_arg_mod.rock_beetle.desc": "[5] - RokkubitoruTune",
       "block.the_arg_container.half_soul_plushie": "Half Soul Plushie",
+      "item.the_arg_container.long_legs_spawn_egg": "Long Legs Spawn Egg",
       "block.the_arg_container.hub_ash_block_2": "Ash Grass",
-      "block.minecraft_alpha_arg_mod.soul_bookshelf": "Soul Bookshelf",
-      "painting.the_arg_container.global.title": "Global",
       "block.the_arg_container.void_pillar_1": "Void Pillar",
+      "painting.the_arg_container.global.title": "Global",
+      "block.minecraft_alpha_arg_mod.soul_bookshelf": "Soul Bookshelf",
       "block.minecraft_alpha_arg_mod.store_block_1_f": "Store Block",
       "block.the_arg_container.void_gem_ore": "Void Gem Ore",
       "painting.the_arg_container.orb_2.author": "Alpha 1.1.2.07",
@@ -36830,6 +37427,7 @@
       "effect.the_arg_container.curseof_user_0": "Curse of user0",
       "painting.the_arg_container.infiltration.title": "Infiltration",
       "block.the_arg_container.marble_pillar": "Marble Pillar",
+      "block.the_arg_container.red_lamp": "Brown Lamp",
       "item_group.the_arg_container.alpha": "Alphaver",
       "gui.the_arg_container.admin_space_gui.label_adminspace_console": "Adminspace Console",
       "painting.minecraft_alpha_arg_mod.gradient.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -36936,6 +37534,7 @@
       "gui.the_arg_container.ban_text.label_you_have_been_temporarily_banned": "You have been temporarily banned for violating our Online Play Guidelines!",
       "block.the_arg_container.compressed_static_portal": "Compressed Static Portal Block",
       "block.minecraft_alpha_arg_mod.hub_tile_yellow": "Yellow Hub Tile",
+      "gui.the_arg_container.ttcdconsole.button_leave": "Leave",
       "painting.minecraft_alpha_arg_mod.summit.title": "Summit",
       "painting.the_arg_container.distant.title": "Distant",
       "item.minecraft_alpha_arg_mod.pyrite": "Pyrite",
@@ -36985,6 +37584,7 @@
       "subtitles.find": "",
       "block.minecraft_alpha_arg_mod.psi_monitor": "Ψ Monitor",
       "painting.minecraft_alpha_arg_mod.parrot.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.the_arg_container.blue_lamp": "Light Blue Lamp",
       "block.the_arg_container.wall_tile_9": "Office Wall",
       "subtitles.desambrier": "",
       "painting.the_arg_container.windy_day.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -37001,6 +37601,7 @@
       "block.minecraft_alpha_arg_mod.efgh_communication_block": "EFGH Communication Block",
       "block.the_arg_container.flower_grass_block": "Grass Block",
       "gui.minecraft_alpha_arg_mod.safe_gui.button_input": "Input",
+      "item_group.the_arg_container.minecraft_rtcd": "Minecraft RT_CD Versions",
       "block.the_arg_container.abgrundground": "Abgrund Ground Block",
       "block.the_arg_container.weird_bricks": "Weird Bricks",
       "item.minecraft_alpha_arg_mod.lace_agate": "Lace Agate",
@@ -37028,6 +37629,7 @@
       "block.minecraft_alpha_arg_mod.ash_torch": "Ash Torch",
       "item.the_arg_container.icon": "ICON \u003e ÷",
       "painting.the_arg_container.doors_to_nexi.title": "DoorsToNexi",
+      "block.the_arg_container.purple_lamp": "Blue Lamp",
       "item_group.minecraft_alpha_arg_mod.ruby_alpha_void_dung": "Ruby Alpha Void Dung",
       "block.the_arg_container.void_support_varient": "Void Support Varient",
       "block.the_arg_container.limbo_cloud": "Limbo Cloud",
@@ -37099,6 +37701,7 @@
       "block.the_arg_container.wall_3": "Wall 3",
       "painting.minecraft_alpha_arg_mod.yggdrasil.title": "Yggdrasil",
       "block.minecraft_alpha_arg_mod.delta_end_sky": "Delta End Sky",
+      "block.the_arg_container.green_lamp": "Lime Lamp",
       "block.minecraft_alpha_arg_mod.perline_red_block": "Perline Red Block",
       "painting.minecraft_alpha_arg_mod.spamton.title": "Spamton",
       "block.the_arg_container.slaize_80": "Slaize 8",
@@ -37167,6 +37770,7 @@
       "block.the_arg_container.ultimacy_symbol_on_seltar": "Camera Symbol on Seltar",
       "block.minecraft_alpha_arg_mod.yz_01_communication_block": "YZ01 Communication Block",
       "painting.the_arg_container.fungus.title": "Fungus",
+      "block.the_arg_container.lime_lamp": "Yellow Lamp",
       "item.the_arg_container.negative_seven.desc": "negative seven",
       "block.the_arg_container.green_bricks_1": "Bricks (Spring)",
       "painting.minecraft_alpha_arg_mod.snow.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -37180,6 +37784,7 @@
       "painting.the_arg_container.pillars.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.plant.title": "Plant",
       "item.the_arg_container.denied.desc": "m00nlander - Denied",
+      "block.the_arg_container.debug_area_floor": "Debug Area Wall",
       "block.minecraft_alpha_arg_mod.hub_slate_beacon": "Slate Beacon",
       "painting.the_arg_container.tiled_surface.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.experiment_glass": "Experiment Glass",
@@ -37228,6 +37833,7 @@
       "block.minecraft_alpha_arg_mod.weapon_upgrader": "Weapon Upgrader",
       "block.the_arg_container.connector_rhombus": "Active Line",
       "block.the_arg_container.highwood_door": "Highwood Door",
+      "block.the_arg_container.yellow_lamp": "Orange Lamp",
       "block.the_arg_container.wallgp": "Wall",
       "painting.the_arg_container.pots_and_pans.author": "Alpha 1.1.2.07",
       "block.the_arg_container.vending_machine_dash_top": "Vending Machine (Dash)",
@@ -37439,6 +38045,7 @@
       "item.the_arg_container.icon_5": "ICON \u003e ×",
       "item.the_arg_container.icon_4": "ICON \u003e -",
       "item.the_arg_container.icon_3": "ICON \u003e ⚠",
+      "block.the_arg_container.switchstep_bricks": "Switchstep Bricks",
       "item.the_arg_container.icon_2": "ICON \u003e √",
       "item.the_arg_container.icon_1": "ICON \u003e ÷",
       "block.the_arg_container.efgh_communication_block": "EFGH Communication Block",
@@ -37483,6 +38090,7 @@
       "block.minecraft_alpha_arg_mod.unused_3": "§kUnused",
       "item_group.minecraft_alpha_arg_mod.john": "John ;)",
       "block.the_arg_container.essence_cache": "Essence Cache",
+      "block.the_arg_container.rtcd_wall": "Rtcd Wall",
       "painting.minecraft_alpha_arg_mod.poet.title": "Poet",
       "block.the_arg_container.dev_1_plushy": "Dev1 Plushie",
       "block.the_arg_container.soul_iron_block": "Soul Iron Block",
@@ -37627,6 +38235,7 @@
       "painting.the_arg_container.gradient.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.minecraft_alpha_arg_mod.infiltration.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.lr_iron": "Iron Ore",
+      "block.the_arg_container.cyan_lamp": "Green Lamp",
       "block.the_arg_container.architect_icon_block": "Architect Icon Block",
       "block.minecraft_alpha_arg_mod.white_mojang_block": "White Mojang Block",
       "painting.minecraft_alpha_arg_mod.magenta.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -37712,10 +38321,12 @@
       "painting.the_arg_container.empty_small.title": "Empty (Small)",
       "item.minecraft_alpha_arg_mod.ballerinaofthe_land.desc": "m00nlander - Ballerina of the LAND",
       "entity.the_arg_container.entity": "Entity",
+      "block.the_arg_container.white_lamp": "Prison Floor",
       "painting.minecraft_alpha_arg_mod.emil.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.magenta.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.low_wart": "Low Wart",
       "painting.the_arg_container.smoke.title": "Smoke",
+      "block.the_arg_container.rtcd_decorative_block": "RT_CD Decorative Block",
       "block.the_arg_container.debug_x": "DEBUG",
       "item.the_arg_container.space_time_dilator": "Space_time_dilator",
       "item.the_arg_container.hiddenite_tool_hoe": "HiddeniteTool Hoe",
@@ -37784,6 +38395,7 @@
       "block.minecraft_alpha_arg_mod.tile_stairs": "Tiles Stairs",
       "block.minecraft_alpha_arg_mod.minesweeper_mine": "Minesweeper Mine",
       "item.minecraft_alpha_arg_mod.downbeat_uplink": "Music Disc",
+      "block.the_arg_container.proj_132_floor": "Debug Area Floor",
       "block.minecraft_alpha_arg_mod.arg_fans": "Arg Fans Cube",
       "block.the_arg_container.brick_wall_stairs": "Brick Wall Stairs",
       "block.minecraft_alpha_arg_mod.hydrangea": "Hydrangea",
@@ -37803,6 +38415,7 @@
       "block.the_arg_container.nexus_disposal_sector": "Nexus Disposal Sector",
       "painting.the_arg_container.untoten.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "item.minecraft_alpha_arg_mod.flameberge": "Flameberge",
+      "gui.the_arg_container.ttcdconsole.button_launch": "LAUNCH!",
       "block.the_arg_container.cobbled_limestone": "Cobbled Limestone",
       "painting.minecraft_alpha_arg_mod.lost_paradise.title": "Lost Paradise",
       "painting.minecraft_alpha_arg_mod.blue.title": "Blue",
@@ -37985,6 +38598,7 @@
       "block.the_arg_container.ceiling_tile": "Ceiling Tile",
       "painting.the_arg_container.eye_2.author": "Alpha 1.1.2.07",
       "block.minecraft_alpha_arg_mod.soul_gold_ore": "Soul Gold Ore",
+      "block.the_arg_container.gray_lamp": "Light GrayLamp",
       "painting.the_arg_container.pattern.title": "Pattern",
       "block.minecraft_alpha_arg_mod.lilypad_112": "Lilypad",
       "block.the_arg_container.admin_space_glass": "Admin Space Glass",
@@ -38009,8 +38623,8 @@
       "block.minecraft_alpha_arg_mod.clinohumite_ore_1": "Clinohumite Ore",
       "block.minecraft_alpha_arg_mod.grate_block": "§kGrate §rBlock",
       "key.the_arg_container.dash": "Dash",
-      "item.the_arg_container.unused_item_1": "§kUnused Item",
       "painting.the_arg_container.atmosphere.title": "Atmosphere",
+      "item.the_arg_container.unused_item_1": "§kUnused Item",
       "block.minecraft_alpha_arg_mod.highwood_workbench": "Highwood Workbench",
       "item.the_arg_container.unused_item_4": "§kUnused Item",
       "item.the_arg_container.unused_item_5": "§kUnused Item",
@@ -38061,6 +38675,7 @@
       "block.the_arg_container.dark_bricks": "Mud Bricks",
       "block.minecraft_alpha_arg_mod.minesweeper_empty": "Minesweeper Empty",
       "block.the_arg_container.corridor_pillar": "Corridor Pillar",
+      "block.the_arg_container.rtc_dblock": "DBG Block",
       "block.the_arg_container.ceiling_lamp": "Ceiling Lamp",
       "painting.the_arg_container.light_beam.title": "LightBeam",
       "block.the_arg_container.caps_communication_block": "Caps Communication Block",
@@ -38387,7 +39002,6 @@
       "item.minecraft_alpha_arg_mod.recruiter_spawn_egg": "Recruiter Spawn Egg",
       "block.the_arg_container.squirming_organism": "Squirming Organism",
       "block.minecraft_alpha_arg_mod.bismuth_brick": "Bismuth Brick",
-      "gamerule.errorCrash": "Crash Manifesrarion Error",
       "painting.minecraft_alpha_arg_mod.erupt.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.soul_iron_ore": "Soul Iron Ore",
       "block.the_arg_container.gold_souler": "Gold Souler",
@@ -38463,6 +39077,7 @@
       "painting.minecraft_alpha_arg_mod.laptop.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.cubes.title": "Cubes",
       "block.the_arg_container.purpur_bricks": "Purpur Bricks",
+      "gui.the_arg_container.ttcdconsole.label_execute_protocol": "Execute protocol?",
       "entity.minecraft_alpha_arg_mod.recruiter": "Recruiter",
       "block.the_arg_container.ff_33d_5": "§kFf33d5",
       "painting.minecraft_alpha_arg_mod.exclamation_mark.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -38730,6 +39345,7 @@
       "item.the_arg_container.tester_bullet": "Tester Bullet",
       "block.the_arg_container.hallwayblock": "Hallway Block",
       "block.the_arg_container.soul_grass": "Soul Grass",
+      "block.the_arg_container.light_blue_lamp": "Cyan Lamp",
       "block.the_arg_container.living_void_grass": "Living Void Grass",
       "block.the_arg_container.red_planks": "Red Log",
       "item_group.the_arg_container.john": "John ;)",
@@ -39004,6 +39620,7 @@
       "block.the_arg_container.cut_lacuna_tile": "Cut Lacuna Tile",
       "block.minecraft_alpha_arg_mod.loop_plate": "Loop Plate",
       "block.minecraft_alpha_arg_mod.ruby_block": "Ruby Block",
+      "block.the_arg_container.brown_lamp": "Gray Lamp",
       "block.the_arg_container.unknownsymbol_3monitor": "Ⅱ Monitor",
       "painting.minecraft_alpha_arg_mod.someting.author": "Alpha 1.1.2.07",
       "block.the_arg_container.soul_obsidian": "Soul Obsidian",
@@ -39052,7 +39669,6 @@
       "painting.minecraft_alpha_arg_mod.no_c_plusplus.title": "No C++",
       "block.minecraft_alpha_arg_mod.yellow_grass_block": "Yellow Grass Block",
       "block.the_arg_container.noise_gem_closer_mini_tiles": "Noise Gem Mini Tiles",
-      "gamerule.errorCrash.description": "Enable/Disable crash when steping on a Manifesrarion Error Block",
       "item.the_arg_container.envelopment_diamond_armor_leggings": "Envelopment Diamond Leggings",
       "painting.the_arg_container.golden_skull.title": "Golden Skull",
       "painting.the_arg_container.windy_day.title": "Windy Day",
@@ -39106,6 +39722,7 @@
       "painting.the_arg_container.handdrawn_life.title": "Handdrawn Life",
       "painting.the_arg_container.empty.title": "Empty",
       "item.minecraft_alpha_arg_mod.rock_beetle": "Rock Beetle",
+      "block.the_arg_container.rtcd_console": "Console",
       "painting.minecraft_alpha_arg_mod.bird.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.qrst_communication_block": "QRST Communication Block",
       "block.minecraft_alpha_arg_mod.grass_block": "Grass Block",
@@ -39313,6 +39930,7 @@
       "block.the_arg_container.cut_marble": "Cut Marble",
       "block.the_arg_container.glass_2": "Glass",
       "block.the_arg_container.double_arrow_monitor": "《 Monitor",
+      "block.the_arg_container.glass_3": "Glass",
       "block.the_arg_container.yellow_planks_stairs": "Yellow Planks",
       "painting.minecraft_alpha_arg_mod.sunglass.title": "Sunglasses",
       "item.the_arg_container.steven_spawn_egg": "Steven Spawn Egg",
@@ -39385,6 +40003,7 @@
       "subtitles.glass": "",
       "block.the_arg_container.blue_keepers_chiseled_block": "Blue Keepers Chiseled Block",
       "painting.minecraft_alpha_arg_mod.kitten.title": "Kitten",
+      "entity.the_arg_container.long_legs": "Long Legs",
       "painting.the_arg_container.decated.title": "Missing",
       "painting.the_arg_container.sunglass.title": "Sunglasses",
       "item.the_arg_container.server_drive": "Server Drive",
@@ -39422,6 +40041,7 @@
       "item.minecraft_alpha_arg_mod.downbeat_uplink.desc": "[5] - Downbeat Uplink",
       "painting.the_arg_container.dark_lilac.title": "Decayed",
       "painting.the_arg_container.vermin.title": "Vermin",
+      "block.the_arg_container.debug_area_wall": "Debug Area Wall",
       "item.minecraft_alpha_arg_mod.find.desc": "Find",
       "painting.the_arg_container.nightfall.title": "Nightfall",
       "item.minecraft_alpha_arg_mod.gray_gun": "Gray Gun",
@@ -39717,6 +40337,7 @@
       "painting.minecraft_alpha_arg_mod.cat_3.title": "Cat",
       "painting.the_arg_container.light_beam.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.debug_block_1": "Debug Block",
+      "block.the_arg_container.rtcd_decorative_block_2": "RT_CD Decorative Block",
       "painting.the_arg_container.quartet.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.nexus_test": "Nexus Beacon",
       "block.the_arg_container.slaize_190": "Slaize 19",
@@ -39724,6 +40345,7 @@
       "painting.minecraft_alpha_arg_mod.texture.title": "Texture",
       "block.the_arg_container.developer_portal": "Developer Portal",
       "block.minecraft_alpha_arg_mod.ijkl_communication_block": "IJKL Communication Block",
+      "block.the_arg_container.rtcd_decorative_block_1": "RT_CD Decorative Block",
       "painting.the_arg_container.rock.title": "Rock",
       "block.the_arg_container.limbopolished_slab": "Polished Limbo Slab",
       "item.the_arg_container.scythe": "Scythe",
@@ -39733,6 +40355,7 @@
       "block.the_arg_container.green_planks_stairs": "Green Planks Stairs",
       "block.the_arg_container.sun_decoration": "Sun Decoration",
       "item.the_arg_container.dbg_spawn_egg": "DBG Spawn Egg",
+      "block.the_arg_container.pink_lamp": "Pink Lamp",
       "gui.minecraft_alpha_arg_mod.et_gui.button_confirm": "Confirm",
       "block.the_arg_container.void_tile": "Void Tile",
       "block.the_arg_container.gradient_leaves": "Gradient Leaves",
@@ -39758,6 +40381,7 @@
       "block.minecraft_alpha_arg_mod.snow_brick": "Snow Brick",
       "block.the_arg_container.marble_1": "Marble",
       "item.the_arg_container.clayton_m_634_base": "ClaytonM634 (Clayton\u0027s base)",
+      "gui.the_arg_container.ttcdconsole.Execute_protocol": "",
       "block.minecraft_alpha_arg_mod.soul_obsidian": "Soul Obsidian",
       "painting.minecraft_alpha_arg_mod.fog.title": "Fog",
       "item.the_arg_container.limbo_crystals": "Limbo Crystals",
@@ -39798,6 +40422,7 @@
       "block.the_arg_container.instigator_icon_block": "Instigator Icon Block",
       "block.the_arg_container.slaize_140": "Slaize 14",
       "block.the_arg_container.cresiah_spotted": "Cresiah [Spotted]",
+      "block.the_arg_container.magenta_lamp": "Magenta Lamp",
       "item.the_arg_container.hiddenite_arrmor_armor_helmet": "Hiddenite Helmet",
       "block.the_arg_container.spring_grass_block": "Grass Block (Spring)",
       "block.the_arg_container.soul_sand": "Soul Sand",
@@ -39806,6 +40431,7 @@
       "block.the_arg_container.hub_slate_beacon": "Slate Beacon",
       "item.the_arg_container.lace_agate": "Lace Agate",
       "block.the_arg_container.slaize_100": "Slaize 10",
+      "block.the_arg_container.orange_lamp": "Orange Lamp",
       "block.the_arg_container.frigid_trunk": "Frigid Trunk",
       "block.minecraft_alpha_arg_mod.creepers_heart": "Creepers Heart",
       "painting.the_arg_container.apple.title": "Apple",
@@ -39902,10 +40528,11 @@
       "block.minecraft_alpha_arg_mod.salt_bricks": "Salt Bricks",
       "item.minecraft_alpha_arg_mod.rock_beetle.desc": "[5] - RokkubitoruTune",
       "block.the_arg_container.half_soul_plushie": "Half Soul Plushie",
+      "item.the_arg_container.long_legs_spawn_egg": "Long Legs Spawn Egg",
       "block.the_arg_container.hub_ash_block_2": "Ash Grass",
-      "block.minecraft_alpha_arg_mod.soul_bookshelf": "Soul Bookshelf",
-      "painting.the_arg_container.global.title": "Global",
       "block.the_arg_container.void_pillar_1": "Void Pillar",
+      "painting.the_arg_container.global.title": "Global",
+      "block.minecraft_alpha_arg_mod.soul_bookshelf": "Soul Bookshelf",
       "block.minecraft_alpha_arg_mod.store_block_1_f": "Store Block",
       "block.the_arg_container.void_gem_ore": "Void Gem Ore",
       "painting.the_arg_container.orb_2.author": "Alpha 1.1.2.07",
@@ -39956,6 +40583,7 @@
       "effect.the_arg_container.curseof_user_0": "Curse of user0",
       "painting.the_arg_container.infiltration.title": "Infiltration",
       "block.the_arg_container.marble_pillar": "Marble Pillar",
+      "block.the_arg_container.red_lamp": "Red Lamp",
       "item_group.the_arg_container.alpha": "Alphaver",
       "gui.the_arg_container.admin_space_gui.label_adminspace_console": "Adminspace Console",
       "painting.minecraft_alpha_arg_mod.gradient.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -40062,6 +40690,7 @@
       "gui.the_arg_container.ban_text.label_you_have_been_temporarily_banned": "You have been temporarily banned for violating our Online Play Guidelines!",
       "block.the_arg_container.compressed_static_portal": "Compressed Static Portal Block",
       "block.minecraft_alpha_arg_mod.hub_tile_yellow": "Yellow Hub Tile",
+      "gui.the_arg_container.ttcdconsole.button_leave": "Leave",
       "painting.minecraft_alpha_arg_mod.summit.title": "Summit",
       "painting.the_arg_container.distant.title": "Distant",
       "item.minecraft_alpha_arg_mod.pyrite": "Pyrite",
@@ -40111,6 +40740,7 @@
       "subtitles.find": "",
       "block.minecraft_alpha_arg_mod.psi_monitor": "Ψ Monitor",
       "painting.minecraft_alpha_arg_mod.parrot.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "block.the_arg_container.blue_lamp": "Blue Lamp",
       "block.the_arg_container.wall_tile_9": "Wall Tile",
       "subtitles.desambrier": "",
       "painting.the_arg_container.windy_day.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -40127,6 +40757,7 @@
       "block.minecraft_alpha_arg_mod.efgh_communication_block": "EFGH Communication Block",
       "block.the_arg_container.flower_grass_block": "Grass Block",
       "gui.minecraft_alpha_arg_mod.safe_gui.button_input": "Input",
+      "item_group.the_arg_container.minecraft_rtcd": "Minecraft RT_CD Versions",
       "block.the_arg_container.abgrundground": "Abgrund Ground Block",
       "block.the_arg_container.weird_bricks": "Weird Bricks",
       "item.minecraft_alpha_arg_mod.lace_agate": "Lace Agate",
@@ -40154,6 +40785,7 @@
       "block.minecraft_alpha_arg_mod.ash_torch": "Ash Torch",
       "item.the_arg_container.icon": "ICON \u003e ÷",
       "painting.the_arg_container.doors_to_nexi.title": "DoorsToNexi",
+      "block.the_arg_container.purple_lamp": "Purple Lamp",
       "item_group.minecraft_alpha_arg_mod.ruby_alpha_void_dung": "Ruby Alpha Void Dung",
       "block.the_arg_container.void_support_varient": "Void Support Varient 1",
       "block.the_arg_container.limbo_cloud": "Limbo Cloud",
@@ -40225,6 +40857,7 @@
       "block.the_arg_container.wall_3": "Wall 3",
       "painting.minecraft_alpha_arg_mod.yggdrasil.title": "Yggdrasil",
       "block.minecraft_alpha_arg_mod.delta_end_sky": "Delta End Sky",
+      "block.the_arg_container.green_lamp": "Green Lamp",
       "block.minecraft_alpha_arg_mod.perline_red_block": "Perline Red Block",
       "painting.minecraft_alpha_arg_mod.spamton.title": "Spamton",
       "block.the_arg_container.slaize_80": "Slaize 8",
@@ -40293,6 +40926,7 @@
       "block.the_arg_container.ultimacy_symbol_on_seltar": "Ultimacy Symbol on Seltar",
       "block.minecraft_alpha_arg_mod.yz_01_communication_block": "YZ01 Communication Block",
       "painting.the_arg_container.fungus.title": "Fungus",
+      "block.the_arg_container.lime_lamp": "Lime Lamp",
       "item.the_arg_container.negative_seven.desc": "negative seven",
       "block.the_arg_container.green_bricks_1": "Bricks (Spring)",
       "painting.minecraft_alpha_arg_mod.snow.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -40306,6 +40940,7 @@
       "painting.the_arg_container.pillars.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.plant.title": "Plant",
       "item.the_arg_container.denied.desc": "m00nlander - Denied",
+      "block.the_arg_container.debug_area_floor": "Debug Area Floor",
       "block.minecraft_alpha_arg_mod.hub_slate_beacon": "Slate Beacon",
       "painting.the_arg_container.tiled_surface.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.experiment_glass": "Experiment Glass",
@@ -40354,6 +40989,7 @@
       "block.minecraft_alpha_arg_mod.weapon_upgrader": "Weapon Upgrader",
       "block.the_arg_container.connector_rhombus": "Connector Rhombus",
       "block.the_arg_container.highwood_door": "Highwood Door",
+      "block.the_arg_container.yellow_lamp": "Yellow Lamp",
       "block.the_arg_container.wallgp": "Wall",
       "painting.the_arg_container.pots_and_pans.author": "Alpha 1.1.2.07",
       "block.the_arg_container.vending_machine_dash_top": "Vending Machine (Dash)",
@@ -40565,6 +41201,7 @@
       "item.the_arg_container.icon_5": "ICON \u003e Niel | 🗲",
       "item.the_arg_container.icon_4": "ICON \u003e ×",
       "item.the_arg_container.icon_3": "ICON \u003e -",
+      "block.the_arg_container.switchstep_bricks": "Gray Bricks",
       "item.the_arg_container.icon_2": "ICON \u003e ⚠",
       "item.the_arg_container.icon_1": "ICON \u003e √",
       "block.the_arg_container.efgh_communication_block": "EFGH Communication Block",
@@ -40609,6 +41246,7 @@
       "block.minecraft_alpha_arg_mod.unused_3": "§kUnused",
       "item_group.minecraft_alpha_arg_mod.john": "John ;)",
       "block.the_arg_container.essence_cache": "Essence Cache",
+      "block.the_arg_container.rtcd_wall": "Rtcd Wall",
       "painting.minecraft_alpha_arg_mod.poet.title": "Poet",
       "block.the_arg_container.dev_1_plushy": "Dev1 Plushie",
       "block.the_arg_container.soul_iron_block": "Soul Iron Block",
@@ -40753,6 +41391,7 @@
       "painting.the_arg_container.gradient.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.minecraft_alpha_arg_mod.infiltration.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.lr_iron": "Iron Ore",
+      "block.the_arg_container.cyan_lamp": "Cyan Lamp",
       "block.the_arg_container.architect_icon_block": "Architect Icon Block",
       "block.minecraft_alpha_arg_mod.white_mojang_block": "White Mojang Block",
       "painting.minecraft_alpha_arg_mod.magenta.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -40838,10 +41477,12 @@
       "painting.the_arg_container.empty_small.title": "Empty (Small)",
       "item.minecraft_alpha_arg_mod.ballerinaofthe_land.desc": "m00nlander - Ballerina of the LAND",
       "entity.the_arg_container.entity": "Entity",
+      "block.the_arg_container.white_lamp": "White Lamp",
       "painting.minecraft_alpha_arg_mod.emil.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.magenta.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.low_wart": "Low Wart",
       "painting.the_arg_container.smoke.title": "Smoke",
+      "block.the_arg_container.rtcd_decorative_block": "RT_CD Decorative Block",
       "block.the_arg_container.debug_x": "DEBUG",
       "item.the_arg_container.space_time_dilator": "Space_time_dilator",
       "item.the_arg_container.hiddenite_tool_hoe": "Hiddenite Hoe",
@@ -40910,6 +41551,7 @@
       "block.minecraft_alpha_arg_mod.tile_stairs": "Tiles Stairs",
       "block.minecraft_alpha_arg_mod.minesweeper_mine": "Minesweeper Mine",
       "item.minecraft_alpha_arg_mod.downbeat_uplink": "Music Disc",
+      "block.the_arg_container.proj_132_floor": "Prison Floor",
       "block.minecraft_alpha_arg_mod.arg_fans": "Arg Fans Cube",
       "block.the_arg_container.brick_wall_stairs": "Brick Wall Stairs",
       "block.minecraft_alpha_arg_mod.hydrangea": "Hydrangea",
@@ -40929,6 +41571,7 @@
       "block.the_arg_container.nexus_disposal_sector": "Nexus Disposal Sector",
       "painting.the_arg_container.untoten.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "item.minecraft_alpha_arg_mod.flameberge": "Flameberge",
+      "gui.the_arg_container.ttcdconsole.button_launch": "LAUNCH!",
       "block.the_arg_container.cobbled_limestone": "Cobbled Limestone",
       "painting.minecraft_alpha_arg_mod.lost_paradise.title": "Lost Paradise",
       "painting.minecraft_alpha_arg_mod.blue.title": "Blue",
@@ -41111,6 +41754,7 @@
       "block.the_arg_container.ceiling_tile": "Ceiling Tile",
       "painting.the_arg_container.eye_2.author": "Alpha 1.1.2.07",
       "block.minecraft_alpha_arg_mod.soul_gold_ore": "Soul Gold Ore",
+      "block.the_arg_container.gray_lamp": "Gray Lamp",
       "painting.the_arg_container.pattern.title": "Pattern",
       "block.minecraft_alpha_arg_mod.lilypad_112": "Lilypad",
       "block.the_arg_container.admin_space_glass": "Admin Space Glass",
@@ -41135,8 +41779,8 @@
       "block.minecraft_alpha_arg_mod.clinohumite_ore_1": "Clinohumite Ore",
       "block.minecraft_alpha_arg_mod.grate_block": "§kGrate §rBlock",
       "key.the_arg_container.dash": "Dash",
-      "item.the_arg_container.unused_item_1": "§kUnused Item",
       "painting.the_arg_container.atmosphere.title": "Atmosphere",
+      "item.the_arg_container.unused_item_1": "§kUnused Item",
       "block.minecraft_alpha_arg_mod.highwood_workbench": "Highwood Workbench",
       "item.the_arg_container.unused_item_4": "§kUnused Item",
       "item.the_arg_container.unused_item_5": "§kUnused Item",
@@ -41187,6 +41831,7 @@
       "block.the_arg_container.dark_bricks": "Mud Bricks",
       "block.minecraft_alpha_arg_mod.minesweeper_empty": "Minesweeper Empty",
       "block.the_arg_container.corridor_pillar": "Corridor Pillar",
+      "block.the_arg_container.rtc_dblock": "RTCD Block",
       "block.the_arg_container.ceiling_lamp": "Ceiling Lamp",
       "painting.the_arg_container.light_beam.title": "LightBeam",
       "block.the_arg_container.caps_communication_block": "Caps Communication Block",
@@ -41513,7 +42158,6 @@
       "item.minecraft_alpha_arg_mod.recruiter_spawn_egg": "Recruiter Spawn Egg",
       "block.the_arg_container.squirming_organism": "Squirming Organism",
       "block.minecraft_alpha_arg_mod.bismuth_brick": "Bismuth Brick",
-      "gamerule.errorCrash": "Crash Manifesrarion Error",
       "painting.minecraft_alpha_arg_mod.erupt.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.soul_iron_ore": "Soul Iron Ore",
       "block.the_arg_container.gold_souler": "Gold Souler",
@@ -41589,6 +42233,7 @@
       "painting.minecraft_alpha_arg_mod.laptop.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "painting.the_arg_container.cubes.title": "Cubes",
       "block.the_arg_container.purpur_bricks": "Purpur Bricks",
+      "gui.the_arg_container.ttcdconsole.label_execute_protocol": "Execute protocol?",
       "entity.minecraft_alpha_arg_mod.recruiter": "Recruiter",
       "block.the_arg_container.ff_33d_5": "§kFf33d5",
       "painting.minecraft_alpha_arg_mod.exclamation_mark.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
@@ -41856,6 +42501,7 @@
       "item.the_arg_container.tester_bullet": "Tester Bullet",
       "block.the_arg_container.hallwayblock": "Hallway Block",
       "block.the_arg_container.soul_grass": "Soul Grass",
+      "block.the_arg_container.light_blue_lamp": "Light Blue Lamp",
       "block.the_arg_container.living_void_grass": "Living Void Grass",
       "block.the_arg_container.red_planks": "Red Planks",
       "item_group.the_arg_container.john": "John ;)",
@@ -42057,7 +42703,7 @@
       "block.the_arg_container.bluewire_block": "Blue Wire",
       "block.the_arg_container.redlight": "Redlight",
       "block.the_arg_container.unknown_25": "Ash block",
-      "block.the_arg_container.unknown_26": "Purple Bedrock Ore",
+      "block.the_arg_container.unknown_26": "Purple Bedrock Ore (Decorative)",
       "painting.minecraft_alpha_arg_mod.summit.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.the_arg_container.unknown_20": "Aurora",
       "block.the_arg_container.unknown_21": "Light Stone Block",
@@ -42130,6 +42776,7 @@
       "block.the_arg_container.cut_lacuna_tile": "Cut Lacuna Tile",
       "block.minecraft_alpha_arg_mod.loop_plate": "Loop Plate",
       "block.minecraft_alpha_arg_mod.ruby_block": "Ruby Block",
+      "block.the_arg_container.brown_lamp": "Brown Lamp",
       "block.the_arg_container.unknownsymbol_3monitor": "Ⅱ Monitor",
       "painting.minecraft_alpha_arg_mod.someting.author": "Alpha 1.1.2.07",
       "block.the_arg_container.soul_obsidian": "Soul Obsidian",
@@ -42178,7 +42825,6 @@
       "painting.minecraft_alpha_arg_mod.no_c_plusplus.title": "No C++",
       "block.minecraft_alpha_arg_mod.yellow_grass_block": "Yellow Grass Block",
       "block.the_arg_container.noise_gem_closer_mini_tiles": "Noise Gem Closer Mini Tiles",
-      "gamerule.errorCrash.description": "Enable/Disable crash when steping on a Manifesrarion Error Block",
       "item.the_arg_container.envelopment_diamond_armor_leggings": "Envelopment Diamond Leggings",
       "painting.the_arg_container.golden_skull.title": "Golden Skull",
       "painting.the_arg_container.windy_day.title": "Windy Day",
@@ -42232,6 +42878,7 @@
       "painting.the_arg_container.handdrawn_life.title": "Handdrawn Life",
       "painting.the_arg_container.empty.title": "Empty",
       "item.minecraft_alpha_arg_mod.rock_beetle": "Rock Beetle",
+      "block.the_arg_container.rtcd_console": "Console",
       "painting.minecraft_alpha_arg_mod.bird.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
       "block.minecraft_alpha_arg_mod.qrst_communication_block": "QRST Communication Block",
       "block.minecraft_alpha_arg_mod.grass_block": "Grass Block",
@@ -42439,6 +43086,7 @@
       "block.the_arg_container.cut_marble": "Cut Marble",
       "block.the_arg_container.glass_2": "Glass",
       "block.the_arg_container.double_arrow_monitor": "《 Monitor",
+      "block.the_arg_container.glass_3": "Glass",
       "block.the_arg_container.yellow_planks_stairs": "Yellow Planks Stairs",
       "painting.minecraft_alpha_arg_mod.sunglass.title": "Sunglasses",
       "item.the_arg_container.steven_spawn_egg": "Steven Spawn Egg",
@@ -42511,6 +43159,7 @@
       "subtitles.glass": "",
       "block.the_arg_container.blue_keepers_chiseled_block": "Blue Keepers Chiseled Block",
       "painting.minecraft_alpha_arg_mod.kitten.title": "Kitten",
+      "entity.the_arg_container.long_legs": "Long Legs",
       "painting.the_arg_container.decated.title": "Decayed",
       "painting.the_arg_container.sunglass.title": "Sunglasses",
       "item.the_arg_container.server_drive": "Server Drive",
@@ -42548,6 +43197,7 @@
       "item.minecraft_alpha_arg_mod.downbeat_uplink.desc": "[5] - Downbeat Uplink",
       "painting.the_arg_container.dark_lilac.title": "Decayed Lilac",
       "painting.the_arg_container.vermin.title": "Vermin",
+      "block.the_arg_container.debug_area_wall": "Debug Area Wall",
       "item.minecraft_alpha_arg_mod.find.desc": "Find",
       "painting.the_arg_container.nightfall.title": "Nightfall",
       "item.minecraft_alpha_arg_mod.gray_gun": "Gray Gun",
@@ -43241,12 +43891,21 @@
           {
             "name": "Blocks",
             "children": []
+          },
+          {
+            "name": "Code",
+            "children": []
           }
         ]
       },
       {
         "name": "Project R.S.T.C.",
-        "children": []
+        "children": [
+          {
+            "name": "Blocks",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Dev and helpers",

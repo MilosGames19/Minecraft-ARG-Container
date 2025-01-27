@@ -12,6 +12,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.WarningMenu;
+import net.mcreator.minecraftalphaargmod.world.inventory.TtcdconsoleMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.TerminalGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.ServerGuIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.SafeGUIMenu;
@@ -47,4 +48,5 @@ public class TheArgContainerModMenus {
 	public static final RegistryObject<MenuType<WarningMenu>> WARNING = REGISTRY.register("warning", () -> IForgeMenuType.create(WarningMenu::new));
 	public static final RegistryObject<MenuType<DevChatGUIMenu>> DEV_CHAT_GUI = REGISTRY.register("dev_chat_gui", () -> IForgeMenuType.create(DevChatGUIMenu::new));
 	public static final RegistryObject<MenuType<BallsOnlineGuiMenu>> BALLS_ONLINE_GUI = REGISTRY.register("balls_online_gui", () -> IForgeMenuType.create(BallsOnlineGuiMenu::new));
+	public static final RegistryObject<MenuType<TtcdconsoleMenu>> TTCDCONSOLE = REGISTRY.register("ttcdconsole", () -> IForgeMenuType.create(TtcdconsoleMenu::new));
 }
