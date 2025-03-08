@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "the_arg_container:purpur_forest",
+  "spawners": {
+    "type": "the_arg_container:void_entity_geckolib",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

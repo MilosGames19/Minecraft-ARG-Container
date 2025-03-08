@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.minecraftalphaargmod.entity.VoidentityEntity;
+import net.mcreator.minecraftalphaargmod.entity.VoidEntityGeckolibEntity;
 import net.mcreator.minecraftalphaargmod.entity.User0CloneEntity;
 import net.mcreator.minecraftalphaargmod.entity.StevenEntity;
 import net.mcreator.minecraftalphaargmod.entity.SpearProjectileEntity;
@@ -49,7 +50,7 @@ public class TheArgContainerModEntities {
 	public static final RegistryObject<EntityType<GiantEntity>> GIANT = register("giant",
 			EntityType.Builder.<GiantEntity>of(GiantEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GiantEntity::new)
 
-					.sized(3f, 12f));
+					.sized(3f, 6f));
 	public static final RegistryObject<EntityType<SoulEntityEntity>> SOUL_ENTITY = register("soul_entity",
 			EntityType.Builder.<SoulEntityEntity>of(SoulEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SoulEntityEntity::new)
 
@@ -102,6 +103,10 @@ public class TheArgContainerModEntities {
 			EntityType.Builder.<LongLegsEntity>of(LongLegsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LongLegsEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<VoidEntityGeckolibEntity>> VOID_ENTITY_GECKOLIB = register("void_entity_geckolib",
+			EntityType.Builder.<VoidEntityGeckolibEntity>of(VoidEntityGeckolibEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VoidEntityGeckolibEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -124,6 +129,7 @@ public class TheArgContainerModEntities {
 			VoidentityEntity.init();
 			PigEntity.init();
 			LongLegsEntity.init();
+			VoidEntityGeckolibEntity.init();
 		});
 	}
 
@@ -143,5 +149,6 @@ public class TheArgContainerModEntities {
 		event.put(VOIDENTITY.get(), VoidentityEntity.createAttributes().build());
 		event.put(PIG.get(), PigEntity.createAttributes().build());
 		event.put(LONG_LEGS.get(), LongLegsEntity.createAttributes().build());
+		event.put(VOID_ENTITY_GECKOLIB.get(), VoidEntityGeckolibEntity.createAttributes().build());
 	}
 }

@@ -59,7 +59,7 @@ public class ScytheItem extends Item implements GeoItem {
 	private PlayState idlePredicate(AnimationState event) {
 		if (this.transformType != null ? true : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.model.idk"));
+				event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.scythe.no"));
 				return PlayState.CONTINUE;
 			}
 		}

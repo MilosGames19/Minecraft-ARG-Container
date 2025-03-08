@@ -250,6 +250,8 @@ import net.mcreator.minecraftalphaargmod.block.TBOTVBricksBlock;
 import net.mcreator.minecraftalphaargmod.block.SymbolOfSeltarBlock;
 import net.mcreator.minecraftalphaargmod.block.SyllablesPlateBlock;
 import net.mcreator.minecraftalphaargmod.block.SwitchstepBricksBlock;
+import net.mcreator.minecraftalphaargmod.block.SwitchStepTileBlock;
+import net.mcreator.minecraftalphaargmod.block.SwitchStepChiseledBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.SwitchPlateBlock;
 import net.mcreator.minecraftalphaargmod.block.SunbornFlowerTopazBlock;
 import net.mcreator.minecraftalphaargmod.block.SunDecorationBlock;
@@ -603,6 +605,7 @@ import net.mcreator.minecraftalphaargmod.block.MoonBlock1Block;
 import net.mcreator.minecraftalphaargmod.block.MonitorBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.MonitorBlock;
 import net.mcreator.minecraftalphaargmod.block.Monitor24Block;
+import net.mcreator.minecraftalphaargmod.block.MojangTileBlock;
 import net.mcreator.minecraftalphaargmod.block.MojangLogoBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.MojangBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.MissingDBGBlockBlock;
@@ -867,6 +870,7 @@ import net.mcreator.minecraftalphaargmod.block.GlitchedStructurePointBlock;
 import net.mcreator.minecraftalphaargmod.block.GlassBricksBlock;
 import net.mcreator.minecraftalphaargmod.block.GlassBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.GlassBlock;
+import net.mcreator.minecraftalphaargmod.block.Glass4Block;
 import net.mcreator.minecraftalphaargmod.block.Glass3Block;
 import net.mcreator.minecraftalphaargmod.block.Glass2Block;
 import net.mcreator.minecraftalphaargmod.block.Glass1Block;
@@ -2508,6 +2512,10 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> MAGENTA_LAMP = REGISTRY.register("magenta_lamp", () -> new MagentaLampBlock());
 	public static final RegistryObject<Block> PINK_LAMP = REGISTRY.register("pink_lamp", () -> new PinkLampBlock());
 	public static final RegistryObject<Block> RTCD_CONSOLE = REGISTRY.register("rtcd_console", () -> new RtcdConsoleBlock());
+	public static final RegistryObject<Block> GLASS_4 = REGISTRY.register("glass_4", () -> new Glass4Block());
+	public static final RegistryObject<Block> SWITCH_STEP_TILE = REGISTRY.register("switch_step_tile", () -> new SwitchStepTileBlock());
+	public static final RegistryObject<Block> SWITCH_STEP_CHISELED_BLOCK = REGISTRY.register("switch_step_chiseled_block", () -> new SwitchStepChiseledBlockBlock());
+	public static final RegistryObject<Block> MOJANG_TILE = REGISTRY.register("mojang_tile", () -> new MojangTileBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

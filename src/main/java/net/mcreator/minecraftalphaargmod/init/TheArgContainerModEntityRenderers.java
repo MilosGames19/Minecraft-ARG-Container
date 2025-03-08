@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.minecraftalphaargmod.client.renderer.VoidentityRenderer;
+import net.mcreator.minecraftalphaargmod.client.renderer.VoidEntityGeckolibRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.User0CloneRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.StevenRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SpearProjectileRenderer;
@@ -52,5 +53,6 @@ public class TheArgContainerModEntityRenderers {
 		event.registerEntityRenderer(TheArgContainerModEntities.PIG.get(), PigRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.PARTI_BULLET.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.LONG_LEGS.get(), LongLegsRenderer::new);
+		event.registerEntityRenderer(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB.get(), VoidEntityGeckolibRenderer::new);
 	}
 }

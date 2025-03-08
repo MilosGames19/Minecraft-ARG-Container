@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Collosal",
     "mobLabel": "",
-    "mobModelName": "Biped",
+    "mobModelName": "ModelZombieModel",
     "mobModelTexture": "giant.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -16,15 +16,15 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 12.0
+      "fixedValue": 6.0
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 3.0,
-    "modelHeight": 12.0,
-    "modelShadowSize": 3.0,
+    "modelHeight": 6.0,
+    "modelShadowSize": 0.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {

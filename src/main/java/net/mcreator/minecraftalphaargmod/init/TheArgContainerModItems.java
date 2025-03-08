@@ -163,8 +163,6 @@ import net.mcreator.minecraftalphaargmod.item.ContrInfestasMultitoolItem;
 import net.mcreator.minecraftalphaargmod.item.ContrInfestasBladeItem;
 import net.mcreator.minecraftalphaargmod.item.CondemnedItem;
 import net.mcreator.minecraftalphaargmod.item.ClinohumiteItem;
-import net.mcreator.minecraftalphaargmod.item.ClaytonM634TheCoreHouseItem;
-import net.mcreator.minecraftalphaargmod.item.ClaytonM634BaseItem;
 import net.mcreator.minecraftalphaargmod.item.CatThemeItem;
 import net.mcreator.minecraftalphaargmod.item.CandyIceItem;
 import net.mcreator.minecraftalphaargmod.item.BlatteaShardItem;
@@ -1557,8 +1555,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> NICKNAME_PLUSHIE = block(TheArgContainerModBlocks.NICKNAME_PLUSHIE);
 	public static final RegistryObject<Item> DIVIDED_PLUSHIE = block(TheArgContainerModBlocks.DIVIDED_PLUSHIE);
 	public static final RegistryObject<Item> STRUCTURE_BUILDER = block(TheArgContainerModBlocks.STRUCTURE_BUILDER);
-	public static final RegistryObject<Item> CLAYTON_M_634_BASE = REGISTRY.register("clayton_m_634_base", () -> new ClaytonM634BaseItem());
-	public static final RegistryObject<Item> CLAYTON_M_634_THE_CORE_HOUSE = REGISTRY.register("clayton_m_634_the_core_house", () -> new ClaytonM634TheCoreHouseItem());
 	public static final RegistryObject<Item> DEV_BLOCK = block(TheArgContainerModBlocks.DEV_BLOCK);
 	public static final RegistryObject<Item> DEV_WALL_BLOCK = block(TheArgContainerModBlocks.DEV_WALL_BLOCK);
 	public static final RegistryObject<Item> CHAT_BLOCK = block(TheArgContainerModBlocks.CHAT_BLOCK);
@@ -1627,6 +1623,11 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> MAGENTA_LAMP = block(TheArgContainerModBlocks.MAGENTA_LAMP);
 	public static final RegistryObject<Item> PINK_LAMP = block(TheArgContainerModBlocks.PINK_LAMP);
 	public static final RegistryObject<Item> RTCD_CONSOLE = block(TheArgContainerModBlocks.RTCD_CONSOLE);
+	public static final RegistryObject<Item> GLASS_4 = block(TheArgContainerModBlocks.GLASS_4);
+	public static final RegistryObject<Item> SWITCH_STEP_TILE = block(TheArgContainerModBlocks.SWITCH_STEP_TILE);
+	public static final RegistryObject<Item> SWITCH_STEP_CHISELED_BLOCK = block(TheArgContainerModBlocks.SWITCH_STEP_CHISELED_BLOCK);
+	public static final RegistryObject<Item> MOJANG_TILE = block(TheArgContainerModBlocks.MOJANG_TILE);
+	public static final RegistryObject<Item> VOID_ENTITY_GECKOLIB_SPAWN_EGG = REGISTRY.register("void_entity_geckolib_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/switchstep_chiseled_tile",
+    "up": "the_arg_container:block/switchstep_chiseled_tile",
+    "north": "the_arg_container:block/switchstep_chiseled_tile",
+    "east": "the_arg_container:block/switchstep_chiseled_tile",
+    "south": "the_arg_container:block/switchstep_chiseled_tile",
+    "west": "the_arg_container:block/switchstep_chiseled_tile",
+    "particle": "the_arg_container:block/switchstep_chiseled_tile"
+  },
+  "render_type": "solid"
+}

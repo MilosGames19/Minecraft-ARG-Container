@@ -85,6 +85,28 @@
             "stringlist": []
           }
         ]
+      },
+      {
+        "category": "Entity",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "sv_allowrnet",
+            "varname": "sv_allowrnet",
+            "enablecomment": false,
+            "stringlist": []
+          }
+        ]
       }
     ],
     "file": "the_arg_container",

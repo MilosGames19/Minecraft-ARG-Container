@@ -4,23 +4,20 @@
   "pattern": [
     "aba",
     "cdc",
-    "eee"
+    "ccc"
   ],
   "key": {
     "a": {
       "item": "minecraft:iron_ingot"
     },
     "b": {
-      "item": "minecraft:ender_eye"
+      "item": "minecraft:ender_pearl"
     },
     "c": {
       "item": "minecraft:redstone"
     },
     "d": {
-      "item": "minecraft:quartz_block"
-    },
-    "e": {
-      "item": "minecraft:ender_pearl"
+      "item": "minecraft:iron_block"
     }
   },
   "result": {

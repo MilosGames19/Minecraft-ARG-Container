@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "the_arg_container:tea_planks",
+    "the_arg_container:flamewood_planks",
+    "the_arg_container:highwood_planks",
+    "the_arg_container:mycon_plank",
+    "the_arg_container:wooden_planks",
+    "the_arg_container:firewood_planks",
+    "the_arg_container:soul_plank",
+    "the_arg_container:iken_planks",
+    "the_arg_container:dark_planks",
+    "the_arg_container:hub_planks",
+    "the_arg_container:decayed_oak_planks",
+    "the_arg_container:red_planks",
+    "the_arg_container:green_planks",
+    "the_arg_container:yellow_planks",
+    "the_arg_container:chared_planks",
+    "the_arg_container:smile_planks",
+    "the_arg_container:grayscaled_oak_planks",
+    "the_arg_container:ostrutene_planks",
+    "the_arg_container:pure_paperwood"
+  ]
+}

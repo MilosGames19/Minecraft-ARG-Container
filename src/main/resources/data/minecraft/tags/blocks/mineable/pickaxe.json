@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:essencefountain",
+    "the_arg_container:mojang_tile",
+    "the_arg_container:switch_step_chiseled_block",
+    "the_arg_container:switch_step_tile",
     "the_arg_container:rtcd_console",
     "the_arg_container:pink_lamp",
     "the_arg_container:magenta_lamp",

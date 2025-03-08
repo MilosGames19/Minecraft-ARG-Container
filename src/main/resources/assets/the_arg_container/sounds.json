@@ -282,5 +282,14 @@
         "stream": true
       }
     ]
+  },
+  "obvr_attack": {
+    "subtitle": "subtitles.obvr_attack",
+    "sounds": [
+      {
+        "name": "the_arg_container:obvr_attack",
+        "stream": false
+      }
+    ]
   }
 }

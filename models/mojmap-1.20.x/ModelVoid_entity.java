@@ -1,4 +1,4 @@
-// Made with Blockbench 4.11.2
+// Made with Blockbench 4.12.3
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
@@ -27,21 +27,21 @@ public class ModelVoid_entity<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(4, 15).addBox(
-				-3.0F, -3.4F, 0.0F, 6.0F, 6.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -5.0F, 0.0F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(12, 15).addBox(
+				-3.0F, -3.4F, -0.1F, 6.0F, 6.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -5.0F, 0.0F));
 
 		PartDefinition Left_arm = partdefinition.addOrReplaceChild("Left_arm", CubeListBuilder.create(),
 				PartPose.offset(-3.5F, -1.4F, 0.0F));
 
 		PartDefinition cube_r1 = Left_arm
 				.addOrReplaceChild("cube_r1",
-						CubeListBuilder.create().texOffs(16, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
+						CubeListBuilder.create().texOffs(12, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
 								new CubeDeformation(0.0F)),
 						PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.7418F, 0.0F));
 
 		PartDefinition cube_r2 = Left_arm
 				.addOrReplaceChild("cube_r2",
-						CubeListBuilder.create().texOffs(16, 15).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
+						CubeListBuilder.create().texOffs(0, 15).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
 								new CubeDeformation(0.0F)),
 						PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 2.3562F, 0.0F));
 
@@ -50,15 +50,15 @@ public class ModelVoid_entity<T extends Entity> extends EntityModel<T> {
 
 		PartDefinition cube_r3 = Right_arm
 				.addOrReplaceChild("cube_r3",
-						CubeListBuilder.create().texOffs(0, 15).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
+						CubeListBuilder.create().texOffs(8, 15).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
 								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(0.0F, 0.6F, 0.0F, 0.0F, 2.3562F, 0.0F));
+						PartPose.offsetAndRotation(-0.1F, 0.6F, 0.0F, 0.0F, 2.3562F, 0.0F));
 
 		PartDefinition cube_r4 = Right_arm
 				.addOrReplaceChild("cube_r4",
-						CubeListBuilder.create().texOffs(12, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
+						CubeListBuilder.create().texOffs(4, 15).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 15.0F, 0.0F,
 								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(0.0F, 0.6F, 0.0F, 0.0F, 0.7418F, 0.0F));
+						PartPose.offsetAndRotation(-0.1F, 0.6F, 0.0F, 0.0F, 0.7418F, 0.0F));
 
 		PartDefinition Boddy = partdefinition.addOrReplaceChild("Boddy", CubeListBuilder.create().texOffs(0, 0)
 				.addBox(-3.0F, -14.0F, 0.0F, 6.0F, 15.0F, 0.0F, new CubeDeformation(0.0F)),
@@ -68,12 +68,12 @@ public class ModelVoid_entity<T extends Entity> extends EntityModel<T> {
 				PartPose.offset(-1.9F, 13.0F, 0.3F));
 
 		PartDefinition cube_r5 = Left_leg.addOrReplaceChild("cube_r5",
-				CubeListBuilder.create().texOffs(8, 22).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
+				CubeListBuilder.create().texOffs(16, 21).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
 						new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-0.1F, 0.0F, -0.3F, 0.0F, 2.3562F, 0.0F));
 
 		PartDefinition cube_r6 = Left_leg.addOrReplaceChild("cube_r6",
-				CubeListBuilder.create().texOffs(4, 22).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
+				CubeListBuilder.create().texOffs(12, 21).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
 						new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-0.1F, 0.0F, -0.3F, 0.0F, 0.7418F, 0.0F));
 
@@ -82,13 +82,13 @@ public class ModelVoid_entity<T extends Entity> extends EntityModel<T> {
 
 		PartDefinition cube_r7 = Right_leg
 				.addOrReplaceChild("cube_r7",
-						CubeListBuilder.create().texOffs(20, 12).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
+						CubeListBuilder.create().texOffs(20, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
 								new CubeDeformation(0.0F)),
 						PartPose.offsetAndRotation(0.0F, 0.0F, 0.1F, 0.0F, 2.3562F, 0.0F));
 
 		PartDefinition cube_r8 = Right_leg
 				.addOrReplaceChild("cube_r8",
-						CubeListBuilder.create().texOffs(20, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
+						CubeListBuilder.create().texOffs(16, 0).addBox(-1.0F, -1.0F, 0.0F, 2.0F, 12.0F, 0.0F,
 								new CubeDeformation(0.0F)),
 						PartPose.offsetAndRotation(0.0F, 0.0F, 0.1F, 0.0F, 0.7418F, 0.0F));
 

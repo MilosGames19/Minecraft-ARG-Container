@@ -15,7 +15,7 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.ENDER_EYE"
+        "value": "Items.ENDER_PEARL"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -24,19 +24,19 @@
         "value": "Items.REDSTONE"
       },
       {
-        "value": "Blocks.QUARTZ_BLOCK#3"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
         "value": "Items.REDSTONE"
       },
       {
-        "value": "Items.ENDER_PEARL"
+        "value": "Items.REDSTONE"
       },
       {
-        "value": "Items.ENDER_PEARL"
+        "value": "Items.REDSTONE"
       },
       {
-        "value": "Items.ENDER_PEARL"
+        "value": "Items.REDSTONE"
       }
     ],
     "recipeReturnStack": {

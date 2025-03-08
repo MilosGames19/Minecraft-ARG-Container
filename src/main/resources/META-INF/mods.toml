@@ -4,7 +4,7 @@ license="Unported GNU Affero General Public License version 3 (AGPLv3)"
 
 [[mods]]
 modId="the_arg_container"
-version="0.4.01"
+version="0.4.1"
 displayName="The ARG Container"
 displayURL="https://mcreator.net"
 logoFile="logo.png"

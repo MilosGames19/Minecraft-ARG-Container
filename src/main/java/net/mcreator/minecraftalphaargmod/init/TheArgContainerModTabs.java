@@ -185,17 +185,17 @@ public class TheArgContainerModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.john")).icon(() -> new ItemStack(TheArgContainerModBlocks.AUTHENTICATOR.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TheArgContainerModBlocks.AUTHENTICATOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MOJANG_LOGO_BLOCK.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.EMPTY_LOGO_BLOCK.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.BRICK_WALL.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.WINDOW.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.FLOOR_TILES.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.RED_MOJANG_LOGO_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.PURPLE_PILLAR.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.RED_PILLAR.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.TILE_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.TILE_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.EMPTY_LOGO_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WINDOW.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BRICK_WALL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BRICK_WALL_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BRICK_WALL_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FLOOR_TILES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TILE_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TILE_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_MOJANG_LOGO_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_PILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RED_PILLAR_UPDATED_VERSION.get().asItem());
 			})
 
@@ -227,7 +227,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_3.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_4.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_5.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNKNOWN_6.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_7.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_8.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_9.get().asItem());
@@ -239,6 +238,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_15.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_16.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_17.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_6.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_18.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_19.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_20.get().asItem());
@@ -246,15 +246,14 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.CAT_THEME.get());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_22.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_23.get().asItem());
+				tabData.accept(TheArgContainerModItems.ARRIVAL.get());
 				tabData.accept(TheArgContainerModItems.DBG_SPAWN_EGG.get());
 				tabData.accept(TheArgContainerModItems.BLUE_GIANT_SPAWN_EGG.get());
-				tabData.accept(TheArgContainerModItems.ARRIVAL.get());
 			})
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> UNUSED = REGISTRY.register("unused",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.unused")).icon(() -> new ItemStack(TheArgContainerModBlocks.CELESTIAL_FLAME.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_10.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.U_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_2.get().asItem());
@@ -270,6 +269,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.VENDING_MACHINE_SHOP_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MESH_BLOCK_DOWN.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MESH_BLOCK_UP.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_10.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNUSED_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNUSED_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNUSED_3.get().asItem());
@@ -319,13 +319,20 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.SAND_YCARPS_8_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBOCHISELED.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBOFLOOR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBO_FLOOR_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOFLOOR_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBOPILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBODOORLOWER.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMBOLANTERN.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ABGRUNDBRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ABGRUNDDARKPRISMARINE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ABGRUNDGROUND.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ABGRUND_BRICKS_BRIGHT.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ABGRUND_DARK_PRISMARINE_BRIGHT.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ABGRUND_GROUND_BRIGHT.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_CHISELED_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_GENERIC_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BLUE_KEEPERS_GLASS_BLOCK.get().asItem());
@@ -349,12 +356,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.RED_KEEPERS_SMOOTH_STONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RED_TERMINAL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RED_SYMBOL.get().asItem());
-				tabData.accept(TheArgContainerModItems.LIMBO_CRYSTALS.get());
-				tabData.accept(TheArgContainerModItems.LIMBO_SHARD.get());
-				tabData.accept(TheArgContainerModBlocks.LIMBOFLOOR_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.LIMBO_FLOOR_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.LIMBOPOLISHED_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BLUE_WALL.get().asItem());
@@ -377,10 +378,11 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.DECAYED_LILAC.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RED_WALL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BLUE_WALL_1.get().asItem());
-				tabData.accept(TheArgContainerModItems.RED_PAPER.get());
 				tabData.accept(TheArgContainerModBlocks.OFFICE_BRICKS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.DARK_OFFICE_BRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.OFFICE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_OFFICE_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OFFICE_WALL_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.OFFICE_TERMINAL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.OFFICE_LOGO.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER.get().asItem());
@@ -394,18 +396,16 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_8.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.OFFICE_NUMBER_9.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.OFFICE_LANTERN.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.OFFICE_WALL_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DECAYED_SMOOTH_STONE_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.OFFICE_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.STONE_TILE_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DARK_GLOWSTONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DECAYED_STONE_BRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DECAYED_BOOKSHELF.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DECAYED_IRON_DOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WALL_TILE_9.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.ABGRUND_BRICKS_BRIGHT.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.ABGRUND_DARK_PRISMARINE_BRIGHT.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.ABGRUND_GROUND_BRIGHT.get().asItem());
+				tabData.accept(TheArgContainerModItems.LIMBO_CRYSTALS.get());
+				tabData.accept(TheArgContainerModItems.LIMBO_SHARD.get());
+				tabData.accept(TheArgContainerModItems.RED_PAPER.get());
 			})
 
 					.build());
@@ -808,7 +808,12 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.GRASS_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MIXED_GRASS_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.YELLOW_GRASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SNOWY_GRASS_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DIRT.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ASH_GRASS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ASH_GRASS_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ASH_DIRT.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_ASH_BLOCK_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.STONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.COBBLESTONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.BISMUTH_ORE.get().asItem());
@@ -829,12 +834,16 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.TEA_BUSH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TEA_WOOD.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TEA_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TEA_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TEA_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TEA_PILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TEEDOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TEA_WORKBENCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DLAMEWOOD_LEAVES.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_PILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.FIREWOOD_DOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.FIREWOOD_WORKBENCH.get().asItem());
@@ -842,12 +851,16 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.GLOWING_MYCON_CAP.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MYCON_STEM.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MYCON_PLANK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MYCON_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MYCONPLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MYCON_PILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MYCON_DOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MYCON_WORKBENCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOOD_LEAVES.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOOD_LOG.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOOD_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOOD_PILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOOD_DOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOOD_WORKBENCH.get().asItem());
@@ -952,8 +965,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.LIQUIDFIED_FLAME.get());
 				tabData.accept(TheArgContainerModBlocks.ROSE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DANDELION.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.ASH_GRASS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.ASH_DIRT.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.YELLOW_GRASS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREEN_GRASS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.VENDING_MACHINE_HEALTH_TOP.get().asItem());
@@ -1029,7 +1040,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.COBBLESTONE_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ICE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WORKBENCH.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.SNOWY_GRASS_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModItems.PEAR.get());
 				tabData.accept(TheArgContainerModItems.OBSIDIAN_PEAR.get());
 				tabData.accept(TheArgContainerModItems.ESSENCE_RIFLE.get());
@@ -1067,22 +1077,12 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.HUB_TILE_BLUE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_HIGHWOOD_LOG.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_HIGHWOOD_LEAVES.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.ASH_GRASS_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_FAKE_GRASS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_FAKE_DIRT.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.HUB_ASH_BLOCK_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_HIGHWOOD_ROOTS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.IDKSK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TORCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREENSTONE_TORCH.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.TEA_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.TEA_PLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_PLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.MYCON_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.MYCONPLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_SLAB.get().asItem());
 			})
 
 					.build());
@@ -1090,10 +1090,16 @@ public class TheArgContainerModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.claytonm_634")).icon(() -> new ItemStack(TheArgContainerModBlocks.SMILE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TheArgContainerModBlocks.RED_LOG.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RED_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREEN_LOG_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREEN_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GREEN_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GREEN_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.YELLOW_LOG.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.YELLOW_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.YELLOW_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.YELLOW_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SMILE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SPEED_BRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SLOW_BRICKS.get().asItem());
@@ -1101,9 +1107,13 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.ANTI_FRICTION_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CHARED_LOG.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CHARED_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHARED_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHARED_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CHARED_LEAVES.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SMILE_LOG.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SMILE_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SMILE_PLANKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SMILE_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SMILE_LEAVES.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIDDENITEORE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIDDENITEOREBLOCK.get().asItem());
@@ -1118,19 +1128,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.HIDDENITE_TOOL_SWORD.get());
 				tabData.accept(TheArgContainerModItems.HIDDENITE_TOOL_SHOVEL.get());
 				tabData.accept(TheArgContainerModItems.HIDDENITE_TOOL_HOE.get());
-				tabData.accept(TheArgContainerModBlocks.RED_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.RED_PLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.GREEN_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.GREEN_PLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.YELLOW_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.YELLOW_PLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.CHARED_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.CHARED_PLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.SMILE_PLANKS_STAIRS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.SMILE_PLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModItems.GLASS_BRICK.get());
-				tabData.accept(TheArgContainerModItems.CLAYTON_M_634_BASE.get());
-				tabData.accept(TheArgContainerModItems.CLAYTON_M_634_THE_CORE_HOUSE.get());
 			})
 
 					.build());
@@ -1393,6 +1391,7 @@ public class TheArgContainerModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.minecraft_rtcd")).icon(() -> new ItemStack(TheArgContainerModBlocks.RTC_DBLOCK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TheArgContainerModBlocks.GLASS_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GLASS_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GLASS_3.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GRASS_BLOCK_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DISCO_BALL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MISSING_DBG_BLOCK.get().asItem());
@@ -1404,10 +1403,12 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.TILE_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WOOD_PILLAR_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_24.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SWITCH_STEP_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SWITCH_STEP_CHISELED_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MOJANG_TILE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_25.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_26.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RTC_DBLOCK.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.GLASS_3.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DEBUG_AREA_WALL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.DEBUG_AREA_FLOOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.PROJ_132_FLOOR.get().asItem());
@@ -1415,6 +1416,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.RTCD_DECORATIVE_BLOCK_1.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RTCD_DECORATIVE_BLOCK_2.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.RTCD_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RTCD_CONSOLE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SWITCHSTEP_BRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.WHITE_LAMP.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GRAY_LAMP.get().asItem());
@@ -1430,7 +1432,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.PURPLE_LAMP.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.MAGENTA_LAMP.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.PINK_LAMP.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.RTCD_CONSOLE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GLASS_4.get().asItem());
 			})
 
 					.build());
@@ -1499,18 +1501,18 @@ public class TheArgContainerModTabs {
 	public static final RegistryObject<CreativeModeTab> RUBY_ALPHA_VOID_DUNG = REGISTRY.register("ruby_alpha_void_dung",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.ruby_alpha_void_dung")).icon(() -> new ItemStack(TheArgContainerModBlocks.PURPUR_BRICKS.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TheArgContainerModBlocks.PURPUR_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PURPURBRICKSSTAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.REALITYSPACE_ARROW_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.REALITYSPACE_MS_PACMAN_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.REALITYSPACE_PATTERN_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.REALITYSPACE_TILE_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.REALITYSPACE_CROSS_BLOCK.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.HALLOWED_BRICKS.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.HALLOWED_BRICKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.HALLOWED_BRICKS_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HALLOWED_STONE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HALLOWED_PILLAR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CHISELED_HALLOWED_STONE.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.PURPURBRICKSSTAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HALLOWED_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HALLOWED_BRICKS_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HALLOWED_BRICKS_SLAB.get().asItem());
 			})
 
 					.build());
@@ -1531,6 +1533,7 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.VOIDENTITY_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.PIG_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.LONG_LEGS_SPAWN_EGG.get());
+			tabData.accept(TheArgContainerModItems.VOID_ENTITY_GECKOLIB_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(TheArgContainerModBlocks.STRUCTURE_BUILDER.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
