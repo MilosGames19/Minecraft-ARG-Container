@@ -104,7 +104,7 @@ public class TheArgContainerModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<VoidEntityGeckolibEntity>> VOID_ENTITY_GECKOLIB = register("void_entity_geckolib",
-			EntityType.Builder.<VoidEntityGeckolibEntity>of(VoidEntityGeckolibEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VoidEntityGeckolibEntity::new)
+			EntityType.Builder.<VoidEntityGeckolibEntity>of(VoidEntityGeckolibEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VoidEntityGeckolibEntity::new)
 
 					.sized(0.6f, 1.8f));
 

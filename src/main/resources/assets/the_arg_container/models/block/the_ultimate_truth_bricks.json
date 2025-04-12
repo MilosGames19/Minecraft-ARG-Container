@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/the_ultimate_truth_bricks",
+    "up": "the_arg_container:block/the_ultimate_truth_bricks",
+    "north": "the_arg_container:block/the_ultimate_truth_bricks",
+    "east": "the_arg_container:block/the_ultimate_truth_bricks",
+    "south": "the_arg_container:block/the_ultimate_truth_bricks",
+    "west": "the_arg_container:block/the_ultimate_truth_bricks",
+    "particle": "the_arg_container:block/ultimatetruthblock"
+  },
+  "render_type": "cutout"
+}

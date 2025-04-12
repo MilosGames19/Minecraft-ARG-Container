@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "the_arg_container:block/moonfalldimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "the_arg_container:block/moonfalldimension_portal_ns"
+    }
+  }
+}

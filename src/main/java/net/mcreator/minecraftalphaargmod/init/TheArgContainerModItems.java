@@ -95,6 +95,7 @@ import net.mcreator.minecraftalphaargmod.item.MyconToolSetHoeItem;
 import net.mcreator.minecraftalphaargmod.item.MyconToolSetAxeItem;
 import net.mcreator.minecraftalphaargmod.item.MyconStrandItem;
 import net.mcreator.minecraftalphaargmod.item.MusicBundleItem;
+import net.mcreator.minecraftalphaargmod.item.MoonfalldimensionItem;
 import net.mcreator.minecraftalphaargmod.item.MoonfallItem;
 import net.mcreator.minecraftalphaargmod.item.MidgemItem;
 import net.mcreator.minecraftalphaargmod.item.MalachiteItem;
@@ -151,7 +152,6 @@ import net.mcreator.minecraftalphaargmod.item.EngineerItem;
 import net.mcreator.minecraftalphaargmod.item.EdibleFireItem;
 import net.mcreator.minecraftalphaargmod.item.DownbeatUplinkItem;
 import net.mcreator.minecraftalphaargmod.item.DismantlerItem;
-import net.mcreator.minecraftalphaargmod.item.DevPromoItem;
 import net.mcreator.minecraftalphaargmod.item.DesambrierItem;
 import net.mcreator.minecraftalphaargmod.item.DeniedItem;
 import net.mcreator.minecraftalphaargmod.item.DeletionToolItem;
@@ -826,7 +826,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> QUEST_GIVER = block(TheArgContainerModBlocks.QUEST_GIVER);
 	public static final RegistryObject<Item> QUEST_MANAGER = REGISTRY.register("quest_manager", () -> new QuestMenagerItem());
 	public static final RegistryObject<Item> FF_33D_5 = block(TheArgContainerModBlocks.FF_33D_5);
-	public static final RegistryObject<Item> DEV_PROMO = REGISTRY.register("dev_promo", () -> new DevPromoItem());
 	public static final RegistryObject<Item> SLAIZE_00 = block(TheArgContainerModBlocks.SLAIZE_00);
 	public static final RegistryObject<Item> SLAIZE_10 = block(TheArgContainerModBlocks.SLAIZE_10);
 	public static final RegistryObject<Item> SLAIZE_20 = block(TheArgContainerModBlocks.SLAIZE_20);
@@ -1628,6 +1627,17 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> SWITCH_STEP_CHISELED_BLOCK = block(TheArgContainerModBlocks.SWITCH_STEP_CHISELED_BLOCK);
 	public static final RegistryObject<Item> MOJANG_TILE = block(TheArgContainerModBlocks.MOJANG_TILE);
 	public static final RegistryObject<Item> VOID_ENTITY_GECKOLIB_SPAWN_EGG = REGISTRY.register("void_entity_geckolib_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> MOONFALLDIMENSION = REGISTRY.register("moonfalldimension", () -> new MoonfalldimensionItem());
+	public static final RegistryObject<Item> MOONFALL_GENERATOR = block(TheArgContainerModBlocks.MOONFALL_GENERATOR);
+	public static final RegistryObject<Item> ENDERPLAYS_PLUSHIE = block(TheArgContainerModBlocks.ENDERPLAYS_PLUSHIE);
+	public static final RegistryObject<Item> XCLUBERPLAY_PLUSHIE = block(TheArgContainerModBlocks.XCLUBERPLAY_PLUSHIE);
+	public static final RegistryObject<Item> ZAZPAD_PLUSHIE = block(TheArgContainerModBlocks.ZAZPAD_PLUSHIE);
+	public static final RegistryObject<Item> WARSAWPACT_223_PLUSHIE = block(TheArgContainerModBlocks.WARSAWPACT_223_PLUSHIE);
+	public static final RegistryObject<Item> TALISMILES_PLUSHIE = block(TheArgContainerModBlocks.TALISMILES_PLUSHIE);
+	public static final RegistryObject<Item> HUB_SKY = block(TheArgContainerModBlocks.HUB_SKY);
+	public static final RegistryObject<Item> THE_ULTIMATE_TRUTH = block(TheArgContainerModBlocks.THE_ULTIMATE_TRUTH);
+	public static final RegistryObject<Item> THE_ULTIMATE_TRUTH_BRICKS = block(TheArgContainerModBlocks.THE_ULTIMATE_TRUTH_BRICKS);
+	public static final RegistryObject<Item> NEBULA_PLUSHIE = block(TheArgContainerModBlocks.NEBULA_PLUSHIE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

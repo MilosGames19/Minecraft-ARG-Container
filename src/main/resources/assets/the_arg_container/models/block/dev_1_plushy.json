@@ -2,7 +2,7 @@
   "parent": "the_arg_container:custom/dev1alt",
   "textures": {
     "all": "the_arg_container:block/minecraft-alpha-1-0-16-versions-dev1-6-skin-on-planetminecraft-com",
-    "particle": "the_arg_container:block/minecraft-alpha-1-0-16-versions-dev1-6-skin-on-planetminecraft-com",
+    "particle": "the_arg_container:block/soul_white",
     "0": "the_arg_container:block/minecraft-alpha-1-0-16-versions-dev1-6-skin-on-planetminecraft-com"
   },
   "render_type": "cutout"

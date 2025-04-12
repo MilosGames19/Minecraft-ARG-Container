@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:melon"
+    },
+    "b": {
+      "item": "minecraft:melon_slice"
+    },
+    "c": {
+      "item": "the_arg_container:essence"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:xcluberplay_plushie",
+    "count": 1
+  }
+}

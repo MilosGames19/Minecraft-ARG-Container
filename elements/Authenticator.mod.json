@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "mojanglogoblock",
+    "texture": "mojang_animation_block",
     "textureTop": "at",
     "textureLeft": "15623",
     "textureFront": "ab",
@@ -102,7 +102,7 @@
     "unbreakable": false,
     "breakHarvestLevel": 4,
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,

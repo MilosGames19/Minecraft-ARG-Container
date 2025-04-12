@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "the_arg_container:essencefountain",
     "the_arg_container:mojang_tile",
     "the_arg_container:switch_step_chiseled_block",
     "the_arg_container:switch_step_tile",
@@ -523,6 +522,7 @@
     "the_arg_container:lr_gold",
     "the_arg_container:lr_iron",
     "the_arg_container:lr_coal",
+    "the_arg_container:essencefountain",
     "the_arg_container:lace_agate_ore_1",
     "the_arg_container:clinohumite_ore_1",
     "the_arg_container:pyrite_ore_1",

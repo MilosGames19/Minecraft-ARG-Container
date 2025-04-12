@@ -616,7 +616,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.NOISE_SUP.get());
 				tabData.accept(TheArgContainerModBlocks.QUEST_GIVER.get().asItem());
 				tabData.accept(TheArgContainerModItems.QUEST_MANAGER.get());
-				tabData.accept(TheArgContainerModItems.DEV_PROMO.get());
 				tabData.accept(TheArgContainerModBlocks.FF_33D_5.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SLAIZE_00.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.SLAIZE_10.get().asItem());
@@ -721,6 +720,8 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.MOONFALL.get());
 				tabData.accept(TheArgContainerModItems.SAW_13_RETURNS.get());
 				tabData.accept(TheArgContainerModItems.VOID_EXP.get());
+				tabData.accept(TheArgContainerModBlocks.THE_ULTIMATE_TRUTH.get().asItem());
+				tabData.accept(TheArgContainerModItems.MOONFALLDIMENSION.get());
 			})
 
 					.build());
@@ -800,6 +801,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.RANGER.get());
 				tabData.accept(TheArgContainerModItems.GOL_FRUIT.get());
 				tabData.accept(TheArgContainerModBlocks.GOL_FRUIT_SEED.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.THE_ULTIMATE_TRUTH_BRICKS.get().asItem());
 			})
 
 					.build());
@@ -1083,6 +1085,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.IDKSK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TORCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREENSTONE_TORCH.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_SKY.get().asItem());
 			})
 
 					.build());
@@ -1384,6 +1387,12 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.GNAWMON_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ANDREWIDOT_PLUSHIE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.LIMINAL_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ENDERPLAYS_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.XCLUBERPLAY_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NEBULA_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ZAZPAD_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WARSAWPACT_223_PLUSHIE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TALISMILES_PLUSHIE.get().asItem());
 			})
 
 					.build());

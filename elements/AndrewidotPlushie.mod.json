@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "salt_top",
+    "particleTexture": "soul_white",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -24,12 +24,57 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.1,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mx": 5.0,
+        "my": 1.0,
+        "mz": 10.0,
+        "Mx": 11.0,
+        "My": 9.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 11.0,
+        "my": 3.0,
+        "mz": 7.0,
+        "Mx": 14.0,
+        "My": 6.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
+        "my": 9.0,
+        "mz": 9.0,
+        "Mx": 11.0,
+        "My": 15.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 3.0,
+        "mz": 7.0,
+        "Mx": 5.0,
+        "My": 6.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 11.0,
+        "my": 0.0,
+        "mz": 5.0,
+        "Mx": 14.0,
+        "My": 3.0,
+        "Mz": 13.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": 5.0,
+        "Mx": 5.0,
+        "My": 3.0,
+        "Mz": 13.0,
         "subtract": false
       }
     ],

@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class DevBlockBlock extends Block {
 	public DevBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(20f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(-1, 3600000).requiresCorrectToolForDrops());
 	}
 
 	@Override

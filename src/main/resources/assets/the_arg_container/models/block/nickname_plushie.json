@@ -2,7 +2,7 @@
   "parent": "the_arg_container:custom/20_nickname_20_plushie",
   "textures": {
     "all": "the_arg_container:block/20_nickname_20",
-    "particle": "the_arg_container:block/salt_top",
+    "particle": "the_arg_container:block/soul_white",
     "0": "the_arg_container:block/20_nickname_20"
   },
   "render_type": "cutout"

@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/zazpad_plushie",
+  "textures": {
+    "all": "the_arg_container:block/zazpad",
+    "particle": "the_arg_container:block/soul_white",
+    "1": "the_arg_container:block/zazpad"
+  },
+  "render_type": "cutout_mipped"
+}

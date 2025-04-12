@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/talismiles_plushie",
+  "textures": {
+    "all": "the_arg_container:block/talismiles",
+    "particle": "the_arg_container:block/soul_white",
+    "0": "the_arg_container:block/talismiles"
+  },
+  "render_type": "cutout_mipped"
+}

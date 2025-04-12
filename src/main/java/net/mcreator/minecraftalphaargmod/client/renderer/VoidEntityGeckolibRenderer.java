@@ -29,7 +29,7 @@ public class VoidEntityGeckolibRenderer extends GeoEntityRenderer<VoidEntityGeck
 	@Override
 	public void preRender(PoseStack poseStack, VoidEntityGeckolibEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red,
 			float green, float blue, float alpha) {
-		float scale = 1.3f;
+		float scale = 1.5f;
 		this.scaleHeight = scale;
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);

@@ -5,7 +5,7 @@
     "generationStep": "SURFACE_STRUCTURES",
     "restrictionBiomes": [
       {
-        "value": "#is_overworld"
+        "value": "#minecraft:is_overworld"
       }
     ],
     "generateCondition": {

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/hade_lock",
+    "up": "the_arg_container:block/hade_lock",
+    "north": "the_arg_container:block/hade_lock",
+    "east": "the_arg_container:block/hade_lock",
+    "south": "the_arg_container:block/hade_lock",
+    "west": "the_arg_container:block/hade_lock",
+    "particle": "the_arg_container:block/hade_lock"
+  },
+  "render_type": "cutout"
+}

@@ -2,7 +2,7 @@
   "parent": "the_arg_container:custom/andrewgaming67_plushie",
   "textures": {
     "all": "the_arg_container:block/download",
-    "particle": "the_arg_container:block/download",
+    "particle": "the_arg_container:block/soul_white",
     "0": "the_arg_container:block/download"
   },
   "render_type": "cutout_mipped"

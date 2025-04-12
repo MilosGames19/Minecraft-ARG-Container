@@ -80,9 +80,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-common-api:15.2.0.27"))
-    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.27"))
-    runtimeOnly(fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.27"))
+    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-common-api:15.3.0.8"))
+    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.3.0.8"))
+    runtimeOnly(fg.deobf("mezz.jei:jei-1.20.1-forge:15.3.0.8"))
 }
 
 

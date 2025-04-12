@@ -16,12 +16,7 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": [
-          "the_arg_container:yellow_grass_block",
-          "the_arg_container:mixed_grass_block",
-          "the_arg_container:grass_block",
-          "minecraft:grass_block"
-        ],
+        "blocks": "minecraft:grass_block",
         "offset": [
           0,
           -1,

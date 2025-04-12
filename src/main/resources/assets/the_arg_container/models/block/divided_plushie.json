@@ -2,7 +2,7 @@
   "parent": "the_arg_container:custom/divided_plushie",
   "textures": {
     "all": "the_arg_container:block/divided",
-    "particle": "the_arg_container:block/salt_top",
+    "particle": "the_arg_container:block/soul_white",
     "1": "the_arg_container:block/divided"
   },
   "render_type": "cutout"

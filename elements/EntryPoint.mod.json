@@ -7,7 +7,7 @@
     "achievementIcon": {
       "value": "CUSTOM:Flamelilipad"
     },
-    "background": "Default",
+    "background": "gui.png",
     "disableDisplay": false,
     "showPopup": false,
     "announceToChat": false,

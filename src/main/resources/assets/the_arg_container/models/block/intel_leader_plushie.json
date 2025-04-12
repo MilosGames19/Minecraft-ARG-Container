@@ -2,7 +2,7 @@
   "parent": "the_arg_container:custom/46_intel_leader_plushie",
   "textures": {
     "all": "the_arg_container:block/46_intel_leader",
-    "particle": "the_arg_container:block/46_intel_leader",
+    "particle": "the_arg_container:block/soul_white",
     "0": "the_arg_container:block/46_intel_leader"
   },
   "render_type": "cutout"

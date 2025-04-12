@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "the_arg_container:ash_dirt",
+    "the_arg_container:dirt",
+    "the_arg_container:soul_dirt",
+    "the_arg_container:hub_fake_dirt",
+    "the_arg_container:dirt_block",
+    "the_arg_container:summer_dirt_block",
+    "the_arg_container:mixed_grass_block",
+    "the_arg_container:yellow_grass_block",
+    "the_arg_container:ash_grass",
+    "the_arg_container:grass_block",
+    "the_arg_container:snowy_grass_block",
+    "the_arg_container:soul_grass",
+    "the_arg_container:ash_grass_1",
+    "the_arg_container:spring_grass_block",
+    "the_arg_container:summer_grass_block",
+    "the_arg_container:stone_grass",
+    "the_arg_container:flower_grass_block",
+    "the_arg_container:grass_block_1",
+    "the_arg_container:starlit_grass_block"
+  ]
+}

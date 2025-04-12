@@ -61,6 +61,23 @@
             "varname": "dash_overlay",
             "enablecomment": false,
             "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "sky",
+            "varname": "sky",
+            "enablecomment": false,
+            "stringlist": []
           }
         ]
       },

@@ -1,7 +1,7 @@
 {
   "parent": "the_arg_container:custom/sandycarps8_plushie",
   "textures": {
-    "all": "the_arg_container:block/soul_white",
+    "all": "the_arg_container:block/sandycarps8",
     "particle": "the_arg_container:block/soul_white",
     "0": "the_arg_container:block/sandycarps8"
   },

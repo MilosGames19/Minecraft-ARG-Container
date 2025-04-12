@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/enderplays_plushie",
+  "textures": {
+    "all": "the_arg_container:block/enderplays",
+    "particle": "the_arg_container:block/soul_white",
+    "2": "the_arg_container:block/enderplays"
+  },
+  "render_type": "cutout_mipped"
+}

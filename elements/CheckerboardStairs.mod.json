@@ -100,7 +100,7 @@
       "value": ""
     },
     "luminance": 0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,

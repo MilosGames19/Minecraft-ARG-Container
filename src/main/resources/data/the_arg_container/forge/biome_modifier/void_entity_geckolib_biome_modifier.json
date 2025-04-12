@@ -4,7 +4,7 @@
   "spawners": {
     "type": "the_arg_container:void_entity_geckolib",
     "weight": 20,
-    "minCount": 4,
-    "maxCount": 4
+    "minCount": 1,
+    "maxCount": 1
   }
 }

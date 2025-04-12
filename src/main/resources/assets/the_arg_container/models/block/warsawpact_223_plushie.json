@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/warsaw_pact223_plushie",
+  "textures": {
+    "all": "the_arg_container:block/warsaw_pact223",
+    "particle": "the_arg_container:block/soul_white",
+    "0": "the_arg_container:block/warsaw_pact223"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -2,7 +2,7 @@
   "parent": "the_arg_container:custom/author_plushie",
   "textures": {
     "all": "the_arg_container:block/2022_09_04_missing-texture-20813405",
-    "particle": "the_arg_container:block/2022_09_04_missing-texture-20813405",
+    "particle": "the_arg_container:block/soul_white",
     "0": "the_arg_container:block/2022_09_04_missing-texture-20813405"
   },
   "render_type": "cutout_mipped"

@@ -11,6 +11,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
@@ -18,7 +19,6 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
@@ -32,7 +32,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
-public class PigEntity extends PathfinderMob {
+public class PigEntity extends Pig {
 	public PigEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TheArgContainerModEntities.PIG.get(), world);
 	}

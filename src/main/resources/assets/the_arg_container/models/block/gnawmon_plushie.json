@@ -2,7 +2,7 @@
   "parent": "the_arg_container:custom/gnawmon_plushie",
   "textures": {
     "all": "the_arg_container:block/gnawmon",
-    "particle": "the_arg_container:block/gnawmon",
+    "particle": "the_arg_container:block/soul_white",
     "0": "the_arg_container:block/gnawmon"
   },
   "render_type": "cutout"

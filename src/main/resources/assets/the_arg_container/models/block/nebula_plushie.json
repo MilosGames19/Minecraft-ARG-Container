@@ -1,0 +1,9 @@
+{
+  "parent": "the_arg_container:custom/nebula_plushie",
+  "textures": {
+    "all": "the_arg_container:block/nebula",
+    "particle": "the_arg_container:block/soul_white",
+    "2": "the_arg_container:block/nebula"
+  },
+  "render_type": "cutout_mipped"
+}
