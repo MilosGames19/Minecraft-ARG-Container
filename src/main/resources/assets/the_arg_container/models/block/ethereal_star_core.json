@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/ethereal_star_core",
+    "up": "the_arg_container:block/ethereal_star_core",
+    "north": "the_arg_container:block/ethereal_star_core",
+    "east": "the_arg_container:block/ethereal_star_core",
+    "south": "the_arg_container:block/ethereal_star_core",
+    "west": "the_arg_container:block/ethereal_star_core",
+    "particle": "the_arg_container:block/ethereal_star_core"
+  },
+  "render_type": "solid"
+}

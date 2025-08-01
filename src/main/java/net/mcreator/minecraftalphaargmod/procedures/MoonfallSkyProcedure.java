@@ -10,6 +10,7 @@ import net.minecraftforge.client.DimensionSpecialEffectsManager;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
@@ -68,7 +69,7 @@ public class MoonfallSkyProcedure {
 		if (entity != null) {
 			ClientLevel level = minecraft.level;
 			Vec3 pos = entity.getPosition(partialTick);
-			execute(null, entity);
+			execute(null, level, entity, partialTick);
 			return true;
 		}
 		return false;
@@ -486,19 +487,44 @@ public class MoonfallSkyProcedure {
 		}
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity, double partialTick) {
+		execute(null, world, entity, partialTick);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, double partialTick) {
 		if (entity == null)
 			return;
 		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:moonfalldimension"))) {
+			RenderSystem.defaultBlendFunc();
 			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "shatteredskybox" + ".png")));
 			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
-		} else if ((entity.level().dimension()) == Level.OVERWORLD && McconfigConfiguration.SKY.get() == true) {
+		}
+		if ((entity.level().dimension()) == Level.OVERWORLD && McconfigConfiguration.TBOTV_SKY.get() == true) {
+			RenderSystem.defaultBlendFunc();
 			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "overworldshatteredskybox" + ".png")));
-			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, false);
+			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+		}
+		if ((entity.level().dimension()) == Level.OVERWORLD && McconfigConfiguration.ALPHAVER_NEBULA_EVENT.get() == true) {
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "sun_n1" + ".png")));
+			renderSun(30, 255 << 24 | 255 << 16 | 255 << 8 | 255, false);
+		}
+		if ((entity.level().dimension()) == Level.OVERWORLD && McconfigConfiguration.ALPHAVER_NEBULA_EVENT.get() == true) {
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "moon_p_n" + ".png")));
+			renderMoon(40, 255 << 24 | 255 << 16 | 255 << 8 | 255, true, false);
+		}
+		if ((entity.level().dimension()) == Level.OVERWORLD && McconfigConfiguration.ALPHAVER_NEBULA_EVENT.get() == true) {
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			renderStars(1500, 10842, 90, (float) (world.getTimeOfDay((float) partialTick) * 360), 0, (new Object() {
+				public int get(LevelAccessor levelAccessor, float partialTick) {
+					if (levelAccessor instanceof ClientLevel) {
+						int color = (int) (((ClientLevel) levelAccessor).getStarBrightness(partialTick) * 255.0F);
+						return color << 24 | color << 16 | color << 8 | color;
+					}
+					return 0;
+				}
+			}).get(world, (float) partialTick), false);
 		}
 	}
 }

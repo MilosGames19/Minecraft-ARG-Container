@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class EmptyBookshelfAlphaBlock extends Block {
 	public EmptyBookshelfAlphaBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

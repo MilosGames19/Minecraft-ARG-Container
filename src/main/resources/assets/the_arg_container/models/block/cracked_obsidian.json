@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/crackedobsidian",
+    "up": "the_arg_container:block/crackedobsidian",
+    "north": "the_arg_container:block/crackedobsidian",
+    "east": "the_arg_container:block/crackedobsidian",
+    "south": "the_arg_container:block/crackedobsidian",
+    "west": "the_arg_container:block/crackedobsidian",
+    "particle": "the_arg_container:block/crackedobsidian"
+  },
+  "render_type": "solid"
+}

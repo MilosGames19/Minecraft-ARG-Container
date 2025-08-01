@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "the_arg_container:block/katka_block6",
+    "top": "the_arg_container:block/katka_block6",
+    "side": "the_arg_container:block/katka_block5"
+  },
+  "render_type": "solid"
+}

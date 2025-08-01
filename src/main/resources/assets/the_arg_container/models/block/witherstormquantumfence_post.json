@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "the_arg_container:block/quantumblock",
+    "particle": "the_arg_container:block/quantumblock"
+  },
+  "render_type": "solid"
+}

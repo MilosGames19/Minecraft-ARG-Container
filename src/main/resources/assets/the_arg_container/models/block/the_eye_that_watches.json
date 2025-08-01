@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/the_eye_that_watches",
+    "up": "the_arg_container:block/the_eye_that_watches",
+    "north": "the_arg_container:block/the_eye_that_watches",
+    "east": "the_arg_container:block/the_eye_that_watches",
+    "south": "the_arg_container:block/the_eye_that_watches",
+    "west": "the_arg_container:block/the_eye_that_watches",
+    "particle": "the_arg_container:block/the_eye_that_watches"
+  },
+  "render_type": "solid"
+}

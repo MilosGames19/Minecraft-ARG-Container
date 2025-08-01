@@ -1,0 +1,7 @@
+{
+  "parent": "the_arg_container:custom/batas_cup",
+  "textures": {
+    "0": "the_arg_container:block/batas",
+    "particle": "the_arg_container:item/debug"
+  }
+}

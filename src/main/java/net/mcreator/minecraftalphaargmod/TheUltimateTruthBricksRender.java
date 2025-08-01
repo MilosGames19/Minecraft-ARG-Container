@@ -61,4 +61,9 @@ public class TheUltimateTruthBricksRender implements BlockEntityRenderer<TheUlti
                     .setCullState(new RenderStateShard.CullStateShard(true))
                     .createCompositeState(false));
   }
+
+  @Override
+    public int getViewDistance() {
+        return 256;
+    }
 }

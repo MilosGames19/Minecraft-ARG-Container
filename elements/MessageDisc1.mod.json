@@ -1,0 +1,26 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Message Disc 1",
+    "rarity": "RARE",
+    "texture": "msg_disc",
+    "description": "Message Disc 1",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "specialInformation": {
+      "fixedValue": [
+        "§4W§kA§4R§cN§kI§4N§cG§8: §4A§kN§4O§cM§kA§4L§cY §8D§4E§kT§4E§cC§4T§kE§4D§r"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "block.sculk_shrieker.shriek"
+    },
+    "lengthInTicks": 560,
+    "analogOutput": 0
+  }
+}

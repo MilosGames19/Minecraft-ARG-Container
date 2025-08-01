@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "the_arg_container:block/quantumblock",
+    "top": "the_arg_container:block/quantumblock",
+    "side": "the_arg_container:block/quantumblock"
+  },
+  "render_type": "solid"
+}

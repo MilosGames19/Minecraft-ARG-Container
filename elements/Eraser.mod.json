@@ -15,12 +15,12 @@
     "creativeTab": {
       "value": "TOOLS"
     },
-    "harvestLevel": 100000,
-    "efficiency": 100000.0,
+    "harvestLevel": 128000,
+    "efficiency": 128000.0,
     "attackSpeed": 1.0,
     "enchantability": 0,
-    "damageVsEntity": 10000.0,
-    "usageCount": 3000,
+    "damageVsEntity": 128000.0,
+    "usageCount": 128000,
     "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false

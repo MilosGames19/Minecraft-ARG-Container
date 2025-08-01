@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/cyberspace_lamp",
+    "up": "the_arg_container:block/cyberspace_lamp",
+    "north": "the_arg_container:block/cyberspace_lamp",
+    "east": "the_arg_container:block/cyberspace_lamp",
+    "south": "the_arg_container:block/cyberspace_lamp",
+    "west": "the_arg_container:block/cyberspace_lamp",
+    "particle": "the_arg_container:block/cyberspace_lamp"
+  },
+  "render_type": "solid"
+}

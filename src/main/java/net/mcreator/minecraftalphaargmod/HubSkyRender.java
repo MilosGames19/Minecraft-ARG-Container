@@ -61,4 +61,9 @@ public class HubSkyRender implements BlockEntityRenderer<HubSkyBlockEntity> {
                     .setCullState(new RenderStateShard.CullStateShard(true))
                     .createCompositeState(false));
   }
+
+  @Override
+    public int getViewDistance() {
+        return 256;
+    }
 }

@@ -2,12 +2,12 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "neck_bottom",
+    "texture": "cyberspace_column_bottom",
     "textureTop": "neck_up",
-    "textureLeft": "neck",
-    "textureFront": "neck",
-    "textureRight": "neck",
-    "textureBack": "neck",
+    "textureLeft": "cyberspace_column_side",
+    "textureFront": "cyberspace_column_side",
+    "textureRight": "cyberspace_column_side",
+    "textureBack": "cyberspace_column_side",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,30 +33,30 @@
         "subtract": false
       }
     ],
-    "name": "Cyberspace Stand",
+    "name": "Cyberspace Column",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
+    "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:MinecraftSurvivalGlitchy"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -100,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

@@ -56,11 +56,14 @@ public class MoonfallGeneratorOnTickUpdateProcedure {
 		}
 		if ((world.getBlockState(BlockPos.containing(x + 16, y, z))).getBlock() == Blocks.AIR) {
 			world.setBlock(BlockPos.containing(x + 16, y, z), TheArgContainerModBlocks.MOONFALL_GENERATOR.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(BlockPos.containing(x - 16, y, z))).getBlock() == Blocks.AIR) {
+		}
+		if ((world.getBlockState(BlockPos.containing(x - 16, y, z))).getBlock() == Blocks.AIR) {
 			world.setBlock(BlockPos.containing(x - 16, y, z), TheArgContainerModBlocks.MOONFALL_GENERATOR.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(BlockPos.containing(x, y, z - 16))).getBlock() == Blocks.AIR) {
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z - 16))).getBlock() == Blocks.AIR) {
 			world.setBlock(BlockPos.containing(x, y, z - 16), TheArgContainerModBlocks.MOONFALL_GENERATOR.get().defaultBlockState(), 3);
-		} else if ((world.getBlockState(BlockPos.containing(x, y, z + 16))).getBlock() == Blocks.AIR) {
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z + 16))).getBlock() == Blocks.AIR) {
 			world.setBlock(BlockPos.containing(x, y, z + 16), TheArgContainerModBlocks.MOONFALL_GENERATOR.get().defaultBlockState(), 3);
 		}
 	}

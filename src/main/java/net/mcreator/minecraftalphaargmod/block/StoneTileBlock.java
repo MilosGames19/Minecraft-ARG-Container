@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class StoneTileBlock extends Block {
 	public StoneTileBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(2f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1.5f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

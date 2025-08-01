@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:old_planks",
+    "the_arg_container:pale_planks",
+    "the_arg_container:corrupted_diamond_ore",
     "the_arg_container:birch_tile_darkened",
     "the_arg_container:birch_tile",
     "the_arg_container:birch_tile_swap_pattern",
@@ -92,7 +95,6 @@
     "the_arg_container:grid_planks",
     "the_arg_container:ethereal_sap_log",
     "the_arg_container:amber_log",
-    "the_arg_container:nexus_old_data_wood",
     "the_arg_container:nexus_old_data",
     "the_arg_container:itemchest",
     "the_arg_container:developer_portal",
@@ -116,6 +118,8 @@
     "the_arg_container:firewood",
     "the_arg_container:wood",
     "the_arg_container:wooden_planks",
+    "the_arg_container:empty_bookshelf_alpha",
+    "the_arg_container:bookshelf_alpha",
     "the_arg_container:firewood_door",
     "the_arg_container:highwood_door",
     "the_arg_container:highwood_roots",

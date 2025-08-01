@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_arg_container:block/witherstormquantumslab"
+    },
+    "type=top": {
+      "model": "the_arg_container:block/witherstormquantumslab_top"
+    },
+    "type=double": {
+      "model": "the_arg_container:block/witherstormquantumslab_full"
+    }
+  }
+}

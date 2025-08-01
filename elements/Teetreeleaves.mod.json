@@ -45,12 +45,12 @@
     "creativeTab": {
       "value": "CUSTOM:Alpha"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "hoe",
     "customDrop": {
       "value": "Blocks.AIR"
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,

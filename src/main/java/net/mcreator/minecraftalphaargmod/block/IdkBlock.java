@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class IdkBlock extends Block {
 	public IdkBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOD).strength(1.5f, 3f));
 	}
 
 	@Override

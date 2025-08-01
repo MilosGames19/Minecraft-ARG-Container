@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "the_arg_container:obsidian_upgrade"
+  },
+  "base": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "addition": {
+    "item": "the_arg_container:obsidian_ingot"
+  },
+  "result": {
+    "item": "the_arg_container:obsidian_armor_leggings"
+  }
+}

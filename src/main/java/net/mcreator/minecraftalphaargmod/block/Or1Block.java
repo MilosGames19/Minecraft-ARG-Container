@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class Or1Block extends Block {
 	public Or1Block() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.5f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

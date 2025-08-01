@@ -3,7 +3,7 @@ package net.mcreator.minecraftalphaargmod.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.MobSpawnType;
@@ -11,7 +11,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -23,15 +22,17 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class RecruiterSpawnProcedure {
 	@SubscribeEvent
-	public static void onBlockBreak(BlockEvent.BreakEvent event) {
-		execute(event, event.getLevel(), event.getPlayer());
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		if (event.phase == TickEvent.Phase.END) {
+			execute(event, event.player.level(), event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
+		}
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double eX = 0;
@@ -41,12 +42,15 @@ public class RecruiterSpawnProcedure {
 		double nEntityCount = 0;
 		double nSize = 0;
 		boolean bBreak = false;
-		if (Mth.nextDouble(RandomSource.create(), 1, 1000) == 15 && McconfigConfiguration.SV_ALLOWRNET.get() == true) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("DEBUG: Success"), false);
+		if (entity.getPersistentData().getDouble("The_ARG_Container_Recruter_spawn") == 0) {
+			entity.getPersistentData().putDouble("The_ARG_Container_Recruter_spawn", 24000);
+		} else {
+			entity.getPersistentData().putDouble("The_ARG_Container_Recruter_spawn", (entity.getPersistentData().getDouble("The_ARG_Container_Recruter_spawn") - 1));
+		}
+		if (entity.getPersistentData().getDouble("The_ARG_Container_Recruter_spawn") == 0 && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && McconfigConfiguration.SV_ALLOWRNET.get() == true) {
 			nSize = 30;
 			nEntityCount = 1;
-			nOffset = 6;
+			nOffset = 1;
 			for (int index0 = 0; index0 < (int) nEntityCount; index0++) {
 				eX = entity.getX() + Mth.nextInt(RandomSource.create(), (int) (0 - nSize), (int) nSize);
 				eY = entity.getY() + nOffset;

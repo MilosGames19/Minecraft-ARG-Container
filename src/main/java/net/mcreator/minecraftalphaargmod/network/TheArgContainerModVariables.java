@@ -103,6 +103,7 @@ public class TheArgContainerModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "the_arg_container_worldvars";
+		public double Is_it_placable = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -111,10 +112,12 @@ public class TheArgContainerModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			Is_it_placable = nbt.getDouble("Is_it_placable");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putDouble("Is_it_placable", Is_it_placable);
 			return nbt;
 		}
 

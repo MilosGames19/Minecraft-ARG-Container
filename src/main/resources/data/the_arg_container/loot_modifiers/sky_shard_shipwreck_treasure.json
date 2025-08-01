@@ -1,0 +1,10 @@
+{
+  "type": "the_arg_container:the_arg_container_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "chests/shipwreck_treasure"
+    }
+  ],
+  "lootTable": "the_arg_container:chests/sky_shard"
+}

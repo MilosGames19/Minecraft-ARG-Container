@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "the_arg_container:blocks/witherstorm_345staticdoor",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "the_arg_container:witherstorm_345staticdoor",
+          "conditions": [
+            {
+              "block": "the_arg_container:witherstorm_345staticdoor",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

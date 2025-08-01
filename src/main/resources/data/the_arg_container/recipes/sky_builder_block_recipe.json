@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "minecraft:iron_block"
+    },
+    "c": {
+      "item": "the_arg_container:sky_shard"
+    },
+    "d": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:structure_builder",
+    "count": 1
+  }
+}

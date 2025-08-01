@@ -291,5 +291,14 @@
         "stream": false
       }
     ]
+  },
+  "message_1": {
+    "subtitle": "subtitles.message_1",
+    "sounds": [
+      {
+        "name": "the_arg_container:code",
+        "stream": true
+      }
+    ]
   }
 }

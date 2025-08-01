@@ -14,12 +14,14 @@ import net.minecraft.world.inventory.MenuType;
 import net.mcreator.minecraftalphaargmod.world.inventory.WarningMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.TtcdconsoleMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.TerminalGUIMenu;
+import net.mcreator.minecraftalphaargmod.world.inventory.SkyBuilderGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.ServerGuIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.SafeGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.MonitorGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.KeyMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.Key1Menu;
 import net.mcreator.minecraftalphaargmod.world.inventory.GuiMenu;
+import net.mcreator.minecraftalphaargmod.world.inventory.GeneratorGuiMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.FreezerGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.EtGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.EssenceclonerGUIMenu;
@@ -49,4 +51,6 @@ public class TheArgContainerModMenus {
 	public static final RegistryObject<MenuType<DevChatGUIMenu>> DEV_CHAT_GUI = REGISTRY.register("dev_chat_gui", () -> IForgeMenuType.create(DevChatGUIMenu::new));
 	public static final RegistryObject<MenuType<BallsOnlineGuiMenu>> BALLS_ONLINE_GUI = REGISTRY.register("balls_online_gui", () -> IForgeMenuType.create(BallsOnlineGuiMenu::new));
 	public static final RegistryObject<MenuType<TtcdconsoleMenu>> TTCDCONSOLE = REGISTRY.register("ttcdconsole", () -> IForgeMenuType.create(TtcdconsoleMenu::new));
+	public static final RegistryObject<MenuType<GeneratorGuiMenu>> GENERATOR_GUI = REGISTRY.register("generator_gui", () -> IForgeMenuType.create(GeneratorGuiMenu::new));
+	public static final RegistryObject<MenuType<SkyBuilderGUIMenu>> SKY_BUILDER_GUI = REGISTRY.register("sky_builder_gui", () -> IForgeMenuType.create(SkyBuilderGUIMenu::new));
 }

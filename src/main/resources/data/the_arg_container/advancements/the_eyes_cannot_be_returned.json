@@ -1,0 +1,116 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_arg_container:navy_208_eye_block"
+    },
+    "title": {
+      "translate": "advancements.the_eyes_cannot_be_returned.title"
+    },
+    "description": {
+      "translate": "advancements.the_eyes_cannot_be_returned.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "the_eyes_cannot_be_returned_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:asceyeblock"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "the_eyes_cannot_be_returned_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:navy_208_eye_block"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "the_eyes_cannot_be_returned_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:sadeyes_block"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "the_eyes_cannot_be_returned_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:the_eye_that_watches"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "the_eyes_cannot_be_returned_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:eye_pig_block"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "the_eyes_cannot_be_returned_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_arg_container:dark_pumpkin"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "the_arg_container:entry_point"
+}

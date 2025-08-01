@@ -1,8 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "#minecraft:is_overworld",
   "spawners": {
     "type": "the_arg_container:pig",
     "weight": 20,

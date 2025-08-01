@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class W3Block extends Block {
 	public W3Block() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1.5f, 3f));
 	}
 
 	@Override

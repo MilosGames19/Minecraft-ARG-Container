@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:dark_leaves_block",
     "the_arg_container:glowing_mycon_cap",
-    "the_arg_container:mycon_cap"
+    "the_arg_container:mycon_cap",
+    "the_arg_container:tea_bush"
   ]
 }

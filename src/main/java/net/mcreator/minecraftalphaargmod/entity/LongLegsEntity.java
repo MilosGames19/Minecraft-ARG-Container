@@ -21,6 +21,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -59,6 +60,12 @@ public class LongLegsEntity extends Monster {
 		});
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
+		if (!this.level().isClientSide()) {
+			Player nearestPlayer = this.level().getNearestPlayer(this.getX(), this.getY(), this.getZ(), 16, false);
+			if (nearestPlayer != null) {
+				this.getLookControl().setLookAt(nearestPlayer.getX(), nearestPlayer.getEyeY(), nearestPlayer.getZ(), 10.0F, (float) this.getMaxHeadXRot());
+			}
+		}
 		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 	}
 
@@ -78,8 +85,28 @@ public class LongLegsEntity extends Monster {
 	}
 
 	@Override
+	public boolean canBreatheUnderwater() {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		return true;
+	}
+
+	@Override
+	public boolean isPushedByFluid() {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		return false;
+	}
+
+	@Override
 	public EntityDimensions getDimensions(Pose pose) {
-		return super.getDimensions(pose).scale(2f);
+		return super.getDimensions(pose).scale(2.5f);
 	}
 
 	public static void init() {
@@ -87,11 +114,11 @@ public class LongLegsEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.25);
 		builder = builder.add(Attributes.MAX_HEALTH, 70);
 		builder = builder.add(Attributes.ARMOR, 2);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 8);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 40);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 15);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 500);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 5);
 		return builder;

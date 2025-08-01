@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/identical_grass",
+    "up": "the_arg_container:block/identical_grass",
+    "north": "the_arg_container:block/identical_grass",
+    "east": "the_arg_container:block/identical_grass",
+    "south": "the_arg_container:block/identical_grass",
+    "west": "the_arg_container:block/identical_grass",
+    "particle": "the_arg_container:block/identical_grass"
+  },
+  "render_type": "solid"
+}

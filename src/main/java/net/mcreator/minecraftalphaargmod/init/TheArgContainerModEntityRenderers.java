@@ -26,7 +26,9 @@ import net.mcreator.minecraftalphaargmod.client.renderer.ExplosiveEssenceRendere
 import net.mcreator.minecraftalphaargmod.client.renderer.EvilUser0Renderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.EssenceProjectileRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.EntityRenderer;
+import net.mcreator.minecraftalphaargmod.client.renderer.DarknessEntityRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.DBGRenderer;
+import net.mcreator.minecraftalphaargmod.client.renderer.CORERenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.BrixgoaRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.BlueGiantRenderer;
 
@@ -54,5 +56,7 @@ public class TheArgContainerModEntityRenderers {
 		event.registerEntityRenderer(TheArgContainerModEntities.PARTI_BULLET.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.LONG_LEGS.get(), LongLegsRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB.get(), VoidEntityGeckolibRenderer::new);
+		event.registerEntityRenderer(TheArgContainerModEntities.CORE.get(), CORERenderer::new);
+		event.registerEntityRenderer(TheArgContainerModEntities.DARKNESS_ENTITY.get(), DarknessEntityRenderer::new);
 	}
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "the_arg_container:block/stat",
+    "top": "the_arg_container:block/stat",
+    "side": "the_arg_container:block/stat"
+  },
+  "render_type": "solid"
+}

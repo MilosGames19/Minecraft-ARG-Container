@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class HubMojangBlock2Block extends Block {
 	public HubMojangBlock2Block() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.5f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

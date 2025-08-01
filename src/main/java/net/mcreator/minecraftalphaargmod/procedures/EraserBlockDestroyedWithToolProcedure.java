@@ -66,10 +66,31 @@ public class EraserBlockDestroyedWithToolProcedure {
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TheArgContainerModBlocks.CRIMSON_PROTECTED.get()) {
+					world.destroyBlock(BlockPos.containing(x, y, z), false);
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(TheArgContainerModBlocks.CRIMSON_PROTECTED.get()));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TheArgContainerModBlocks.CHECKERBOARD_STAIRS.get()) {
 					world.destroyBlock(BlockPos.containing(x, y, z), false);
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(TheArgContainerModBlocks.CHECKERBOARD_STAIRS.get()));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TheArgContainerModBlocks.PROTECTION.get()) {
+					world.destroyBlock(BlockPos.containing(x, y, z), false);
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(TheArgContainerModBlocks.PROTECTION.get()));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TheArgContainerModBlocks.PROTECTION_CORE.get()) {
+					world.destroyBlock(BlockPos.containing(x, y, z), false);
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(TheArgContainerModBlocks.PROTECTION_CORE.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:witherstormquantumstairs",
+    "the_arg_container:quantum_brick_stairs",
+    "the_arg_container:witherstorm_345staticstairs",
     "the_arg_container:aqua_quartz_stairs",
     "the_arg_container:teal_prismarine_stairs",
     "the_arg_container:quartzum_prismarine_stairs",

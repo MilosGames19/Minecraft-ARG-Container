@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/void_dirt",
+    "up": "the_arg_container:block/void_dirt",
+    "north": "the_arg_container:block/void_dirt",
+    "east": "the_arg_container:block/void_dirt",
+    "south": "the_arg_container:block/void_dirt",
+    "west": "the_arg_container:block/void_dirt",
+    "particle": "the_arg_container:block/void_dirt"
+  },
+  "render_type": "solid"
+}

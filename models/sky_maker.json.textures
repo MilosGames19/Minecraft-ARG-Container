@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "6": "sky_maker"
+      },
+      "name": "default"
+    }
+  }
+}

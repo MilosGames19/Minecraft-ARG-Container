@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.DIAMOND_SHOVEL"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:ObsidianIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:ObsidianUpgrade"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:ObsidianShovel"
+    },
+    "name": "obsidian_tools_shovel_smithing_table",
+    "namespace": "mod"
+  }
+}

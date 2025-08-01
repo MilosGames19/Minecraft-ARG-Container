@@ -25,7 +25,7 @@ import net.mcreator.minecraftalphaargmod.procedures.FlamelilipadEntityCollidesIn
 
 public class FlamelilipadBlock extends Block {
 	public FlamelilipadBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().lightLevel(s -> 10).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().lightLevel(s -> 1).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

@@ -26,19 +26,19 @@ public class EraserItem extends TieredItem {
 	public EraserItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 3000;
+				return 128000;
 			}
 
 			public float getSpeed() {
-				return 100000f;
+				return 128000f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 9998f;
+				return 127998f;
 			}
 
 			public int getLevel() {
-				return 100000;
+				return 128000;
 			}
 
 			public int getEnchantmentValue() {
@@ -53,7 +53,7 @@ public class EraserItem extends TieredItem {
 
 	@Override
 	public boolean isCorrectToolForDrops(BlockState blockstate) {
-		int tier = 100000;
+		int tier = 128000;
 		if (tier < 3 && blockstate.is(BlockTags.NEEDS_DIAMOND_TOOL)) {
 			return false;
 		} else if (tier < 2 && blockstate.is(BlockTags.NEEDS_IRON_TOOL)) {
@@ -73,7 +73,7 @@ public class EraserItem extends TieredItem {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return 100000f;
+		return 128000f;
 	}
 
 	@Override
@@ -81,7 +81,7 @@ public class EraserItem extends TieredItem {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 9999f, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 127999f, AttributeModifier.Operation.ADDITION));
 			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}

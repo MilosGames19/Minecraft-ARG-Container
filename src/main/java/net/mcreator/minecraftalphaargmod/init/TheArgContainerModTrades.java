@@ -6,13 +6,28 @@ package net.mcreator.minecraftalphaargmod.init;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.common.BasicItemListing;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class TheArgContainerModTrades {
+	@SubscribeEvent
+	public static void registerWanderingTrades(WandererTradesEvent event) {
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD),
+
+				new ItemStack(TheArgContainerModItems.SKY_SHARD.get(), 5), 20, 5, 0.05f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 3),
+
+				new ItemStack(TheArgContainerModItems.SKY_SHARD.get(), 15), 10, 5, 0.05f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 5),
+
+				new ItemStack(TheArgContainerModItems.SKY_SHARD.get(), 34), 5, 5, 0.05f));
+	}
+
 	@SubscribeEvent
 	public static void registerTrades(VillagerTradesEvent event) {
 		if (event.getType() == TheArgContainerModVillagerProfessions.GLITCHED_VILLAGER.get()) {

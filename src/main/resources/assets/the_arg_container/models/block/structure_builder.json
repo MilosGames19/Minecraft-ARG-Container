@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "the_arg_container:custom/sky_maker",
   "textures": {
-    "down": "the_arg_container:block/house_builder",
-    "up": "the_arg_container:block/house_builder_up",
-    "north": "the_arg_container:block/house_builder_front",
-    "east": "the_arg_container:block/house_builder_side",
-    "south": "the_arg_container:block/house_builder_side",
-    "west": "the_arg_container:block/house_builder_side",
-    "particle": "the_arg_container:block/house_builder"
+    "all": "the_arg_container:block/house_builder",
+    "particle": "the_arg_container:block/house_builder",
+    "6": "the_arg_container:block/sky_maker"
   },
   "render_type": "solid"
 }

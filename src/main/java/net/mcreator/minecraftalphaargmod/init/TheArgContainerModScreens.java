@@ -14,12 +14,14 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.mcreator.minecraftalphaargmod.client.gui.WarningScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TtcdconsoleScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TerminalGUIScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.SkyBuilderGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.ServerGuIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.SafeGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.MonitorGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.KeyScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.Key1Screen;
 import net.mcreator.minecraftalphaargmod.client.gui.GuiScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.GeneratorGuiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.FreezerGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.EtGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.EssenceclonerGUIScreen;
@@ -51,6 +53,8 @@ public class TheArgContainerModScreens {
 			MenuScreens.register(TheArgContainerModMenus.DEV_CHAT_GUI.get(), DevChatGUIScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.BALLS_ONLINE_GUI.get(), BallsOnlineGuiScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.TTCDCONSOLE.get(), TtcdconsoleScreen::new);
+			MenuScreens.register(TheArgContainerModMenus.GENERATOR_GUI.get(), GeneratorGuiScreen::new);
+			MenuScreens.register(TheArgContainerModMenus.SKY_BUILDER_GUI.get(), SkyBuilderGUIScreen::new);
 		});
 	}
 }

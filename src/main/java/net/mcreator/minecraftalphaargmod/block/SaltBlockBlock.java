@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class SaltBlockBlock extends Block {
 	public SaltBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(0.6f));
 	}
 
 	@Override

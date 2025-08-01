@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/chiseled_linderite",
+    "up": "the_arg_container:block/chiseled_linderite",
+    "north": "the_arg_container:block/chiseled_linderite",
+    "east": "the_arg_container:block/chiseled_linderite",
+    "south": "the_arg_container:block/chiseled_linderite",
+    "west": "the_arg_container:block/chiseled_linderite",
+    "particle": "the_arg_container:block/chiseled_linderite"
+  },
+  "render_type": "solid"
+}

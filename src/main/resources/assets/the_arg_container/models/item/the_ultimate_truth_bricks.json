@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "the_arg_container:item/ultimatetruthblock"
+    "layer0": "the_arg_container:item/the_ultimate_truth_bricks"
   },
   "render_type": "translucent"
 }

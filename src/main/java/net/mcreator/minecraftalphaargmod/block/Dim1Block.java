@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class Dim1Block extends Block {
 	public Dim1Block() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.5f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

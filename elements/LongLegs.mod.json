@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Long Legs",
+    "mobName": "Longlegs",
     "mobLabel": "",
     "mobModelName": "ModelCustomModel",
     "mobModelTexture": "texture.png",
@@ -16,12 +16,18 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 3.58
+      "fixedValue": 3.0
     },
     "boundingBoxScale": {
-      "fixedValue": 2.0
+      "fixedValue": 2.5
     },
-    "modelLayers": [],
+    "modelLayers": [
+      {
+        "model": "ModelCustomModel",
+        "texture": "texture.png",
+        "glow": true
+      }
+    ],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -61,22 +67,22 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 8,
+    "attackStrength": 15,
     "attackKnockback": 5.0,
     "knockbackResistance": 1.0,
-    "movementSpeed": 0.19999999999999998,
+    "movementSpeed": 0.25,
     "stepHeight": 0.6,
     "armorBaseValue": 2.0,
-    "trackingRange": 64,
-    "followRange": 40,
+    "trackingRange": 500,
+    "followRange": 500,
     "health": 70,
     "xpAmount": 90,
     "waterMob": false,
     "breatheUnderwater": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "pushedByFluids": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -117,7 +123,7 @@
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"74\" y=\"-10\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"java_code\"><field name=\"CODE\">if (!this.level().isClientSide()) {&amp;#10;    Player nearestPlayer = this.level().getNearestPlayer(this.getX(), this.getY(), this.getZ(), 16, false);&amp;#10;    if (nearestPlayer != null) {&amp;#10;        this.getLookControl().setLookAt(&amp;#10;            nearestPlayer.getX(),&amp;#10;            nearestPlayer.getEyeY(),&amp;#10;            nearestPlayer.getZ(),&amp;#10;            10.0F,&amp;#10;            (float) this.getMaxHeadXRot()&amp;#10;        );&amp;#10;    }&amp;#10;}</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

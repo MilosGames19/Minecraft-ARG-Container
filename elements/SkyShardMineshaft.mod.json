@@ -1,0 +1,8 @@
+{
+  "_fv": 60,
+  "_type": "lootmodifier",
+  "definition": {
+    "modifiedTable": "chests/abandoned_mineshaft",
+    "modifierTable": "SkyShardItem"
+  }
+}

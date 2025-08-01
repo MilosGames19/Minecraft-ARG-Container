@@ -33,4 +33,5 @@ public class AuthenticatorBeamRender implements BlockEntityRenderer<Authenticato
    public boolean shouldRender(AuthenticatorBlockEntity pBlockEntity, Vec3 at) {
       return Vec3.atCenterOf(pBlockEntity.getBlockPos()).multiply(1.0D, 0.0D, 1.0D).closerThan(at.multiply(1.0D, 0.0D, 1.0D), (double)this.getViewDistance());
    }
+
 }

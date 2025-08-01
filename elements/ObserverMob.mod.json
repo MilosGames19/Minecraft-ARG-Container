@@ -140,7 +140,11 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_overworld"
+      }
+    ],
     "spawnInDungeons": true
   }
 }

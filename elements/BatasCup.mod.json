@@ -1,0 +1,55 @@
+{
+  "_fv": 60,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "debug",
+    "customModelName": "batas_cup:default",
+    "customProperties": {},
+    "states": [],
+    "name": "\"Batas\" Mug",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§4W§kA§4R§cN§kI§4N§cG§8: §4A§kN§4O§cM§kA§4L§cY §8D§4E§kT§4E§cC§4T§kE§4D§r"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:SpearProjectile"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

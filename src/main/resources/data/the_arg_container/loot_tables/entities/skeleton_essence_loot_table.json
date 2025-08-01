@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "the_arg_container:essence",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 12,
+                "max": 17
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "the_arg_container:entities/skeleton_essence_loot_table"
+}

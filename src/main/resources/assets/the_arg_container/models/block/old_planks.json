@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/old_planks",
+    "up": "the_arg_container:block/old_planks",
+    "north": "the_arg_container:block/old_planks",
+    "east": "the_arg_container:block/old_planks",
+    "south": "the_arg_container:block/old_planks",
+    "west": "the_arg_container:block/old_planks",
+    "particle": "the_arg_container:block/old_planks"
+  },
+  "render_type": "solid"
+}

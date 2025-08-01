@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/quantumpillarend",
+    "up": "the_arg_container:block/quantumpillarend",
+    "north": "the_arg_container:block/quantumpillarend",
+    "east": "the_arg_container:block/quantumpillarend",
+    "south": "the_arg_container:block/quantumpillarend",
+    "west": "the_arg_container:block/quantumpillarend",
+    "particle": "the_arg_container:block/quantumpillarend"
+  },
+  "render_type": "solid"
+}

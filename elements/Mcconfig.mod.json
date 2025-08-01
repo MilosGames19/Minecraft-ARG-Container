@@ -17,7 +17,7 @@
             "logicField": 0,
             "numberField": 0.0,
             "textDefault": "",
-            "comment": "",
+            "comment": "Enable/disable alphaver celestial flame generation.",
             "vardisplay": "sky_flame_generation",
             "varname": "sky_flame_generation",
             "enablecomment": false,
@@ -34,7 +34,7 @@
             "logicField": 0,
             "numberField": 0.0,
             "textDefault": "",
-            "comment": "",
+            "comment": "Enable/disable alphaver lilipad generation.",
             "vardisplay": "lilypad_generation",
             "varname": "lilypad_generation",
             "enablecomment": false,
@@ -59,23 +59,6 @@
             "comment": "",
             "vardisplay": "dash_overlay",
             "varname": "dash_overlay",
-            "enablecomment": false,
-            "stringlist": []
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 0,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "sky",
-            "varname": "sky",
             "enablecomment": false,
             "stringlist": []
           }
@@ -117,9 +100,104 @@
             "logicField": 0,
             "numberField": 0.0,
             "textDefault": "",
-            "comment": "",
+            "comment": "Enable/disable recruiter connections.",
             "vardisplay": "sv_allowrnet",
             "varname": "sv_allowrnet",
+            "enablecomment": false,
+            "stringlist": []
+          }
+        ]
+      },
+      {
+        "category": "Sky",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable TBOTV sky in overworld.",
+            "vardisplay": "tbotv_sky",
+            "varname": "tbotv_sky",
+            "enablecomment": false,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable alphaver nebula event.",
+            "vardisplay": "alphaver_nebula_event",
+            "varname": "alphaver_nebula_event",
+            "enablecomment": false,
+            "stringlist": []
+          }
+        ]
+      },
+      {
+        "category": "Features",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable dash ability.",
+            "vardisplay": "alphaver_dash_ability",
+            "varname": "alphaver_dash_ability",
+            "enablecomment": false,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable long jump ability.",
+            "vardisplay": "alphaver_long_jump_ability",
+            "varname": "alphaver_long_jump_ability",
+            "enablecomment": false,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable Regenerating static.",
+            "vardisplay": "fixer_mod",
+            "varname": "fixer_mod",
             "enablecomment": false,
             "stringlist": []
           }

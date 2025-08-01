@@ -98,7 +98,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 10,
+    "luminance": 1,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "isBonemealable": false,

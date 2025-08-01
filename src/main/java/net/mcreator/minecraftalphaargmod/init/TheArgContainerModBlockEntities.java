@@ -17,10 +17,15 @@ import net.mcreator.minecraftalphaargmod.block.entity.TheUltimateTruthBlockEntit
 import net.mcreator.minecraftalphaargmod.block.entity.StructureBuilderBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.ServerContainersBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.SafeBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.PreparationsSkyBlockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PerlinKeyblockBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.NetherReactorCoreBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.MoonfallSkyBlockNightBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.MoonfallSkyBlockDayBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.MoonfallGeneratorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.KeySlotterBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.HubSkyBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.GeneratorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.FreezerBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.AuthenticatorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.AdminChestBlockEntity;
@@ -50,4 +55,13 @@ public class TheArgContainerModBlockEntities {
 			() -> BlockEntityType.Builder.of(TheUltimateTruthBlockEntity::new, TheArgContainerModBlocks.THE_ULTIMATE_TRUTH.get()).build(null));
 	public static final RegistryObject<BlockEntityType<TheUltimateTruthBricksBlockEntity>> THE_ULTIMATE_TRUTH_BRICKS = REGISTRY.register("the_ultimate_truth_bricks",
 			() -> BlockEntityType.Builder.of(TheUltimateTruthBricksBlockEntity::new, TheArgContainerModBlocks.THE_ULTIMATE_TRUTH_BRICKS.get()).build(null));
+	public static final RegistryObject<BlockEntityType<NetherReactorCoreBlockEntity>> NETHER_REACTOR_CORE = REGISTRY.register("nether_reactor_core",
+			() -> BlockEntityType.Builder.of(NetherReactorCoreBlockEntity::new, TheArgContainerModBlocks.NETHER_REACTOR_CORE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<PreparationsSkyBlockBlockEntity>> PREPARATIONS_SKY_BLOCK = REGISTRY.register("preparations_sky_block",
+			() -> BlockEntityType.Builder.of(PreparationsSkyBlockBlockEntity::new, TheArgContainerModBlocks.PREPARATIONS_SKY_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<MoonfallSkyBlockNightBlockEntity>> MOONFALL_SKY_BLOCK_NIGHT = REGISTRY.register("moonfall_sky_block_night",
+			() -> BlockEntityType.Builder.of(MoonfallSkyBlockNightBlockEntity::new, TheArgContainerModBlocks.MOONFALL_SKY_BLOCK_NIGHT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<MoonfallSkyBlockDayBlockEntity>> MOONFALL_SKY_BLOCK_DAY = REGISTRY.register("moonfall_sky_block_day",
+			() -> BlockEntityType.Builder.of(MoonfallSkyBlockDayBlockEntity::new, TheArgContainerModBlocks.MOONFALL_SKY_BLOCK_DAY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<GeneratorBlockEntity>> GENERATOR = REGISTRY.register("generator", () -> BlockEntityType.Builder.of(GeneratorBlockEntity::new, TheArgContainerModBlocks.GENERATOR.get()).build(null));
 }

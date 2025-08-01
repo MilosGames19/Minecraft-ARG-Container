@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "structure",
+  "definition": {
+    "structure": "palace2",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 77,
+    "separation": 74,
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_forest"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

@@ -21,6 +21,9 @@
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "MoonfalldimensionPlayerEntersDimension"
+    },
     "portalFrame": {
       "value": "CUSTOM:GroundspongeflapBlock"
     },

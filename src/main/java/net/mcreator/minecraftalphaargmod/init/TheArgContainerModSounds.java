@@ -50,4 +50,5 @@ public class TheArgContainerModSounds {
 	public static final RegistryObject<SoundEvent> SAW13RETURNS = REGISTRY.register("saw13returns", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_arg_container", "saw13returns")));
 	public static final RegistryObject<SoundEvent> MOONFALL = REGISTRY.register("moonfall", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_arg_container", "moonfall")));
 	public static final RegistryObject<SoundEvent> OBVR_ATTACK = REGISTRY.register("obvr_attack", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_arg_container", "obvr_attack")));
+	public static final RegistryObject<SoundEvent> MESSAGE_1 = REGISTRY.register("message_1", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_arg_container", "message_1")));
 }

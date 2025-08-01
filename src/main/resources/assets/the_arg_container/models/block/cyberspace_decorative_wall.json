@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/cyberspace_decorative_wall",
+    "up": "the_arg_container:block/cyberspace_decorative_wall",
+    "north": "the_arg_container:block/cyberspace_decorative_wall",
+    "east": "the_arg_container:block/cyberspace_decorative_wall",
+    "south": "the_arg_container:block/cyberspace_decorative_wall",
+    "west": "the_arg_container:block/cyberspace_decorative_wall",
+    "particle": "the_arg_container:block/cyberspace_decorative_wall"
+  },
+  "render_type": "solid"
+}

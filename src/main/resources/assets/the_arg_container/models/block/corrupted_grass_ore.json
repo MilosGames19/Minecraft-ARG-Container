@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/corruptedgrassore",
+    "up": "the_arg_container:block/corruptedgrassore",
+    "north": "the_arg_container:block/corruptedgrassore",
+    "east": "the_arg_container:block/corruptedgrassore",
+    "south": "the_arg_container:block/corruptedgrassore",
+    "west": "the_arg_container:block/corruptedgrassore",
+    "particle": "the_arg_container:block/corruptedgrassore"
+  },
+  "render_type": "solid"
+}

@@ -33,12 +33,12 @@
         "subtract": false
       }
     ],
-    "name": "§kUnknown",
+    "name": "Wifi Block",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 0.0,
-    "resistance": 10.0,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""

@@ -7,7 +7,7 @@
     "east": "the_arg_container:block/the_ultimate_truth_bricks",
     "south": "the_arg_container:block/the_ultimate_truth_bricks",
     "west": "the_arg_container:block/the_ultimate_truth_bricks",
-    "particle": "the_arg_container:block/ultimatetruthblock"
+    "particle": "the_arg_container:block/the_ultimate_truth_bricks_item"
   },
   "render_type": "cutout"
 }

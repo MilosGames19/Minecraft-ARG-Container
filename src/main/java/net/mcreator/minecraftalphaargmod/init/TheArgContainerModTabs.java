@@ -178,6 +178,13 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.DEAD_VOID_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.REDSTONELANTERN.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.VOID_TORCH.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WEIRD_COBBLESTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GRADIENT_COBBLESTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WEIRD_GRASS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WHITE_COBBLESTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WHITE_COBBLESTONE_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.KATKA_WEIRD_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_MATERIAL.get().asItem());
 			})
 
 					.build());
@@ -252,63 +259,51 @@ public class TheArgContainerModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> UNUSED = REGISTRY.register("unused",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.unused")).icon(() -> new ItemStack(TheArgContainerModBlocks.CELESTIAL_FLAME.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(TheArgContainerModBlocks.UNKNOWN_1.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.U_1.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_2.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_3.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_4.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_5.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_6.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_7.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_8.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_9.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_11.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.VENDING_MACHINE_SHOP.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.VENDING_MACHINE_SHOP_2.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.MESH_BLOCK_DOWN.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.MESH_BLOCK_UP.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_10.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_1.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_2.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_3.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_4.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_5.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.UNUSED_6.get().asItem());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_1.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_2.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_3.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_4.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_5.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_6.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_7.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_8.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_9.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_10.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_1.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_3.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_2.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_4.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_5.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_6.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_7.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_8.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_9.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_10.get());
-				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_11.get());
-			})
-
-					.build());
 	public static final RegistryObject<CreativeModeTab> MINECRAFT_SURVIVAL_GLITCHY = REGISTRY.register("minecraft_survival_glitchy",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.minecraft_survival_glitchy")).icon(() -> new ItemStack(TheArgContainerModBlocks.CYBERSPACE_EYE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TheArgContainerModBlocks.MALICE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_EYE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_WALL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_BODDY.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_DATA.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_STAND.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_DECORATIVE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_DATA_404.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_SIGNAL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_LAMP.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BETA_TERMINAL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OLD_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PURPLE_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ULTIMATE_CRAFTING_TABLE_STATION.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_PILLAR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_FLOOR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SPEAKER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NETHER_REACTOR_CORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_SANDSTONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_SANDSTONE_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHISELED_CYBERSPACE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLACK_CYBERSPACE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FULL_CYBERSPACE_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RED_DECORATIVE_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CRACKED_OBSIDIAN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHISELED_STONE_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHISELED_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHISELED_STONE_WALL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STONE_FLOOR_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PALE_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DEGRADED_CYBERSPACE_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.OLD_PLANKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CORRUPTED_DIAMOND_ORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CORRUPTED_GRASS_ORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CORRUPTED_SAND_ORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CORRUPTED_DIRT_ORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STONE_MACHINE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SOUL_NOMORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_DATA_COLUMN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.KITCHEN_TILE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNFINISHED_DATA_BLOCK.get().asItem());
 			})
 
 					.build());
@@ -409,6 +404,42 @@ public class TheArgContainerModTabs {
 			})
 
 					.build());
+	public static final RegistryObject<CreativeModeTab> NAVY_208 = REGISTRY.register("navy_208",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.navy_208")).icon(() -> new ItemStack(TheArgContainerModBlocks.NAVY_208_EYE_BLOCK.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TheArgContainerModBlocks.NAVY_208_EYE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SADEYES_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DARK_PUMPKIN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.EYE_PIG_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NAVY_208_STAR_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NAVY_208_VOID_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.THE_EYE_THAT_WATCHES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ASCEYEBLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ETHEREAL_STAR_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ETHEREAL_STAR_CORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ETHEREAL_CORE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CRIMSON.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CRIMSON_PROTECTED.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PROTECTION.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PROTECTION_CORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.VOID_PORTAL_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.VOID_DIRT.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CRIMSON_CORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CRIMSON_ROCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SAPPHIRE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CHISELED_LINDERITE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GLITCHED_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LINDERITE_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.STAR_STONE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.SMOOTH_LINDERITE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LINDERITE_CORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NAVY_208_VOID_PATH.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LINDERITE_ORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.VOID_CORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GLITCHED_CORE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNGLITCHED_BLOCK.get().asItem());
+			})
+
+					.build());
 	public static final RegistryObject<CreativeModeTab> CLASSIC_MINECRAFT = REGISTRY.register("classic_minecraft",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.classic_minecraft")).icon(() -> new ItemStack(TheArgContainerModBlocks.CLASSIC_MINECRAFT_TROPHY.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TheArgContainerModBlocks.RUBY_ORE.get().asItem());
@@ -503,6 +534,33 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.ENGINEER_CHESTPLATE.get());
 				tabData.accept(TheArgContainerModItems.ENGINEER_LEGGINGS.get());
 				tabData.accept(TheArgContainerModItems.ENGINEER_BOOTS.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> WITHERSTORM_345 = REGISTRY.register("witherstorm_345",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.witherstorm_345")).icon(() -> new ItemStack(TheArgContainerModBlocks.WITHERSTORM_345_STATIC_BLOCK.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TheArgContainerModItems.QUANTUM_KEY.get());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORM_345_STATIC_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORM_345_IDENTICAL_STATIC_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORM_345STATICSTAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORM_345STATICFENCE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORM_345STATICDOOR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.REINFORCED_STATIC.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.IDENTICAL_REINFORCED_STATIC.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHER_STORM_QUANTUM_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORMQUANTUMSTAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORMQUANTUMSLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.WITHERSTORMQUANTUMFENCE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.QUANTUM_BRICKS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.QUANTUM_BRICK_STAIRS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.QUANTUM_BRICK_SLAB.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.QUANTUM_PILLAR_CENTER.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.QUANTUM_PILLAR_END.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PALE_QUANTUM_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.GENERATOR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.BLUEBLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.LABYRINTH.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.IDENTICAL_GRASS.get().asItem());
 			})
 
 					.build());
@@ -722,6 +780,10 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.VOID_EXP.get());
 				tabData.accept(TheArgContainerModBlocks.THE_ULTIMATE_TRUTH.get().asItem());
 				tabData.accept(TheArgContainerModItems.MOONFALLDIMENSION.get());
+				tabData.accept(TheArgContainerModBlocks.LOCKED_DOOR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.PREPARATIONS_SKY_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MOONFALL_SKY_BLOCK_NIGHT.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MOONFALL_SKY_BLOCK_DAY.get().asItem());
 			})
 
 					.build());
@@ -1086,6 +1148,52 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.TORCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.GREENSTONE_TORCH.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_SKY.get().asItem());
+				tabData.accept(TheArgContainerModItems.OBSIDIAN_UPGRADE.get());
+				tabData.accept(TheArgContainerModBlocks.UNKNOWN_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.U_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_3.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_5.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_6.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_7.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_8.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_9.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_11.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.VENDING_MACHINE_SHOP.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.VENDING_MACHINE_SHOP_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MESH_BLOCK_DOWN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MESH_BLOCK_UP.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_BLOCK_10.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_3.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_5.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.UNUSED_6.get().asItem());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_1.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_2.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_3.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_4.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_5.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_6.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_7.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_8.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_9.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_ITEM_10.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_1.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_3.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_2.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_4.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_5.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_6.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_7.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_8.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_9.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_10.get());
+				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_11.get());
 			})
 
 					.build());
@@ -1454,7 +1562,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.NEXUSWALL.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.NEXUS_DISPOSAL_SECTOR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.NEXUS_CAUTION_BLOCK.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.NEXUS_OLD_DATA_WOOD.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.NEXUS_OLD_DATA_WALL.get().asItem());
 			})
 
@@ -1543,6 +1650,8 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.PIG_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.LONG_LEGS_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.VOID_ENTITY_GECKOLIB_SPAWN_EGG.get());
+			tabData.accept(TheArgContainerModItems.CORE_SPAWN_EGG.get());
+			tabData.accept(TheArgContainerModItems.DARKNESS_ENTITY_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(TheArgContainerModBlocks.STRUCTURE_BUILDER.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -1567,6 +1676,9 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.ENVELOPMENT_DIAMOND_ARMOR_CHESTPLATE.get());
 			tabData.accept(TheArgContainerModItems.ENVELOPMENT_DIAMOND_ARMOR_LEGGINGS.get());
 			tabData.accept(TheArgContainerModItems.ENVELOPMENT_DIAMOND_ARMOR_BOOTS.get());
+			tabData.accept(TheArgContainerModItems.TRANSLATOR_HELMET.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(TheArgContainerModItems.SKY_SHARD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(TheArgContainerModItems.MYCON_TOOL_SET_AXE.get());
 			tabData.accept(TheArgContainerModItems.MYCON_TOOL_SET_PICKAXE.get());

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/kitchen_tile",
+    "up": "the_arg_container:block/kitchen_tile",
+    "north": "the_arg_container:block/kitchen_tile",
+    "east": "the_arg_container:block/kitchen_tile",
+    "south": "the_arg_container:block/kitchen_tile",
+    "west": "the_arg_container:block/kitchen_tile",
+    "particle": "the_arg_container:block/kitchen_tile"
+  },
+  "render_type": "solid"
+}

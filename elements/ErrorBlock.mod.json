@@ -37,8 +37,8 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 5.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -58,7 +58,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 60,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,

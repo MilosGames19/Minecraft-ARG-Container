@@ -100,7 +100,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.PORKCHOP"
+      "value": ""
     },
     "livingSound": {
       "value": "entity.pig.ambient"
@@ -134,7 +134,11 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_overworld"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

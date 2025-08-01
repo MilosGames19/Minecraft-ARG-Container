@@ -33,7 +33,9 @@ import net.mcreator.minecraftalphaargmod.entity.ExplosiveEssenceEntity;
 import net.mcreator.minecraftalphaargmod.entity.EvilUser0Entity;
 import net.mcreator.minecraftalphaargmod.entity.EssenceProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.EntityEntity;
+import net.mcreator.minecraftalphaargmod.entity.DarknessEntityEntity;
 import net.mcreator.minecraftalphaargmod.entity.DBGEntity;
+import net.mcreator.minecraftalphaargmod.entity.COREEntity;
 import net.mcreator.minecraftalphaargmod.entity.BrixgoaEntity;
 import net.mcreator.minecraftalphaargmod.entity.BlueGiantEntity;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
@@ -100,11 +102,19 @@ public class TheArgContainerModEntities {
 	public static final RegistryObject<EntityType<PartiBulletEntity>> PARTI_BULLET = register("parti_bullet",
 			EntityType.Builder.<PartiBulletEntity>of(PartiBulletEntity::new, MobCategory.MISC).setCustomClientFactory(PartiBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<LongLegsEntity>> LONG_LEGS = register("long_legs",
-			EntityType.Builder.<LongLegsEntity>of(LongLegsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LongLegsEntity::new)
+			EntityType.Builder.<LongLegsEntity>of(LongLegsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(500).setUpdateInterval(3).setCustomClientFactory(LongLegsEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<VoidEntityGeckolibEntity>> VOID_ENTITY_GECKOLIB = register("void_entity_geckolib",
 			EntityType.Builder.<VoidEntityGeckolibEntity>of(VoidEntityGeckolibEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VoidEntityGeckolibEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<COREEntity>> CORE = register("core",
+			EntityType.Builder.<COREEntity>of(COREEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(COREEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DarknessEntityEntity>> DARKNESS_ENTITY = register("darkness_entity",
+			EntityType.Builder.<DarknessEntityEntity>of(DarknessEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DarknessEntityEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -130,6 +140,8 @@ public class TheArgContainerModEntities {
 			PigEntity.init();
 			LongLegsEntity.init();
 			VoidEntityGeckolibEntity.init();
+			COREEntity.init();
+			DarknessEntityEntity.init();
 		});
 	}
 
@@ -150,5 +162,7 @@ public class TheArgContainerModEntities {
 		event.put(PIG.get(), PigEntity.createAttributes().build());
 		event.put(LONG_LEGS.get(), LongLegsEntity.createAttributes().build());
 		event.put(VOID_ENTITY_GECKOLIB.get(), VoidEntityGeckolibEntity.createAttributes().build());
+		event.put(CORE.get(), COREEntity.createAttributes().build());
+		event.put(DARKNESS_ENTITY.get(), DarknessEntityEntity.createAttributes().build());
 	}
 }

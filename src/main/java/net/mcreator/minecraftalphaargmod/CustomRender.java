@@ -28,6 +28,8 @@ public class CustomRender {
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.AUTHENTICATOR.get(), context -> new AuthenticatorBeamRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.THE_ULTIMATE_TRUTH.get(), context -> new TheUltimateTruthRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.THE_ULTIMATE_TRUTH_BRICKS.get(), context -> new TheUltimateTruthBricksRender());
-
-  }
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.PREPARATIONS_SKY_BLOCK.get(), context -> new PreparationsSkyBlockRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.MOONFALL_SKY_BLOCK_NIGHT.get(), context -> new ShatteredSkyboxNightBlockRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.MOONFALL_SKY_BLOCK_DAY.get(), context -> new ShatteredSkyboxDayBlockRender());
+	}
 }

@@ -30,6 +30,9 @@ public class ShardsHandler {
     private static ShaderInstance plane_image;
     @Nullable
 
+    private static ShaderInstance fake_sky;
+    @Nullable
+
     @SubscribeEvent
     public static void shaderRegistry(RegisterShadersEvent event) throws IOException
     {
@@ -37,10 +40,21 @@ public class ShardsHandler {
             plane_image = shaderInstance;
         });
 
+        event.registerShader(new ShaderInstance(event.getResourceProvider(), new ResourceLocation("the_arg_container","fake_sky"), DefaultVertexFormat.POSITION), shaderInstance -> {
+            fake_sky = shaderInstance;
+        });
+
     }
+
+
 
     @Nullable
     public static ShaderInstance GetPlaneImage() {
         return plane_image;
+    }
+
+    @Nullable
+    public static ShaderInstance GetFakeSky() {
+        return fake_sky;
     }
 }

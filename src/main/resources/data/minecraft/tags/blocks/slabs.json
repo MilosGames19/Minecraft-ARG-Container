@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:white_cobblestone_slab",
+    "the_arg_container:witherstormquantumslab",
+    "the_arg_container:quantum_brick_slab",
     "the_arg_container:aqua_quartz_slab",
     "the_arg_container:teal_prismarine_slab",
     "the_arg_container:quartzum_prismarine_slab",

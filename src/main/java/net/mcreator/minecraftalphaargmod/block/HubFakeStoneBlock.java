@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class HubFakeStoneBlock extends Block {
 	public HubFakeStoneBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.5f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

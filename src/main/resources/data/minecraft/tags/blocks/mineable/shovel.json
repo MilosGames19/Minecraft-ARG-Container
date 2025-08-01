@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:identical_grass",
+    "the_arg_container:void_dirt",
     "the_arg_container:starlit_grass_block",
     "the_arg_container:aternoshroom_soil_blue",
     "the_arg_container:aternoshroom_soil_pink",

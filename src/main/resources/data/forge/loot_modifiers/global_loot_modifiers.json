@@ -1,0 +1,15 @@
+{
+  "entries": [
+    "the_arg_container:zombie_essence",
+    "the_arg_container:spider_essence",
+    "the_arg_container:skeleton_essence",
+    "the_arg_container:creeper_essence",
+    "the_arg_container:creeper_heart",
+    "the_arg_container:sky_shard_mineshaft",
+    "the_arg_container:sky_shard_buried_treasure",
+    "the_arg_container:sky_shard_shipwreck_treasure",
+    "the_arg_container:sky_shard_simple_dungeon",
+    "the_arg_container:sky_shard_end_city_treasure"
+  ],
+  "replace": false
+}

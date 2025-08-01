@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "the_arg_container:void_gem"
+    },
+    "b": {
+      "item": "the_arg_container:data_daisy"
+    }
+  },
+  "result": {
+    "item": "the_arg_container:repeller",
+    "count": 1
+  }
+}

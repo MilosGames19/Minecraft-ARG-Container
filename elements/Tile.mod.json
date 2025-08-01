@@ -37,7 +37,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.3,
+    "hardness": 1.5,
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "GLASS"
     },
     "tickRate": 0,
     "tickRandomly": false,

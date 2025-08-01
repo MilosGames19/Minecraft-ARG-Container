@@ -14,11 +14,11 @@ import net.minecraft.core.BlockPos;
 
 public class DebugBlock extends Block {
 	public DebugBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS)
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM)
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:safe"))))
-				.strength(1f, 10f));
+				.strength(0.2f, 10f));
 	}
 
 	@Override

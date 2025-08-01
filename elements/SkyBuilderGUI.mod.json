@@ -1,0 +1,373 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 145,
+          "y": 69
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "OutputCost"
+          },
+          "onStackTransfer": {
+            "name": "OutputCost"
+          },
+          "x": 268,
+          "y": 69
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inventory",
+          "text": {
+            "fixedValue": "Inventory"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sky_builder",
+          "text": {
+            "fixedValue": "Sky Builder"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 41
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 178,
+          "y": 52
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 196,
+          "y": 52
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 214,
+          "y": 52
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 232,
+          "y": 52
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 178,
+          "y": 70
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 196,
+          "y": 70
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 8,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 214,
+          "y": 70
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 9,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 232,
+          "y": 70
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 178,
+          "y": 88
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 196,
+          "y": 88
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 12,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 214,
+          "y": 88
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 13,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 232,
+          "y": 88
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkyBuilderRecipe1"
+          },
+          "x": 178,
+          "y": 52
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot1",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkyBuilderRecipe2"
+          },
+          "x": 196,
+          "y": 52
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot2",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkyBuilderRecipe3"
+          },
+          "x": 214,
+          "y": 52
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot3",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkyBuilderRecipe4"
+          },
+          "x": 232,
+          "y": 52
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot4",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkyBuilderRecipe5"
+          },
+          "x": 178,
+          "y": 70
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot5",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SkyBuilderRecipe6"
+          },
+          "x": 196,
+          "y": 70
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot6",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "x": 214,
+          "y": 70
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot7",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "x": 232,
+          "y": 70
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot8",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "x": 178,
+          "y": 88
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot9",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "x": 196,
+          "y": 88
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot10",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "x": 214,
+          "y": 88
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slot11",
+          "image": "slot.png",
+          "hoveredImage": "",
+          "x": 232,
+          "y": 88
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SkyBuilderRecipe"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

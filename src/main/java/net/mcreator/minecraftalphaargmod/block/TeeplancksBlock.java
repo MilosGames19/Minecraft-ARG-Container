@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class TeeplancksBlock extends Block {
 	public TeeplancksBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1.5f, 10f));
 	}
 
 	@Override

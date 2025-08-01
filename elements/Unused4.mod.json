@@ -43,7 +43,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Unused"
+      "value": "CUSTOM:Alpha"
     },
     "destroyTool": "Not specified",
     "customDrop": {

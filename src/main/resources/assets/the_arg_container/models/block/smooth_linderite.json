@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/smooth_linderite",
+    "up": "the_arg_container:block/smooth_linderite",
+    "north": "the_arg_container:block/smooth_linderite",
+    "east": "the_arg_container:block/smooth_linderite",
+    "south": "the_arg_container:block/smooth_linderite",
+    "west": "the_arg_container:block/smooth_linderite",
+    "particle": "the_arg_container:block/smooth_linderite"
+  },
+  "render_type": "solid"
+}

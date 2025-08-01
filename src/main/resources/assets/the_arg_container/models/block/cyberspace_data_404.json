@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/cyberspacedata",
+    "up": "the_arg_container:block/cyberspacedata",
+    "north": "the_arg_container:block/cyberspacedata",
+    "east": "the_arg_container:block/cyberspacedata",
+    "south": "the_arg_container:block/cyberspacedata",
+    "west": "the_arg_container:block/cyberspacedata",
+    "particle": "the_arg_container:block/cyberspacedata"
+  },
+  "render_type": "solid"
+}

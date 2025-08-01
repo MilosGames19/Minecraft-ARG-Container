@@ -9,8 +9,8 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 845,
-    "separation": 834,
+    "spacing": 103,
+    "separation": 94,
     "restrictionBiomes": [
       {
         "value": "#minecraft:is_overworld"

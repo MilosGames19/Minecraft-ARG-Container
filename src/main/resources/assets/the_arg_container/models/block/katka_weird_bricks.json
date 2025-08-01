@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/katka_block7",
+    "up": "the_arg_container:block/katka_block7",
+    "north": "the_arg_container:block/katka_block7",
+    "east": "the_arg_container:block/katka_block7",
+    "south": "the_arg_container:block/katka_block7",
+    "west": "the_arg_container:block/katka_block7",
+    "particle": "the_arg_container:block/katka_block7"
+  },
+  "render_type": "solid"
+}

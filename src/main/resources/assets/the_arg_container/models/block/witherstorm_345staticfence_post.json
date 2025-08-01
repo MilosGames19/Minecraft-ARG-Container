@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "the_arg_container:block/stat",
+    "particle": "the_arg_container:block/stat"
+  },
+  "render_type": "solid"
+}

@@ -13,7 +13,7 @@
       "value": ""
     },
     "grassColor": {
-      "value": -12801716,
+      "value": -7867755,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -52,12 +52,12 @@
       "max": 1.0
     },
     "genErosion": {
-      "min": -0.3,
-      "max": 0.05
+      "min": -0.2225,
+      "max": 1.0
     },
     "genWeirdness": {
       "min": -1.0,
-      "max": 1.0
+      "max": 0.0
     },
     "treesPerChunk": 5,
     "vanillaTreeType": "Default",

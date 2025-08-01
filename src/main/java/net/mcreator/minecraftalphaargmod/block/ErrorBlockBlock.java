@@ -15,7 +15,7 @@ import net.mcreator.minecraftalphaargmod.procedures.CrashProcedure;
 
 public class ErrorBlockBlock extends Block {
 	public ErrorBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(5f));
 	}
 
 	@Override

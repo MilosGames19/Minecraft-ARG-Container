@@ -8,6 +8,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.minecraftalphaargmod.init.TheArgContainerModBlocks;
@@ -19,20 +20,27 @@ public class HighwoodLeavesBlockDestroyedByPlayerProcedure {
 		if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Blocks.AIR));
-				entityToSpawn.setPickUpDelay(10);
+				entityToSpawn.setPickUpDelay(0);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS) {
+				{
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+					if (_ist.hurt(1, RandomSource.create(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(TheArgContainerModBlocks.HIGHWOOD_LEAVES.get()));
-					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setPickUpDelay(0);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Blocks.AIR));
-					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setPickUpDelay(0);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}

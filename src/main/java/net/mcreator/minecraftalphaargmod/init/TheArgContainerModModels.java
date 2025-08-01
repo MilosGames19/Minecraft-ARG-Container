@@ -10,6 +10,8 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.minecraftalphaargmod.client.model.Modelspearprojectile;
+import net.mcreator.minecraftalphaargmod.client.model.Modelmother;
+import net.mcreator.minecraftalphaargmod.client.model.Modelcore;
 import net.mcreator.minecraftalphaargmod.client.model.ModelZombieModel;
 import net.mcreator.minecraftalphaargmod.client.model.ModelVoid_entity;
 import net.mcreator.minecraftalphaargmod.client.model.ModelObserver;
@@ -23,6 +25,8 @@ import net.mcreator.minecraftalphaargmod.client.model.ModelBrixgoa;
 public class TheArgContainerModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelmother.LAYER_LOCATION, Modelmother::createBodyLayer);
+		event.registerLayerDefinition(Modelcore.LAYER_LOCATION, Modelcore::createBodyLayer);
 		event.registerLayerDefinition(ModelDBG.LAYER_LOCATION, ModelDBG::createBodyLayer);
 		event.registerLayerDefinition(ModelGiant.LAYER_LOCATION, ModelGiant::createBodyLayer);
 		event.registerLayerDefinition(ModelVoid_entity.LAYER_LOCATION, ModelVoid_entity::createBodyLayer);

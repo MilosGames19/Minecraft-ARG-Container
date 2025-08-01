@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class FrugidTrunkBlock extends Block {
 	public FrugidTrunkBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(1.5f, 2f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:witherstormquantumfence",
+    "the_arg_container:witherstorm_345staticfence",
     "the_arg_container:teal_quartz_fence",
     "the_arg_container:quartzum_prismarine_fence",
     "the_arg_container:ostrutene_planks_fence",
