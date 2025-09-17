@@ -11,12 +11,12 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.minecraftalphaargmod.client.renderer.VoidentityRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.VoidEntityGeckolibRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.User0CloneRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.StevenRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SpearProjectileRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SoulEntityRenderer;
+import net.mcreator.minecraftalphaargmod.client.renderer.RecruiterV2Renderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.RecruiterRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.PigRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.ObserverMobRenderer;
@@ -50,7 +50,6 @@ public class TheArgContainerModEntityRenderers {
 		event.registerEntityRenderer(TheArgContainerModEntities.STEVEN.get(), StevenRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.USER_0_CLONE.get(), User0CloneRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.EVIL_USER_0.get(), EvilUser0Renderer::new);
-		event.registerEntityRenderer(TheArgContainerModEntities.VOIDENTITY.get(), VoidentityRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.RANGER_BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.PIG.get(), PigRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.PARTI_BULLET.get(), ThrownItemRenderer::new);
@@ -58,5 +57,6 @@ public class TheArgContainerModEntityRenderers {
 		event.registerEntityRenderer(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB.get(), VoidEntityGeckolibRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.CORE.get(), CORERenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.DARKNESS_ENTITY.get(), DarknessEntityRenderer::new);
+		event.registerEntityRenderer(TheArgContainerModEntities.RECRUITER_V_2.get(), RecruiterV2Renderer::new);
 	}
 }

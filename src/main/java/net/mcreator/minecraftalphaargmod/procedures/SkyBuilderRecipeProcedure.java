@@ -28,7 +28,7 @@ public class SkyBuilderRecipeProcedure {
 						}
 						return 0;
 					}
-				}.getAmount(0) / 8));
+				}.getAmount(0) / 4));
 				((Slot) _slots.get(2)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
@@ -88,7 +88,7 @@ public class SkyBuilderRecipeProcedure {
 						}
 						return 0;
 					}
-				}.getAmount(0) / 8));
+				}.getAmount(0) / 4));
 				((Slot) _slots.get(6)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
@@ -103,8 +103,23 @@ public class SkyBuilderRecipeProcedure {
 						}
 						return 0;
 					}
-				}.getAmount(0) / 8));
+				}.getAmount(0) / 4));
 				((Slot) _slots.get(7)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(TheArgContainerModBlocks.DEBUG_SKYBOX.get()).copy();
+				_setstack.setCount((int) (new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(0) / 8));
+				((Slot) _slots.get(8)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 		} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
@@ -130,6 +145,10 @@ public class SkyBuilderRecipeProcedure {
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(7)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(8)).set(ItemStack.EMPTY);
 				_player.containerMenu.broadcastChanges();
 			}
 		}

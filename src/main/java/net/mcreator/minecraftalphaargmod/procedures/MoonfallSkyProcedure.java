@@ -526,5 +526,10 @@ public class MoonfallSkyProcedure {
 				}
 			}).get(world, (float) partialTick), false);
 		}
+		if ((entity.level().dimension()) == Level.OVERWORLD && McconfigConfiguration.TBOTV_MOON_EVENT.get() == true) {
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "broken_moon_v2" + ".png")));
+			renderMoon(40, 255 << 24 | 255 << 16 | 255 << 8 | 255, true, false);
+		}
 	}
 }

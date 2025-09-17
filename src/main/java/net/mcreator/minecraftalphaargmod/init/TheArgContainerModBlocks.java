@@ -1068,6 +1068,7 @@ import net.mcreator.minecraftalphaargmod.block.DecayedIronDoorBlock;
 import net.mcreator.minecraftalphaargmod.block.DecayedGlowstoneBlock;
 import net.mcreator.minecraftalphaargmod.block.DecayedBookshelfBlock;
 import net.mcreator.minecraftalphaargmod.block.DebugXBlock;
+import net.mcreator.minecraftalphaargmod.block.DebugSkyboxBlock;
 import net.mcreator.minecraftalphaargmod.block.DebugBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.DebugBlock1Block;
 import net.mcreator.minecraftalphaargmod.block.DebugBlock;
@@ -2738,6 +2739,7 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> WHITE_COBBLESTONE_SLAB = REGISTRY.register("white_cobblestone_slab", () -> new WhiteCobblestoneSlabBlock());
 	public static final RegistryObject<Block> KATKA_WEIRD_BRICKS = REGISTRY.register("katka_weird_bricks", () -> new KatkaWeirdBricksBlock());
 	public static final RegistryObject<Block> UNKNOWN_MATERIAL = REGISTRY.register("unknown_material", () -> new UnknownMaterialBlock());
+	public static final RegistryObject<Block> DEBUG_SKYBOX = REGISTRY.register("debug_skybox", () -> new DebugSkyboxBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

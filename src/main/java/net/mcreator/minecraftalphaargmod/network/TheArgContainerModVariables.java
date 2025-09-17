@@ -21,6 +21,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.ModCheck;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -141,6 +142,7 @@ public class TheArgContainerModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "the_arg_container_mapvars";
 		public boolean Warning = false;
+		public boolean ModCheck = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -150,11 +152,13 @@ public class TheArgContainerModVariables {
 
 		public void read(CompoundTag nbt) {
 			Warning = nbt.getBoolean("Warning");
+			ModCheck = nbt.getBoolean("ModCheck");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("Warning", Warning);
+			nbt.putBoolean("ModCheck", ModCheck);
 			return nbt;
 		}
 

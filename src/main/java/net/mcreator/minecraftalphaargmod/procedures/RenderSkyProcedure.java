@@ -493,7 +493,7 @@ public class RenderSkyProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, ResourceKey<Level> dimension, double partialTick) {
 		if (dimension == null)
 			return;
-		if (dimension == Level.OVERWORLD && McconfigConfiguration.ALPHAVER_NEBULA_EVENT.get() == false) {
+		if (dimension == Level.OVERWORLD && McconfigConfiguration.ALPHAVER_NEBULA_EVENT.get() == false && McconfigConfiguration.TBOTV_MOON_EVENT.get() == false) {
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.setShaderTexture(0, new ResourceLocation(("minecraft" + ":textures/" + "environment/moon_phases" + ".png")));
 			renderMoon(40, 255 << 24 | 255 << 16 | 255 << 8 | 255, true, false);

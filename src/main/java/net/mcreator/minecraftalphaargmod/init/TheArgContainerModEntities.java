@@ -16,12 +16,12 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.minecraftalphaargmod.entity.VoidentityEntity;
 import net.mcreator.minecraftalphaargmod.entity.VoidEntityGeckolibEntity;
 import net.mcreator.minecraftalphaargmod.entity.User0CloneEntity;
 import net.mcreator.minecraftalphaargmod.entity.StevenEntity;
 import net.mcreator.minecraftalphaargmod.entity.SpearProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.SoulEntityEntity;
+import net.mcreator.minecraftalphaargmod.entity.RecruiterV2Entity;
 import net.mcreator.minecraftalphaargmod.entity.RecruiterEntity;
 import net.mcreator.minecraftalphaargmod.entity.RangerBulletProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.PigEntity;
@@ -89,10 +89,6 @@ public class TheArgContainerModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<EvilUser0Entity>> EVIL_USER_0 = register("evil_user_0", EntityType.Builder.<EvilUser0Entity>of(EvilUser0Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(EvilUser0Entity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<VoidentityEntity>> VOIDENTITY = register("voidentity",
-			EntityType.Builder.<VoidentityEntity>of(VoidentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VoidentityEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<RangerBulletProjectileEntity>> RANGER_BULLET_PROJECTILE = register("ranger_bullet_projectile", EntityType.Builder.<RangerBulletProjectileEntity>of(RangerBulletProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(RangerBulletProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PigEntity>> PIG = register("pig",
@@ -117,6 +113,8 @@ public class TheArgContainerModEntities {
 			EntityType.Builder.<DarknessEntityEntity>of(DarknessEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DarknessEntityEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RecruiterV2Entity>> RECRUITER_V_2 = register("recruiter_v_2", EntityType.Builder.<RecruiterV2Entity>of(RecruiterV2Entity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RecruiterV2Entity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -136,12 +134,12 @@ public class TheArgContainerModEntities {
 			StevenEntity.init();
 			User0CloneEntity.init();
 			EvilUser0Entity.init();
-			VoidentityEntity.init();
 			PigEntity.init();
 			LongLegsEntity.init();
 			VoidEntityGeckolibEntity.init();
 			COREEntity.init();
 			DarknessEntityEntity.init();
+			RecruiterV2Entity.init();
 		});
 	}
 
@@ -158,11 +156,11 @@ public class TheArgContainerModEntities {
 		event.put(STEVEN.get(), StevenEntity.createAttributes().build());
 		event.put(USER_0_CLONE.get(), User0CloneEntity.createAttributes().build());
 		event.put(EVIL_USER_0.get(), EvilUser0Entity.createAttributes().build());
-		event.put(VOIDENTITY.get(), VoidentityEntity.createAttributes().build());
 		event.put(PIG.get(), PigEntity.createAttributes().build());
 		event.put(LONG_LEGS.get(), LongLegsEntity.createAttributes().build());
 		event.put(VOID_ENTITY_GECKOLIB.get(), VoidEntityGeckolibEntity.createAttributes().build());
 		event.put(CORE.get(), COREEntity.createAttributes().build());
 		event.put(DARKNESS_ENTITY.get(), DarknessEntityEntity.createAttributes().build());
+		event.put(RECRUITER_V_2.get(), RecruiterV2Entity.createAttributes().build());
 	}
 }

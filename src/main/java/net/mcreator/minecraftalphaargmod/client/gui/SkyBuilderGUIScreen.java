@@ -143,6 +143,10 @@ public class SkyBuilderGUIScreen extends AbstractContainerScreen<SkyBuilderGUIMe
 		guistate.put("button:imagebutton_slot5", imagebutton_slot5);
 		this.addRenderableWidget(imagebutton_slot5);
 		imagebutton_slot6 = new ImageButton(this.leftPos + 88, this.topPos + 33, 18, 18, 0, 0, 18, new ResourceLocation("the_arg_container:textures/screens/atlas/imagebutton_slot6.png"), 18, 36, e -> {
+			if (true) {
+				TheArgContainerMod.PACKET_HANDLER.sendToServer(new SkyBuilderGUIButtonMessage(6, x, y, z, textstate));
+				SkyBuilderGUIButtonMessage.handleButtonAction(entity, 6, x, y, z, textstate);
+			}
 		});
 		guistate.put("button:imagebutton_slot6", imagebutton_slot6);
 		this.addRenderableWidget(imagebutton_slot6);

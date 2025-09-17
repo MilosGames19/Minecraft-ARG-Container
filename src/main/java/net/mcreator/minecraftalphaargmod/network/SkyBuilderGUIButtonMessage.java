@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.SkyBuilderGUIMenu;
+import net.mcreator.minecraftalphaargmod.procedures.SkyBuilderRecipe7Procedure;
 import net.mcreator.minecraftalphaargmod.procedures.SkyBuilderRecipe6Procedure;
 import net.mcreator.minecraftalphaargmod.procedures.SkyBuilderRecipe5Procedure;
 import net.mcreator.minecraftalphaargmod.procedures.SkyBuilderRecipe4Procedure;
@@ -102,6 +103,10 @@ public class SkyBuilderGUIButtonMessage {
 		if (buttonID == 5) {
 
 			SkyBuilderRecipe6Procedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			SkyBuilderRecipe7Procedure.execute(entity);
 		}
 	}
 

@@ -11,7 +11,7 @@ public class QuantumKeyRightclickedOnBlockProcedure {
 			return;
 		if ((entity.getDirection()) == Direction.SOUTH) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("HMM THAT SHUD BE CORRECT"), false);
+				_player.displayClientMessage(Component.literal("WIP"), false);
 		}
 	}
 }

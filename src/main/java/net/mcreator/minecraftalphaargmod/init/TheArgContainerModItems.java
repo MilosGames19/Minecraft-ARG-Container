@@ -1110,7 +1110,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> RED_KEEPERS_SMOOTH_STONE = block(TheArgContainerModBlocks.RED_KEEPERS_SMOOTH_STONE);
 	public static final RegistryObject<Item> RED_TERMINAL = block(TheArgContainerModBlocks.RED_TERMINAL);
 	public static final RegistryObject<Item> RED_SYMBOL = block(TheArgContainerModBlocks.RED_SYMBOL);
-	public static final RegistryObject<Item> VOIDENTITY_SPAWN_EGG = REGISTRY.register("voidentity_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.VOIDENTITY, -16777216, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> LIMBO_CRYSTALS = REGISTRY.register("limbo_crystals", () -> new LimboCrystalsItem());
 	public static final RegistryObject<Item> LIMBO_SHARD = REGISTRY.register("limbo_shard", () -> new LimboShardItem());
 	public static final RegistryObject<Item> LIMBOFLOOR_SLAB = block(TheArgContainerModBlocks.LIMBOFLOOR_SLAB);
@@ -1631,7 +1630,8 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> SWITCH_STEP_TILE = block(TheArgContainerModBlocks.SWITCH_STEP_TILE);
 	public static final RegistryObject<Item> SWITCH_STEP_CHISELED_BLOCK = block(TheArgContainerModBlocks.SWITCH_STEP_CHISELED_BLOCK);
 	public static final RegistryObject<Item> MOJANG_TILE = block(TheArgContainerModBlocks.MOJANG_TILE);
-	public static final RegistryObject<Item> VOID_ENTITY_GECKOLIB_SPAWN_EGG = REGISTRY.register("void_entity_geckolib_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> VOID_ENTITY_GECKOLIB_SPAWN_EGG = REGISTRY.register("void_entity_geckolib_spawn_egg",
+			() -> new ForgeSpawnEggItem(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB, -16777216, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> MOONFALLDIMENSION = REGISTRY.register("moonfalldimension", () -> new MoonfalldimensionItem());
 	public static final RegistryObject<Item> MOONFALL_GENERATOR = block(TheArgContainerModBlocks.MOONFALL_GENERATOR);
 	public static final RegistryObject<Item> ENDERPLAYS_PLUSHIE = block(TheArgContainerModBlocks.ENDERPLAYS_PLUSHIE);
@@ -1752,6 +1752,8 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> KATKA_WEIRD_BRICKS = block(TheArgContainerModBlocks.KATKA_WEIRD_BRICKS);
 	public static final RegistryObject<Item> UNKNOWN_MATERIAL = block(TheArgContainerModBlocks.UNKNOWN_MATERIAL);
 	public static final RegistryObject<Item> SKY_SHARD = REGISTRY.register("sky_shard", () -> new SkyShardItem());
+	public static final RegistryObject<Item> DEBUG_SKYBOX = block(TheArgContainerModBlocks.DEBUG_SKYBOX);
+	public static final RegistryObject<Item> RECRUITER_V_2_SPAWN_EGG = REGISTRY.register("recruiter_v_2_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.RECRUITER_V_2, -16777216, -16777216, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

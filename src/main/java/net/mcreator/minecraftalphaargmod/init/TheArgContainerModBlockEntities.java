@@ -27,6 +27,7 @@ import net.mcreator.minecraftalphaargmod.block.entity.KeySlotterBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.HubSkyBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.GeneratorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.FreezerBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.DebugSkyboxBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.AuthenticatorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.AdminChestBlockEntity;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
@@ -64,4 +65,5 @@ public class TheArgContainerModBlockEntities {
 	public static final RegistryObject<BlockEntityType<MoonfallSkyBlockDayBlockEntity>> MOONFALL_SKY_BLOCK_DAY = REGISTRY.register("moonfall_sky_block_day",
 			() -> BlockEntityType.Builder.of(MoonfallSkyBlockDayBlockEntity::new, TheArgContainerModBlocks.MOONFALL_SKY_BLOCK_DAY.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GeneratorBlockEntity>> GENERATOR = REGISTRY.register("generator", () -> BlockEntityType.Builder.of(GeneratorBlockEntity::new, TheArgContainerModBlocks.GENERATOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DebugSkyboxBlockEntity>> DEBUG_SKYBOX = REGISTRY.register("debug_skybox", () -> BlockEntityType.Builder.of(DebugSkyboxBlockEntity::new, TheArgContainerModBlocks.DEBUG_SKYBOX.get()).build(null));
 }

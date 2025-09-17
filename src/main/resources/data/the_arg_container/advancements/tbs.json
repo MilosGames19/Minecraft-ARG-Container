@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_arg_container:message_disc_1"
+    },
+    "title": {
+      "translate": "advancements.tbs.title"
+    },
+    "description": {
+      "translate": "advancements.tbs.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "tbs_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "the_arg_container:entry_point"
+}

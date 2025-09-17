@@ -23,7 +23,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 145,
           "y": 69
         }
@@ -304,6 +304,9 @@
           "name": "imagebutton_slot6",
           "image": "slot.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "SkyBuilderRecipe7"
+          },
           "x": 214,
           "y": 70
         }

@@ -110,11 +110,11 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "CUSTOM:Voidentity"
+          "value": "CUSTOM:VoidEntityGeckolib"
         },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 5,
         "spawnType": "monster"
       }
     ]

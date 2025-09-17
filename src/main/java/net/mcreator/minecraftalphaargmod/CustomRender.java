@@ -1,4 +1,5 @@
-
+// Thank you, Nebula, for making this possible.
+// If you want to use this code, please credit Nebula. Without him, this wouldn't be possible.
 package net.mcreator.minecraftalphaargmod;
 
 import net.minecraftforge.fml.common.Mod;
@@ -31,5 +32,6 @@ public class CustomRender {
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.PREPARATIONS_SKY_BLOCK.get(), context -> new PreparationsSkyBlockRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.MOONFALL_SKY_BLOCK_NIGHT.get(), context -> new ShatteredSkyboxNightBlockRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.MOONFALL_SKY_BLOCK_DAY.get(), context -> new ShatteredSkyboxDayBlockRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.DEBUG_SKYBOX.get(), context -> new DebugSkyboxBlockRender());
 	}
 }

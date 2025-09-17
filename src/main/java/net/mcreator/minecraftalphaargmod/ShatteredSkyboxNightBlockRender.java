@@ -1,3 +1,5 @@
+// Thank you, Nebula, for making this possible.
+// If you want to use this code, please credit Nebula. Without him, this wouldn't be possible.
 package net.mcreator.minecraftalphaargmod;
 
 import net.minecraft.world.level.block.entity.BlockEntity;

@@ -13,6 +13,7 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
@@ -159,6 +160,7 @@ public class VoidEntityGeckolibEntity extends Monster implements GeoEntity {
 	public static void init() {
 		SpawnPlacements.register(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
+		DungeonHooks.addDungeonMob(TheArgContainerModEntities.VOID_ENTITY_GECKOLIB.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -179,7 +181,10 @@ public class VoidEntityGeckolibEntity extends Monster implements GeoEntity {
 			) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.walking "));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.idle"));
+			if (this.isDeadOrDying()) {
+				return event.setAndContinue(RawAnimation.begin().thenPlay("animation.model.death"));
+			}
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.unstable"));
 		}
 		return PlayState.STOP;
 	}

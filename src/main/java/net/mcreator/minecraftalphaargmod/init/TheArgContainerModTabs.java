@@ -185,6 +185,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.WHITE_COBBLESTONE_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.KATKA_WEIRD_BRICKS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNKNOWN_MATERIAL.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.DEBUG_SKYBOX.get().asItem());
 			})
 
 					.build());
@@ -1646,12 +1647,12 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.STEVEN_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.USER_0_CLONE_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.EVIL_USER_0_SPAWN_EGG.get());
-			tabData.accept(TheArgContainerModItems.VOIDENTITY_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.PIG_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.LONG_LEGS_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.VOID_ENTITY_GECKOLIB_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.CORE_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.DARKNESS_ENTITY_SPAWN_EGG.get());
+			tabData.accept(TheArgContainerModItems.RECRUITER_V_2_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(TheArgContainerModBlocks.STRUCTURE_BUILDER.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {

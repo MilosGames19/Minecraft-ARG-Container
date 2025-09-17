@@ -1,0 +1,9 @@
+{
+  "_fv": 60,
+  "_type": "mixin",
+  "definition": {
+    "mixins": [
+      "TitleScreenSplashAccessorMixin"
+    ]
+  }
+}

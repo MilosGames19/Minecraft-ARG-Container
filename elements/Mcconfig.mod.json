@@ -20,7 +20,7 @@
             "comment": "Enable/disable alphaver celestial flame generation.",
             "vardisplay": "sky_flame_generation",
             "varname": "sky_flame_generation",
-            "enablecomment": false,
+            "enablecomment": true,
             "stringlist": []
           },
           {
@@ -37,29 +37,7 @@
             "comment": "Enable/disable alphaver lilipad generation.",
             "vardisplay": "lilypad_generation",
             "varname": "lilypad_generation",
-            "enablecomment": false,
-            "stringlist": []
-          }
-        ]
-      },
-      {
-        "category": "DEBUG",
-        "entries": [
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 0,
-            "block": {
-              "value": ""
-            },
-            "logicField": 1,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "dash_overlay",
-            "varname": "dash_overlay",
-            "enablecomment": false,
+            "enablecomment": true,
             "stringlist": []
           }
         ]
@@ -103,7 +81,7 @@
             "comment": "Enable/disable recruiter connections.",
             "vardisplay": "sv_allowrnet",
             "varname": "sv_allowrnet",
-            "enablecomment": false,
+            "enablecomment": true,
             "stringlist": []
           }
         ]
@@ -125,7 +103,7 @@
             "comment": "Enable/disable TBOTV sky in overworld.",
             "vardisplay": "tbotv_sky",
             "varname": "tbotv_sky",
-            "enablecomment": false,
+            "enablecomment": true,
             "stringlist": []
           },
           {
@@ -142,7 +120,24 @@
             "comment": "Enable/disable alphaver nebula event.",
             "vardisplay": "alphaver_nebula_event",
             "varname": "alphaver_nebula_event",
-            "enablecomment": false,
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable broken moon event.",
+            "vardisplay": "tbotv_moon_event",
+            "varname": "tbotv_moon_event",
+            "enablecomment": true,
             "stringlist": []
           }
         ]
@@ -164,7 +159,7 @@
             "comment": "Enable/disable dash ability.",
             "vardisplay": "alphaver_dash_ability",
             "varname": "alphaver_dash_ability",
-            "enablecomment": false,
+            "enablecomment": true,
             "stringlist": []
           },
           {
@@ -181,7 +176,7 @@
             "comment": "Enable/disable long jump ability.",
             "vardisplay": "alphaver_long_jump_ability",
             "varname": "alphaver_long_jump_ability",
-            "enablecomment": false,
+            "enablecomment": true,
             "stringlist": []
           },
           {
@@ -198,7 +193,41 @@
             "comment": "Enable/disable Regenerating static.",
             "vardisplay": "fixer_mod",
             "varname": "fixer_mod",
-            "enablecomment": false,
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable the quickload button on the main menu (restart required).",
+            "vardisplay": "quickload_button",
+            "varname": "quickload_button",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/desabke don't look at the moon event (restart required)",
+            "vardisplay": "dont_look_at_the_moon",
+            "varname": "dont_look_at_the_moon",
+            "enablecomment": true,
             "stringlist": []
           }
         ]

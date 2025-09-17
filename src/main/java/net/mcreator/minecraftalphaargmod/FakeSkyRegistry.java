@@ -1,3 +1,5 @@
+// Thank you, Nebula, for making this possible.
+// If you want to use this code, please credit Nebula. Without him, this wouldn't be possible.
 package net.mcreator.minecraftalphaargmod;
 
 import net.minecraft.resources.ResourceLocation;
@@ -18,7 +20,7 @@ public class FakeSkyRegistry {
     private static final FakeSkyFactory key_portal = register("the_arg_container", "textures/preparations_sky.png");
 	private static final FakeSkyFactory shattered_day = register("the_arg_container", "textures/overworldshatteredskybox.png");
 	private static final FakeSkyFactory shattered_night = register("the_arg_container", "textures/shatteredskybox.png");
-
+	private static final FakeSkyFactory debug_sky = register("the_arg_container", "textures/debug_skybox.png");
 	
     public static RenderType getKeyPortal() {
         return key_portal.get();
@@ -32,6 +34,9 @@ public class FakeSkyRegistry {
     	return shattered_night.get();	
     }
 
+	public static RenderType getDebugSky() {
+		return debug_sky.get();
+	}
 
     public static FakeSkyFactory register(String modId, String texturePath) {
         FakeSkyFactory factory = new FakeSkyFactory(new ResourceLocation(modId, texturePath));

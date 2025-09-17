@@ -13,10 +13,10 @@
   "spawners": {
     "monster": [
       {
-        "type": "the_arg_container:voidentity",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
+        "type": "the_arg_container:void_entity_geckolib",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 2
       }
     ],
     "creature": [],

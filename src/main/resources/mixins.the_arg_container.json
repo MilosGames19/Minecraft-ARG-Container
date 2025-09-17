@@ -3,7 +3,12 @@
   "package": "net.mcreator.minecraftalphaargmod.mixins",
   "compatibilityLevel": "JAVA_17",
   "refmap": "mixins.the_arg_container.refmap.json",
-  "mixins": [],
+  "mixins": [
+    "ChatTypeBoundMixin",
+    "TitleScreenMixin",
+    "TitleScreenTextMixin",
+    "TitleScreenSplashAccessorMixin"
+  ],
   "client": [],
   "minVersion": "0.8"
 }
