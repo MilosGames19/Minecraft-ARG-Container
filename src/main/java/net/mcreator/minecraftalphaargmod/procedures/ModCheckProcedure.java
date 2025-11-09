@@ -12,10 +12,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.minecraftalphaargmod.network.TheArgContainerModVariables;
+import net.mcreator.minecraftalphaargmod.client.toasts.TutorialLongJumpToast;
+import net.mcreator.minecraftalphaargmod.client.toasts.TutorialDashToast;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import javax.annotation.Nullable;
@@ -34,6 +37,16 @@ public class ModCheckProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		if (TheArgContainerModVariables.MapVariables.get(world).ToastLogic == false) {
+			TheArgContainerMod.queueServerWork(400, () -> {
+				Minecraft.getInstance().getToasts().addToast(new TutorialDashToast());
+				TheArgContainerModVariables.MapVariables.get(world).ToastLogic = true;
+				TheArgContainerModVariables.MapVariables.get(world).syncData(world);
+				TheArgContainerMod.queueServerWork(200, () -> {
+					Minecraft.getInstance().getToasts().addToast(new TutorialLongJumpToast());
+				});
+			});
+		}
 		if (ModList.get().isLoaded("thebrokenscript") == true && TheArgContainerModVariables.MapVariables.get(world).ModCheck == false) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("the_arg_container:tbs"));
@@ -49,8 +62,6 @@ public class ModCheckProcedure {
 				TheArgContainerMod.queueServerWork(18000, () -> {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A7eThe_Creator joined the game"), false);
-					TheArgContainerModVariables.MapVariables.get(world).ModCheck = true;
-					TheArgContainerModVariables.MapVariables.get(world).syncData(world);
 					TheArgContainerMod.queueServerWork(100, () -> {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("<The_Creator> You made it work, did you?"), false);

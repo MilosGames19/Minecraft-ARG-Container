@@ -2,7 +2,7 @@
   "type": "the_arg_container:flamelily_feature",
   "config": {
     "tries": 1,
-    "xz_spread": 1,
+    "xz_spread": 3,
     "y_spread": 0,
     "feature": {
       "feature": {

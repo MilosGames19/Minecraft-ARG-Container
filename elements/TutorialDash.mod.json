@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "toast",
+  "definition": {
+    "title": "How to dash.",
+    "description": "To dash, sprint and press LCTRL.",
+    "icon": "None",
+    "background": "Default",
+    "durationTime": 10000
+  }
+}

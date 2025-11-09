@@ -143,6 +143,7 @@ public class TheArgContainerModVariables {
 		public static final String DATA_NAME = "the_arg_container_mapvars";
 		public boolean Warning = false;
 		public boolean ModCheck = false;
+		public boolean ToastLogic = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -153,12 +154,14 @@ public class TheArgContainerModVariables {
 		public void read(CompoundTag nbt) {
 			Warning = nbt.getBoolean("Warning");
 			ModCheck = nbt.getBoolean("ModCheck");
+			ToastLogic = nbt.getBoolean("ToastLogic");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("Warning", Warning);
 			nbt.putBoolean("ModCheck", ModCheck);
+			nbt.putBoolean("ToastLogic", ToastLogic);
 			return nbt;
 		}
 

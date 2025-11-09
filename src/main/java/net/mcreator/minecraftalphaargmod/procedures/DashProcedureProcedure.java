@@ -54,7 +54,7 @@ public class DashProcedureProcedure {
                 }
 
                 {
-                    double _setval = 60;
+                    double _setval = 30;
                     entity.getCapability(TheArgContainerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
                         capability.Cooldown = _setval;
                         capability.syncPlayerVariables(entity);
@@ -74,11 +74,11 @@ public class DashProcedureProcedure {
                 if (world instanceof Level _level) {
                     if (!_level.isClientSide()) {
                         _level.playSound(null, BlockPos.containing(x, y, z),
-                            ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft:entity.player.attack.sweep")),
+                            ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:dash")),
                             SoundSource.NEUTRAL, 1.0f, 1.0f);
                     } else {
                         _level.playLocalSound(x, y, z,
-                            ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft:entity.player.attack.sweep")),
+                            ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("the_arg_container:dash")),
                             SoundSource.NEUTRAL, 1.0f, 1.0f, false);
                     }
                 }
@@ -92,7 +92,7 @@ public class DashProcedureProcedure {
                 ));
 
                 {
-                    double _setval = 60;
+                    double _setval = 30;
                     entity.getCapability(TheArgContainerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
                         capability.Cooldown = _setval;
                         capability.syncPlayerVariables(entity);

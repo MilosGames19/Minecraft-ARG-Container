@@ -17,7 +17,7 @@ import net.mcreator.minecraftalphaargmod.network.TheArgContainerModVariables;
                         value = Dist.CLIENT)
 public class DashCooldownOverlay {
     
-    private static final int MAX_DASH = 60;
+    private static final int MAX_DASH = 30;
 
     @SubscribeEvent
     public static void renderDashOverlay(RenderGuiOverlayEvent.Post event) {
