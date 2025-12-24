@@ -10875,8 +10875,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/the_arg_container/forge/biome_modifier/void_gem_ore_gen_biome_modifier.json",
-          "src/main/resources/data/the_arg_container/worldgen/placed_feature/void_gem_ore_gen.json",
-          "src/main/resources/data/the_arg_container/worldgen/configured_feature/void_gem_ore_gen.json"
+          "src/main/resources/data/the_arg_container/worldgen/configured_feature/void_gem_ore_gen.json",
+          "src/main/resources/data/the_arg_container/worldgen/placed_feature/void_gem_ore_gen.json"
         ]
       },
       "path": "~/ARGs/TBOTV/Code"
@@ -12690,8 +12690,8 @@
           "src/main/resources/assets/the_arg_container/models/item/among_us_bookshelf.json",
           "src/main/resources/assets/the_arg_container/models/block/among_us_bookshelf.json",
           "src/main/java/net/mcreator/minecraftalphaargmod/block/AmongUsBookshelfBlock.java",
-          "src/main/resources/data/the_arg_container/loot_tables/blocks/among_us_bookshelf.json",
-          "src/main/resources/assets/the_arg_container/blockstates/among_us_bookshelf.json"
+          "src/main/resources/assets/the_arg_container/blockstates/among_us_bookshelf.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/among_us_bookshelf.json"
         ]
       },
       "path": "~/ARGs/Classic Minecraft/Blocks"
@@ -12723,11 +12723,11 @@
       "registry_name": "soul_bookshelf",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_arg_container/blockstates/soul_bookshelf.json",
-          "src/main/java/net/mcreator/minecraftalphaargmod/block/SoulBookshelfBlock.java",
           "src/main/resources/assets/the_arg_container/models/item/soul_bookshelf.json",
+          "src/main/resources/assets/the_arg_container/blockstates/soul_bookshelf.json",
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/soul_bookshelf.json",
           "src/main/resources/assets/the_arg_container/models/block/soul_bookshelf.json",
-          "src/main/resources/data/the_arg_container/loot_tables/blocks/soul_bookshelf.json"
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/SoulBookshelfBlock.java"
         ]
       },
       "path": "~/ARGs/Classic Minecraft/Blocks"
@@ -16703,9 +16703,9 @@
       "registry_name": "salt",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_arg_container/forge/biome_modifier/salt_biome_modifier.json",
           "src/main/resources/data/the_arg_container/worldgen/placed_feature/salt.json",
-          "src/main/resources/data/the_arg_container/worldgen/configured_feature/salt.json"
+          "src/main/resources/data/the_arg_container/worldgen/configured_feature/salt.json",
+          "src/main/resources/data/the_arg_container/forge/biome_modifier/salt_biome_modifier.json"
         ]
       },
       "path": "~/ARGs/Alphaver/Code"
@@ -24786,11 +24786,11 @@
       "registry_name": "decayed_bookshelf",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_arg_container/blockstates/decayed_bookshelf.json",
           "src/main/resources/assets/the_arg_container/models/block/decayed_bookshelf.json",
-          "src/main/java/net/mcreator/minecraftalphaargmod/block/DecayedBookshelfBlock.java",
           "src/main/resources/data/the_arg_container/loot_tables/blocks/decayed_bookshelf.json",
-          "src/main/resources/assets/the_arg_container/models/item/decayed_bookshelf.json"
+          "src/main/resources/assets/the_arg_container/models/item/decayed_bookshelf.json",
+          "src/main/resources/assets/the_arg_container/blockstates/decayed_bookshelf.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/DecayedBookshelfBlock.java"
         ]
       },
       "path": "~/ARGs/THE DECAYED/Blocks"
@@ -36760,7 +36760,7 @@
           }
         ]
       },
-      "path": "~/ARGs/Alphaver"
+      "path": "~/ARGs/Alphaver/Code"
     },
     {
       "name": "HighwoodLeavesLootTable",
@@ -37396,7 +37396,8 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/item/BatasCupItem.java",
           "src/main/resources/assets/the_arg_container/models/item/batas_cup.json"
         ]
-      }
+      },
+      "path": "~/ARGs/Glitchys additions"
     },
     {
       "name": "MoonfallSkyBlockNight",
@@ -38661,9 +38662,6 @@
       "locked_code": false,
       "registry_name": "mod_check",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/ModCheckProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -38762,7 +38760,8 @@
         "files": [
           "src/main/java/net/mcreator/minecraftalphaargmod/DashCooldownOverlay.java"
         ]
-      }
+      },
+      "path": "~/ARGs/Alphaver/Code"
     },
     {
       "name": "DashClientTicker",
@@ -38775,7 +38774,8 @@
         "files": [
           "src/main/java/net/mcreator/minecraftalphaargmod/DashClientTicker.java"
         ]
-      }
+      },
+      "path": "~/ARGs/Alphaver/Code"
     },
     {
       "name": "SkyBuilderRecipe7",
@@ -38853,7 +38853,7 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/MoonLookUtil.java"
         ]
       },
-      "path": "~/Dont look at the moon"
+      "path": "~/ARGs/Dont look at the moon"
     },
     {
       "name": "MoonGazeServerListener",
@@ -38867,7 +38867,7 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/MoonGazeServerListener.java"
         ]
       },
-      "path": "~/Dont look at the moon"
+      "path": "~/ARGs/Dont look at the moon"
     },
     {
       "name": "EndstoneWave",
@@ -38881,7 +38881,7 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/EndstoneWave.java"
         ]
       },
-      "path": "~/Dont look at the moon"
+      "path": "~/ARGs/Dont look at the moon"
     },
     {
       "name": "TutorialDash",
@@ -44730,15 +44730,15 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Dont look at the moon",
+            "children": []
           }
         ]
       },
       {
         "name": "Mixins",
-        "children": []
-      },
-      {
-        "name": "Dont look at the moon",
         "children": []
       }
     ]
@@ -44746,7 +44746,7 @@
   "workspaceSettings": {
     "modid": "the_arg_container",
     "modName": "The ARG Container",
-    "version": "0.4.3 Beta",
+    "version": "0.4.4 Beta",
     "description": "This mod brings blocks, items and features form popular minecraft ARGs",
     "author": "Glitchy, Miki110, atom20003113, marioood, dottych, Gnawmon, AndrewIdot, Liminal, 20_NickName_20, Divided, EnderPlays, Nebula.",
     "websiteURL": "https://mcreator.net",

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "desert",
+  "biomes": "the_arg_container:alphaver_forest",
   "features": "the_arg_container:salt",
   "step": "surface_structures"
 }
