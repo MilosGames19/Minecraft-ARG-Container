@@ -77,6 +77,7 @@ public class TheArgContainerModVariables {
 			if (!event.isWasDeath()) {
 				clone.Cooldown = original.Cooldown;
 				clone.lilipad_cooldown = original.lilipad_cooldown;
+				clone.FpsCap = original.FpsCap;
 			}
 		}
 
@@ -257,6 +258,7 @@ public class TheArgContainerModVariables {
 		public double Cooldown = 0.0;
 		public double guiCooldown = 0.0;
 		public double lilipad_cooldown = 0.0;
+		public boolean FpsCap = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -268,6 +270,7 @@ public class TheArgContainerModVariables {
 			nbt.putDouble("Cooldown", Cooldown);
 			nbt.putDouble("guiCooldown", guiCooldown);
 			nbt.putDouble("lilipad_cooldown", lilipad_cooldown);
+			nbt.putBoolean("FpsCap", FpsCap);
 			return nbt;
 		}
 
@@ -276,6 +279,7 @@ public class TheArgContainerModVariables {
 			Cooldown = nbt.getDouble("Cooldown");
 			guiCooldown = nbt.getDouble("guiCooldown");
 			lilipad_cooldown = nbt.getDouble("lilipad_cooldown");
+			FpsCap = nbt.getBoolean("FpsCap");
 		}
 	}
 
@@ -303,6 +307,7 @@ public class TheArgContainerModVariables {
 					variables.Cooldown = message.data.Cooldown;
 					variables.guiCooldown = message.data.guiCooldown;
 					variables.lilipad_cooldown = message.data.lilipad_cooldown;
+					variables.FpsCap = message.data.FpsCap;
 				}
 			});
 			context.setPacketHandled(true);

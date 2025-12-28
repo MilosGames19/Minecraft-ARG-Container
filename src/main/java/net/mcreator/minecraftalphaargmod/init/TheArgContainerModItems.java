@@ -1754,6 +1754,7 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> SKY_SHARD = REGISTRY.register("sky_shard", () -> new SkyShardItem());
 	public static final RegistryObject<Item> DEBUG_SKYBOX = block(TheArgContainerModBlocks.DEBUG_SKYBOX);
 	public static final RegistryObject<Item> RECRUITER_V_2_SPAWN_EGG = REGISTRY.register("recruiter_v_2_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.RECRUITER_V_2, -16777216, -16777216, new Item.Properties()));
+	public static final RegistryObject<Item> FLAMEWOOD_SAPLING = block(TheArgContainerModBlocks.FLAMEWOOD_SAPLING);
 
 	// Start of user code block custom items
 	// End of user code block custom items

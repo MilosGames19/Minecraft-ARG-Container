@@ -1195,6 +1195,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_9.get());
 				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_10.get());
 				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_11.get());
+				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_SAPLING.get().asItem());
 			})
 
 					.build());

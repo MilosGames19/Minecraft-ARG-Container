@@ -976,6 +976,7 @@ import net.mcreator.minecraftalphaargmod.block.FloorPatternBlock;
 import net.mcreator.minecraftalphaargmod.block.FloorNoncarpetHardBlock;
 import net.mcreator.minecraftalphaargmod.block.FloorCarpetStairsBlock;
 import net.mcreator.minecraftalphaargmod.block.FloorCarpetSlabBlock;
+import net.mcreator.minecraftalphaargmod.block.FlamewoodSaplingBlock;
 import net.mcreator.minecraftalphaargmod.block.FlamewoodPlanksStairsBlock;
 import net.mcreator.minecraftalphaargmod.block.FlamewoodPlanksSlabBlock;
 import net.mcreator.minecraftalphaargmod.block.FlamewoodPillarBlock;
@@ -2740,6 +2741,7 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> KATKA_WEIRD_BRICKS = REGISTRY.register("katka_weird_bricks", () -> new KatkaWeirdBricksBlock());
 	public static final RegistryObject<Block> UNKNOWN_MATERIAL = REGISTRY.register("unknown_material", () -> new UnknownMaterialBlock());
 	public static final RegistryObject<Block> DEBUG_SKYBOX = REGISTRY.register("debug_skybox", () -> new DebugSkyboxBlock());
+	public static final RegistryObject<Block> FLAMEWOOD_SAPLING = REGISTRY.register("flamewood_sapling", () -> new FlamewoodSaplingBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

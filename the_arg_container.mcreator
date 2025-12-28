@@ -38910,6 +38910,55 @@
         ]
       },
       "path": "~/MOD DATA"
+    },
+    {
+      "name": "FlamewoodSapling",
+      "type": "block",
+      "sortid": 2263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamewood_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_arg_container/loot_tables/blocks/flamewood_sapling.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/FlamewoodSaplingBlock.java",
+          "src/main/resources/assets/the_arg_container/blockstates/flamewood_sapling.json",
+          "src/main/resources/assets/the_arg_container/models/item/flamewood_sapling.json",
+          "src/main/resources/assets/the_arg_container/models/block/flamewood_sapling.json"
+        ]
+      }
+    },
+    {
+      "name": "SaplingValidPlacement",
+      "type": "procedure",
+      "sortid": 2264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapling_valid_placement",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/procedures/SaplingValidPlacementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -38953,6 +39002,12 @@
       "name": "ToastLogic",
       "type": "logic",
       "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "FpsCap",
+      "type": "logic",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -41210,6 +41265,7 @@
       "block.minecraft_alpha_arg_mod.empty_logo_block": "Empty Logo Block",
       "painting.the_arg_container.gladed_sky.title": "Gladed Sky",
       "block.minecraft_alpha_arg_mod.essence_transformer": "Essence Transformer",
+      "block.the_arg_container.flamewood_sapling": "Flamewood Sapling",
       "gui.the_arg_container.monitor_gui.button_empty1": "✖",
       "block.the_arg_container.creepers_heart": "Creepers Heart",
       "gui.the_arg_container.monitor_gui.button_empty2": "✺",
