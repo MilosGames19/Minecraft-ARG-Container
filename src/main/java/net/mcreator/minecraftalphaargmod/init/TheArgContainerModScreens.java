@@ -28,6 +28,7 @@ import net.mcreator.minecraftalphaargmod.client.gui.EssenceclonerGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.DevChatGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.BlueChestGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.BallsOnlineGuiScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.AuthenticatorGUiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.AdminspaceScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.AdminSpaceGUIScreen;
 
@@ -55,6 +56,7 @@ public class TheArgContainerModScreens {
 			MenuScreens.register(TheArgContainerModMenus.TTCDCONSOLE.get(), TtcdconsoleScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.GENERATOR_GUI.get(), GeneratorGuiScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.SKY_BUILDER_GUI.get(), SkyBuilderGUIScreen::new);
+			MenuScreens.register(TheArgContainerModMenus.AUTHENTICATOR_G_UI.get(), AuthenticatorGUiScreen::new);
 		});
 	}
 }

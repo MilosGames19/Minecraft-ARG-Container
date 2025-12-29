@@ -13334,16 +13334,16 @@
       "type": "block",
       "sortid": 905,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "authenticator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/the_arg_container/blockstates/authenticator.json",
           "src/main/resources/assets/the_arg_container/models/item/authenticator.json",
+          "src/main/resources/assets/the_arg_container/blockstates/authenticator.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/AuthenticatorBlock.java",
           "src/main/resources/data/the_arg_container/loot_tables/blocks/authenticator.json",
           "src/main/resources/assets/the_arg_container/models/block/authenticator.json",
-          "src/main/java/net/mcreator/minecraftalphaargmod/block/entity/AuthenticatorBlockEntity.java",
-          "src/main/java/net/mcreator/minecraftalphaargmod/block/AuthenticatorBlock.java"
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/entity/AuthenticatorBlockEntity.java"
         ]
       },
       "path": "~/ARGs/John/Blocks"
@@ -38959,6 +38959,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "AuthenticatorGUi",
+      "type": "gui",
+      "sortid": 2265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "authenticator_g_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/world/inventory/AuthenticatorGUiMenu.java",
+          "src/main/java/net/mcreator/minecraftalphaargmod/client/gui/AuthenticatorGUiScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -43796,6 +43810,7 @@
       "painting.the_arg_container.decated.title": "Decayed",
       "painting.the_arg_container.sunglass.title": "Sunglasses",
       "item.the_arg_container.server_drive": "Server Drive",
+      "gui.the_arg_container.authenticator_g_ui.label_code_input": "Code Input",
       "block.the_arg_container.dark_sapling": "Bluewood Sapling",
       "block.the_arg_container.spring_ice": "Ice (Spring)",
       "block.the_arg_container.cyberspace_pillar": "Cyberspace Pillar",

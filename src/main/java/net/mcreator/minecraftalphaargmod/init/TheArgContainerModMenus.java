@@ -28,6 +28,7 @@ import net.mcreator.minecraftalphaargmod.world.inventory.EssenceclonerGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.DevChatGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.BlueChestGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.BallsOnlineGuiMenu;
+import net.mcreator.minecraftalphaargmod.world.inventory.AuthenticatorGUiMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminspaceMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminSpaceGUIMenu;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
@@ -53,4 +54,5 @@ public class TheArgContainerModMenus {
 	public static final RegistryObject<MenuType<TtcdconsoleMenu>> TTCDCONSOLE = REGISTRY.register("ttcdconsole", () -> IForgeMenuType.create(TtcdconsoleMenu::new));
 	public static final RegistryObject<MenuType<GeneratorGuiMenu>> GENERATOR_GUI = REGISTRY.register("generator_gui", () -> IForgeMenuType.create(GeneratorGuiMenu::new));
 	public static final RegistryObject<MenuType<SkyBuilderGUIMenu>> SKY_BUILDER_GUI = REGISTRY.register("sky_builder_gui", () -> IForgeMenuType.create(SkyBuilderGUIMenu::new));
+	public static final RegistryObject<MenuType<AuthenticatorGUiMenu>> AUTHENTICATOR_G_UI = REGISTRY.register("authenticator_g_ui", () -> IForgeMenuType.create(AuthenticatorGUiMenu::new));
 }

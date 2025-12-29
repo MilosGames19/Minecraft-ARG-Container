@@ -35,7 +35,9 @@
     ],
     "name": "Authenticator",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "You shouldn't have this."
+      ]
     },
     "hardness": 20.0,
     "resistance": 20.0,
@@ -99,12 +101,12 @@
       "value": ""
     },
     "luminance": 0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 4,
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "AuthenticatorGUi",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
