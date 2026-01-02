@@ -224,10 +224,27 @@
             "logicField": 1,
             "numberField": 0.0,
             "textDefault": "",
-            "comment": "Enable/desabke don't look at the moon event (restart required)",
+            "comment": "Enable/disable don't look at the moon event (restart required)",
             "vardisplay": "dont_look_at_the_moon",
             "varname": "dont_look_at_the_moon",
             "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Enable/disable the ClaytonM634 smiling block to be placed anywhere.",
+            "vardisplay": "place_the_smile_block_anywhere",
+            "varname": "place_the_smile_block_anywhere",
+            "enablecomment": false,
             "stringlist": []
           }
         ]

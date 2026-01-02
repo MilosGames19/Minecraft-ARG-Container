@@ -101,6 +101,9 @@
     "luminance": 15,
     "unbreakable": false,
     "breakHarvestLevel": 0,
+    "placingCondition": {
+      "name": "SmileBlockValidPlacementCondition"
+    },
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

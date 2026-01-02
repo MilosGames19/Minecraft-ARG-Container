@@ -437,6 +437,7 @@ import net.mcreator.minecraftalphaargmod.block.RtcdDecorativeBlock1Block;
 import net.mcreator.minecraftalphaargmod.block.RtcdConsoleBlock;
 import net.mcreator.minecraftalphaargmod.block.RoseFlowerBlock;
 import net.mcreator.minecraftalphaargmod.block.RoseBlock;
+import net.mcreator.minecraftalphaargmod.block.RenderWireframeBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.ReinforcedStaticBlock;
 import net.mcreator.minecraftalphaargmod.block.RedstonelanternBlock;
 import net.mcreator.minecraftalphaargmod.block.RedlightBlock;
@@ -2742,6 +2743,7 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> UNKNOWN_MATERIAL = REGISTRY.register("unknown_material", () -> new UnknownMaterialBlock());
 	public static final RegistryObject<Block> DEBUG_SKYBOX = REGISTRY.register("debug_skybox", () -> new DebugSkyboxBlock());
 	public static final RegistryObject<Block> FLAMEWOOD_SAPLING = REGISTRY.register("flamewood_sapling", () -> new FlamewoodSaplingBlock());
+	public static final RegistryObject<Block> RENDER_WIREFRAME_BLOCK = REGISTRY.register("render_wireframe_block", () -> new RenderWireframeBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -305,6 +305,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.CYBERSPACE_DATA_COLUMN.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.KITCHEN_TILE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.UNFINISHED_DATA_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.RENDER_WIREFRAME_BLOCK.get().asItem());
 			})
 
 					.build());
@@ -1196,6 +1197,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_10.get());
 				tabData.accept(TheArgContainerModItems.UNUSED_TOOL_11.get());
 				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_SAPLING.get().asItem());
+				tabData.accept(TheArgContainerModItems.LOGIC.get());
 			})
 
 					.build());

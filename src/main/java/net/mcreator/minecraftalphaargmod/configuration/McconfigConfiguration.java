@@ -17,6 +17,7 @@ public class McconfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Boolean> FIXER_MOD;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> QUICKLOAD_BUTTON;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> DONT_LOOK_AT_THE_MOON;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> PLACE_THE_SMILE_BLOCK_ANYWHERE;
 	static {
 		BUILDER.push("generation");
 		SKY_FLAME_GENERATION = BUILDER.comment("Enable/disable alphaver celestial flame generation.").define("sky_flame_generation", true);
@@ -38,7 +39,8 @@ public class McconfigConfiguration {
 		ALPHAVER_LONG_JUMP_ABILITY = BUILDER.comment("Enable/disable long jump ability.").define("alphaver_long_jump_ability", true);
 		FIXER_MOD = BUILDER.comment("Enable/disable Regenerating static.").define("fixer_mod", false);
 		QUICKLOAD_BUTTON = BUILDER.comment("Enable/disable the quickload button on the main menu (restart required).").define("quickload_button", true);
-		DONT_LOOK_AT_THE_MOON = BUILDER.comment("Enable/desabke don't look at the moon event (restart required)").define("dont_look_at_the_moon", false);
+		DONT_LOOK_AT_THE_MOON = BUILDER.comment("Enable/disable don't look at the moon event (restart required)").define("dont_look_at_the_moon", false);
+		PLACE_THE_SMILE_BLOCK_ANYWHERE = BUILDER.define("place_the_smile_block_anywhere", false);
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();
