@@ -9,8 +9,12 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.Minecraft;
 
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus.GuiSyncMessage;
 import net.mcreator.minecraftalphaargmod.client.gui.WarningScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TtcdconsoleScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TerminalGUIScreen;
@@ -31,6 +35,8 @@ import net.mcreator.minecraftalphaargmod.client.gui.BallsOnlineGuiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.AuthenticatorGUiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.AdminspaceScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.AdminSpaceGUIScreen;
+
+import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class TheArgContainerModScreens {
@@ -58,5 +64,22 @@ public class TheArgContainerModScreens {
 			MenuScreens.register(TheArgContainerModMenus.SKY_BUILDER_GUI.get(), SkyBuilderGUIScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.AUTHENTICATOR_G_UI.get(), AuthenticatorGUiScreen::new);
 		});
+	}
+
+	static void handleTextBoxMessage(GuiSyncMessage message) {
+		String editbox = message.editbox();
+		String value = message.value();
+		Screen currentScreen = Minecraft.getInstance().screen;
+		if (currentScreen instanceof WidgetScreen sc) {
+			HashMap<String, Object> widgets = sc.getWidgets();
+			Object obj = widgets.get("text:" + editbox);
+			if (obj instanceof EditBox box) {
+				box.setValue(value);
+			}
+		}
+	}
+
+	public interface WidgetScreen {
+		HashMap<String, Object> getWidgets();
 	}
 }

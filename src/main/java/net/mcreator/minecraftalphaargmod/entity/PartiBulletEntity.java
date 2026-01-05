@@ -75,6 +75,10 @@ public class PartiBulletEntity extends AbstractArrow implements ItemSupplier {
 		return shoot(world, entity, source, 1.5f, 7, 5);
 	}
 
+	public static PartiBulletEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1.5f, 7, 5);
+	}
+
 	public static PartiBulletEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		PartiBulletEntity entityarrow = new PartiBulletEntity(TheArgContainerModEntities.PARTI_BULLET.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

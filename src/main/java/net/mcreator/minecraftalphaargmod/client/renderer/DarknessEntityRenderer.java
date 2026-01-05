@@ -10,7 +10,7 @@ import net.mcreator.minecraftalphaargmod.client.model.Modelmother;
 
 public class DarknessEntityRenderer extends MobRenderer<DarknessEntityEntity, Modelmother<DarknessEntityEntity>> {
 	public DarknessEntityRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelmother(context.bakeLayer(Modelmother.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelmother<DarknessEntityEntity>(context.bakeLayer(Modelmother.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

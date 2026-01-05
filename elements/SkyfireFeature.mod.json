@@ -1,7 +1,8 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "feature",
   "definition": {
+    "skipPlacement": false,
     "generationStep": "SURFACE_STRUCTURES",
     "restrictionBiomes": [
       {

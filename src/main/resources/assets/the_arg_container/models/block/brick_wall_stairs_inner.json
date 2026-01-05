@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "the_arg_container:block/wallbricks",
     "bottom": "the_arg_container:block/wallbricks",
     "top": "the_arg_container:block/wallbricks",
     "side": "the_arg_container:block/wallbricks"

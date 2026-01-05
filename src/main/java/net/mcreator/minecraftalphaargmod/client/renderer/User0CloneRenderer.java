@@ -12,7 +12,7 @@ import net.mcreator.minecraftalphaargmod.entity.User0CloneEntity;
 
 public class User0CloneRenderer extends HumanoidMobRenderer<User0CloneEntity, HumanoidModel<User0CloneEntity>> {
 	public User0CloneRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel<User0CloneEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 

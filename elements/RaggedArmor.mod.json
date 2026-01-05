@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "armor_pants",
     "enableBoots": true,
     "textureBoots": "armor_legs",
-    "creativeTab": {
-      "value": "COMBAT"
-    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
     "armorTextureFile": "ragged_layer__1",
     "helmetName": "Ragged Helm",
     "bodyName": "Ragged Suit",

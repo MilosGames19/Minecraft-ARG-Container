@@ -11,13 +11,14 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.SkyBuilderGUIMenu;
 import net.mcreator.minecraftalphaargmod.network.SkyBuilderGUIButtonMessage;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class SkyBuilderGUIScreen extends AbstractContainerScreen<SkyBuilderGUIMenu> {
+public class SkyBuilderGUIScreen extends AbstractContainerScreen<SkyBuilderGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = SkyBuilderGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -67,6 +68,10 @@ public class SkyBuilderGUIScreen extends AbstractContainerScreen<SkyBuilderGUIMe
 
 	public static HashMap<String, String> getTextboxValues() {
 		return textstate;
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
 	}
 
 	@Override

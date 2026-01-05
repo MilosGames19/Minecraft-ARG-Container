@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/tall_tree_leaves",
+    "up": "the_arg_container:block/tall_tree_leaves",
+    "north": "the_arg_container:block/tall_tree_leaves",
+    "east": "the_arg_container:block/tall_tree_leaves",
+    "south": "the_arg_container:block/tall_tree_leaves",
+    "west": "the_arg_container:block/tall_tree_leaves",
+    "particle": "the_arg_container:block/tall_tree_leaves"
+  },
+  "render_type": "cutout"
+}

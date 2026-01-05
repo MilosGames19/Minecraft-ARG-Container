@@ -9,14 +9,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.TerminalGUIMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> {
+public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = TerminalGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -52,6 +54,10 @@ public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> 
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -67,6 +73,13 @@ public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> 
 	public void containerTick() {
 		super.containerTick();
 		Input.tick();
+	}
+
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String InputValue = Input.getValue();
+		super.resize(minecraft, width, height);
+		Input.setValue(InputValue);
 	}
 
 	@Override

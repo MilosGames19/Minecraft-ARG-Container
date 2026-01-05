@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "alphaver_logo",
@@ -141,6 +141,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Alphaver Trophy",
     "specialInformation": {
       "fixedValue": []
@@ -149,9 +150,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:Alpha"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Alpha"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -208,10 +211,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

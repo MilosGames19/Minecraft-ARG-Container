@@ -11,13 +11,14 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.MonitorGUIMenu;
 import net.mcreator.minecraftalphaargmod.network.MonitorGUIButtonMessage;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class MonitorGUIScreen extends AbstractContainerScreen<MonitorGUIMenu> {
+public class MonitorGUIScreen extends AbstractContainerScreen<MonitorGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = MonitorGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -61,6 +62,10 @@ public class MonitorGUIScreen extends AbstractContainerScreen<MonitorGUIMenu> {
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -68,11 +73,6 @@ public class MonitorGUIScreen extends AbstractContainerScreen<MonitorGUIMenu> {
 			return true;
 		}
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void containerTick() {
-		super.containerTick();
 	}
 
 	@Override

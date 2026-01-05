@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "the_arg_container:block/quctuambricks",
     "bottom": "the_arg_container:block/quctuambricks",
     "top": "the_arg_container:block/quctuambricks",
     "side": "the_arg_container:block/quctuambricks"

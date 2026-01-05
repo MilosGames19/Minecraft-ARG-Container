@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Gol Fruit",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:ChristopherPlayz"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ChristopherPlayz"
+      }
+    ],
     "stackSize": 16,
     "enchantability": 0,
     "useDuration": 32,
@@ -32,7 +34,6 @@
     "glowCondition": {
       "fixedValue": true
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
@@ -40,9 +41,11 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:SpearProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 8,
     "saturation": 2.0,
@@ -51,6 +54,9 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "eat"
+    "animation": "eat",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

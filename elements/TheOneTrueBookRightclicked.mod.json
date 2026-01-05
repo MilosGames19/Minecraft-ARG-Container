@@ -1,7 +1,7 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"world_send_chat\"><value name=\"text\"><block type=\"text\"><field name=\"TEXT\">In the end, this world was for you, and when you shall turn away It will remember. Its past. Your present. And both will rest, knowing that they will inspire each other carrying pieces further forth. So that all shall be well, and all matter of thing shall be well, in the end. Against all odds, just you wait.</field></block></value></block></next></block></xml>"
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"world_send_chat\"><value name=\"text\"><block type=\"text\"><field name=\"TEXT\">In the end, this world was for you, and when you shall turn away It will remember. Its past. Your present. And both will rest, knowing that they will inspire each other carrying pieces further forth. So that all shall be well, and all matter of thing shall be well, in the end. Against all odds, just you wait.</field></block></value></block></next></block></xml>"
   }
 }

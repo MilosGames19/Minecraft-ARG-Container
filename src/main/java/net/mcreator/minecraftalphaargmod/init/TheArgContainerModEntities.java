@@ -116,6 +116,8 @@ public class TheArgContainerModEntities {
 	public static final RegistryObject<EntityType<RecruiterV2Entity>> RECRUITER_V_2 = register("recruiter_v_2", EntityType.Builder.<RecruiterV2Entity>of(RecruiterV2Entity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RecruiterV2Entity::new).fireImmune().sized(0.6f, 1.8f));
 
+	// Start of user code block custom entities
+	// End of user code block custom entities
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
 	}

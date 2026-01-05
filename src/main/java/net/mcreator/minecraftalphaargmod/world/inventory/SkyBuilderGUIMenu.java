@@ -20,6 +20,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -538,8 +539,8 @@ public class SkyBuilderGUIMenu extends AbstractContainerMenu implements Supplier
 		public static void writeTextState(HashMap<String, String> map, FriendlyByteBuf buffer) {
 			buffer.writeInt(map.size());
 			for (Map.Entry<String, String> entry : map.entrySet()) {
-				buffer.writeUtf(entry.getKey());
-				buffer.writeUtf(entry.getValue());
+				buffer.writeComponent(Component.literal(entry.getKey()));
+				buffer.writeComponent(Component.literal(entry.getValue()));
 			}
 		}
 
@@ -547,8 +548,8 @@ public class SkyBuilderGUIMenu extends AbstractContainerMenu implements Supplier
 			int size = buffer.readInt();
 			HashMap<String, String> map = new HashMap<>();
 			for (int i = 0; i < size; i++) {
-				String key = buffer.readUtf();
-				String value = buffer.readUtf();
+				String key = buffer.readComponent().getString();
+				String value = buffer.readComponent().getString();
 				map.put(key, value);
 			}
 			return map;

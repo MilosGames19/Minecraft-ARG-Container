@@ -1,6 +1,7 @@
 {
   "parent": "block/door_bottom_right_open",
   "textures": {
+    "particle": "the_arg_container:block/paperwooddoorbottom",
     "bottom": "the_arg_container:block/paperwooddoorbottom",
     "top": "the_arg_container:block/paperwooddoortop"
   },

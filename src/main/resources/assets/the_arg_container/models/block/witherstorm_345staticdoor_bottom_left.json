@@ -1,6 +1,7 @@
 {
   "parent": "block/door_bottom_left",
   "textures": {
+    "particle": "the_arg_container:block/stat",
     "bottom": "the_arg_container:block/stat",
     "top": "the_arg_container:block/stat"
   },

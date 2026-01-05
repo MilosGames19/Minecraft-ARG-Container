@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_noside_alt",
   "textures": {
+    "particle": "the_arg_container:block/compressedstatic",
     "pane": "the_arg_container:block/compressedstatic"
   },
   "render_type": "solid"

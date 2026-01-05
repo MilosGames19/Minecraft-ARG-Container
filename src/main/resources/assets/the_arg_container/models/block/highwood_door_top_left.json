@@ -1,6 +1,7 @@
 {
   "parent": "block/door_top_left",
   "textures": {
+    "particle": "the_arg_container:block/highwood_down_door",
     "bottom": "the_arg_container:block/highwood_down_door",
     "top": "the_arg_container:block/highwood_up_door"
   },

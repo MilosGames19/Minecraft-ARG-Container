@@ -11,13 +11,14 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.WarningMenu;
 import net.mcreator.minecraftalphaargmod.network.WarningButtonMessage;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class WarningScreen extends AbstractContainerScreen<WarningMenu> {
+public class WarningScreen extends AbstractContainerScreen<WarningMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = WarningMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -54,6 +55,10 @@ public class WarningScreen extends AbstractContainerScreen<WarningMenu> {
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -61,11 +66,6 @@ public class WarningScreen extends AbstractContainerScreen<WarningMenu> {
 			return true;
 		}
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void containerTick() {
-		super.containerTick();
 	}
 
 	@Override

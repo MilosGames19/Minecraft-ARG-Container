@@ -27,6 +27,6 @@ public class VoidKeyItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Unlock Yourself"));
+		list.add(Component.translatable("item.the_arg_container.void_key.description_0"));
 	}
 }

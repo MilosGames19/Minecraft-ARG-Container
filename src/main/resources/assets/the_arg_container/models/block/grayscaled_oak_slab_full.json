@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "the_arg_container:block/planks_oak1",
     "bottom": "the_arg_container:block/planks_oak1",
     "top": "the_arg_container:block/planks_oak1",
     "side": "the_arg_container:block/planks_oak1"

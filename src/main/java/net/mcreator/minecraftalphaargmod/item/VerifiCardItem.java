@@ -18,6 +18,6 @@ public class VerifiCardItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Specialized to a Head-council member under the name of \u00F7 or Divided."));
+		list.add(Component.translatable("item.the_arg_container.verifi_card.description_0"));
 	}
 }

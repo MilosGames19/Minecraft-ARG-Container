@@ -22,7 +22,7 @@ public class CoreCrystalItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("It IS an edible. Try it, I guess."));
+		list.add(Component.translatable("item.the_arg_container.core_crystal.description_0"));
 	}
 
 	@Override

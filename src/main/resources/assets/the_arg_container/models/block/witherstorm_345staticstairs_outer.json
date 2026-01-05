@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "the_arg_container:block/stat",
     "bottom": "the_arg_container:block/stat",
     "top": "the_arg_container:block/stat",
     "side": "the_arg_container:block/stat"

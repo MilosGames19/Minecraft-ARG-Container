@@ -21,7 +21,7 @@ import net.mcreator.minecraftalphaargmod.procedures.MoonfalldimensionPlayerEnter
 @Mod.EventBusSubscriber
 public class MoonfalldimensionDimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	public static class DimensionSpecialEffectsHandler {
+	public static class MoonfalldimensionSpecialEffectsHandler {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public static void registerDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {

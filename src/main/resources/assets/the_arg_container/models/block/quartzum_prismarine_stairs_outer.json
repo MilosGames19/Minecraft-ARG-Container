@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "the_arg_container:block/quartzumprismarine",
     "bottom": "the_arg_container:block/quartzumprismarine",
     "top": "the_arg_container:block/quartzumprismarine",
     "side": "the_arg_container:block/quartzumprismarine"

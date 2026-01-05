@@ -207,7 +207,7 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> BISMUTH_PILLAR = block(TheArgContainerModBlocks.BISMUTH_PILLAR);
 	public static final RegistryObject<Item> BISMUTH_BRICK = block(TheArgContainerModBlocks.BISMUTH_BRICK);
 	public static final RegistryObject<Item> FLAMEWOOD = block(TheArgContainerModBlocks.FLAMEWOOD);
-	public static final RegistryObject<Item> DLAMEWOOD_LEAVES = block(TheArgContainerModBlocks.DLAMEWOOD_LEAVES);
+	public static final RegistryObject<Item> FLAMEWOOD_LEAVES = block(TheArgContainerModBlocks.FLAMEWOOD_LEAVES);
 	public static final RegistryObject<Item> FLAMEWOOD_PLANKS = block(TheArgContainerModBlocks.FLAMEWOOD_PLANKS);
 	public static final RegistryObject<Item> TILE = block(TheArgContainerModBlocks.TILE);
 	public static final RegistryObject<Item> STONE_TILE = block(TheArgContainerModBlocks.STONE_TILE);
@@ -390,13 +390,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> GRAY_GUN = REGISTRY.register("gray_gun", () -> new GrayGunItem());
 	public static final RegistryObject<Item> ERASER = REGISTRY.register("eraser", () -> new EraserItem());
 	public static final RegistryObject<Item> RAIN_CONCH = REGISTRY.register("rain_conch", () -> new RainConchItem());
-	public static final RegistryObject<Item> DOWNBEAT_UPLINK = REGISTRY.register("downbeat_uplink", () -> new DownbeatUplinkItem());
-	public static final RegistryObject<Item> DESAMBRIER = REGISTRY.register("desambrier", () -> new DesambrierItem());
-	public static final RegistryObject<Item> GYLDAN_SVERD = REGISTRY.register("gyldan_sverd", () -> new GyldanSverdItem());
-	public static final RegistryObject<Item> JUHRY = REGISTRY.register("juhry", () -> new JuhryItem());
-	public static final RegistryObject<Item> HIDDENDEN = REGISTRY.register("hiddenden", () -> new HiddendenItem());
-	public static final RegistryObject<Item> LEMURIA = REGISTRY.register("lemuria", () -> new LemuriaItem());
-	public static final RegistryObject<Item> CONDEMNED = REGISTRY.register("condemned", () -> new CondemnedItem());
 	public static final RegistryObject<Item> DIRT = block(TheArgContainerModBlocks.DIRT);
 	public static final RegistryObject<Item> GRASS_BLOCK = block(TheArgContainerModBlocks.GRASS_BLOCK);
 	public static final RegistryObject<Item> COBBLESTONE = block(TheArgContainerModBlocks.COBBLESTONE);
@@ -452,9 +445,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> SPEAR = REGISTRY.register("spear", () -> new SpearItem());
 	public static final RegistryObject<Item> ESSENCE_RIFLE = REGISTRY.register("essence_rifle", () -> new EssenceRifleItem());
 	public static final RegistryObject<Item> GREENSCREENBLOCK = block(TheArgContainerModBlocks.GREENSCREENBLOCK);
-	public static final RegistryObject<Item> K_2 = REGISTRY.register("k_2", () -> new K2Item());
-	public static final RegistryObject<Item> ROCK_BEETLE = REGISTRY.register("rock_beetle", () -> new RockBeetleItem());
-	public static final RegistryObject<Item> SANDCASTLES = REGISTRY.register("sandcastles", () -> new SandcastlesItem());
 	public static final RegistryObject<Item> ASH_WOOD = block(TheArgContainerModBlocks.ASH_WOOD);
 	public static final RegistryObject<Item> ASH_LEAVES = block(TheArgContainerModBlocks.ASH_LEAVES);
 	public static final RegistryObject<Item> ASH_TORCH = block(TheArgContainerModBlocks.ASH_TORCH);
@@ -702,7 +692,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> UNKNOWN_19 = block(TheArgContainerModBlocks.UNKNOWN_19);
 	public static final RegistryObject<Item> UNKNOWN_20 = block(TheArgContainerModBlocks.UNKNOWN_20);
 	public static final RegistryObject<Item> UNKNOWN_21 = block(TheArgContainerModBlocks.UNKNOWN_21);
-	public static final RegistryObject<Item> CAT_THEME = REGISTRY.register("cat_theme", () -> new CatThemeItem());
 	public static final RegistryObject<Item> UNKNOWN_22 = block(TheArgContainerModBlocks.UNKNOWN_22);
 	public static final RegistryObject<Item> UNKNOWN_23 = block(TheArgContainerModBlocks.UNKNOWN_23);
 	public static final RegistryObject<Item> DBG_SPAWN_EGG = REGISTRY.register("dbg_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.DBG, -1, -1, new Item.Properties()));
@@ -718,7 +707,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> GOLDEN_APPLE_BLOCK = block(TheArgContainerModBlocks.GOLDEN_APPLE_BLOCK);
 	public static final RegistryObject<Item> IDK_SOMETHINGCOOL = block(TheArgContainerModBlocks.IDK_SOMETHINGCOOL);
 	public static final RegistryObject<Item> BLUE_GIANT_SPAWN_EGG = REGISTRY.register("blue_giant_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.BLUE_GIANT, -6710785, -16777216, new Item.Properties()));
-	public static final RegistryObject<Item> ARRIVAL = REGISTRY.register("arrival", () -> new ArrivalItem());
 	public static final RegistryObject<Item> UNUSED_1 = block(TheArgContainerModBlocks.UNUSED_1);
 	public static final RegistryObject<Item> UNUSED_2 = block(TheArgContainerModBlocks.UNUSED_2);
 	public static final RegistryObject<Item> UNUSED_3 = block(TheArgContainerModBlocks.UNUSED_3);
@@ -874,10 +862,8 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> LILYPAD_1123 = block(TheArgContainerModBlocks.LILYPAD_1123);
 	public static final RegistryObject<Item> STEVEN_SPAWN_EGG = REGISTRY.register("steven_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.STEVEN, -16737895, -2711704, new Item.Properties()));
 	public static final RegistryObject<Item> NEXUS_TEST = block(TheArgContainerModBlocks.NEXUS_TEST);
-	public static final RegistryObject<Item> USER_0 = REGISTRY.register("user_0", () -> new User0Item());
 	public static final RegistryObject<Item> USER_0_CLONE_SPAWN_EGG = REGISTRY.register("user_0_clone_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.USER_0_CLONE, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> EVIL_USER_0_SPAWN_EGG = REGISTRY.register("evil_user_0_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.EVIL_USER_0, -1, -1, new Item.Properties()));
-	public static final RegistryObject<Item> FIND = REGISTRY.register("find", () -> new FindItem());
 	public static final RegistryObject<Item> ANDREWGAMES_722_ITEM = REGISTRY.register("andrewgames_722_item", () -> new Andrewgames722ItemItem());
 	public static final RegistryObject<Item> BLOCKRED = block(TheArgContainerModBlocks.BLOCKRED);
 	public static final RegistryObject<Item> BLOCKPURIFIED = block(TheArgContainerModBlocks.BLOCKPURIFIED);
@@ -899,12 +885,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> NEXUS_CAUTION_BLOCK = block(TheArgContainerModBlocks.NEXUS_CAUTION_BLOCK);
 	public static final RegistryObject<Item> NEXUS_OLD_DATA_WALL = block(TheArgContainerModBlocks.NEXUS_OLD_DATA_WALL);
 	public static final RegistryObject<Item> RED_PILLAR_UPDATED_VERSION = block(TheArgContainerModBlocks.RED_PILLAR_UPDATED_VERSION);
-	public static final RegistryObject<Item> WAKE_UP_JAMES = REGISTRY.register("wake_up_james", () -> new WakeUpJamesItem());
-	public static final RegistryObject<Item> TWO_WINGED_ANGEL = REGISTRY.register("two_winged_angel", () -> new TwoWingedAngelItem());
-	public static final RegistryObject<Item> LAST_STAND_OF_THE_LEGENDARY_TRIO = REGISTRY.register("last_stand_of_the_legendary_trio", () -> new LastStandOfTheLegendaryTrioItem());
-	public static final RegistryObject<Item> DENIED = REGISTRY.register("denied", () -> new DeniedItem());
-	public static final RegistryObject<Item> BELIEVEINYOURSELF = REGISTRY.register("believeinyourself", () -> new BelieveinyourselfItem());
-	public static final RegistryObject<Item> BALLERINAOFTHE_LAND = REGISTRY.register("ballerinaofthe_land", () -> new BallerinaoftheLANDItem());
 	public static final RegistryObject<Item> TBOTV_DOOR = doubleBlock(TheArgContainerModBlocks.TBOTV_DOOR);
 	public static final RegistryObject<Item> REPELLER = REGISTRY.register("repeller", () -> new RepellerItem());
 	public static final RegistryObject<Item> WHERE_IS_SKY_BLOCK = block(TheArgContainerModBlocks.WHERE_IS_SKY_BLOCK);
@@ -955,7 +935,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> LIVING_VOID_GRASS = block(TheArgContainerModBlocks.LIVING_VOID_GRASS);
 	public static final RegistryObject<Item> WHITE_COLUMN_CROSS = block(TheArgContainerModBlocks.WHITE_COLUMN_CROSS);
 	public static final RegistryObject<Item> ADMINCOLUMNCROSS = block(TheArgContainerModBlocks.ADMINCOLUMNCROSS);
-	public static final RegistryObject<Item> NEGATIVE_SEVEN = REGISTRY.register("negative_seven", () -> new NegativeSevenItem());
 	public static final RegistryObject<Item> TORCH = block(TheArgContainerModBlocks.TORCH);
 	public static final RegistryObject<Item> GREENSTONE_TORCH = block(TheArgContainerModBlocks.GREENSTONE_TORCH);
 	public static final RegistryObject<Item> INTEL_LEADER_PLUSHIE = block(TheArgContainerModBlocks.INTEL_LEADER_PLUSHIE);
@@ -1336,9 +1315,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> GOL_FRUIT = REGISTRY.register("gol_fruit", () -> new GolFruitItem());
 	public static final RegistryObject<Item> GOL_FRUIT_SEED = doubleBlock(TheArgContainerModBlocks.GOL_FRUIT_SEED);
 	public static final RegistryObject<Item> DELTA_QUEST_LOG = block(TheArgContainerModBlocks.DELTA_QUEST_LOG);
-	public static final RegistryObject<Item> MOONFALL = REGISTRY.register("moonfall", () -> new MoonfallItem());
-	public static final RegistryObject<Item> SAW_13_RETURNS = REGISTRY.register("saw_13_returns", () -> new Saw13ReturnsItem());
-	public static final RegistryObject<Item> VOID_EXP = REGISTRY.register("void_exp", () -> new VoidExpItem());
 	public static final RegistryObject<Item> GRIDSTONE = block(TheArgContainerModBlocks.GRIDSTONE);
 	public static final RegistryObject<Item> CRATE = block(TheArgContainerModBlocks.CRATE);
 	public static final RegistryObject<Item> MYSTERY_BLOCK = block(TheArgContainerModBlocks.MYSTERY_BLOCK);
@@ -1744,7 +1720,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> TRANSLATOR_HELMET = REGISTRY.register("translator_helmet", () -> new TranslatorItem.Helmet());
 	public static final RegistryObject<Item> QUANTUM_KEY = REGISTRY.register("quantum_key", () -> new QuantumKeyItem());
 	public static final RegistryObject<Item> GENERATOR = block(TheArgContainerModBlocks.GENERATOR);
-	public static final RegistryObject<Item> MESSAGE_DISC_1 = REGISTRY.register("message_disc_1", () -> new MessageDisc1Item());
 	public static final RegistryObject<Item> WEIRD_COBBLESTONE = block(TheArgContainerModBlocks.WEIRD_COBBLESTONE);
 	public static final RegistryObject<Item> GRADIENT_COBBLESTONE = block(TheArgContainerModBlocks.GRADIENT_COBBLESTONE);
 	public static final RegistryObject<Item> WEIRD_GRASS = block(TheArgContainerModBlocks.WEIRD_GRASS);
@@ -1755,9 +1730,39 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> SKY_SHARD = REGISTRY.register("sky_shard", () -> new SkyShardItem());
 	public static final RegistryObject<Item> DEBUG_SKYBOX = block(TheArgContainerModBlocks.DEBUG_SKYBOX);
 	public static final RegistryObject<Item> RECRUITER_V_2_SPAWN_EGG = REGISTRY.register("recruiter_v_2_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.RECRUITER_V_2, -16777216, -16777216, new Item.Properties()));
-	public static final RegistryObject<Item> FLAMEWOOD_SAPLING = block(TheArgContainerModBlocks.FLAMEWOOD_SAPLING);
 	public static final RegistryObject<Item> LOGIC = REGISTRY.register("logic", () -> new LogicItem());
 	public static final RegistryObject<Item> RENDER_WIREFRAME_BLOCK = block(TheArgContainerModBlocks.RENDER_WIREFRAME_BLOCK);
+	public static final RegistryObject<Item> DOWNBEAT_UPLINK = REGISTRY.register("downbeat_uplink", () -> new DownbeatUplinkItem());
+	public static final RegistryObject<Item> DESAMBRIER = REGISTRY.register("desambrier", () -> new DesambrierItem());
+	public static final RegistryObject<Item> GYLDAN_SVERD = REGISTRY.register("gyldan_sverd", () -> new GyldanSverdItem());
+	public static final RegistryObject<Item> JUHRY = REGISTRY.register("juhry", () -> new JuhryItem());
+	public static final RegistryObject<Item> HIDDENDEN = REGISTRY.register("hiddenden", () -> new HiddendenItem());
+	public static final RegistryObject<Item> LEMURIA = REGISTRY.register("lemuria", () -> new LemuriaItem());
+	public static final RegistryObject<Item> CONDEMNED = REGISTRY.register("condemned", () -> new CondemnedItem());
+	public static final RegistryObject<Item> K_2 = REGISTRY.register("k_2", () -> new K2Item());
+	public static final RegistryObject<Item> ROCK_BEETLE = REGISTRY.register("rock_beetle", () -> new RockBeetleItem());
+	public static final RegistryObject<Item> SANDCASTLES = REGISTRY.register("sandcastles", () -> new SandcastlesItem());
+	public static final RegistryObject<Item> CAT_THEME = REGISTRY.register("cat_theme", () -> new CatThemeItem());
+	public static final RegistryObject<Item> ARRIVAL = REGISTRY.register("arrival", () -> new ArrivalItem());
+	public static final RegistryObject<Item> USER_0 = REGISTRY.register("user_0", () -> new User0Item());
+	public static final RegistryObject<Item> FIND = REGISTRY.register("find", () -> new FindItem());
+	public static final RegistryObject<Item> WAKE_UP_JAMES = REGISTRY.register("wake_up_james", () -> new WakeUpJamesItem());
+	public static final RegistryObject<Item> TWO_WINGED_ANGEL = REGISTRY.register("two_winged_angel", () -> new TwoWingedAngelItem());
+	public static final RegistryObject<Item> LAST_STAND_OF_THE_LEGENDARY_TRIO = REGISTRY.register("last_stand_of_the_legendary_trio", () -> new LastStandOfTheLegendaryTrioItem());
+	public static final RegistryObject<Item> DENIED = REGISTRY.register("denied", () -> new DeniedItem());
+	public static final RegistryObject<Item> BELIEVEINYOURSELF = REGISTRY.register("believeinyourself", () -> new BelieveinyourselfItem());
+	public static final RegistryObject<Item> BALLERINAOFTHE_LAND = REGISTRY.register("ballerinaofthe_land", () -> new BallerinaoftheLANDItem());
+	public static final RegistryObject<Item> NEGATIVE_SEVEN = REGISTRY.register("negative_seven", () -> new NegativeSevenItem());
+	public static final RegistryObject<Item> MOONFALL = REGISTRY.register("moonfall", () -> new MoonfallItem());
+	public static final RegistryObject<Item> SAW_13_RETURNS = REGISTRY.register("saw_13_returns", () -> new Saw13ReturnsItem());
+	public static final RegistryObject<Item> VOID_EXP = REGISTRY.register("void_exp", () -> new VoidExpItem());
+	public static final RegistryObject<Item> MESSAGE_DISC_1 = REGISTRY.register("message_disc_1", () -> new MessageDisc1Item());
+	public static final RegistryObject<Item> FLAMEWOOD_SAPLING = block(TheArgContainerModBlocks.FLAMEWOOD_SAPLING);
+	public static final RegistryObject<Item> TEA_WOOD_SAPLING = block(TheArgContainerModBlocks.TEA_WOOD_SAPLING);
+	public static final RegistryObject<Item> HIGHWOOD_SAPLING = block(TheArgContainerModBlocks.HIGHWOOD_SAPLING);
+	public static final RegistryObject<Item> MYCON_MUSHROOM = block(TheArgContainerModBlocks.MYCON_MUSHROOM);
+	public static final RegistryObject<Item> TALL_TREE_SAPLING = block(TheArgContainerModBlocks.TALL_TREE_SAPLING);
+	public static final RegistryObject<Item> TALL_TREE_LEAVES = block(TheArgContainerModBlocks.TALL_TREE_LEAVES);
 
 	// Start of user code block custom items
 	// End of user code block custom items

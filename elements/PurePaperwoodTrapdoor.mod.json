@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "paperwoodtrapdoor",
@@ -34,6 +34,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Pure Paperwood Trapdoor",
     "specialInformation": {
       "fixedValue": []
@@ -42,9 +43,11 @@
     "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:VoidAlity"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:VoidAlity"
+      }
+    ],
     "destroyTool": "axe",
     "customDrop": {
       "value": ""
@@ -101,10 +104,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

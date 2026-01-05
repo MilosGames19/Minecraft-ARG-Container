@@ -14,7 +14,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class EvilUser0Renderer extends HumanoidMobRenderer<EvilUser0Entity, HumanoidModel<EvilUser0Entity>> {
 	public EvilUser0Renderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel<EvilUser0Entity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 

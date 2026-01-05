@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_side_alt",
   "textures": {
+    "particle": "the_arg_container:block/compressedstatic",
     "edge": "the_arg_container:block/compressedstatic",
     "pane": "the_arg_container:block/compressedstatic"
   },

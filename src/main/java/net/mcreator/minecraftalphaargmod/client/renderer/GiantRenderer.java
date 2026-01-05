@@ -12,7 +12,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class GiantRenderer extends MobRenderer<GiantEntity, ModelZombieModel<GiantEntity>> {
 	public GiantRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelZombieModel(context.bakeLayer(ModelZombieModel.LAYER_LOCATION)), 0f);
+		super(context, new ModelZombieModel<GiantEntity>(context.bakeLayer(ModelZombieModel.LAYER_LOCATION)), 0f);
 	}
 
 	@Override

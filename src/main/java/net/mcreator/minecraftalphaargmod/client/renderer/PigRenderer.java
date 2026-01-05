@@ -11,7 +11,7 @@ import net.mcreator.minecraftalphaargmod.entity.PigEntity;
 
 public class PigRenderer extends MobRenderer<PigEntity, PigModel<PigEntity>> {
 	public PigRenderer(EntityRendererProvider.Context context) {
-		super(context, new PigModel(context.bakeLayer(ModelLayers.PIG)), 0.5f);
+		super(context, new PigModel<PigEntity>(context.bakeLayer(ModelLayers.PIG)), 0.5f);
 	}
 
 	@Override

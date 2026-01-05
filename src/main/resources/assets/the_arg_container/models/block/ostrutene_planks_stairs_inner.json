@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "the_arg_container:block/ostruteneplanks",
     "bottom": "the_arg_container:block/ostruteneplanks",
     "top": "the_arg_container:block/ostruteneplanks",
     "side": "the_arg_container:block/ostruteneplanks"

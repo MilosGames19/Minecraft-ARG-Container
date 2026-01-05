@@ -104,7 +104,12 @@ public class TheArgContainerModBiomes {
 	}
 
 	private static void addSurfaceRule(List<SurfaceRules.RuleSource> surfaceRules, int index, SurfaceRules.RuleSource rule) {
-		if (!surfaceRules.contains(rule))
-			surfaceRules.add(index, rule);
+		if (!surfaceRules.contains(rule)) {
+			if (index >= surfaceRules.size()) {
+				surfaceRules.add(rule);
+			} else {
+				surfaceRules.add(index, rule);
+			}
+		}
 	}
 }

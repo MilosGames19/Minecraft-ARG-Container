@@ -1,6 +1,7 @@
 {
   "parent": "block/pressure_plate_down",
   "textures": {
+    "particle": "the_arg_container:block/paperwoodplanks",
     "texture": "the_arg_container:block/paperwoodplanks"
   },
   "render_type": "solid"

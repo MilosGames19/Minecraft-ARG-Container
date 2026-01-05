@@ -12,7 +12,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BrixgoaRenderer extends MobRenderer<BrixgoaEntity, ModelBrixgoa<BrixgoaEntity>> {
 	public BrixgoaRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelBrixgoa(context.bakeLayer(ModelBrixgoa.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelBrixgoa<BrixgoaEntity>(context.bakeLayer(ModelBrixgoa.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

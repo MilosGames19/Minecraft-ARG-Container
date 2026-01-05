@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "the_arg_container:block/katka_block6",
     "bottom": "the_arg_container:block/katka_block6",
     "top": "the_arg_container:block/katka_block6",
     "side": "the_arg_container:block/katka_block5"

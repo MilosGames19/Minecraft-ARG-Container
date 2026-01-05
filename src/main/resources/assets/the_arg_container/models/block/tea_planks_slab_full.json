@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "the_arg_container:block/tee_plancks",
     "bottom": "the_arg_container:block/tee_plancks",
     "top": "the_arg_container:block/tee_plancks",
     "side": "the_arg_container:block/tee_plancks"

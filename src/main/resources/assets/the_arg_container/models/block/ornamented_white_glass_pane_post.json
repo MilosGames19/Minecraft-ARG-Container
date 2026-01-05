@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_post",
   "textures": {
+    "particle": "the_arg_container:block/ornamentglasslimbo",
     "edge": "the_arg_container:block/ornamentglasslimbo",
     "pane": "the_arg_container:block/ornamentglasslimbo"
   },

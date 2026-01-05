@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "the_arg_container:block/catwalk",
     "bottom": "the_arg_container:block/catwalk",
     "top": "the_arg_container:block/catwalk",
     "side": "the_arg_container:block/catwalk"

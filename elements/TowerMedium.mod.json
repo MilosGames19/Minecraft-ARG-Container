@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "structure",
   "definition": {
     "structure": "medium_tower",
@@ -16,9 +16,13 @@
         "value": "void"
       }
     ],
-    "surfaceDetectionType": "WORLD_SURFACE",
     "terrainAdaptation": "beard_box",
     "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
     "size": 1,
     "maxDistanceFromCenter": 64,
     "jigsawPools": []

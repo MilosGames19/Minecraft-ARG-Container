@@ -8,14 +8,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.TtcdconsoleMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class TtcdconsoleScreen extends AbstractContainerScreen<TtcdconsoleMenu> {
+public class TtcdconsoleScreen extends AbstractContainerScreen<TtcdconsoleMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = TtcdconsoleMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -52,6 +54,10 @@ public class TtcdconsoleScreen extends AbstractContainerScreen<TtcdconsoleMenu> 
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -67,6 +73,13 @@ public class TtcdconsoleScreen extends AbstractContainerScreen<TtcdconsoleMenu> 
 	public void containerTick() {
 		super.containerTick();
 		Execute_protocol.tick();
+	}
+
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String Execute_protocolValue = Execute_protocol.getValue();
+		super.resize(minecraft, width, height);
+		Execute_protocol.setValue(Execute_protocolValue);
 	}
 
 	@Override

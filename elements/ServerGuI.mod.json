@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,7 +25,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 133,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -43,7 +44,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 133,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -61,7 +63,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 169,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -79,7 +82,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 169,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -97,7 +101,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 205,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -115,7 +120,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 205,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -133,7 +139,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 241,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -151,7 +158,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 241,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -169,7 +177,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 277,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -187,7 +196,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 277,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -196,7 +206,8 @@
           "image": "servergui.png",
           "use1Xscale": false,
           "x": 126,
-          "y": 25
+          "y": 25,
+          "locked": false
         }
       },
       {
@@ -211,7 +222,8 @@
             "falpha": 0.0
           },
           "x": 141,
-          "y": 35
+          "y": 35,
+          "locked": false
         }
       }
     ],

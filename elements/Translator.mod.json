@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "creativeTab": {
-      "value": "COMBAT"
-    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
     "armorTextureFile": "translator_",
     "helmetName": "Translator",
     "bodyName": "Translator Chestplate",

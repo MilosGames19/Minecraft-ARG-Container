@@ -145,6 +145,7 @@ public class TheArgContainerModVariables {
 		public boolean Warning = false;
 		public boolean ModCheck = false;
 		public boolean ToastLogic = false;
+		public boolean DesableGen = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -156,6 +157,7 @@ public class TheArgContainerModVariables {
 			Warning = nbt.getBoolean("Warning");
 			ModCheck = nbt.getBoolean("ModCheck");
 			ToastLogic = nbt.getBoolean("ToastLogic");
+			DesableGen = nbt.getBoolean("DesableGen");
 		}
 
 		@Override
@@ -163,6 +165,7 @@ public class TheArgContainerModVariables {
 			nbt.putBoolean("Warning", Warning);
 			nbt.putBoolean("ModCheck", ModCheck);
 			nbt.putBoolean("ToastLogic", ToastLogic);
+			nbt.putBoolean("DesableGen", DesableGen);
 			return nbt;
 		}
 

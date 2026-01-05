@@ -10,7 +10,7 @@ import net.mcreator.minecraftalphaargmod.client.model.Modelcore;
 
 public class CORERenderer extends MobRenderer<COREEntity, Modelcore<COREEntity>> {
 	public CORERenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcore(context.bakeLayer(Modelcore.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelcore<COREEntity>(context.bakeLayer(Modelcore.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

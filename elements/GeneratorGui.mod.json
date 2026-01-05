@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -22,7 +22,8 @@
           "width": 51,
           "height": 20,
           "x": 133,
-          "y": 96
+          "y": 96,
+          "locked": false
         }
       },
       {
@@ -44,7 +45,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 133,
-          "y": 65
+          "y": 65,
+          "locked": false
         }
       },
       {
@@ -66,7 +68,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 151,
-          "y": 65
+          "y": 65,
+          "locked": false
         }
       },
       {
@@ -88,7 +91,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 169,
-          "y": 65
+          "y": 65,
+          "locked": false
         }
       },
       {
@@ -101,7 +105,8 @@
           "rotationX": 0,
           "followMouseMovement": true,
           "x": 252,
-          "y": 72
+          "y": 72,
+          "locked": false
         }
       },
       {
@@ -123,7 +128,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 205,
-          "y": 65
+          "y": 65,
+          "locked": false
         }
       },
       {
@@ -138,7 +144,8 @@
             "falpha": 0.0
           },
           "x": 190,
-          "y": 40
+          "y": 40,
+          "locked": false
         }
       }
     ],

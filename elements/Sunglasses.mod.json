@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "creativeTab": {
-      "value": "CUSTOM:Alpha"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Alpha"
+      }
+    ],
     "armorTextureFile": "layer_1_fashion_1",
     "helmetName": "Sunglasses Helmet",
     "bodyName": "Sunglasses Chestplate",

@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "the_arg_container:block/quantumblock",
     "bottom": "the_arg_container:block/quantumblock",
     "top": "the_arg_container:block/quantumblock",
     "side": "the_arg_container:block/quantumblock"

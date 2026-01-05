@@ -19,7 +19,7 @@ description="This mod brings blocks, items and features form popular minecraft A
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 
 [[dependencies.the_arg_container]]
@@ -54,3 +54,6 @@ description="This mod brings blocks, items and features form popular minecraft A
     ordering="NONE"
     side="BOTH"
 
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

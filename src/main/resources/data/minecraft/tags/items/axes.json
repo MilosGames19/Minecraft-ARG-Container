@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "the_arg_container:contr_infestas_multitool",
+    "the_arg_container:hiddenite_tool_axe",
+    "the_arg_container:obsidian_axe",
+    "the_arg_container:unused_tool_8",
+    "the_arg_container:unused_tool_2",
+    "the_arg_container:dismantler",
+    "the_arg_container:eraser",
+    "the_arg_container:mycon_tool_set_axe"
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_noside_alt",
   "textures": {
+    "particle": "the_arg_container:block/abyssglass",
     "pane": "the_arg_container:block/abyssglass"
   },
   "render_type": "cutout"

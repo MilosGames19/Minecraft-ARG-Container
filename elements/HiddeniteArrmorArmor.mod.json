@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "hiddenite_leggings",
     "enableBoots": true,
     "textureBoots": "hiddenite_boots",
-    "creativeTab": {
-      "value": "CUSTOM:Claytonm634"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Claytonm634"
+      }
+    ],
     "armorTextureFile": "hiddenite_",
     "helmetName": "Hiddenite Helmet",
     "bodyName": "Hiddenite Chestplate",

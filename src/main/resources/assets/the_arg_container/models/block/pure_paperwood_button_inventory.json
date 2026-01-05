@@ -1,6 +1,7 @@
 {
   "parent": "block/button_inventory",
   "textures": {
+    "particle": "the_arg_container:block/paperwoodplanks",
     "texture": "the_arg_container:block/paperwoodplanks"
   },
   "render_type": "solid"

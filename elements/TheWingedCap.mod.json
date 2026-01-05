@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "creativeTab": {
-      "value": "CUSTOM:Miscellaneous"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Miscellaneous"
+      }
+    ],
     "armorTextureFile": "wc_",
     "helmetName": "The_winged_cap",
     "bodyName": "The Winged Cap Chestplate",

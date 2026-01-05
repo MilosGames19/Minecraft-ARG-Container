@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "the_arg_container:block/actline",
     "bottom": "the_arg_container:block/actline",
     "top": "the_arg_container:block/actline",
     "side": "the_arg_container:block/actvline"

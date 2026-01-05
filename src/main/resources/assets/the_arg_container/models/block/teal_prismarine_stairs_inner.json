@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "the_arg_container:block/tealprismarine",
     "bottom": "the_arg_container:block/tealprismarine",
     "top": "the_arg_container:block/tealprismarine",
     "side": "the_arg_container:block/tealprismarine"

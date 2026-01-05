@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "the_arg_container:block/limbo_polished",
     "bottom": "the_arg_container:block/limbo_polished",
     "top": "the_arg_container:block/limbo_polished",
     "side": "the_arg_container:block/limbo_polished"

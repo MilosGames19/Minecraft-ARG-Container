@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -22,7 +22,8 @@
             "name": "FreezerR"
           },
           "x": 241,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -43,7 +44,8 @@
             "name": "FreezerR"
           },
           "x": 141,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -64,7 +66,8 @@
             "name": "FreezerR"
           },
           "x": 185,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -79,7 +82,8 @@
             "falpha": 0.0
           },
           "x": 192,
-          "y": 43
+          "y": 43,
+          "locked": false
         }
       },
       {
@@ -88,7 +92,8 @@
           "image": "freezer.png",
           "use1Xscale": false,
           "x": 126,
-          "y": 37
+          "y": 37,
+          "locked": false
         }
       }
     ],

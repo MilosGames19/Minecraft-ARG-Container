@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "the_arg_container:block/slab_top",
     "bottom": "the_arg_container:block/slab_top",
     "top": "the_arg_container:block/slab_top",
     "side": "the_arg_container:block/slab"

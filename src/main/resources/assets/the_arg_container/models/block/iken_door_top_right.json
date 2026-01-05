@@ -1,6 +1,7 @@
 {
   "parent": "block/door_top_right",
   "textures": {
+    "particle": "the_arg_container:block/terrain__316",
     "bottom": "the_arg_container:block/terrain__316",
     "top": "the_arg_container:block/terrain__300"
   },

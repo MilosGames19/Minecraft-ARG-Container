@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -17,7 +17,8 @@
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 29,
-          "y": 184
+          "y": 184,
+          "locked": false
         }
       }
     ],

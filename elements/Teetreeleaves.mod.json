@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "tea_leaf",
@@ -34,6 +34,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Tea Bush",
     "specialInformation": {
       "fixedValue": []
@@ -42,9 +43,11 @@
     "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:Alpha"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Alpha"
+      }
+    ],
     "destroyTool": "hoe",
     "customDrop": {
       "value": "Blocks.AIR"
@@ -55,7 +58,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 1,
+    "lightOpacity": 0,
     "material": {
       "value": "LEAVES"
     },
@@ -101,10 +104,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -120,9 +122,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "TeetreeleavesBlockDestroyedByPlayer"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

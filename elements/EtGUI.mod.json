@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,7 +16,8 @@
           "image": "essencetransformer.png",
           "use1Xscale": false,
           "x": 126,
-          "y": 37
+          "y": 37,
+          "locked": false
         }
       },
       {
@@ -34,7 +35,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 155,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -52,7 +54,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 191,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -70,7 +73,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 173,
-          "y": 53
+          "y": 53,
+          "locked": false
         }
       },
       {
@@ -88,7 +92,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 155,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -106,7 +111,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 173,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -124,7 +130,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 191,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -142,7 +149,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 155,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -160,7 +168,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 173,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -178,7 +187,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 191,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -190,7 +200,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 227,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -202,7 +213,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 263,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -217,7 +229,8 @@
             "falpha": 0.0
           },
           "x": 156,
-          "y": 39
+          "y": 39,
+          "locked": false
         }
       },
       {
@@ -229,7 +242,8 @@
           "width": 61,
           "height": 20,
           "x": 224,
-          "y": 95
+          "y": 95,
+          "locked": false
         }
       }
     ],

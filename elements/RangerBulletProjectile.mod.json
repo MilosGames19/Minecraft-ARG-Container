@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "projectile",
   "definition": {
     "projectileItem": {
@@ -14,6 +14,8 @@
     "damage": 10.0,
     "knockback": 10,
     "entityModel": "Default",
-    "customModelTexture": ""
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5
   }
 }

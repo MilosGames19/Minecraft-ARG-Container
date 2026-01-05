@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">graphic_setup_dimensions</field><next><block type=\"graphic_setup_dimensioneffects\"><field name=\"reference\">OVERWORLD</field><value name=\"effects\"><block type=\"get_dimensionid\"><field name=\"dimension\">Surface</field></block></value><value name=\"fog\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value><next><block type=\"graphic_setup_dimensioneffects\"><field name=\"reference\">OVERWORLD</field><value name=\"effects\"><block type=\"get_dimensionid\"><field name=\"dimension\">CUSTOM:Moonfalldimension</field></block></value><value name=\"fog\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></next></block></xml>"

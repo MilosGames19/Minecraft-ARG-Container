@@ -12,7 +12,7 @@ import net.mcreator.minecraftalphaargmod.entity.RecruiterEntity;
 
 public class RecruiterRenderer extends HumanoidMobRenderer<RecruiterEntity, HumanoidModel<RecruiterEntity>> {
 	public RecruiterRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel<RecruiterEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 

@@ -1,6 +1,7 @@
 {
   "parent": "block/slab_top",
   "textures": {
+    "particle": "the_arg_container:block/summer_6",
     "bottom": "the_arg_container:block/summer_6",
     "top": "the_arg_container:block/summer_6",
     "side": "the_arg_container:block/summer_5"

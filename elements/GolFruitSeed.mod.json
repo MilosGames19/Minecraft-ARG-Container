@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -13,6 +13,19 @@
     "plantType": "double",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
+    "secondaryTreeChance": 0.1,
+    "trees": [
+      null,
+      null
+    ],
+    "flowerTrees": [
+      null,
+      null
+    ],
+    "megaTrees": [
+      null,
+      null
+    ],
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 2,
     "customBoundingBox": false,
@@ -32,14 +45,17 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:ChristopherPlayz"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ChristopherPlayz"
+      }
+    ],
     "hardness": 0.0,
     "resistance": 0.0,
     "luminance": 7,
     "unbreakable": false,
     "isSolid": false,
+    "isWaterloggable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"

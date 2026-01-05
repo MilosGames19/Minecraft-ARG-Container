@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
@@ -10,10 +10,10 @@
     "displaySettings": "scythe.json",
     "leftArm": "",
     "rightArm": "",
-    "perspective": "All Perspectives",
     "creativeTab": {
       "value": "CUSTOM:Miscellaneous"
     },
+    "creativeTabs": [],
     "firstPersonArms": false,
     "stackSize": 1,
     "enchantability": 15,

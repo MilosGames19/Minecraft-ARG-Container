@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_open",
   "textures": {
+    "particle": "the_arg_container:block/paperwoodplanks",
     "texture": "the_arg_container:block/paperwoodplanks"
   },
   "render_type": "solid"

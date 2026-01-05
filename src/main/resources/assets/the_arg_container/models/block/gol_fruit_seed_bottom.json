@@ -2,7 +2,7 @@
   "parent": "block/cross",
   "textures": {
     "cross": "the_arg_container:block/olruitottom",
-    "particle": "the_arg_container:block/olruitottom"
+    "particle": "the_arg_container:block/olruitop"
   },
   "render_type": "cutout"
 }

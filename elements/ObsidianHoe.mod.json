@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "TOOLS"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
     "efficiency": 14.0,
     "attackSpeed": 1.2,
     "enchantability": 23,
     "damageVsEntity": 4.0,
     "usageCount": 100,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -31,6 +31,8 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

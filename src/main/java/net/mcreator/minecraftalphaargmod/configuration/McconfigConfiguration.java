@@ -5,6 +5,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 public class McconfigConfiguration {
 	public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 	public static final ForgeConfigSpec SPEC;
+
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SKY_FLAME_GENERATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> LILYPAD_GENERATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> GAME_CRASH;
@@ -30,7 +31,7 @@ public class McconfigConfiguration {
 		SV_ALLOWRNET = BUILDER.comment("Enable/disable recruiter connections.").define("sv_allowrnet", true);
 		BUILDER.pop();
 		BUILDER.push("Sky");
-		TBOTV_SKY = BUILDER.comment("Enable/disable TBOTV sky in overworld.").define("tbotv_sky", false);
+		TBOTV_SKY = BUILDER.comment("Enable/disable TBOTV sky in overworld.").define("tbotv_sky", true);
 		ALPHAVER_NEBULA_EVENT = BUILDER.comment("Enable/disable alphaver nebula event.").define("alphaver_nebula_event", false);
 		TBOTV_MOON_EVENT = BUILDER.comment("Enable/disable broken moon event.").define("tbotv_moon_event", false);
 		BUILDER.pop();
@@ -40,7 +41,7 @@ public class McconfigConfiguration {
 		FIXER_MOD = BUILDER.comment("Enable/disable Regenerating static.").define("fixer_mod", false);
 		QUICKLOAD_BUTTON = BUILDER.comment("Enable/disable the quickload button on the main menu (restart required).").define("quickload_button", true);
 		DONT_LOOK_AT_THE_MOON = BUILDER.comment("Enable/disable don't look at the moon event (restart required)").define("dont_look_at_the_moon", false);
-		PLACE_THE_SMILE_BLOCK_ANYWHERE = BUILDER.define("place_the_smile_block_anywhere", false);
+		PLACE_THE_SMILE_BLOCK_ANYWHERE = BUILDER.comment("Enable/disable the ClaytonM634 smiling block to be placed anywhere.").define("place_the_smile_block_anywhere", false);
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();

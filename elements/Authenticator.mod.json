@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "block",
   "definition": {
     "texture": "mojang_animation_block",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Authenticator",
     "specialInformation": {
       "fixedValue": [
@@ -43,9 +44,11 @@
     "resistance": 20.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:John"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:John"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
@@ -102,7 +105,7 @@
     },
     "luminance": 0,
     "unbreakable": true,
-    "breakHarvestLevel": 4,
+    "vanillaToolTier": "DIAMOND",
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "AuthenticatorGUi",

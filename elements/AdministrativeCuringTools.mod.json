@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "achievement",
   "definition": {
     "achievementName": "Administrative Curing Tools",
@@ -14,7 +14,6 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
-    "rewardFunction": "No function",
     "rewardXP": 0,
     "achievementType": "goal",
     "parent": {

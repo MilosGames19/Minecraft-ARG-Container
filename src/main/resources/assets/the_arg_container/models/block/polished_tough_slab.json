@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "the_arg_container:block/polishedbricks",
     "bottom": "the_arg_container:block/polishedbricks",
     "top": "the_arg_container:block/polishedbricks",
     "side": "the_arg_container:block/polishedbricks"

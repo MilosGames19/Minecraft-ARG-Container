@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -14,13 +14,33 @@
     "fluidBlock": {
       "value": "Blocks.AIR"
     },
+    "seaLevel": 0,
+    "generateOreVeins": false,
+    "generateAquifers": false,
+    "horizontalNoiseSize": 2,
+    "verticalNoiseSize": 1,
+    "defaultEffects": "overworld",
+    "useCustomEffects": true,
+    "hasClouds": false,
+    "cloudHeight": 192.0,
+    "skyType": "NONE",
+    "sunHeightAffectsFog": false,
     "canRespawnHere": true,
     "hasFog": false,
-    "isDark": false,
+    "ambientLight": 0.5,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
+    "hasFixedTime": false,
+    "fixedTimeValue": 0,
+    "coordinateScale": 1.0,
+    "infiniburnTag": "minecraft:infiniburn_overworld",
+    "bedWorks": true,
     "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
+    "piglinSafe": true,
+    "hasRaids": false,
+    "minMonsterSpawnLightLimit": 0,
+    "maxMonsterSpawnLightLimit": 7,
+    "monsterSpawnBlockLightLimit": 0,
     "onPlayerEntersDimension": {
       "name": "MoonfalldimensionPlayerEntersDimension"
     },
@@ -40,9 +60,11 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "igniterTab": {
-      "value": "CUSTOM:DeltaQuest"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:DeltaQuest"
+      }
+    ],
     "texture": "ignite",
     "portalTexture": "wyeah",
     "enablePortal": true

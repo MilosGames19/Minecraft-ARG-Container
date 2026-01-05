@@ -10,21 +10,13 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "the_arg_container:soul_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
-        }
+        "Name": "the_arg_container:soul_leaves"
       }
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "the_arg_container:soul_wood",
-        "Properties": {
-          "axis": "y"
-        }
+        "Name": "the_arg_container:soul_wood"
       }
     },
     "force_dirt": false,

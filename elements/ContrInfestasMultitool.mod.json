@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "MultiTool",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:VoidAlity"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:VoidAlity"
+      }
+    ],
     "efficiency": 11.5,
     "attackSpeed": 1.1,
     "enchantability": 2,
     "damageVsEntity": 10.0,
     "usageCount": 6190,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -43,6 +43,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

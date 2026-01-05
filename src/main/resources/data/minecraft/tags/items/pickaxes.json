@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "the_arg_container:contr_infestas_multitool",
+    "the_arg_container:hiddenite_tool_pickaxe",
+    "the_arg_container:obsidian_pickaxe",
+    "the_arg_container:unused_tool_7",
+    "the_arg_container:unused_tool_3",
+    "the_arg_container:dismantler",
+    "the_arg_container:eraser",
+    "the_arg_container:mycon_tool_set_pickaxe"
+  ]
+}

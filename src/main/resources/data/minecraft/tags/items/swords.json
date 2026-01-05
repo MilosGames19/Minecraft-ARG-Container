@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "the_arg_container:quartzum_sword",
+    "the_arg_container:ruvios_claymore",
+    "the_arg_container:vita_abyss_sword",
+    "the_arg_container:contr_infestas_blade",
+    "the_arg_container:contr_infestas_multitool",
+    "the_arg_container:author_atomizer",
+    "the_arg_container:hiddenite_tool_sword",
+    "the_arg_container:obsidian_sword",
+    "the_arg_container:repeller",
+    "the_arg_container:unused_tool_11",
+    "the_arg_container:unused_tool_10",
+    "the_arg_container:unused_tool_5",
+    "the_arg_container:unused_tool",
+    "the_arg_container:dismantler",
+    "the_arg_container:eraser",
+    "the_arg_container:flameberge",
+    "the_arg_container:mycon_tool_set_sword"
+  ]
+}

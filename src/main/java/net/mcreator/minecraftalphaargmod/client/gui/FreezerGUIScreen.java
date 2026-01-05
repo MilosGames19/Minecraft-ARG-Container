@@ -9,13 +9,14 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.FreezerGUIMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class FreezerGUIScreen extends AbstractContainerScreen<FreezerGUIMenu> {
+public class FreezerGUIScreen extends AbstractContainerScreen<FreezerGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = FreezerGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -53,6 +54,10 @@ public class FreezerGUIScreen extends AbstractContainerScreen<FreezerGUIMenu> {
 
 	public static HashMap<String, String> getTextboxValues() {
 		return textstate;
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
 	}
 
 	@Override

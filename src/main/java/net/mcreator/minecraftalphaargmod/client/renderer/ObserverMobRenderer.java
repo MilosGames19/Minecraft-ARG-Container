@@ -10,7 +10,7 @@ import net.mcreator.minecraftalphaargmod.client.model.ModelObserver;
 
 public class ObserverMobRenderer extends MobRenderer<ObserverMobEntity, ModelObserver<ObserverMobEntity>> {
 	public ObserverMobRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelObserver(context.bakeLayer(ModelObserver.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelObserver<ObserverMobEntity>(context.bakeLayer(ModelObserver.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

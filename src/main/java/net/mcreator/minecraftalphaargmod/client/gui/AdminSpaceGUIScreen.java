@@ -9,16 +9,18 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminSpaceGUIMenu;
 import net.mcreator.minecraftalphaargmod.network.AdminSpaceGUIButtonMessage;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMenu> {
+public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = AdminSpaceGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -62,6 +64,10 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -77,6 +83,13 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 	public void containerTick() {
 		super.containerTick();
 		asc.tick();
+	}
+
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String ascValue = asc.getValue();
+		super.resize(minecraft, width, height);
+		asc.setValue(ascValue);
 	}
 
 	@Override

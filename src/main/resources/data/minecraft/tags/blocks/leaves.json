@@ -22,7 +22,8 @@
     "the_arg_container:leaves",
     "the_arg_container:highwood_leaves",
     "the_arg_container:tea_bush",
-    "the_arg_container:dlamewood_leaves",
-    "the_arg_container:summer_leaves"
+    "the_arg_container:flamewood_leaves",
+    "the_arg_container:summer_leaves",
+    "the_arg_container:tall_tree_leaves"
   ]
 }

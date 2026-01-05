@@ -7,14 +7,16 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.DevChatGUIMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class DevChatGUIScreen extends AbstractContainerScreen<DevChatGUIMenu> {
+public class DevChatGUIScreen extends AbstractContainerScreen<DevChatGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = DevChatGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -49,6 +51,10 @@ public class DevChatGUIScreen extends AbstractContainerScreen<DevChatGUIMenu> {
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -64,6 +70,13 @@ public class DevChatGUIScreen extends AbstractContainerScreen<DevChatGUIMenu> {
 	public void containerTick() {
 		super.containerTick();
 		dev_chat.tick();
+	}
+
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String dev_chatValue = dev_chat.getValue();
+		super.resize(minecraft, width, height);
+		dev_chat.setValue(dev_chatValue);
 	}
 
 	@Override

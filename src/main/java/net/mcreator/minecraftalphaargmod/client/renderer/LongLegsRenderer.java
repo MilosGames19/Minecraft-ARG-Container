@@ -19,7 +19,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class LongLegsRenderer extends MobRenderer<LongLegsEntity, ModelCustomModel<LongLegsEntity>> {
 	public LongLegsRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCustomModel(context.bakeLayer(ModelCustomModel.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelCustomModel<LongLegsEntity>(context.bakeLayer(ModelCustomModel.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<LongLegsEntity, ModelCustomModel<LongLegsEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("the_arg_container:textures/entities/texture.png");
 

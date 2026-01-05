@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Pig",
@@ -22,6 +22,7 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
+    "animations": [],
     "modelWidth": 0.9,
     "modelHeight": 0.9,
     "modelShadowSize": 0.5,
@@ -35,9 +36,11 @@
       "value": -8674305,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "MISC"
-    },
+    "creativeTabs": [
+      {
+        "value": "MISC"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -79,7 +82,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -139,6 +141,15 @@
         "value": "#minecraft:is_overworld"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

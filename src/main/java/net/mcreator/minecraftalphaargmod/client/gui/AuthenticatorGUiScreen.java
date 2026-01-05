@@ -9,12 +9,13 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.AuthenticatorGUiMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class AuthenticatorGUiScreen extends AbstractContainerScreen<AuthenticatorGUiMenu> {
+public class AuthenticatorGUiScreen extends AbstractContainerScreen<AuthenticatorGUiMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = AuthenticatorGUiMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -50,6 +51,10 @@ public class AuthenticatorGUiScreen extends AbstractContainerScreen<Authenticato
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -57,11 +62,6 @@ public class AuthenticatorGUiScreen extends AbstractContainerScreen<Authenticato
 			return true;
 		}
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void containerTick() {
-		super.containerTick();
 	}
 
 	@Override

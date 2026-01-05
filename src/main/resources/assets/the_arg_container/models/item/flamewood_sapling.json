@@ -1,7 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "the_arg_container:item/flamewood_sapling"
-  },
-  "render_type": "translucent"
+    "layer0": "the_arg_container:block/flamewood_sapling"
+  }
 }

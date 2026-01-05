@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "the_arg_container:block/paperwoodplanks",
     "bottom": "the_arg_container:block/paperwoodplanks",
     "top": "the_arg_container:block/paperwoodplanks",
     "side": "the_arg_container:block/paperwoodplanks"

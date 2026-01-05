@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,7 +25,8 @@
           },
           "dropItemsWhenNotBound": false,
           "x": 204,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -34,7 +35,8 @@
           "image": "keyhole.png",
           "use1Xscale": true,
           "x": 188,
-          "y": 61
+          "y": 61,
+          "locked": false
         }
       }
     ],

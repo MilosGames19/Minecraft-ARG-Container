@@ -1,26 +1,38 @@
 {
-  "_fv": 60,
-  "_type": "block",
+  "_fv": 73,
+  "_type": "plant",
   "definition": {
-    "texture": "flamewood_sapling",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
     "renderType": 12,
+    "texture": "flamewood_sapling",
+    "textureBottom": "",
     "customModelName": "Cross model",
-    "rotationMode": 0,
-    "enablePitch": false,
-    "emissiveRendering": false,
-    "displayFluidOverlay": false,
-    "itemTexture": "flamewood_sapling",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
-    "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "plantType": "sapling",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 100,
+    "secondaryTreeChance": 0.09999999999999999,
+    "trees": [
+      {
+        "value": "CUSTOM:FlamewoodTree"
+      },
+      {
+        "value": "CUSTOM:BigFlamewoodTree"
+      }
+    ],
+    "flowerTrees": [
+      null,
+      null
+    ],
+    "megaTrees": [
+      null,
+      null
+    ],
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": false,
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -37,48 +49,17 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Alpha"
+      }
+    ],
     "hardness": 0.0,
     "resistance": 0.0,
-    "hasGravity": false,
+    "luminance": 0,
+    "unbreakable": false,
+    "isSolid": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:Alpha"
-    },
-    "destroyTool": "Not specified",
-    "customDrop": {
-      "value": ""
-    },
-    "dropAmount": 1,
-    "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
-    "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
-    "canRedstoneConnect": false,
-    "lightOpacity": 0,
-    "material": {
-      "value": "PLANTS"
-    },
-    "tickRate": 0,
-    "tickRandomly": false,
-    "isReplaceable": false,
-    "canProvidePower": false,
-    "emittedRedstonePower": {
-      "fixedValue": 15.0
-    },
-    "colorOnMap": "DEFAULT",
-    "creativePickItem": {
-      "value": ""
-    },
-    "offsetType": "XZ",
-    "aiPathNodeType": "WALKABLE",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
-    "isLadder": false,
-    "slipperiness": 0.6,
-    "speedFactor": 1.0,
-    "jumpFactor": 1.0,
-    "reactionToPushing": "DESTROY",
-    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"
@@ -86,53 +67,44 @@
     "breakSound": {
       "value": ""
     },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
+    "stepSound": {
       "value": ""
     },
     "placeSound": {
       "value": ""
     },
-    "stepSound": {
+    "hitSound": {
       "value": ""
     },
-    "luminance": 0,
-    "unbreakable": false,
-    "breakHarvestLevel": 0,
-    "placingCondition": {
-      "name": "SaplingValidPlacement"
+    "fallSound": {
+      "value": ""
     },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
     "isBonemealable": false,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
-    "energyInitial": 0,
-    "energyCapacity": 400000,
-    "energyMaxReceive": 200,
-    "energyMaxExtract": 200,
-    "isFluidTank": false,
-    "fluidCapacity": 8000,
-    "fluidRestrictions": [],
+    "frequencyOnChunks": 5,
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
-    ],
-    "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "generationType": "Flower",
+    "patchSize": 64,
+    "generateAtAnyHeight": false
   }
 }

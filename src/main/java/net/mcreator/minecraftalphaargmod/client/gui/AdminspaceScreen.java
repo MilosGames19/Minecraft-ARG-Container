@@ -11,13 +11,14 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.AdminspaceMenu;
 import net.mcreator.minecraftalphaargmod.network.AdminspaceButtonMessage;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class AdminspaceScreen extends AbstractContainerScreen<AdminspaceMenu> {
+public class AdminspaceScreen extends AbstractContainerScreen<AdminspaceMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = AdminspaceMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -55,6 +56,10 @@ public class AdminspaceScreen extends AbstractContainerScreen<AdminspaceMenu> {
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -62,11 +67,6 @@ public class AdminspaceScreen extends AbstractContainerScreen<AdminspaceMenu> {
 			return true;
 		}
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void containerTick() {
-		super.containerTick();
 	}
 
 	@Override

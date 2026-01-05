@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "the_arg_container:hiddenite_tool_hoe",
+    "the_arg_container:obsidian_hoe",
+    "the_arg_container:unused_tool_9",
+    "the_arg_container:unused_tool_4",
+    "the_arg_container:mycon_tool_set_hoe"
+  ]
+}

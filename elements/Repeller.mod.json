@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -12,16 +12,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "COMBAT"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 4.0,
     "enchantability": 2,
     "damageVsEntity": 14.0,
     "usageCount": 13000,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -31,6 +31,8 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

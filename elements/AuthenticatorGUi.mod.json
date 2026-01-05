@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -16,7 +16,8 @@
           "image": "bogulied.png",
           "use1Xscale": true,
           "x": 126,
-          "y": 29
+          "y": 29,
+          "locked": false
         }
       },
       {
@@ -31,7 +32,8 @@
             "falpha": 0.0
           },
           "x": 188,
-          "y": 33
+          "y": 33,
+          "locked": false
         }
       }
     ],

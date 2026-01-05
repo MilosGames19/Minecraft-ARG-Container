@@ -1,6 +1,7 @@
 {
   "parent": "block/pressure_plate_up",
   "textures": {
+    "particle": "the_arg_container:block/ostruteneplanks",
     "texture": "the_arg_container:block/ostruteneplanks"
   },
   "render_type": "solid"

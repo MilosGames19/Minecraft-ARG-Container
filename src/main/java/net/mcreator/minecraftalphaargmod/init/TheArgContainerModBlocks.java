@@ -264,12 +264,15 @@ import net.mcreator.minecraftalphaargmod.block.TealPrismarineSlabBlock;
 import net.mcreator.minecraftalphaargmod.block.TealPrismarineBlock;
 import net.mcreator.minecraftalphaargmod.block.TealMarineQuartzBlock;
 import net.mcreator.minecraftalphaargmod.block.TealMarineColumnBlock;
+import net.mcreator.minecraftalphaargmod.block.TeaWoodSaplingBlock;
 import net.mcreator.minecraftalphaargmod.block.TeaPlanksStairsBlock;
 import net.mcreator.minecraftalphaargmod.block.TeaPlanksSlabBlock;
 import net.mcreator.minecraftalphaargmod.block.TbotvbricksstairsBlock;
 import net.mcreator.minecraftalphaargmod.block.TbotvTrophyBlock;
 import net.mcreator.minecraftalphaargmod.block.TbotvBricksSlabBlock;
 import net.mcreator.minecraftalphaargmod.block.TargetBlock;
+import net.mcreator.minecraftalphaargmod.block.TallTreeSaplingBlock;
+import net.mcreator.minecraftalphaargmod.block.TallTreeLeavesBlock;
 import net.mcreator.minecraftalphaargmod.block.TallRedRoseBlock;
 import net.mcreator.minecraftalphaargmod.block.TallDandelionBlock;
 import net.mcreator.minecraftalphaargmod.block.TalismilesPlushieBlock;
@@ -651,6 +654,7 @@ import net.mcreator.minecraftalphaargmod.block.MyconStemBlock;
 import net.mcreator.minecraftalphaargmod.block.MyconPlanksStairsBlock;
 import net.mcreator.minecraftalphaargmod.block.MyconPlankBlock;
 import net.mcreator.minecraftalphaargmod.block.MyconPillarBlock;
+import net.mcreator.minecraftalphaargmod.block.MyconMushroomBlock;
 import net.mcreator.minecraftalphaargmod.block.MyconDoorBlock;
 import net.mcreator.minecraftalphaargmod.block.MyconCapBlock;
 import net.mcreator.minecraftalphaargmod.block.MusicPlayerBlock;
@@ -850,6 +854,7 @@ import net.mcreator.minecraftalphaargmod.block.HivemindSymbolOnSeltarBlock;
 import net.mcreator.minecraftalphaargmod.block.HighwoodplanksStairsBlock;
 import net.mcreator.minecraftalphaargmod.block.HighwoodplanksSlabBlock;
 import net.mcreator.minecraftalphaargmod.block.HighwoodWorkbenchBlock;
+import net.mcreator.minecraftalphaargmod.block.HighwoodSaplingBlock;
 import net.mcreator.minecraftalphaargmod.block.HighwoodRootsBlock;
 import net.mcreator.minecraftalphaargmod.block.HighwoodPlanksBlock;
 import net.mcreator.minecraftalphaargmod.block.HighwoodPillarBlock;
@@ -1399,7 +1404,7 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> BISMUTH_PILLAR = REGISTRY.register("bismuth_pillar", () -> new Or2Block());
 	public static final RegistryObject<Block> BISMUTH_BRICK = REGISTRY.register("bismuth_brick", () -> new Br1Block());
 	public static final RegistryObject<Block> FLAMEWOOD = REGISTRY.register("flamewood", () -> new W1Block());
-	public static final RegistryObject<Block> DLAMEWOOD_LEAVES = REGISTRY.register("dlamewood_leaves", () -> new W2Block());
+	public static final RegistryObject<Block> FLAMEWOOD_LEAVES = REGISTRY.register("flamewood_leaves", () -> new W2Block());
 	public static final RegistryObject<Block> FLAMEWOOD_PLANKS = REGISTRY.register("flamewood_planks", () -> new W3Block());
 	public static final RegistryObject<Block> TILE = REGISTRY.register("tile", () -> new TileBlock());
 	public static final RegistryObject<Block> STONE_TILE = REGISTRY.register("stone_tile", () -> new StoneTileBlock());
@@ -2742,13 +2747,18 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> KATKA_WEIRD_BRICKS = REGISTRY.register("katka_weird_bricks", () -> new KatkaWeirdBricksBlock());
 	public static final RegistryObject<Block> UNKNOWN_MATERIAL = REGISTRY.register("unknown_material", () -> new UnknownMaterialBlock());
 	public static final RegistryObject<Block> DEBUG_SKYBOX = REGISTRY.register("debug_skybox", () -> new DebugSkyboxBlock());
-	public static final RegistryObject<Block> FLAMEWOOD_SAPLING = REGISTRY.register("flamewood_sapling", () -> new FlamewoodSaplingBlock());
 	public static final RegistryObject<Block> RENDER_WIREFRAME_BLOCK = REGISTRY.register("render_wireframe_block", () -> new RenderWireframeBlockBlock());
+	public static final RegistryObject<Block> FLAMEWOOD_SAPLING = REGISTRY.register("flamewood_sapling", () -> new FlamewoodSaplingBlock());
+	public static final RegistryObject<Block> TEA_WOOD_SAPLING = REGISTRY.register("tea_wood_sapling", () -> new TeaWoodSaplingBlock());
+	public static final RegistryObject<Block> HIGHWOOD_SAPLING = REGISTRY.register("highwood_sapling", () -> new HighwoodSaplingBlock());
+	public static final RegistryObject<Block> MYCON_MUSHROOM = REGISTRY.register("mycon_mushroom", () -> new MyconMushroomBlock());
+	public static final RegistryObject<Block> TALL_TREE_SAPLING = REGISTRY.register("tall_tree_sapling", () -> new TallTreeSaplingBlock());
+	public static final RegistryObject<Block> TALL_TREE_LEAVES = REGISTRY.register("tall_tree_leaves", () -> new TallTreeLeavesBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
+	public static class BlocksClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 			Door2Block.blockColorLoad(event);

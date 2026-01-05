@@ -18,6 +18,6 @@ public class JumpgradeItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Right click to gain Jumps!"));
+		list.add(Component.translatable("item.the_arg_container.jumpgrade.description_0"));
 	}
 }

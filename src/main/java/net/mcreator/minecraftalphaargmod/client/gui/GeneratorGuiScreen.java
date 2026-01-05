@@ -14,13 +14,14 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.minecraftalphaargmod.world.inventory.GeneratorGuiMenu;
 import net.mcreator.minecraftalphaargmod.procedures.CoreRenderGuiProcedure;
 import net.mcreator.minecraftalphaargmod.network.GeneratorGuiButtonMessage;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class GeneratorGuiScreen extends AbstractContainerScreen<GeneratorGuiMenu> {
+public class GeneratorGuiScreen extends AbstractContainerScreen<GeneratorGuiMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = GeneratorGuiMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -60,6 +61,10 @@ public class GeneratorGuiScreen extends AbstractContainerScreen<GeneratorGuiMenu
 		RenderSystem.disableBlend();
 	}
 
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -67,11 +72,6 @@ public class GeneratorGuiScreen extends AbstractContainerScreen<GeneratorGuiMenu
 			return true;
 		}
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void containerTick() {
-		super.containerTick();
 	}
 
 	@Override

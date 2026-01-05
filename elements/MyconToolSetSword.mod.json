@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "COMBAT"
-    },
-    "harvestLevel": 2,
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
     "efficiency": 6.0,
     "attackSpeed": 1.0,
     "enchantability": 14,
     "damageVsEntity": 6.0,
     "usageCount": 250,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:MyconPlank"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

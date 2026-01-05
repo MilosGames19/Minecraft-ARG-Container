@@ -75,6 +75,10 @@ public class RangerBulletProjectileEntity extends AbstractArrow implements ItemS
 		return shoot(world, entity, source, 1.5f, 10, 10);
 	}
 
+	public static RangerBulletProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1.5f, 10, 10);
+	}
+
 	public static RangerBulletProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		RangerBulletProjectileEntity entityarrow = new RangerBulletProjectileEntity(TheArgContainerModEntities.RANGER_BULLET_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

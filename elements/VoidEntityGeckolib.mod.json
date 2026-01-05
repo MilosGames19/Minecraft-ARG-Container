@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Void Entity",
@@ -30,6 +30,7 @@
     "creativeTab": {
       "value": "MISC"
     },
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -139,6 +140,16 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 2.0,
+    "attackRate": 7,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 5,

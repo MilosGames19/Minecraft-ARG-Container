@@ -1,6 +1,7 @@
 {
   "parent": "block/door_bottom_right",
   "textures": {
+    "particle": "the_arg_container:block/limbo_door_lower",
     "bottom": "the_arg_container:block/limbo_door_lower",
     "top": "the_arg_container:block/limbo_door_upper"
   },

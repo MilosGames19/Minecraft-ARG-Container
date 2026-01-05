@@ -1,7 +1,7 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"world_send_chat\"><value name=\"text\"><block type=\"text\"><field name=\"TEXT\">Then, in a darkness so bright it blinded all who saw it - the world changed. What once was its surface now lay deep below smothered by ever-young stone and with skies bleeding light far above. The world changed in an instant. A vast new unknown.</field></block></value></block></next></block></xml>"
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"world_send_chat\"><value name=\"text\"><block type=\"text\"><field name=\"TEXT\">Then, in a darkness so bright it blinded all who saw it - the world changed. What once was its surface now lay deep below smothered by ever-young stone and with skies bleeding light far above. The world changed in an instant. A vast new unknown.</field></block></value></block></next></block></xml>"
   }
 }

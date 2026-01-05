@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "items_99",
     "enableBoots": true,
     "textureBoots": "items_113",
-    "creativeTab": {
-      "value": "CUSTOM:Fanmade"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Fanmade"
+      }
+    ],
     "armorTextureFile": "engen_layer_1",
     "helmetName": "Engineer Helmet",
     "bodyName": "Engineer Plate",

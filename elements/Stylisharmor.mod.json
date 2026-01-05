@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "armor_3",
     "enableBoots": true,
     "textureBoots": "armor_4",
-    "creativeTab": {
-      "value": "COMBAT"
-    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
     "armorTextureFile": "layer_1_stylish_1",
     "helmetName": "Stylish Visor",
     "bodyName": "Stylish Chestplate",

@@ -10,7 +10,7 @@ import net.mcreator.minecraftalphaargmod.client.model.ModelDBG;
 
 public class DBGRenderer extends MobRenderer<DBGEntity, ModelDBG<DBGEntity>> {
 	public DBGRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelDBG(context.bakeLayer(ModelDBG.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelDBG<DBGEntity>(context.bakeLayer(ModelDBG.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

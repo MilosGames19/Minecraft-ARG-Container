@@ -2,7 +2,7 @@
   "parent": "block/cross",
   "textures": {
     "cross": "the_arg_container:block/double_plant_syringa_bottom",
-    "particle": "the_arg_container:block/double_plant_syringa_bottom"
+    "particle": "the_arg_container:block/double_plant_syringa_top"
   },
   "render_type": "cutout"
 }

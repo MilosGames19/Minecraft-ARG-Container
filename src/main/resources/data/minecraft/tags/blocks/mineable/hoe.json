@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:highwood_leaves",
+    "the_arg_container:tall_tree_leaves",
     "the_arg_container:dark_leaves_block",
     "the_arg_container:glowing_mycon_cap",
     "the_arg_container:mycon_cap",

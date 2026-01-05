@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "MultiTool",
@@ -14,21 +14,23 @@
         "Activation Code: A7d5"
       ]
     },
-    "creativeTab": {
-      "value": "TOOLS"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
     "efficiency": 10.0,
     "attackSpeed": 1.6,
     "enchantability": 22,
     "damageVsEntity": 13.0,
     "usageCount": 15400,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": true
     },
     "repairItems": [],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }
