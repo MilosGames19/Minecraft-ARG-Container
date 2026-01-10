@@ -71,7 +71,7 @@
       "value": "CUSTOM:DeltaQuestLog"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES#0"
+      "value": "CUSTOM:TallTreeLeaves"
     },
     "treeVines": {
       "value": ""

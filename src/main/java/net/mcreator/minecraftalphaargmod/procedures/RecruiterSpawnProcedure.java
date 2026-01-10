@@ -64,7 +64,7 @@ public class RecruiterSpawnProcedure {
 				}
 				if (bBreak) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = TheArgContainerModEntities.RECRUITER.get().spawn(_level, BlockPos.containing(eX, eY, eZ), MobSpawnType.MOB_SUMMONED);
+						Entity entityToSpawn = TheArgContainerModEntities.RECRUITER_V_2.get().spawn(_level, BlockPos.containing(eX, eY, eZ), MobSpawnType.MOB_SUMMONED);
 						if (entityToSpawn != null) {
 							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 						}

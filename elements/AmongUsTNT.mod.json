@@ -49,7 +49,7 @@
     ],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -121,6 +121,18 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "ExplodeFireCheck"
+    },
+    "onDestroyedByExplosion": {
+      "name": "Explode"
+    },
+    "onStartToDestroy": {
+      "name": "AmongUsTNTPlayerDestroy"
+    },
+    "onRedstoneOn": {
+      "name": "Explode"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

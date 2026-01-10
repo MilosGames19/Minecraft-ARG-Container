@@ -5,7 +5,6 @@
   "refmap": "mixins.the_arg_container.refmap.json",
   "mixins": [
     "ChatTypeBoundMixin",
-    "TitleScreenMixin",
     "TitleScreenTextMixin",
     "TitleScreenSplashAccessorMixin"
   ],

@@ -9,7 +9,6 @@ public class MixinRegister {
     public MixinRegister() {
         this.mixins = List.of(
             "net.mcreator.minecraftalphaargmod.mixin.ChatTypeBoundMixin",
-            "net.mcreator.minecraftalphaargmod.mixin.TitleScreenMixin",
             "net.mcreator.minecraftalphaargmod.mixin.TitleScreenTextMixin",
             "net.mcreator.minecraftalphaargmod.mixin.TitleScreenSplashAccessorMixin"
         );

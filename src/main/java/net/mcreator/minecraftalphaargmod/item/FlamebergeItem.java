@@ -8,10 +8,12 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.minecraftalphaargmod.procedures.RingOfFireProcedure;
+import net.mcreator.minecraftalphaargmod.procedures.FlamebergeSetOnFireProcedure;
 import net.mcreator.minecraftalphaargmod.init.TheArgContainerModItems;
 
 public class FlamebergeItem extends SwordItem {
@@ -41,6 +43,13 @@ public class FlamebergeItem extends SwordItem {
 				return Ingredient.of(new ItemStack(TheArgContainerModItems.ESSENCE.get()));
 			}
 		}, 3, -3f, new Item.Properties());
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		FlamebergeSetOnFireProcedure.execute(entity);
+		return retval;
 	}
 
 	@Override

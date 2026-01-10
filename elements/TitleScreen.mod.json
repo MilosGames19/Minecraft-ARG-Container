@@ -1,9 +1,0 @@
-{
-  "_fv": 73,
-  "_type": "mixin",
-  "definition": {
-    "mixins": [
-      "TitleScreenMixin"
-    ]
-  }
-}

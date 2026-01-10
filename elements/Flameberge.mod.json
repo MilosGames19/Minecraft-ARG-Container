@@ -37,6 +37,9 @@
     "damageOnCrafting": false,
     "onRightClickedInAir": {
       "name": "RingOfFire"
+    },
+    "onEntityHitWith": {
+      "name": "FlamebergeSetOnFire"
     }
   }
 }

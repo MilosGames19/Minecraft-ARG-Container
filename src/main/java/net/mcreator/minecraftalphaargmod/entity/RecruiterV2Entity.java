@@ -32,15 +32,12 @@ import net.minecraft.util.Mth;
 import net.mcreator.minecraftalphaargmod.init.TheArgContainerModEntities;
 
 public class RecruiterV2Entity extends PathfinderMob {
-    // Classic-like state
     public int stareTimer = 0;
     public boolean getTheFrickOut = false;
-
-    // Behavior controls
     private boolean initializedSpawnPos = false;
     private int ticksSinceSpawn = 0;
-    private static final int GRACE_TICKS = 20; // 1 second grace to prevent instant despawn
-    private boolean controllerMode = false;    // if true, requires markSpawnedThisCycle() each tick
+    private static final int GRACE_TICKS = 20;
+    private boolean controllerMode = false;
     private boolean spawnedThisCycle = false;
 
     public RecruiterV2Entity(PlayMessages.SpawnEntity packet, Level world) {
@@ -74,7 +71,6 @@ public class RecruiterV2Entity extends PathfinderMob {
 
         ticksSinceSpawn++;
 
-        // One-time spawn placement: away from the nearest player (24–48 blocks), fallback to shared spawn
         if (!initializedSpawnPos) {
             initializedSpawnPos = true;
             if (this.level() instanceof ServerLevel sl) {
@@ -94,36 +90,31 @@ public class RecruiterV2Entity extends PathfinderMob {
             }
         }
 
-        // Controller-driven lifecycle (optional, off by default)
         if (controllerMode) {
             if (!this.spawnedThisCycle) {
                 gone();
                 return;
             }
-            this.spawnedThisCycle = false; // reset for next tick
+            this.spawnedThisCycle = false;
         }
 
         Player player = this.level().getNearestPlayer(this, 256.0D);
         if (player == null) return;
 
-        // Face the player (classic atan2 with -(dz))
         double yaw = Math.toDegrees(Math.atan2(this.getX() - player.getX(), -(this.getZ() - player.getZ())));
         float yawF = (float) yaw;
         this.setYRot(yawF);
         this.setYHeadRot(yawF);
         this.setYBodyRot(yawF);
 
-        // Proximity despawn: only after grace ticks
         float dist = this.distanceTo(player);
         if (ticksSinceSpawn > GRACE_TICKS && dist < 19.0F) {
             gone();
             return;
         }
 
-        // Stare logic: within ~10° of face-to-face and line-of-sight for 70 ticks
         boolean hasLoS = this.hasLineOfSight(player);
         float diff = Mth.wrapDegrees(player.getYRot() - this.getYRot());
-        // When facing each other, yaw difference ~180; bring it to closeness-to-180
         float closenessTo180 = Math.abs(Math.abs(diff) - 180.0F);
         if (closenessTo180 < 10.0F && hasLoS) {
             this.stareTimer++;
@@ -132,16 +123,14 @@ public class RecruiterV2Entity extends PathfinderMob {
                 gone();
             }
         } else {
-            // Break the stare if the condition isn’t met
             if (this.stareTimer > 0) this.stareTimer = Math.max(0, this.stareTimer - 1);
         }
     }
 
-    // Enable if you want an external controller to keep it alive each tick
     public void enableControllerMode(boolean enabled) {
         this.controllerMode = enabled;
     }
-    // Call per tick when controllerMode is true
+
     public void markSpawnedThisCycle() {
         this.spawnedThisCycle = true;
     }
