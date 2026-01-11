@@ -1,7 +1,6 @@
 package net.mcreator.minecraftalphaargmod.minesweeper;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
@@ -17,7 +16,6 @@ public class MinesweeperInteractionHandler {
     public static void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
         BlockPos pos = event.getPos();
         Level level = event.getLevel();
-        Player player = event.getEntity();
         
         String blockName = ForgeRegistries.BLOCKS.getKey(level.getBlockState(pos).getBlock()).getPath();
         if (!blockName.equals("minesweeper_block")) return;
@@ -30,14 +28,6 @@ public class MinesweeperInteractionHandler {
         if (!level.isClientSide) {
             int[] coords = board.getCoords(pos);
             board.reveal(coords[0], coords[1], pos);
-            
-            if (board.isGameOver()) {
-                if (board.isWon()) {
-                    player.sendSystemMessage(Component.literal("§6§l✦ VICTORY! Time: " + board.getElapsedTime() + "s ✦"));
-                } else {
-                    player.sendSystemMessage(Component.literal("§c§l💣 BOOM! Game Over!"));
-                }
-            }
         }
     }
     

@@ -42,7 +42,6 @@ public class MinesweeperCommand {
                             
                             BlockPos origin = player.blockPosition().below();
                             MinesweeperManager.createBoard(player.level(), origin, difficulty, player.getUUID());
-                            player.sendSystemMessage(Component.literal("§aMinesweeper board created! Left-click to reveal, right-click to flag."));
                             return 1;
                         })))
                 .then(Commands.literal("restore")

@@ -1,6 +1,9 @@
 package net.mcreator.minecraftalphaargmod.minesweeper;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
@@ -25,6 +28,7 @@ public class MinesweeperBoard {
     private int flagCount = 0;
     private long startTime = -1;
     private long endTime = -1;
+    private long gameOverTime = -1;
 
     public MinesweeperBoard(Level level, BlockPos origin, int width, int height, int mines) {
         this.level = level;
@@ -106,6 +110,7 @@ public class MinesweeperBoard {
         if (mineMap[x][z]) {
             gameOver = true;
             endTime = System.currentTimeMillis();
+            gameOverTime = System.currentTimeMillis();
             revealAllMines(x, z);
             return;
         }
@@ -116,6 +121,7 @@ public class MinesweeperBoard {
             won = true;
             gameOver = true;
             endTime = System.currentTimeMillis();
+            gameOverTime = System.currentTimeMillis();
         }
     }
 
@@ -184,6 +190,10 @@ public class MinesweeperBoard {
         return (System.currentTimeMillis() - startTime) / 1000;
     }
 
+    public long getGameOverTime() {
+        return gameOverTime;
+    }
+
     public boolean isInBounds(BlockPos pos) {
         int x = pos.getX() - origin.getX();
         int z = pos.getZ() - origin.getZ();
@@ -196,6 +206,93 @@ public class MinesweeperBoard {
 
     private BlockState getBlock(String name) {
         return ForgeRegistries.BLOCKS.getValue(new net.minecraft.resources.ResourceLocation("the_arg_container", name)).defaultBlockState();
+    }
+
+    public CompoundTag saveToNBT() {
+        CompoundTag tag = new CompoundTag();
+        tag.putInt("width", width);
+        tag.putInt("height", height);
+        tag.putInt("mines", mines);
+        tag.putInt("originX", origin.getX());
+        tag.putInt("originY", origin.getY());
+        tag.putInt("originZ", origin.getZ());
+        tag.putBoolean("gameOver", gameOver);
+        tag.putBoolean("won", won);
+        tag.putInt("revealedCount", revealedCount);
+        tag.putBoolean("initialized", initialized);
+        tag.putInt("flagCount", flagCount);
+        tag.putLong("startTime", startTime);
+        tag.putLong("endTime", endTime);
+        tag.putLong("gameOverTime", gameOverTime);
+        
+        ListTag mineList = new ListTag();
+        for (int x = 0; x < width; x++) {
+            for (int z = 0; z < height; z++) {
+                if (mineMap[x][z]) {
+                    CompoundTag pos = new CompoundTag();
+                    pos.putInt("x", x);
+                    pos.putInt("z", z);
+                    mineList.add(pos);
+                }
+            }
+        }
+        tag.put("mines_pos", mineList);
+        
+        ListTag revealedList = new ListTag();
+        for (int x = 0; x < width; x++) {
+            for (int z = 0; z < height; z++) {
+                if (revealed[x][z]) {
+                    CompoundTag pos = new CompoundTag();
+                    pos.putInt("x", x);
+                    pos.putInt("z", z);
+                    revealedList.add(pos);
+                }
+            }
+        }
+        tag.put("revealed_pos", revealedList);
+        
+        return tag;
+    }
+
+    public static MinesweeperBoard loadFromNBT(Level level, CompoundTag tag) {
+        int width = tag.getInt("width");
+        int height = tag.getInt("height");
+        int mines = tag.getInt("mines");
+        BlockPos origin = new BlockPos(tag.getInt("originX"), tag.getInt("originY"), tag.getInt("originZ"));
+        
+        MinesweeperBoard board = new MinesweeperBoard(level, origin, width, height, mines);
+        board.gameOver = tag.getBoolean("gameOver");
+        board.won = tag.getBoolean("won");
+        board.revealedCount = tag.getInt("revealedCount");
+        board.initialized = tag.getBoolean("initialized");
+        board.flagCount = tag.getInt("flagCount");
+        board.startTime = tag.getLong("startTime");
+        board.endTime = tag.getLong("endTime");
+        board.gameOverTime = tag.getLong("gameOverTime");
+        
+        ListTag mineList = tag.getList("mines_pos", Tag.TAG_COMPOUND);
+        for (int i = 0; i < mineList.size(); i++) {
+            CompoundTag pos = mineList.getCompound(i);
+            board.mineMap[pos.getInt("x")][pos.getInt("z")] = true;
+        }
+        
+        ListTag revealedList = tag.getList("revealed_pos", Tag.TAG_COMPOUND);
+        for (int i = 0; i < revealedList.size(); i++) {
+            CompoundTag pos = revealedList.getCompound(i);
+            board.revealed[pos.getInt("x")][pos.getInt("z")] = true;
+        }
+        
+        if (board.initialized) {
+            for (int x = 0; x < width; x++) {
+                for (int z = 0; z < height; z++) {
+                    if (!board.mineMap[x][z]) {
+                        board.adjacent[x][z] = board.countAdjacentMines(x, z);
+                    }
+                }
+            }
+        }
+        
+        return board;
     }
 
     public boolean isGameOver() { return gameOver; }
