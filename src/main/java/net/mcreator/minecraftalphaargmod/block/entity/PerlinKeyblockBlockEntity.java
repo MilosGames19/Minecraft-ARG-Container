@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftalphaargmod.block.entity;
 
 import net.minecraftforge.items.wrapper.SidedInvWrapper;

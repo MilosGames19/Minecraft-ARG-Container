@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.minecraftalphaargmod.client.renderer.VoidEntityGeckolibRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.User0CloneRenderer;
+import net.mcreator.minecraftalphaargmod.client.renderer.TheDirectorRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.StevenRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SpearProjectileRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SoulEntityRenderer;
@@ -58,5 +59,6 @@ public class TheArgContainerModEntityRenderers {
 		event.registerEntityRenderer(TheArgContainerModEntities.CORE.get(), CORERenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.DARKNESS_ENTITY.get(), DarknessEntityRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.RECRUITER_V_2.get(), RecruiterV2Renderer::new);
+		event.registerEntityRenderer(TheArgContainerModEntities.THE_DIRECTOR.get(), TheDirectorRenderer::new);
 	}
 }

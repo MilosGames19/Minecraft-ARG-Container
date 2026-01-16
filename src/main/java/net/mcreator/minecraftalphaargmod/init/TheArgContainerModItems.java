@@ -1763,6 +1763,7 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> MYCON_MUSHROOM = block(TheArgContainerModBlocks.MYCON_MUSHROOM);
 	public static final RegistryObject<Item> TALL_TREE_SAPLING = block(TheArgContainerModBlocks.TALL_TREE_SAPLING);
 	public static final RegistryObject<Item> TALL_TREE_LEAVES = block(TheArgContainerModBlocks.TALL_TREE_LEAVES);
+	public static final RegistryObject<Item> THE_DIRECTOR_SPAWN_EGG = REGISTRY.register("the_director_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.THE_DIRECTOR, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

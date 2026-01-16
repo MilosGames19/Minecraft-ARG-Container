@@ -1653,6 +1653,7 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.CORE_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.DARKNESS_ENTITY_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.RECRUITER_V_2_SPAWN_EGG.get());
+			tabData.accept(TheArgContainerModItems.THE_DIRECTOR_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(TheArgContainerModItems.FRYSHROOM.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {

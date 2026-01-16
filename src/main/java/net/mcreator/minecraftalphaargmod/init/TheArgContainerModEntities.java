@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.minecraftalphaargmod.entity.VoidEntityGeckolibEntity;
 import net.mcreator.minecraftalphaargmod.entity.User0CloneEntity;
+import net.mcreator.minecraftalphaargmod.entity.TheDirectorEntity;
 import net.mcreator.minecraftalphaargmod.entity.StevenEntity;
 import net.mcreator.minecraftalphaargmod.entity.SpearProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.SoulEntityEntity;
@@ -115,6 +116,10 @@ public class TheArgContainerModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<RecruiterV2Entity>> RECRUITER_V_2 = register("recruiter_v_2", EntityType.Builder.<RecruiterV2Entity>of(RecruiterV2Entity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RecruiterV2Entity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TheDirectorEntity>> THE_DIRECTOR = register("the_director",
+			EntityType.Builder.<TheDirectorEntity>of(TheDirectorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheDirectorEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -142,6 +147,7 @@ public class TheArgContainerModEntities {
 			COREEntity.init();
 			DarknessEntityEntity.init();
 			RecruiterV2Entity.init();
+			TheDirectorEntity.init();
 		});
 	}
 
@@ -164,5 +170,6 @@ public class TheArgContainerModEntities {
 		event.put(CORE.get(), COREEntity.createAttributes().build());
 		event.put(DARKNESS_ENTITY.get(), DarknessEntityEntity.createAttributes().build());
 		event.put(RECRUITER_V_2.get(), RecruiterV2Entity.createAttributes().build());
+		event.put(THE_DIRECTOR.get(), TheDirectorEntity.createAttributes().build());
 	}
 }

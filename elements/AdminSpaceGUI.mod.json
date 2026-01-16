@@ -23,7 +23,7 @@
       {
         "type": "textfield",
         "data": {
-          "placeholder": "",
+          "placeholder": "Command?",
           "name": "asc",
           "width": 120,
           "height": 20,
