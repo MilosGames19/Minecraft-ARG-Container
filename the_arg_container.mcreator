@@ -37106,6 +37106,54 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/DirectorPreventionHandler.java"
         ]
       }
+    },
+    {
+      "name": "PaletteScreen",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "palette_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/PaletteScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "PaletteKeyTick",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "palette_key_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/PaletteKeyTick.java"
+        ]
+      }
+    },
+    {
+      "name": "PaletteKeyHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "palette_key_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/PaletteKeyHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "RecruiterBuildCommand",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "recruiter_build_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minecraftalphaargmod/RecruiterBuildCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -41541,6 +41589,7 @@
       "block.the_arg_container.q_monitor": "Monitor",
       "block.the_arg_container.bugnation_plushie": "Bugnation Plushie",
       "painting.minecraft_alpha_arg_mod.autumn_sun.author": "Minecraft Alpha 1.0.16.05_20 Cypress ",
+      "key.the_arg_container.palette": "Palette GUI",
       "block.the_arg_container.iron_souler": "Iron Souler",
       "block.minecraft_alpha_arg_mod.monitor_24": "♃ Monitor",
       "block.the_arg_container.ultimate_crafting_table_station": "Ultimate Crafting Table Station",

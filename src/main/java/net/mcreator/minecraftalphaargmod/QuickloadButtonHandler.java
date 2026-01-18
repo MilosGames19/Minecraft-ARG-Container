@@ -1,6 +1,7 @@
 package net.mcreator.minecraftalphaargmod.client;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.screens.Screen;
@@ -35,22 +36,27 @@ public class QuickloadButtonHandler {
     @SubscribeEvent
     public static void onScreenInit(ScreenEvent.Init.Post event) {
         if (!(event.getScreen() instanceof TitleScreen)) return;
+        
+        // Reset loading state whenever the title screen is initialized.
+        isLoading.set(false);
+
         if (!McconfigConfiguration.QUICKLOAD_BUTTON.get()) return;
 
         Screen screen = event.getScreen();
         Minecraft mc = Minecraft.getInstance();
 
         Optional<LevelSummary> lastWorld = getLastPlayedWorld(mc);
-        if (!lastWorld.isPresent()) return;
+        if (lastWorld.isEmpty()) return;
 
+        String singleplayerButtonText = Component.translatable("menu.singleplayer").getString();
         Optional<Button> singleplayerButton = event.getListenersList().stream()
             .filter(widget -> widget instanceof Button)
             .map(widget -> (Button) widget)
-            .filter(button -> button.getMessage() != null && 
-                            button.getMessage().getString().contains("Singleplayer"))
+            .filter(button -> button.getMessage() != null &&
+                            button.getMessage().getString().equals(singleplayerButtonText))
             .findFirst();
 
-        if (!singleplayerButton.isPresent()) return;
+        if (singleplayerButton.isEmpty()) return;
 
         Button spButton = singleplayerButton.get();
         int quickloadWidth = calculateQuickloadButtonWidth(mc);
@@ -68,11 +74,11 @@ public class QuickloadButtonHandler {
 
         Button quickloadButton = Button.builder(Component.literal(QUICK_BUTTON_TEXT),
             button -> {
-                if (!isLoading.get()) {
-                    isLoading.set(true);
-                    button.active = false;
-                    loadLastWorld(mc, screen, lastWorld.get(), button);
+                if (!isLoading.compareAndSet(false, true)) {
+                    return; // Already loading
                 }
+                button.active = false;
+                loadLastWorld(mc, screen, lastWorld.get(), button);
             })
             .bounds(quickloadX, quickloadY, quickloadWidth, BUTTON_HEIGHT)
             .tooltip(tooltip)
@@ -112,38 +118,60 @@ public class QuickloadButtonHandler {
             resetLoadingState(button);
             return;
         }
-
-        Screen loadingScreen = new Screen(Component.literal("Reading world data...")) {
-            @Override
-            public void render(net.minecraft.client.gui.GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
-                this.renderBackground(guiGraphics);
-                guiGraphics.drawCenteredString(this.font, this.title, this.width / 2, this.height / 4 - 10, 0xFFFFFF);
-            }
-
-            @Override
-            public boolean shouldCloseOnEsc() {
-                return false;
-            }
-        };
-        mc.setScreen(loadingScreen);
-
-        new Thread(() -> {
-            try {
-                mc.createWorldOpenFlows().loadLevel(parent, levelSummary.getLevelId());
-            } catch (Exception e) {
-                LOGGER.error("Failed to load world: {}", levelSummary.getLevelId(), e);
-                mc.execute(() -> {
-                    mc.setScreen(new SelectWorldScreen(parent));
-                    resetLoadingState(button);
-                });
-            }
-        }).start();
+        mc.setScreen(new DelayedLoadScreen(parent, levelSummary, button));
     }
 
     private static void resetLoadingState(Button button) {
         isLoading.set(false);
         if (button != null) {
             button.active = true;
+        }
+    }
+
+    private static class DelayedLoadScreen extends Screen {
+        private final Screen parent;
+        private final LevelSummary levelSummary;
+        private final Button quickloadButton;
+        private int ticksExisted = 0;
+
+        protected DelayedLoadScreen(Screen parent, LevelSummary levelSummary, Button quickloadButton) {
+            super(Component.literal("Reading world data..."));
+            this.parent = parent;
+            this.levelSummary = levelSummary;
+            this.quickloadButton = quickloadButton;
+        }
+
+        @Override
+        public void tick() {
+            super.tick();
+            this.ticksExisted++;
+
+            // Trigger the load on the second tick. This ensures the screen has had a chance to render at least once.
+            if (this.ticksExisted == 2) {
+                try {
+                    assert this.minecraft != null;
+                    this.minecraft.createWorldOpenFlows().loadLevel(this.parent, this.levelSummary.getLevelId());
+                } catch (Exception e) {
+                    LOGGER.error("Failed to load world: {}", this.levelSummary.getLevelId(), e);
+                    assert this.minecraft != null;
+                    this.minecraft.execute(() -> {
+                        this.minecraft.setScreen(new SelectWorldScreen(this.parent));
+                        resetLoadingState(this.quickloadButton);
+                    });
+                }
+            }
+        }
+
+        @Override
+        public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
+            super.render(guiGraphics, mouseX, mouseY, partialTick);
+            this.renderBackground(guiGraphics);
+            guiGraphics.drawCenteredString(this.font, this.title, this.width / 2, this.height / 4 - 10, 0xFFFFFF);
+        }
+
+        @Override
+        public boolean shouldCloseOnEsc() {
+            return false;
         }
     }
 }
