@@ -24,10 +24,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class PaletteScreen extends Screen {
-    private static final ResourceLocation SLOT_TEXTURE = new ResourceLocation("the_arg_container", "textures/palette_slot.png");
+    private static final String MOD_ID = "the_arg_container";
+    private static final ResourceLocation SLOT_TEXTURE = new ResourceLocation(MOD_ID, "textures/palette_slot.png");
     
     // Scale 4.0 as requested
     private static final double FORCED_SCALE = 4.0;
+
+    // Static cache to avoid rebuilding lists every time the screen opens
+    private static final List<Block> CACHED_BLOCKS = new ArrayList<>();
+    private static final List<Item> CACHED_ITEMS = new ArrayList<>();
+    private static boolean isCacheLoaded = false;
 
     private boolean showingBlocks = true;
     private int currentPage = 0;
@@ -41,8 +47,6 @@ public class PaletteScreen extends Screen {
     
     private float scaleFactor = 1.0f;
 
-    private final List<Block> allBlocks = new ArrayList<>();
-    private final List<Item> allItems = new ArrayList<>();
     private List<Block> filteredBlocks = new ArrayList<>();
     private List<Item> filteredItems = new ArrayList<>();
 
@@ -62,29 +66,33 @@ public class PaletteScreen extends Screen {
     }
 
     private void loadEntries() {
-        allBlocks.clear();
-        allItems.clear();
+        if (!isCacheLoaded) {
+            CACHED_BLOCKS.clear();
+            CACHED_ITEMS.clear();
 
-        for (Block block : ForgeRegistries.BLOCKS) {
-            ResourceLocation id = ForgeRegistries.BLOCKS.getKey(block);
-            if (id != null && id.getNamespace().equals("the_arg_container") && block != Blocks.AIR) {
-                if (!(block instanceof DoorBlock)) {
-                    allBlocks.add(block);
+            for (Block block : ForgeRegistries.BLOCKS) {
+                ResourceLocation id = ForgeRegistries.BLOCKS.getKey(block);
+                if (id != null && id.getNamespace().equals(MOD_ID) && block != Blocks.AIR) {
+                    if (!(block instanceof DoorBlock)) {
+                        CACHED_BLOCKS.add(block);
+                    }
                 }
             }
-        }
 
-        for (Item item : ForgeRegistries.ITEMS) {
-            ResourceLocation id = ForgeRegistries.ITEMS.getKey(item);
-            if (id != null && id.getNamespace().equals("the_arg_container")) {
-                if (!(item instanceof BlockItem) || (item instanceof BlockItem && ((BlockItem) item).getBlock() instanceof DoorBlock)) {
-                    allItems.add(item);
+            for (Item item : ForgeRegistries.ITEMS) {
+                ResourceLocation id = ForgeRegistries.ITEMS.getKey(item);
+                if (id != null && id.getNamespace().equals(MOD_ID)) {
+                    if (!(item instanceof BlockItem) || (item instanceof BlockItem && ((BlockItem) item).getBlock() instanceof DoorBlock)) {
+                        CACHED_ITEMS.add(item);
+                    }
                 }
             }
+            isCacheLoaded = true;
         }
 
-        filteredBlocks.addAll(allBlocks);
-        filteredItems.addAll(allItems);
+        // Initialize filtered lists with full content
+        filteredBlocks = new ArrayList<>(CACHED_BLOCKS);
+        filteredItems = new ArrayList<>(CACHED_ITEMS);
     }
 
     private void updateSearch() {
@@ -93,17 +101,17 @@ public class PaletteScreen extends Screen {
         String search = searchBox.getValue().toLowerCase().trim();
 
         if (search.isEmpty()) {
-            filteredBlocks = new ArrayList<>(allBlocks);
-            filteredItems = new ArrayList<>(allItems);
+            filteredBlocks = new ArrayList<>(CACHED_BLOCKS);
+            filteredItems = new ArrayList<>(CACHED_ITEMS);
         } else {
-            filteredBlocks = allBlocks.stream()
+            filteredBlocks = CACHED_BLOCKS.stream()
                     .filter(block -> {
                         ResourceLocation id = ForgeRegistries.BLOCKS.getKey(block);
                         return id != null && id.getPath().toLowerCase().contains(search);
                     })
                     .collect(Collectors.toList());
 
-            filteredItems = allItems.stream()
+            filteredItems = CACHED_ITEMS.stream()
                     .filter(item -> {
                         ResourceLocation id = ForgeRegistries.ITEMS.getKey(item);
                         return id != null && id.getPath().toLowerCase().contains(search);

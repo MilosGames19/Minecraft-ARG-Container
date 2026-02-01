@@ -8,6 +8,6 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 
 public class MyconMushroomTreeGrower extends AbstractTreeGrower {
 	protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource randomSource, boolean hasFlower) {
-		return FeatureUtils.createKey("the_arg_container:test");
+		return FeatureUtils.createKey("the_arg_container:mycon_feature");
 	}
 }

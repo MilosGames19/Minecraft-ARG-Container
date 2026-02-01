@@ -14447,6 +14447,7 @@
         "files": [
           "src/main/resources/assets/the_arg_container/models/item/other_jukebox.json",
           "src/main/resources/assets/the_arg_container/blockstates/other_jukebox.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/block/entity/OtherJukeboxBlockEntity.java",
           "src/main/java/net/mcreator/minecraftalphaargmod/block/OtherJukeboxBlock.java",
           "src/main/resources/data/the_arg_container/loot_tables/blocks/other_jukebox.json",
           "src/main/resources/assets/the_arg_container/models/block/other_jukebox.json"
@@ -15451,7 +15452,7 @@
           "src/main/resources/assets/the_arg_container/textures/entity/villager/profession/glitched_villager.png.mcmeta"
         ]
       },
-      "path": "~/ARGs/Dont look at the moon/Glitchys additions"
+      "path": "~/ARGs/Glitchys additions"
     },
     {
       "name": "QE",
@@ -15462,7 +15463,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/ARGs/Dont look at the moon/Glitchys additions"
+      "path": "~/ARGs/Glitchys additions"
     },
     {
       "name": "BricksIDK",
@@ -15838,7 +15839,7 @@
           "src/main/resources/data/the_arg_container/recipes/qb.json"
         ]
       },
-      "path": "~/ARGs/Dont look at the moon/Glitchys additions"
+      "path": "~/ARGs/Glitchys additions"
     },
     {
       "name": "Jumpgrade",
@@ -34786,7 +34787,7 @@
           "src/main/java/net/mcreator/minecraftalphaargmod/item/BatasCupItem.java"
         ]
       },
-      "path": "~/ARGs/Dont look at the moon/Glitchys additions"
+      "path": "~/ARGs/Glitchys additions"
     },
     {
       "name": "MoonfallSkyBlockNight",
@@ -37152,6 +37153,38 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/minecraftalphaargmod/RecruiterBuildCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "MyconFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mycon_feature",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/the_arg_container/worldgen/configured_feature/mycon_feature.json",
+          "src/main/resources/data/the_arg_container/forge/biome_modifier/mycon_feature_biome_modifier.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/world/features/MyconFeatureFeature.java",
+          "src/main/resources/data/the_arg_container/worldgen/placed_feature/mycon_feature.json"
+        ]
+      }
+    },
+    {
+      "name": "Highwood",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "highwood",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/the_arg_container/worldgen/placed_feature/highwood.json",
+          "src/main/java/net/mcreator/minecraftalphaargmod/world/features/HighwoodFeature.java",
+          "src/main/resources/data/the_arg_container/forge/biome_modifier/highwood_biome_modifier.json",
+          "src/main/resources/data/the_arg_container/worldgen/configured_feature/highwood.json"
         ]
       }
     }
@@ -44600,12 +44633,7 @@
           },
           {
             "name": "Dont look at the moon",
-            "children": [
-              {
-                "name": "Glitchys additions",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "name": "Alphaver",
@@ -44643,6 +44671,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Glitchys additions",
+            "children": []
           }
         ]
       },

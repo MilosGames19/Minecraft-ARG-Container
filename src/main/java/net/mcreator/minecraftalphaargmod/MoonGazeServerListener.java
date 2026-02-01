@@ -16,7 +16,7 @@ import java.util.UUID;
 @Mod.EventBusSubscriber(modid = MoonGazeServerListener.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class MoonGazeServerListener {
     public static final String MODID = "the_arg_container";
-    private static final int REQUIRED_TICKS = 600; // 30 seconds
+    private static final int REQUIRED_TICKS = 60; // 30 seconds
     private static final double TOLERANCE_DEGREES = 10.0;
     private static final Component MESSAGE = Component.literal("You shouldn't have done that.");
     private static final Map<UUID, Integer> GAZE_TICKS = new HashMap<>();

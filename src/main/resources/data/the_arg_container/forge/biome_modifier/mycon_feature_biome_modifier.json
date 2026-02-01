@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "the_arg_container:mycon_feature",
+  "step": "surface_structures"
+}

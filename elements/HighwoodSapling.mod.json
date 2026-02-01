@@ -15,9 +15,7 @@
     "suspiciousStewDuration": 100,
     "secondaryTreeChance": 0.09999999999999999,
     "trees": [
-      {
-        "value": "CUSTOM:VoidGemOreGen"
-      },
+      null,
       null
     ],
     "flowerTrees": [
@@ -25,7 +23,9 @@
       null
     ],
     "megaTrees": [
-      null,
+      {
+        "value": "CUSTOM:Highwood"
+      },
       null
     ],
     "growapableSpawnType": "Plains",

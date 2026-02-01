@@ -19,6 +19,7 @@ import net.mcreator.minecraftalphaargmod.block.entity.ServerContainersBlockEntit
 import net.mcreator.minecraftalphaargmod.block.entity.SafeBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PreparationsSkyBlockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PerlinKeyblockBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.OtherJukeboxBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.NetherReactorCoreBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.MoonfallSkyBlockNightBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.MoonfallSkyBlockDayBlockEntity;
@@ -44,6 +45,8 @@ public class TheArgContainerModBlockEntities {
 	public static final RegistryObject<BlockEntityType<AuthenticatorBlockEntity>> AUTHENTICATOR = REGISTRY.register("authenticator",
 			() -> BlockEntityType.Builder.of(AuthenticatorBlockEntity::new, TheArgContainerModBlocks.AUTHENTICATOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<Unknown2BlockEntity>> UNKNOWN_2 = REGISTRY.register("unknown_2", () -> BlockEntityType.Builder.of(Unknown2BlockEntity::new, TheArgContainerModBlocks.UNKNOWN_2.get()).build(null));
+	public static final RegistryObject<BlockEntityType<OtherJukeboxBlockEntity>> OTHER_JUKEBOX = REGISTRY.register("other_jukebox",
+			() -> BlockEntityType.Builder.of(OtherJukeboxBlockEntity::new, TheArgContainerModBlocks.OTHER_JUKEBOX.get()).build(null));
 	public static final RegistryObject<BlockEntityType<PerlinKeyblockBlockEntity>> PERLIN_KEYBLOCK = REGISTRY.register("perlin_keyblock",
 			() -> BlockEntityType.Builder.of(PerlinKeyblockBlockEntity::new, TheArgContainerModBlocks.PERLIN_KEYBLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<AdminChestBlockEntity>> ADMIN_CHEST = REGISTRY.register("admin_chest", () -> BlockEntityType.Builder.of(AdminChestBlockEntity::new, TheArgContainerModBlocks.ADMIN_CHEST.get()).build(null));

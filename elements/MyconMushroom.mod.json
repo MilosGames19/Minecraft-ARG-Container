@@ -16,7 +16,7 @@
     "secondaryTreeChance": 0.09999999999999999,
     "trees": [
       {
-        "value": "CUSTOM:Test"
+        "value": "CUSTOM:MyconFeature"
       },
       null
     ],

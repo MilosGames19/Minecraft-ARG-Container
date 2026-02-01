@@ -128,10 +128,19 @@ public class MinesweeperBoard {
     private void revealTile(int x, int z) {
         if (revealed[x][z] || mineMap[x][z]) return;
         
+        BlockPos pos = origin.offset(x, 0, z);
+        BlockState state = level.getBlockState(pos);
+        String blockName = ForgeRegistries.BLOCKS.getKey(state.getBlock()).getPath();
+        
+        // Only reveal if it is a standard minesweeper block.
+        // This prevents overwriting flags or question marks during recursive reveal.
+        if (!blockName.equals("minesweeper_block")) {
+            return;
+        }
+        
         revealed[x][z] = true;
         revealedCount++;
         
-        BlockPos pos = origin.offset(x, 0, z);
         if (adjacent[x][z] == 0) {
             level.setBlock(pos, getBlock("minesweeper_empty"), 3);
             for (int dx = -1; dx <= 1; dx++) {
@@ -153,12 +162,20 @@ public class MinesweeperBoard {
         for (int x = 0; x < width; x++) {
             for (int z = 0; z < height; z++) {
                 BlockPos pos = origin.offset(x, 0, z);
+                BlockState currentState = level.getBlockState(pos);
+                String blockName = ForgeRegistries.BLOCKS.getKey(currentState.getBlock()).getPath();
+
                 if (mineMap[x][z]) {
                     if (x == triggeredX && z == triggeredZ) {
                         level.setBlock(pos, getBlock("minesweeper_triggered_mine"), 3);
+                    } else if (blockName.equals("minesweeper_flag")) {
+                        // This was a correctly placed flag, do nothing.
                     } else {
                         level.setBlock(pos, getBlock("minesweeper_mine"), 3);
                     }
+                } else if (blockName.equals("minesweeper_flag")) {
+                    // This was an incorrectly placed flag.
+                    level.setBlock(pos, getBlock("minesweeper_crossed_mine"), 3);
                 }
             }
         }
