@@ -50,7 +50,7 @@ public class TheArgContainerModPaintings {
 	public static final RegistryObject<PaintingVariant> DUALITY = REGISTRY.register("duality", () -> new PaintingVariant(16, 16));
 	public static final RegistryObject<PaintingVariant> EAR_WAX = REGISTRY.register("ear_wax", () -> new PaintingVariant(48, 32));
 	public static final RegistryObject<PaintingVariant> ECLIPSE = REGISTRY.register("eclipse", () -> new PaintingVariant(32, 32));
-	public static final RegistryObject<PaintingVariant> EMERALD = REGISTRY.register("emerald", () -> new PaintingVariant(32, 23));
+	public static final RegistryObject<PaintingVariant> EMERALD = REGISTRY.register("emerald", () -> new PaintingVariant(32, 32));
 	public static final RegistryObject<PaintingVariant> EMIL = REGISTRY.register("emil", () -> new PaintingVariant(16, 16));
 	public static final RegistryObject<PaintingVariant> EMPTY_SMALL = REGISTRY.register("empty_small", () -> new PaintingVariant(16, 16));
 	public static final RegistryObject<PaintingVariant> EMPTY = REGISTRY.register("empty", () -> new PaintingVariant(32, 32));

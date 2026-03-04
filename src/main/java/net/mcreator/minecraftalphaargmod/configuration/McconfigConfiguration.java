@@ -8,6 +8,7 @@ public class McconfigConfiguration {
 
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SKY_FLAME_GENERATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> LILYPAD_GENERATION;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> TREE_GENERATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> GAME_CRASH;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SV_ALLOWRNET;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> TBOTV_SKY;
@@ -23,6 +24,7 @@ public class McconfigConfiguration {
 		BUILDER.push("generation");
 		SKY_FLAME_GENERATION = BUILDER.comment("Enable/disable alphaver celestial flame generation.").define("sky_flame_generation", true);
 		LILYPAD_GENERATION = BUILDER.comment("Enable/disable alphaver lilipad generation.").define("lilypad_generation", true);
+		TREE_GENERATION = BUILDER.comment("Enable/disable alphaver tree generation.").define("alphaver_tree_generation", true);
 		BUILDER.pop();
 		BUILDER.push("⚠Dangerous⚠");
 		GAME_CRASH = BUILDER.comment("This option is disabled by default to prevent accidental crashes.").define("game_crash", false);

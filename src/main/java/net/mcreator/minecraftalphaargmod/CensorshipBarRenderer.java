@@ -36,18 +36,19 @@ import java.util.concurrent.ConcurrentHashMap;
 @Mod.EventBusSubscriber(modid = "the_arg_container", bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class CensorshipBarRenderer {
 
-    private static final double BOX_EXPANSION = 1.0; // Increased from 0.5 for better coverage
+    private static final double BOX_EXPANSION = 1.0;
     private static final int BAR_COLOR = 0x000000;
     private static final float BAR_OPACITY = 1.0f;
-    private static final int FAKE_FPS = 60; // Increased FPS for smoother tracking
-    private static final int TRACKING_UPDATE_INTERVAL = Math.max(1, Math.round(20.0f / FAKE_FPS));
     private static final int JITTER_INTENSITY = 1; 
     private static final double MAX_FOV_ANGLE = 120.0;
+    private static final double MIN_FOV_DOT = Math.cos(Math.toRadians(MAX_FOV_ANGLE));
+    private static final int SEARCH_COOLDOWN_FRAMES = 60;
 
     private static final Random JITTER_RNG = new Random();
     private static final Map<UUID, EntityTrackingData> trackingData = new ConcurrentHashMap<>();
     private static final Set<UUID> targetEntities = Collections.synchronizedSet(new HashSet<>());
     private static final Map<UUID, Entity> entityCache = new ConcurrentHashMap<>();
+    private static final Map<UUID, Integer> searchCooldowns = new ConcurrentHashMap<>();
 
     // Reusable JOML objects to reduce garbage collection
     private static final Matrix4f viewProjectionMatrix = new Matrix4f();
@@ -77,12 +78,14 @@ public class CensorshipBarRenderer {
         targetEntities.remove(entityUUID);
         trackingData.remove(entityUUID);
         entityCache.remove(entityUUID);
+        searchCooldowns.remove(entityUUID);
     }
 
     public static void clearTargets() {
         targetEntities.clear();
         trackingData.clear();
         entityCache.clear();
+        searchCooldowns.clear();
     }
 
     public static int getTargetCount() {
@@ -112,16 +115,22 @@ public class CensorshipBarRenderer {
         RenderSystem.enableBlend();
         RenderSystem.defaultBlendFunc();
         RenderSystem.disableDepthTest();
+        RenderSystem.setShader(GameRenderer::getPositionColorShader);
+        
+        BufferBuilder bufferBuilder = Tesselator.getInstance().getBuilder();
+        boolean drawing = false;
         
         // Use a copy of the key set to avoid ConcurrentModificationException
         Set<UUID> currentTargets = new HashSet<>(targetEntities);
-        Iterator<UUID> iterator = currentTargets.iterator();
         
-        while (iterator.hasNext()) {
-            UUID entityUUID = iterator.next();
+        for (UUID entityUUID : currentTargets) {
             Entity entity = getEntity(mc, entityUUID);
             
-            if (entity == null || !entity.isAlive()) {
+            if (entity == null) {
+                continue;
+            }
+
+            if (!entity.isAlive()) {
                 removeTargetEntity(entityUUID);
                 continue;
             }
@@ -145,7 +154,6 @@ public class CensorshipBarRenderer {
             }
             data.isVisible = true;
 
-            // Always update tracking every frame to prevent lag behind fast camera movements
             ScreenRect bounds = calculateScreenBounds(entity, camera, mc, event.getPartialTick());
             if (bounds != null) {
                 data.lastBounds = bounds;
@@ -155,8 +163,16 @@ public class CensorshipBarRenderer {
             }
 
             if (data.isVisible && data.lastBounds != null) {
-                renderCensorBox(event.getGuiGraphics().pose().last().pose(), data.lastBounds, camera, entity, event.getPartialTick());
+                if (!drawing) {
+                    bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
+                    drawing = true;
+                }
+                renderCensorBox(bufferBuilder, event.getGuiGraphics().pose().last().pose(), data.lastBounds, camera, entity, event.getPartialTick());
             }
+        }
+        
+        if (drawing) {
+            BufferUploader.drawWithShader(bufferBuilder.end());
         }
         
         RenderSystem.enableDepthTest();
@@ -168,11 +184,20 @@ public class CensorshipBarRenderer {
         if (cached != null && cached.isAlive()) {
             return cached;
         }
+        
+        Integer cooldown = searchCooldowns.get(uuid);
+        if (cooldown != null && cooldown > 0) {
+            searchCooldowns.put(uuid, cooldown - 1);
+            return null;
+        }
+
         Entity found = findEntityByUUID(mc, uuid);
         if (found != null) {
             entityCache.put(uuid, found);
+            searchCooldowns.remove(uuid);
         } else {
             entityCache.remove(uuid);
+            searchCooldowns.put(uuid, SEARCH_COOLDOWN_FRAMES);
         }
         return found;
     }
@@ -192,7 +217,6 @@ public class CensorshipBarRenderer {
         camY = cameraPos.y;
         camZ = cameraPos.z;
 
-        // Render relative to camera (0,0,0) to avoid float precision issues at large coordinates
         tempEye.set(0, 0, 0);
         tempForward.set(camera.getLookVector());
         tempUp.set(camera.getUpVector());
@@ -209,10 +233,7 @@ public class CensorshipBarRenderer {
         Vec3 toEntity = entityPos.subtract(cameraPos).normalize();
         Vec3 cameraForward = new Vec3(camera.getLookVector());
         
-        double dotProduct = toEntity.dot(cameraForward);
-        double angle = Math.toDegrees(Math.acos(dotProduct));
-        
-        return angle <= MAX_FOV_ANGLE;
+        return toEntity.dot(cameraForward) >= MIN_FOV_DOT;
     }
 
     private static ScreenRect calculateScreenBounds(Entity entity, Camera camera, Minecraft mc, float partialTick) {
@@ -230,6 +251,9 @@ public class CensorshipBarRenderer {
 
         int minX = Integer.MAX_VALUE, maxX = Integer.MIN_VALUE;
         int minY = Integer.MAX_VALUE, maxY = Integer.MIN_VALUE;
+        
+        int screenWidth = mc.getWindow().getGuiScaledWidth();
+        int screenHeight = mc.getWindow().getGuiScaledHeight();
 
         for (double xo : xOffsets) {
             for (double yo : yOffsets) {
@@ -238,17 +262,33 @@ public class CensorshipBarRenderer {
                     double worldY = entityPos.y + yo;
                     double worldZ = entityPos.z + zo;
                     
-                    ScreenPosition pos = projectToScreen(worldX, worldY, worldZ, mc);
-                    minX = Math.min(minX, pos.x);
-                    maxX = Math.max(maxX, pos.x);
-                    minY = Math.min(minY, pos.y);
-                    maxY = Math.max(maxY, pos.y);
+                    float relX = (float) (worldX - camX);
+                    float relY = (float) (worldY - camY);
+                    float relZ = (float) (worldZ - camZ);
+
+                    tempPos.set(relX, relY, relZ, 1.0f);
+                    tempPos.mul(viewProjectionMatrix);
+
+                    if (tempPos.w <= 0) {
+                        tempPos.w = 0.01f;
+                    }
+
+                    float ndcX = tempPos.x / tempPos.w;
+                    float ndcY = tempPos.y / tempPos.w;
+
+                    ndcX = Math.max(-2.0f, Math.min(2.0f, ndcX));
+                    ndcY = Math.max(-2.0f, Math.min(2.0f, ndcY));
+
+                    int screenX = (int) ((ndcX * 0.5f + 0.5f) * screenWidth);
+                    int screenY = (int) ((1.0f - (ndcY * 0.5f + 0.5f)) * screenHeight);
+                    
+                    minX = Math.min(minX, screenX);
+                    maxX = Math.max(maxX, screenX);
+                    minY = Math.min(minY, screenY);
+                    maxY = Math.max(maxY, screenY);
                 }
             }
         }
-
-        int screenWidth = mc.getWindow().getGuiScaledWidth();
-        int screenHeight = mc.getWindow().getGuiScaledHeight();
         
         if (minX >= maxX || minY >= maxY) return null;
         if (maxX < -screenWidth || minX > screenWidth * 2) return null;
@@ -257,42 +297,11 @@ public class CensorshipBarRenderer {
         return new ScreenRect(minX, minY, maxX - minX, maxY - minY);
     }
 
-    private static ScreenPosition projectToScreen(double x, double y, double z, Minecraft mc) {
-        // Transform to camera-relative coordinates
-        float relX = (float) (x - camX);
-        float relY = (float) (y - camY);
-        float relZ = (float) (z - camZ);
-
-        tempPos.set(relX, relY, relZ, 1.0f);
-        tempPos.mul(viewProjectionMatrix);
-
-        if (tempPos.w <= 0) {
-            tempPos.w = 0.01f;
-        }
-
-        float ndcX = tempPos.x / tempPos.w;
-        float ndcY = tempPos.y / tempPos.w;
-
-        ndcX = Math.max(-2.0f, Math.min(2.0f, ndcX));
-        ndcY = Math.max(-2.0f, Math.min(2.0f, ndcY));
-
-        int screenWidth = mc.getWindow().getGuiScaledWidth();
-        int screenHeight = mc.getWindow().getGuiScaledHeight();
-
-        int screenX = (int) ((ndcX * 0.5f + 0.5f) * screenWidth);
-        int screenY = (int) ((1.0f - (ndcY * 0.5f + 0.5f)) * screenHeight);
-
-        return new ScreenPosition(screenX, screenY, true);
-    }
-
-    private static void renderCensorBox(Matrix4f matrix, ScreenRect rect, Camera camera, Entity entity, float partialTick) {
-        // Calculate distance to entity
+    private static void renderCensorBox(BufferBuilder bufferBuilder, Matrix4f matrix, ScreenRect rect, Camera camera, Entity entity, float partialTick) {
         Vec3 cameraPos = camera.getPosition();
         Vec3 entityPos = entity.getPosition(partialTick);
         double distance = cameraPos.distanceTo(entityPos);
 
-        // Scale jitter based on distance (closer = more jitter, farther = less jitter)
-        // Clamp distance to avoid division by zero or extreme values
         double clampedDist = Math.max(1.0, Math.min(distance, 50.0));
         int dynamicJitter = (int) Math.max(0, JITTER_INTENSITY * (10.0 / clampedDist));
 
@@ -308,22 +317,15 @@ public class CensorshipBarRenderer {
         int y1 = rect.y + jitterY;
         int x2 = x1 + rect.width;
         int y2 = y1 + rect.height;
-
-        RenderSystem.setShader(GameRenderer::getPositionColorShader);
-
-        BufferBuilder bufferBuilder = Tesselator.getInstance().getBuilder();
         
         float r = ((BAR_COLOR >> 16) & 0xFF) / 255.0f;
         float g = ((BAR_COLOR >> 8) & 0xFF) / 255.0f;
         float b = (BAR_COLOR & 0xFF) / 255.0f;
 
-        bufferBuilder.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_COLOR);
         bufferBuilder.vertex(matrix, x1, y2, 1000).color(r, g, b, BAR_OPACITY).endVertex();
         bufferBuilder.vertex(matrix, x2, y2, 1000).color(r, g, b, BAR_OPACITY).endVertex();
         bufferBuilder.vertex(matrix, x2, y1, 1000).color(r, g, b, BAR_OPACITY).endVertex();
         bufferBuilder.vertex(matrix, x1, y1, 1000).color(r, g, b, BAR_OPACITY).endVertex();
-
-        BufferUploader.drawWithShader(bufferBuilder.end());
     }
 
     private static boolean isEntityVisible(Entity entity, Camera camera, Minecraft mc, float partialTick) {
@@ -336,7 +338,6 @@ public class CensorshipBarRenderer {
         if (hasLineOfSight(cameraPos, entityPos, mc)) return true;
         if (hasLineOfSight(cameraPos, entityPos.add(0, height, 0), mc)) return true;
 
-        // Check sides to prevent "peeking" around corners
         Vec3 viewDir = entityPos.subtract(cameraPos).normalize();
         Vec3 sideDir = new Vec3(-viewDir.z, 0, viewDir.x).normalize().scale(width * 0.5);
 
@@ -367,18 +368,14 @@ public class CensorshipBarRenderer {
             BlockPos pos = result.getBlockPos();
             BlockState state = mc.level.getBlockState(pos);
             
-            // Check if block is see-through (translucent, cutout, etc.)
-            // We consider a block transparent if it doesn't block view, propagates light, or has low opacity.
             boolean isTransparent = !state.canOcclude() || 
                                     !state.isViewBlocking(mc.level, pos) ||
                                     state.propagatesSkylightDown(mc.level, pos) || 
                                     state.getLightBlock(mc.level, pos) < 15;
             
             if (isTransparent) {
-                // Move slightly past the hit point to continue raycast
                 currentFrom = result.getLocation().add(direction.scale(0.1));
                 
-                // Check if we passed the target
                 if (currentFrom.distanceToSqr(from) >= totalDistSqr) {
                     return true;
                 }
@@ -408,14 +405,6 @@ public class CensorshipBarRenderer {
         int x, y, width, height;
         ScreenRect(int x, int y, int width, int height) {
             this.x = x; this.y = y; this.width = width; this.height = height;
-        }
-    }
-
-    private static class ScreenPosition {
-        int x, y;
-        boolean onScreen;
-        ScreenPosition(int x, int y, boolean onScreen) {
-            this.x = x; this.y = y; this.onScreen = onScreen;
         }
     }
 }

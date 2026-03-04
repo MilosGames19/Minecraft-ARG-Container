@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 100
+      "chance": 60
     },
     {
       "type": "minecraft:count",
@@ -11,7 +11,7 @@
         "type": "uniform",
         "value": {
           "min_inclusive": 1,
-          "max_inclusive": 1
+          "max_inclusive": 4
         }
       }
     },
@@ -20,7 +20,39 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "OCEAN_FLOOR"
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "the_arg_container:low_mycon"
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:solid",
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "the_arg_container:low_mycon",
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
     },
     {
       "type": "minecraft:biome"

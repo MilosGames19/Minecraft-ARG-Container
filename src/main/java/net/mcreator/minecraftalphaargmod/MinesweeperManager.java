@@ -1,9 +1,10 @@
-package net.mcreator.minecraftalphaargmod.minesweeper;
+package net.mcreator.minecraftalphaargmod;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtIo;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,17 +18,21 @@ import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = "the_arg_container", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class MinesweeperManager {
-    private static final Map<UUID, MinesweeperBoard> activeBoards = new HashMap<>();
-    private static final Map<BlockPos, UUID> boardLocations = new HashMap<>();
+    private static final Map<UUID, MinesweeperBoard> activeBoards   = new HashMap<>();
+    private static final Map<BlockPos, UUID>         boardLocations = new HashMap<>();
+
+    // ------------------------------------------------------------------
+    // Board lifecycle
+    // ------------------------------------------------------------------
 
     public static void createBoard(Level level, BlockPos origin, Difficulty difficulty, UUID playerUUID) {
         removeBoard(playerUUID);
-        
-        MinesweeperBoard board = new MinesweeperBoard(level, origin, 
-            difficulty.width, difficulty.height, difficulty.mines);
+
+        MinesweeperBoard board = new MinesweeperBoard(level, origin,
+                difficulty.width, difficulty.height, difficulty.mines);
         board.placeBoard();
         activeBoards.put(playerUUID, board);
-        
+
         for (int x = 0; x < difficulty.width; x++) {
             for (int z = 0; z < difficulty.height; z++) {
                 boardLocations.put(origin.offset(x, 0, z), playerUUID);
@@ -59,6 +64,26 @@ public class MinesweeperManager {
         }
     }
 
+    // ------------------------------------------------------------------
+    // Network sync — call these whenever board state changes
+    // ------------------------------------------------------------------
+
+    /**
+     * Sends the current board state (or "no board") to the given player.
+     * Should be called after any action that modifies the board.
+     */
+    public static void syncToPlayer(ServerPlayer player) {
+        MinesweeperBoard board = activeBoards.get(player.getUUID());
+        MinesweeperSyncPacket packet = (board != null)
+                ? new MinesweeperSyncPacket(board)
+                : new MinesweeperSyncPacket();
+        MinesweeperNetwork.sendToPlayer(player, packet);
+    }
+
+    // ------------------------------------------------------------------
+    // Persistence — save on logout, load on login
+    // ------------------------------------------------------------------
+
     @SubscribeEvent
     public static void onPlayerLogout(PlayerEvent.PlayerLoggedOutEvent event) {
         UUID playerUUID = event.getEntity().getUUID();
@@ -73,14 +98,19 @@ public class MinesweeperManager {
         UUID playerUUID = event.getEntity().getUUID();
         if (event.getEntity().level() instanceof ServerLevel serverLevel) {
             loadBoard(serverLevel, playerUUID);
+
+            // Sync loaded state to client so the HUD appears immediately on join
+            if (event.getEntity() instanceof ServerPlayer serverPlayer) {
+                syncToPlayer(serverPlayer);
+            }
         }
     }
 
     private static void saveBoard(ServerLevel level, UUID playerUUID, MinesweeperBoard board) {
         File saveDir = new File(level.getServer().getServerDirectory(), "minesweeper_saves");
         if (!saveDir.exists()) saveDir.mkdirs();
-        
-        File saveFile = new File(saveDir, playerUUID.toString() + ".dat");
+
+        File saveFile = new File(saveDir, playerUUID + ".dat");
         try {
             NbtIo.writeCompressed(board.saveToNBT(), saveFile);
         } catch (IOException e) {
@@ -90,28 +120,29 @@ public class MinesweeperManager {
 
     private static void loadBoard(ServerLevel level, UUID playerUUID) {
         File saveDir = new File(level.getServer().getServerDirectory(), "minesweeper_saves");
-        File saveFile = new File(saveDir, playerUUID.toString() + ".dat");
-        
-        if (saveFile.exists()) {
-            try {
-                CompoundTag tag = NbtIo.readCompressed(saveFile);
-                MinesweeperBoard board = MinesweeperBoard.loadFromNBT(level, tag);
-                activeBoards.put(playerUUID, board);
-                
-                BlockPos origin = new BlockPos(tag.getInt("originX"), tag.getInt("originY"), tag.getInt("originZ"));
-                int width = tag.getInt("width");
-                int height = tag.getInt("height");
-                
-                for (int x = 0; x < width; x++) {
-                    for (int z = 0; z < height; z++) {
-                        boardLocations.put(origin.offset(x, 0, z), playerUUID);
-                    }
+        File saveFile = new File(saveDir, playerUUID + ".dat");
+
+        if (!saveFile.exists()) return;
+
+        try {
+            CompoundTag tag = NbtIo.readCompressed(saveFile);
+            MinesweeperBoard board = MinesweeperBoard.loadFromNBT(level, tag);
+            activeBoards.put(playerUUID, board);
+
+            BlockPos origin = new BlockPos(tag.getInt("originX"), tag.getInt("originY"), tag.getInt("originZ"));
+            int width  = tag.getInt("width");
+            int height = tag.getInt("height");
+            for (int x = 0; x < width; x++) {
+                for (int z = 0; z < height; z++) {
+                    boardLocations.put(origin.offset(x, 0, z), playerUUID);
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
+
+    // ------------------------------------------------------------------
 
     public enum Difficulty {
         BEGINNER(9, 9, 10),

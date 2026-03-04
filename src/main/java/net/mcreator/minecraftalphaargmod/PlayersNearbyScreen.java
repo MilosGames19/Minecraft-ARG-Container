@@ -70,7 +70,7 @@ public class PlayersNearbyScreen extends Screen {
             String username = player.getGameProfile().getName();
             
             double distance = mc.player.distanceTo(player);
-            boolean isAdmin = player.hasPermissions(4);
+            boolean isAdmin = AdminCache.isAdmin(uuid);
             boolean isLocal = player.getUUID().equals(mc.player.getUUID());
             
             playerEntries.add(new PlayerEntry(username, uuid, distance, isLocal, isAdmin));

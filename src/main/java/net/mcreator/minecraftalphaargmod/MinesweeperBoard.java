@@ -1,4 +1,4 @@
-package net.mcreator.minecraftalphaargmod.minesweeper;
+package net.mcreator.minecraftalphaargmod;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -55,7 +55,7 @@ public class MinesweeperBoard {
         if (initialized) return;
         initialized = true;
         startTime = System.currentTimeMillis();
-        
+
         Random rand = new Random();
         Set<BlockPos> excluded = new HashSet<>();
         excluded.add(firstClick);
@@ -104,9 +104,9 @@ public class MinesweeperBoard {
         if (!initialized) {
             generate(clickPos);
         }
-        
+
         if (gameOver || revealed[x][z]) return;
-        
+
         if (mineMap[x][z]) {
             gameOver = true;
             endTime = System.currentTimeMillis();
@@ -116,7 +116,7 @@ public class MinesweeperBoard {
         }
 
         revealTile(x, z);
-        
+
         if (revealedCount == width * height - mines) {
             won = true;
             gameOver = true;
@@ -127,20 +127,20 @@ public class MinesweeperBoard {
 
     private void revealTile(int x, int z) {
         if (revealed[x][z] || mineMap[x][z]) return;
-        
+
         BlockPos pos = origin.offset(x, 0, z);
         BlockState state = level.getBlockState(pos);
         String blockName = ForgeRegistries.BLOCKS.getKey(state.getBlock()).getPath();
-        
+
         // Only reveal if it is a standard minesweeper block.
         // This prevents overwriting flags or question marks during recursive reveal.
         if (!blockName.equals("minesweeper_block")) {
             return;
         }
-        
+
         revealed[x][z] = true;
         revealedCount++;
-        
+
         if (adjacent[x][z] == 0) {
             level.setBlock(pos, getBlock("minesweeper_empty"), 3);
             for (int dx = -1; dx <= 1; dx++) {
@@ -241,7 +241,7 @@ public class MinesweeperBoard {
         tag.putLong("startTime", startTime);
         tag.putLong("endTime", endTime);
         tag.putLong("gameOverTime", gameOverTime);
-        
+
         ListTag mineList = new ListTag();
         for (int x = 0; x < width; x++) {
             for (int z = 0; z < height; z++) {
@@ -254,7 +254,7 @@ public class MinesweeperBoard {
             }
         }
         tag.put("mines_pos", mineList);
-        
+
         ListTag revealedList = new ListTag();
         for (int x = 0; x < width; x++) {
             for (int z = 0; z < height; z++) {
@@ -267,7 +267,7 @@ public class MinesweeperBoard {
             }
         }
         tag.put("revealed_pos", revealedList);
-        
+
         return tag;
     }
 
@@ -276,7 +276,7 @@ public class MinesweeperBoard {
         int height = tag.getInt("height");
         int mines = tag.getInt("mines");
         BlockPos origin = new BlockPos(tag.getInt("originX"), tag.getInt("originY"), tag.getInt("originZ"));
-        
+
         MinesweeperBoard board = new MinesweeperBoard(level, origin, width, height, mines);
         board.gameOver = tag.getBoolean("gameOver");
         board.won = tag.getBoolean("won");
@@ -286,19 +286,19 @@ public class MinesweeperBoard {
         board.startTime = tag.getLong("startTime");
         board.endTime = tag.getLong("endTime");
         board.gameOverTime = tag.getLong("gameOverTime");
-        
+
         ListTag mineList = tag.getList("mines_pos", Tag.TAG_COMPOUND);
         for (int i = 0; i < mineList.size(); i++) {
             CompoundTag pos = mineList.getCompound(i);
             board.mineMap[pos.getInt("x")][pos.getInt("z")] = true;
         }
-        
+
         ListTag revealedList = tag.getList("revealed_pos", Tag.TAG_COMPOUND);
         for (int i = 0; i < revealedList.size(); i++) {
             CompoundTag pos = revealedList.getCompound(i);
             board.revealed[pos.getInt("x")][pos.getInt("z")] = true;
         }
-        
+
         if (board.initialized) {
             for (int x = 0; x < width; x++) {
                 for (int z = 0; z < height; z++) {
@@ -308,11 +308,13 @@ public class MinesweeperBoard {
                 }
             }
         }
-        
+
         return board;
     }
 
     public boolean isGameOver() { return gameOver; }
     public boolean isWon() { return won; }
     public boolean isRevealed(int x, int z) { return revealed[x][z]; }
+    public long getStartTime() { return startTime; }
+    public long getEndTime()   { return endTime; }
 }

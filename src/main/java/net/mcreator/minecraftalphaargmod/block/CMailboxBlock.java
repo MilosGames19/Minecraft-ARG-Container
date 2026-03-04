@@ -86,6 +86,14 @@ public class CMailboxBlock extends Block {
 	}
 
 	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		if (world.getBestNeighborSignal(pos) > 0) {
+			CMailboxOnBlockRightClickedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		}
+	}
+
+	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		int x = pos.getX();

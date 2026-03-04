@@ -124,6 +124,9 @@
     "onRightClicked": {
       "name": "CMailboxOnBlockRightClicked"
     },
+    "onRedstoneOn": {
+      "name": "CMailboxOnBlockRightClicked"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
