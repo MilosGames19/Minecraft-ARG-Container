@@ -16,27 +16,35 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class SpearProjectileRenderer extends EntityRenderer<SpearProjectileEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/entities/spearprojectile.png");
-	private final Modelspearprojectile model;
 
-	public SpearProjectileRenderer(EntityRendererProvider.Context context) {
-		super(context);
-		model = new Modelspearprojectile(context.bakeLayer(Modelspearprojectile.LAYER_LOCATION));
-	}
+    private static final ResourceLocation texture = new ResourceLocation("the_arg_container:textures/entities/spearprojectile.png");
+    private final Modelspearprojectile model;
 
-	@Override
-	public void render(SpearProjectileEntity entityIn, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferIn, int packedLightIn) {
-		VertexConsumer vb = bufferIn.getBuffer(RenderType.entityCutout(this.getTextureLocation(entityIn)));
-		poseStack.pushPose();
-		poseStack.mulPose(Axis.YP.rotationDegrees(Mth.lerp(partialTicks, entityIn.yRotO, entityIn.getYRot()) - 90));
-		poseStack.mulPose(Axis.ZP.rotationDegrees(90 + Mth.lerp(partialTicks, entityIn.xRotO, entityIn.getXRot())));
-		model.renderToBuffer(poseStack, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
-		poseStack.popPose();
-		super.render(entityIn, entityYaw, partialTicks, poseStack, bufferIn, packedLightIn);
-	}
+    public SpearProjectileRenderer(EntityRendererProvider.Context context) {
+        super(context);
+        model = new Modelspearprojectile(context.bakeLayer(Modelspearprojectile.LAYER_LOCATION));
+    }
 
-	@Override
-	public ResourceLocation getTextureLocation(SpearProjectileEntity entity) {
-		return texture;
-	}
+    @Override
+    public void render(SpearProjectileEntity entityIn, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferIn, int packedLightIn) {
+        VertexConsumer vb = bufferIn.getBuffer(RenderType.entityCutoutNoCull(this.getTextureLocation(entityIn)));
+
+        poseStack.pushPose();
+
+        float yRot = Mth.lerp(partialTicks, entityIn.yRotO, entityIn.getYRot());
+        float xRot = Mth.lerp(partialTicks, entityIn.xRotO, entityIn.getXRot());
+        poseStack.mulPose(Axis.YP.rotationDegrees(yRot - 90));
+        poseStack.mulPose(Axis.ZP.rotationDegrees(90 + xRot));
+        poseStack.translate(0.0, -0.7, 0.0);
+
+        model.renderToBuffer(poseStack, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
+        poseStack.popPose();
+
+        super.render(entityIn, entityYaw, partialTicks, poseStack, bufferIn, packedLightIn);
+    }
+
+    @Override
+    public ResourceLocation getTextureLocation(SpearProjectileEntity entity) {
+        return texture;
+    }
 }

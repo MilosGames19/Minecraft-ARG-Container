@@ -18,7 +18,7 @@ import net.mcreator.minecraftalphaargmod.procedures.NoSignalTestProcedure;
 public class TEST1Command {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("test")
+		event.getDispatcher().register(Commands.literal("net.mcreator.minecraftalphaargmod.NoSignalScreen.trigger();")
 
 				.executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();

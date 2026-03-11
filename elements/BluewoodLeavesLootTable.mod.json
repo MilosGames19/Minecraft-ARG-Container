@@ -1,0 +1,10 @@
+{
+  "_fv": 73,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/bluewood_leaves",
+    "namespace": "mod"
+  }
+}

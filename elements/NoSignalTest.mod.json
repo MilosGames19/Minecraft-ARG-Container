@@ -2,6 +2,6 @@
   "_fv": 73,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"java_code\"><field name=\"CODE\">net.mcreator.minecraftalphaargmod.NoSignalScreen.trigger();</field></block></next></block><block type=\"java_code\" x=\"834\" y=\"38\"><field name=\"CODE\">UsernameToChat.sendCustomMessage(\"&lt;✷&gt; Hello, \", \".\");</field></block></xml>"
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field></block><block type=\"java_code\" x=\"834\" y=\"38\"><field name=\"CODE\">UsernameToChat.sendCustomMessage(\"&lt;✷&gt; Hello, \", \".\");</field></block><block type=\"java_code\" x=\"445\" y=\"182\"><field name=\"CODE\">net.mcreator.minecraftalphaargmod.NoSignalScreen.trigger();</field></block><block type=\"java_code\" x=\"889\" y=\"273\"><field name=\"CODE\">MotionBlurRenderer.setEnabled(true);</field></block></xml>"
   }
 }

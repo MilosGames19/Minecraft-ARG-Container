@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "command",
   "definition": {
-    "commandName": "test",
+    "commandName": "net.mcreator.minecraftalphaargmod.NoSignalScreen.trigger();",
     "type": "STANDARD",
     "permissionLevel": "No requirement",
     "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"call_procedure\"><field name=\"procedure\">NoSignalTest</field></block></next></block></xml>"

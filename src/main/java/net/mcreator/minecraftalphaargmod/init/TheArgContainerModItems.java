@@ -700,7 +700,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> DARK_BRICKS = block(TheArgContainerModBlocks.DARK_BRICKS);
 	public static final RegistryObject<Item> DARK_DOOR = doubleBlock(TheArgContainerModBlocks.DARK_DOOR);
 	public static final RegistryObject<Item> BLUEWOOD_LEAVES = block(TheArgContainerModBlocks.BLUEWOOD_LEAVES);
-	public static final RegistryObject<Item> DARK_SAPLING = block(TheArgContainerModBlocks.DARK_SAPLING);
 	public static final RegistryObject<Item> HUB_TILE_BLOCK = block(TheArgContainerModBlocks.HUB_TILE_BLOCK);
 	public static final RegistryObject<Item> HUB_WALL_BLOCK = block(TheArgContainerModBlocks.HUB_WALL_BLOCK);
 	public static final RegistryObject<Item> HUB_GLASS_BLOCK = block(TheArgContainerModBlocks.HUB_GLASS_BLOCK);
@@ -1764,6 +1763,8 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> TALL_TREE_SAPLING = block(TheArgContainerModBlocks.TALL_TREE_SAPLING);
 	public static final RegistryObject<Item> TALL_TREE_LEAVES = block(TheArgContainerModBlocks.TALL_TREE_LEAVES);
 	public static final RegistryObject<Item> THE_DIRECTOR_SPAWN_EGG = REGISTRY.register("the_director_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.THE_DIRECTOR, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> BLUEWOOD_SAPLING = block(TheArgContainerModBlocks.BLUEWOOD_SAPLING);
+	public static final RegistryObject<Item> ALPHAVER_SAPLING = block(TheArgContainerModBlocks.ALPHAVER_SAPLING);
 
 	// Start of user code block custom items
 	// End of user code block custom items

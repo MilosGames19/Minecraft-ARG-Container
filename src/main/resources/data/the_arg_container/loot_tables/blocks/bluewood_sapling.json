@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "the_arg_container:blocks/dark_sapling",
+  "random_sequence": "the_arg_container:blocks/bluewood_sapling",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "the_arg_container:dark_sapling"
+          "name": "the_arg_container:bluewood_sapling"
         }
       ]
     }

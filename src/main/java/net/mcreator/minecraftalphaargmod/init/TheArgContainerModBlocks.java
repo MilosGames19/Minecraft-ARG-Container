@@ -1085,7 +1085,6 @@ import net.mcreator.minecraftalphaargmod.block.DeadVoidBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.DeadRoseBlock;
 import net.mcreator.minecraftalphaargmod.block.DataDaisyBlock;
 import net.mcreator.minecraftalphaargmod.block.DarkWoodBlock;
-import net.mcreator.minecraftalphaargmod.block.DarkSaplingBlock;
 import net.mcreator.minecraftalphaargmod.block.DarkPumpkinBlock;
 import net.mcreator.minecraftalphaargmod.block.DarkPlanksBlock;
 import net.mcreator.minecraftalphaargmod.block.DarkOfficeBricksBlock;
@@ -1264,6 +1263,7 @@ import net.mcreator.minecraftalphaargmod.block.BredasBlock;
 import net.mcreator.minecraftalphaargmod.block.Br1Block;
 import net.mcreator.minecraftalphaargmod.block.Botom2BlockBlock;
 import net.mcreator.minecraftalphaargmod.block.BookshelfAlphaBlock;
+import net.mcreator.minecraftalphaargmod.block.BluewoodSaplingBlock;
 import net.mcreator.minecraftalphaargmod.block.BluewireBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.BlueblockBlock;
 import net.mcreator.minecraftalphaargmod.block.BlueWallBlock;
@@ -1336,6 +1336,7 @@ import net.mcreator.minecraftalphaargmod.block.AmberLogBlock;
 import net.mcreator.minecraftalphaargmod.block.AluminumPlatinumPlatesBlock;
 import net.mcreator.minecraftalphaargmod.block.AlternativeDimensionWallBlock;
 import net.mcreator.minecraftalphaargmod.block.AltarClassicBlock;
+import net.mcreator.minecraftalphaargmod.block.AlphaverSaplingBlock;
 import net.mcreator.minecraftalphaargmod.block.AlphaverLogoBlock;
 import net.mcreator.minecraftalphaargmod.block.AfliteOreBlock;
 import net.mcreator.minecraftalphaargmod.block.AfliteBlockBlock;
@@ -1835,7 +1836,6 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> DARK_BRICKS = REGISTRY.register("dark_bricks", () -> new DarkBricksBlock());
 	public static final RegistryObject<Block> DARK_DOOR = REGISTRY.register("dark_door", () -> new DarkDoorBlock());
 	public static final RegistryObject<Block> BLUEWOOD_LEAVES = REGISTRY.register("bluewood_leaves", () -> new DarkLeavesBlock());
-	public static final RegistryObject<Block> DARK_SAPLING = REGISTRY.register("dark_sapling", () -> new DarkSaplingBlock());
 	public static final RegistryObject<Block> HUB_TILE_BLOCK = REGISTRY.register("hub_tile_block", () -> new HubTileBlockBlock());
 	public static final RegistryObject<Block> HUB_WALL_BLOCK = REGISTRY.register("hub_wall_block", () -> new HubWallBlockBlock());
 	public static final RegistryObject<Block> HUB_GLASS_BLOCK = REGISTRY.register("hub_glass_block", () -> new HubGlassBlockBlock());
@@ -2754,6 +2754,8 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> MYCON_MUSHROOM = REGISTRY.register("mycon_mushroom", () -> new MyconMushroomBlock());
 	public static final RegistryObject<Block> TALL_TREE_SAPLING = REGISTRY.register("tall_tree_sapling", () -> new TallTreeSaplingBlock());
 	public static final RegistryObject<Block> TALL_TREE_LEAVES = REGISTRY.register("tall_tree_leaves", () -> new TallTreeLeavesBlock());
+	public static final RegistryObject<Block> BLUEWOOD_SAPLING = REGISTRY.register("bluewood_sapling", () -> new BluewoodSaplingBlock());
+	public static final RegistryObject<Block> ALPHAVER_SAPLING = REGISTRY.register("alphaver_sapling", () -> new AlphaverSaplingBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

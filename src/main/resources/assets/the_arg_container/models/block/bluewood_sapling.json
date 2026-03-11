@@ -4,5 +4,5 @@
     "cross": "the_arg_container:block/tile167",
     "particle": "the_arg_container:block/tile167"
   },
-  "render_type": "cutout_mipped"
+  "render_type": "cutout"
 }

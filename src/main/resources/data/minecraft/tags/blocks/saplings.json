@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:alphaver_sapling",
+    "the_arg_container:bluewood_sapling",
     "the_arg_container:tall_tree_sapling",
     "the_arg_container:mycon_mushroom",
     "the_arg_container:highwood_sapling",
