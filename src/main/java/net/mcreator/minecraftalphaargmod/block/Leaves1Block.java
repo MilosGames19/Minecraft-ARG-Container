@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class Leaves1Block extends LeavesBlock {
 	public Leaves1Block() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).requiresCorrectToolForDrops().noOcclusion());
+		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
 	}
 
 	@Override

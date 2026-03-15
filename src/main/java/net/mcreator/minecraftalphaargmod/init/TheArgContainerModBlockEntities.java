@@ -17,6 +17,7 @@ import net.mcreator.minecraftalphaargmod.block.entity.TheUltimateTruthBlockEntit
 import net.mcreator.minecraftalphaargmod.block.entity.StructureBuilderBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.ServerContainersBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.SafeBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.RenderWireframeBlockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PreparationsSkyBlockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.PerlinKeyblockBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.OtherJukeboxBlockEntity;
@@ -69,4 +70,6 @@ public class TheArgContainerModBlockEntities {
 			() -> BlockEntityType.Builder.of(MoonfallSkyBlockDayBlockEntity::new, TheArgContainerModBlocks.MOONFALL_SKY_BLOCK_DAY.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GeneratorBlockEntity>> GENERATOR = REGISTRY.register("generator", () -> BlockEntityType.Builder.of(GeneratorBlockEntity::new, TheArgContainerModBlocks.GENERATOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<DebugSkyboxBlockEntity>> DEBUG_SKYBOX = REGISTRY.register("debug_skybox", () -> BlockEntityType.Builder.of(DebugSkyboxBlockEntity::new, TheArgContainerModBlocks.DEBUG_SKYBOX.get()).build(null));
+	public static final RegistryObject<BlockEntityType<RenderWireframeBlockBlockEntity>> RENDER_WIREFRAME_BLOCK = REGISTRY.register("render_wireframe_block",
+			() -> BlockEntityType.Builder.of(RenderWireframeBlockBlockEntity::new, TheArgContainerModBlocks.RENDER_WIREFRAME_BLOCK.get()).build(null));
 }

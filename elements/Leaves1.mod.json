@@ -48,13 +48,13 @@
         "value": "CUSTOM:Alpha"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "hoe",
     "customDrop": {
       "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": true,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,

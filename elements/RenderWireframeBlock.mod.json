@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "mesh",
+    "texture": "empty_sky",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -12,15 +12,15 @@
     "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "item_line",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": true,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Render Wireframe Block",
+    "name": "Wireframe Block",
     "specialInformation": {
       "fixedValue": []
     },
@@ -59,7 +59,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "MISCELLANEOUS"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -105,7 +105,7 @@
     "unbreakable": true,
     "vanillaToolTier": "STONE",
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
