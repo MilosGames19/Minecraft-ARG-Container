@@ -59,7 +59,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -106,7 +106,6 @@
     "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "SkyBuilderGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 14,
     "inventoryStackSize": 64,

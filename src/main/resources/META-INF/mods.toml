@@ -36,6 +36,12 @@ description="This mod brings blocks, items and features form popular minecraft A
     ordering="NONE"
     side="BOTH"
 [[dependencies.the_arg_container]]
+    modId="patchouli"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.the_arg_container]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"
@@ -43,6 +49,12 @@ description="This mod brings blocks, items and features form popular minecraft A
     side="BOTH"
 [[dependencies.the_arg_container]]
     modId="structure_gel_api"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.the_arg_container]]
+    modId="world_preview"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

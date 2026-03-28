@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftalphaargmod.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -10,19 +11,17 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.DevChatGUIMenu;
-import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class DevChatGUIScreen extends AbstractContainerScreen<DevChatGUIMenu> implements WidgetScreen {
+public class DevChatGUIScreen extends AbstractContainerScreen<DevChatGUIMenu> {
 	private final static HashMap<String, Object> guistate = DevChatGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
-	public static EditBox dev_chat;
+	EditBox dev_chat;
 
 	public DevChatGUIScreen(DevChatGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -49,10 +48,6 @@ public class DevChatGUIScreen extends AbstractContainerScreen<DevChatGUIMenu> im
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override

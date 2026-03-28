@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftalphaargmod.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -12,19 +13,17 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.BallsOnlineGuiMenu;
-import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class BallsOnlineGuiScreen extends AbstractContainerScreen<BallsOnlineGuiMenu> implements WidgetScreen {
+public class BallsOnlineGuiScreen extends AbstractContainerScreen<BallsOnlineGuiMenu> {
 	private final static HashMap<String, Object> guistate = BallsOnlineGuiMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
-	public static EditBox balls_online;
+	EditBox balls_online;
 	Button button_empty;
 
 	public BallsOnlineGuiScreen(BallsOnlineGuiMenu container, Inventory inventory, Component text) {
@@ -55,10 +54,6 @@ public class BallsOnlineGuiScreen extends AbstractContainerScreen<BallsOnlineGui
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override

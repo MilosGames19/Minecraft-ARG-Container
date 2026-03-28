@@ -1,0 +1,11 @@
+{
+    "name": "Long Jump Ability",
+    "icon": "minecraft:writable_book",
+    "category": "the_arg_container:abilities",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The long jump can be used to clear smaller gaps, and it features a shorter cooldown compared to the dash ability. Additionally, you can combine the long jump with the dash to cover greater distances. To use this ability, you must hold the shift and press the spacebar. The long jump ability, like the dash ability, requires you to be in survival mode and to have more than three hunger bars to use it."
+        }
+    ]
+}

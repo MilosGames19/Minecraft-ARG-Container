@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftalphaargmod.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -10,18 +11,16 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.EtGUIMenu;
-import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class EtGUIScreen extends AbstractContainerScreen<EtGUIMenu> implements WidgetScreen {
+public class EtGUIScreen extends AbstractContainerScreen<EtGUIMenu> {
 	private final static HashMap<String, Object> guistate = EtGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
 	Button button_confirm;
 
 	public EtGUIScreen(EtGUIMenu container, Inventory inventory, Component text) {
@@ -51,10 +50,6 @@ public class EtGUIScreen extends AbstractContainerScreen<EtGUIMenu> implements W
 		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/essencetransformer.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override

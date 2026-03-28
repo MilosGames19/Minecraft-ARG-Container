@@ -1,0 +1,5 @@
+{
+    "name": "Mod Information",
+    "description": "$(playername), thank you for playing this mod.",
+    "icon": "minecraft:writable_book"
+}

@@ -1,15 +1,13 @@
 package net.mcreator.minecraftalphaargmod;
 
 import com.mojang.brigadier.CommandDispatcher;
-import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -18,133 +16,152 @@ import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = "the_arg_container", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class CensorshipCommand {
-    
-    // Authorized UUID (without dashes)
+
+    // FIX: Authorise by UUID only. Usernames can be changed; never rely on them for auth.
     private static final UUID AUTHORIZED_UUID = UUID.fromString("2d10b449-51f2-4d96-b2e3-c3bdc0332a81");
-    private static final String AUTHORIZED_NAME = "Dev";
-    
+
     @SubscribeEvent
     public static void onRegisterCommands(RegisterCommandsEvent event) {
         CommandDispatcher<CommandSourceStack> dispatcher = event.getDispatcher();
-        
+
         dispatcher.register(
             Commands.literal("censor")
-                .requires(source -> isAuthorized(source))
+                .requires(CensorshipCommand::isAuthorized)
                 .then(Commands.literal("add")
                     .then(Commands.argument("target", EntityArgument.player())
-                        .executes(context -> addCensor(context, EntityArgument.getPlayer(context, "target")))
+                        .executes(context ->
+                            addCensor(context, EntityArgument.getPlayer(context, "target")))
                     )
-                    .executes(context -> addCensorSelf(context))
+                    .executes(CensorshipCommand::addCensorSelf)
                 )
                 .then(Commands.literal("remove")
                     .then(Commands.argument("target", EntityArgument.player())
-                        .executes(context -> removeCensor(context, EntityArgument.getPlayer(context, "target")))
+                        .executes(context ->
+                            removeCensor(context, EntityArgument.getPlayer(context, "target")))
                     )
-                    .executes(context -> removeCensorSelf(context))
+                    .executes(CensorshipCommand::removeCensorSelf)
                 )
                 .then(Commands.literal("list")
                     .executes(CensorshipCommand::listCensored)
                 )
+                .then(Commands.literal("clear")
+                    .executes(CensorshipCommand::clearAll)
+                )
         );
     }
-    
+
+    // ── Auth ───────────────────────────────────────────────────────────────────
+
     /**
-     * Check if command source is authorized (username "Dev" or specific UUID)
+     * FIX: Removed username check — names are mutable and not a reliable identity.
+     * UUID alone is sufficient.
      */
     private static boolean isAuthorized(CommandSourceStack source) {
         if (!source.isPlayer()) return false;
-        
         try {
-            ServerPlayer player = source.getPlayerOrException();
-            String username = player.getName().getString();
-            UUID uuid = player.getUUID();
-            
-            return username.equals(AUTHORIZED_NAME) || uuid.equals(AUTHORIZED_UUID);
+            return source.getPlayerOrException().getUUID().equals(AUTHORIZED_UUID);
         } catch (Exception e) {
             return false;
         }
     }
-    
+
+    // ── Commands ───────────────────────────────────────────────────────────────
+
     /**
-     * Add censorship to target player
+     * FIX: Instead of directly calling CensorshipBarRenderer (client-only class)
+     * from server-side command code, we send a packet to the executing player's
+     * client. This is safe on both integrated and dedicated servers.
      */
     private static int addCensor(CommandContext<CommandSourceStack> context, ServerPlayer target) {
-        // Add to client-side renderer via packet or direct call
-        CensorshipBarRenderer.addTargetEntity(target);
-        
+        ServerPlayer executor = getExecutorPlayer(context);
+        if (executor == null) return 0;
+
+        // Send the add packet only to the command executor's client.
+        // The black box is a visual effect visible only to the operator, not the target.
+        CensorshipBarNetwork.sendToPlayer(executor,
+            new CensorshipBarSyncPacket(CensorshipBarSyncPacket.Action.ADD, target.getUUID()));
+
         context.getSource().sendSuccess(
             () -> Component.literal("§aCensorship applied to " + target.getName().getString()),
             false
         );
-        
         return 1;
     }
-    
-    /**
-     * Add censorship to command executor
-     */
+
     private static int addCensorSelf(CommandContext<CommandSourceStack> context) {
-        try {
-            ServerPlayer player = context.getSource().getPlayerOrException();
-            CensorshipBarRenderer.addTargetEntity(player);
-            
-            context.getSource().sendSuccess(
-                () -> Component.literal("§aCensorship applied to yourself"),
-                false
-            );
-            
-            return 1;
-        } catch (Exception e) {
-            context.getSource().sendFailure(Component.literal("§cOnly players can use this command"));
-            return 0;
-        }
+        ServerPlayer executor = getExecutorPlayer(context);
+        if (executor == null) return 0;
+
+        CensorshipBarNetwork.sendToPlayer(executor,
+            new CensorshipBarSyncPacket(CensorshipBarSyncPacket.Action.ADD, executor.getUUID()));
+
+        context.getSource().sendSuccess(
+            () -> Component.literal("§aCensorship applied to yourself"),
+            false
+        );
+        return 1;
     }
-    
-    /**
-     * Remove censorship from target player
-     */
+
     private static int removeCensor(CommandContext<CommandSourceStack> context, ServerPlayer target) {
-        CensorshipBarRenderer.removeTargetEntity(target.getUUID());
-        
+        ServerPlayer executor = getExecutorPlayer(context);
+        if (executor == null) return 0;
+
+        CensorshipBarNetwork.sendToPlayer(executor,
+            new CensorshipBarSyncPacket(CensorshipBarSyncPacket.Action.REMOVE, target.getUUID()));
+
         context.getSource().sendSuccess(
             () -> Component.literal("§eCensorship removed from " + target.getName().getString()),
             false
         );
-        
         return 1;
     }
-    
-    /**
-     * Remove censorship from command executor
-     */
+
     private static int removeCensorSelf(CommandContext<CommandSourceStack> context) {
-        try {
-            ServerPlayer player = context.getSource().getPlayerOrException();
-            CensorshipBarRenderer.removeTargetEntity(player.getUUID());
-            
-            context.getSource().sendSuccess(
-                () -> Component.literal("§eCensorship removed from yourself"),
-                false
-            );
-            
-            return 1;
-        } catch (Exception e) {
-            context.getSource().sendFailure(Component.literal("§cOnly players can use this command"));
-            return 0;
-        }
-    }
-    
-    /**
-     * List all currently censored entities
-     */
-    private static int listCensored(CommandContext<CommandSourceStack> context) {
-        int count = CensorshipBarRenderer.getTargetCount();
-        
+        ServerPlayer executor = getExecutorPlayer(context);
+        if (executor == null) return 0;
+
+        CensorshipBarNetwork.sendToPlayer(executor,
+            new CensorshipBarSyncPacket(CensorshipBarSyncPacket.Action.REMOVE, executor.getUUID()));
+
         context.getSource().sendSuccess(
-            () -> Component.literal("§6Currently censoring " + count + " entities"),
+            () -> Component.literal("§eCensorship removed from yourself"),
             false
         );
-        
         return 1;
+    }
+
+    private static int listCensored(CommandContext<CommandSourceStack> context) {
+        // NOTE: The count lives on the client, not the server, so we can only
+        // acknowledge the command. For a count, you'd need a server-side store too.
+        context.getSource().sendSuccess(
+            () -> Component.literal("§6Use /censor add/remove to manage censored entities."),
+            false
+        );
+        return 1;
+    }
+
+    private static int clearAll(CommandContext<CommandSourceStack> context) {
+        ServerPlayer executor = getExecutorPlayer(context);
+        if (executor == null) return 0;
+
+        CensorshipBarNetwork.sendToPlayer(executor,
+            new CensorshipBarSyncPacket(CensorshipBarSyncPacket.Action.CLEAR, null));
+
+        context.getSource().sendSuccess(
+            () -> Component.literal("§cAll censorship cleared."),
+            false
+        );
+        return 1;
+    }
+
+    // ── Helpers ────────────────────────────────────────────────────────────────
+
+    private static ServerPlayer getExecutorPlayer(CommandContext<CommandSourceStack> context) {
+        try {
+            return context.getSource().getPlayerOrException();
+        } catch (Exception e) {
+            context.getSource().sendFailure(Component.literal("§cOnly players can use this command."));
+            return null;
+        }
     }
 }

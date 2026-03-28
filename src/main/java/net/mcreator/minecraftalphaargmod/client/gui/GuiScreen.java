@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftalphaargmod.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -10,18 +11,16 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.GuiMenu;
-import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class GuiScreen extends AbstractContainerScreen<GuiMenu> implements WidgetScreen {
+public class GuiScreen extends AbstractContainerScreen<GuiMenu> {
 	private final static HashMap<String, Object> guistate = GuiMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
 	Button button_etjwetjwerjwer;
 
 	public GuiScreen(GuiMenu container, Inventory inventory, Component text) {
@@ -51,10 +50,6 @@ public class GuiScreen extends AbstractContainerScreen<GuiMenu> implements Widge
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override

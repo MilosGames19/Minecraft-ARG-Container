@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftalphaargmod.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -9,18 +10,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.AuthenticatorGUiMenu;
-import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class AuthenticatorGUiScreen extends AbstractContainerScreen<AuthenticatorGUiMenu> implements WidgetScreen {
+public class AuthenticatorGUiScreen extends AbstractContainerScreen<AuthenticatorGUiMenu> {
 	private final static HashMap<String, Object> guistate = AuthenticatorGUiMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
 
 	public AuthenticatorGUiScreen(AuthenticatorGUiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -49,10 +48,6 @@ public class AuthenticatorGUiScreen extends AbstractContainerScreen<Authenticato
 		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/bogulied.png"), this.leftPos + 19, this.topPos + -7, 0, 0, 176, 176, 176, 176);
 
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override
