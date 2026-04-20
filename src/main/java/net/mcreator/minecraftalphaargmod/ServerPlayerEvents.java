@@ -11,7 +11,6 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = "the_arg_container", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ServerPlayerEvents {
 
-    // Sync admin list when a player joins
     @SubscribeEvent
     public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
         if (event.getEntity() instanceof ServerPlayer joiningPlayer) {
@@ -19,8 +18,6 @@ public class ServerPlayerEvents {
         }
     }
 
-    // Re-broadcast when /op or /deop is used
-    // We delay by 1 tick so the permission change has time to apply
     @SubscribeEvent
     public static void onCommand(CommandEvent event) {
         String input = event.getParseResults().getReader().getString().trim();
@@ -30,7 +27,6 @@ public class ServerPlayerEvents {
             CommandSourceStack source = event.getParseResults().getContext().getSource();
             MinecraftServer server = source.getServer();
 
-            // Schedule broadcast 1 tick later so op status is already updated
             server.tell(new net.minecraft.server.TickTask(server.getTickCount() + 1, () -> {
                 var players = server.getPlayerList().getPlayers();
                 if (!players.isEmpty()) {

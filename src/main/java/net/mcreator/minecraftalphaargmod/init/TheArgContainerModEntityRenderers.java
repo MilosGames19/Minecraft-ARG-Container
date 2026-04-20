@@ -18,7 +18,6 @@ import net.mcreator.minecraftalphaargmod.client.renderer.StevenRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SpearProjectileRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.SoulEntityRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.RecruiterV2Renderer;
-import net.mcreator.minecraftalphaargmod.client.renderer.RecruiterRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.PigRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.ObserverMobRenderer;
 import net.mcreator.minecraftalphaargmod.client.renderer.LongLegsRenderer;
@@ -38,7 +37,6 @@ public class TheArgContainerModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(TheArgContainerModEntities.OBSERVER_MOB.get(), ObserverMobRenderer::new);
-		event.registerEntityRenderer(TheArgContainerModEntities.RECRUITER.get(), RecruiterRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.GIANT.get(), GiantRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.SOUL_ENTITY.get(), SoulEntityRenderer::new);
 		event.registerEntityRenderer(TheArgContainerModEntities.ENTITY.get(), EntityRenderer::new);

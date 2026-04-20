@@ -22,7 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.minecraftalphaargmod.world.inventory.WarningMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.TtcdconsoleMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.TerminalGUIMenu;
-import net.mcreator.minecraftalphaargmod.world.inventory.SkyBuilderGUIMenu;
+import net.mcreator.minecraftalphaargmod.world.inventory.SkyBuilderGuiMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.ServerGuIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.SafeGUIMenu;
 import net.mcreator.minecraftalphaargmod.world.inventory.MonitorGUIMenu;
@@ -66,8 +66,8 @@ public class TheArgContainerModMenus {
 	public static final RegistryObject<MenuType<BallsOnlineGuiMenu>> BALLS_ONLINE_GUI = REGISTRY.register("balls_online_gui", () -> IForgeMenuType.create(BallsOnlineGuiMenu::new));
 	public static final RegistryObject<MenuType<TtcdconsoleMenu>> TTCDCONSOLE = REGISTRY.register("ttcdconsole", () -> IForgeMenuType.create(TtcdconsoleMenu::new));
 	public static final RegistryObject<MenuType<GeneratorGuiMenu>> GENERATOR_GUI = REGISTRY.register("generator_gui", () -> IForgeMenuType.create(GeneratorGuiMenu::new));
-	public static final RegistryObject<MenuType<SkyBuilderGUIMenu>> SKY_BUILDER_GUI = REGISTRY.register("sky_builder_gui", () -> IForgeMenuType.create(SkyBuilderGUIMenu::new));
 	public static final RegistryObject<MenuType<AuthenticatorGUiMenu>> AUTHENTICATOR_G_UI = REGISTRY.register("authenticator_g_ui", () -> IForgeMenuType.create(AuthenticatorGUiMenu::new));
+	public static final RegistryObject<MenuType<SkyBuilderGuiMenu>> SKY_BUILDER_GUI = REGISTRY.register("sky_builder_gui", () -> IForgeMenuType.create(SkyBuilderGuiMenu::new));
 
 	public static void setText(String boxname, String value, @Nullable ServerPlayer player) {
 		if (player != null) {

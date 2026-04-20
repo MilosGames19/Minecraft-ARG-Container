@@ -83,7 +83,7 @@ public class Key1Menu extends AbstractContainerMenu implements Supplier<Map<Inte
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return TheArgContainerModItems.VOID_KEY.get() == stack.getItem();
+				return TheArgContainerModItems.KEY_DJ.get() == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

@@ -336,7 +336,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.MYCONPLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_SLAB.get().asItem());
-				tabData.accept(TheArgContainerModBlocks.HUB_SKY.get().asItem());
 				tabData.accept(TheArgContainerModItems.OBSIDIAN_UPGRADE.get());
 				tabData.accept(TheArgContainerModItems.LOGIC.get());
 				tabData.accept(TheArgContainerModItems.DOWNBEAT_UPLINK.get());
@@ -355,6 +354,12 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.MYCON_MUSHROOM.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_LEAVES.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ALPHAVER_SAPLING.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_SKY.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_SKY_TWO.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_SKY_THREE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_SKY_FOUR.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_SKY_FIVE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_SKYBOX.get().asItem());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> DELTA_QUEST = REGISTRY.register("delta_quest",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.delta_quest")).icon(() -> new ItemStack(TheArgContainerModBlocks.TBOTV_TROPHY.get())).displayItems((parameters, tabData) -> {
@@ -578,6 +583,27 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModItems.VOID_EXP.get());
 				tabData.accept(TheArgContainerModBlocks.TALL_TREE_SAPLING.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.TALL_TREE_LEAVES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_PIECE_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_PIECE_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_PIECE_3.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_PIECE_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_TILE_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_TILE_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_TILE_3.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_TILE_4.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_TILE_5.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_COLUMN.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_COLUMN_CROSS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_BLOCK_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_MONITOR_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_MONITOR_2.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.NOWHERE_BLOCK_FENCE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TEETH_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TOOTH.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.CANINE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.EYES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.EYES_1.get().asItem());
 			}).withTabsBefore(ALPHA.getId()).build());
 	public static final RegistryObject<CreativeModeTab> MINECRAFT_SURVIVAL_GLITCHY = REGISTRY.register("minecraft_survival_glitchy",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.minecraft_survival_glitchy")).icon(() -> new ItemStack(TheArgContainerModBlocks.CYBERSPACE_EYE.get())).displayItems((parameters, tabData) -> {
@@ -1641,7 +1667,6 @@ public class TheArgContainerModTabs {
 			tabData.accept(TheArgContainerModItems.TRANSLATOR_HELMET.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(TheArgContainerModItems.OBSERVER_MOB_SPAWN_EGG.get());
-			tabData.accept(TheArgContainerModItems.RECRUITER_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.GIANT_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.SOUL_ENTITY_SPAWN_EGG.get());
 			tabData.accept(TheArgContainerModItems.ENTITY_SPAWN_EGG.get());

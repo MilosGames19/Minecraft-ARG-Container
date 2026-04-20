@@ -18,138 +18,121 @@ import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = "the_arg_container", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class MinesweeperManager {
-    private static final Map<UUID, MinesweeperBoard> activeBoards   = new HashMap<>();
-    private static final Map<BlockPos, UUID>         boardLocations = new HashMap<>();
+	private static final Map<UUID, MinesweeperBoard> activeBoards = new HashMap<>();
+	private static final Map<BlockPos, UUID> boardLocations = new HashMap<>();
 
-    // ------------------------------------------------------------------
-    // Board lifecycle
-    // ------------------------------------------------------------------
+	public static void createBoard(Level level, BlockPos origin, Difficulty difficulty, UUID playerUUID) {
+		removeBoard(playerUUID);
 
-    public static void createBoard(Level level, BlockPos origin, Difficulty difficulty, UUID playerUUID) {
-        removeBoard(playerUUID);
+		MinesweeperBoard board = new MinesweeperBoard(level, origin, difficulty.width, difficulty.height, difficulty.mines);
+		board.placeBoard();
+		activeBoards.put(playerUUID, board);
 
-        MinesweeperBoard board = new MinesweeperBoard(level, origin,
-                difficulty.width, difficulty.height, difficulty.mines);
-        board.placeBoard();
-        activeBoards.put(playerUUID, board);
+		for (int x = 0; x < difficulty.width; x++) {
+			for (int z = 0; z < difficulty.height; z++) {
+				boardLocations.put(origin.offset(x, 0, z), playerUUID);
+			}
+		}
+	}
 
-        for (int x = 0; x < difficulty.width; x++) {
-            for (int z = 0; z < difficulty.height; z++) {
-                boardLocations.put(origin.offset(x, 0, z), playerUUID);
-            }
-        }
-    }
+	public static MinesweeperBoard getBoard(BlockPos pos) {
+		UUID uuid = boardLocations.get(pos);
+		return uuid != null ? activeBoards.get(uuid) : null;
+	}
 
-    public static MinesweeperBoard getBoard(BlockPos pos) {
-        UUID uuid = boardLocations.get(pos);
-        return uuid != null ? activeBoards.get(uuid) : null;
-    }
+	public static MinesweeperBoard getBoard(UUID playerUUID) {
+		return activeBoards.get(playerUUID);
+	}
 
-    public static MinesweeperBoard getBoard(UUID playerUUID) {
-        return activeBoards.get(playerUUID);
-    }
+	public static void removeBoard(UUID playerUUID) {
+		MinesweeperBoard board = activeBoards.remove(playerUUID);
+		if (board != null) {
+			boardLocations.values().removeIf(uuid -> uuid.equals(playerUUID));
+		}
+	}
 
-    public static void removeBoard(UUID playerUUID) {
-        MinesweeperBoard board = activeBoards.remove(playerUUID);
-        if (board != null) {
-            boardLocations.values().removeIf(uuid -> uuid.equals(playerUUID));
-        }
-    }
+	public static void restoreBoard(UUID playerUUID) {
+		MinesweeperBoard board = activeBoards.get(playerUUID);
+		if (board != null) {
+			board.restoreTerrain();
+			removeBoard(playerUUID);
+		}
+	}
 
-    public static void restoreBoard(UUID playerUUID) {
-        MinesweeperBoard board = activeBoards.get(playerUUID);
-        if (board != null) {
-            board.restoreTerrain();
-            removeBoard(playerUUID);
-        }
-    }
+	public static void syncToPlayer(ServerPlayer player) {
+		MinesweeperBoard board = activeBoards.get(player.getUUID());
+		MinesweeperSyncPacket packet = (board != null) ? new MinesweeperSyncPacket(board) : new MinesweeperSyncPacket();
+		MinesweeperNetwork.sendToPlayer(player, packet);
+	}
 
-    // ------------------------------------------------------------------
-    // Network sync — call these whenever board state changes
-    // ------------------------------------------------------------------
+	@SubscribeEvent
+	public static void onPlayerLogout(PlayerEvent.PlayerLoggedOutEvent event) {
+		UUID playerUUID = event.getEntity().getUUID();
+		MinesweeperBoard board = activeBoards.get(playerUUID);
+		if (board != null && event.getEntity().level() instanceof ServerLevel serverLevel) {
+			saveBoard(serverLevel, playerUUID, board);
+		}
+	}
 
-    /**
-     * Sends the current board state (or "no board") to the given player.
-     * Should be called after any action that modifies the board.
-     */
-    public static void syncToPlayer(ServerPlayer player) {
-        MinesweeperBoard board = activeBoards.get(player.getUUID());
-        MinesweeperSyncPacket packet = (board != null)
-                ? new MinesweeperSyncPacket(board)
-                : new MinesweeperSyncPacket();
-        MinesweeperNetwork.sendToPlayer(player, packet);
-    }
+	@SubscribeEvent
+	public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
+		UUID playerUUID = event.getEntity().getUUID();
+		if (event.getEntity().level() instanceof ServerLevel serverLevel) {
+			loadBoard(serverLevel, playerUUID);
 
-    // ------------------------------------------------------------------
-    // Persistence — save on logout, load on login
-    // ------------------------------------------------------------------
+			if (event.getEntity() instanceof ServerPlayer serverPlayer) {
+				syncToPlayer(serverPlayer);
+			}
+		}
+	}
 
-    @SubscribeEvent
-    public static void onPlayerLogout(PlayerEvent.PlayerLoggedOutEvent event) {
-        UUID playerUUID = event.getEntity().getUUID();
-        MinesweeperBoard board = activeBoards.get(playerUUID);
-        if (board != null && event.getEntity().level() instanceof ServerLevel serverLevel) {
-            saveBoard(serverLevel, playerUUID, board);
-        }
-    }
+	private static void saveBoard(ServerLevel level, UUID playerUUID, MinesweeperBoard board) {
+		File saveDir = new File(level.getServer().getServerDirectory(), "minesweeper_saves");
+		if (!saveDir.exists())
+			saveDir.mkdirs();
 
-    @SubscribeEvent
-    public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
-        UUID playerUUID = event.getEntity().getUUID();
-        if (event.getEntity().level() instanceof ServerLevel serverLevel) {
-            loadBoard(serverLevel, playerUUID);
+		File saveFile = new File(saveDir, playerUUID + ".dat");
+		try {
+			NbtIo.writeCompressed(board.saveToNBT(), saveFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-            // Sync loaded state to client so the HUD appears immediately on join
-            if (event.getEntity() instanceof ServerPlayer serverPlayer) {
-                syncToPlayer(serverPlayer);
-            }
-        }
-    }
+	private static void loadBoard(ServerLevel level, UUID playerUUID) {
+		File saveDir = new File(level.getServer().getServerDirectory(), "minesweeper_saves");
+		File saveFile = new File(saveDir, playerUUID + ".dat");
 
-    private static void saveBoard(ServerLevel level, UUID playerUUID, MinesweeperBoard board) {
-        File saveDir = new File(level.getServer().getServerDirectory(), "minesweeper_saves");
-        if (!saveDir.exists()) saveDir.mkdirs();
+		if (!saveFile.exists())
+			return;
 
-        File saveFile = new File(saveDir, playerUUID + ".dat");
-        try {
-            NbtIo.writeCompressed(board.saveToNBT(), saveFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+		try {
+			CompoundTag tag = NbtIo.readCompressed(saveFile);
+			MinesweeperBoard board = MinesweeperBoard.loadFromNBT(level, tag);
+			activeBoards.put(playerUUID, board);
 
-    private static void loadBoard(ServerLevel level, UUID playerUUID) {
-        File saveDir = new File(level.getServer().getServerDirectory(), "minesweeper_saves");
-        File saveFile = new File(saveDir, playerUUID + ".dat");
+			BlockPos origin = new BlockPos(tag.getInt("originX"), tag.getInt("originY"), tag.getInt("originZ"));
+			int width = tag.getInt("width");
+			int height = tag.getInt("height");
+			for (int x = 0; x < width; x++) {
+				for (int z = 0; z < height; z++) {
+					boardLocations.put(origin.offset(x, 0, z), playerUUID);
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-        if (!saveFile.exists()) return;
+	public enum Difficulty {
+		BEGINNER(9, 9, 10), INTERMEDIATE(16, 16, 40), EXPERT(30, 16, 99);
 
-        try {
-            CompoundTag tag = NbtIo.readCompressed(saveFile);
-            MinesweeperBoard board = MinesweeperBoard.loadFromNBT(level, tag);
-            activeBoards.put(playerUUID, board);
+		public final int width, height, mines;
 
-            BlockPos origin = new BlockPos(tag.getInt("originX"), tag.getInt("originY"), tag.getInt("originZ"));
-            int width  = tag.getInt("width");
-            int height = tag.getInt("height");
-            for (int x = 0; x < width; x++) {
-                for (int z = 0; z < height; z++) {
-                    boardLocations.put(origin.offset(x, 0, z), playerUUID);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    // ------------------------------------------------------------------
-
-    public enum Difficulty {
-        BEGINNER(9, 9, 10),
-        INTERMEDIATE(16, 16, 40),
-        EXPERT(30, 16, 99);
-
-        public final int width, height, mines;
-        Difficulty(int w, int h, int m) { width = w; height = h; mines = m; }
-    }
+		Difficulty(int w, int h, int m) {
+			width = w;
+			height = h;
+			mines = m;
+		}
+	}
 }

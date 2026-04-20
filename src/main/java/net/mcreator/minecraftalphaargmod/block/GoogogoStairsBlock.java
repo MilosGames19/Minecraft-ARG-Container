@@ -10,12 +10,12 @@ import net.minecraft.world.level.block.Blocks;
 
 public class GoogogoStairsBlock extends StairBlock {
 	public GoogogoStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override
 	public float getExplosionResistance() {
-		return 10f;
+		return 6f;
 	}
 
 	@Override

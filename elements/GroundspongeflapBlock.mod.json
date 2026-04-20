@@ -34,12 +34,12 @@
       }
     ],
     "customProperties": [],
-    "name": "§kGroundspongeflap §rBlock",
+    "name": "Whitestone",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 1.5,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [

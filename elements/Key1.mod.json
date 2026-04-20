@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:VoidKey"
+            "value": "CUSTOM:KeyDJ"
           },
           "disablePlacement": {
             "fixedValue": false

@@ -21,6 +21,7 @@ public class FakeSkyRegistry {
 	private static final FakeSkyFactory shattered_day = register("the_arg_container", "textures/overworldshatteredskybox.png");
 	private static final FakeSkyFactory shattered_night = register("the_arg_container", "textures/shatteredskybox.png");
 	private static final FakeSkyFactory debug_sky = register("the_arg_container", "textures/debug_skybox.png");
+	private static final FakeSkyFactory hub_sky = register ("the_arg_container", "textures/hub_sky_v2.png");
 	
     public static RenderType getKeyPortal() {
         return key_portal.get();
@@ -36,6 +37,10 @@ public class FakeSkyRegistry {
 
 	public static RenderType getDebugSky() {
 		return debug_sky.get();
+	}
+
+	public static RenderType getHubSky() {
+		return hub_sky.get();
 	}
 
     public static FakeSkyFactory register(String modId, String texturePath) {

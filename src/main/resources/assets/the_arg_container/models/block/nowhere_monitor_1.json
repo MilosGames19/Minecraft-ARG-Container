@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/chlorm",
+    "up": "the_arg_container:block/chlorm",
+    "north": "the_arg_container:block/chlorm",
+    "east": "the_arg_container:block/chlorm",
+    "south": "the_arg_container:block/chlorm",
+    "west": "the_arg_container:block/chlorm",
+    "particle": "the_arg_container:block/chlorm"
+  },
+  "render_type": "solid"
+}

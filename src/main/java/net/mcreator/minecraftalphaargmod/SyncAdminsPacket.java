@@ -16,7 +16,6 @@ public class SyncAdminsPacket {
         this.adminUUIDs = adminUUIDs;
     }
 
-    // Encode: write to buffer
     public void encode(FriendlyByteBuf buf) {
         buf.writeInt(adminUUIDs.size());
         for (UUID uuid : adminUUIDs) {
@@ -24,7 +23,6 @@ public class SyncAdminsPacket {
         }
     }
 
-    // Decode: read from buffer
     public static SyncAdminsPacket decode(FriendlyByteBuf buf) {
         int count = buf.readInt();
         Set<UUID> uuids = new HashSet<>();
@@ -34,7 +32,6 @@ public class SyncAdminsPacket {
         return new SyncAdminsPacket(uuids);
     }
 
-    // Handle on client
     public void handle(Supplier<NetworkEvent.Context> ctx) {
         ctx.get().enqueueWork(() -> {
             AdminCache.setAdmins(adminUUIDs);

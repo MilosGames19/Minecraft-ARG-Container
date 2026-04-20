@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/iohmlarn",
+    "up": "the_arg_container:block/iohmlarn",
+    "north": "the_arg_container:block/iohmlarn",
+    "east": "the_arg_container:block/iohmlarn",
+    "south": "the_arg_container:block/iohmlarn",
+    "west": "the_arg_container:block/iohmlarn",
+    "particle": "the_arg_container:block/iohmlarn"
+  },
+  "render_type": "solid"
+}

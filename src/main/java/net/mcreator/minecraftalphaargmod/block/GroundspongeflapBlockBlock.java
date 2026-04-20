@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class GroundspongeflapBlockBlock extends Block {
 	public GroundspongeflapBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

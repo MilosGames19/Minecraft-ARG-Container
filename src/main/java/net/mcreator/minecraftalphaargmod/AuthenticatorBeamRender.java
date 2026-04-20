@@ -30,7 +30,7 @@ public class AuthenticatorBeamRender implements BlockEntityRenderer<Authenticato
   
   @Override
   public boolean shouldRenderOffScreen(AuthenticatorBlockEntity pBlockEntity) {
-    return isEnabled(pBlockEntity); // Only render off-screen if enabled
+    return isEnabled(pBlockEntity);
   }
 
   @Override

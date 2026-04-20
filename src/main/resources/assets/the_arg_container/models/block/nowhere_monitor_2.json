@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/lornorap",
+    "up": "the_arg_container:block/lornorap",
+    "north": "the_arg_container:block/lornorap",
+    "east": "the_arg_container:block/lornorap",
+    "south": "the_arg_container:block/lornorap",
+    "west": "the_arg_container:block/lornorap",
+    "particle": "the_arg_container:block/lornorap"
+  },
+  "render_type": "solid"
+}

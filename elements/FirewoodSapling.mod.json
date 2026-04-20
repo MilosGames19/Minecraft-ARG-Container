@@ -10,13 +10,17 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "normal",
+    "plantType": "sapling",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
     "secondaryTreeChance": 0.1,
     "trees": [
-      null,
-      null
+      {
+        "value": "CUSTOM:FirewoodTree"
+      },
+      {
+        "value": "CUSTOM:BigFirewoodTree"
+      }
     ],
     "flowerTrees": [
       null,

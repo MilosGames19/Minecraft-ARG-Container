@@ -92,7 +92,7 @@ public class HubSkyBlockEntity extends RandomizableContainerBlockEntity implemen
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Hub Sky");
+		return Component.literal("Hub Sky (Version 1)");
 	}
 
 	@Override

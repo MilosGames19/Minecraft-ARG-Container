@@ -37,7 +37,6 @@ public class ShatteredSkyboxNightBlockRender implements BlockEntityRenderer<Moon
     }
 
     private void renderCube(MoonfallSkyBlockNightBlockEntity entity, Matrix4f matrix, MultiBufferSource bufferSource) {
-        // Render each face with its own texture
     VertexConsumer consumer = bufferSource.getBuffer(FakeSkyRegistry.getShatteredNight());
         renderFace(entity, matrix, consumer, 0.0F, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 1.0F, 1.0F, Direction.SOUTH);
         renderFace(entity, matrix, consumer, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, Direction.NORTH);
@@ -48,20 +47,15 @@ public class ShatteredSkyboxNightBlockRender implements BlockEntityRenderer<Moon
     }
 
     private void renderFace(MoonfallSkyBlockNightBlockEntity entity, Matrix4f matrix, VertexConsumer buffer, float f, float g, float h, float i, float j, float k, float l, float m, Direction direction) {
-        // Add face culling check if needed (like in the reference)
         if (shouldRenderFace(entity, direction)) {
-            // Render vertices without UV coordinates since POSITION format doesn't support them
             buffer.vertex(matrix, f, h, j).endVertex();
             buffer.vertex(matrix, g, h, k).endVertex();
             buffer.vertex(matrix, g, i, l).endVertex();
             buffer.vertex(matrix, f, i, m).endVertex();
         }
     }
-    
-    // Optional: Add face culling logic
+
     private boolean shouldRenderFace(MoonfallSkyBlockNightBlockEntity entity, Direction direction) {
-        // You can add logic here to determine if a face should be rendered
-        // For now, render all faces
         return true;
     }
     

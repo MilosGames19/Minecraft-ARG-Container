@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:nowhere_block_fence",
     "the_arg_container:witherstormquantumfence",
     "the_arg_container:witherstorm_345staticfence",
     "the_arg_container:teal_quartz_fence",

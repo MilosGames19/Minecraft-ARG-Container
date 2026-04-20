@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class GoogogoBlockBlock extends Block {
 	public GoogogoBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

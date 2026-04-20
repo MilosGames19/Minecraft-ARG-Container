@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class DataDaisyBlock extends Block {
 	public DataDaisyBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.2f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

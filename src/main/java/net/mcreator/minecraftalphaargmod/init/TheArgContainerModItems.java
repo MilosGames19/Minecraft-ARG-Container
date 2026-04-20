@@ -370,7 +370,6 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> SWITCH_PLATE = block(TheArgContainerModBlocks.SWITCH_PLATE);
 	public static final RegistryObject<Item> SYLLABLES_PLATE = block(TheArgContainerModBlocks.SYLLABLES_PLATE);
 	public static final RegistryObject<Item> OBSERVER_MOB_SPAWN_EGG = REGISTRY.register("observer_mob_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.OBSERVER_MOB, -14145496, -6645094, new Item.Properties()));
-	public static final RegistryObject<Item> RECRUITER_SPAWN_EGG = REGISTRY.register("recruiter_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.RECRUITER, -16777216, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> GIANT_SPAWN_EGG = REGISTRY.register("giant_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.GIANT, -16751104, -13408768, new Item.Properties()));
 	public static final RegistryObject<Item> ESSENCEFOUNTAIN = block(TheArgContainerModBlocks.ESSENCEFOUNTAIN);
 	public static final RegistryObject<Item> FRIGID_BITS = REGISTRY.register("frigid_bits", () -> new FrigidBitsItem());
@@ -1765,6 +1764,32 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> THE_DIRECTOR_SPAWN_EGG = REGISTRY.register("the_director_spawn_egg", () -> new ForgeSpawnEggItem(TheArgContainerModEntities.THE_DIRECTOR, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> BLUEWOOD_SAPLING = block(TheArgContainerModBlocks.BLUEWOOD_SAPLING);
 	public static final RegistryObject<Item> ALPHAVER_SAPLING = block(TheArgContainerModBlocks.ALPHAVER_SAPLING);
+	public static final RegistryObject<Item> HUB_SKY_TWO = block(TheArgContainerModBlocks.HUB_SKY_TWO);
+	public static final RegistryObject<Item> HUB_SKY_THREE = block(TheArgContainerModBlocks.HUB_SKY_THREE);
+	public static final RegistryObject<Item> HUB_SKY_FOUR = block(TheArgContainerModBlocks.HUB_SKY_FOUR);
+	public static final RegistryObject<Item> HUB_SKY_FIVE = block(TheArgContainerModBlocks.HUB_SKY_FIVE);
+	public static final RegistryObject<Item> HUB_SKYBOX = block(TheArgContainerModBlocks.HUB_SKYBOX);
+	public static final RegistryObject<Item> NOWHERE_PIECE_1 = block(TheArgContainerModBlocks.NOWHERE_PIECE_1);
+	public static final RegistryObject<Item> NOWHERE_PIECE_2 = block(TheArgContainerModBlocks.NOWHERE_PIECE_2);
+	public static final RegistryObject<Item> NOWHERE_PIECE_3 = block(TheArgContainerModBlocks.NOWHERE_PIECE_3);
+	public static final RegistryObject<Item> NOWHERE_PIECE_4 = block(TheArgContainerModBlocks.NOWHERE_PIECE_4);
+	public static final RegistryObject<Item> NOWHERE_TILE_1 = block(TheArgContainerModBlocks.NOWHERE_TILE_1);
+	public static final RegistryObject<Item> NOWHERE_TILE_2 = block(TheArgContainerModBlocks.NOWHERE_TILE_2);
+	public static final RegistryObject<Item> NOWHERE_TILE_3 = block(TheArgContainerModBlocks.NOWHERE_TILE_3);
+	public static final RegistryObject<Item> NOWHERE_TILE_4 = block(TheArgContainerModBlocks.NOWHERE_TILE_4);
+	public static final RegistryObject<Item> NOWHERE_TILE_5 = block(TheArgContainerModBlocks.NOWHERE_TILE_5);
+	public static final RegistryObject<Item> NOWHERE_COLUMN = block(TheArgContainerModBlocks.NOWHERE_COLUMN);
+	public static final RegistryObject<Item> NOWHERE_COLUMN_CROSS = block(TheArgContainerModBlocks.NOWHERE_COLUMN_CROSS);
+	public static final RegistryObject<Item> NOWHERE_BLOCK = block(TheArgContainerModBlocks.NOWHERE_BLOCK);
+	public static final RegistryObject<Item> NOWHERE_BLOCK_2 = block(TheArgContainerModBlocks.NOWHERE_BLOCK_2);
+	public static final RegistryObject<Item> NOWHERE_MONITOR_1 = block(TheArgContainerModBlocks.NOWHERE_MONITOR_1);
+	public static final RegistryObject<Item> NOWHERE_MONITOR_2 = block(TheArgContainerModBlocks.NOWHERE_MONITOR_2);
+	public static final RegistryObject<Item> NOWHERE_BLOCK_FENCE = block(TheArgContainerModBlocks.NOWHERE_BLOCK_FENCE);
+	public static final RegistryObject<Item> TEETH_BLOCK = block(TheArgContainerModBlocks.TEETH_BLOCK);
+	public static final RegistryObject<Item> TOOTH = block(TheArgContainerModBlocks.TOOTH);
+	public static final RegistryObject<Item> CANINE = block(TheArgContainerModBlocks.CANINE);
+	public static final RegistryObject<Item> EYES = block(TheArgContainerModBlocks.EYES);
+	public static final RegistryObject<Item> EYES_1 = block(TheArgContainerModBlocks.EYES_1);
 
 	// Start of user code block custom items
 	// End of user code block custom items

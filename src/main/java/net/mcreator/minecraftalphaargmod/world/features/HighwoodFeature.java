@@ -17,167 +17,270 @@ import java.util.List;
 import java.util.Random;
 
 public class HighwoodFeature extends Feature<NoneFeatureConfiguration> {
-    public HighwoodFeature() {
-        super(NoneFeatureConfiguration.CODEC);
-    }
 
-    @Override
-    public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
-        WorldGenLevel world = context.level();
-        BlockPos pos = context.origin();
-        RandomSource random = context.random();
+	public HighwoodFeature() {
+		super(NoneFeatureConfiguration.CODEC);
+	}
 
-        return generateDeEpicTree(world, random, pos.getX(), pos.getY(), pos.getZ());
-    }
+	private static final double LEAF_ANGLE_STEP = 0.2243994752564138;
 
-    private boolean generateDeEpicTree(WorldGenLevel world, RandomSource sourceRandom, int x, int y, int z) {
-        // Use java.util.Random to match the original mod's generation logic 1:1
-        long seed = sourceRandom.nextLong() + (long)x + (long)y + (long)z + world.getSeed();
-        Random treeRandom = new Random(seed);
-        
-        // Foliage uses a different random sequence in the original code (passed from generate)
-        Random foliageRandom = new Random(sourceRandom.nextLong());
+	@Override
+	public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
+		WorldGenLevel world = context.level();
+		BlockPos origin = context.origin();
+		RandomSource source = context.random();
+		return generateEpicTree(world, source, origin.getX(), origin.getY(), origin.getZ());
+	}
 
-        BlockState wood = TheArgContainerModBlocks.HIGHWOOD_LOG.get().defaultBlockState();
-        BlockState leaves = TheArgContainerModBlocks.HIGHWOOD_LEAVES.get().defaultBlockState().setValue(net.minecraft.world.level.block.LeavesBlock.PERSISTENT, true);
-        BlockState roots = TheArgContainerModBlocks.HIGHWOOD_ROOTS.get().defaultBlockState();
+	private boolean generateEpicTree(WorldGenLevel world, RandomSource source, int x, int y, int z) {
 
-        // Check soil
-        BlockPos below = new BlockPos(x, y - 1, z);
-        if (!world.getBlockState(below).is(Blocks.GRASS_BLOCK) && !world.getBlockState(below).is(Blocks.DIRT) && !world.getBlockState(below).is(Blocks.SNOW_BLOCK)) {
-            return false;
-        }
+		BlockState wood = TheArgContainerModBlocks.HIGHWOOD_LOG.get().defaultBlockState();
+		BlockState leaves = TheArgContainerModBlocks.HIGHWOOD_LEAVES.get().defaultBlockState().setValue(net.minecraft.world.level.block.LeavesBlock.PERSISTENT, true);
+		BlockState roots = TheArgContainerModBlocks.HIGHWOOD_ROOTS.get().defaultBlockState();
 
-        List<Vec3> points = new ArrayList<>();
-        // Increased height range to make it generate tall
-        int height = 32 + treeRandom.nextInt(52); // Was 16 + nextInt(26)
-        points.add(new Vec3(x, y + height, z));
+		BlockPos below = new BlockPos(x, y - 1, z);
+		BlockState soil = world.getBlockState(below);
+		if (!soil.is(Blocks.GRASS_BLOCK) && !soil.is(Blocks.DIRT)) {
+			return true;
 
-        int iterations = 0;
-        while (!points.isEmpty()) {
-            List<Vec3> currentPoints = new ArrayList<>(points);
-            
-            for (Vec3 point : currentPoints) {
-                int px = (int) Math.round(point.x);
-                int py = (int) Math.round(point.y);
-                int pz = (int) Math.round(point.z);
-                BlockPos pPos = new BlockPos(px, py, pz);
+		}
 
-                BlockState currentState = world.getBlockState(pPos);
-                boolean isSolid = currentState.canOcclude();
-                boolean isLeaves = currentState.is(leaves.getBlock());
+		long seed = source.nextLong() + (long) x + (long) y + (long) z + world.getSeed();
+		Random treeRandom = new Random(seed);
+		Random foliageRandom = new RandomSourceAdapter(source);
 
-                // Reverted py >= y check to allow branches to hang down as per original design
-                if ((!isSolid || isLeaves) && py >= 0 && (treeRandom.nextInt(3) != 0 || points.size() <= 3)) {
-                    if (canReplace(currentState)) {
-                        world.setBlock(pPos, wood, 3);
-                    }
-                    
-                    int branches = 0;
-                    while (treeRandom.nextInt(points.size() / 20 + 2) <= 1 && points.size() <= 10000) {
-                        branches++;
-                        if (branches >= 4) break;
-                        
-                        Vec3 newBranch = point.add(treeRandom.nextInt(3) - 1, -1.0, treeRandom.nextInt(3) - 1);
-                        points.add(newBranch);
-                    }
+		int height = 7 + treeRandom.nextInt(10);
 
-                    if (iterations > 2 && treeRandom.nextInt(Math.max(50, 89 - iterations)) == 3) {
-                        generateDeEpicTreeFoliage(world, foliageRandom, px, py, pz, leaves, wood);
-                    }
+		generateSurfaceRoots(world, treeRandom, x, y, z, roots, height);
 
-                    points.remove(point);
-                    points.add(point.add(0, -1.0, 0));
-                } else {
-                    points.remove(point);
-                    if (currentState.is(Blocks.DIRT) || currentState.is(Blocks.GRASS_BLOCK) || currentState.is(Blocks.SNOW_BLOCK)) {
-                        generateDeEpicRoots(world, treeRandom, px, py, pz, roots);
-                    }
-                }
-            }
-            iterations++;
-        }
+		placeThickBase(world, x, y, z, wood, Math.min(3, height));
 
-        return true;
-    }
+		List<Vec3> points = new ArrayList<>();
+		points.add(new Vec3(x, y + height, z));
 
-    private void generateDeEpicTreeFoliage(WorldGenLevel world, Random random, int x, int y, int z, BlockState leaves, BlockState wood) {
-        float var8 = 0.0F;
-        float var9 = random.nextFloat() * (float)Math.PI * 2.0F;
-        int var10 = random.nextInt(9) + 8;
-        float var11 = (float)y;
+		int iterations = 0;
 
-        for(int var13 = 0; var13 < var10; ++var13) {
-            var9 = (float)((double)var9 + ((double)random.nextFloat() - 0.5D) * 0.1D);
-            ++var8;
-            float var12 = var8 / (float)var10;
-            int nx = (int)((float)x + Mth.cos(var9) * (1.0F - var12));
-            var11 += var12;
-            int nz = (int)((float)z + Mth.sin(var9) * (1.0F - var12));
-            int ny = Math.round(var11);
-            BlockPos branchPos = new BlockPos(nx, ny, nz);
-            if (canReplace(world.getBlockState(branchPos))) {
-                world.setBlock(branchPos, wood, 3);
-            }
-        }
+		while (!points.isEmpty()) {
+			List<Vec3> snapshot = new ArrayList<>(points);
 
-        y += random.nextInt(2) + 1;
-        int var13 = random.nextInt(3) + 2;
+			for (Vec3 point : snapshot) {
+				int px = (int) Math.round(point.x);
+				int py = (int) Math.round(point.y);
+				int pz = (int) Math.round(point.z);
+				BlockPos pPos = new BlockPos(px, py, pz);
 
-        for(int var14 = 0; var14 < var13; ++var14) {
-            BlockPos centerPos = new BlockPos(x, y, z);
-            if (canReplace(world.getBlockState(centerPos))) {
-                world.setBlock(centerPos, leaves, 3);
-            }
+				BlockState cur = world.getBlockState(pPos);
+				boolean isSolid = cur.canOcclude();
+				boolean isLeaves = cur.is(leaves.getBlock());
 
-            for(float var15 = 0.0F; (double)var15 < Math.PI * 2.0D; var15 = (float)((double)var15 + 0.2243994752564138D)) {
-                int var16 = random.nextInt(var14 + 4) + var14 + 4;
-                float var17 = (float)x;
-                float var12 = (float)z;
+				if ((!isSolid || isLeaves) && py >= 0 && (treeRandom.nextInt(3) != 0 || points.size() <= 3)) {
 
-                for(int var18 = 0; var18 < var16; ++var18) {
-                    var12 += Mth.sin(var15);
-                    var17 += Mth.cos(var15);
-                    BlockPos leafPos = new BlockPos(Math.round(var17), y - var14, Math.round(var12));
-                    if(!world.getBlockState(leafPos).canOcclude() || world.getBlockState(leafPos).is(leaves.getBlock())) {
-                        if (canReplace(world.getBlockState(leafPos))) {
-                            world.setBlock(leafPos, leaves, 3);
-                        }
-                    }
-                }
-            }
-        }
-    }
+					if (canReplace(cur)) {
+						world.setBlock(pPos, wood, 3);
+					}
 
-    private void generateDeEpicRoots(WorldGenLevel world, Random random, int x, int y, int z, BlockState roots) {
-        int var7 = random.nextInt(4);
+					int branches = 0;
+					while (treeRandom.nextInt(points.size() / 30 + 2) <= 1 && points.size() <= 10000) {
+						branches++;
+						if (branches >= 4)
+							break;
+						points.add(point.add(treeRandom.nextInt(3) - 1, -1.0, treeRandom.nextInt(3) - 1));
+					}
 
-        for(int var8 = 0; var8 < var7; ++var8) {
-            int var9 = random.nextInt(8) + 3;
-            int var10 = x;
-            int var11 = y;
-            int var12 = z;
+					if (iterations > 2 && treeRandom.nextInt(Math.max(40, 78 - iterations)) == 3) {
+						generateFoliage(world, foliageRandom, px, py, pz, leaves, wood);
+					}
 
-            for(int var13 = 0; var13 < var9; ++var13) {
-                var10 += random.nextInt(3) - 1;
-                --var11;
-                var12 += random.nextInt(3) - 1;
-                BlockPos rootPos = new BlockPos(var10, var11, var12);
-                if(!world.getBlockState(rootPos).is(Blocks.BEDROCK)) {
-                    // Allow roots to replace ground blocks
-                    if (canReplaceRoot(world.getBlockState(rootPos))) {
-                        world.setBlock(rootPos, roots, 3);
-                    }
-                }
-            }
-        }
-    }
+					points.remove(point);
+					points.add(point.add(0, -1.0, 0));
 
-    private boolean canReplace(BlockState state) {
-        return state.isAir() || state.canBeReplaced() || state.is(Blocks.WATER) || state.is(Blocks.LAVA) || state.is(Blocks.SNOW) || state.is(Blocks.VINE);
-    }
+				} else {
+					points.remove(point);
 
-    private boolean canReplaceRoot(BlockState state) {
-        return canReplace(state) || state.is(Blocks.DIRT) || state.is(Blocks.GRASS_BLOCK) || state.is(Blocks.STONE) || state.is(Blocks.GRAVEL) || state.is(Blocks.SAND) || state.is(Blocks.DEEPSLATE);
-    }
+					if (cur.is(Blocks.GRASS_BLOCK) || cur.is(Blocks.DIRT)) {
+						generateRoots(world, treeRandom, px, py, pz, roots);
+					}
+				}
+			}
+			iterations++;
+		}
+
+		return true;
+	}
+
+	private void placeThickBase(WorldGenLevel world, int x, int y, int z, BlockState wood, int baseHeight) {
+		int[][] offsets = {{0, 0}, {1, 0}, {0, 1}, {1, 1}};
+		for (int dy = 0; dy < baseHeight; dy++) {
+			for (int[] off : offsets) {
+				BlockPos bp = new BlockPos(x + off[0], y + dy, z + off[1]);
+				if (canReplace(world.getBlockState(bp))) {
+					world.setBlock(bp, wood, 3);
+				}
+			}
+		}
+	}
+
+	private void generateSurfaceRoots(WorldGenLevel world, Random random, int x, int y, int z, BlockState roots, int treeHeight) {
+
+		int rootCount = Math.min(7, 3 + (treeHeight - 7) / 4);
+
+		for (int i = 0; i < rootCount; i++) {
+
+			int length = random.nextInt(5) + 3;
+
+			float angle = (float) (random.nextInt(8)) * (float) (Math.PI / 4.0);
+
+			float drift = (random.nextFloat() - 0.5f) * 0.4f;
+
+			float rx = x;
+			float rz = z;
+			int ry = y;
+
+			for (int s = 0; s < length; s++) {
+				angle += drift;
+				rx += Mth.cos(angle);
+				rz += Mth.sin(angle);
+
+				if (s % 2 == 1)
+					ry--;
+
+				BlockPos rp = new BlockPos(Math.round(rx), ry, Math.round(rz));
+				placeRootBlock(world, rp, roots);
+
+				if (s == length - 1) {
+					int dive = random.nextInt(3) + 1;
+					for (int d = 1; d <= dive; d++) {
+						BlockPos dp = new BlockPos(Math.round(rx), ry - d, Math.round(rz));
+						if (world.getBlockState(dp).is(Blocks.BEDROCK))
+							break;
+						world.setBlock(dp, roots, 3);
+					}
+				}
+			}
+		}
+	}
+
+	private void placeRootBlock(WorldGenLevel world, BlockPos pos, BlockState roots) {
+		BlockState here = world.getBlockState(pos);
+
+		if (here.is(Blocks.GRASS_BLOCK) || here.is(Blocks.DIRT) || here.is(Blocks.COARSE_DIRT) || here.isAir() || here.is(Blocks.SNOW) || here.canBeReplaced()) {
+			world.setBlock(pos, roots, 3);
+		}
+	}
+
+	private void generateFoliage(WorldGenLevel world, Random random, int x, int y, int z, BlockState leaves, BlockState wood) {
+
+		float angle = random.nextFloat() * (float) Math.PI * 2.0f;
+
+		int steps = random.nextInt(8) + 7;
+		float fy = (float) y;
+
+		int bx = x;
+		int bz = z;
+
+		for (int i = 0; i < steps; i++) {
+
+			angle += (float) ((random.nextFloat() - 0.5) * 0.15);
+			float fraction = (float) (i + 1) / (float) steps;
+			bx = (int) ((float) bx + Mth.cos(angle) * (1.0f - fraction));
+			fy += fraction;
+			bz = (int) ((float) bz + Mth.sin(angle) * (1.0f - fraction));
+			int by = Math.round(fy);
+
+			BlockPos bp = new BlockPos(bx, by, bz);
+			if (canReplace(world.getBlockState(bp))) {
+				world.setBlock(bp, wood, 3);
+			}
+		}
+
+		int ly = Math.round(fy) + random.nextInt(2) + 1;
+
+		int rings = random.nextInt(3) + 3;
+
+		for (int ring = 0; ring < rings; ring++) {
+			BlockPos center = new BlockPos(bx, ly - ring, bz);
+			if (canReplace(world.getBlockState(center))) {
+				world.setBlock(center, leaves, 3);
+			}
+
+			for (float a = 0.0f; (double) a < Math.PI * 2.0; a += LEAF_ANGLE_STEP) {
+
+				int spokes = random.nextInt(ring + 2) + ring + 3;
+				float lx = (float) bx;
+				float lz = (float) bz;
+
+				for (int s = 0; s < spokes; s++) {
+					lz += Mth.sin(a);
+					lx += Mth.cos(a);
+					BlockPos lp = new BlockPos(Math.round(lx), ly - ring, Math.round(lz));
+					BlockState ls = world.getBlockState(lp);
+					if (!ls.canOcclude() || ls.is(leaves.getBlock())) {
+						if (canReplace(ls)) {
+							world.setBlock(lp, leaves, 3);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	private void generateRoots(WorldGenLevel world, Random random, int x, int y, int z, BlockState roots) {
+		int count = random.nextInt(3);
+
+		for (int i = 0; i < count; i++) {
+			int len = random.nextInt(4) + 2;
+
+			int rx = x;
+			int ry = y;
+			int rz = z;
+
+			for (int s = 0; s < len; s++) {
+				rx += random.nextInt(3) - 1;
+				ry--;
+				rz += random.nextInt(3) - 1;
+				BlockPos rp = new BlockPos(rx, ry, rz);
+				if (!world.getBlockState(rp).is(Blocks.BEDROCK)) {
+					world.setBlock(rp, roots, 3);
+				}
+			}
+		}
+	}
+
+	private boolean canReplace(BlockState state) {
+		return state.isAir() || state.canBeReplaced() || state.is(Blocks.WATER) || state.is(Blocks.LAVA) || state.is(Blocks.SNOW) || state.is(Blocks.VINE);
+	}
+
+	private static final class RandomSourceAdapter extends java.util.Random {
+		private final RandomSource src;
+
+		RandomSourceAdapter(RandomSource src) {
+			super(0);
+			this.src = src;
+		}
+
+		@Override
+		public int nextInt(int bound) {
+			return src.nextInt(bound);
+		}
+
+		@Override
+		public float nextFloat() {
+			return src.nextFloat();
+		}
+
+		@Override
+		public long nextLong() {
+			return src.nextLong();
+		}
+
+		@Override
+		public double nextDouble() {
+			return src.nextDouble();
+		}
+
+		@Override
+		public boolean nextBoolean() {
+			return src.nextBoolean();
+		}
+	}
 }

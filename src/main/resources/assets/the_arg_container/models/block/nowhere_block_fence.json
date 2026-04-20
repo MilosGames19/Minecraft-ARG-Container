@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "the_arg_container:block/ine",
+    "particle": "the_arg_container:block/ine"
+  },
+  "render_type": "solid"
+}

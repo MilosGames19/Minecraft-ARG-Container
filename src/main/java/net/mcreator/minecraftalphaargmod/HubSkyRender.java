@@ -53,7 +53,7 @@ public class HubSkyRender implements BlockEntityRenderer<HubSkyBlockEntity> {
    public static RenderType getRenderType() {
         RenderStateShard.ShaderStateShard shaderState = new RenderStateShard.ShaderStateShard(ShardsHandler::GetPlaneImage);
 
-            ResourceLocation OVERLAY = new ResourceLocation("the_arg_container", "textures/hubskyblock.png");
+            ResourceLocation OVERLAY = new ResourceLocation("the_arg_container", "textures/upscaledhubskyblock.png");
 
         return RenderType.create("generic_render", DefaultVertexFormat.POSITION, VertexFormat.Mode.QUADS, 256, false, false,
             RenderType.CompositeState.builder()

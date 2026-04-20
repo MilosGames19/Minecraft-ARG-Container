@@ -6,20 +6,16 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class FirewoodSaplingBlock extends FlowerBlock {
-	public FirewoodSaplingBlock() {
-		super(() -> MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
-	}
+import net.mcreator.minecraftalphaargmod.block.grower.FirewoodSaplingTreeGrower;
 
-	@Override
-	public int getEffectDuration() {
-		return 100;
+public class FirewoodSaplingBlock extends SaplingBlock {
+	public FirewoodSaplingBlock() {
+		super(new FirewoodSaplingTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

@@ -23,7 +23,6 @@ import net.mcreator.minecraftalphaargmod.entity.StevenEntity;
 import net.mcreator.minecraftalphaargmod.entity.SpearProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.SoulEntityEntity;
 import net.mcreator.minecraftalphaargmod.entity.RecruiterV2Entity;
-import net.mcreator.minecraftalphaargmod.entity.RecruiterEntity;
 import net.mcreator.minecraftalphaargmod.entity.RangerBulletProjectileEntity;
 import net.mcreator.minecraftalphaargmod.entity.PigEntity;
 import net.mcreator.minecraftalphaargmod.entity.PartiBulletEntity;
@@ -48,8 +47,6 @@ public class TheArgContainerModEntities {
 			EntityType.Builder.<ObserverMobEntity>of(ObserverMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ObserverMobEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<RecruiterEntity>> RECRUITER = register("recruiter",
-			EntityType.Builder.<RecruiterEntity>of(RecruiterEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RecruiterEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<GiantEntity>> GIANT = register("giant",
 			EntityType.Builder.<GiantEntity>of(GiantEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GiantEntity::new)
 
@@ -131,7 +128,6 @@ public class TheArgContainerModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			ObserverMobEntity.init();
-			RecruiterEntity.init();
 			GiantEntity.init();
 			SoulEntityEntity.init();
 			EntityEntity.init();
@@ -154,7 +150,6 @@ public class TheArgContainerModEntities {
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(OBSERVER_MOB.get(), ObserverMobEntity.createAttributes().build());
-		event.put(RECRUITER.get(), RecruiterEntity.createAttributes().build());
 		event.put(GIANT.get(), GiantEntity.createAttributes().build());
 		event.put(SOUL_ENTITY.get(), SoulEntityEntity.createAttributes().build());
 		event.put(ENTITY.get(), EntityEntity.createAttributes().build());

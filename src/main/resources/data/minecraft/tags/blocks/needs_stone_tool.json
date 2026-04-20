@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:canine",
+    "the_arg_container:tooth",
+    "the_arg_container:teeth_block",
     "the_arg_container:unknown_material",
     "the_arg_container:witherstormquantumfence",
     "the_arg_container:witherstormquantumslab",

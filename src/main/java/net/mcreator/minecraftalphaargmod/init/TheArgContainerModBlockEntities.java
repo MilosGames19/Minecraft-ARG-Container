@@ -26,6 +26,11 @@ import net.mcreator.minecraftalphaargmod.block.entity.MoonfallSkyBlockNightBlock
 import net.mcreator.minecraftalphaargmod.block.entity.MoonfallSkyBlockDayBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.MoonfallGeneratorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.KeySlotterBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.HubSkyboxBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.HubSkyTwoBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.HubSkyThreeBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.HubSkyFourBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.HubSkyFiveBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.HubSkyBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.GeneratorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.FreezerBlockEntity;
@@ -72,4 +77,10 @@ public class TheArgContainerModBlockEntities {
 	public static final RegistryObject<BlockEntityType<DebugSkyboxBlockEntity>> DEBUG_SKYBOX = REGISTRY.register("debug_skybox", () -> BlockEntityType.Builder.of(DebugSkyboxBlockEntity::new, TheArgContainerModBlocks.DEBUG_SKYBOX.get()).build(null));
 	public static final RegistryObject<BlockEntityType<RenderWireframeBlockBlockEntity>> RENDER_WIREFRAME_BLOCK = REGISTRY.register("render_wireframe_block",
 			() -> BlockEntityType.Builder.of(RenderWireframeBlockBlockEntity::new, TheArgContainerModBlocks.RENDER_WIREFRAME_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<HubSkyTwoBlockEntity>> HUB_SKY_TWO = REGISTRY.register("hub_sky_two", () -> BlockEntityType.Builder.of(HubSkyTwoBlockEntity::new, TheArgContainerModBlocks.HUB_SKY_TWO.get()).build(null));
+	public static final RegistryObject<BlockEntityType<HubSkyThreeBlockEntity>> HUB_SKY_THREE = REGISTRY.register("hub_sky_three",
+			() -> BlockEntityType.Builder.of(HubSkyThreeBlockEntity::new, TheArgContainerModBlocks.HUB_SKY_THREE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<HubSkyFourBlockEntity>> HUB_SKY_FOUR = REGISTRY.register("hub_sky_four", () -> BlockEntityType.Builder.of(HubSkyFourBlockEntity::new, TheArgContainerModBlocks.HUB_SKY_FOUR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<HubSkyFiveBlockEntity>> HUB_SKY_FIVE = REGISTRY.register("hub_sky_five", () -> BlockEntityType.Builder.of(HubSkyFiveBlockEntity::new, TheArgContainerModBlocks.HUB_SKY_FIVE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<HubSkyboxBlockEntity>> HUB_SKYBOX = REGISTRY.register("hub_skybox", () -> BlockEntityType.Builder.of(HubSkyboxBlockEntity::new, TheArgContainerModBlocks.HUB_SKYBOX.get()).build(null));
 }

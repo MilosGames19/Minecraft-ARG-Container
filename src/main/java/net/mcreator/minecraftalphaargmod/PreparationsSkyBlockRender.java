@@ -27,9 +27,8 @@ import net.mcreator.minecraftalphaargmod.FakeSkyRegistry;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.mcreator.minecraftalphaargmod.block.entity.PreparationsSkyBlockBlockEntity;
 
-
 public class PreparationsSkyBlockRender implements BlockEntityRenderer<PreparationsSkyBlockBlockEntity> {
-    
+
     @Override
     public void render(PreparationsSkyBlockBlockEntity pBlockEntity, float pPartialTick, PoseStack pPoseStack, MultiBufferSource pBufferSource, int pPackedLight, int pPackedOverlay) {
         Matrix4f matrix4f = pPoseStack.last().pose();
@@ -37,7 +36,7 @@ public class PreparationsSkyBlockRender implements BlockEntityRenderer<Preparati
     }
 
     private void renderCube(PreparationsSkyBlockBlockEntity entity, Matrix4f matrix, MultiBufferSource bufferSource) {
-        // Render each face with its own texture
+
     VertexConsumer consumer = bufferSource.getBuffer(FakeSkyRegistry.getKeyPortal());
         renderFace(entity, matrix, consumer, 0.0F, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 1.0F, 1.0F, Direction.SOUTH);
         renderFace(entity, matrix, consumer, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, Direction.NORTH);
@@ -48,23 +47,21 @@ public class PreparationsSkyBlockRender implements BlockEntityRenderer<Preparati
     }
 
     private void renderFace(PreparationsSkyBlockBlockEntity entity, Matrix4f matrix, VertexConsumer buffer, float f, float g, float h, float i, float j, float k, float l, float m, Direction direction) {
-        // Add face culling check if needed (like in the reference)
+
         if (shouldRenderFace(entity, direction)) {
-            // Render vertices without UV coordinates since POSITION format doesn't support them
+
             buffer.vertex(matrix, f, h, j).endVertex();
             buffer.vertex(matrix, g, h, k).endVertex();
             buffer.vertex(matrix, g, i, l).endVertex();
             buffer.vertex(matrix, f, i, m).endVertex();
         }
     }
-    
-    // Optional: Add face culling logic
+
     private boolean shouldRenderFace(PreparationsSkyBlockBlockEntity entity, Direction direction) {
-        // You can add logic here to determine if a face should be rendered
-        // For now, render all faces
+
         return true;
     }
-    
+
     @Override
     public int getViewDistance() {
         return 256;

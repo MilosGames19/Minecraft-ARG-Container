@@ -24,7 +24,7 @@ public class DashProcedureProcedure {
         if (entity == null)
             return;
 
-        // Allow dash if: ability enabled, survival mode, and (sprinting OR in air)
+        
         if (McconfigConfiguration.ALPHAVER_DASH_ABILITY.get() == true && new Object() {
             public boolean checkGamemode(Entity _ent) {
                 if (_ent instanceof ServerPlayer _serverPlayer) {

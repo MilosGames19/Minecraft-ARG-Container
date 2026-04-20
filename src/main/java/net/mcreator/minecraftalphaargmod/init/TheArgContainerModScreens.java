@@ -18,7 +18,7 @@ import net.mcreator.minecraftalphaargmod.init.TheArgContainerModMenus.GuiSyncMes
 import net.mcreator.minecraftalphaargmod.client.gui.WarningScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TtcdconsoleScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.TerminalGUIScreen;
-import net.mcreator.minecraftalphaargmod.client.gui.SkyBuilderGUIScreen;
+import net.mcreator.minecraftalphaargmod.client.gui.SkyBuilderGuiScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.ServerGuIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.SafeGUIScreen;
 import net.mcreator.minecraftalphaargmod.client.gui.MonitorGUIScreen;
@@ -61,8 +61,8 @@ public class TheArgContainerModScreens {
 			MenuScreens.register(TheArgContainerModMenus.BALLS_ONLINE_GUI.get(), BallsOnlineGuiScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.TTCDCONSOLE.get(), TtcdconsoleScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.GENERATOR_GUI.get(), GeneratorGuiScreen::new);
-			MenuScreens.register(TheArgContainerModMenus.SKY_BUILDER_GUI.get(), SkyBuilderGUIScreen::new);
 			MenuScreens.register(TheArgContainerModMenus.AUTHENTICATOR_G_UI.get(), AuthenticatorGUiScreen::new);
+			MenuScreens.register(TheArgContainerModMenus.SKY_BUILDER_GUI.get(), SkyBuilderGuiScreen::new);
 		});
 	}
 

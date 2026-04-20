@@ -20,7 +20,6 @@ public class ArgNetworkHandler {
 
     private static final String PROTOCOL_VERSION = "1";
 
-    // Null until onCommonSetup() runs — do NOT access before mod setup completes.
     private static SimpleChannel channel;
 
     @SubscribeEvent
@@ -42,13 +41,11 @@ public class ArgNetworkHandler {
         );
     }
 
-    // Sends the current admin list to a specific player
     public static void sendAdminsToPlayer(ServerPlayer player) {
         Set<UUID> adminUUIDs = collectAdmins(player);
         channel.send(PacketDistributor.PLAYER.with(() -> player), new SyncAdminsPacket(adminUUIDs));
     }
 
-    // Broadcasts the updated admin list to ALL online players (used when op status changes)
     public static void broadcastAdmins(ServerPlayer anyOnlinePlayer) {
         for (ServerPlayer player : anyOnlinePlayer.getServer().getPlayerList().getPlayers()) {
             Set<UUID> adminUUIDs = collectAdmins(player);
@@ -56,7 +53,6 @@ public class ArgNetworkHandler {
         }
     }
 
-    // Collects all admin UUIDs from the server
     private static Set<UUID> collectAdmins(ServerPlayer player) {
         Set<UUID> adminUUIDs = new HashSet<>();
         for (ServerPlayer online : player.getServer().getPlayerList().getPlayers()) {

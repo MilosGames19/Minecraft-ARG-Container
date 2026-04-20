@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_arg_container:block/empty_sky",
+    "up": "the_arg_container:block/tooth3",
+    "north": "the_arg_container:block/tooth1",
+    "east": "the_arg_container:block/tooth1",
+    "south": "the_arg_container:block/tooth1",
+    "west": "the_arg_container:block/tooth1",
+    "particle": "the_arg_container:block/empty_sky"
+  },
+  "render_type": "cutout"
+}

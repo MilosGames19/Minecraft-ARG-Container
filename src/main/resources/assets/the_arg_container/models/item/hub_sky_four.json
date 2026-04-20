@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "the_arg_container:item/hub_sky_four"
+  },
+  "render_type": "translucent"
+}

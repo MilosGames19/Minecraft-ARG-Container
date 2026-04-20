@@ -22,9 +22,11 @@ public class CustomRender {
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 
-	//Block register
-	//																Name of the blocks 
-	//                                                        (remember to turn on block entity)
+	/*																  Block register:
+	*																Name of the blocks 
+	*                                                        (remember to turn on block entity)
+	*                                                        
+	*/
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.HUB_SKY.get(), context -> new HubSkyRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.AUTHENTICATOR.get(), context -> new AuthenticatorBeamRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.THE_ULTIMATE_TRUTH.get(), context -> new TheUltimateTruthRender());
@@ -33,5 +35,11 @@ public class CustomRender {
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.MOONFALL_SKY_BLOCK_NIGHT.get(), context -> new ShatteredSkyboxNightBlockRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.MOONFALL_SKY_BLOCK_DAY.get(), context -> new ShatteredSkyboxDayBlockRender());
 	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.DEBUG_SKYBOX.get(), context -> new DebugSkyboxBlockRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.HUB_SKY_TWO.get(), context -> new HubSkyTwoRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.HUB_SKY_THREE.get(), context -> new HubSkyThreeRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.HUB_SKY_FOUR.get(), context -> new HubSkyFourRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.HUB_SKY_FIVE.get(), context -> new HubSkyFiveRender());
+	event.registerBlockEntityRenderer(TheArgContainerModBlockEntities.HUB_SKYBOX.get(), context -> new HubSkyboxRender());
+	
 	}
 }

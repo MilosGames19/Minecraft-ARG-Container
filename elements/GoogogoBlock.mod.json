@@ -34,12 +34,12 @@
       }
     ],
     "customProperties": [],
-    "name": "§kGoogogo §rBlock",
+    "name": "Roof Block",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 2.0,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
