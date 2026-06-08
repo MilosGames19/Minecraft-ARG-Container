@@ -10,16 +10,18 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.BlueChestGUIMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class BlueChestGUIScreen extends AbstractContainerScreen<BlueChestGUIMenu> {
+public class BlueChestGUIScreen extends AbstractContainerScreen<BlueChestGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = BlueChestGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 
 	public BlueChestGUIScreen(BlueChestGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -48,6 +50,10 @@ public class BlueChestGUIScreen extends AbstractContainerScreen<BlueChestGUIMenu
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
 	}
 
 	@Override

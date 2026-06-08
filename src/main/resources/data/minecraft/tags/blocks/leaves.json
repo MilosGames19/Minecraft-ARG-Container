@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:meteor_leaves_1",
+    "the_arg_container:meteor_leaves",
     "the_arg_container:gradient_leaves_purple",
     "the_arg_container:gradient_leaves_blue",
     "the_arg_container:gradient_leaves_central",

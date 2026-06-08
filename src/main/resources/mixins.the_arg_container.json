@@ -6,7 +6,9 @@
   "mixins": [
     "ChatTypeBoundMixin",
     "TitleScreenTextMixin",
-    "TitleScreenSplashAccessorMixin"
+    "TitleScreenSplashAccessorMixin",
+    "NoCommandScreenMixin",
+    "CommandSuggestionFilterMixin"
   ],
   "client": [],
   "minVersion": "0.8"

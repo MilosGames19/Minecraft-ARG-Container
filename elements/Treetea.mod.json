@@ -34,12 +34,12 @@
       }
     ],
     "customProperties": [],
-    "name": "Tea Wood",
+    "name": "Tea Log",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 2.0,
-    "resistance": 20.0,
+    "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [

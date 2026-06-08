@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_arg_container:block/tile208",
+    "particle": "the_arg_container:block/tile208"
+  },
+  "render_type": "solid"
+}

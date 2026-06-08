@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.minecraftalphaargmod.item.WrittenDocumentItem;
+import net.mcreator.minecraftalphaargmod.item.WritableDocumentItem;
 import net.mcreator.minecraftalphaargmod.item.WakeUpJamesItem;
 import net.mcreator.minecraftalphaargmod.item.VoidVestBodyItem;
 import net.mcreator.minecraftalphaargmod.item.VoidKeyItem;
@@ -1790,6 +1792,23 @@ public class TheArgContainerModItems {
 	public static final RegistryObject<Item> CANINE = block(TheArgContainerModBlocks.CANINE);
 	public static final RegistryObject<Item> EYES = block(TheArgContainerModBlocks.EYES);
 	public static final RegistryObject<Item> EYES_1 = block(TheArgContainerModBlocks.EYES_1);
+	public static final RegistryObject<Item> METEOR_LOG = block(TheArgContainerModBlocks.METEOR_LOG);
+	public static final RegistryObject<Item> METEOR_WOOD = block(TheArgContainerModBlocks.METEOR_WOOD);
+	public static final RegistryObject<Item> METEOR_LEAVES = block(TheArgContainerModBlocks.METEOR_LEAVES);
+	public static final RegistryObject<Item> METEOR_LEAVES_1 = block(TheArgContainerModBlocks.METEOR_LEAVES_1);
+	public static final RegistryObject<Item> METEOR_VINES = block(TheArgContainerModBlocks.METEOR_VINES);
+	public static final RegistryObject<Item> METEOR_GRASS = block(TheArgContainerModBlocks.METEOR_GRASS);
+	public static final RegistryObject<Item> METEOR_VINES_BLOCK = block(TheArgContainerModBlocks.METEOR_VINES_BLOCK);
+	public static final RegistryObject<Item> METEOR_GRASS_BLOCK = block(TheArgContainerModBlocks.METEOR_GRASS_BLOCK);
+	public static final RegistryObject<Item> TEA_WOOD_BLOCK = block(TheArgContainerModBlocks.TEA_WOOD_BLOCK);
+	public static final RegistryObject<Item> FLAMEWOOD_BLOCK = block(TheArgContainerModBlocks.FLAMEWOOD_BLOCK);
+	public static final RegistryObject<Item> MYCON_HYPHAE = block(TheArgContainerModBlocks.MYCON_HYPHAE);
+	public static final RegistryObject<Item> HIGHWOOD_BLOCK = block(TheArgContainerModBlocks.HIGHWOOD_BLOCK);
+	public static final RegistryObject<Item> ALPHA_WOOD_BLOCK = block(TheArgContainerModBlocks.ALPHA_WOOD_BLOCK);
+	public static final RegistryObject<Item> ASH_WOOD_BLOCK = block(TheArgContainerModBlocks.ASH_WOOD_BLOCK);
+	public static final RegistryObject<Item> HUB_HIGHWOOD_BLOCK = block(TheArgContainerModBlocks.HUB_HIGHWOOD_BLOCK);
+	public static final RegistryObject<Item> WRITABLE_DOCUMENT = REGISTRY.register("writable_document", () -> new WritableDocumentItem());
+	public static final RegistryObject<Item> WRITTEN_DOCUMENT = REGISTRY.register("written_document", () -> new WrittenDocumentItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -10,16 +10,18 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.Key1Menu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class Key1Screen extends AbstractContainerScreen<Key1Menu> {
+public class Key1Screen extends AbstractContainerScreen<Key1Menu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = Key1Menu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 
 	public Key1Screen(Key1Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -51,6 +53,10 @@ public class Key1Screen extends AbstractContainerScreen<Key1Menu> {
 		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/keyhole.png"), this.leftPos + 62, this.topPos + 24, 0, 0, 50, 50, 50, 50);
 
 		RenderSystem.disableBlend();
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
 	}
 
 	@Override

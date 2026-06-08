@@ -10,16 +10,18 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.EssenceclonerGUIMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class EssenceclonerGUIScreen extends AbstractContainerScreen<EssenceclonerGUIMenu> {
+public class EssenceclonerGUIScreen extends AbstractContainerScreen<EssenceclonerGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = EssenceclonerGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 
 	public EssenceclonerGUIScreen(EssenceclonerGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -48,6 +50,10 @@ public class EssenceclonerGUIScreen extends AbstractContainerScreen<Essenceclone
 		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/essencecloner.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
 	}
 
 	@Override

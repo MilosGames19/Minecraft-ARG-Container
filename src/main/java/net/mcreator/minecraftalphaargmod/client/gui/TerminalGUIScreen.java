@@ -13,17 +13,19 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.TerminalGUIMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> {
+public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = TerminalGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	EditBox Input;
+	private final static HashMap<String, String> textstate = new HashMap<>();
+	public static EditBox Input;
 	Button button_execute;
 
 	public TerminalGUIScreen(TerminalGUIMenu container, Inventory inventory, Component text) {
@@ -51,6 +53,10 @@ public class TerminalGUIScreen extends AbstractContainerScreen<TerminalGUIMenu> 
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.disableBlend();
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
 	}
 
 	@Override

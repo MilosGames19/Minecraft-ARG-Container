@@ -34,12 +34,12 @@
       }
     ],
     "customProperties": [],
-    "name": "Flamewood",
+    "name": "Flamewood Log",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.5,
-    "resistance": 10.0,
+    "hardness": 2.0,
+    "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [

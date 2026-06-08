@@ -1,3 +1,4 @@
+
 package net.mcreator.minecraftalphaargmod.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -101,7 +102,26 @@ public class AdminSpaceGUIScreen extends AbstractContainerScreen<AdminSpaceGUIMe
 	@Override
 	public void init() {
 		super.init();
-		asc = new EditBox(this.font, this.leftPos + 31, this.topPos + 17, 118, 18, Component.translatable("gui.the_arg_container.admin_space_gui.asc"));
+		asc = new EditBox(this.font, this.leftPos + 31, this.topPos + 17, 118, 18, Component.translatable("gui.the_arg_container.admin_space_gui.asc")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.the_arg_container.admin_space_gui.asc").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.the_arg_container.admin_space_gui.asc").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		asc.setSuggestion(Component.translatable("gui.the_arg_container.admin_space_gui.asc").getString());
 		asc.setMaxLength(32767);
 		guistate.put("text:asc", asc);
 		this.addWidget(this.asc);

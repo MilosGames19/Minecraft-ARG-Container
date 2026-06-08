@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "empty_sky",
-    "textureTop": "tooth3",
+    "texture": "tooth3",
+    "textureTop": "empty_sky",
     "textureLeft": "tooth1",
     "textureFront": "tooth1",
     "textureRight": "tooth1",

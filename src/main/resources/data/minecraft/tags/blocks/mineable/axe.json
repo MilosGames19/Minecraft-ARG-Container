@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:hub_highwood_block",
+    "the_arg_container:alpha_wood_block",
+    "the_arg_container:highwood_block",
+    "the_arg_container:mycon_hyphae",
+    "the_arg_container:flamewood_block",
+    "the_arg_container:tea_wood_block",
+    "the_arg_container:meteor_wood",
+    "the_arg_container:meteor_log",
     "the_arg_container:old_planks",
     "the_arg_container:pale_planks",
     "the_arg_container:corrupted_diamond_ore",

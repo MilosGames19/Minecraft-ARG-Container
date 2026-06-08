@@ -499,6 +499,11 @@ public class MoonfallSkyProcedure {
 			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "shatteredskybox" + ".png")));
 			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
 		}
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:hub"))) {
+			RenderSystem.defaultBlendFunc();
+			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "hub_sky_v2" + ".png")));
+			renderSkybox(0, 0, 0, 255 << 24 | 255 << 16 | 255 << 8 | 255, true);
+		}
 		if ((entity.level().dimension()) == Level.OVERWORLD && McconfigConfiguration.TBOTV_SKY.get() == true) {
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.setShaderTexture(0, new ResourceLocation(("the_arg_container" + ":textures/" + "overworldshatteredskybox" + ".png")));

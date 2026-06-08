@@ -202,5 +202,6 @@ public class WorldRendererRegistyProcedure {
 	private static void execute(@Nullable Event event) {
 		register(Level.OVERWORLD, createOverworldEffects(false, false, false));
 		register(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:moonfalldimension")), createOverworldEffects(false, false, true));
+		register(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("the_arg_container:hub")), createOverworldEffects(false, false, false));
 	}
 }

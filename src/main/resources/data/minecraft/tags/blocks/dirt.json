@@ -19,6 +19,7 @@
     "the_arg_container:stone_grass",
     "the_arg_container:flower_grass_block",
     "the_arg_container:grass_block_1",
-    "the_arg_container:starlit_grass_block"
+    "the_arg_container:starlit_grass_block",
+    "the_arg_container:meteor_grass_block"
   ]
 }

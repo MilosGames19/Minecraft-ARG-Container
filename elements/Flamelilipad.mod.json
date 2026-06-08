@@ -59,7 +59,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "PLANTS"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -101,7 +101,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 5,
+    "luminance": 9,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,

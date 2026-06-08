@@ -1,13 +1,13 @@
 {
-  "parent": "block/cube",
+  "parent": "minecraft:block/cube_all_inner_faces",
   "textures": {
-    "down": "the_arg_container:block/empty_sky",
-    "up": "the_arg_container:block/tooth3",
+    "down": "the_arg_container:block/tooth3",
+    "up": "the_arg_container:block/empty_sky",
     "north": "the_arg_container:block/tooth1",
     "east": "the_arg_container:block/tooth1",
     "south": "the_arg_container:block/tooth1",
     "west": "the_arg_container:block/tooth1",
-    "particle": "the_arg_container:block/empty_sky"
+    "particle": "the_arg_container:block/tooth3"
   },
   "render_type": "cutout"
 }

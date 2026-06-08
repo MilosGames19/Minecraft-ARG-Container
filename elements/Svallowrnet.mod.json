@@ -1,12 +1,10 @@
 {
   "_fv": 73,
-  "_type": "gamerule",
+  "_type": "command",
   "definition": {
-    "type": "Logic",
-    "displayName": "sv_allowrnet",
-    "description": "idk",
-    "category": "PLAYER",
-    "defaultValueLogic": true,
-    "defaultValueNumber": 0
+    "commandName": "sv_allowrnet",
+    "type": "STANDARD",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"call_procedure\"><field name=\"procedure\"></field></block></next></block></xml>"
   }
 }

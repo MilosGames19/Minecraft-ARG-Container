@@ -360,6 +360,13 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.HUB_SKY_FOUR.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_SKY_FIVE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HUB_SKYBOX.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.MYCON_HYPHAE.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HIGHWOOD_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ASH_WOOD_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.HUB_HIGHWOOD_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.TEA_WOOD_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ALPHA_WOOD_BLOCK.get().asItem());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> DELTA_QUEST = REGISTRY.register("delta_quest",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.delta_quest")).icon(() -> new ItemStack(TheArgContainerModBlocks.TBOTV_TROPHY.get())).displayItems((parameters, tabData) -> {
@@ -604,6 +611,15 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.CANINE.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.EYES.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.EYES_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_LOG.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_WOOD.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_LEAVES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_LEAVES_1.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_VINES.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_GRASS.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_VINES_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.METEOR_GRASS_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModItems.WRITABLE_DOCUMENT.get());
 			}).withTabsBefore(ALPHA.getId()).build());
 	public static final RegistryObject<CreativeModeTab> MINECRAFT_SURVIVAL_GLITCHY = REGISTRY.register("minecraft_survival_glitchy",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.minecraft_survival_glitchy")).icon(() -> new ItemStack(TheArgContainerModBlocks.CYBERSPACE_EYE.get())).displayItems((parameters, tabData) -> {

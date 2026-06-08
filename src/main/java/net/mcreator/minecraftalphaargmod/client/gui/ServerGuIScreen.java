@@ -10,16 +10,18 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.minecraftalphaargmod.world.inventory.ServerGuIMenu;
+import net.mcreator.minecraftalphaargmod.init.TheArgContainerModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class ServerGuIScreen extends AbstractContainerScreen<ServerGuIMenu> {
+public class ServerGuIScreen extends AbstractContainerScreen<ServerGuIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = ServerGuIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 
 	public ServerGuIScreen(ServerGuIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -51,6 +53,10 @@ public class ServerGuIScreen extends AbstractContainerScreen<ServerGuIMenu> {
 		guiGraphics.blit(new ResourceLocation("the_arg_container:textures/screens/servergui.png"), this.leftPos + 0, this.topPos + -12, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
 	}
 
 	@Override

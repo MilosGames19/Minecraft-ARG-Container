@@ -33,7 +33,7 @@
     "hasFog": false,
     "ambientLight": 0.5,
     "doesWaterVaporize": false,
-    "hasFixedTime": false,
+    "hasFixedTime": true,
     "fixedTimeValue": 0,
     "coordinateScale": 1.0,
     "infiniburnTag": "minecraft:infiniburn_overworld",

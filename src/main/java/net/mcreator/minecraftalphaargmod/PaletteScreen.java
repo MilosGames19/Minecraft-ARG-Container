@@ -32,12 +32,11 @@ import java.util.stream.Collectors;
 public class PaletteScreen extends Screen {
 	private static final String MOD_ID = "the_arg_container";
 	private static final ResourceLocation SLOT_TEXTURE = new ResourceLocation(MOD_ID, "textures/palette_slot.png");
-
 	private static final double FORCED_SCALE = 4.0;
 
 	private static final List<Block> CACHED_BLOCKS = new ArrayList<>();
 	private static final List<Item> CACHED_ITEMS = new ArrayList<>();
-	private static boolean isCacheLoaded = false;
+	private boolean isCacheLoaded = false;
 
 	private boolean showingBlocks = true;
 	private int currentPage = 0;
@@ -55,6 +54,8 @@ public class PaletteScreen extends Screen {
 
 	private EditBox searchBox;
 	private String lastSearch = "";
+
+	private final List<AbstractWidget> slotWidgets = new ArrayList<>();
 
 	public PaletteScreen() {
 		super(Component.literal("Palette"));
@@ -85,7 +86,7 @@ public class PaletteScreen extends Screen {
 			for (Item item : ForgeRegistries.ITEMS) {
 				ResourceLocation id = ForgeRegistries.ITEMS.getKey(item);
 				if (id != null && id.getNamespace().equals(MOD_ID)) {
-					if (!(item instanceof BlockItem) || (item instanceof BlockItem && ((BlockItem) item).getBlock() instanceof DoorBlock)) {
+					if (!(item instanceof BlockItem) || ((BlockItem) item).getBlock() instanceof DoorBlock) {
 						CACHED_ITEMS.add(item);
 					}
 				}
@@ -119,7 +120,7 @@ public class PaletteScreen extends Screen {
 		}
 
 		currentPage = 0;
-		init();
+		rebuildGrid();
 	}
 
 	private void giveItem(ItemStack stack) {
@@ -130,9 +131,7 @@ public class PaletteScreen extends Screen {
 		if (resLoc == null)
 			return;
 
-		String itemId = resLoc.toString();
-		String command = "give @s " + itemId + " " + stack.getCount();
-
+		String command = "give @s " + resLoc + " " + stack.getCount();
 		if (this.minecraft.player.connection != null) {
 			this.minecraft.player.connection.sendCommand(command);
 		}
@@ -140,7 +139,6 @@ public class PaletteScreen extends Screen {
 
 	@Override
 	protected void init() {
-
 		double currentGuiScale = this.minecraft.getWindow().getGuiScale();
 		this.scaleFactor = (float) (FORCED_SCALE / currentGuiScale);
 
@@ -152,18 +150,15 @@ public class PaletteScreen extends Screen {
 		String currentText = (searchBox != null) ? searchBox.getValue() : lastSearch;
 
 		this.clearWidgets();
+		slotWidgets.clear();
 
 		columns = Math.max(5, (width - 20) / 32);
-
 		gridWidth = columns * 32;
-
 		contentLeft = (width - gridWidth) / 2;
 
 		int availableHeight = height - 70;
 		rows = Math.max(1, availableHeight / 23);
-
 		int gridHeight = rows * 23;
-
 		contentTop = 60 + (availableHeight - gridHeight) / 2;
 
 		searchBox = new EditBox(font, width / 2 - 100, 10, 200, 20, Component.literal("Search"));
@@ -178,31 +173,31 @@ public class PaletteScreen extends Screen {
 
 		addRenderableWidget(Button.builder(Component.literal("Blocks"), b -> switchMode(true)).bounds(contentLeft, 35, 60, 20).build());
 		addRenderableWidget(Button.builder(Component.literal("Items"), b -> switchMode(false)).bounds(contentLeft + 65, 35, 60, 20).build());
-
 		addRenderableWidget(Button.builder(Component.literal("<<"), b -> prevPage()).bounds(contentLeft + gridWidth - 85, 35, 40, 20).build());
 		addRenderableWidget(Button.builder(Component.literal(">>"), b -> nextPage()).bounds(contentLeft + gridWidth - 40, 35, 40, 20).build());
 
-		List<?> currentList = showingBlocks ? filteredBlocks : filteredItems;
-		int itemsPerPage = columns * rows;
-		if (itemsPerPage <= 0)
-			itemsPerPage = 1;
+		rebuildGrid();
+	}
 
+	private void rebuildGrid() {
+		for (AbstractWidget w : slotWidgets) {
+			removeWidget(w);
+		}
+		slotWidgets.clear();
+
+		List<?> currentList = showingBlocks ? filteredBlocks : filteredItems;
+		int itemsPerPage = Math.max(1, columns * rows);
 		int start = currentPage * itemsPerPage;
 		int end = Math.min(start + itemsPerPage, currentList.size());
 
 		for (int i = start; i < end; i++) {
 			int idx = i - start;
-			int row = idx / columns;
-			int col = idx % columns;
+			int x = contentLeft + (idx % columns) * 32;
+			int y = contentTop + (idx / columns) * 23;
 
-			int x = contentLeft + col * 32;
-			int y = contentTop + row * 23;
-
-			if (showingBlocks) {
-				addRenderableWidget(new ItemSlotButton(x, y, (Block) currentList.get(i)));
-			} else {
-				addRenderableWidget(new ItemSlotButton(x, y, (Item) currentList.get(i)));
-			}
+			AbstractWidget w = showingBlocks ? new ItemSlotButton(x, y, (Block) currentList.get(i)) : new ItemSlotButton(x, y, (Item) currentList.get(i));
+			addRenderableWidget(w);
+			slotWidgets.add(w);
 		}
 	}
 
@@ -234,20 +229,20 @@ public class PaletteScreen extends Screen {
 	private void switchMode(boolean blocks) {
 		showingBlocks = blocks;
 		currentPage = 0;
-		init();
+		rebuildGrid();
 	}
 
 	private void prevPage() {
 		if (currentPage > 0) {
 			currentPage--;
-			init();
+			rebuildGrid();
 		}
 	}
 
 	private void nextPage() {
 		if (currentPage < getTotalPages() - 1) {
 			currentPage++;
-			init();
+			rebuildGrid();
 		}
 	}
 
@@ -276,7 +271,6 @@ public class PaletteScreen extends Screen {
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
-
 		guiGraphics.pose().pushPose();
 		guiGraphics.pose().scale(scaleFactor, scaleFactor, 1.0f);
 
@@ -293,10 +287,9 @@ public class PaletteScreen extends Screen {
 			guiGraphics.drawCenteredString(font, pageText, width / 2, 48, 0x808080);
 		}
 
-		int resultCount = showingBlocks ? filteredBlocks.size() : filteredItems.size();
 		if (!lastSearch.isEmpty()) {
-			String resultsText = resultCount + " results";
-			guiGraphics.drawString(font, resultsText, 7, 4, 0xAAAAAA);
+			int resultCount = showingBlocks ? filteredBlocks.size() : filteredItems.size();
+			guiGraphics.drawString(font, resultCount + " results", 7, 4, 0xAAAAAA);
 		}
 
 		super.render(guiGraphics, scaledMouseX, scaledMouseY, partialTick);
@@ -310,7 +303,6 @@ public class PaletteScreen extends Screen {
 			this.onClose();
 			return true;
 		}
-
 		if (searchBox != null && searchBox.isFocused()) {
 			return searchBox.keyPressed(keyCode, scanCode, modifiers);
 		}
@@ -348,13 +340,11 @@ public class PaletteScreen extends Screen {
 
 		@Override
 		public void renderWidget(GuiGraphics g, int mx, int my, float pt) {
-
 			RenderSystem.setShaderTexture(0, SLOT_TEXTURE);
 			int textureY = isHovered ? 20 : 0;
 			g.blit(SLOT_TEXTURE, getX(), getY(), 0, textureY, 23, 21, 23, 41);
 
 			ItemStack stack = (block != null) ? new ItemStack(block) : new ItemStack(item);
-
 			Minecraft mc = Minecraft.getInstance();
 			BakedModel model = mc.getItemRenderer().getModel(stack, null, null, 0);
 			boolean spin = (block != null) && model.isGui3d();
@@ -365,38 +355,31 @@ public class PaletteScreen extends Screen {
 			if (spin) {
 				renderSpinning3D(g, mc, stack, model);
 			} else {
-
 				g.renderItem(stack, getX() + 4, getY() + 3);
 			}
 
 			RenderSystem.disableBlend();
 		}
+		
+        private void renderSpinning3D(GuiGraphics g, Minecraft mc, ItemStack stack, BakedModel model) {
+            float cx = getX() + 4 + 8;
+            float cy = getY() + 3 + 8;
+            float angle = (System.currentTimeMillis() % 4000L) / 4000f * 360f;
 
-		private void renderSpinning3D(GuiGraphics g, Minecraft mc, ItemStack stack, BakedModel model) {
+            g.pose().pushPose();
+            g.pose().translate(cx, cy, 150.0);
 
-			float cx = getX() + 4 + 8;
-			float cy = getY() + 3 + 8;
+            g.pose().mulPose(Axis.YP.rotationDegrees(angle));
+            g.pose().mulPose(Axis.XP.rotationDegrees(30.0f));
+            g.pose().scale(10f, -10f, 10f);
 
-			float angle = (System.currentTimeMillis() % 4000L) / 4000f * 360f;
+            MultiBufferSource.BufferSource bufferSource = mc.renderBuffers().bufferSource();
+            mc.getItemRenderer().render(stack, ItemDisplayContext.NONE, false,
+                    g.pose(), bufferSource, LightTexture.FULL_BRIGHT, OverlayTexture.NO_OVERLAY, model);
 
-			g.pose().pushPose();
-
-			g.pose().translate(cx, cy, 150.0);
-
-			g.pose().mulPose(Axis.YP.rotationDegrees(angle));
-
-			g.pose().scale(16f, -16f, 16f);
-
-			MultiBufferSource.BufferSource bufferSource = mc.renderBuffers().bufferSource();
-
-			mc.getItemRenderer().render(stack, ItemDisplayContext.GUI, false,
-
-					g.pose(), bufferSource, LightTexture.FULL_BRIGHT, OverlayTexture.NO_OVERLAY, model);
-
-			bufferSource.endBatch();
-
-			g.pose().popPose();
-		}
+            bufferSource.endBatch();
+            g.pose().popPose();
+        }
 
 		@Override
 		public void onClick(double mx, double my) {

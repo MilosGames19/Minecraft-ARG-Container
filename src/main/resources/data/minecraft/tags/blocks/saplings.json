@@ -1,13 +1,12 @@
 {
   "replace": false,
   "values": [
-    "the_arg_container:firewood_sapling",
     "the_arg_container:alphaver_sapling",
     "the_arg_container:bluewood_sapling",
     "the_arg_container:tall_tree_sapling",
     "the_arg_container:mycon_mushroom",
-    "the_arg_container:highwood_sapling",
     "the_arg_container:tea_wood_sapling",
-    "the_arg_container:flamewood_sapling"
+    "the_arg_container:flamewood_sapling",
+    "the_arg_container:firewood_sapling"
   ]
 }
