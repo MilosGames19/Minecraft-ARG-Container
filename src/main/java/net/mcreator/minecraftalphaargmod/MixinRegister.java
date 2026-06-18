@@ -13,7 +13,11 @@ public class MixinRegister {
             "net.mcreator.minecraftalphaargmod.mixins.TitleScreenTextMixin",
             "net.mcreator.minecraftalphaargmod.mixins.TitleScreenSplashAccessorMixin",
             "net.mcreator.minecraftalphaargmod.mixins.NoCommandScreenMixin",
-            "net.mcreator.minecraftalphaargmod.mixins.CommandSuggestionFilterMixin"
+            "net.mcreator.minecraftalphaargmod.mixins.CommandSuggestionFilterMixin",
+            "net.mcreator.minecraftalphaargmod.mixins.AbstractButtonRenderMixin",
+            "net.mcreator.minecraftalphaargmod.mixins.AbstractSliderButtonRenderMixin"
+            //"net.mcreator.minecraftalphaargmod.mixins.DatapackFailureScreenMixin"
+            
         );
     }
 }

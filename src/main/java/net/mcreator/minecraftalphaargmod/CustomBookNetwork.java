@@ -27,12 +27,10 @@ public final class CustomBookNetwork {
                 java.util.Optional.of(NetworkDirection.PLAY_TO_SERVER));
     }
 
-    /** Save without signing */
     public static void sendSave(int slot, List<String> pages) {
         CHANNEL.sendToServer(new CustomBookSavePacket(slot, pages, Optional.empty()));
     }
 
-    /** Save and sign — converts item to written_document on server */
     public static void sendSign(int slot, List<String> pages, String title) {
         CHANNEL.sendToServer(new CustomBookSavePacket(slot, pages, Optional.of(title.trim())));
     }

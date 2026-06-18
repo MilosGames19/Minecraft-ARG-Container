@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "biome",
   "definition": {
-    "name": "Alphaver Forest",
+    "name": "Highwood Forest",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -13,7 +13,7 @@
       "value": "Blocks.GRAVEL"
     },
     "grassColor": {
-      "value": -7867755,
+      "value": -852224,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -40,8 +40,8 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": 0.0,
-      "max": 0.45
+      "min": -0.45,
+      "max": 0.0
     },
     "genHumidity": {
       "min": -0.45,

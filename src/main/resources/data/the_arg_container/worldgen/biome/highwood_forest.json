@@ -4,7 +4,7 @@
   "downfall": 0.4,
   "effects": {
     "foliage_color": 10387789,
-    "grass_color": -7867755,
+    "grass_color": -852224,
     "sky_color": 7972607,
     "fog_color": 12638463,
     "water_color": 4159204,
@@ -70,7 +70,7 @@
     [],
     [],
     [
-      "the_arg_container:alphaver_forest_tree",
+      "the_arg_container:highwood_forest_tree",
       "minecraft:forest_flowers",
       "minecraft:patch_grass_forest",
       "minecraft:patch_sugar_cane",

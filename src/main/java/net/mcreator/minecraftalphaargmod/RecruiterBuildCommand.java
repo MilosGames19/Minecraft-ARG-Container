@@ -9,56 +9,28 @@ import net.minecraft.world.phys.AABB;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.mcreator.minecraftalphaargmod.DevRegistry;
 import net.mcreator.minecraftalphaargmod.entity.RecruiterV2Entity;
 
 import java.util.List;
-import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = "the_arg_container", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class RecruiterBuildCommand {
 
-	private static final UUID AUTHORIZED_UUID = UUID.fromString("2d10b449-51f2-4d96-b2e3-c3bdc0332a81");
-	private static final String AUTHORIZED_NAME = "Dev";
-
 	@SubscribeEvent
 	public static void registerCommands(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("recruiterbuild").requires(source -> {
-
-			if (source.getEntity() instanceof ServerPlayer player) {
-				return isAuthorized(player);
-			}
-			return false;
-		}).then(Commands.argument("radius", DoubleArgumentType.doubleArg(1.0, 100.0)).executes(ctx -> {
-			ServerPlayer player = ctx.getSource().getPlayerOrException();
-			double radius = DoubleArgumentType.getDouble(ctx, "radius");
-			return executeBuildMode(player, radius);
-		})).executes(ctx -> {
-			ServerPlayer player = ctx.getSource().getPlayerOrException();
-			return executeBuildMode(player, 10.0);
-		}));
-	}
-
-	private static boolean isAuthorized(ServerPlayer player) {
-
-		if (player.getUUID().equals(AUTHORIZED_UUID)) {
-			return true;
-		}
-
-		if (player.getName().getString().equals(AUTHORIZED_NAME)) {
-			return true;
-		}
-
-		return false;
+		event.getDispatcher()
+				.register(Commands.literal("recruiterbuild").requires(source -> source.getEntity() instanceof ServerPlayer player && DevRegistry.isDev(player)).then(Commands.argument("radius", DoubleArgumentType.doubleArg(1.0)).executes(ctx -> {
+					ServerPlayer player = ctx.getSource().getPlayerOrException();
+					double radius = DoubleArgumentType.getDouble(ctx, "radius");
+					return executeBuildMode(player, radius);
+				})).executes(ctx -> {
+					ServerPlayer player = ctx.getSource().getPlayerOrException();
+					return executeBuildMode(player, 10.0);
+				}));
 	}
 
 	private static int executeBuildMode(ServerPlayer player, double radius) {
-
-		if (!isAuthorized(player)) {
-
-			player.sendSystemMessage(Component.literal("Unknown command"));
-			return 0;
-		}
-
 		ServerLevel level = player.serverLevel();
 		AABB searchBox = new AABB(player.getX() - radius, player.getY() - radius, player.getZ() - radius, player.getX() + radius, player.getY() + radius, player.getZ() + radius);
 

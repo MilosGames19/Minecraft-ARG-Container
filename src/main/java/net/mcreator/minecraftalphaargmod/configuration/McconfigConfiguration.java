@@ -10,6 +10,7 @@ public class McconfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Boolean> LILYPAD_GENERATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> TREE_GENERATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> CUSTOM_PANORAMA;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> ALPHAVER_BUTTON_ANIMATION;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> QUICKLOAD_BUTTON;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> ALPHAVER_CONSOLE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> GAME_CRASH;
@@ -30,6 +31,7 @@ public class McconfigConfiguration {
 		BUILDER.pop();
 		BUILDER.push("Main Menu");
 		CUSTOM_PANORAMA = BUILDER.comment("Enable/disable this mod's custom panoramas.").define("custom_panorama", true);
+		ALPHAVER_BUTTON_ANIMATION = BUILDER.comment("Enable/disable alphaver button animation.").define("alphaver_button_animation", false);
 		BUILDER.pop();
 		BUILDER.push("Gui & overlay");
 		QUICKLOAD_BUTTON = BUILDER.comment("Enable/disable the quickload button on the main menu (restart required).").define("quickload_button", true);

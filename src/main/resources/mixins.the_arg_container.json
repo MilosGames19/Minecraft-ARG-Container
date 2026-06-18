@@ -8,7 +8,9 @@
     "TitleScreenTextMixin",
     "TitleScreenSplashAccessorMixin",
     "NoCommandScreenMixin",
-    "CommandSuggestionFilterMixin"
+    "CommandSuggestionFilterMixin",
+    "AbstractButtonRenderMixin",
+    "AbstractSliderButtonRenderMixin"
   ],
   "client": [],
   "minVersion": "0.8"
