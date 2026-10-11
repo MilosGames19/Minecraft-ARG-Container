@@ -36,6 +36,7 @@ import net.mcreator.minecraftalphaargmod.block.entity.GeneratorBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.FreezerBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.DebugSkyboxBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.AuthenticatorBlockEntity;
+import net.mcreator.minecraftalphaargmod.block.entity.AlphaFurnaceBlockEntity;
 import net.mcreator.minecraftalphaargmod.block.entity.AdminChestBlockEntity;
 import net.mcreator.minecraftalphaargmod.TheArgContainerMod;
 
@@ -83,4 +84,6 @@ public class TheArgContainerModBlockEntities {
 	public static final RegistryObject<BlockEntityType<HubSkyFourBlockEntity>> HUB_SKY_FOUR = REGISTRY.register("hub_sky_four", () -> BlockEntityType.Builder.of(HubSkyFourBlockEntity::new, TheArgContainerModBlocks.HUB_SKY_FOUR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<HubSkyFiveBlockEntity>> HUB_SKY_FIVE = REGISTRY.register("hub_sky_five", () -> BlockEntityType.Builder.of(HubSkyFiveBlockEntity::new, TheArgContainerModBlocks.HUB_SKY_FIVE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<HubSkyboxBlockEntity>> HUB_SKYBOX = REGISTRY.register("hub_skybox", () -> BlockEntityType.Builder.of(HubSkyboxBlockEntity::new, TheArgContainerModBlocks.HUB_SKYBOX.get()).build(null));
+	public static final RegistryObject<BlockEntityType<AlphaFurnaceBlockEntity>> ALPHA_FURNACE = REGISTRY.register("alpha_furnace",
+			() -> BlockEntityType.Builder.of(AlphaFurnaceBlockEntity::new, TheArgContainerModBlocks.ALPHA_FURNACE.get()).build(null));
 }

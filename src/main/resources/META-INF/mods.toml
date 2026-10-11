@@ -23,6 +23,12 @@ description="This mod brings blocks, items and features form popular minecraft A
     side="BOTH"
 
 [[dependencies.the_arg_container]]
+    modId="terrablender"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.the_arg_container]]
     modId="geckolib"
     mandatory=true
     versionRange="[0,)"
@@ -30,7 +36,19 @@ description="This mod brings blocks, items and features form popular minecraft A
     side="BOTH"
 
 [[dependencies.the_arg_container]]
+    modId="terra_blender"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.the_arg_container]]
     modId="world_edit"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.the_arg_container]]
+    modId="terrablender"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

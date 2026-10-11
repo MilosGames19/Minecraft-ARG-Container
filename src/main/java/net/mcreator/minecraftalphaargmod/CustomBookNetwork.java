@@ -6,7 +6,8 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
 
 import java.util.List;
-import java.util.Optional;
+
+import javax.annotation.Nullable;
 
 public final class CustomBookNetwork {
 
@@ -16,9 +17,15 @@ public final class CustomBookNetwork {
             new ResourceLocation("the_arg_container", "custom_book_net"),
             () -> PROTOCOL, PROTOCOL::equals, PROTOCOL::equals);
 
+    private static boolean registered = false;
+
     private CustomBookNetwork() {}
 
     public static void register() {
+        if (registered) {
+            throw new IllegalStateException("CustomBookNetwork.register() called twice");
+        }
+        registered = true;
         CHANNEL.registerMessage(0,
                 CustomBookSavePacket.class,
                 CustomBookSavePacket::encode,
@@ -28,10 +35,10 @@ public final class CustomBookNetwork {
     }
 
     public static void sendSave(int slot, List<String> pages) {
-        CHANNEL.sendToServer(new CustomBookSavePacket(slot, pages, Optional.empty()));
+        CHANNEL.sendToServer(new CustomBookSavePacket(slot, pages, null));
     }
 
     public static void sendSign(int slot, List<String> pages, String title) {
-        CHANNEL.sendToServer(new CustomBookSavePacket(slot, pages, Optional.of(title.trim())));
+        CHANNEL.sendToServer(new CustomBookSavePacket(slot, pages, title.trim()));
     }
 }

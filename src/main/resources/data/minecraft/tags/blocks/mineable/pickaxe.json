@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_arg_container:alpha_furnace",
     "the_arg_container:teeth_block",
     "the_arg_container:nowhere_block_fence",
     "the_arg_container:nowhere_monitor_2",

@@ -15,8 +15,9 @@ public class MixinRegister {
             "net.mcreator.minecraftalphaargmod.mixins.NoCommandScreenMixin",
             "net.mcreator.minecraftalphaargmod.mixins.CommandSuggestionFilterMixin",
             "net.mcreator.minecraftalphaargmod.mixins.AbstractButtonRenderMixin",
-            "net.mcreator.minecraftalphaargmod.mixins.AbstractSliderButtonRenderMixin"
-            //"net.mcreator.minecraftalphaargmod.mixins.DatapackFailureScreenMixin"
+            "net.mcreator.minecraftalphaargmod.mixins.AbstractSliderButtonRenderMixin",
+            "net.mcreator.minecraftalphaargmod.mixins.CapeLayerMixin",
+            "net.mcreator.minecraftalphaargmod.mixins.ElytraLayerMixin"
             
         );
     }

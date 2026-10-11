@@ -1379,6 +1379,7 @@ import net.mcreator.minecraftalphaargmod.block.AltarClassicBlock;
 import net.mcreator.minecraftalphaargmod.block.AlphaverSaplingBlock;
 import net.mcreator.minecraftalphaargmod.block.AlphaverLogoBlock;
 import net.mcreator.minecraftalphaargmod.block.AlphaWoodBlock;
+import net.mcreator.minecraftalphaargmod.block.AlphaFurnaceBlock;
 import net.mcreator.minecraftalphaargmod.block.AfliteOreBlock;
 import net.mcreator.minecraftalphaargmod.block.AfliteBlockBlock;
 import net.mcreator.minecraftalphaargmod.block.AdmincolumncrossBlock;
@@ -2838,6 +2839,7 @@ public class TheArgContainerModBlocks {
 	public static final RegistryObject<Block> ALPHA_WOOD_BLOCK = REGISTRY.register("alpha_wood_block", () -> new AlphaWoodBlock());
 	public static final RegistryObject<Block> ASH_WOOD_BLOCK = REGISTRY.register("ash_wood_block", () -> new AshWoodBlockBlock());
 	public static final RegistryObject<Block> HUB_HIGHWOOD_BLOCK = REGISTRY.register("hub_highwood_block", () -> new HubHighwoodBlockBlock());
+	public static final RegistryObject<Block> ALPHA_FURNACE = REGISTRY.register("alpha_furnace", () -> new AlphaFurnaceBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -10,18 +10,16 @@ import net.minecraftforge.client.event.RegisterClientCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(value = Dist.CLIENT)
+@Mod.EventBusSubscriber(value = Dist.CLIENT, modid = "the_arg_container")
 public class NotificationPositionCommand {
 
-	@SubscribeEvent
-	public static void onRegisterClientCommands(RegisterClientCommandsEvent event) {
-		register(event.getDispatcher());
-	}
+	// @SubscribeEvent
+	// public static void onRegisterClientCommands(RegisterClientCommandsEvent event) {
+	// 	register(event.getDispatcher());
+	// }
 
-	private static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
-		dispatcher.register(Commands.literal("notifypos").executes(ctx -> {
-			Minecraft.getInstance().tell(() -> Minecraft.getInstance().setScreen(new NotificationPositionScreen()));
-			return 1;
-		}));
+	public static int openNotificationConfig() {
+		Minecraft.getInstance().tell(() -> Minecraft.getInstance().setScreen(new NotificationPositionScreen()));
+		return 1;
 	}
 }

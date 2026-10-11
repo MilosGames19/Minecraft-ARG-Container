@@ -10,7 +10,9 @@
     "NoCommandScreenMixin",
     "CommandSuggestionFilterMixin",
     "AbstractButtonRenderMixin",
-    "AbstractSliderButtonRenderMixin"
+    "AbstractSliderButtonRenderMixin",
+    "CapeLayerMixin",
+    "ElytraLayerMixin"
   ],
   "client": [],
   "minVersion": "0.8"

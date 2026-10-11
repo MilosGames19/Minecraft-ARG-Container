@@ -2,6 +2,7 @@ package net.mcreator.minecraftalphaargmod.client.book;
 
 import net.minecraft.world.item.Item;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -22,5 +23,9 @@ public final class CustomBookRegistry {
 
     public static boolean isRegistered(Item item) {
         return REGISTRY.containsKey(item);
+    }
+
+    public static Map<Item, BookDefinition> getAll() {
+        return Collections.unmodifiableMap(REGISTRY);
     }
 }

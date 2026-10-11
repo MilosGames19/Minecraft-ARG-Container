@@ -74,10 +74,10 @@ public class TheArgContainerModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.guiCooldown = original.guiCooldown;
+			clone.NotificationTutorial = original.NotificationTutorial;
 			if (!event.isWasDeath()) {
 				clone.Cooldown = original.Cooldown;
 				clone.lilipad_cooldown = original.lilipad_cooldown;
-				clone.FpsCap = original.FpsCap;
 			}
 		}
 
@@ -144,8 +144,6 @@ public class TheArgContainerModVariables {
 		public static final String DATA_NAME = "the_arg_container_mapvars";
 		public boolean Warning = false;
 		public boolean ModCheck = false;
-		public boolean ToastLogic = false;
-		public boolean DesableGen = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -156,16 +154,12 @@ public class TheArgContainerModVariables {
 		public void read(CompoundTag nbt) {
 			Warning = nbt.getBoolean("Warning");
 			ModCheck = nbt.getBoolean("ModCheck");
-			ToastLogic = nbt.getBoolean("ToastLogic");
-			DesableGen = nbt.getBoolean("DesableGen");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("Warning", Warning);
 			nbt.putBoolean("ModCheck", ModCheck);
-			nbt.putBoolean("ToastLogic", ToastLogic);
-			nbt.putBoolean("DesableGen", DesableGen);
 			return nbt;
 		}
 
@@ -261,7 +255,7 @@ public class TheArgContainerModVariables {
 		public double Cooldown = 0.0;
 		public double guiCooldown = 0.0;
 		public double lilipad_cooldown = 0.0;
-		public boolean FpsCap = false;
+		public boolean NotificationTutorial = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -273,7 +267,7 @@ public class TheArgContainerModVariables {
 			nbt.putDouble("Cooldown", Cooldown);
 			nbt.putDouble("guiCooldown", guiCooldown);
 			nbt.putDouble("lilipad_cooldown", lilipad_cooldown);
-			nbt.putBoolean("FpsCap", FpsCap);
+			nbt.putBoolean("NotificationTutorial", NotificationTutorial);
 			return nbt;
 		}
 
@@ -282,7 +276,7 @@ public class TheArgContainerModVariables {
 			Cooldown = nbt.getDouble("Cooldown");
 			guiCooldown = nbt.getDouble("guiCooldown");
 			lilipad_cooldown = nbt.getDouble("lilipad_cooldown");
-			FpsCap = nbt.getBoolean("FpsCap");
+			NotificationTutorial = nbt.getBoolean("NotificationTutorial");
 		}
 	}
 
@@ -310,7 +304,7 @@ public class TheArgContainerModVariables {
 					variables.Cooldown = message.data.Cooldown;
 					variables.guiCooldown = message.data.guiCooldown;
 					variables.lilipad_cooldown = message.data.lilipad_cooldown;
-					variables.FpsCap = message.data.FpsCap;
+					variables.NotificationTutorial = message.data.NotificationTutorial;
 				}
 			});
 			context.setPacketHandled(true);

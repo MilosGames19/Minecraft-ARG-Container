@@ -26,7 +26,10 @@ public class CommandSuggestionFilterMixin {
 
         List<Suggestion> filtered = original.stream()
                 .filter(s -> {
-                    String root = s.getText().split("\\s+")[0];
+                    String[] parts = s.getText().split("\\s+");
+                    if (parts.length == 0) return true; 
+                    
+                    String root = parts[0];
                     return !AlphaCommandManager.isBlacklisted("/" + root);
                 })
                 .collect(Collectors.toList());
@@ -44,8 +47,13 @@ public class CommandSuggestionFilterMixin {
             CallbackInfoReturnable<FormattedCharSequence> cir) {
 
         if (input == null || input.isEmpty()) return;
+        
         String query = input.startsWith("/") ? input.substring(1) : input;
-        String root = query.split("\\s+")[0];
+        String[] parts = query.split("\\s+");
+        
+        if (parts.length == 0) return; 
+        
+        String root = parts[0];
         if (!root.isEmpty() && AlphaCommandManager.isBlacklisted("/" + root)) {
             cir.setReturnValue(FormattedCharSequence.forward(input, Style.EMPTY));
         }

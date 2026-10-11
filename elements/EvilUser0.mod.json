@@ -116,15 +116,15 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "whenMobDies": {
       "name": "EvilUser0EntityDies"
     },
     "whenMobIsHurt": {
       "name": "EvilUser0EntityIsHurt"
-    },
-    "onInitialSpawn": {
-      "name": "EvilUser0OnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

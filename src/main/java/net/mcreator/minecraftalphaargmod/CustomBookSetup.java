@@ -5,6 +5,7 @@ import net.mcreator.minecraftalphaargmod.item.WrittenDocumentItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -23,18 +24,21 @@ public final class CustomBookSetup {
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             register("writable_document",
-                BookDefinition.builder(Component.translatable("item.the_arg_container.writable_document"))
-                    .texture(TBOTV_TEXTURE).writable().maxPages(50).build());
+                new BookDefinition(
+                    Component.translatable("item.the_arg_container.writable_document"),
+                    TBOTV_TEXTURE, true, 50));
 
             register("written_document",
-                BookDefinition.builder(Component.translatable("item.the_arg_container.written_document"))
-                    .texture(TBOTV_TEXTURE).maxPages(50).build());
+                new BookDefinition(
+                    Component.translatable("item.the_arg_container.written_document"),
+                    TBOTV_TEXTURE, false, 50));
         });
     }
 
     private static void register(String path, BookDefinition def) {
         Item item = ForgeRegistries.ITEMS.getValue(
                 new ResourceLocation("the_arg_container", path));
-        if (item != null) CustomBookRegistry.register(item, def);
+        // if (item != null) CustomBookRegistry.register(item, def);
+        if (item != null && item != Items.AIR) CustomBookRegistry.register(item, def);
     }
 }

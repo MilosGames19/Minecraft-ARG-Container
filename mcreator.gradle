@@ -1,3 +1,33 @@
+minecraft {
+	runs {
+		client {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+		}
+		server {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+		}
+		data {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+		}
+	}
+}  
+repositories {
+	maven {
+		url "https://www.cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
+}
+dependencies {
+	compileOnly fg.deobf("curse.maven:terrablender-563928:5068218")
+	runtimeOnly fg.deobf("curse.maven:terrablender-563928:5068218")
+}
+
+
 repositories {
     maven {
         url "https://cursemaven.com"

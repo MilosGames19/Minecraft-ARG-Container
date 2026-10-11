@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "the_arg_container:block/alpha_furnace"
+    },
+    "facing=east": {
+      "model": "the_arg_container:block/alpha_furnace",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_arg_container:block/alpha_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_arg_container:block/alpha_furnace",
+      "y": 270
+    }
+  }
+}

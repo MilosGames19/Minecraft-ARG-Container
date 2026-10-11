@@ -337,7 +337,6 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_STAIRS.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.HIGHWOODPLANKS_SLAB.get().asItem());
 				tabData.accept(TheArgContainerModItems.OBSIDIAN_UPGRADE.get());
-				tabData.accept(TheArgContainerModItems.LOGIC.get());
 				tabData.accept(TheArgContainerModItems.DOWNBEAT_UPLINK.get());
 				tabData.accept(TheArgContainerModItems.DESAMBRIER.get());
 				tabData.accept(TheArgContainerModItems.GYLDAN_SVERD.get());
@@ -367,6 +366,7 @@ public class TheArgContainerModTabs {
 				tabData.accept(TheArgContainerModBlocks.TEA_WOOD_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.FLAMEWOOD_BLOCK.get().asItem());
 				tabData.accept(TheArgContainerModBlocks.ALPHA_WOOD_BLOCK.get().asItem());
+				tabData.accept(TheArgContainerModBlocks.ALPHA_FURNACE.get().asItem());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> DELTA_QUEST = REGISTRY.register("delta_quest",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.the_arg_container.delta_quest")).icon(() -> new ItemStack(TheArgContainerModBlocks.TBOTV_TROPHY.get())).displayItems((parameters, tabData) -> {
